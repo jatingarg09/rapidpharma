@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="header-content">
+    <!-- Logo and Company Name -->
+    <div class="logo">
+    <a routerLink="/" class="logo-link">
+      <img src="rapid-pharmaceuticals\src\assets\logo.jpeg" alt="Rapid Pharmaceuticals Logo" class="logo-img" />
+      <span class="company-name">Rapid Pharmaceuticals</span>
+    </a>
+  </div>
+
+    <!-- Hamburger Icon (mobile) -->
+    <div class="hamburger" (click)="toggleMenu()">
+      &#9776;
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" [class.open]="menuOpen">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      <a routerLink="/about" routerLinkActive="active">About</a>
+      <a routerLink="/products" routerLinkActive="active">Products</a>
+      <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    </nav>
+  </div>
+</header>

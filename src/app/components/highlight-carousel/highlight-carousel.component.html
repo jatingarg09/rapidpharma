@@ -1,0 +1,19 @@
+<div class="carousel-container"
+     (touchstart)="startTouch($event)"
+     (touchend)="endTouch($event)">
+  
+  <div class="carousel-slide" *ngFor="let slide of slides; let i = index"
+       [class.active]="i === currentSlide">
+    <div [innerHTML]="slide.content"></div>
+  </div>
+
+  <a class="prev" (click)="prevSlide()">❮</a>
+  <a class="next" (click)="nextSlide()">❯</a>
+
+  <div class="carousel-dots">
+    <span *ngFor="let slide of slides; let i = index"
+          class="dot"
+          [class.active]="i === currentSlide"
+          (click)="goToSlide(i)"></span>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="home-page">
+  <!-- Highlight Carousel Section -->
+  <section class="highlight-carousel">
+    <div class="carousel-container">
+      <div
+        class="carousel-slide"
+        [style.transform]="'translateX(-' + currentSlide * 100 + '%)'"
+      >
+        <div
+          class="carousel-item"
+          *ngFor="let highlight of highlights"
+          [ngClass]="{ 'hero-slide': highlight.type === 'hero' }"
+        >
+          <h1>{{ highlight.title }}</h1>
+          <p>{{ highlight.description }}</p>
+          <a
+            *ngIf="highlight.type === 'hero' && highlight.cta"
+            class="btn-hero"
+            href="/products"
+          >
+            {{ highlight.cta }}
+          </a>
+        </div>
+      </div>
+
+      <!-- Pagination Dots -->
+      <div class="carousel-dots">
+        <span
+          *ngFor="let highlight of highlights; index as i"
+          [class.active]="i === currentSlide"
+          (click)="goToSlide(i)"
+        ></span>
+      </div>
+    </div>
+  </section>
+  <!-- End of Highlight Carousel Section -->
+
+  <!-- Who We Are -->
+  <section class="about">
+    <h2>Who We Are</h2>
+    <p>
+      Founded in 1997, Rapid Pharmaceuticals is a trusted pharmaceutical
+      supplier based in India. We operate under our brand name and have been
+      reliably serving healthcare institutions and distributors across the
+      country.
+    </p>
+  </section>
+
+  <!-- What We Do -->
+  <section class="services">
+    <h2>What We Do</h2>
+    <p>
+      We are not manufacturers — instead, we focus on sourcing high-quality
+      medications and distributing them under our own brand label. Our
+      operations span across India, ensuring timely delivery and unmatched
+      customer satisfaction.
+    </p>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="products-preview">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product-card" *ngFor="let product of sampleProducts">
+        <img [src]="product.image" alt="{{ product.name }}" />
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+      </div>
+    </div>
+    <a routerLink="/products" class="cta-link">View All Products</a>
+  </section>
+
+  <!-- Contact Summary -->
+  <section class="contact-summary">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> +91-9876543210</p>
+    <p><strong>Email:</strong> info&#64;rapidpharma.in</p>
+    <p><strong>Address:</strong> Sector 45, New Delhi, India</p>
+  </section>
+</div>

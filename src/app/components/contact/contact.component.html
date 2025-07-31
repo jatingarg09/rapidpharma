@@ -1,0 +1,61 @@
+<div class="contact-wrapper">
+  <div class="contact-container">
+    <!-- Left: Form -->
+    <div class="form-section">
+      <h2>Request Form</h2>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+        <div class="form-row">
+          <label for="name">Full Name</label>
+          <input id="name" type="text" formControlName="name" />
+          <div *ngIf="submitted && contactForm.controls['name'].invalid" class="error">
+            Name is required
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" type="email" formControlName="email" />
+          <div *ngIf="submitted && contactForm.controls['email'].invalid" class="error">
+            Valid email is required
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Phone Number</label>
+          <input id="phone" type="text" formControlName="phone" />
+          <div *ngIf="submitted && contactForm.controls['phone'].invalid" class="error">
+            Valid phone number is required
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Request / Message</label>
+          <textarea id="message" rows="4" formControlName="message"></textarea>
+          <div *ngIf="submitted && contactForm.controls['message'].invalid" class="error">
+            Message is required
+          </div>
+        </div>
+
+        <button type="submit">Submit Request</button>
+
+        <div *ngIf="submitted && contactForm.valid" class="success">
+          ✅ Thank you! Your request has been received.
+        </div>
+      </form>
+    </div>
+
+    <!-- Right: Contact Info -->
+    <div class="info-section">
+      <h2>Contact Information</h2>
+      <p><strong>Address:</strong><br> Sector 45, New Delhi, India</p>
+      <p><strong>Phone:</strong><br> +91-9876543210</p>
+      <p><strong>Email:</strong><br> info&#64;rapidpharma.in</p>
+
+      <h3>Business Hours</h3>
+      <p>Monday – Saturday<br> 9:00 AM – 6:00 PM</p>
+
+      <h3>Customer Support</h3>
+      <p>We typically respond within 1 business day.</p>
+    </div>
+  </div>
+</div>

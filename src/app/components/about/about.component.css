@@ -1,0 +1,36 @@
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background-color: #fff;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 32px;
+  color: #005bab;
+}
+
+.about-section {
+  margin-bottom: 32px;
+}
+
+.about-section h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  line-height: 1.6;
+}
+
+.about-section ul {
+  padding-left: 20px;
+}
+
+.about-section li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
