@@ -1,38 +1,9 @@
 <div class="home-page">
   <!-- Highlight Carousel Section -->
-  <section class="highlight-carousel">
-    <div class="carousel-container">
-      <div
-        class="carousel-slide"
-        [style.transform]="'translateX(-' + currentSlide * 100 + '%)'"
-      >
-        <div
-          class="carousel-item"
-          *ngFor="let highlight of highlights"
-          [ngClass]="{ 'hero-slide': highlight.type === 'hero' }"
-        >
-          <h1>{{ highlight.title }}</h1>
-          <p>{{ highlight.description }}</p>
-          <a
-            *ngIf="highlight.type === 'hero' && highlight.cta"
-            class="btn-hero"
-            href="/products"
-          >
-            {{ highlight.cta }}
-          </a>
-        </div>
-      </div>
+ <section class="hero-carousel-section">
+  <app-highlight-carousel></app-highlight-carousel>
+</section>
 
-      <!-- Pagination Dots -->
-      <div class="carousel-dots">
-        <span
-          *ngFor="let highlight of highlights; index as i"
-          [class.active]="i === currentSlide"
-          (click)="goToSlide(i)"
-        ></span>
-      </div>
-    </div>
-  </section>
   <!-- End of Highlight Carousel Section -->
 
   <!-- Who We Are -->
@@ -73,8 +44,8 @@
   <!-- Contact Summary -->
   <section class="contact-summary">
     <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91-9876543210</p>
-    <p><strong>Email:</strong> info&#64;rapidpharma.in</p>
-    <p><strong>Address:</strong> Sector 45, New Delhi, India</p>
+    <p><strong>Phone:</strong> +91-9530931538</p>
+    <p><strong>Email:</strong> contactrapidpharma&#64;gmail.com</p>
+    <p><strong>Address:</strong> #143,Street No.1,Ward No.1, Village Road- 148024,Punjab, India</p>
   </section>
 </div>

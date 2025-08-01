@@ -41,20 +41,21 @@ export class HomeComponent implements OnInit {
 
   sampleProducts = [
     {
-      name: 'Paracetamol 500mg',
-      description: 'Effective relief for fever and pain.',
-      image: 'assets/products/paracetamol.jpg'
+      name: 'AZIRAP-500',
+      description: 'Azithromycin Dihydrate equivalent to Azithromycin 500mg',
+      image: 'assets/products/azirap-500.jpg'
+
     },
     {
-      name: 'Cough Syrup',
-      description: 'Non-drowsy formula for dry cough.',
-      image: 'assets/products/cough.jpg'
+      name: 'CEFIMELT-100DT',
+      description: 'Cefixime 100mg (Dispersible Tablets)',
+      image: 'assets/products/azirap-500.jpg'
     },
     {
-      name: 'Multivitamin Tablets',
-      description: 'Boost your daily immunity and energy.',
-      image: 'assets/products/multivitamin.jpg'
-    }
+      name: 'CEFIMELT-200 LB',
+      description: 'Cefixime 200mg + Lactic Acid Bacillus 60 million spores',
+      image: 'assets/products/azirap-500.jpg'
+    },
   ];
 
   currentSlide = 0;
