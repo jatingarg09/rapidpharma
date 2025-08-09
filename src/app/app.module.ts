@@ -11,6 +11,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HighlightCarouselComponent } from './components/highlight-carousel/highlight-carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HighlightCarouselComponent } from './components/highlight-carousel/high
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule
   ],
   providers: [
     provideClientHydration()
