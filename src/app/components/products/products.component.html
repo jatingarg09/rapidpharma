@@ -1,9 +1,25 @@
 <section class="products">
   <h2>Our Products</h2>
+
+  <!-- Category Filter -->
+  <div class="category-filter">
+    <button *ngFor="let category of categories"
+            (click)="filterByCategory(category)"
+            [class.active]="selectedCategory === category">
+      {{ category }}
+    </button>
+  </div>
+
+  <!-- Product List -->
   <div class="product-list">
-    <div class="product-card" *ngFor="let product of products">
+    <div class="product-card"
+         *ngFor="let product of filteredProducts; let i = index"
+         [@fadeInOut]
+         [ngClass]="{ 'alt-background': i % 2 === 1 }">
       <h3>{{ product.name }}</h3>
-      <p>{{ product.description }}</p>
+      <p>{{ product.composition }}</p>
+      <!-- <small>Category: {{ product.category }}</small> -->
     </div>
   </div>
 </section>
+
