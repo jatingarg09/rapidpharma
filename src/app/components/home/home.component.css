@@ -9,91 +9,44 @@
   line-height: 1.6;
 }
 
-/* Section Headers */
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #004080;
-  border-bottom: 2px solid #d1e3f8;
-  padding-bottom: 0.5rem;
+.h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #4183bc;
 }
 
-/* Highlight Carousel */
-.highlight-carousel {
-  margin-bottom: 3rem;
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: #e6f0ff;
+.p {
+  font-size: 1.1em;
+  line-height: 1.6;
 }
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+.ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 1.05em;
+  line-height: 1.8;
 }
-
-.carousel-slide {
-  display: flex;
-  transition: transform 0.6s ease-in-out;
-}
-
-.carousel-item {
-  min-width: 100%;
-  padding: 3rem 2rem;
-  text-align: center;
-  background: linear-gradient(135deg, #d6eaff, #ffffff);
-  border-radius: 8px;
-}
-
-.carousel-item h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #0056b3;
-}
-
-.carousel-item p {
-  font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.btn-hero {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.btn-hero:hover {
-  background-color: #0056b3;
-}
-
-/* Pagination Dots */
-.carousel-dots {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.carousel-dots span {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  margin: 0 4px;
-  background-color: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.carousel-dots .active {
-  background-color: #007bff;
-}
-
 /* About, Services, Request, Contact */
-.about, .services, .request-cta, .contact-summary {
+.about {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.services,
+.request-cta,
+.contact-summary {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.request-quote {
   background-color: white;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -107,7 +60,7 @@ section h2 {
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .product-grid {
@@ -146,35 +99,50 @@ section h2 {
   color: #0056b3;
 }
 
-.cta-link {
-  display: inline-block;
-  margin-top: 1.5rem;
-  font-weight: 600;
-  color: #28a745;
-  text-decoration: none;
-}
-
 .cta-link:hover {
   text-decoration: underline;
 }
 
-/* Request Button */
-.cta-button {
+.info-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+.info-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.cta-link {
+  display: inline-block;
+  justify-content: center;
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
   background-color: #28a745;
   color: white;
-  padding: 0.8rem 1.4rem;
-  border-radius: 5px;
   text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 1rem;
-  transition: background-color 0.3s;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
-
-.cta-button:hover {
-  background-color: #218838;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .product-grid {
@@ -182,15 +150,11 @@ section h2 {
     align-items: center;
   }
 
-  .carousel-item {
-    padding: 2rem 1rem;
+  .info-row {
+    flex-direction: column;
   }
 
-  section h2 {
-    font-size: 1.6rem;
-  }
-
-  .carousel-item h1 {
-    font-size: 2rem;
+  .info-box {
+    width: 100%;
   }
 }

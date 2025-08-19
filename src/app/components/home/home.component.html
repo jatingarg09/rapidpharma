@@ -1,36 +1,88 @@
 <div class="home-page">
   <!-- Highlight Carousel Section -->
- <section class="hero-carousel-section">
-  <app-highlight-carousel></app-highlight-carousel>
-</section>
+  <section class="hero-carousel-section">
+    <app-highlight-carousel></app-highlight-carousel>
+  </section>
 
   <!-- End of Highlight Carousel Section -->
 
   <!-- Who We Are -->
   <section class="about">
-    <h2>Who We Are</h2>
-    <p>
-      Founded in 1997, Rapid Pharmaceuticals is a trusted pharmaceutical
-      supplier based in India. We operate under our brand name and have been
-      reliably serving healthcare institutions and distributors across the
-      country.
+    <!-- <section id="about-us" style="max-width: 800px; margin: auto; padding: 40px 20px;"> -->
+    <h2 class="h2">About Rapid Pharmaceuticals</h2>
+    <p class="p">
+      Founded in 1997 and relaunched with a renewed vision, Rapid
+      Pharmaceuticals is a trusted name in pharmaceutical distribution—now
+      operating through a dynamic PCD (Propaganda Cum Distribution) franchise
+      model across India.
+    </p>
+    <p class="p">
+      We specialize in delivering high-quality, affordable medicines sourced
+      from WHO-GMP and ISO-certified manufacturers. Our product portfolio spans
+      major therapeutic segments, designed to meet the evolving needs of
+      healthcare providers, pharmacies, and institutions nationwide.
+    </p>
+    <p class="p">
+      With a focus on transparency, scalability, and partner success, Rapid
+      empowers franchise associates with exclusive territory rights, marketing
+      support, and a structured product catalog built for clarity and growth.
+      Whether you're an aspiring entrepreneur or an established distributor,
+      Rapid offers the platform, products, and trust to help you thrive.
+    </p>
+    <p class="p">
+      We’re not just building a network—we’re building a movement for smarter,
+      faster, and more accountable healthcare delivery.
     </p>
   </section>
 
-  <!-- What We Do -->
   <section class="services">
-    <h2>What We Do</h2>
-    <p>
-      We are not manufacturers — instead, we focus on sourcing high-quality
-      medications and distributing them under our own brand label. Our
-      operations span across India, ensuring timely delivery and unmatched
-      customer satisfaction.
+    <h2 class="h2">Why Choose Us</h2>
+    <p class="p">
+      Rapid Pharmaceuticals is proud to operate through a robust PCD (Propaganda
+      Cum Distribution) franchise model—empowering entrepreneurs, distributors,
+      and medical representatives to build their own pharma businesses with the
+      strength of our brand and product portfolio.
+    </p>
+    <ul class="ul">
+      <li>
+        <strong>Established Legacy:</strong> With roots dating back to 1997, we
+        bring decades of trust, experience, and credibility to every franchise
+        partnership.
+      </li>
+      <li>
+        <strong>Certified Manufacturing:</strong> Our products are sourced from
+        WHO-GMP and ISO-compliant manufacturers, ensuring consistent quality and
+        regulatory confidence.
+      </li>
+      <li>
+        <strong>Wide Product Range:</strong> We offer a diverse catalog across
+        major therapeutic segments—giving franchise partners the flexibility to
+        target multiple markets.
+      </li>
+      <li>
+        <strong>Monopoly Rights:</strong> We provide exclusive territory rights
+        to our franchise partners, helping them grow without internal
+        competition.
+      </li>
+      <li>
+        <strong>Marketing Support:</strong> From promotional materials to
+        strategic guidance, we equip our partners with the tools they need to
+        succeed.
+      </li>
+      <li>
+        <strong>Low Investment, High Growth:</strong> Our PCD model is designed
+        for scalability—allowing partners to start lean and expand rapidly.
+      </li>
+    </ul>
+    <p class="p">
+      Join Rapid Pharmaceuticals and become part of a growing network that
+      delivers quality, trust, and opportunity—one franchise at a time.
     </p>
   </section>
 
   <!-- Featured Products -->
   <section class="products-preview">
-    <h2>Featured Products</h2>
+    <h2 class="h2">Featured Products</h2>
     <div class="product-grid">
       <div class="product-card" *ngFor="let product of sampleProducts">
         <img [src]="product.image" alt="{{ product.name }}" />
@@ -38,14 +90,33 @@
         <p>{{ product.description }}</p>
       </div>
     </div>
-    <a routerLink="/products" class="cta-link">View All Products</a>
+    <div class="cta-wrapper">
+      <a routerLink="/products" class="cta-link">View All Products</a>
+    </div>
   </section>
 
-  <!-- Contact Summary -->
-  <section class="contact-summary">
-    <h2>Contact Us</h2>
-    <p><strong>Phone:</strong> +91-9530931538</p>
-    <p><strong>Email:</strong> contactrapidpharma&#64;gmail.com</p>
-    <p><strong>Address:</strong> #143,Street No.1,Ward No.1, Village Road- 148024,Punjab, India</p>
+  <section class="info-section">
+    <div class="info-row">
+      <!-- Left: Request a Quote -->
+      <div class="info-box request-quote">
+        <h2 class="h2">Request a Quote</h2>
+        <p>
+          Interested in partnering with us or need more information? Fill out
+          our request form and our team will get back to you promptly.
+        </p>
+        <a routerLink="/contact" class="cta-link">Request a Quote</a>
+      </div>
+
+      <!-- Right: Contact Summary -->
+      <div class="info-box contact-summary">
+        <h2 class="h2">Contact Us</h2>
+        <p><strong>Phone:</strong> +91-9530931538</p>
+        <p><strong>Email:</strong> contactrapidpharma&#64;gmail.com</p>
+        <p>
+          <strong>Address:</strong> #143, Street No.1, Ward No.1, Village Road –
+          148024, Punjab, India
+        </p>
+      </div>
+    </div>
   </section>
 </div>
