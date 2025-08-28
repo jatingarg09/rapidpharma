@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://rapidpharmaceuticals.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Franchise Landing -->
+  <url>
+    <loc>https://rapidpharmaceuticals.com/franchise</loc>
+    <priority>0.9</priority>
+  </url>
+   <url>
+    <loc>https://rapidpharmaceuticals.com/products</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Product Clusters by Therapeutic Category -->
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/antibiotics</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/analgesics</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/dermatology</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Suffix Families -->
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/-plus</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/-ds</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/-rx</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Packaging Variants -->
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/blister-pack</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://rapidpharmaceuticals.com/products/bottle-pack</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact & About -->
+  <url>
+    <loc>https://rapidpharmaceuticals.com/contact</loc>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rapidpharmaceuticals.com/about</loc>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
