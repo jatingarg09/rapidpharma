@@ -114,10 +114,10 @@
 }
 
 .product-card img {
-  width: 110px;
-  height: 110px;
+  width: 250px;
+  height: 200px;
   object-fit: contain;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.2rem;
 }
 
 .product-card h3 {
@@ -176,6 +176,48 @@
   border-radius: 4px;
   transition: background-color 0.3s ease;
 }
+
+/* Slideshow Section */
+.product-slideshow {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Only apply these styles for single-card slideshow, not for .multi */
+.slideshow-container:not(.multi) {
+  width: 250px;
+  min-height: 320px;
+  position: relative;
+}
+.slideshow-container:not(.multi) .product-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.5s;
+  opacity: 0;
+  z-index: 1;
+}
+.slideshow-container:not(.multi) .product-card.active {
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+}
+
+/* Multi-card grid layout */
+.slideshow-container.multi {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.slideshow-container.multi .product-card {
+  /* Default block layout, no position/opacity/z-index/transition */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .h2 {
@@ -197,5 +239,24 @@
 
   .info-box {
     width: 100%;
- }
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .slideshow-container {
+    width: 90vw;
+    min-height: 180px;
+  }
+
+  .slideshow-container.multi {
+    grid-template-columns: 1fr;
+    min-height: 180px;
+  }
+
+  .slideshow-container.multi {
+    grid-template-columns: 1fr;
+    min-height: 180px;
+  }
 }

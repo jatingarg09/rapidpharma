@@ -84,11 +84,17 @@
   <!-- Featured Products -->
   <section class="products-preview">
     <h2 class="h2">Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card" *ngFor="let product of sampleProducts">
-        <img [src]="product.image" alt="{{ product.name }}" />
-        <h3>{{ product.name }}</h3>
-        <p>{{ product.description }}</p>
+    <!-- Slideshow: show 3 products at a time -->
+    <div class="product-slideshow" *ngIf="sampleProducts.length > 0">
+      <div class="slideshow-container multi">
+        <div class="product-card"
+             *ngFor="let product of getSlideshowProducts()">
+          <a [routerLink]="['/products']" style="text-decoration:none; color:inherit; display:block;">
+            <img [src]="product.image" alt="{{ product.name }}" />
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+          </a>
+        </div>
       </div>
     </div>
     <div class="cta-wrapper">
