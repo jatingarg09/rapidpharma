@@ -1,4 +1,5 @@
 <div class="home-page">
+
   <!-- Highlight Carousel Section -->
   <section class="hero-carousel-section">
     <app-highlight-carousel></app-highlight-carousel>
@@ -26,8 +27,6 @@
       With a focus on transparency, scalability, and partner success, Rapid
       empowers franchise associates with exclusive territory rights, marketing
       support, and a structured product catalog built for clarity and growth.
-      Whether you're an aspiring entrepreneur or an established distributor,
-      Rapid offers the platform, products, and trust to help you thrive.
     </p>
     <p class="p">
       We’re not just building a network—we’re building a movement for smarter,
@@ -35,59 +34,67 @@
     </p>
   </section>
 
+  <!-- Why Choose Us -->
   <section class="services">
     <h2 class="h2">Why Choose Us</h2>
-    <p class="p">
-      Rapid Pharmaceuticals is proud to operate through a robust PCD (Propaganda
-      Cum Distribution) franchise model—empowering entrepreneurs, distributors,
-      and medical representatives to build their own pharma businesses with the
-      strength of our brand and product portfolio.
-    </p>
-    <ul class="ul">
-      <li>
-        <strong>Established Legacy:</strong> With roots dating back to 1997, we
-        bring decades of trust, experience, and credibility to every franchise
-        partnership.
-      </li>
-      <li>
-        <strong>Certified Manufacturing:</strong> Our products are sourced from
-        WHO-GMP and ISO-compliant manufacturers, ensuring consistent quality and
-        regulatory confidence.
-      </li>
-      <li>
-        <strong>Wide Product Range:</strong> We offer a diverse catalog across
-        major therapeutic segments—giving franchise partners the flexibility to
-        target multiple markets.
-      </li>
-      <li>
-        <strong>Monopoly Rights:</strong> We provide exclusive territory rights
-        to our franchise partners, helping them grow without internal
-        competition.
-      </li>
-      <li>
-        <strong>Marketing Support:</strong> From promotional materials to
-        strategic guidance, we equip our partners with the tools they need to
-        succeed.
-      </li>
-      <li>
-        <strong>Low Investment, High Growth:</strong> Our PCD model is designed
-        for scalability—allowing partners to start lean and expand rapidly.
-      </li>
-    </ul>
-    <p class="p">
-      Join Rapid Pharmaceuticals and become part of a growing network that
-      delivers quality, trust, and opportunity—one franchise at a time.
-    </p>
+    <div class="services-grid">
+      <div class="service-card alt-gray">
+        <mat-icon class="icon">business</mat-icon>
+        <h3>Established Legacy</h3>
+        <p>With roots dating back to 1997, we bring decades of trust and credibility.</p>
+      </div>
+      <div class="service-card alt-teal">
+        <mat-icon class="icon">verified</mat-icon>
+        <h3>Certified Manufacturing</h3>
+        <p>Products sourced from WHO-GMP and ISO-compliant manufacturers.</p>
+      </div>
+      <div class="service-card alt-gray">
+        <mat-icon class="icon">medication</mat-icon>
+        <h3>Wide Product Range</h3>
+        <p>Diverse catalog across multiple therapeutic segments.</p>
+      </div>
+      <div class="service-card alt-teal">
+        <mat-icon class="icon">location_on</mat-icon>
+        <h3>Monopoly Rights</h3>
+        <p>Exclusive territory rights for our partners.</p>
+      </div>
+      <div class="service-card alt-teal">
+        <mat-icon class="icon">campaign</mat-icon>
+        <h3>Marketing Support</h3>
+        <p>Promotional materials and strategic guidance for success.</p>
+      </div>
+      <div class="service-card alt-gray">
+        <mat-icon class="icon">trending_up</mat-icon>
+        <h3>High Growth</h3>
+        <p>A PCD model designed for rapid scalability.</p>
+      </div>
+      <div class="service-card alt-teal">
+        <mat-icon class="icon">savings</mat-icon>
+        <h3>Affordable Pricing</h3>
+        <p>Competitive and transparent pricing designed to maximize partner profitability.</p>
+      </div>
+      <div class="service-card alt-gray">
+        <mat-icon class="icon">support_agent</mat-icon>
+        <h3>Dedicated Support</h3>
+        <p>Personalized assistance to guide partners at every stage of growth.</p>
+      </div>
+    </div>
   </section>
 
   <!-- Featured Products -->
   <section class="products-preview">
     <h2 class="h2">Featured Products</h2>
-    <div class="product-grid">
-      <div class="product-card" *ngFor="let product of sampleProducts">
-        <img [src]="product.image" alt="{{ product.name }}" />
-        <h3>{{ product.name }}</h3>
-        <p>{{ product.description }}</p>
+    <!-- Slideshow: show 3 products at a time -->
+    <div class="product-slideshow" *ngIf="sampleProducts.length > 0">
+      <div class="slideshow-container multi">
+        <div class="product-card"
+             *ngFor="let product of getSlideshowProducts()">
+          <a [routerLink]="['/products']" style="text-decoration:none; color:inherit; display:block;">
+            <img [src]="product.image" alt="{{ product.name }}" />
+            <h3>{{ product.name }}</h3>
+            <p>{{ product.description }}</p>
+          </a>
+        </div>
       </div>
     </div>
     <div class="cta-wrapper">
@@ -101,8 +108,7 @@
       <div class="info-box request-quote">
         <h2 class="h2">Request a Quote</h2>
         <p>
-          Interested in partnering with us or need more information? Fill out
-          our request form and our team will get back to you promptly.
+          Interested in partnering with us? Fill out our request form and our team will respond promptly.
         </p>
         <a routerLink="/contact" class="cta-link">Request a Quote</a>
       </div>
@@ -110,12 +116,9 @@
       <!-- Right: Contact Summary -->
       <div class="info-box contact-summary">
         <h2 class="h2">Contact Us</h2>
-        <p><strong>Phone:</strong> +91-9530931538</p>
-        <p><strong>Email:</strong> contactrapidpharma&#64;gmail.com</p>
-        <p>
-          <strong>Address:</strong> #143, Street No.1, Ward No.1, Village Road –
-          148024, Punjab, India
-        </p>
+        <p><mat-icon>phone</mat-icon> +91-9530931538</p>
+        <p><mat-icon>email</mat-icon> contactrapidpharma&#64;gmail.com</p>
+        <p><mat-icon>place</mat-icon> #143, Street No.1, Ward No.1, Punjab, India</p>
       </div>
     </div>
   </section>
