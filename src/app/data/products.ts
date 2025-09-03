@@ -158,7 +158,7 @@ export const products: Product[] = [
   {
     "name": "LIVERGLOW",
     "composition": "Liver syrup",
-    "category": "Syrup",
+    "category": "Syrup/Suspension",
     "packaging": "200ml bottle",
     "imageUrl": "/products/LIVERGLOW.png"
   },
@@ -256,7 +256,7 @@ export const products: Product[] = [
   {
     "name": "RAPINOVA",
     "composition": "Lycopene + Zinc + Manganese + others",
-    "category": "Syrup",
+    "category": "Syrup/Suspension",
     "packaging": "200ml bottle",
     "imageUrl": "/products/RAPINOVA.png"
   },

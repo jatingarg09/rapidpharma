@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent {
   contactForm: FormGroup;
   submitted = false;
+  showPopup = false; // Add popup flag
 
   constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
@@ -23,7 +24,12 @@ export class ContactComponent {
     this.submitted = true;
     if (this.contactForm.valid) {
       console.log(this.contactForm.value);
+      this.showPopup = true;
+      setTimeout(() => {
+        this.showPopup = false;
+      }, 3000); // Hide popup after 3 seconds
       this.contactForm.reset();
+      this.submitted = false;
     }
   }
 }
