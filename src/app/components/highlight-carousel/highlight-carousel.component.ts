@@ -1,10 +1,16 @@
 import { isPlatformBrowser } from '@angular/common';
-import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  Inject,
+  PLATFORM_ID,
+} from '@angular/core';
 
 @Component({
   selector: 'app-highlight-carousel',
   templateUrl: './highlight-carousel.component.html',
-  styleUrls: ['./highlight-carousel.component.css']
+  styleUrls: ['./highlight-carousel.component.css'],
 })
 export class HighlightCarouselComponent implements OnInit, OnDestroy {
   currentSlide = 0;
@@ -14,25 +20,29 @@ export class HighlightCarouselComponent implements OnInit, OnDestroy {
 
   slides = [
     {
-      image: 'assets/images/slide1.jpg',
-      title: 'Trusted by 500+ Distributors',
-      description: 'Delivering high-quality GMP-certified medicines nationwide.'
+      image: '/slide1.png',
+      title: 'Trusted Therapeutics',
+      description:
+        'GMP-certified medicines sourced from WHO-GMP and ISO-compliant manufacturers—delivered with clinical precision.',
     },
     {
-      image: 'assets/images/slide2.jpg',
-      title: 'Fast Delivery',
-      description: 'We ensure delivery of products anywhere in India within 72 hours.'
+      image: '/slide2.webp',
+      title: 'Pan-India Distribution Network',
+      description:
+        'Delivering to clinics, pharmacies, and distributors across India within 2–3 working days—ensuring uninterrupted access to essential medicines.',
     },
     {
-      image: 'assets/images/slide3.jpg',
-      title: 'Affordable Healthcare',
-      description: 'Making healthcare accessible without compromising on quality.'
+      image: '/slide3.webp',
+      title: 'Accessible, Ethical Healthcare',
+      description:
+        'Affordable pricing and transparent practices—making quality healthcare accessible without compromising on quality.',
     },
     {
-      image: 'assets/images/slide4.jpg',
-      title: 'Our Commitment',
-      description: 'Providing innovative pharmaceutical solutions with reliability and care.'
-    }
+      image: '/slide4.webp',
+      title: 'Partner-Centric Growth',
+      description:
+        'Strategic support, promotional materials, and monopoly rights—empowering franchise partners for long-term success.',
+    },
   ];
 
   ngOnInit(): void {
