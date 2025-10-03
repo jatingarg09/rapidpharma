@@ -18,7 +18,7 @@
          [ngClass]="{ 'alt-background': i % 2 === 1 }">
       <img class="product-image-large"
            [src]="product.imageUrl"
-           alt="{{ product.name }}" />
+           alt="{{ product.name }}" loading="lazy" />
       <div class="product-info">
         <h3>{{ product.name }}</h3>
         <p>{{ product.composition }}</p>
