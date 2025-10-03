@@ -1,4 +1,4 @@
-.home-page {
+/* .home-page {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f8f9fa;
   color: #212529;
@@ -6,7 +6,7 @@
   max-width: 1200px;
   margin: auto;
   line-height: 1.6;
-}
+} */
 
 .h2 {
   font-size: 2em;
@@ -27,7 +27,7 @@
 }
 /* About, Services, Request, Contact */
 .about {
-  background-color: white;
+  background-color: #f8f9fa;
   padding: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -37,7 +37,7 @@
 
 /* Services Section */
 .services {
-  background-color: white;
+  background-color: #f8f9fa;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
   padding: 2rem 1rem;
   border-radius: 12px;
@@ -52,7 +52,7 @@
 }
 
 .service-card {
-  background: #fff;
+  background-color: #f8f9fa;
   padding: 1.5rem;
   border-radius: 12px;
   text-align: center;
@@ -86,7 +86,7 @@
 }
 /* Products Preview */
 .products-preview {
-  background-color: white;
+  background-color: #f8f9fa;
   padding: 2rem 1rem;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
@@ -145,7 +145,7 @@
 }
 
 .info-box {
-  background-color: white;
+  background-color: #f8f9fa;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
@@ -214,9 +214,6 @@
   width: 100%;
 }
 
-.slideshow-container.multi .product-card {
-  /* Default block layout, no position/opacity/z-index/transition */
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
