@@ -18,27 +18,27 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       name: 'CEFIMELT-100DT',
       description: 'Cefixime 100mg (Dispersible Tablets)',
-      image: '/products/CEFIMELT-100DT.png'
+      image: '/products/CEFIMELT-100DT.jpg'
     },
     {
       name: 'CEFIMELT-200 LB',
       description: 'Cefixime 200mg + Lactic Acid Bacillus 60 million spores',
-      image: '/products/CEFIMELT-200LB.png'
+      image: '/products/CEFIMELT-200LB.jpg'
     },
     {
       name : "D3NOW",
       description : "Vitamin D3 60000 IU",
-      image : "/products/D3 NOW.png"
+      image : "/products/D3 NOW.jpg"
     },
     {
       name : "GASTRONEX-IV",
       description : "Pantoprazole Sodium 40mg",
-      image : "/products/GASTRONEX-IV.png"
+      image : "/products/GASTRONEX-IV.jpg"
     },
     {
       name : "ZYLIVIN",
       description : "Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others",
-      image : "/products/ZYLIVIN.png"
+      image : "/products/ZYLIVIN.jpg"
     },
   ];
 
