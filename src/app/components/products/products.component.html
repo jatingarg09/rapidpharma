@@ -11,23 +11,33 @@
   </div>
 
   <!-- Product List -->
-  <div class="product-list">
+  <div class="product-list" [@listAnimation]>
     <div class="product-card"
          *ngFor="let product of filteredProducts; let i = index"
          [@fadeInOut]
          [ngClass]="{ 'alt-background': i % 2 === 1 }">
+
+      <!-- Image -->
       <img class="product-image-large"
            [src]="product.imageUrl"
-           alt="{{ product.name }}" loading="lazy" />
+           alt="{{ product.name }}"
+           loading="lazy" />
+
+      <!-- Product Details -->
       <div class="product-info">
-        <h3>{{ product.name }}</h3>
+        <div class="product-header">
+          <h3>{{ product.name }}</h3>
+          <button class="detail-btn-inline"
+                  (click)="goToProduct(product)"
+                  >
+            <mat-icon>info</mat-icon> Details
+          </button>
+        </div>
         <p>{{ product.composition }}</p>
         <div class="product-packaging">
           <strong>Packaging:</strong> {{ product.packaging }}
         </div>
       </div>
-      <!-- <small>Category: {{ product.category }}</small> -->
     </div>
   </div>
 </section>
-

@@ -80,20 +80,49 @@ h2 {
   box-sizing: border-box;
 }
 
+/* Product header with improved spacing */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+}
+
 .product-info h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.15rem;
   font-weight: 600;
   word-break: break-word;
-  width: 100%;
   color: #007bff;
+}
+
+/* Details button improved spacing and visibility */
+.detail-btn-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.95rem;
+  background: none;
+  border: none;
+  color: #6f42c1;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 0.2rem 0.4rem;
+  transition: color 0.2s ease;
+}
+
+.detail-btn-inline:hover,
+.detail-btn-inline:focus {
+  text-decoration: underline;
+  color: #6f42c1;
+  outline: none;
 }
 
 .product-info p {
   margin: 0 0 0.5rem 0;
   font-size: 1rem;
   word-break: break-word;
-  width: 100%;
   color: #222;
 }
 
@@ -101,7 +130,6 @@ h2 {
   margin: 0.5rem 0 0 0;
   font-size: 1rem;
   color: #28a745;
-  width: 100%;
   word-break: break-word;
 }
 
@@ -126,5 +154,14 @@ h2 {
   }
   .product-image-large {
     height: 80px;
+  }
+  .product-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .detail-btn-inline {
+    font-size: 0.85rem;
+    margin-top: 0;
   }
 }

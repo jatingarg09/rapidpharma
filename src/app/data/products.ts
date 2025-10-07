@@ -5,6 +5,7 @@ export interface Product {
   category: string;
   packaging: string;
   imageUrl: string; // Added imageUrl property
+  slug?: string; // Optional slug property for URL
 }
 // This file contains a list of pharmaceutical products with their details.
 export const products: Product[] = [
@@ -12,7 +13,7 @@ export const products: Product[] = [
     "name": "AZIRAP-500",
     "composition": "Azithromycin Dihydrate equivalent to Azithromycin 500mg",
     "category": "Tablet",
-    "packaging": "10x5 Blister",
+    "packaging": "10x3 Blister",
     "imageUrl": "/products/AZIRAP-500.png"
   },
   {
@@ -366,3 +367,30 @@ export const products: Product[] = [
     "imageUrl": "/products/ZYLIVIN.jpg"
   }
 ];
+
+function generateSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-') // replace spaces/symbols with hyphen
+    .replace(/^-+|-+$/g, '');    // remove trailing hyphens
+}
+
+// --- Add slugs dynamically ---
+(function addUniqueSlugs() {
+  const slugCounts: Record<string, number> = {};
+
+  products.forEach(product => {
+    let baseSlug = generateSlug(product.composition);
+    let slug = baseSlug;
+
+    // Ensure uniqueness by appending a number if needed
+    if (slugCounts[baseSlug]) {
+      slugCounts[baseSlug]++;
+      slug = `${baseSlug}-${slugCounts[baseSlug]}`;
+    } else {
+      slugCounts[baseSlug] = 1;
+    }
+
+    product.slug = slug;
+  });
+})();
