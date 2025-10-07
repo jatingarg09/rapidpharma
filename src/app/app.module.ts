@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -15,6 +14,7 @@ import { HighlightCarouselComponent } from './components/highlight-carousel/high
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AboutComponent,
     ProductsComponent,
     ContactComponent,
-    HighlightCarouselComponent
+    HighlightCarouselComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
