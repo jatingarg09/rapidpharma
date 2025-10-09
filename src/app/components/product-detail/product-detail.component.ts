@@ -50,10 +50,9 @@ export class ProductDetailComponent implements OnInit {
 
   /** ✅ SEO Meta + OG + Twitter */
   setMetaTags(): void {
-    const pageTitle = `${this.product.name} | Rapid Pharmaceuticals`;
+    const pageTitle = `${this.product.name} | ${this.product.composition} | Rapid Pharmaceuticals`;
     const pageDescription =
-      this.product.composition ||
-      'High-quality pharmaceutical product by Rapid Pharmaceuticals.';
+      `${this.product.name} containing ${this.product.composition} — high-quality medicines by Rapid Pharmaceuticals, available for PCD franchise.`
     const imageUrl =
       this.product.imageUrl ||
       'https://rapidpharmaceuticals.in/assets/og-image.jpg';
