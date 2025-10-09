@@ -214,6 +214,13 @@
   width: 100%;
 }
 
+.contact-summary{
+  background-color: #f8f9fa;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -255,5 +262,32 @@
   .slideshow-container.multi {
     grid-template-columns: 1fr;
     min-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h2 {
+    font-size: 1.4rem;
+  }
+
+  .service-card .icon {
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+  }
+  .product-card img {
+    width: 80px;
+    height: 80px;
+  }
+  .slideshow-container {
+    width: 100%;
+    min-height: 150px;
+  }
+  .slideshow-container.multi {
+    grid-template-columns: 1fr;
+    min-height: 150px;
+  }
+  .contact-summary {
+    padding: 1rem;
   }
 }
