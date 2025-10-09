@@ -105,6 +105,13 @@ export class ProductDetailComponent implements OnInit {
         '@type': 'Brand',
         name: 'Rapid Pharmaceuticals',
       },
+      offers: {
+        '@type': 'Offer',
+        url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+        priceCurrency: 'INR',
+        availability: 'https://schema.org/InStock',
+        itemCondition: 'https://schema.org/NewCondition',
+      },
     });
     document.head.appendChild(script);
   }
