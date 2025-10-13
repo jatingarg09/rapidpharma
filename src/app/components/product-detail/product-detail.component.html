@@ -4,7 +4,9 @@
     <div class="product-info">
       <h1>{{ product.name }}</h1>
       <p class="category">Category: {{ product.category }}</p>
-      <p class="composition">{{ product.composition }}</p>
+      <p class="packaging">Packaging: {{ product.packaging }}</p>
+      <p class="composition">Composition: {{ product.fullComposition }}</p>
+      <p class="therapeutic-class">Therapeutic Class: {{ product.therapeuticClass }}</p>
       <button routerLink="/contact" class="enquiry-btn">Request Info</button>
     </div>
   </div>

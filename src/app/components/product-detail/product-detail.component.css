@@ -32,11 +32,13 @@
   margin-bottom: 10px;
 }
 
-.product-info .category {
+.product-info .category,
+.product-info .composition,
+.product-info .packaging,
+.product-info .therapeutic-class {
   font-weight: 500;
   color: #555;
 }
-
 .product-info .description {
   line-height: 1.6;
   margin-top: 10px;
