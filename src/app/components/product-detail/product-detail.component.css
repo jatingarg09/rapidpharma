@@ -45,6 +45,12 @@
   color: #333;
 }
 
+.product-info .mrp {
+  font-size: 1.1rem;
+  color: #dc3545;
+  margin: 0.5rem 0;
+}
+
 .enquiry-btn {
   margin-top: 20px;
   background-color: #1976d2;

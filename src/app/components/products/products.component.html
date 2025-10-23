@@ -34,8 +34,11 @@
           </button>
         </div>
         <p>{{ product.composition }}</p>
-        <div class="product-packaging">
+        <!-- <div class="product-packaging">
           <strong>Packaging:</strong> {{ product.packaging }}
+        </div> -->
+        <div class="product-mrp">
+          <strong>MRP:</strong> ₹{{ product.mrp.toFixed(2) }}
         </div>
       </div>
     </div>

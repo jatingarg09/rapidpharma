@@ -133,6 +133,14 @@ h2 {
   word-break: break-word;
 }
 
+.product-info .product-mrp {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  color: #28a745;
+  word-break: break-word;
+}
+
+
 .product-card.alt-background {
   background-color: transparent;
 }
