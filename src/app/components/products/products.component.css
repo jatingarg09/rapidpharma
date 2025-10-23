@@ -7,124 +7,6 @@ h2 {
   margin-bottom: 1rem;
 }
 
-.controls-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 0 0 2rem 0;
-}
-
-.controls-left {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex: 1;
-}
-
-.search-bar {
-  width: 300px;
-}
-
-.category-select {
-  width: 200px;
-}
-
-.search-bar mat-form-field,
-.category-select mat-form-field {
-  width: 100%;
-}
-
-.controls-right {
-  flex-shrink: 0;
-}
-
-.category-filter {
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.category-filter {
-  display: flex;
-  gap: 0.75rem;
-  overflow-x: auto;
-  padding: 0.5rem 0;
-  margin: 0;
-  -webkit-overflow-scrolling: touch;
-}
-
-.category-filter button {
-  padding: 0.6rem 1.25rem;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #666;
-  background: white;
-  border: 1px solid #e0e0e0;
-  border-radius: 25px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.2s ease-in-out;
-  position: relative;
-  overflow: hidden;
-}
-
-.category-filter button:hover {
-  border-color: #007bff;
-  color: #007bff;
-  transform: translateY(-1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.category-filter button.active {
-  background: #007bff;
-  color: white;
-  border-color: #007bff;
-  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
-}
-
-.category-filter button.active:hover {
-  background: #0056b3;
-  transform: translateY(-1px);
-}
-
-.category-filter button:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
-}
-
-/* Pill shape hover effect */
-.category-filter button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 123, 255, 0.1);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-  z-index: -1;
-}
-
-.category-filter button:hover::before {
-  transform: scaleX(1);
-}
-
-/* First and last button special styling */
-.category-filter button:first-child {
-  background: #e3f2fd;
-  border-color: #bbdefb;
-}
-
-.category-filter button:first-child:hover {
-  background: #bbdefb;
-}
-
-/* Search bar styles */
 .search-bar {
   width: 100%;
   max-width: 600px;
@@ -152,14 +34,6 @@ h2 {
 
 .category-filter::-webkit-scrollbar {
   display: none;
-}
-
-mat-paginator {
-  flex: 0 1 auto;
-  background: transparent;
-  margin: 0;
-  border-radius: 8px;
-  padding: 0;
 }
 
 .product-list {

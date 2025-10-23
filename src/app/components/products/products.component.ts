@@ -1,7 +1,7 @@
-import { Component, OnInit, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { Product, products } from '../../data/products';
-import { trigger, style, transition, animate, stagger, query } from '@angular/animations';
+import { trigger, style, transition, animate } from '@angular/animations';
 import { Router } from '@angular/router';
 
 @Component({
