@@ -1,19 +1,59 @@
 <section class="products">
   <h2>Our Products</h2>
 
-  <!-- Category Filter -->
-  <div class="category-filter">
-    <button *ngFor="let category of categories"
-            (click)="filterByCategory(category)"
-            [class.active]="selectedCategory === category">
-      {{ category }}
-    </button>
+  <div class="controls-container">
+    <div class="controls-wrapper">
+      <div class="filters-group">
+        <mat-form-field appearance="outline" class="category-field">
+          <mat-label>Filter by Category</mat-label>
+          <mat-select [(value)]="selectedCategory" 
+                     (selectionChange)="filterByCategory($event.value)"
+                     matTooltip="Select product category">
+            <mat-option *ngFor="let category of categories" [value]="category">
+              {{ category }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline" class="search-field">
+          <mat-label>Search Products</mat-label>
+          <input matInput 
+                 (keyup)="applyFilter($event)" 
+                 placeholder="Enter product name or composition">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        
+      </div>
+
+      <!-- Desktop Pagination -->
+      <div class="pagination-group">
+        <div class="page-numbers">
+          <button mat-fab class="nav-button" [disabled]="currentPage === 0"
+                  (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage - 1, pageSize: pageSize, length: filteredProducts.length})">
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          
+          <ng-container *ngFor="let page of getVisiblePages()">
+            <button mat-fab [class.active]="currentPage === page"
+                    (click)="onPageChange({previousPageIndex: currentPage, pageIndex: page, pageSize: pageSize, length: filteredProducts.length})">
+              {{ page + 1 }}
+            </button>
+          </ng-container>
+          
+          <button mat-fab class="nav-button" [disabled]="currentPage === totalPages - 1"
+                  (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage + 1, pageSize: pageSize, length: filteredProducts.length})">
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Product List -->
   <div class="product-list" [@listAnimation]>
     <div class="product-card"
-         *ngFor="let product of filteredProducts; let i = index"
+         *ngFor="let product of pagedProducts; let i = index"
          [@fadeInOut]
          [ngClass]="{ 'alt-background': i % 2 === 1 }">
 
@@ -41,6 +81,28 @@
           <strong>MRP:</strong> ₹{{ product.mrp.toFixed(2) }}
         </div>
       </div>
+    </div>
+  </div>
+
+  <!-- Mobile Pagination -->
+  <div class="mobile-pagination">
+    <div class="page-numbers">
+      <button mat-fab class="nav-button" [disabled]="currentPage === 0"
+              (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage - 1, pageSize: pageSize, length: filteredProducts.length})">
+        <mat-icon>chevron_left</mat-icon>
+      </button>
+      
+      <ng-container *ngFor="let page of getVisiblePages()">
+        <button mat-fab [class.active]="currentPage === page"
+                (click)="onPageChange({previousPageIndex: currentPage, pageIndex: page, pageSize: pageSize, length: filteredProducts.length})">
+          {{ page + 1 }}
+        </button>
+      </ng-container>
+      
+      <button mat-fab class="nav-button" [disabled]="currentPage === totalPages - 1"
+              (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage + 1, pageSize: pageSize, length: filteredProducts.length})">
+        <mat-icon>chevron_right</mat-icon>
+      </button>
     </div>
   </div>
 </section>
