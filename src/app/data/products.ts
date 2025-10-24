@@ -17,7 +17,7 @@ export const products: Product[] = [
     "composition": "Azithromycin Dihydrate equivalent to Azithromycin 500mg",
     "category": "Tablet",
     "packaging": "10x3 Blister",
-    "imageUrl": "/products/AZIRAP-500.png",
+    "imageUrl": "/productswebp/AZIRAP-500.png",
     "fullComposition": "Azithromycin Dihydrate IP eq. to Azithromycin 500mg",
     "therapeuticClass": "Antibiotic",
     "mrp": 755
@@ -27,7 +27,7 @@ export const products: Product[] = [
     "composition": "Cefixime 100mg (Dispersible Tablets)",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/CEFIMELT-100DT.jpg",
+    "imageUrl": "/productswebp/CEFIMELT-100DT.webp",
     "fullComposition": "Cefixime IP 100mg",
     "therapeuticClass": "Antibiotic",
     "mrp": 900
@@ -37,7 +37,7 @@ export const products: Product[] = [
     "composition": "Cefixime 200mg + Lactic Acid Bacillus",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/CEFIMELT-200LB.jpg",
+    "imageUrl": "/productswebp/CEFIMELT-200LB.webp",
     "fullComposition": "Cefixime IP 200mg + Lactic Acid Bacillus 60 million spores",
     "therapeuticClass": "Antibiotic",
     "mrp": 1600
@@ -47,7 +47,7 @@ export const products: Product[] = [
     "composition": "Ceftriaxone + Sulbactam",
     "category": "Injection",
     "packaging": "1 vial",
-    "imageUrl": "/products/CEFIMELT-S 1.5GM.jpg",
+    "imageUrl": "/productswebp/CEFIMELT-S 1.5GM.webp",
     "fullComposition": "Ceftriaxone Sodium IP 1g + Sulbactam Sodium IP 500mg",
     "therapeuticClass": "Antibiotic",
     "mrp": 227.50
@@ -57,7 +57,7 @@ export const products: Product[] = [
     "composition": "Montelukast + Levocetirizine",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/CLARYMONT-L.jpg",
+    "imageUrl": "/productswebp/CLARYMONT-L.webp",
     "fullComposition": "Montelukast Sodium IP eq. to Montelukast 10mg + Levocetirizine Dihydrochloride IP 5mg",
     "therapeuticClass": "Antiallergic & Respiratory",
     "mrp": 999.90
@@ -67,7 +67,7 @@ export const products: Product[] = [
     "composition": "Ambroxol + Terbutaline + Guaiphenesin + Menthol",
     "category": "Syrup/Suspension",
     "packaging": "100ml bottle",
-    "imageUrl": "/products/COFIRAP.jpg",
+    "imageUrl": "/productswebp/COFIRAP.webp",
     "fullComposition": "Ambroxol Hydrochloride IP 15mg + Terbutaline Sulphate IP 1.25mg + Guaiphenesin IP 50mg + Menthol IP 2mg per 5ml",
     "therapeuticClass": "Cough & Cold",
     "mrp": 125
@@ -77,7 +77,7 @@ export const products: Product[] = [
     "composition": "Dextromethorphan + Phenylephrine + Chlorpheniramine",
     "category": "Syrup/Suspension",
     "packaging": "100ml bottle",
-    "imageUrl": "/products/COFIRAP-D.jpg",
+    "imageUrl": "/productswebp/COFIRAP-D.webp",
     "fullComposition": "Dextromethorphan Hydrobromide IP 10mg + Phenylephrine Hydrochloride IP 5mg + Chlorpheniramine Maleate IP 2mg per 5ml",
     "therapeuticClass": "Cough & Cold",
     "mrp": 125
@@ -87,7 +87,7 @@ export const products: Product[] = [
     "composition": "Ambroxol 30mg + Levosalbutamol 1mg + Guaifenesin 50mg/5ml",
     "category": "Syrup/Suspension",
     "packaging": "100ml bottle",
-    "imageUrl": "/products/COFIRAP-LS.jpg",
+    "imageUrl": "/productswebp/COFIRAP-LS.webp",
     "fullComposition": "Ambroxol Hydrochloride IP 30mg + Levosalbutamol Hydrochloride IP 1mg + Guaifenesin IP 50mg per 5ml",
     "therapeuticClass": "Cough & Cold",
     "mrp": 125
@@ -97,7 +97,7 @@ export const products: Product[] = [
     "composition": "Vitamin D3 60000 IU",
     "category": "Capsule",
     "packaging": "10x1x4 Blister",
-    "imageUrl": "/products/D3 NOW-2.jpg",
+    "imageUrl": "/productswebp/D3 NOW-2.webp",
     "fullComposition": "Cholecalciferol (Vitamin D3) IP 60000 IU",
     "therapeuticClass": "Vitamin Supplement",
     "mrp": 1299
@@ -107,7 +107,7 @@ export const products: Product[] = [
     "composition": "Vitamin D3 Oral Solution 60000 IU",
     "category": "Syrup/Suspension",
     "packaging": "5ml Shot",
-    "imageUrl": "/products/D3 NOW.jpg",
+    "imageUrl": "/productswebp/D3 NOW.webp",
     "fullComposition": "Cholecalciferol (Vitamin D3) IP 60000 IU per 5ml",
     "therapeuticClass": "Vitamin Supplement",
     "mrp": 320
@@ -117,7 +117,7 @@ export const products: Product[] = [
     "composition": "Nandrolone Decanoate 50mg/ml",
     "category": "Injection",
     "packaging": "1 ampoule",
-    "imageUrl": "/products/DECARAP-50.jpg",
+    "imageUrl": "/productswebp/DECARAP-50.webp",
     "fullComposition": "Nandrolone Decanoate IP 50mg per ml",
     "therapeuticClass": "Steroid",
     "mrp": 240
@@ -127,7 +127,7 @@ export const products: Product[] = [
     "composition": "Deflazacort 6mg",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/DEFZORAP-6.jpg",
+    "imageUrl": "/productswebp/DEFZORAP-6.webp",
     "fullComposition": "Deflazacort IP 6mg",
     "therapeuticClass": "Steroid",
     "mrp": 1300
@@ -137,7 +137,7 @@ export const products: Product[] = [
     "composition": "Rabeprazole Sodium (EC) + Domperidone (SR)",
     "category": "Capsule",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/DOMERAP-R.jpg",
+    "imageUrl": "/productswebp/DOMERAP-R.webp",
     "fullComposition": "Rabeprazole Sodium IP 20mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)",
     "therapeuticClass": "Gastrointestinal",
     "mrp": 990
@@ -147,7 +147,7 @@ export const products: Product[] = [
     "composition": "Pantoprazole Sodium (EC) + Domperidone (SR)",
     "category": "Capsule",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/DOMPANT-SR.jpg",
+    "imageUrl": "/productswebp/DOMPANT-SR.webp",
     "fullComposition": "Pantoprazole Sodium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)",
     "therapeuticClass": "Gastrointestinal",
     "mrp": 1100
@@ -157,7 +157,7 @@ export const products: Product[] = [
     "composition": "Esomeprazole (EC) + Domperidone (SR)",
     "category": "Capsule",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/ESMORIZE-D.jpg",
+    "imageUrl": "/productswebp/ESMORIZE-D.webp",
     "fullComposition": "Esomeprazole Magnesium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)",
     "therapeuticClass": "Gastrointestinal",
     "mrp": 1100
@@ -167,7 +167,7 @@ export const products: Product[] = [
     "composition": "Esomeprazole + Domperidone + Levosulpiride",
     "category": "Capsule",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/ESMORIZE-LSR.jpg",
+    "imageUrl": "/productswebp/ESMORIZE-LSR.webp",
     "fullComposition": "Esomeprazole Magnesium IP 40mg + Domperidone IP 30mg + Levosulpiride IP 25mg",
     "therapeuticClass": "Gastrointestinal",
     "mrp": 1900
@@ -177,7 +177,7 @@ export const products: Product[] = [
     "composition": "Etoricoxib + Thiocolchicoside",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/ETOBRAN-TH.jpg",
+    "imageUrl": "/productswebp/ETOBRAN-TH.webp",
     "fullComposition": "Etoricoxib IP 60mg + Thiocolchicoside IP 4mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 2290
@@ -187,7 +187,7 @@ export const products: Product[] = [
     "composition": "Pantoprazole Sodium 40mg",
     "category": "Injection",
     "packaging": "1 vial",
-    "imageUrl": "/products/GASTRONEX-IV.jpg",
+    "imageUrl": "/productswebp/GASTRONEX-IV.webp",
     "fullComposition": "Pantoprazole Sodium IP 40mg per vial",
     "therapeuticClass": "Gastrointestinal",
     "mrp": 56.50
@@ -197,7 +197,7 @@ export const products: Product[] = [
     "composition": "Green Tea Extract + Ginseng + Ginkgo Biloba + others",
     "category": "Capsule",
     "packaging": "10x10 Softgel Capsule",
-    "imageUrl": "/products/GINSORAP 9G.jpg",
+    "imageUrl": "/productswebp/GINSORAP 9G.webp",
     "fullComposition": "Green Tea Extract 50mg + Ginseng Extract 42.5mg + Ginkgo Biloba Extract 20mg + Multivitamins + Multiminerals per softgel capsule",
     "therapeuticClass": "Nutraceutical",
     "mrp": 2500
@@ -207,7 +207,7 @@ export const products: Product[] = [
     "composition": "Ginseng + Multivitamins + Multiminerals + Probiotics",
     "category": "Capsule",
     "packaging": "10x10 Softgel Capsule",
-    "imageUrl": "/products/GINSORAP A-Z.jpg",
+    "imageUrl": "/productswebp/GINSORAP A-Z.webp",
     "fullComposition": "Ginseng Extract 42.5mg + Multivitamins + Multiminerals + Probiotics per softgel capsule",
     "therapeuticClass": "Nutraceutical",
     "mrp": 1320
@@ -217,7 +217,7 @@ export const products: Product[] = [
     "composition": "Glimepiride + Metformin (SR)",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/GLYNORAP-M1.jpg",
+    "imageUrl": "/productswebp/GLYNORAP-M1.webp",
     "fullComposition": "Glimepiride IP 1mg + Metformin Hydrochloride IP 500mg (Sustained Release)",
     "therapeuticClass": "Antidiabetic",
     "mrp": 799
@@ -227,7 +227,7 @@ export const products: Product[] = [
     "composition": "Glimepiride + Metformin (SR)",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/GLYNORAP-M2.jpg",
+    "imageUrl": "/productswebp/GLYNORAP-M2.webp",
     "fullComposition": "Glimepiride IP 2mg + Metformin Hydrochloride IP 500mg (Sustained Release)",
     "therapeuticClass": "Antidiabetic",
     "mrp": 990
@@ -237,7 +237,7 @@ export const products: Product[] = [
     "composition": "Liver syrup",
     "category": "Syrup/Suspension",
     "packaging": "200ml bottle",
-    "imageUrl": "/products/LIVERGLOW.jpg",
+    "imageUrl": "/productswebp/LIVERGLOW.webp",
     "fullComposition": "Ayurvedic Liver Extracts (Detailed composition as per label) per 10ml",
     "therapeuticClass": "Liver Tonic",
     "mrp": 120
@@ -247,7 +247,7 @@ export const products: Product[] = [
     "composition": "Magaldrate + Simethicone",
     "category": "Syrup/Suspension",
     "packaging": "170ml bottle",
-    "imageUrl": "/products/MAGZORAP.jpg",
+    "imageUrl": "/productswebp/MAGZORAP.webp",
     "fullComposition": "Magaldrate IP 400mg + Simethicone IP 20mg per 5ml",
     "therapeuticClass": "Antacid",
     "mrp": 105
@@ -257,7 +257,7 @@ export const products: Product[] = [
     "composition": "Mefenamic Acid 50mg + Paracetamol 125mg/5ml",
     "category": "Syrup/Suspension",
     "packaging": "60ml bottle",
-    "imageUrl": "/products/MEFAPED-125.jpg",
+    "imageUrl": "/productswebp/MEFAPED-125.webp",
     "fullComposition": "Mefenamic Acid IP 50mg + Paracetamol IP 125mg per 5ml",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 51.65
@@ -267,7 +267,7 @@ export const products: Product[] = [
     "composition": "Nimesulide + Paracetamol",
     "category": "Tablet",
     "packaging": "20x10 Alu Alu",
-    "imageUrl": "/products/NIMRAP-P.jpg",
+    "imageUrl": "/productswebp/NIMRAP-P.webp",
     "fullComposition": "Nimesulide IP 100mg + Paracetamol IP 325mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 1000
@@ -277,7 +277,7 @@ export const products: Product[] = [
     "composition": "Piperacillin + Tazobactam",
     "category": "Injection",
     "packaging": "1 vial",
-    "imageUrl": "/products/PIPZORAP-TZ.jpg",
+    "imageUrl": "/productswebp/PIPZORAP-TZ.webp",
     "fullComposition": "Piperacillin Sodium IP 4g + Tazobactam Sodium IP 0.5g per vial",
     "therapeuticClass": "Antibiotic",
     "mrp": 455.12
@@ -287,7 +287,7 @@ export const products: Product[] = [
     "composition": "Ferrous Ascorbate + Folic Acid + Zinc Sulphate",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/PRO-FC.jpg",
+    "imageUrl": "/productswebp/PRO-FC.webp",
     "fullComposition": "Ferrous Ascorbate IP 100mg + Folic Acid IP 1.5mg + Zinc Sulphate IP 22.5mg",
     "therapeuticClass": "Iron Supplement",
     "mrp": 1320
@@ -297,7 +297,7 @@ export const products: Product[] = [
     "composition": "Amikacin Sulphate 500mg/2ml",
     "category": "Injection",
     "packaging": "1 ampoule",
-    "imageUrl": "/products/RAPIKACIN-500.jpg",
+    "imageUrl": "/productswebp/RAPIKACIN-500.webp",
     "fullComposition": "Amikacin Sulphate IP 500mg per 2ml ampoule",
     "therapeuticClass": "Antibiotic",
     "mrp": 113.76
@@ -307,7 +307,7 @@ export const products: Product[] = [
     "composition": "Ketorolac Tromethamine",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPIFLAM-KT.jpg",
+    "imageUrl": "/productswebp/RAPIFLAM-KT.webp",
     "fullComposition": "Ketorolac Tromethamine IP 10mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 1500
@@ -317,7 +317,7 @@ export const products: Product[] = [
     "composition": "Ibuprofen + Paracetamol",
     "category": "Syrup/Suspension",
     "packaging": "60ml bottle",
-    "imageUrl": "/products/RAPIFEVA-P.png",
+    "imageUrl": "/productswebp/RAPIFEVA-P.png",
     "fullComposition": "Ibuprofen IP 100mg + Paracetamol IP 162.5mg per 5ml",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 47.71
@@ -327,7 +327,7 @@ export const products: Product[] = [
     "composition": "Nitrofurantoin 100mg (Sustained Release)",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPIFUR.jpg",
+    "imageUrl": "/productswebp/RAPIFUR.webp",
     "fullComposition": "Nitrofurantoin IP 100mg (Sustained Release)",
     "therapeuticClass": "Antibiotic",
     "mrp": 920
@@ -337,7 +337,7 @@ export const products: Product[] = [
     "composition": "Aceclofenac + Drotaverine Hydrochloride",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPINAK-D.jpg",
+    "imageUrl": "/productswebp/RAPINAK-D.webp",
     "fullComposition": "Aceclofenac IP 100mg + Drotaverine Hydrochloride IP 80mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 1299
@@ -347,7 +347,7 @@ export const products: Product[] = [
     "composition": "Aceclofenac + Paracetamol",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPINAK-P.jpg",
+    "imageUrl": "/productswebp/RAPINAK-P.webp",
     "fullComposition": "Aceclofenac IP 100mg + Paracetamol IP 325mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 599
@@ -357,7 +357,7 @@ export const products: Product[] = [
     "composition": "Aceclofenac + Paracetamol + Serratiopeptidase",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPINAK-SP.jpg",
+    "imageUrl": "/productswebp/RAPINAK-SP.webp",
     "fullComposition": "Aceclofenac IP 100mg + Paracetamol IP 325mg + Serratiopeptidase IP 15mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 1200
@@ -367,7 +367,7 @@ export const products: Product[] = [
     "composition": "Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPINFLAM-FORTE.jpg",
+    "imageUrl": "/productswebp/RAPINFLAM-FORTE.webp",
     "fullComposition": "Trypsin BP 48mg + Bromelain BP 90mg + Rutoside Trihydrate BP 100mg + Diclofenac Sodium IP 50mg",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 2250
@@ -377,7 +377,7 @@ export const products: Product[] = [
     "composition": "Lycopene + Zinc + Manganese + others",
     "category": "Syrup/Suspension",
     "packaging": "200ml bottle",
-    "imageUrl": "/products/RAPINOVA.jpg",
+    "imageUrl": "/productswebp/RAPINOVA.webp",
     "fullComposition": "Lycopene 5000mcg + Zinc 7.5mg + Manganese 1mg + Multivitamins + Multiminerals per 10ml",
     "therapeuticClass": "Nutraceutical",
     "mrp": 160
@@ -387,7 +387,7 @@ export const products: Product[] = [
     "composition": "Cefpodoxime Proxetil 200mg",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPIPOD-200.jpg",
+    "imageUrl": "/productswebp/RAPIPOD-200.webp",
     "fullComposition": "Cefpodoxime Proxetil IP 200mg",
     "therapeuticClass": "Antibiotic",
     "mrp": 2050
@@ -397,7 +397,7 @@ export const products: Product[] = [
     "composition": "Telmisartan",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPISART-40.jpg",
+    "imageUrl": "/productswebp/RAPISART-40.webp",
     "fullComposition": "Telmisartan IP 40mg",
     "therapeuticClass": "Antihypertensive",
     "mrp": 991.80
@@ -407,7 +407,7 @@ export const products: Product[] = [
     "composition": "Telmisartan + Amlodipine",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPISART-AM.jpg",
+    "imageUrl": "/productswebp/RAPISART-AM.webp",
     "fullComposition": "Telmisartan IP 40mg + Amlodipine Besylate IP 5mg",
     "therapeuticClass": "Antihypertensive",
     "mrp": 1500
@@ -417,7 +417,7 @@ export const products: Product[] = [
     "composition": "Telmisartan + Hydrochlorothiazide",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPISART-H.jpg",
+    "imageUrl": "/productswebp/RAPISART-H.webp",
     "fullComposition": "Telmisartan IP 40mg + Hydrochlorothiazide IP 12.5mg",
     "therapeuticClass": "Antihypertensive",
     "mrp": 1300
@@ -427,7 +427,7 @@ export const products: Product[] = [
     "composition": "Tamsulosin (ER) + Dutasteride",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPISULAN-D.jpg",
+    "imageUrl": "/productswebp/RAPISULAN-D.webp",
     "fullComposition": "Tamsulosin Hydrochloride IP 0.4mg (Extended Release) + Dutasteride IP 0.5mg",
     "therapeuticClass": "Urology",
     "mrp": 1850
@@ -437,14 +437,14 @@ export const products: Product[] = [
   //   "composition": "Linezolid 600mg",
   //   "category": "Tablet",
   //   "packaging": "10x10 Alu Alu",
-  //   "imageUrl": "/products/RAPIZOLID-600.jpg"
+  //   "imageUrl": "/productswebp/RAPIZOLID-600.webp"
   // },
   {
     "name": "RAPMOX-CV",
     "composition": "Amoxycillin + Clavulanic Acid + Lactic Acid Bacillus",
     "category": "Tablet",
     "packaging": "10x6 Alu Alu",
-    "imageUrl": "/products/RAPMOX-CV.jpg",
+    "imageUrl": "/productswebp/RAPMOX-CV.webp",
     "fullComposition": "Amoxycillin Trihydrate IP 500mg + Potassium Clavulanate IP 125mg + Lactic Acid Bacillus 60 million spores",
     "therapeuticClass": "Antibiotic",
     "mrp": 2500
@@ -454,7 +454,7 @@ export const products: Product[] = [
     "composition": "Betahistine",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/RAPVERT-16.jpg",
+    "imageUrl": "/productswebp/RAPVERT-16.webp",
     "fullComposition": "Betahistine Dihydrochloride IP 16mg",
     "therapeuticClass": "Vertigo",
     "mrp": 1050
@@ -464,7 +464,7 @@ export const products: Product[] = [
     "composition": "Dapagliflozin + Sitagliptin",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/SITARAP-D.jpg",
+    "imageUrl": "/productswebp/SITARAP-D.webp",
     "fullComposition": "Dapagliflozin IP 10mg + Sitagliptin Phosphate Monohydrate IP 100mg",
     "therapeuticClass": "Antidiabetic",
     "mrp": 2050
@@ -474,7 +474,7 @@ export const products: Product[] = [
     "composition": "Sitagliptin + Metformin (SR)",
     "category": "Tablet",
     "packaging": "10x10 Alu Alu",
-    "imageUrl": "/products/SITARAP-M500.jpg",
+    "imageUrl": "/productswebp/SITARAP-M500.webp",
     "fullComposition": "Sitagliptin Phosphate Monohydrate IP 50mg + Metformin Hydrochloride IP 500mg (Sustained Release)",
     "therapeuticClass": "Antidiabetic",
     "mrp": 2400
@@ -484,7 +484,7 @@ export const products: Product[] = [
     "composition": "Carboxymethylcellulose Sodium + Stabilized Oxychloro Complex",
     "category": "Eye Drops",
     "packaging": "10ml",
-    "imageUrl": "/products/VISQURA GEL.jpg",
+    "imageUrl": "/productswebp/VISQURA GEL.webp",
     "fullComposition": "Carboxymethylcellulose Sodium IP 0.5% w/v + Stabilized Oxychloro Complex 0.01% w/v per ml",
     "therapeuticClass": "Ophthalmic",
     "mrp": 179.60
@@ -494,7 +494,7 @@ export const products: Product[] = [
     "composition": "Calcitriol + Omega-3 + Methylcobalamin + Folic Acid + Boron + Calcium Carbonate",
     "category": "Capsule",
     "packaging": "10x10 Softgel Capsule",
-    "imageUrl": "/products/VITABORON.jpg",
+    "imageUrl": "/productswebp/VITABORON.webp",
     "fullComposition": "Calcitriol IP 0.25mcg + Omega-3 Fatty Acids 100mg + Methylcobalamin IP 1500mcg + Folic Acid IP 400mcg + Boron 1.5mg + Calcium Carbonate IP 250mg per softgel capsule",
     "therapeuticClass": "Nutraceutical",
     "mrp": 2500
@@ -504,7 +504,7 @@ export const products: Product[] = [
     "composition": "Calcium Citrate + Calcitriol + EPA + DHA + L-Methylfolate + others",
     "category": "Capsule",
     "packaging": "10x10 Softgel Capsule",
-    "imageUrl": "/products/VITABORON-PLUS.jpg",
+    "imageUrl": "/productswebp/VITABORON-PLUS.webp",
     "fullComposition": "Calcium Citrate IP 500mg + Calcitriol IP 0.25mcg + EPA 90mg + DHA 60mg + L-Methylfolate Calcium 400mcg + Multivitamins + Multiminerals per softgel capsule",
     "therapeuticClass": "Nutraceutical",
     "mrp": 2500
@@ -514,7 +514,7 @@ export const products: Product[] = [
     "composition": "Fungal Diastase + Pepsin",
     "category": "Syrup/Suspension",
     "packaging": "200ml bottle",
-    "imageUrl": "/products/ZYMELYT.jpg",
+    "imageUrl": "/productswebp/ZYMELYT.webp",
     "fullComposition": "Fungal Diastase IP 50mg + Pepsin IP 10mg per 5ml",
     "therapeuticClass": "Digestive Enzyme",
     "mrp": 175
@@ -524,7 +524,7 @@ export const products: Product[] = [
     "composition": "Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others",
     "category": "Syrup/Suspension",
     "packaging": "200ml bottle",
-    "imageUrl": "/products/ZYLIVIN.jpg",
+    "imageUrl": "/productswebp/ZYLIVIN.webp",
     "fullComposition": "Silymarin IP 35mg + L-Ornithine L-Aspartate IP 150mg + Tricholine Citrate IP 250mg + Multivitamins + Multiminerals per 10ml",
     "therapeuticClass": "Liver Tonic",
     "mrp": 190
