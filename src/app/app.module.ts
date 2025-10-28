@@ -16,6 +16,7 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { MatSelectModule } from '@angular/material/select';
     ProductsComponent,
     ContactComponent,
     HighlightCarouselComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    PcdFranchiseComponent
   ],
   imports: [
     BrowserModule,

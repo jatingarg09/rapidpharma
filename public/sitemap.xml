@@ -65,6 +65,53 @@
     <priority>0.5</priority>
   </url>
 
+<!-- PCD Pharma Franchise Main Page -->
+  <url>
+    <loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+<!-- PCD Pharma Franchise by State / UT (States) -->
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/andhra-pradesh</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/arunachal-pradesh</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/assam</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/bihar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/chhattisgarh</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/goa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/gujarat</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/haryana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/himachal-pradesh</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/jharkhand</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/karnataka</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/kerala</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/madhya-pradesh</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/maharashtra</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/manipur</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/meghalaya</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/mizoram</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/nagaland</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/odisha</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/punjab</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/rajasthan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/sikkim</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/tamil-nadu</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/telangana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/tripura</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/uttar-pradesh</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/uttarakhand</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/west-bengal</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+
+  <!-- Union Territories -->
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/andaman-nicobar</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/chandigarh</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/dadra-nagar-haveli-daman-diu</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/delhi</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/jammu-kashmir</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/ladakh</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/lakshadweep</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/puducherry</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+
  <!-- Product Pages-->
  <url>
     <loc>https://rapidpharmaceuticals.in/product/azithromycin-dihydrate-equivalent-to-azithromycin-500mg</loc>
