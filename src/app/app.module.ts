@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { provideHttpClient, withFetch } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -13,8 +12,11 @@ import { ContactComponent } from './components/contact/contact.component';
 import { HighlightCarouselComponent } from './components/highlight-carousel/highlight-carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     ProductsComponent,
     ContactComponent,
     HighlightCarouselComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    PcdFranchiseComponent
   ],
   imports: [
     BrowserModule,
@@ -34,13 +37,12 @@ import { ProductDetailComponent } from './components/product-detail/product-deta
     AppRoutingModule,
     ReactiveFormsModule,
     MatIconModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule
   ],
-  providers: [
-    provideClientHydration(),
-    provideAnimationsAsync(),
-    provideHttpClient(withFetch())
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

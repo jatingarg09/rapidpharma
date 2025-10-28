@@ -1,0 +1,32 @@
+# ======================================================
+# Rapid Pharmaceuticals - robots.txt
+# This file tells search engines which pages to index
+# and where to find your sitemap for best SEO performance.
+# ======================================================
+
+User-agent: *
+# ✅ Allow all pages for indexing
+Allow: /
+
+# 🚫 Block unnecessary or duplicate routes
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /404
+Disallow: /error
+
+# ✅ Important: point to your sitemap
+Sitemap: https://rapidpharmaceuticals.in/sitemap.xml
+
+# ======================================================
+# Notes:
+# - Keep this file in the root of your website.
+# - Angular will copy it automatically to /dist on build.
+# - After deployment, verify:
+#   https://rapidpharmaceuticals.in/robots.txt
+#   https://rapidpharmaceuticals.in/sitemap.xml
+# ======================================================

@@ -20,7 +20,7 @@ export class HighlightCarouselComponent implements OnInit, OnDestroy {
 
   slides = [
     {
-      image: '/slide1.png',
+      image: '/slide1.webp',
       title: 'Trusted Therapeutics',
       description:
         'GMP-certified medicines sourced from WHO-GMP and ISO-compliant manufacturers—delivered with clinical precision.',
