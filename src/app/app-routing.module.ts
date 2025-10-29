@@ -26,6 +26,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'product/:slug', component: ProductDetailComponent },
   { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
+  { path: 'franchise', component: PcdFranchiseComponent },
   { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
   { path: '**', redirectTo: '' },
 ];
