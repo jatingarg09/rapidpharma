@@ -3,363 +3,363 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/</loc>
+    <loc>https://www.rapidpharmaceuticals.in/</loc>
     <priority>1.0</priority>
   </url>
 
   <!-- Franchise Landing -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/franchise</loc>
+    <loc>https://www.rapidpharmaceuticals.in/franchise</loc>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://rapidpharmaceuticals.in/products</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products</loc>
     <priority>0.9</priority>
   </url>
 
   <!-- Product Clusters by Therapeutic Category -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/antibiotics</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/antibiotics</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/analgesics</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/analgesics</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/dermatology</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/dermatology</loc>
     <priority>0.8</priority>
   </url>
 
   <!-- Suffix Families -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/-plus</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/-plus</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/-ds</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/-ds</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/-rx</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/-rx</loc>
     <priority>0.7</priority>
   </url>
 
   <!-- Packaging Variants -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/blister-pack</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/blister-pack</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/products/bottle-pack</loc>
+    <loc>https://www.rapidpharmaceuticals.in/products/bottle-pack</loc>
     <priority>0.6</priority>
   </url>
 
   <!-- Contact & About -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/contact</loc>
+    <loc>https://www.rapidpharmaceuticals.in/contact</loc>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/about</loc>
+    <loc>https://www.rapidpharmaceuticals.in/about</loc>
     <priority>0.5</priority>
   </url>
 
 <!-- PCD Pharma Franchise Main Page -->
   <url>
-    <loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise</loc>
+    <loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
 <!-- PCD Pharma Franchise by State / UT (States) -->
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/andhra-pradesh</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/arunachal-pradesh</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/assam</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/bihar</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/chhattisgarh</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/goa</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/gujarat</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/haryana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/himachal-pradesh</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/jharkhand</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/karnataka</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/kerala</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/madhya-pradesh</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/maharashtra</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/manipur</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/meghalaya</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/mizoram</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/nagaland</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/odisha</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/punjab</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/rajasthan</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/sikkim</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/tamil-nadu</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/telangana</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/tripura</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/uttar-pradesh</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/uttarakhand</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/west-bengal</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-andhra-pradesh</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-arunachal-pradesh</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-assam</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-bihar</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-chhattisgarh</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-goa</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-gujarat</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-haryana</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-himachal-pradesh</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-jharkhand</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-karnataka</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-kerala</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-madhya-pradesh</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-maharashtra</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-manipur</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-meghalaya</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-mizoram</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-nagaland</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-odisha</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-punjab</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-rajasthan</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-sikkim</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-tamil-nadu</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-telangana</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-tripura</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-uttar-pradesh</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-uttarakhand</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-west-bengal</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
 
   <!-- Union Territories -->
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/andaman-nicobar</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/chandigarh</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/dadra-nagar-haveli-daman-diu</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/delhi</loc><changefreq>monthly</changefreq><priority>0.95</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/jammu-kashmir</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/ladakh</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/lakshadweep</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://rapidpharmaceuticals.in/pcd-pharma-franchise/puducherry</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-andaman-nicobar</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-chandigarh</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-dadra-nagar-haveli-daman-diu</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-delhi</loc><changefreq>weekly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-jammu-kashmir</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-ladakh</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-lakshadweep</loc><changefreq>weekly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-puducherry</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
 
  <!-- Product Pages-->
  <url>
-    <loc>https://rapidpharmaceuticals.in/product/azithromycin-dihydrate-equivalent-to-azithromycin-500mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/azithromycin-dihydrate-equivalent-to-azithromycin-500mg</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/cefixime-100mg-dispersible-tablets</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/cefixime-100mg-dispersible-tablets</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/cefixime-200mg-lactic-acid-bacillus</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/cefixime-200mg-lactic-acid-bacillus</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ceftriaxone-sulbactam</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ceftriaxone-sulbactam</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/montelukast-levocetirizine</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/montelukast-levocetirizine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ambroxol-terbutaline-guaiphenesin-menthol</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ambroxol-terbutaline-guaiphenesin-menthol</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/dextromethorphan-phenylephrine-chlorpheniramine</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/dextromethorphan-phenylephrine-chlorpheniramine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ambroxol-30mg-levosalbutamol-1mg-guaifenesin-50mg-5ml</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ambroxol-30mg-levosalbutamol-1mg-guaifenesin-50mg-5ml</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/vitamin-d3-60000-iu</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/vitamin-d3-60000-iu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/vitamin-d3-oral-solution-60000-iu</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/vitamin-d3-oral-solution-60000-iu</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/nandrolone-decanoate-50mg-ml</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/nandrolone-decanoate-50mg-ml</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/deflazacort-6mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/deflazacort-6mg</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/rabeprazole-sodium-ec-domperidone-sr</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/rabeprazole-sodium-ec-domperidone-sr</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/esomeprazole-ec-domperidone-sr</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/esomeprazole-ec-domperidone-sr</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/esomeprazole-domperidone-levosulpiride</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/esomeprazole-domperidone-levosulpiride</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/etoricoxib-thiocolchicoside</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/etoricoxib-thiocolchicoside</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/pantoprazole-sodium-40mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/pantoprazole-sodium-40mg</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/green-tea-extract-ginseng-ginkgo-biloba-others</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/green-tea-extract-ginseng-ginkgo-biloba-others</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ginseng-multivitamins-multiminerals-probiotics</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ginseng-multivitamins-multiminerals-probiotics</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/glimepiride-metformin-sr</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/glimepiride-metformin-sr</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/glimepiride-metformin-sr-2</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/glimepiride-metformin-sr-2</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/liver-syrup</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/liver-syrup</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/magaldrate-simethicone</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/magaldrate-simethicone</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/mefenamic-acid-50mg-paracetamol-125mg-5ml</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/mefenamic-acid-50mg-paracetamol-125mg-5ml</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/nimesulide-paracetamol</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/nimesulide-paracetamol</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/piperacillin-tazobactam</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/piperacillin-tazobactam</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ferrous-ascorbate-folic-acid-zinc-sulphate</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ferrous-ascorbate-folic-acid-zinc-sulphate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/amikacin-sulphate-500mg-2ml</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/amikacin-sulphate-500mg-2ml</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ketorolac-tromethamine</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ketorolac-tromethamine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/ibuprofen-paracetamol</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/ibuprofen-paracetamol</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/nitrofurantoin-100mg-sustained-release</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/nitrofurantoin-100mg-sustained-release</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/aceclofenac-100mg-drotaverine-hydrochloride-80mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/aceclofenac-drotaverine-hydrochloride</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/aceclofenac-100mg-paracetamol-325mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/aceclofenac-paracetamol</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/aceclofenac-100mg-paracetamol-325mg-serratiopeptidase-15mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/aceclofenac-paracetamol-serratiopeptidase</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/trypsin-bromelain-rutoside-trihydrate-diclofenac-sodium</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/trypsin-bromelain-rutoside-trihydrate-diclofenac-sodium</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/lycopene-zinc-manganese-others</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/lycopene-zinc-manganese-others</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/cefpodoxime-proxetil-200mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/cefpodoxime-proxetil-200mg</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/telmisartan-40mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/telmisartan</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/telmisartan-amlodipine</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/telmisartan-amlodipine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/telmisartan-hydrochlorothiazide</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/telmisartan-hydrochlorothiazide</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/tamsulosin-er-dutasteride</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/tamsulosin-er-dutasteride</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/amoxycillin-clavulanic-acid-lactic-acid-bacillus</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/amoxycillin-clavulanic-acid-lactic-acid-bacillus</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/betahistine-16mg</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/betahistine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/dapagliflozin-sitagliptin</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/dapagliflozin-sitagliptin</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/sitagliptin-metformin-sr</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/sitagliptin-metformin-sr</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/carboxymethylcellulose-sodium-stabilized-oxychloro-complex</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/carboxymethylcellulose-sodium-stabilized-oxychloro-complex</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/calcitriol-omega-3-methylcobalamin-folic-acid-boron-calcium-carbonate</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/calcitriol-omega-3-methylcobalamin-folic-acid-boron-calcium-carbonate</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/calcium-citrate-calcitriol-epa-dha-l-methylfolate-others</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/calcium-citrate-calcitriol-epa-dha-l-methylfolate-others</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/fungal-diastase-pepsin</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/fungal-diastase-pepsin</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rapidpharmaceuticals.in/product/silymarin-l-ornithine-l-aspartate-tricholine-citrate-others</loc>
+    <loc>https://www.rapidpharmaceuticals.in/product/silymarin-l-ornithine-l-aspartate-tricholine-citrate-others</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

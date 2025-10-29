@@ -68,7 +68,7 @@
           <img [src]="location.image" [alt]="'PCD Pharma Franchise in ' + location.name" />
           <h3>{{ location.name }}</h3>
           <p>{{ location.description }}</p>
-          <a class="details-link" [routerLink]="['/pcd-pharma-franchise', location.slug]">Know More →</a>
+          <a class="details-link" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">Know More →</a>
         </div>
       </div>
     </section>

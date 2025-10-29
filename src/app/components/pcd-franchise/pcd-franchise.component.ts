@@ -103,7 +103,7 @@ export class PcdFranchiseComponent implements OnInit {
         name: title,
         description,
         url: location
-          ? `https://rapidpharmaceuticals.in/pcd-pharma-franchise/${location.slug}`
+          ? `https://rapidpharmaceuticals.in/pcd-pharma-franchise-in-${location.slug}`
           : 'https://rapidpharmaceuticals.in/pcd-pharma-franchise',
       };
       const script = document.createElement('script');
@@ -114,7 +114,7 @@ export class PcdFranchiseComponent implements OnInit {
   }
 
   goToFranchise(slug: string): void {
-    this.router.navigate(['/pcd-pharma-franchise', slug]);
+    this.router.navigate(['/pcd-pharma-franchise-in-'+ slug]);
   }
 
   backToList(): void {
