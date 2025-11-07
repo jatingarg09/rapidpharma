@@ -1,11 +1,11 @@
 <div class="pcd-container">
   <!-- MAIN PAGE (No specific state selected) -->
-  <div *ngIf="!selectedLocation">
+  <div *ngIf="!selectedLocation && !selectedDistrict">
+    <h1>PCD Pharma Franchise in India</h1>
     <section class="pcd-hero-banner">
       <img src="/pcd1.webp" alt="PCD Pharma Franchise in India - Rapid Pharmaceuticals" class="banner-img"
         loading="lazy" />
       <div class="banner-overlay">
-        <h1 style="white-space: inherit;">PCD Pharma Franchise in India</h1>
         <p>Your Trusted Partner for Pharma Franchise Opportunities</p>
         <button class="inquiry-btn" (click)="scrollToInquiry()">Get PCD Franchise Inquiry</button>
       </div>
@@ -81,9 +81,9 @@
   </div>
 
   <!-- SPECIFIC STATE PAGE -->
-  <div *ngIf="selectedLocation" class="state-section">
+  <div *ngIf="selectedLocation && isStatePage" class="state-section">
     <button class="back-btn" (click)="backToList()">← Back to All States</button>
-    <h2>PCD Pharma Franchise in {{ selectedLocation.name }}</h2>
+    <h1>PCD Pharma Franchise in {{ selectedLocation.name }}</h1>
     <img class="banner-img" [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name" />
     <p>
       Welcome to <strong>Rapid Pharmaceuticals</strong> – your trusted partner
@@ -116,6 +116,34 @@
       Contact us today to learn more about PCD Pharma Franchise opportunities
       in <strong>{{ selectedLocation.name }}</strong>. Build your future with a
       name trusted by doctors, chemists, and patients nationwide.
+    </p>
+
+    <section *ngIf="districtList.length > 0">
+      <h2>Franchise Opportunities in {{ selectedLocation.name }} Districts</h2>
+      <div class="district-grid">
+        <div class="district-card" *ngFor="let district of districtList" (click)="goToDistrict(district)">
+          <mat-icon>location_on</mat-icon>
+          <span>{{ district }}</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a routerLink="/contact" class="cta-btn">Request Franchise Information</a>
+    </div>
+  </div>
+
+  <!-- DISTRICT PAGE -->
+  <div *ngIf="selectedDistrict && !isStatePage">
+    <button class="back-btn" (click)="backToList()">← Back to All States</button>
+    <h1>PCD Pharma Franchise in {{ selectedDistrict }}</h1>
+    <p>
+      Rapid Pharmaceuticals now offers exclusive <strong>PCD Pharma Franchise in {{ selectedDistrict }}</strong>.
+      Our WHO-GMP certified range ensures quality, reliability, and business success.
+    </p>
+    <p>
+      Get monopoly rights, product marketing support, and business transparency — everything you need to build your own
+      franchise in {{ selectedDistrict }}.
     </p>
     <div class="cta">
       <a routerLink="/contact" class="cta-btn">Request Franchise Information</a>
