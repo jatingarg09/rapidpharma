@@ -60,6 +60,7 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
+  text-decoration: none;
 }
 
 .enquiry-btn:hover {
@@ -86,6 +87,7 @@
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 10px;
+  text-decoration: none;
 }
 
 .similar-card:hover {

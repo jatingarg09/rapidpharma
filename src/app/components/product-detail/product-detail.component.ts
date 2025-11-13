@@ -96,6 +96,7 @@ export class ProductDetailComponent implements OnInit {
     script.text = JSON.stringify({
       '@context': 'https://schema.org/',
       '@type': 'Product',
+      '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
       name: this.product.name,
       image: this.product.imageUrl,
       description: this.product.composition,

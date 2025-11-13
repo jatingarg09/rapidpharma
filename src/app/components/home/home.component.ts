@@ -12,33 +12,33 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       name: 'AZIRAP-500',
       description: 'Azithromycin Dihydrate equivalent to Azithromycin 500mg',
-      image: '/products/AZIRAP-500.png'
+      image: '/productswebp/AZIRAP-500.png'
 
     },
     {
       name: 'CEFIMELT-100DT',
       description: 'Cefixime 100mg (Dispersible Tablets)',
-      image: '/products/CEFIMELT-100DT.jpg'
+      image: '/productswebp/CEFIMELT-100DT.webp'
     },
     {
       name: 'CEFIMELT-200 LB',
       description: 'Cefixime 200mg + Lactic Acid Bacillus 60 million spores',
-      image: '/products/CEFIMELT-200LB.jpg'
+      image: '/productswebp/CEFIMELT-200LB.webp'
     },
     {
       name : "D3NOW",
       description : "Vitamin D3 60000 IU",
-      image : "/products/D3 NOW.jpg"
+      image : "/productswebp/D3 NOW.webp"
     },
     {
       name : "GASTRONEX-IV",
       description : "Pantoprazole Sodium 40mg",
-      image : "/products/GASTRONEX-IV.jpg"
+      image : "/productswebp/GASTRONEX-IV.webp"
     },
     {
       name : "ZYLIVIN",
       description : "Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others",
-      image : "/products/ZYLIVIN.jpg"
+      image : "/productswebp/ZYLIVIN.webp"
     },
   ];
 
