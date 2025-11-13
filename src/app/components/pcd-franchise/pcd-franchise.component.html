@@ -64,12 +64,12 @@
       </p>
 
       <div class="grid">
-        <div class="card" *ngFor="let location of locations" (click)="goToFranchise(location.slug)">
+        <a class="card" *ngFor="let location of locations" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">
           <img [src]="location.image" [alt]="'PCD Pharma Franchise in ' + location.name" />
           <h3>{{ location.name }}</h3>
           <p>{{ location.description }}</p>
-          <a class="details-link" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">Know More →</a>
-        </div>
+          <span class="details-link" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">Know More →</span>
+        </a>
       </div>
     </section>
 
@@ -82,7 +82,7 @@
 
   <!-- SPECIFIC STATE PAGE -->
   <div *ngIf="selectedLocation && isStatePage" class="state-section">
-    <button class="back-btn" (click)="backToList()">← Back to All States</button>
+    <a class="back-btn" [routerLink]="['/pcd-pharma-franchise']">← Back to All States</a>
     <h1>PCD Pharma Franchise in {{ selectedLocation.name }}</h1>
     <img class="banner-img" [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name" />
     <p>
@@ -121,10 +121,10 @@
     <section *ngIf="districtList.length > 0">
       <h2>Franchise Opportunities in {{ selectedLocation.name }} Districts</h2>
       <div class="district-grid">
-        <div class="district-card" *ngFor="let district of districtList" (click)="goToDistrict(district)">
+        <a class="district-card" *ngFor="let district of districtList" [routerLink]="goToDistrict(district)">
           <mat-icon>location_on</mat-icon>
           <span>{{ district }}</span>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -135,7 +135,7 @@
 
   <!-- DISTRICT PAGE -->
   <div *ngIf="selectedDistrict && !isStatePage">
-    <button class="back-btn" (click)="backToList()">← Back to All States</button>
+    <a class="back-btn" [routerLink]="['/pcd-pharma-franchise']">← Back to All States</a>
     <h1>PCD Pharma Franchise in {{ selectedDistrict }}</h1>
     <p>
       Rapid Pharmaceuticals now offers exclusive <strong>PCD Pharma Franchise in {{ selectedDistrict }}</strong>.

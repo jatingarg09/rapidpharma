@@ -343,9 +343,11 @@ export class PcdFranchiseComponent implements OnInit {
   }
 
   scrollToInquiry() {
-    const element = document.getElementById('inquiry-form');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    if (isPlatformBrowser(this.platformId)) {
+      const el = document.getElementById('inquiry-form');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
   }
 
@@ -378,6 +380,7 @@ export class PcdFranchiseComponent implements OnInit {
       const schema = {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',
+        '@id': url,
         name: 'Rapid Pharmaceuticals',
         url: url,
         description: description,
@@ -406,9 +409,9 @@ export class PcdFranchiseComponent implements OnInit {
     this.router.navigate(['/pcd-pharma-franchise-in-' + slug]);
   }
 
-  goToDistrict(district: string): void {
+  goToDistrict(district: string): string[] {
     const districtSlug = district.toLowerCase().replace(/\s+/g, '-');
-    this.router.navigate(['/pcd-pharma-franchise-in-' + districtSlug]);
+    return ['/pcd-pharma-franchise-in-' + districtSlug];
   }
 
   backToList(): void {

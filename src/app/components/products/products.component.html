@@ -65,11 +65,10 @@
       <div class="product-info">
         <div class="product-header">
           <h3>{{ product.name }}</h3>
-          <button class="detail-btn-inline"
-                  (click)="goToProduct(product)"
-                  >
+          <a class="detail-btn-inline"
+                  [routerLink]="['/product', product.slug]">
             <mat-icon>info</mat-icon> Details
-          </button>
+        </a>
         </div>
         <p>{{ product.composition }}</p>
         <!-- <div class="product-packaging">

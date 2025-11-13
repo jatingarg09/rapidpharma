@@ -8,21 +8,21 @@
       <p class="composition">Composition: {{ product.fullComposition }}</p>
       <p class="therapeutic-class">Therapeutic Class: {{ product.therapeuticClass }}</p>
       <p class="mrp">MRP: ₹{{ product.mrp.toFixed(2) }}</p>
-      <button routerLink="/contact" class="enquiry-btn">Request Info</button>
+      <a class="enquiry-btn" routerLink="/contact">Request Info</a>
     </div>
   </div>
 
   <div class="similar-section" *ngIf="similarProducts.length > 0">
     <h2>Similar Products</h2>
     <div class="similar-grid">
-      <div
+      <a
         class="similar-card"
         *ngFor="let p of similarProducts"
-        (click)="goToProduct(p)"
+        [routerLink]="['/product', p.slug]"
       >
         <img [src]="p.imageUrl" [alt]="p.name" loading="lazy" />
         <h3>{{ p.name }}</h3>
-      </div>
+    </a>
     </div>
   </div>
 </section>

@@ -37,6 +37,7 @@ ul li {
   background: #fff;
   border-radius: 10px;
   padding: 16px;
+  text-decoration: none;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: 0.3s ease;
   cursor: pointer;
@@ -213,6 +214,7 @@ ul li {
   padding: 0.8rem;
   font-weight: 500;
   cursor: pointer;
+  text-decoration: none;
   transition: all 0.3s ease;
 }
 
