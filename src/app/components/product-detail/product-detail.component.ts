@@ -109,6 +109,7 @@ export class ProductDetailComponent implements OnInit {
         '@type': 'Offer',
         url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
         priceCurrency: 'INR',
+        price: this.product.mrp,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
       },
