@@ -98,7 +98,7 @@ export class ProductDetailComponent implements OnInit {
       '@type': 'Product',
       '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
       name: this.product.name,
-      image: this.product.imageUrl,
+      image: `https://rapidpharmaceuticals.in/${this.product.imageUrl}`,
       description: this.product.composition,
       category: this.product.category,
       brand: {
@@ -109,6 +109,7 @@ export class ProductDetailComponent implements OnInit {
         '@type': 'Offer',
         url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
         priceCurrency: 'INR',
+        price: this.product.mrp,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
       },
