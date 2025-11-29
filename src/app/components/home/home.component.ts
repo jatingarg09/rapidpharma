@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit, OnDestroy {
     {
       name: 'AZIRAP-500',
       description: 'Azithromycin Dihydrate equivalent to Azithromycin 500mg',
-      image: '/productswebp/AZIRAP-500.png'
+      image: '/productswebp/AZIRAP-500.webp'
 
     },
     {

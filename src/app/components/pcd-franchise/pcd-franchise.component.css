@@ -255,6 +255,121 @@ ul li {
   }
 }
 
+/* FAQ Section Styling */
+.faq-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.faq-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #0a6; /* Accent color */
+}
+
+/* Each FAQ item */
+.faq-section details {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  padding: 14px 18px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+
+.faq-section details[open] {
+  background: #f0fdf7; /* subtle highlight when open */
+  border-color: #0a6;
+}
+
+/* Summary (question) */
+.faq-section summary {
+  font-weight: 600;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 24px;
+}
+
+.faq-section summary::-webkit-details-marker {
+  display: none; /* hide default arrow */
+}
+
+/* Custom arrow icon */
+.faq-section summary::after {
+  content: "➕";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1rem;
+  color: #0a6;
+  transition: transform 0.3s ease;
+}
+
+.faq-section details[open] summary::after {
+  content: "➖";
+  transform: rotate(180deg);
+}
+
+/* Answer text */
+.faq-section details p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* -------------------- Responsive Tweaks -------------------- */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 0 12px;
+  }
+
+  .faq-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .faq-section summary {
+    font-size: 1rem;
+  }
+
+  .faq-section details {
+    padding: 12px 14px;
+  }
+
+  .faq-section details p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .faq-section summary {
+    font-size: 0.95rem;
+    padding-right: 20px;
+  }
+
+  .faq-section summary::after {
+    font-size: 0.9rem;
+  }
+
+  .faq-section details {
+    padding: 10px 12px;
+  }
+
+  .faq-section details p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+}
+
 @media (max-width: 480px) {
   .pcd-hero-banner {
     height: 50vh;
