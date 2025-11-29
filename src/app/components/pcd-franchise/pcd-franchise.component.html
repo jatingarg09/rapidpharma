@@ -1,71 +1,72 @@
 <div class="pcd-container">
   <!-- MAIN PAGE (No specific state selected) -->
   <div *ngIf="!selectedLocation && !selectedDistrict">
-    <h1>PCD Pharma Franchise in India</h1>
+
+    <!-- Primary H1 -->
+    <h1>PCD Pharma Franchise in India | Rapid Pharmaceuticals</h1>
+
+    <!-- Hero Banner -->
     <section class="pcd-hero-banner">
-      <img src="/pcd1.webp" alt="PCD Pharma Franchise in India - Rapid Pharmaceuticals" class="banner-img"
-        loading="lazy" />
+      <img src="/pcd1.webp" alt="PCD Pharma Franchise in India - Monopoly Rights by Rapid Pharmaceuticals"
+        class="banner-img" loading="eager" fetchpriority="high" />
       <div class="banner-overlay">
-        <p>Your Trusted Partner for Pharma Franchise Opportunities</p>
-        <button class="inquiry-btn" (click)="scrollToInquiry()">Get PCD Franchise Inquiry</button>
+        <p>Monopoly-Based Pharma Franchise Opportunities Across India</p>
+        <button class="inquiry-btn" (click)="scrollToInquiry()">Apply for Franchise Inquiry</button>
       </div>
     </section>
 
+    <!-- Intro Section -->
     <section class="pcd-intro">
-      <br />
+      <h2>Grow With India’s Trusted Pharma Franchise Company</h2>
       <p>
-        <strong>Rapid Pharmaceuticals</strong> is a leading name in the Indian
-        pharmaceutical industry, offering monopoly-based <strong>PCD Pharma Franchise</strong>
-        opportunities across all Indian states and union territories. With our
-        WHO-GMP certified manufacturing units and an extensive portfolio of
-        high-quality medicines, we empower pharma professionals and
-        distributors to build profitable businesses in their own regions.
+        <strong>Rapid Pharmaceuticals</strong> is a ISO certified pharma company offering
+        monopoly-based <strong>PCD Pharma Franchise</strong> opportunities across all Indian states and union
+        territories.
+        With 150+ DCGI-approved products across multiple therapeutic categories, we empower distributors, entrepreneurs,
+        and healthcare professionals to build profitable businesses in their own regions.
       </p>
       <p>
-        Our goal is to expand access to trusted healthcare products while
-        supporting our partners through marketing materials, visual aids,
-        promotional inputs, and complete product training. Whether you are a
-        new entrepreneur or an established distributor, our franchise model
-        ensures long-term growth and strong returns with minimum investment.
+        Our franchise model ensures <strong>low investment, high returns</strong> with complete support —
+        including marketing materials, visual aids, promotional inputs, and product training.
+        Whether you are a new entrant or an established distributor, Rapid Pharmaceuticals provides
+        a transparent, growth-oriented partnership.
       </p>
       <p>
-        We offer more than <strong>150+ products</strong> across therapeutic
-        categories such as antibiotics, pain management, cardiac-diabetic,
-        gastro, derma, nutraceuticals, and pediatric care. By joining hands
-        with Rapid Pharmaceuticals, you gain access to a reputed brand with
-        proven market credibility and consistent product quality.
+        Product portfolio includes <strong>antibiotics, cardiac-diabetic, gastro, derma, nutraceuticals,
+          pediatric care, and pain management</strong> — all backed by consistent quality and market credibility.
       </p>
     </section>
 
+    <!-- Why Choose Us -->
     <section class="why-choose">
       <h2>Why Choose Rapid Pharmaceuticals for PCD Pharma Franchise?</h2>
       <ul>
-        <li>✔ WHO-GMP certified production and DCGI-approved formulations.</li>
-        <li>✔ Monopoly rights for distribution in your district or state.</li>
-        <li>✔ Regular product updates and visual marketing materials.</li>
-        <li>✔ Affordable pricing and transparent business policies.</li>
-        <li>✔ Timely product delivery and full logistic support.</li>
-        <li>✔ 100% customer satisfaction and business transparency.</li>
+        <li>✔ WHO-GMP certified manufacturing & DCGI-approved formulations</li>
+        <li>✔ Monopoly rights for your district or state</li>
+        <li>✔ 150+ products across 20+ therapeutic categories</li>
+        <li>✔ Affordable pricing & transparent business policies</li>
+        <li>✔ Timely delivery with full logistic support</li>
+        <li>✔ Dedicated marketing & sales team for partner success</li>
       </ul>
       <p>
-        Our PCD model allows individual distributors to grow independently
-        without competition in their allocated territory. We ensure every
-        franchise partner gets full business support from our dedicated
-        marketing and sales team.
+        Our PCD model ensures <strong>exclusive territory rights</strong>, allowing franchise partners to grow
+        independently
+        without competition. We provide complete business support to help you establish and expand your pharma
+        distribution.
       </p>
     </section>
 
+    <!-- Franchise List -->
     <section class="franchise-list">
       <h2>PCD Pharma Franchise Opportunities in India (State & District Wise)</h2>
       <p>
-        Choose your state or union territory below to explore exclusive PCD
-        franchise opportunities. Rapid Pharmaceuticals is actively expanding its
-        network in all regions of India.
+        Select your state or union territory below to explore exclusive PCD franchise opportunities.
+        Rapid Pharmaceuticals is actively expanding its network across India with district-wise monopoly rights.
       </p>
 
       <div class="grid">
         <a class="card" *ngFor="let location of locations" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">
-          <img [src]="location.image" [alt]="'PCD Pharma Franchise in ' + location.name" />
+          <img [src]="location.image" [alt]="'PCD Pharma Franchise in ' + location.name + ' - Rapid Pharmaceuticals'" />
           <h3>{{ location.name }}</h3>
           <p>{{ location.description }}</p>
           <span class="details-link" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">Know More →</span>
@@ -73,53 +74,89 @@
       </div>
     </section>
 
+    <!-- Inquiry Form -->
     <section id="inquiry-form" class="inquiry-section">
       <h2>Request a PCD Pharma Franchise</h2>
+      <p>Fill out the form below to apply for monopoly rights in your district.</p>
       <appcontact></appcontact>
     </section>
 
-  </div>
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <details>
+        <summary>What is a PCD Pharma Franchise?</summary>
+        <p>A PCD Pharma Franchise allows distributors to sell pharma products with monopoly rights in their region.</p>
+      </details>
+      <details>
+        <summary>How can I apply for franchise rights?</summary>
+        <p>Simply fill out the inquiry form above. Our team will contact you with available territories and onboarding
+          details.</p>
+      </details>
+      <details>
+        <summary>Do you provide promotional support?</summary>
+        <p>Yes, we provide visual aids, samples, digital creatives, and product training to help you build demand
+          locally.</p>
+      </details>
+      <details>
+        <summary>Are your products DCGI-approved?</summary>
+        <p>Yes, all formulations are DCGI-approved and manufactured in WHO-GMP compliant facilities.</p>
+      </details>
+    </section>
 
+  </div>
   <!-- SPECIFIC STATE PAGE -->
   <div *ngIf="selectedLocation && isStatePage" class="state-section">
-    <a class="back-btn" [routerLink]="['/pcd-pharma-franchise']">← Back to All States</a>
-    <h1>PCD Pharma Franchise in {{ selectedLocation.name }}</h1>
-    <img class="banner-img" [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name" />
-    <p>
-      Welcome to <strong>Rapid Pharmaceuticals</strong> – your trusted partner
-      for <strong>PCD Pharma Franchise in {{ selectedLocation.name }}</strong>.
-      We are committed to providing high-quality, affordable, and reliable
-      healthcare products through our dedicated franchise network.
-    </p>
-    <p>
-      With growing demand for medicines and healthcare awareness in
-      {{ selectedLocation.name }}, starting your own <strong>pharma franchise
-        business</strong> here can be highly profitable. Rapid Pharmaceuticals
-      supports partners with monopoly rights, promotional materials, and
-      marketing assistance to help them grow quickly in their respective
-      territories.
-    </p>
-    <h2>Benefits of Partnering with Rapid Pharmaceuticals</h2>
-    <ul>
-      <li>✔ Exclusive monopoly distribution rights in {{ selectedLocation.name }}.</li>
-      <li>✔ Wide product range covering all major therapeutic segments.</li>
-      <li>✔ Attractive profit margins and transparent business practices.</li>
-      <li>✔ Marketing and visual aid support for local promotion.</li>
-      <li>✔ Timely delivery and quality assurance on every product.</li>
-    </ul>
-    <p>
-      By joining Rapid Pharmaceuticals, you gain more than just products — you
-      become part of a nationwide network of trusted pharma professionals who
-      share our mission of improving healthcare accessibility across India.
-    </p>
-    <p>
-      Contact us today to learn more about PCD Pharma Franchise opportunities
-      in <strong>{{ selectedLocation.name }}</strong>. Build your future with a
-      name trusted by doctors, chemists, and patients nationwide.
-    </p>
 
+    <!-- Back Navigation -->
+    <a class="back-btn" [routerLink]="['/pcd-pharma-franchise']">← Back to All States</a>
+
+    <!-- Primary H1 -->
+    <h1>PCD Pharma Franchise in {{ selectedLocation.name }} | Rapid Pharmaceuticals</h1>
+
+    <!-- Banner -->
+    <img class="banner-img" [src]="selectedLocation.image"
+      [alt]="'PCD Pharma Franchise in ' + selectedLocation.name + ' - Monopoly Rights by Rapid Pharmaceuticals'" />
+
+    <!-- Intro -->
+    <section class="state-intro">
+      <h2>Start Your Pharma Franchise Business in {{ selectedLocation.name }}</h2>
+      <p>
+        Welcome to <strong>Rapid Pharmaceuticals</strong> – your trusted partner for
+        <strong>PCD Pharma Franchise in {{ selectedLocation.name }}</strong>. We provide
+        <strong>WHO-GMP certified, DCGI-approved medicines</strong> with monopoly rights
+        to help distributors and entrepreneurs establish profitable businesses.
+      </p>
+      <p>
+        With rising healthcare demand in {{ selectedLocation.name }}, starting a
+        <strong>pharma franchise business</strong> here ensures strong growth potential.
+        Rapid Pharmaceuticals supports partners with promotional materials, marketing
+        assistance, and transparent business practices.
+      </p>
+    </section>
+
+    <!-- Benefits -->
+    <section class="state-benefits">
+      <h2>Benefits of Partnering with Rapid Pharmaceuticals in {{ selectedLocation.name }}</h2>
+      <ul>
+        <li>✔ Exclusive monopoly distribution rights in {{ selectedLocation.name }}</li>
+        <li>✔ 150+ products across major therapeutic segments</li>
+        <li>✔ Attractive profit margins & transparent business policies</li>
+        <li>✔ Marketing kits, visual aids & digital promotion support</li>
+        <li>✔ Timely delivery & full logistic assistance</li>
+        <li>✔ Trusted by doctors, chemists & healthcare professionals nationwide</li>
+      </ul>
+      <p>
+        By joining Rapid Pharmaceuticals, you gain more than just products —
+        you become part of a nationwide network of pharma professionals committed
+        to improving healthcare accessibility across India.
+      </p>
+    </section>
+
+    <!-- District List -->
     <section *ngIf="districtList.length > 0">
-      <h2>Franchise Opportunities in {{ selectedLocation.name }} Districts</h2>
+      <h2>PCD Pharma Franchise Opportunities in {{ selectedLocation.name }} Districts</h2>
+      <p>Select your district below to explore exclusive monopoly rights and franchise opportunities.</p>
       <div class="district-grid">
         <a class="district-card" *ngFor="let district of districtList" [routerLink]="goToDistrict(district)">
           <mat-icon>location_on</mat-icon>
@@ -128,25 +165,99 @@
       </div>
     </section>
 
+    <!-- Call to Action -->
     <div class="cta">
+      <h2>Apply for PCD Pharma Franchise in {{ selectedLocation.name }}</h2>
+      <p>Take the first step towards building your pharma business with Rapid Pharmaceuticals.</p>
       <a routerLink="/contact" class="cta-btn">Request Franchise Information</a>
     </div>
-  </div>
 
+  </div>
   <!-- DISTRICT PAGE -->
   <div *ngIf="selectedDistrict && !isStatePage">
+
+    <!-- Back Navigation -->
     <a class="back-btn" [routerLink]="['/pcd-pharma-franchise']">← Back to All States</a>
-    <h1>PCD Pharma Franchise in {{ selectedDistrict }}</h1>
-    <p>
-      Rapid Pharmaceuticals now offers exclusive <strong>PCD Pharma Franchise in {{ selectedDistrict }}</strong>.
-      Our WHO-GMP certified range ensures quality, reliability, and business success.
-    </p>
-    <p>
-      Get monopoly rights, product marketing support, and business transparency — everything you need to build your own
-      franchise in {{ selectedDistrict }}.
-    </p>
+
+    <!-- Primary H1 -->
+    <h1>PCD Pharma Franchise in {{ selectedDistrict }} | Rapid Pharmaceuticals</h1>
+
+    <!-- Banner Image -->
+    <img class="banner-img" [src]="'/pcddistrict.webp'"
+      [alt]="'PCD Pharma Franchise in ' + selectedDistrict + ' - Rapid Pharmaceuticals'" loading="lazy" />
+
+    <!-- Intro -->
+    <section class="district-intro">
+      <h2>Exclusive Monopoly Rights in {{ selectedDistrict }}</h2>
+      <p>
+        <strong>Rapid Pharmaceuticals</strong> now offers exclusive
+        <strong>PCD Pharma Franchise in {{ selectedDistrict }}</strong>. Our
+        <strong>WHO-GMP certified, DCGI-approved product range</strong> ensures
+        quality, reliability, and long-term business success for franchise partners.
+      </p>
+      <p>
+        With growing demand for medicines in {{ selectedDistrict }}, this is the
+        perfect opportunity to establish your own pharma distribution business.
+        We provide monopoly rights, marketing support, and transparent policies
+        to help you succeed in your territory.
+      </p>
+    </section>
+
+    <!-- Product Highlights -->
+    <section class="district-products">
+      <h2>Product Range Available in {{ selectedDistrict }}</h2>
+      <ul>
+        <li>✔ Tablets & Capsules – Antibiotics, cardiac-diabetic, nutraceuticals</li>
+        <li>✔ Syrups & Suspensions – Pediatric, gastro, general care</li>
+        <li>✔ Injectables – Hospital & critical care supplies</li>
+        <li>✔ Ointments & Creams – Dermatology & general care</li>
+      </ul>
+      <p>
+        Our catalogue includes <strong>150+ products</strong> across 20+ therapeutic
+        categories, ensuring franchise partners can meet diverse healthcare needs.
+      </p>
+    </section>
+
+    <!-- Benefits -->
+    <section class="district-benefits">
+      <h2>Why Choose Rapid Pharmaceuticals in {{ selectedDistrict }}?</h2>
+      <ul>
+        <li>✔ Monopoly rights for {{ selectedDistrict }} territory</li>
+        <li>✔ Attractive profit margins & transparent agreements</li>
+        <li>✔ Marketing kits, visual aids & promotional inputs</li>
+        <li>✔ Timely delivery & full logistic support</li>
+        <li>✔ Trusted by doctors, chemists & healthcare professionals nationwide</li>
+      </ul>
+      <p>
+        By partnering with Rapid Pharmaceuticals, you gain access to a reputed
+        brand with proven market credibility and complete business support.
+      </p>
+    </section>
+
+    <!-- Call to Action -->
     <div class="cta">
+      <h2>Apply for PCD Pharma Franchise in {{ selectedDistrict }}</h2>
+      <p>Take the first step towards building your pharma business in {{ selectedDistrict }}.</p>
       <a routerLink="/contact" class="cta-btn">Request Franchise Information</a>
     </div>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2>FAQs – PCD Pharma Franchise in {{ selectedDistrict }}</h2>
+      <details>
+        <summary>Do I get monopoly rights in {{ selectedDistrict }}?</summary>
+        <p>Yes, Rapid Pharmaceuticals offers exclusive monopoly rights for franchise partners in {{ selectedDistrict }}.
+        </p>
+      </details>
+      <details>
+        <summary>What product range is available?</summary>
+        <p>We provide 150+ DCGI-approved products including tablets, syrups, injectables, and ointments.</p>
+      </details>
+      <details>
+        <summary>How can I apply?</summary>
+        <p>Simply fill out the inquiry form or contact us directly. Our team will guide you through onboarding.</p>
+      </details>
+    </section>
+
   </div>
 </div>

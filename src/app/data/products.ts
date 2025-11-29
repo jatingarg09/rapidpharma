@@ -17,7 +17,7 @@ export const products: Product[] = [
     "composition": "Azithromycin Dihydrate equivalent to Azithromycin 500mg",
     "category": "Tablet",
     "packaging": "10x3 Blister",
-    "imageUrl": "/productswebp/AZIRAP-500.png",
+    "imageUrl": "/productswebp/AZIRAP-500.webp",
     "fullComposition": "Azithromycin Dihydrate IP eq. to Azithromycin 500mg",
     "therapeuticClass": "Antibiotic",
     "mrp": 755
@@ -317,7 +317,7 @@ export const products: Product[] = [
     "composition": "Ibuprofen + Paracetamol",
     "category": "Syrup/Suspension",
     "packaging": "60ml bottle",
-    "imageUrl": "/productswebp/RAPIFEVA-P.png",
+    "imageUrl": "/productswebp/RAPIFEVA-P.webp",
     "fullComposition": "Ibuprofen IP 100mg + Paracetamol IP 162.5mg per 5ml",
     "therapeuticClass": "NSAID (Non-Steroidal Anti-Inflammatory Drug)",
     "mrp": 47.71
