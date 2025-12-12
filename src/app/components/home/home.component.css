@@ -8,7 +8,7 @@
   line-height: 1.6;
 } */
 
-.h2 {
+.h1 {
   font-size: 2em;
   margin-bottom: 20px;
   color: #4183bc;
@@ -224,7 +224,7 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .h2 {
+  .h1 {
     font-size: 1.6rem;
   }
 
@@ -266,7 +266,7 @@
 }
 
 @media (max-width: 480px) {
-  .h2 {
+  .h1 {
     font-size: 1.4rem;
   }
 

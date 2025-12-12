@@ -132,7 +132,14 @@
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 1rem;
+
+  }
+
+  .form-section,
+  .info-section {
+    flex: 1;
+    min-width: auto;
   }
 
 }
