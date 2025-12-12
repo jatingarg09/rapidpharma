@@ -1,9 +1,15 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Renderer2,
+  Inject,
+  PLATFORM_ID
+} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { Product, products } from '../../data/products';
 import { isPlatformBrowser } from '@angular/common';
-import { Inject, PLATFORM_ID } from '@angular/core';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-product-detail',
@@ -13,6 +19,7 @@ import { Inject, PLATFORM_ID } from '@angular/core';
 export class ProductDetailComponent implements OnInit {
   product!: Product;
   similarProducts: Product[] = [];
+  jsonLdSafe!: SafeHtml; // sanitized JSON-LD to render in template
 
   constructor(
     private route: ActivatedRoute,
@@ -20,26 +27,76 @@ export class ProductDetailComponent implements OnInit {
     private meta: Meta,
     private title: Title,
     private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Object,
+    private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit() {
+    // 1) Synchronously read slug so SSR has product before render
+    const slug = this.route.snapshot.paramMap.get('slug');
+    if (slug) {
+      this.loadProduct(slug);
+    }
+
+    // If you still want to react when route params change in-browser:
     this.route.paramMap.subscribe((params) => {
-      const slug = params.get('slug');
-      if (slug) this.loadProduct(slug);
+      const s = params.get('slug');
+      if (s && s !== this.product?.slug) {
+        this.loadProduct(s);
+        if (isPlatformBrowser(this.platformId)) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
     });
   }
 
   loadProduct(slug: string) {
-    this.product = products.find((p) => p.slug === slug)!;
+    // 2) Synchronously set product from your local products array
+    const found = products.find((p) => p.slug === slug);
+    if (!found) {
+      // fallback: navigate or show 404 - keep behavior you already have
+      console.warn('Product not found:', slug);
+      return;
+    }
+    this.product = found;
+
     this.similarProducts = products
       .filter((p) => p.category === this.product.category && p.slug !== slug)
       .slice(0, 4);
 
+    // 3) Always set meta tags (works server-side)
+    this.setMetaTags();
+
+    // 4) Create JSON-LD string and sanitize for template rendering (works server-side)
+    const jsonLd = {
+      '@context': 'https://schema.org/',
+      '@type': 'Product',
+      '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+      name: this.product.name,
+      image: `https://rapidpharmaceuticals.in/${this.product.imageUrl}`,
+      description: this.product.composition,
+      category: this.product.category,
+      brand: {
+        '@type': 'Brand',
+        name: 'Rapid Pharmaceuticals',
+      },
+      offers: {
+        '@type': 'Offer',
+        url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+        priceCurrency: 'INR',
+        price: this.product.mrp,
+        availability: 'https://schema.org/InStock',
+        itemCondition: 'https://schema.org/NewCondition',
+      },
+    };
+
+    this.jsonLdSafe = this.sanitizer.bypassSecurityTrustHtml(
+      JSON.stringify(jsonLd)
+    );
+
+    // 5) Browser-only things
     if (isPlatformBrowser(this.platformId)) {
-      this.setMetaTags();
-      this.addStructuredData();
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      this.addStructuredDataBrowser(); // optional DOM-based additions if you still want them
     }
   }
 
@@ -47,12 +104,11 @@ export class ProductDetailComponent implements OnInit {
     this.router.navigate(['/product', product.slug]);
   }
 
-
-  /** ✅ SEO Meta + OG + Twitter */
+  /** ✅ SEO Meta + OG + Twitter — call this for SSR too */
   setMetaTags(): void {
     const pageTitle = `${this.product.name} | ${this.product.composition} | Rapid Pharmaceuticals`;
     const pageDescription =
-      `${this.product.name} containing ${this.product.composition} — high-quality medicines by Rapid Pharmaceuticals, available for PCD franchise.`
+      `${this.product.name} containing ${this.product.composition} — high-quality medicines by Rapid Pharmaceuticals, available for PCD franchise.`;
     const imageUrl =
       this.product.imageUrl ||
       'https://rapidpharmaceuticals.in/assets/og-image.jpg';
@@ -84,36 +140,22 @@ export class ProductDetailComponent implements OnInit {
     this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
   }
 
-  /** ✅ Schema.org JSON-LD */
-  addStructuredData() {
-    const existing = document.querySelector(
-      'script[type="application/ld+json"]'
-    );
-    if (existing) existing.remove();
+  /** optional: keep browser-only DOM manipulations separated */
+  private addStructuredDataBrowser() {
+    // If you still want to append script via document in browser:
+    try {
+      const existing = document.querySelector(
+        'script[type="application/ld+json"]'
+      );
+      if (existing) existing.remove();
 
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify({
-      '@context': 'https://schema.org/',
-      '@type': 'Product',
-      '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
-      name: this.product.name,
-      image: `https://rapidpharmaceuticals.in/${this.product.imageUrl}`,
-      description: this.product.composition,
-      category: this.product.category,
-      brand: {
-        '@type': 'Brand',
-        name: 'Rapid Pharmaceuticals',
-      },
-      offers: {
-        '@type': 'Offer',
-        url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
-        priceCurrency: 'INR',
-        price: this.product.mrp,
-        availability: 'https://schema.org/InStock',
-        itemCondition: 'https://schema.org/NewCondition',
-      },
-    });
-    document.head.appendChild(script);
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.text = JSON.stringify(JSON.parse(this.jsonLdSafe as string));
+      document.head.appendChild(script);
+    } catch (e) {
+      // ignore on server or if anything fails
+      console.warn('could not append browser JSON-LD', e);
+    }
   }
 }
