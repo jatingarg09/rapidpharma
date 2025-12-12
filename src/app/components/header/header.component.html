@@ -1,12 +1,18 @@
 <header class="header">
+  <div class="top-bar">
+    <div class="contact-info">
+      <a href="tel:+919530931539"><mat-icon>phone</mat-icon> +91-9530931539</a>
+      <a href="mailto:contactrapidpharma&#64;gmail.com"><mat-icon>email</mat-icon> contactrapidpharma&#64;gmail.com</a>
+    </div>
+  </div>
   <div class="header-content">
     <!-- Logo and Company Name -->
     <div class="logo">
-    <a routerLink="/" class="logo-link">
-      <img src="/rapidlogo.jpeg" alt="Rapid Pharmaceuticals Logo" class="logo-img" />
-      <span class="company-name">Rapid Pharmaceuticals</span>
-    </a>
-  </div>
+      <a routerLink="/" class="logo-link">
+        <img src="/imagelogo.png" alt="Rapid Pharmaceuticals Logo" class="logo-img" loading="lazy" />
+        <!-- <span class="company-name">Rapid Pharmaceuticals</span> -->
+      </a>
+    </div>
 
     <!-- Hamburger Icon (mobile) -->
     <div class="hamburger" (click)="toggleMenu()">

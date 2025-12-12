@@ -1,7 +1,6 @@
 .header {
-  background-color: #004080;
-  color: white;
-  padding: 1rem 2rem;
+  background-color: white;
+  color: #004080;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -13,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding: 1rem 2rem;
 }
 
 /* Logo + Company Name */
@@ -23,8 +23,30 @@
 }
 
 .logo img {
-  height: 40px;
-  width: 40px;
+  height: 72px;
+  width: 180px;
+}
+
+.top-bar {
+  background-color: #004080;
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  font-size: 0.9rem;
+  gap: 1.5rem;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .logo span {
@@ -39,14 +61,14 @@
 }
 
 .nav-links a {
-  color: white;
+  color: #004080;
   text-decoration: none;
   font-weight: 500;
   padding-bottom: 2px;
 }
 
 .nav-links a:hover {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #004080;
 }
 
 .nav-links a.active {
@@ -102,5 +124,23 @@
   .nav-links a {
     padding: 0.5rem 0;
     border-bottom: 1px solid #ffffff33;
+  }
+
+  .nav-links a.active {
+    border-bottom: 1px solid #ffcc00;
+  }
+
+  .nav-links a:hover {
+    border-bottom: 1px solid #ffcc00;
+  }
+
+  .top-bar {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .contact-info {
+    font-size: 0.8rem;
+    gap: 1rem;
   }
 }
