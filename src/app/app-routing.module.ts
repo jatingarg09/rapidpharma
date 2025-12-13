@@ -20,10 +20,10 @@ export function pcdFranchiseMatcher(url: UrlSegment[]): UrlMatchResult | null {
 }
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'products', component: ProductsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: '', component: HomeComponent, title: 'Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
+  { path: 'about', component: AboutComponent, title: 'About Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
+  { path: 'products', component: ProductsComponent, title: 'Products - Rapid Pharmaceuticals' },
+  { path: 'contact', component: ContactComponent, title: 'Contact Rapid Pharmaceuticals' },
   { path: 'product/:slug', component: ProductDetailComponent },
   { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
   { path: 'franchise', component: PcdFranchiseComponent },

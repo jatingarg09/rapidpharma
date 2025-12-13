@@ -8,3 +8,17 @@
   flex: 1;
   padding: 20px;
 }
+
+.whatsapp-float {
+  position: fixed;          /* Critical: must be fixed, not absolute */
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 10px;
+  z-index: 100;            /* Critical: must be high z-index to appear above other elements */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1); /* Adds a zoom effect on hover */
+}
