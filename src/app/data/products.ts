@@ -443,7 +443,7 @@ export const products: Product[] = [
     "name": "RAPMOX-CV",
     "composition": "Amoxycillin + Clavulanic Acid + Lactic Acid Bacillus",
     "category": "Tablet",
-    "packaging": "10x6 Alu Alu",
+    "packaging": "10x10 Blister",
     "imageUrl": "/productswebp/RAPMOX-CV.webp",
     "fullComposition": "Amoxycillin Trihydrate IP 500mg + Potassium Clavulanate IP 125mg + Lactic Acid Bacillus 60 million spores",
     "therapeuticClass": "Antibiotic",
