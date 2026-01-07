@@ -352,9 +352,9 @@ export class PcdFranchiseComponent implements OnInit {
   }
 
   updateSEO(location?: Location, district?: string): void {
-    const baseTitle = 'PCD Pharma Franchise in India | Rapid Pharmaceuticals';
+    const baseTitle = 'PCD Pharma Franchise in India | Monopoly Rights | Rapid Pharmaceuticals';
     const baseDesc =
-      'Join Rapid Pharmaceuticals for monopoly-based PCD Pharma Franchise opportunities across India with WHO-GMP certified products.';
+      'Join Rapid Pharmaceuticals for monopoly-based PCD Pharma Franchise opportunities across India with WHO-GMP certified products and 150+ DCGI-approved formulations.';
 
     let title = baseTitle;
     let description = baseDesc;
