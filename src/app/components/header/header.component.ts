@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+declare let gtag: Function;
 
 @Component({
   selector: 'app-header',
@@ -19,4 +20,11 @@ export class HeaderComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
+
+  trackCall() {
+  gtag('event', 'phone_click', {
+    event_category: 'engagement',
+    event_label: 'Header Call'
+  });
+}
 }
