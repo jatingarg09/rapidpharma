@@ -12,25 +12,26 @@ import { Router } from '@angular/router';
     trigger('fadeIn', [
       transition(':enter', [
         style({ opacity: 0, transform: 'translateY(10px)' }),
-        animate('300ms ease-out', style({ opacity: 1, transform: 'translateY(0)' }))
-      ])
+        animate(
+          '300ms ease-out',
+          style({ opacity: 1, transform: 'translateY(0)' }),
+        ),
+      ]),
     ]),
     trigger('listAnimation', [
       transition('* => *', [
         style({ opacity: 0 }),
-        animate('300ms ease-in', style({ opacity: 1 }))
-      ])
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
     ]),
     trigger('fadeInOut', [
       transition(':enter', [
         style({ opacity: 0 }),
-        animate('300ms ease-in', style({ opacity: 1 }))
+        animate('300ms ease-in', style({ opacity: 1 })),
       ]),
-      transition(':leave', [
-        animate('300ms ease-out', style({ opacity: 0 }))
-      ])
-    ])
-  ]
+      transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
+    ]),
+  ],
 })
 export class ProductsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -63,9 +64,10 @@ export class ProductsComponent implements OnInit {
 
   filterByCategory(category: string) {
     this.selectedCategory = category;
-    this.filteredProducts = category === 'All'
-      ? this.products
-      : this.products.filter(p => p.category === category);
+    this.filteredProducts =
+      category === 'All'
+        ? this.products
+        : this.products.filter((p) => p.category === category);
     this.updatePagedProducts();
   }
 
@@ -82,16 +84,22 @@ export class ProductsComponent implements OnInit {
   }
 
   filterProducts() {
-    this.filteredProducts = this.products.filter(product => {
-      const matchesCategory = this.selectedCategory === 'All' || product.category === this.selectedCategory;
-      const matchesSearch = !this.searchText || 
+    this.filteredProducts = this.products.filter((product) => {
+      const matchesCategory =
+        this.selectedCategory === 'All' ||
+        product.category === this.selectedCategory;
+      const matchesSearch =
+        !this.searchText ||
         product.name.toLowerCase().includes(this.searchText) ||
         product.composition.toLowerCase().includes(this.searchText);
       return matchesCategory && matchesSearch;
     });
     this.currentPage = 0; // Reset page when filtering
     const startIndex = this.currentPage * this.pageSize;
-    this.pagedProducts = this.filteredProducts.slice(startIndex, startIndex + this.pageSize);
+    this.pagedProducts = this.filteredProducts.slice(
+      startIndex,
+      startIndex + this.pageSize,
+    );
     this.totalPages = Math.ceil(this.filteredProducts.length / this.pageSize);
     this.updatePagedProducts();
   }
@@ -103,9 +111,12 @@ export class ProductsComponent implements OnInit {
 
   private updatePagedProducts() {
     const startIndex = this.currentPage * this.pageSize;
-    this.pagedProducts = this.filteredProducts.slice(startIndex, startIndex + this.pageSize);
+    this.pagedProducts = this.filteredProducts.slice(
+      startIndex,
+      startIndex + this.pageSize,
+    );
     this.totalPages = Math.ceil(this.filteredProducts.length / this.pageSize);
-    this.pageNumbers = Array.from({length: this.totalPages}, (_, i) => i);
+    this.pageNumbers = Array.from({ length: this.totalPages }, (_, i) => i);
   }
 
   goToProduct(product: Product) {
@@ -115,13 +126,13 @@ export class ProductsComponent implements OnInit {
   getVisiblePages(): number[] {
     const totalPages = Math.ceil(this.filteredProducts.length / this.pageSize);
     if (totalPages <= 3) {
-      return Array.from({length: totalPages}, (_, i) => i);
+      return Array.from({ length: totalPages }, (_, i) => i);
     }
 
     if (this.currentPage === 0) {
       return [0, 1, 2];
     }
-    
+
     if (this.currentPage === totalPages - 1) {
       return [totalPages - 3, totalPages - 2, totalPages - 1];
     }
