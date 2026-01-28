@@ -125,7 +125,7 @@ export const products: Product[] = [
     imageUrl: '/productswebp/DECARAP-50.webp',
     fullComposition: 'Nandrolone Decanoate IP 50mg per ml',
     therapeuticClass: 'Steroid',
-    mrp: 240,
+    mrp: 151,
   },
   {
     name: 'DEFZORAP-6',
@@ -274,7 +274,7 @@ export const products: Product[] = [
     imageUrl: '/productswebp/MEFAPED-125.webp',
     fullComposition: 'Mefenamic Acid IP 50mg + Paracetamol IP 125mg per 5ml',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
-    mrp: 51.65,
+    mrp: 48.25,
   },
   {
     name: 'NIMRAP-P',
@@ -295,7 +295,7 @@ export const products: Product[] = [
     fullComposition:
       'Piperacillin Sodium IP 4g + Tazobactam Sodium IP 0.5g per vial',
     therapeuticClass: 'Antibiotic',
-    mrp: 455.12,
+    mrp: 426.67,
   },
   {
     name: 'PRO FC',
