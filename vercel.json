@@ -1,12 +1,11 @@
 {
   "version": 2,
-  "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server",
-  "outputDirectory": "dist/rapid-pharmaceuticals/browser",
-  "functions": {
-    "dist/rapid-pharmaceuticals/server/main.js": {
-      "runtime": "nodejs20.x"
+  "builds": [
+    {
+      "src": "dist/rapid-pharmaceuticals/server/main.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
