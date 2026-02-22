@@ -1,15 +1,10 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "dist/rapid-pharmaceuticals/server/main.js",
-      "use": "@vercel/node"
-    }
-  ],
+  "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "dist/rapid-pharmaceuticals/server/main.js"
+      "dest": "/dist/rapid-pharmaceuticals/server/main.js"
     }
   ]
 }
