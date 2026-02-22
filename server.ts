@@ -1,46 +1,64 @@
 import 'zone.js/node';
 import express from 'express';
-import { join } from 'node:path';
+import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { dirname } from 'node:path';
 import { CommonEngine } from '@angular/ssr';
 import { APP_BASE_HREF } from '@angular/common';
 import bootstrap from './src/main.server';
+import { existsSync, readFileSync } from 'node:fs';
 
-// --- Directory references ---
+
+// Get correct directory of compiled server file
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const server = express();
-const distFolder = join(__dirname, './dist/rapid-pharmaceuticals/browser'); // SSR output folder
-const indexHtml = join(distFolder, 'index.html'); // Correct file
-
-console.log('✅ Using browser dist folder:', distFolder);
-// Serve static files from /browser and /public
-server.use(express.static(distFolder, { maxAge: '1y' }));
-server.use(express.static(join(process.cwd(), 'public'), { maxAge: '1y' }));
-
-// Angular SSR Engine
 const commonEngine = new CommonEngine();
+
+// ✅ Correct browser folder (relative to server folder)
+const distFolder = join(
+  __dirname,
+  'dist',
+  'rapid-pharmaceuticals',
+  'browser'
+);
+
+const template = readFileSync(
+  join(distFolder, 'index.html'),
+  'utf-8'
+);
+
+console.log('SERVER __dirname:', __dirname);
+console.log('Browser folder:', distFolder);
+
+// 1️⃣ Serve static files FIRST
+
+server.get('*.*', express.static(distFolder, {
+  maxAge: '1y'
+}));
+
+
+// 2️⃣ Angular SSR route
 
 server.get('*', async (req, res, next) => {
   try {
     const html = await commonEngine.render({
       bootstrap,
-      documentFilePath: indexHtml,
+      document: template, 
       url: req.originalUrl,
       publicPath: distFolder,
       providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }],
     });
     res.status(200).send(html);
   } catch (err) {
-    console.error('SSR Error:', err);
+    console.error('❌ SSR Error:', err);
     next(err);
   }
 });
 
-// Start server
+// 3️⃣ Start server
+
 const port = process.env['PORT'] || 4000;
 server.listen(port, () => {
-  console.log(`✅ Node Express server running on http://localhost:${port}`);
+  console.log(`✅ Server running at http://localhost:${port}`);
 });

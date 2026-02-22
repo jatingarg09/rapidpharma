@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:rapid-pharmaceuticals": "node dist/rapid-pharmaceuticals/server/server.mjs",
-    "build:ssr": "ng build && ng run rapid-pharmaceuticals:server",
+    "build:ssr": "ng build -c production && ng run rapid-pharmaceuticals:server",
     "serve:ssr": "node dist/rapid-pharmaceuticals/server/main.js",
     "dev:ssr": "ng run rapid-pharmaceuticals:serve-ssr",
     "prerender": "ng run rapid-pharmaceuticals:prerender"
