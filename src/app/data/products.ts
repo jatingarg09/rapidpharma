@@ -561,7 +561,7 @@ export const products: Product[] = [
     mrp: 190,
   },
   {
-    name: 'Cefimelt LB 50',
+    name: 'CEFIMELT LB 50',
     composition: 'Cefixime + Lactic Acid Bacillus',
     category: 'Syrup',
     packaging: '30Ml With Water',
@@ -572,7 +572,7 @@ export const products: Product[] = [
     mrp: 75,
   },
   {
-    name: 'Rapipod DS 50',
+    name: 'RAPIPOD DS 50',
     composition: 'Cefpodoxime Proxetil',
     category: 'Syrup',
     packaging: '30Ml With Water',
@@ -583,7 +583,7 @@ export const products: Product[] = [
     mrp: 89,
   },
   {
-    name: 'Besline',
+    name: 'BESLINE',
     composition: 'Bacillus Clausii Spores',
     category: 'Probiotic',
     packaging: 'Pack Of 10 Bottles',
@@ -594,7 +594,7 @@ export const products: Product[] = [
     mrp: 750,
   },
   {
-    name: 'Omerize - D',
+    name: 'OMERIZE - D',
     composition: 'Omeprazole + Domperidone',
     category: 'Tablet',
     packaging: '10x15 Strip',
@@ -605,7 +605,7 @@ export const products: Product[] = [
     mrp: 1170,
   },
   {
-    name: 'Zactocold',
+    name: 'ZACTOCOLD',
     composition: 'Paracetamol + Phenylephrine + Chlorpheniramine Maleate',
     category: 'Syrup',
     packaging: '60Ml',
@@ -617,7 +617,7 @@ export const products: Product[] = [
     mrp: 82,
   },
   {
-    name: 'Rapinak Gel',
+    name: 'RAPINAK-GEL',
     composition:
       'Linseed Oil + Diclofenac + Methyl Salicylate + Menthol + Benzyl Alcohol',
     category: 'Gel',
@@ -630,7 +630,7 @@ export const products: Product[] = [
     mrp: 125,
   },
   {
-    name: 'Vorarap-AQ',
+    name: 'VORARAP-AQ',
     composition: 'Diclofenac Sodium',
     category: 'Injection',
     packaging: '2X5X1Ml',
@@ -652,7 +652,7 @@ export const products: Product[] = [
     mrp: 1200,
   },
   {
-    name: 'Doxy B6',
+    name: 'DOXY B6',
     composition: 'Doxylamine Succinate + Pyridoxine + Folic Acid',
     category: 'Tablet',
     packaging: '10X10 Alu Alu',
@@ -664,7 +664,7 @@ export const products: Product[] = [
     mrp: 950,
   },
   {
-    name: 'Pro FC',
+    name: 'PRO FC',
     composition: 'Ferrous Ascorbate + Folic Acid + Zinc',
     category: 'Syrup',
     packaging: '200Ml',
@@ -676,7 +676,7 @@ export const products: Product[] = [
     mrp: 190,
   },
   {
-    name: 'Cefimelt 1g',
+    name: 'CEFIMELT 1GM',
     composition: 'Ceftriaxone Sodium',
     category: 'Injection',
     packaging: 'Single Vial',
@@ -687,7 +687,7 @@ export const products: Product[] = [
     mrp: 71.8,
   },
   {
-    name: 'Vitoneuron Inj.',
+    name: 'METHYRAP PLUS',
     composition: 'Methylcobalamin + Vitamin B6 + Niacinamide',
     category: 'Injection',
     packaging: '1*2Ml',
@@ -699,7 +699,7 @@ export const products: Product[] = [
     mrp: 85,
   },
   {
-    name: 'Methyrap-P SR 75',
+    name: 'METHYRAP-P SR 75',
     composition: 'Pregabalin + Methylcobalamin',
     category: 'Tablet',
     packaging: '10X10 Alu Alu',
@@ -710,7 +710,7 @@ export const products: Product[] = [
     mrp: 1900,
   },
   {
-    name: 'Rapmox CV',
+    name: 'RAPMOX CV',
     composition: 'Amoxycillin + Clavulanic Acid',
     category: 'Syrup',
     packaging: '30Ml With Water',
@@ -721,7 +721,7 @@ export const products: Product[] = [
     mrp: 69.21,
   },
   {
-    name: 'Picofix-Plus',
+    name: 'PICOFIX-PLUS',
     composition: 'Sodium Picosulfate + Liquid Paraffin + Milk of Magnesia',
     category: 'Syrup',
     packaging: '170ml',
@@ -733,7 +733,7 @@ export const products: Product[] = [
     mrp: 175,
   },
   {
-    name: 'Rapicita 10',
+    name: 'RAPICITA 10',
     composition: 'Escitalopram Oxalate',
     category: 'Tablet',
     packaging: '10*10 Blister',
@@ -744,7 +744,7 @@ export const products: Product[] = [
     mrp: 1100,
   },
   {
-    name: 'Uterap',
+    name: 'UTERAP',
     composition: 'Ayurvedic Herbal Blend',
     category: 'Ayurvedic Tonic',
     packaging: '200ml',
@@ -755,7 +755,7 @@ export const products: Product[] = [
     mrp: 190,
   },
   {
-    name: 'Citrarap',
+    name: 'CITRARAP',
     composition: 'Disodium Hydrogen Citrate',
     category: 'Syrup',
     packaging: '100ml',
@@ -766,7 +766,7 @@ export const products: Product[] = [
     mrp: 125,
   },
   {
-    name: 'Oflarap OZ',
+    name: 'OFLARAP OZ',
     composition: 'Ofloxacin + Ornidazole',
     category: 'Tablet',
     packaging: '10*10 Blister',
@@ -777,7 +777,7 @@ export const products: Product[] = [
     mrp: 1100,
   },
   {
-    name: 'Predirap 4',
+    name: 'PREDIRAP 4',
     composition: 'Methylprednisolone',
     category: 'Tablet',
     packaging: '10*10 Alu Alu',
@@ -788,7 +788,7 @@ export const products: Product[] = [
     mrp: 650,
   },
   {
-    name: 'Feburap 40',
+    name: 'FEBURAP 40',
     composition: 'Febuxostat',
     category: 'Tablet',
     packaging: '10*10 Alu Alu',
@@ -798,6 +798,28 @@ export const products: Product[] = [
     therapeuticClass: 'Gout Management',
     mrp: 1100,
   },
+  {
+    name: 'PANTORIZE - D',
+    composition: 'Pantoprazole + Domperidone',
+    category: 'Tablet',
+    packaging: '10*10 Alu Alu',
+    //imageUrl: '/productswebp/Feburap-40.webp',
+    imageUrl: '/upcoming.png',
+    fullComposition: 'Pantoprazole 40mg + Domperidone 10mg',
+    therapeuticClass: 'Gastrointestinal',
+    mrp: 1100,
+  },
+  {
+    name: 'DROTAVIL - M',
+    composition: '',
+    category: 'Tablet',
+    packaging: '10*10 Blister',
+    //imageUrl: '/productswebp/Feburap-40.webp',
+    imageUrl: '/upcoming.png',
+    fullComposition: 'Febuxostat 40mg',
+    therapeuticClass: 'Gout Management',
+    mrp: 1100,
+  }
 ];
 
 function generateSlug(name: string): string {
