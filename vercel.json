@@ -1,6 +1,7 @@
 {
   "version": 2,
   "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server",
+  "outputDirectory": "dist/rapid-pharmaceuticals/browser",
   "routes": [
     { "src": "/(.*)", "dest": "/api/index.js" }
   ]
