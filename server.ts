@@ -58,7 +58,15 @@ server.get('*', async (req, res, next) => {
 
 // 3️⃣ Start server
 
-const port = process.env['PORT'] || 4000;
-server.listen(port, () => {
-  console.log(`✅ Server running at http://localhost:${port}`);
-});
+// const port = process.env['PORT'] || 4000;
+// server.listen(port, () => {
+//   console.log(`✅ Server running at http://localhost:${port}`);
+// });
+if (require.main === module) {
+  const port = process.env['PORT'] || 4000;
+  server.listen(port, () => {
+    console.log(`✅ Local server running at http://localhost:${port}`);
+  });
+}
+
+export default server;
