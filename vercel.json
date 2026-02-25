@@ -2,11 +2,11 @@
   "version": 2,
   "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server",
   "functions": {
-    "api/index.ts": {
-      "runtime": "nodejs18.x"
+    "api/index.js": {
+      "runtime": "nodejs20.x"
     }
   },
   "routes": [
-    { "src": "/(.*)", "dest": "/api/index.ts" }
+    { "src": "/(.*)", "dest": "/api/index.js" }
   ]
 }
