@@ -3,7 +3,7 @@
   "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server",
   "functions": {
     "api/index.js": {
-      "runtime": "nodejs20.x"
+      "runtime": "nodejs18.x"
     }
   },
   "routes": [
