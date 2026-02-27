@@ -1,7 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server",
-  "outputDirectory": "dist/rapid-pharmaceuticals/browser",
+  "buildCommand": "ng build -c production && ng run rapid-pharmaceuticals:server && Copy-Item dist\\rapid-pharmaceuticals\\browser\\index.html public\\ -Force && Copy-Item dist\\rapid-pharmaceuticals\\browser\\*.js public\\ -Force && Copy-Item dist\\rapid-pharmaceuticals\\browser\\*.css public\\ -Force",
   "routes": [
     { "src": "/(.*)", "dest": "/api/index.js" }
   ]
