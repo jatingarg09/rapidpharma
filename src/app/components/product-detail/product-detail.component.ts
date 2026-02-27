@@ -8,7 +8,7 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { Product, products } from '../../data/products';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
@@ -19,7 +19,6 @@ import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 export class ProductDetailComponent implements OnInit {
   product!: Product;
   similarProducts: Product[] = [];
-  jsonLdSafe!: SafeHtml; // sanitized JSON-LD to render in template
 
   constructor(
     private route: ActivatedRoute,
@@ -28,7 +27,7 @@ export class ProductDetailComponent implements OnInit {
     private title: Title,
     private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
-    private sanitizer: DomSanitizer
+    @Inject(DOCUMENT) private document: Document,
   ) {}
 
   ngOnInit() {
@@ -90,15 +89,22 @@ export class ProductDetailComponent implements OnInit {
       },
     };
 
-    this.jsonLdSafe = this.sanitizer.bypassSecurityTrustHtml(
-      JSON.stringify(jsonLd)
-    );
-
-    // 5) Browser-only things
-    if (isPlatformBrowser(this.platformId)) {
-      this.addStructuredDataBrowser(); // optional DOM-based additions if you still want them
-    }
+    this.addJsonLd(jsonLd);
   }
+
+  private addJsonLd(data: any) {
+  const existing = this.document.getElementById('product-schema');
+  if (existing) {
+    existing.remove();
+  }
+
+  const script = this.document.createElement('script');
+  script.type = 'application/ld+json';
+  script.id = 'product-schema';
+  script.text = JSON.stringify(data);
+
+  this.document.head.appendChild(script);
+}
 
   goToProduct(product: Product) {
     this.router.navigate(['/product', product.slug]);
@@ -140,22 +146,5 @@ export class ProductDetailComponent implements OnInit {
     this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
   }
 
-  /** optional: keep browser-only DOM manipulations separated */
-  private addStructuredDataBrowser() {
-    // If you still want to append script via document in browser:
-    try {
-      const existing = document.querySelector(
-        'script[type="application/ld+json"]'
-      );
-      if (existing) existing.remove();
-
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(JSON.parse(this.jsonLdSafe as string));
-      document.head.appendChild(script);
-    } catch (e) {
-      // ignore on server or if anything fails
-      console.warn('could not append browser JSON-LD', e);
-    }
-  }
+ 
 }
