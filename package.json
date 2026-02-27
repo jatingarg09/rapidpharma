@@ -12,7 +12,7 @@
     "dev:ssr": "ng run rapid-pharmaceuticals:serve-ssr",
     "prerender": "ng run rapid-pharmaceuticals:prerender",
     "build:ssr": "ng build -c production && ng run rapid-pharmaceuticals:server && npm run copy-assets",
-    "copy-assets": "cp dist\\rapid-pharmaceuticals\\browser\\index.html public\\ -Force && cp dist\\rapid-pharmaceuticals\\browser\\*.js public\\ -Force && cp dist\\rapid-pharmaceuticals\\browser\\*.css public\\ -Force"
+    "copy-assets": "cp dist/rapid-pharmaceuticals/browser/index.html public/ && cp dist/rapid-pharmaceuticals/browser/*.js public/ && cp dist/rapid-pharmaceuticals/browser/*.css public/ "
 
   },
   "private": true,
