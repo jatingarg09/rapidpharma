@@ -1,8 +1,9 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { stateDistricts } from '../../data/state-districts';
+import { CanonicalService } from '../../services/canonicalService';
 
 interface Location {
   name: string;
@@ -276,7 +277,9 @@ export class PcdFranchiseComponent implements OnInit {
     private router: Router,
     private title: Title,
     private meta: Meta,
-    @Inject(PLATFORM_ID) private platformId: any
+    private canonicalService: CanonicalService,
+    @Inject(DOCUMENT) private document: Document,
+    @Inject(PLATFORM_ID) private platformId: any,
   ) {}
 
   ngOnInit(): void {
@@ -309,7 +312,7 @@ export class PcdFranchiseComponent implements OnInit {
             state,
             name: d,
             slug: d.toLowerCase().replace(/\s+/g, '-'),
-          }))
+          })),
       );
 
       // 3️⃣ Check if slug matches a district
@@ -322,7 +325,7 @@ export class PcdFranchiseComponent implements OnInit {
         this.isStatePage = false;
         this.updateSEO(
           this.selectedLocation || undefined,
-          this.selectedDistrict
+          this.selectedDistrict,
         );
         return;
       }
@@ -335,8 +338,11 @@ export class PcdFranchiseComponent implements OnInit {
     });
 
     // Scroll-to-top for navigation
-    this.router.events.subscribe(() => {
-      if (isPlatformBrowser(this.platformId)) {
+    this.router.events.subscribe((event) => {
+      if (
+        event instanceof NavigationEnd &&
+        isPlatformBrowser(this.platformId)
+      ) {
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     });
@@ -352,7 +358,8 @@ export class PcdFranchiseComponent implements OnInit {
   }
 
   updateSEO(location?: Location, district?: string): void {
-    const baseTitle = 'PCD Pharma Franchise in India | Monopoly Rights | Rapid Pharmaceuticals';
+    const baseTitle =
+      'PCD Pharma Franchise in India | Monopoly Rights | Rapid Pharmaceuticals';
     const baseDesc =
       'Join Rapid Pharmaceuticals for monopoly-based PCD Pharma Franchise opportunities across India with WHO-GMP certified products and 150+ DCGI-approved formulations.';
 
@@ -374,39 +381,38 @@ export class PcdFranchiseComponent implements OnInit {
 
     this.title.setTitle(title);
     this.meta.updateTag({ name: 'description', content: description });
-    this.meta.updateTag({ name: 'canonical', content: url });
+    this.canonicalService.setCanonicalURL(url);
 
-    if (isPlatformBrowser(this.platformId)) {
-      const schema = {
-        '@context': 'https://schema.org',
-        '@type': 'LocalBusiness',
-        '@id': url,
-        name: 'Rapid Pharmaceuticals',
-        url: url,
-        description: description,
-        image: 'https://rapidpharmaceuticals.in/assets/logo.webp',
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: district || location?.name || 'India',
-          addressRegion: location?.name || 'India',
-          addressCountry: 'India',
-        },
-      };
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'LocalBusiness',
+      '@id': url,
+      name: 'Rapid Pharmaceuticals',
+      url: url,
+      description: description,
+      image: 'https://rapidpharmaceuticals.in/assets/logo.webp',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: district || location?.name || 'India',
+        addressRegion: location?.name || 'India',
+        addressCountry: 'India',
+      },
+    };
 
-      const existing = document.querySelector(
-        'script[type="application/ld+json"]'
-      );
-      if (existing) existing.remove();
+    const existing = this.document.querySelector(
+      'script[type="application/ld+json"]',
+    );
+    if (existing) existing.remove();
 
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(schema);
-      document.head.appendChild(script);
-    }
+    const script = this.document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify(schema);
+    this.document.head.appendChild(script);
   }
 
   goToFranchise(slug: string): void {
-    this.router.navigate(['/pcd-pharma-franchise-in-' + slug]);
+    const normalizedSlug = slug.toLowerCase().replace(/\s+/g, '-');
+    this.router.navigate(['/pcd-pharma-franchise-in-' + normalizedSlug]);
   }
 
   goToDistrict(district: string): string[] {
