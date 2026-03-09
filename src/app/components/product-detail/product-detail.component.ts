@@ -5,11 +5,12 @@ import {
   Inject,
   PLATFORM_ID
 } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { Product, products } from '../../data/products';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
+import { CanonicalService } from '../../services/canonicalService';
 
 @Component({
   selector: 'app-product-detail',
@@ -25,7 +26,7 @@ export class ProductDetailComponent implements OnInit {
     public router: Router,
     private meta: Meta,
     private title: Title,
-    private renderer: Renderer2,
+    private canonicalService: CanonicalService,
     @Inject(PLATFORM_ID) private platformId: Object,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -42,7 +43,7 @@ export class ProductDetailComponent implements OnInit {
       const s = params.get('slug');
       if (s && s !== this.product?.slug) {
         this.loadProduct(s);
-        if (isPlatformBrowser(this.platformId)) {
+        if (event instanceof NavigationEnd && isPlatformBrowser(this.platformId)) {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       }
@@ -144,6 +145,8 @@ export class ProductDetailComponent implements OnInit {
       content: pageDescription,
     });
     this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
+
+    this.canonicalService.setCanonicalURL(productUrl);
   }
 
  
