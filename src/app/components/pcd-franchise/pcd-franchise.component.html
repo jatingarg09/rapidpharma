@@ -123,7 +123,7 @@
       <h2>Start Your Pharma Franchise Business in {{ selectedLocation.name }}</h2>
       <p>
         Welcome to <strong>Rapid Pharmaceuticals</strong> – your trusted partner for
-        <strong>PCD Pharma Franchise in {{ selectedLocation.name }}</strong>. We provide
+        <strong>PCD Pharma Franchise in Company {{ selectedLocation.name }}</strong>. We provide
         <strong>WHO-GMP certified, DCGI-approved medicines</strong> with monopoly rights
         to help distributors and entrepreneurs establish profitable businesses.
       </p>
@@ -155,7 +155,7 @@
 
     <!-- District List -->
     <section *ngIf="districtList.length > 0">
-      <h2>PCD Pharma Franchise Opportunities in {{ selectedLocation.name }} Districts</h2>
+      <h2>PCD Pharma Franchise Opportunities Available in {{ selectedLocation.name }} Districts</h2>
       <p>Select your district below to explore exclusive monopoly rights and franchise opportunities.</p>
       <div class="district-grid">
         <a class="district-card" *ngFor="let district of districtList" [routerLink]="goToDistrict(district)">
