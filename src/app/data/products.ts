@@ -811,14 +811,25 @@ export const products: Product[] = [
   },
   {
     name: 'DROTAVIL - M',
-    composition: '',
+    composition: 'Drotaverine + Mefenamic Acid',
     category: 'Tablet',
     packaging: '10*10 Blister',
     imageUrl: '/productswebp/DROTAVIL-M.webp',
     //imageUrl: '/upcoming.png',
-    fullComposition: 'Febuxostat 40mg',
+    fullComposition: 'Drotaverine 100mg + Mefenamic Acid 250mg',
     therapeuticClass: 'Gout Management',
     mrp: 1100,
+  },
+  {
+    name: 'RAPINAK - MR',
+    composition: 'Aceclofenac + Paracetamol + Chlorzoxazone',
+    category: 'Tablet',
+    packaging: '10*10 Alu Alu',
+    imageUrl: '/productswebp/RAPINAK-MR.webp',
+    //imageUrl: '/upcoming.png',
+    fullComposition: 'Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg',
+    therapeuticClass: 'Analgesic',
+    mrp: 1200,
   }
 ];
 
