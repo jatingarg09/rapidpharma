@@ -39,12 +39,7 @@
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -108,14 +103,14 @@
           "defaultConfiguration": "production"
         },
         "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
+          "builder": "@angular/ssr-dev-server",
           "options": {
             "browserTarget": "rapid-pharmaceuticals:build:production",
             "serverTarget": "rapid-pharmaceuticals:server:production"
           }
         },
         "prerender": {
-          "builder": "@nguniversal/builders:prerender",
+          "builder": "@angular/ssr-prerender",
           "options": {
             "browserTarget": "rapid-pharmaceuticals:build:production",
             "serverTarget": "rapid-pharmaceuticals:server:production",
