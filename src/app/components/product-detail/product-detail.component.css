@@ -107,6 +107,490 @@
   color: #333;
 }
 
+/* Detail Sections */
+.detail-section {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 5px solid #1976d2;
+}
+
+.detail-section h2 {
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detail-section h2 mat-icon {
+  font-size: 1.5rem;
+  width: 32px;
+  height: 32px;
+}
+
+.section-content {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.section-content p {
+  margin: 0 0 15px 0;
+}
+
+.disclaimer {
+  background: #f0f4ff;
+  padding: 12px 15px;
+  border-radius: 6px;
+  color: #1976d2;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  border-left: 3px solid #1976d2;
+}
+
+/* Uses List */
+.uses-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.uses-list li {
+  padding: 12px 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.uses-list li:last-child {
+  border-bottom: none;
+}
+
+.uses-list mat-icon {
+  color: #28a745;
+  font-size: 1.2rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Side Effects Section */
+.warning-section {
+  border-left-color: #dc3545;
+}
+
+.warning-section h2 {
+  color: #dc3545;
+}
+
+.warning-section h2 mat-icon {
+  color: #dc3545;
+}
+
+.side-effects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.side-effects-list li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: #fff5f5;
+  border-radius: 6px;
+  border-left: 3px solid #dc3545;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.side-effects-list mat-icon {
+  color: #dc3545;
+  font-size: 1.2rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Safety Section */
+.safety-section {
+  border-left-color: #ffc107;
+}
+
+.safety-section h2 {
+  color: #ffc107;
+}
+
+.safety-section h2 mat-icon {
+  color: #ffc107;
+}
+
+.safety-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.safety-list li {
+  padding: 15px;
+  background: #fffbf0;
+  border-radius: 6px;
+  border-left: 3px solid #ffc107;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.safety-list mat-icon {
+  color: #ffc107;
+  font-size: 1.2rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Product Info Icons */
+.product-info p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-info mat-icon {
+  color: #1976d2;
+  font-size: 1.1rem;
+  width: 20px;
+  height: 20px;
+}
+
+.product-info .mrp mat-icon {
+  color: #dc3545;
+}
+
+.enquiry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+  background-color: #1976d2;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.enquiry-btn:hover {
+  background-color: #145ea8;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+  transform: translateY(-2px);
+}
+
+.enquiry-btn mat-icon {
+  color: #fff;
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
+/* Info Section */
+.info-section {
+  border-left-color: #17a2b8;
+}
+
+.info-section h2 {
+  color: #17a2b8;
+}
+
+.info-section h2 mat-icon {
+  color: #17a2b8;
+}
+
+/* Contraindications List */
+.contraindications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contraindications-list li {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background: #ffe6e6;
+  border-radius: 6px;
+  border-left: 3px solid #dc3545;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.contraindications-list mat-icon {
+  color: #dc3545;
+  font-size: 1.2rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Precautions List */
+.precautions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.precautions-list li {
+  padding: 12px 15px;
+  background: #e8f4f8;
+  border-radius: 6px;
+  border-left: 3px solid #17a2b8;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.precautions-list mat-icon {
+  color: #17a2b8;
+  font-size: 1.2rem;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ✅ BREADCRUMB NAVIGATION */
+.breadcrumb-nav {
+  width: 100%;
+  max-width: 900px;
+  padding: 15px 0;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.breadcrumb-nav a,
+.breadcrumb-nav .breadcrumb-home {
+  color: #1976d2;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.3s;
+}
+
+.breadcrumb-nav a:hover,
+.breadcrumb-nav .breadcrumb-home:hover {
+  color: #145ea8;
+  text-decoration: underline;
+}
+
+.breadcrumb-nav .breadcrumb-home mat-icon,
+.breadcrumb-nav a mat-icon {
+  font-size: 1rem;
+  width: 16px;
+  height: 16px;
+}
+
+.breadcrumb-nav .breadcrumb-sep {
+  color: #ccc;
+  margin: 0 4px;
+}
+
+.breadcrumb-nav .breadcrumb-current {
+  color: #666;
+  font-weight: 600;
+}
+
+/* ✅ RATING SECTION */
+.rating-section {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f0f4ff;
+  border-radius: 6px;
+  border-left: 3px solid #ffc107;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.rating-stars .stars {
+  display: flex;
+  gap: 2px;
+}
+
+.rating-stars mat-icon {
+  font-size: 1.3rem;
+  width: 24px;
+  height: 24px;
+  color: #ddd;
+  transition: color 0.2s;
+}
+
+.rating-stars .stars mat-icon.filled {
+  color: #ffc107;
+}
+
+.rating-value {
+  font-weight: bold;
+  color: #1976d2;
+  font-size: 1.1rem;
+}
+
+.review-count {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ✅ ADDITIONAL PRODUCT INFO */
+.product-info .active-ingredient,
+.product-info .strength {
+  font-weight: 500;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+/* ✅ FAQ SECTION */
+.faq-section {
+  border-left-color: #9c27b0;
+}
+
+.faq-section h2 {
+  color: #9c27b0;
+}
+
+.faq-section h2 mat-icon {
+  color: #9c27b0;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+}
+
+.faq-detail {
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.faq-detail summary {
+  padding: 15px;
+  cursor: pointer;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  color: #1976d2;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.faq-detail summary:hover {
+  background: #f0f4ff;
+}
+
+.faq-detail summary mat-icon {
+  font-size: 1.2rem;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s;
+}
+
+.faq-detail[open] summary mat-icon {
+  transform: rotate(180deg);
+}
+
+.faq-detail[open] summary {
+  background: #f0f4ff;
+}
+
+.faq-answer {
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  color: #555;
+  line-height: 1.8;
+}
+
+.faq-answer p {
+  margin: 0;
+}
+
+/* ✅ MEDICAL DISCLAIMER SECTION */
+.medical-disclaimer-section {
+  width: 100%;
+  max-width: 900px;
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.2);
+}
+
+.medical-disclaimer-section h3 {
+  font-size: 1.2rem;
+  color: #d39e00;
+  margin: 0 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.medical-disclaimer-section h3 mat-icon {
+  font-size: 1.3rem;
+  width: 28px;
+  height: 28px;
+}
+
+.medical-disclaimer-section p {
+  margin: 0;
+  color: #664d03;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+/* ✅ RELATED PRODUCTS SECTION ENHANCEMENT */
+.similar-section .related-desc {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.similar-card .product-composition {
+  font-size: 0.85rem;
+  color: #999;
+  margin-top: 4px;
+  line-height: 1.4;
+}
+
 @media (max-width: 768px) {
   .product-main {
     flex-direction: column;
@@ -115,5 +599,55 @@
 
   .product-info {
     text-align: center;
+  }
+
+  .detail-section {
+    padding: 20px;
+  }
+
+  .detail-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .safety-list {
+    grid-template-columns: 1fr;
+  }
+
+  .precautions-list {
+    grid-template-columns: 1fr;
+  }
+
+  .section-content {
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb-nav {
+    font-size: 0.8rem;
+  }
+
+  .rating-section {
+    padding: 12px;
+  }
+
+  .medical-disclaimer-section {
+    padding: 15px;
+  }
+
+  .medical-disclaimer-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .medical-disclaimer-section p {
+    font-size: 0.9rem;
+  }
+
+  .faq-detail summary {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .faq-answer {
+    padding: 12px;
+    font-size: 0.9rem;
   }
 }
