@@ -8,8 +8,8 @@ describe('HighlightCarouselComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HighlightCarouselComponent]
-    })
+    imports: [HighlightCarouselComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(HighlightCarouselComponent);

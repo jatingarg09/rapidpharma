@@ -1,9 +1,11 @@
 import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser, NgIf, NgFor } from '@angular/common';
 import { stateDistricts } from '../../data/state-districts';
 import { CanonicalService } from '../../services/canonicalService';
+import { ContactComponent } from '../contact/contact.component';
+import { MatIcon } from '@angular/material/icon';
 
 interface Location {
   name: string;
@@ -13,9 +15,17 @@ interface Location {
 }
 
 @Component({
-  selector: 'app-pcd-franchise',
-  templateUrl: './pcd-franchise.component.html',
-  styleUrls: ['./pcd-franchise.component.css'],
+    selector: 'app-pcd-franchise',
+    templateUrl: './pcd-franchise.component.html',
+    styleUrls: ['./pcd-franchise.component.css'],
+    standalone: true,
+    imports: [
+        NgIf,
+        NgFor,
+        RouterLink,
+        ContactComponent,
+        MatIcon,
+    ],
 })
 export class PcdFranchiseComponent implements OnInit {
   locations: Location[] = [
