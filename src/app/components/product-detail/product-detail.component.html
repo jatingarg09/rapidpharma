@@ -2,30 +2,232 @@
 <script type="application/ld+json" [innerHTML]="jsonLdSafe"></script>
 
 <section class="product-detail">
+  <!-- ✅ BREADCRUMB NAVIGATION - Better UX & SEO Signal -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <a href="/" class="breadcrumb-home">
+      <mat-icon>home</mat-icon> Home
+    </a>
+    <span class="breadcrumb-sep">/</span>
+    <a routerLink="/products" class="breadcrumb-link">Products</a>
+    <span class="breadcrumb-sep">/</span>
+    <!-- <a [href]="'/products?category=' + product.category" class="breadcrumb-link">
+      {{ product.category }}
+    </a>
+    <span class="breadcrumb-sep">/</span> -->
+    <span class="breadcrumb-current" aria-current="page">{{ product.name }}</span>
+  </nav>
+
+  <!-- Product Header -->
   <div class="product-main">
-    <img [src]="product.imageUrl" [alt]="product.name" loading="lazy" />
+    <img [src]="product.imageUrl" [alt]="product.imageAlt || product.name" loading="lazy" />
     <div class="product-info">
-      <h1>{{ product.name }}</h1>
-      <p class="category">Category: {{ product.category }}</p>
-      <p class="packaging">Packaging: {{ product.packaging }}</p>
-      <p class="composition">Composition: {{ product.fullComposition }}</p>
-      <p class="therapeutic-class">Therapeutic Class: {{ product.therapeuticClass }}</p>
-      <p class="mrp">MRP: ₹{{ product.mrp.toFixed(2) }}</p>
-      <a class="enquiry-btn" routerLink="/contact">Request Info</a>
+      <h1>{{ product.seoHeading || product.name }}</h1>
+      
+      <!-- ✅ RATING SECTION - Rich Snippet for Search Results -->
+      <div class="rating-section" *ngIf="product.avgRating">
+        <div class="rating-stars">
+          <span class="stars" [attr.aria-label]="product.avgRating + ' out of 5 stars'">
+            <mat-icon *ngFor="let i of [1,2,3,4,5]; let last = last" 
+              [class.filled]="i <= product.avgRating">
+              star
+            </mat-icon>
+          </span>
+          <span class="rating-value">{{ product.avgRating }}</span>
+          <span class="review-count" *ngIf="product.reviewCount">
+            ({{ product.reviewCount }} reviews)
+          </span>
+        </div>
+      </div>
+
+      <p class="category">
+        <mat-icon>category</mat-icon> Category: <strong>{{ product.category }}</strong>
+      </p>
+      <p class="packaging">
+        <mat-icon>local_shipping</mat-icon> Packaging: <strong>{{ product.packaging }}</strong>
+      </p>
+      <p class="composition">
+        <mat-icon>science</mat-icon> Composition: <strong>{{ product.fullComposition }}</strong>
+      </p>
+      <p class="therapeutic-class">
+        <mat-icon>healing</mat-icon> Therapeutic Class: <strong>{{ product.therapeuticClass }}</strong>
+      </p>
+      <p *ngIf="product.activeIngredient" class="active-ingredient">
+        <mat-icon>local_pharmacy</mat-icon> Active Ingredient: <strong>{{ product.activeIngredient }}</strong>
+      </p>
+      <p *ngIf="product.strength" class="strength">
+        <mat-icon>fitness_center</mat-icon> Strength: <strong>{{ product.strength }}</strong>
+      </p>
+      <p class="mrp">
+        <mat-icon>currency_rupee</mat-icon> MRP: <strong>₹{{ product.mrp.toFixed(2) }}</strong>
+      </p>
+      <a class="enquiry-btn" routerLink="/contact">
+        <mat-icon>email</mat-icon> Request Info
+      </a>
     </div>
   </div>
 
+  <!-- Introduction Section -->
+  <div class="detail-section" *ngIf="product.introduction">
+    <h2>
+      <mat-icon>info</mat-icon> Introduction
+    </h2>
+    <div class="section-content">
+      <p>{{ product.introduction }}</p>
+    </div>
+  </div>
+
+  <!-- Uses/Indications Section -->
+  <div class="detail-section" *ngIf="product.uses && product.uses.length > 0">
+    <h2>
+      <mat-icon>check_circle</mat-icon> Uses & Indications
+    </h2>
+    <div class="section-content">
+      <ul class="uses-list">
+        <li *ngFor="let use of product.uses">
+          <mat-icon>done</mat-icon> {{ use }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Dosage Section -->
+  <div class="detail-section" *ngIf="product.dosage">
+    <h2>
+      <mat-icon>local_pharmacy</mat-icon> Dosage & Administration
+    </h2>
+    <div class="section-content">
+      <p>{{ product.dosage }}</p>
+    </div>
+  </div>
+
+  <!-- Contraindications Section -->
+  <div class="detail-section warning-section" *ngIf="product.contraindications && product.contraindications.length > 0">
+    <h2>
+      <mat-icon>block</mat-icon> Contraindications
+    </h2>
+    <div class="section-content">
+      <ul class="contraindications-list">
+        <li *ngFor="let contra of product.contraindications">
+          <mat-icon>cancel</mat-icon> {{ contra }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Side Effects Section -->
+  <div class="detail-section warning-section" *ngIf="product.sideEffects && product.sideEffects.length > 0">
+    <h2>
+      <mat-icon>warning</mat-icon> Side Effects
+    </h2>
+    <div class="section-content">
+      <p class="disclaimer">
+        The side effects listed below may occur with the use of this medication. However, not all individuals experience these effects.
+      </p>
+      <ul class="side-effects-list">
+        <li *ngFor="let effect of product.sideEffects">
+          <mat-icon>alert</mat-icon> {{ effect }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Precautions Section -->
+  <div class="detail-section info-section" *ngIf="product.precautions && product.precautions.length > 0">
+    <h2>
+      <mat-icon>info</mat-icon> Precautions
+    </h2>
+    <div class="section-content">
+      <ul class="precautions-list">
+        <li *ngFor="let precaution of product.precautions">
+          <mat-icon>fact_check</mat-icon> {{ precaution }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Safety Advice Section -->
+  <div class="detail-section safety-section" *ngIf="product.safetyAdvice && product.safetyAdvice.length > 0">
+    <h2>
+      <mat-icon>security</mat-icon> Safety Advice & Precautions
+    </h2>
+    <div class="section-content">
+      <ul class="safety-list">
+        <li *ngFor="let advice of product.safetyAdvice">
+          <mat-icon>check_box</mat-icon> {{ advice }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Storage Conditions Section -->
+  <div class="detail-section info-section" *ngIf="product.storageConditions">
+    <h2>
+      <mat-icon>storage</mat-icon> Storage Conditions
+    </h2>
+    <div class="section-content">
+      <p>{{ product.storageConditions }}</p>
+    </div>
+  </div>
+
+  <!-- Shelf Life Section -->
+  <div class="detail-section info-section" *ngIf="product.shelfLife">
+    <h2>
+      <mat-icon>schedule</mat-icon> Shelf Life & Expiry
+    </h2>
+    <div class="section-content">
+      <p>{{ product.shelfLife }}</p>
+    </div>
+  </div>
+
+  <!-- ✅ FAQ SECTION - FAQ Rich Snippet in Search Results -->
+  <div class="detail-section faq-section" *ngIf="product.faqItems && product.faqItems.length > 0">
+    <h2>
+      <mat-icon>help</mat-icon> Frequently Asked Questions
+    </h2>
+    <div class="section-content">
+      <div class="faq-item" *ngFor="let item of product.faqItems">
+        <details class="faq-detail">
+          <summary class="faq-question">
+            <mat-icon>expand_more</mat-icon>
+            {{ item.question }}
+          </summary>
+          <div class="faq-answer">
+            <p>{{ item.answer }}</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+
+  <!-- ✅ MEDICAL DISCLAIMER - Legal & Trust Signal -->
+  <div class="medical-disclaimer-section">
+    <h3>
+      <mat-icon>warning</mat-icon> Medical Disclaimer
+    </h3>
+    <p>
+      This product information is for educational purposes only. It is not intended as a substitute for professional medical advice, diagnosis, or treatment.
+      Always consult with a healthcare professional before starting any new medication or changing your dosage. Rapid Pharmaceuticals is not responsible 
+      for any adverse effects resulting from the misuse of this medication.
+    </p>
+  </div>
+
+  <!-- Similar/Related Products Section -->
   <div class="similar-section" *ngIf="similarProducts.length > 0">
-    <h2>Similar Products</h2>
+    <h2>
+      <mat-icon>inventory_2</mat-icon> Related Products
+    </h2>
+    <p class="related-desc">Explore other products in the {{ product.category }} category</p>
     <div class="similar-grid">
       <a
         class="similar-card"
         *ngFor="let p of similarProducts"
         [routerLink]="['/product', p.slug]"
+        [attr.aria-label]="'View ' + p.name"
       >
-        <img [src]="p.imageUrl" [alt]="p.name" loading="lazy" />
+        <img [src]="p.imageUrl" [alt]="p.name + ' - Related Product'" loading="lazy" />
         <h3>{{ p.name }}</h3>
-    </a>
+        <p class="product-composition">{{ p.composition }}</p>
+      </a>
     </div>
   </div>
 </section>
