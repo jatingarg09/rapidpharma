@@ -5,17 +5,25 @@ import {
   Inject,
   PLATFORM_ID
 } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { Product, products } from '../../data/products';
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { DOCUMENT, isPlatformBrowser, NgIf, NgFor } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CanonicalService } from '../../services/canonicalService';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-product-detail',
-  templateUrl: './product-detail.component.html',
-  styleUrls: ['./product-detail.component.css'],
+    selector: 'app-product-detail',
+    templateUrl: './product-detail.component.html',
+    styleUrls: ['./product-detail.component.css'],
+    standalone: true,
+    imports: [
+        MatIcon,
+        RouterLink,
+        NgIf,
+        NgFor,
+    ],
 })
 export class ProductDetailComponent implements OnInit {
   product!: Product;
@@ -72,7 +80,7 @@ export class ProductDetailComponent implements OnInit {
     const productSchema = {
       '@context': 'https://schema.org/',
       '@type': 'Product',
-      '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+      '@id': `https://rapidpharmaceuticals.in/products/${this.product.slug}`,
       name: this.product.name,
       image: `https://rapidpharmaceuticals.in/${this.product.imageUrl}`,
       description: this.product.metaDescription || this.product.composition,
@@ -87,7 +95,7 @@ export class ProductDetailComponent implements OnInit {
       },
       offers: {
         '@type': 'Offer',
-        url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+        url: `https://rapidpharmaceuticals.in/products/${this.product.slug}`,
         priceCurrency: 'INR',
         price: this.product.mrp,
         availability: 'https://schema.org/InStock',
@@ -129,7 +137,7 @@ export class ProductDetailComponent implements OnInit {
           '@type': 'ListItem',
           position: 4,
           name: this.product.name,
-          item: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+          item: `https://rapidpharmaceuticals.in/products/${this.product.slug}`,
         },
       ],
     };
@@ -193,7 +201,7 @@ export class ProductDetailComponent implements OnInit {
 }
 
   goToProduct(product: Product) {
-    this.router.navigate(['/product', product.slug]);
+    this.router.navigate(['/products', product.slug]);
   }
 
   /** ✅ SEO Meta + OG + Twitter — call this for SSR too */
@@ -208,7 +216,7 @@ export class ProductDetailComponent implements OnInit {
     const imageUrl =
       this.product.imageUrl ||
       'https://rapidpharmaceuticals.in/assets/og-image.jpg';
-    const productUrl = `https://rapidpharmaceuticals.in/product/${this.product.slug}`;
+    const productUrl = `https://rapidpharmaceuticals.in/products/${this.product.slug}`;
 
     this.title.setTitle(pageTitle);
     this.meta.updateTag({ name: 'description', content: pageDescription });

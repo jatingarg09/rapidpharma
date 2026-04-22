@@ -1,14 +1,20 @@
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, NgIf } from '@angular/common';
 import { Component, Inject, PLATFORM_ID } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import emailjs, { EmailJSResponseStatus } from 'emailjs-com';
 
 declare let gtag: Function;
 
 @Component({
-  selector: 'appcontact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.css'],
+    selector: 'appcontact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.css'],
+    standalone: true,
+    imports: [
+        FormsModule,
+        ReactiveFormsModule,
+        NgIf,
+    ],
 })
 export class ContactComponent {
   contactForm: FormGroup;

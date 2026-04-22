@@ -8,8 +8,8 @@ describe('PcdFranchiseComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [PcdFranchiseComponent]
-    })
+    imports: [PcdFranchiseComponent]
+})
     .compileComponents();
 
     fixture = TestBed.createComponent(PcdFranchiseComponent);

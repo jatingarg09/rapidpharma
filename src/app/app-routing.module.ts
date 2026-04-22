@@ -1,11 +1,5 @@
 import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes, UrlMatchResult, UrlSegment } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { ProductsComponent } from './components/products/products.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { ProductDetailComponent } from './components/product-detail/product-detail.component';
-import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
 
 export function pcdFranchiseMatcher(url: UrlSegment[]): UrlMatchResult | null {
   const path = url[0]?.path;
@@ -20,14 +14,15 @@ export function pcdFranchiseMatcher(url: UrlSegment[]): UrlMatchResult | null {
 }
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, title: 'Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
-  { path: 'about', component: AboutComponent, title: 'About Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
-  { path: 'products', component: ProductsComponent, title: 'Products - Rapid Pharmaceuticals' },
-  { path: 'contact', component: ContactComponent, title: 'Contact Rapid Pharmaceuticals' },
-  { path: 'product/:slug', component: ProductDetailComponent },
-  { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
-  { path: 'franchise', component: PcdFranchiseComponent },
-  { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
+  { path: '', loadComponent: () => import('./components/home/home.component').then(m => m.HomeComponent), title: 'Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
+  { path: 'about', loadComponent: () => import('./components/about/about.component').then(m => m.AboutComponent), title: 'About Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
+  { path: 'products', loadComponent: () => import('./components/products/products.component').then(m => m.ProductsComponent), title: 'Products - Rapid Pharmaceuticals' },
+  { path: 'contact', loadComponent: () => import('./components/contact/contact.component').then(m => m.ContactComponent), title: 'Contact Rapid Pharmaceuticals' },
+  { path: 'products/:slug', loadComponent: () => import('./components/product-detail/product-detail.component').then(m => m.ProductDetailComponent) },
+  { path: 'pcd-pharma-franchise', loadComponent: () => import('./components/pcd-franchise/pcd-franchise.component').then(m => m.PcdFranchiseComponent) },
+  { path: 'franchise', loadComponent: () => import('./components/pcd-franchise/pcd-franchise.component').then(m => m.PcdFranchiseComponent) },
+  { matcher: pcdFranchiseMatcher, loadComponent: () => import('./components/pcd-franchise/pcd-franchise.component').then(m => m.PcdFranchiseComponent) },
+
   { path: '**', redirectTo: '' },
 ];
 

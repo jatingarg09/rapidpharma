@@ -2,36 +2,52 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { Product, products } from '../../data/products';
 import { trigger, style, transition, animate } from '@angular/animations';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { MatFormField, MatLabel, MatSuffix } from '@angular/material/form-field';
+import { MatSelect } from '@angular/material/select';
+import { NgFor, NgClass } from '@angular/common';
+import { MatOption } from '@angular/material/core';
+import { MatInput } from '@angular/material/input';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-products',
-  templateUrl: './products.component.html',
-  styleUrls: ['./products.component.css'],
-  animations: [
-    trigger('fadeIn', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(10px)' }),
-        animate(
-          '300ms ease-out',
-          style({ opacity: 1, transform: 'translateY(0)' }),
-        ),
-      ]),
-    ]),
-    trigger('listAnimation', [
-      transition('* => *', [
-        style({ opacity: 0 }),
-        animate('300ms ease-in', style({ opacity: 1 })),
-      ]),
-    ]),
-    trigger('fadeInOut', [
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('300ms ease-in', style({ opacity: 1 })),
-      ]),
-      transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
-    ]),
-  ],
+    selector: 'app-products',
+    templateUrl: './products.component.html',
+    styleUrls: ['./products.component.css'],
+    animations: [
+        trigger('fadeIn', [
+            transition(':enter', [
+                style({ opacity: 0, transform: 'translateY(10px)' }),
+                animate('300ms ease-out', style({ opacity: 1, transform: 'translateY(0)' })),
+            ]),
+        ]),
+        trigger('listAnimation', [
+            transition('* => *', [
+                style({ opacity: 0 }),
+                animate('300ms ease-in', style({ opacity: 1 })),
+            ]),
+        ]),
+        trigger('fadeInOut', [
+            transition(':enter', [
+                style({ opacity: 0 }),
+                animate('300ms ease-in', style({ opacity: 1 })),
+            ]),
+            transition(':leave', [animate('300ms ease-out', style({ opacity: 0 }))]),
+        ]),
+    ],
+    standalone: true,
+    imports: [
+        MatFormField,
+        MatLabel,
+        MatSelect,
+        NgFor,
+        MatOption,
+        MatInput,
+        MatIcon,
+        MatSuffix,
+        NgClass,
+        RouterLink,
+    ],
 })
 export class ProductsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -120,7 +136,7 @@ export class ProductsComponent implements OnInit {
   }
 
   goToProduct(product: Product) {
-    this.router.navigate(['/product', product.slug]);
+    this.router.navigate(['/products', product.slug]);
   }
 
   getVisiblePages(): number[] {

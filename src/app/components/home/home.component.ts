@@ -1,10 +1,15 @@
 import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, NgIf, NgFor } from '@angular/common';
+import { HighlightCarouselComponent } from '../highlight-carousel/highlight-carousel.component';
+import { MatIconModule } from '@angular/material/icon';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css'],
+    standalone: true,
+    imports: [HighlightCarouselComponent, MatIconModule, NgIf, NgFor, RouterLink]
 })
 export class HomeComponent implements OnInit, OnDestroy {
 
