@@ -9,6 +9,7 @@ import { NgFor, NgClass } from '@angular/common';
 import { MatOption } from '@angular/material/core';
 import { MatInput } from '@angular/material/input';
 import { MatIcon } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
 
 @Component({
     selector: 'app-products',
@@ -37,6 +38,7 @@ import { MatIcon } from '@angular/material/icon';
     ],
     standalone: true,
     imports: [
+        FormsModule,
         MatFormField,
         MatLabel,
         MatSelect,
@@ -87,12 +89,9 @@ export class ProductsComponent implements OnInit {
     this.updatePagedProducts();
   }
 
-  applyFilter(event: Event | null) {
-    if (!event) return;
-    const target = event.target as HTMLInputElement;
-    if (!target) return;
-
-    this.searchText = target.value.toLowerCase().trim();
+  onSearchChange() {
+    // searchText is already bound, just ensure it's lowercase for the filter
+    this.searchText = this.searchText ? this.searchText.toLowerCase().trim() : '';
     this.filterProducts();
     if (this.paginator) {
       this.paginator.firstPage();
