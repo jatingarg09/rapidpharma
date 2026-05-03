@@ -106,8 +106,8 @@ export class ProductsComponent implements OnInit {
         product.category === this.selectedCategory;
       const matchesSearch =
         !this.searchText ||
-        product.name.toLowerCase().includes(this.searchText) ||
-        product.composition.toLowerCase().includes(this.searchText);
+        (product.name?.toLowerCase() || '').includes(this.searchText) ||
+        (product.composition?.toLowerCase() || '').includes(this.searchText);
       return matchesCategory && matchesSearch;
     });
     this.currentPage = 0; // Reset page when filtering
