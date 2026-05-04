@@ -1,4 +1,4 @@
-import { isPlatformBrowser, NgFor } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import {
   Component,
   OnInit,
@@ -8,11 +8,9 @@ import {
 } from '@angular/core';
 
 @Component({
-    selector: 'app-highlight-carousel',
-    templateUrl: './highlight-carousel.component.html',
-    styleUrls: ['./highlight-carousel.component.css'],
-    standalone: true,
-    imports: [NgFor],
+  selector: 'app-highlight-carousel',
+  templateUrl: './highlight-carousel.component.html',
+  styleUrls: ['./highlight-carousel.component.css'],
 })
 export class HighlightCarouselComponent implements OnInit, OnDestroy {
   currentSlide = 0;

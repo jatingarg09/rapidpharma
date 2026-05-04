@@ -1,18 +1,11 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, Router, RouterLink, RouterLinkActive } from '@angular/router';
-import { MatIconModule } from '@angular/material/icon';
+import { NavigationEnd, Router } from '@angular/router';
 declare let gtag: Function;
 
 @Component({
-    selector: 'app-header',
-    templateUrl: './header.component.html',
-    styleUrls: ['./header.component.css'],
-    standalone: true,
-    imports: [
-        MatIconModule,
-        RouterLink,
-        RouterLinkActive,
-    ],
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent {
   menuOpen = false;
