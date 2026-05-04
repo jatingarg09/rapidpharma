@@ -221,7 +221,7 @@
       <a
         class="similar-card"
         *ngFor="let p of similarProducts"
-        [routerLink]="['/product', p.slug]"
+        [routerLink]="['/products', p.slug]"
         [attr.aria-label]="'View ' + p.name"
       >
         <img [src]="p.imageUrl" [alt]="p.name + ' - Related Product'" loading="lazy" />

@@ -3,6 +3,7 @@ import { MatPaginator, PageEvent } from '@angular/material/paginator';
 import { Product, products } from '../../data/products';
 import { trigger, style, transition, animate } from '@angular/animations';
 import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-products',
@@ -71,12 +72,9 @@ export class ProductsComponent implements OnInit {
     this.updatePagedProducts();
   }
 
-  applyFilter(event: Event | null) {
-    if (!event) return;
-    const target = event.target as HTMLInputElement;
-    if (!target) return;
-
-    this.searchText = target.value.toLowerCase().trim();
+  onSearchChange() {
+    // searchText is already bound, just ensure it's lowercase for the filter
+    this.searchText = this.searchText ? this.searchText.toLowerCase().trim() : '';
     this.filterProducts();
     if (this.paginator) {
       this.paginator.firstPage();
@@ -90,8 +88,8 @@ export class ProductsComponent implements OnInit {
         product.category === this.selectedCategory;
       const matchesSearch =
         !this.searchText ||
-        product.name.toLowerCase().includes(this.searchText) ||
-        product.composition.toLowerCase().includes(this.searchText);
+        (product.name?.toLowerCase() || '').includes(this.searchText) ||
+        (product.composition?.toLowerCase() || '').includes(this.searchText);
       return matchesCategory && matchesSearch;
     });
     this.currentPage = 0; // Reset page when filtering
@@ -120,7 +118,7 @@ export class ProductsComponent implements OnInit {
   }
 
   goToProduct(product: Product) {
-    this.router.navigate(['/product', product.slug]);
+    this.router.navigate(['/products', product.slug]);
   }
 
   getVisiblePages(): number[] {
