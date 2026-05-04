@@ -118,7 +118,7 @@ export class ProductsComponent implements OnInit {
   }
 
   goToProduct(product: Product) {
-    this.router.navigate(['/product', product.slug]);
+    this.router.navigate(['/products', product.slug]);
   }
 
   getVisiblePages(): number[] {
