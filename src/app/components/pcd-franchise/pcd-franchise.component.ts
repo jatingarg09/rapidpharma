@@ -336,16 +336,6 @@ export class PcdFranchiseComponent implements OnInit {
       this.isStatePage = false;
       this.updateSEO();
     });
-
-    // Scroll-to-top for navigation
-    this.router.events.subscribe((event) => {
-      if (
-        event instanceof NavigationEnd &&
-        isPlatformBrowser(this.platformId)
-      ) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-    });
   }
 
   scrollToInquiry() {

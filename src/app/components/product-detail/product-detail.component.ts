@@ -43,9 +43,6 @@ export class ProductDetailComponent implements OnInit {
       const s = params.get('slug');
       if (s && s !== this.product?.slug) {
         this.loadProduct(s);
-        if (event instanceof NavigationEnd && isPlatformBrowser(this.platformId)) {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
       }
     });
   }
