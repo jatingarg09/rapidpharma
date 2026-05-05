@@ -193,7 +193,7 @@ export class ProductDetailComponent implements OnInit {
 }
 
   goToProduct(product: Product) {
-    this.router.navigate(['/product', product.slug]);
+    this.router.navigate(['/products', product.slug]);
   }
 
   /** ✅ SEO Meta + OG + Twitter — call this for SSR too */

@@ -18,7 +18,8 @@
         <mat-form-field appearance="outline" class="search-field">
           <mat-label>Search Products</mat-label>
           <input matInput 
-                 (keyup)="applyFilter($event)" 
+                 [(ngModel)]="searchText"
+                 (ngModelChange)="onSearchChange()" 
                  placeholder="Enter product name or composition">
           <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
@@ -66,7 +67,7 @@
         <div class="product-header">
           <h3>{{ product.name }}</h3>
           <a class="detail-btn-inline"
-                  [routerLink]="['/product', product.slug]">
+                  [routerLink]="['/products', product.slug]">
             <mat-icon>info</mat-icon> Details
         </a>
         </div>

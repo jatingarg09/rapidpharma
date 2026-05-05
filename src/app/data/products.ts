@@ -3719,12 +3719,12 @@ export const products: Product[] = [
   {
     name: 'UTERAP',
     slug: 'uterap-ayurvedic-herbal-women-health-tonic',
-    composition: 'Ayurvedic Herbal Blend',
+    composition: 'Ayurvedic Uterine Tonic',
     category: 'Ayurvedic Tonic',
     packaging: '200ml',
     imageUrl: '/productswebp/UTERAP.webp',
     fullComposition: 'Ayurvedic Uterine Tonic (Herbal blend)',
-    therapeuticClass: 'Ayurvedic',
+    therapeuticClass: 'Gynecological',
     mrp: 190,
     introduction:
       "UTERAP is a traditional Ayurvedic uterine tonic formulated to support women's reproductive health and hormonal balance during various life stages. This herbal blend contains ingredients known for their potential benefits in regulating the menstrual cycle, supporting uterine health, and alleviating pre-menstrual symptoms. UTERAP is designed to provide natural support for women's reproductive wellness, making it an ideal choice for individuals seeking holistic care for menstrual health, fertility support, and general reproductive well-being in a convenient tonic form.",

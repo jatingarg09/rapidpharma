@@ -16,13 +16,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   opacity: 0;
   transform: scale(1.05);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
   will-change: opacity, transform; /* GPU hint for smoother transitions */
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .carousel-slide.active {

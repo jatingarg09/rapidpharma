@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, title: 'About Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
   { path: 'products', component: ProductsComponent, title: 'Products - Rapid Pharmaceuticals' },
   { path: 'contact', component: ContactComponent, title: 'Contact Rapid Pharmaceuticals' },
-  { path: 'product/:slug', component: ProductDetailComponent },
+  { path: 'products/:slug', component: ProductDetailComponent },
   { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
   { path: 'franchise', component: PcdFranchiseComponent },
   { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
