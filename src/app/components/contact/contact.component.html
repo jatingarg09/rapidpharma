@@ -1,73 +1,108 @@
-<div class="contact-wrapper">
+<div class="contact-page">
   <h1 class="visually-hidden">Contact Rapid Pharmaceuticals</h1>
-  <div class="contact-container">
-    <!-- Left: Form -->
-    <div class="form-section">
-      <h2>Request Form</h2>
-      <p class="form-description">
-        Please fill out the form below to request product information, pricing, or any other inquiry. Our team will get back to you promptly.
-      </p>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
-        <div class="form-fields">
-          <div class="form-row">
-            <label for="name">Full Name</label>
-            <input id="name" type="text" formControlName="name" />
-            <div *ngIf="submitted && contactForm.controls['name'].invalid" class="error">
-              Name is required
+  
+  <div class="contact-hero">
+    <div class="container text-center">
+      <h1 class="page-title">Get in Touch</h1>
+      <p class="page-subtitle">We are here to answer any questions you may have about our products or franchise opportunities.</p>
+    </div>
+  </div>
+
+  <div class="container contact-main">
+    <div class="contact-grid">
+      <!-- Left: Form -->
+      <div class="form-card">
+        <h2>Send us a Message</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" novalidate>
+          <div class="form-fields">
+            <div class="form-row">
+              <label for="name">Full Name</label>
+              <input id="name" type="text" formControlName="name" placeholder="John Doe" />
+              <div *ngIf="submitted && contactForm.controls['name'].invalid" class="error">
+                Name is required
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email Address</label>
+              <input id="email" type="email" formControlName="email" placeholder="john@example.com" />
+              <div *ngIf="submitted && contactForm.controls['email'].invalid" class="error">
+                Valid email is required
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="phone">Phone Number</label>
+              <input id="phone" type="text" formControlName="phone" placeholder="+91 XXXXX XXXXX" />
+              <div *ngIf="submitted && contactForm.controls['phone'].invalid" class="error">
+                Valid phone number is required
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="5" formControlName="message" placeholder="How can we help you?"></textarea>
+              <div *ngIf="submitted && contactForm.controls['message'].invalid" class="error">
+                Message is required
+              </div>
             </div>
           </div>
 
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" type="email" formControlName="email" />
-            <div *ngIf="submitted && contactForm.controls['email'].invalid" class="error">
-              Valid email is required
+          <button type="submit" class="btn-primary submit-btn">Submit Request</button>
+        </form>
+        
+        <!-- Success Popup -->
+        <div *ngIf="showPopup" class="popup-success">
+          <mat-icon>check_circle</mat-icon>
+          <div class="popup-content">
+            <strong>Request Received!</strong>
+            <span>We will get back to you shortly.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Info -->
+      <div class="info-card">
+        <h2>Contact Information</h2>
+        <div class="info-list">
+          <div class="info-item">
+            <div class="icon-circle"><mat-icon>place</mat-icon></div>
+            <div class="info-text">
+              <h3>Corporate Office</h3>
+              <p>#143, Street No.1, Ward No.1<br>Village Road - 148024<br>Punjab, India</p>
             </div>
           </div>
 
-          <div class="form-row">
-            <label for="phone">Phone Number</label>
-            <input id="phone" type="text" formControlName="phone" />
-            <div *ngIf="submitted && contactForm.controls['phone'].invalid" class="error">
-              Valid phone number is required
+          <div class="info-item">
+            <div class="icon-circle"><mat-icon>phone</mat-icon></div>
+            <div class="info-text">
+              <h3>Phone</h3>
+              <p><a href="tel:+919530931538">+91-9530931538</a><br><a href="tel:+919530931539">+91-9530931539</a></p>
             </div>
           </div>
 
-          <div class="form-row">
-            <label for="message">Request / Message</label>
-            <textarea id="message" rows="4" formControlName="message"></textarea>
-            <div *ngIf="submitted && contactForm.controls['message'].invalid" class="error">
-              Message is required
+          <div class="info-item">
+            <div class="icon-circle"><mat-icon>email</mat-icon></div>
+            <div class="info-text">
+              <h3>Email</h3>
+              <p><a href="mailto:contactrapidpharma@gmail.com">contactrapidpharma&#64;gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="icon-circle"><mat-icon>schedule</mat-icon></div>
+            <div class="info-text">
+              <h3>Business Hours</h3>
+              <p>Mon – Sat: 9:00 AM – 6:00 PM<br>Sunday: Closed</p>
             </div>
           </div>
         </div>
-
-        <button type="submit" class="submit-btn">Submit Request</button>
-      </form>
-      <div *ngIf="showPopup" class="popup-success">
-        ✅ Thank you! Your request has been received.<br>
-        We will contact you soon.
       </div>
     </div>
+  </div>
 
-    <!-- Right: Contact Info -->
-    <div class="info-section">
-      <div class="info-content">
-        <h2>Contact Information</h2>
-        <p><strong>Address:</strong><br> #143,Street No.1,Ward No.1, Village Road- 148024,Punjab, India</p>
-        <p><strong>Phone:</strong><br> +91-9530931538/39</p>
-        <p><strong>Email:</strong><br> contactrapidpharma&#64;gmail.com</p>
-
-        <h3>Business Hours</h3>
-        <p>Monday – Saturday<br> 9:00 AM – 6:00 PM</p>
-
-        <h3>Customer Support</h3>
-        <p>We typically respond within 1 business day.</p>
-      </div>
-
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30767694.11883084!2d60.92944751922805!3d19.72019948337311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x28228c09f749ff3d%3A0x332636a5bca154c9!2sRapid%20Pharmaceuticals!5e0!3m2!1sen!2sin!4v1776878346493!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
+  <!-- Full Width Map -->
+  <div class="full-width-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30767694.11883084!2d60.92944751922805!3d19.72019948337311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x28228c09f749ff3d%3A0x332636a5bca154c9!2sRapid%20Pharmaceuticals!5e0!3m2!1sen!2sin!4v1776878346493!5m2!1sen!2sin" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
 </div>
