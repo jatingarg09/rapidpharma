@@ -186,10 +186,22 @@
 
     <!-- Intro -->
     <section class="section-container text-center">
-      <h2 class="section-title">Start Your Pharma Business in {{ selectedLocation.name }}</h2>
-      <p class="section-description max-w-800 mx-auto">
+      <h2 class="section-title">
+        <ng-container *ngIf="seoVariationIndex === 0">Start Your Pharma Business in {{ selectedLocation.name }}</ng-container>
+        <ng-container *ngIf="seoVariationIndex === 1">Leading PCD Pharma Franchise in {{ selectedLocation.name }}</ng-container>
+        <ng-container *ngIf="seoVariationIndex === 2">Expand Your Reach in {{ selectedLocation.name }}</ng-container>
+      </h2>
+      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 0">
         Welcome to <strong>Rapid Pharmaceuticals</strong> – your trusted partner for PCD Pharma Franchise in {{ selectedLocation.name }}. 
         With rising healthcare demand in this region, starting a pharma business here ensures strong growth potential. We support our partners with comprehensive promotional materials and transparent business practices.
+      </p>
+      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 1">
+        Unlock high profit margins with a <strong>PCD Pharma Franchise</strong> in {{ selectedLocation.name }}. 
+        Rapid Pharmaceuticals provides distributors with exclusive monopoly rights and a massive portfolio of WHO-GMP certified medicines to help you dominate the regional market.
+      </p>
+      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 2">
+        <strong>Rapid Pharmaceuticals</strong> is offering exclusive distribution opportunities across {{ selectedLocation.name }}. 
+        By partnering with us, you get DCGI-approved formulations, extensive marketing support, and the independence to build a highly successful pharmaceutical business in your territory.
       </p>
     </section>
 
@@ -260,10 +272,23 @@
 
     <!-- Intro -->
     <section class="section-container text-center">
-      <h2 class="section-title">Monopoly Rights in {{ selectedDistrict }}</h2>
-      <p class="section-description max-w-800 mx-auto">
+      <h2 class="section-title">
+        <ng-container *ngIf="seoVariationIndex === 0">Monopoly Rights in {{ selectedDistrict }}</ng-container>
+        <ng-container *ngIf="seoVariationIndex === 1">Top PCD Pharma Franchise in {{ selectedDistrict }}</ng-container>
+        <ng-container *ngIf="seoVariationIndex === 2">Start a Pharma Business in {{ selectedDistrict }}</ng-container>
+      </h2>
+      
+      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 0">
         <strong>Rapid Pharmaceuticals</strong> offers an exclusive PCD Pharma Franchise in <strong>{{ selectedDistrict }}</strong>. 
         With growing demand for quality medicines in {{ selectedDistrict }}, this is the perfect opportunity to establish your own distribution business with our WHO-GMP certified range.
+      </p>
+      
+      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 1">
+        Looking for a highly profitable business opportunity? <strong>Rapid Pharmaceuticals</strong> is actively expanding its network in <strong>{{ selectedDistrict }}</strong>. We empower local distributors with exclusive monopoly rights and a robust portfolio of over 150 DCGI-approved formulations to ensure your success.
+      </p>
+      
+      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 2">
+        Establish a leading pharmaceutical distribution network in <strong>{{ selectedDistrict }}</strong> with <strong>Rapid Pharmaceuticals</strong>. By partnering with us, you gain access to premium, WHO-GMP manufactured medicines, aggressive marketing support, and the exclusive rights needed to dominate the local market.
       </p>
     </section>
 
