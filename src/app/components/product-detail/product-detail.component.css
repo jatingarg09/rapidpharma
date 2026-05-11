@@ -28,7 +28,7 @@
 
 .product-info h1 {
   font-size: 2rem;
-  color: #1976d2;
+  color: #03045e;
   margin-bottom: 10px;
 }
 
@@ -53,7 +53,7 @@
 
 .enquiry-btn {
   margin-top: 20px;
-  background-color: #1976d2;
+  background-color: #03045e;
   color: #fff;
   padding: 10px 22px;
   border: none;
@@ -64,7 +64,7 @@
 }
 
 .enquiry-btn:hover {
-  background-color: #145ea8;
+  background-color: #02033b;
 }
 
 /* Similar products */
@@ -116,12 +116,12 @@
   padding: 30px;
   margin-bottom: 30px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  border-left: 5px solid #1976d2;
+  border-left: 5px solid #03045e;
 }
 
 .detail-section h2 {
   font-size: 1.5rem;
-  color: #1976d2;
+  color: #03045e;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -145,13 +145,13 @@
 }
 
 .disclaimer {
-  background: #f0f4ff;
+  background: #caf0f8;
   padding: 12px 15px;
   border-radius: 6px;
-  color: #1976d2;
+  color: #03045e;
   font-size: 0.95rem;
   margin-bottom: 15px;
-  border-left: 3px solid #1976d2;
+  border-left: 3px solid #03045e;
 }
 
 /* Uses List */
@@ -270,7 +270,7 @@
 }
 
 .product-info mat-icon {
-  color: #1976d2;
+  color: #03045e;
   font-size: 1.1rem;
   width: 20px;
   height: 20px;
@@ -285,7 +285,7 @@
   align-items: center;
   gap: 8px;
   margin-top: 20px;
-  background-color: #1976d2;
+  background-color: #03045e;
   color: #fff;
   padding: 12px 24px;
   border: none;
@@ -297,7 +297,7 @@
 }
 
 .enquiry-btn:hover {
-  background-color: #145ea8;
+  background-color: #02033b;
   box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
   transform: translateY(-2px);
 }
@@ -393,7 +393,7 @@
 
 .breadcrumb-nav a,
 .breadcrumb-nav .breadcrumb-home {
-  color: #1976d2;
+  color: #03045e;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -403,7 +403,7 @@
 
 .breadcrumb-nav a:hover,
 .breadcrumb-nav .breadcrumb-home:hover {
-  color: #145ea8;
+  color: #02033b;
   text-decoration: underline;
 }
 
@@ -428,7 +428,7 @@
 .rating-section {
   margin: 15px 0;
   padding: 15px;
-  background: #f0f4ff;
+  background: #caf0f8;
   border-radius: 6px;
   border-left: 3px solid #ffc107;
 }
@@ -459,7 +459,7 @@
 
 .rating-value {
   font-weight: bold;
-  color: #1976d2;
+  color: #03045e;
   font-size: 1.1rem;
 }
 
@@ -507,13 +507,13 @@
   align-items: center;
   gap: 10px;
   font-weight: 500;
-  color: #1976d2;
+  color: #03045e;
   user-select: none;
   transition: background 0.3s;
 }
 
 .faq-detail summary:hover {
-  background: #f0f4ff;
+  background: #caf0f8;
 }
 
 .faq-detail summary mat-icon {
@@ -528,7 +528,7 @@
 }
 
 .faq-detail[open] summary {
-  background: #f0f4ff;
+  background: #caf0f8;
 }
 
 .faq-answer {
