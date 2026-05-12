@@ -271,6 +271,7 @@ export class PcdFranchiseComponent implements OnInit {
   selectedDistrict: string | null = null;
   districtList: string[] = [];
   isStatePage = false;
+  seoVariationIndex = 0;
 
   constructor(
     private route: ActivatedRoute,
@@ -301,6 +302,7 @@ export class PcdFranchiseComponent implements OnInit {
         this.isStatePage = true;
         this.selectedDistrict = null;
         this.districtList = stateDistricts[matchedState.slug] || [];
+        this.seoVariationIndex = this.getSeoVariation(matchedState.name);
         this.updateSEO(this.selectedLocation);
         return;
       }
@@ -323,6 +325,7 @@ export class PcdFranchiseComponent implements OnInit {
         this.selectedLocation =
           this.locations.find((l) => l.slug === matchedDistrict.state) || null;
         this.isStatePage = false;
+        this.seoVariationIndex = this.getSeoVariation(matchedDistrict.name);
         this.updateSEO(
           this.selectedLocation || undefined,
           this.selectedDistrict,
@@ -412,5 +415,13 @@ export class PcdFranchiseComponent implements OnInit {
 
   backToList(): void {
     this.router.navigate(['/pcd-pharma-franchise']);
+  }
+
+  getSeoVariation(name: string): number {
+    let hash = 0;
+    for (let i = 0; i < name.length; i++) {
+      hash = name.charCodeAt(i) + ((hash << 5) - hash);
+    }
+    return Math.abs(hash) % 3;
   }
 }
