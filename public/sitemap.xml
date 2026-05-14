@@ -11,5 +11,8 @@
   <sitemap>
     <loc>https://www.rapidpharmaceuticals.in/sitemaps/products.xml</loc>
   </sitemap>
+  <sitemap>
+    <loc>https://www.rapidpharmaceuticals.in/sitemaps/blogs.xml</loc>
+  </sitemap>
   <!-- More sitemap files -->
 </sitemapindex>

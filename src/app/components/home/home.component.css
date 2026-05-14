@@ -314,6 +314,123 @@
   line-height: 1.5;
 }
 
+/* Latest Insights / Blogs */
+.home-blogs {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.blog-card {
+  background: var(--bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid transparent;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 35px -5px rgba(3, 4, 94, 0.1);
+  border: 1px solid var(--cyan-light);
+}
+
+.blog-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-image-wrapper {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.blog-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.blog-card-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--cyan);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.blog-date mat-icon {
+  font-size: 0.95rem;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.blog-title {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.blog-excerpt {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.read-more mat-icon {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .read-more {
+  color: var(--navy);
+}
+
+.blog-card:hover .read-more mat-icon {
+  transform: translateX(4px);
+}
+
 /* Light Cyan CTA Banner */
 .home-cta {
   background-color: var(--cyan-light);
@@ -405,7 +522,7 @@
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  .metrics-grid, .slideshow-container.multi, .cta-grid {
+  .metrics-grid, .slideshow-container.multi, .cta-grid, .blogs-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
@@ -432,7 +549,7 @@
     font-size: 1.6rem;
   }
   
-  .home-welcome, .home-services, .home-products, .home-cta {
+  .home-welcome, .home-services, .home-products, .home-cta, .home-blogs {
     padding: 3rem 0;
   }
 

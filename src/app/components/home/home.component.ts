@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import { blogPosts, BlogPost } from '../../data/blog-posts';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  latestBlogs: BlogPost[] = blogPosts.slice(0, 3);
 
   sampleProducts = [
     {

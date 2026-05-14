@@ -6,6 +6,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
+import { BlogListComponent } from './components/blog-list/blog-list.component';
+import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 
 export function pcdFranchiseMatcher(url: UrlSegment[]): UrlMatchResult | null {
   const path = url[0]?.path;
@@ -25,6 +27,8 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent, title: 'Products - Rapid Pharmaceuticals' },
   { path: 'contact', component: ContactComponent, title: 'Contact Rapid Pharmaceuticals' },
   { path: 'products/:slug', component: ProductDetailComponent },
+  { path: 'blogs', component: BlogListComponent, title: 'Blogs - Rapid Pharmaceuticals' },
+  { path: 'blogs/:slug', component: BlogDetailComponent },
   { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
   { path: 'franchise', component: PcdFranchiseComponent },
   { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
