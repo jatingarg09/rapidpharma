@@ -13,7 +13,7 @@
         </p>
         <div class="hero-actions">
           <a routerLink="/contact" class="btn-primary glow-effect">
-            Apply for Franchise <mat-icon>arrow_forward</mat-icon>
+            Apply for Franchise <mat-icon aria-hidden="true">arrow_forward</mat-icon>
           </a>
         </div>
       </div>
@@ -25,28 +25,28 @@
     <!-- Impact Stats Bar -->
     <section class="stats-bar glass-panel">
       <div class="stat-item">
-        <mat-icon>medication</mat-icon>
+        <mat-icon aria-hidden="true">medication</mat-icon>
         <div class="stat-text">
           <span class="stat-number">150+</span>
           <span class="stat-label">Products</span>
         </div>
       </div>
       <div class="stat-item">
-        <mat-icon>map</mat-icon>
+        <mat-icon aria-hidden="true">map</mat-icon>
         <div class="stat-text">
           <span class="stat-number">28+</span>
           <span class="stat-label">States Covered</span>
         </div>
       </div>
       <div class="stat-item">
-        <mat-icon>verified</mat-icon>
+        <mat-icon aria-hidden="true">verified</mat-icon>
         <div class="stat-text">
           <span class="stat-number">100%</span>
           <span class="stat-label">WHO-GMP Quality</span>
         </div>
       </div>
       <div class="stat-item">
-        <mat-icon>admin_panel_settings</mat-icon>
+        <mat-icon aria-hidden="true">admin_panel_settings</mat-icon>
         <div class="stat-text">
           <span class="stat-number">Exclusive</span>
           <span class="stat-label">Monopoly Rights</span>
@@ -69,32 +69,32 @@
       <h2 class="section-title text-center mb-8">Why Partner With Us?</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>verified</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">verified</mat-icon></div>
           <h3>Premium Quality</h3>
           <p>WHO-GMP certified manufacturing & DCGI-approved formulations.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>admin_panel_settings</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">admin_panel_settings</mat-icon></div>
           <h3>Monopoly Rights</h3>
           <p>Exclusive territory rights for your district to grow independently.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>category</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">category</mat-icon></div>
           <h3>Diverse Portfolio</h3>
           <p>150+ products across 20+ therapeutic categories for complete coverage.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>trending_up</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">trending_up</mat-icon></div>
           <h3>High Margins</h3>
           <p>Affordable pricing structures designed to maximize your profitability.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>local_shipping</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">local_shipping</mat-icon></div>
           <h3>Timely Delivery</h3>
           <p>Robust supply chain and logistics support ensuring consistent stock.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>campaign</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">campaign</mat-icon></div>
           <h3>Marketing Support</h3>
           <p>Dedicated sales team, visual aids, MR bags, and digital creatives provided.</p>
         </div>
@@ -111,13 +111,13 @@
       <div class="premium-grid">
         <a class="premium-card" *ngFor="let location of locations" [routerLink]="['/pcd-pharma-franchise-in-' + location.slug]">
           <div class="card-image-wrapper">
-            <img [src]="location.image" [alt]="'PCD Pharma Franchise in ' + location.name + ' - Rapid Pharmaceuticals'" />
+            <img loading="lazy" [src]="location.image" [alt]="'PCD Pharma Franchise in ' + location.name + ' - Rapid Pharmaceuticals'" />
             <div class="card-overlay"></div>
           </div>
           <div class="card-content">
             <h3>{{ location.name }}</h3>
             <p>{{ location.description }}</p>
-            <span class="btn-link">Explore Opportunities <mat-icon>arrow_forward</mat-icon></span>
+            <span class="btn-link">Explore Opportunities <mat-icon aria-hidden="true">arrow_forward</mat-icon></span>
           </div>
         </a>
       </div>
@@ -169,13 +169,13 @@
   <!-- ================= SPECIFIC STATE PAGE ================= -->
   <div *ngIf="selectedLocation && isStatePage" class="state-section animate-fade-in">
     <a class="btn-back" [routerLink]="['/pcd-pharma-franchise']">
-      <mat-icon>arrow_back</mat-icon> Back to All States
+      <mat-icon aria-hidden="true">arrow_back</mat-icon> Back to All States
     </a>
 
     <!-- State Hero -->
     <section class="state-hero">
       <div class="state-hero-bg">
-        <img [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name + ' - Monopoly Rights by Rapid Pharmaceuticals'" />
+        <img loading="lazy" [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name + ' - Monopoly Rights by Rapid Pharmaceuticals'" />
         <div class="state-hero-overlay"></div>
       </div>
       <div class="state-hero-content">
@@ -210,17 +210,17 @@
       <h2 class="section-title text-center mb-8">Benefits in {{ selectedLocation.name }}</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>star</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">star</mat-icon></div>
           <h3>Monopoly Rights</h3>
           <p>Exclusive distribution rights across {{ selectedLocation.name }}.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>inventory</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">inventory</mat-icon></div>
           <h3>150+ Products</h3>
           <p>Extensive catalog spanning major therapeutic segments.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>payments</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">payments</mat-icon></div>
           <h3>High Margins</h3>
           <p>Attractive pricing to guarantee your business profitability.</p>
         </div>
@@ -235,7 +235,7 @@
       </div>
       <div class="district-grid-modern">
         <a class="district-pill" *ngFor="let district of districtList" [routerLink]="goToDistrict(district)">
-          <mat-icon>location_on</mat-icon>
+          <mat-icon aria-hidden="true">location_on</mat-icon>
           <span>{{ district }}</span>
         </a>
       </div>
@@ -255,13 +255,13 @@
   <!-- ================= DISTRICT PAGE ================= -->
   <div *ngIf="selectedDistrict && !isStatePage" class="state-section animate-fade-in">
     <a class="btn-back" [routerLink]="['/pcd-pharma-franchise']">
-      <mat-icon>arrow_back</mat-icon> Back to All States
+      <mat-icon aria-hidden="true">arrow_back</mat-icon> Back to All States
     </a>
 
     <!-- District Hero -->
     <section class="state-hero">
       <div class="state-hero-bg">
-        <img src="/pcddistrict.webp" [alt]="'PCD Pharma Franchise in ' + selectedDistrict" loading="lazy" />
+        <img loading="lazy" src="/pcddistrict.webp" [alt]="'PCD Pharma Franchise in ' + selectedDistrict" />
         <div class="state-hero-overlay"></div>
       </div>
       <div class="state-hero-content">
@@ -297,22 +297,22 @@
       <h2 class="section-title text-center mb-8">Product Range for {{ selectedDistrict }}</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>medication</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">medication</mat-icon></div>
           <h3>Tablets & Capsules</h3>
           <p>Antibiotics, cardiac-diabetic, and nutraceuticals.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>science</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">science</mat-icon></div>
           <h3>Syrups & Suspensions</h3>
           <p>Pediatric, gastrointestinal, and general care formulations.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>vaccines</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">vaccines</mat-icon></div>
           <h3>Injectables</h3>
           <p>Critical care and hospital supply medicines.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon>healing</mat-icon></div>
+          <div class="feature-icon"><mat-icon aria-hidden="true">healing</mat-icon></div>
           <h3>Ointments & Creams</h3>
           <p>Dermatology and general wound care products.</p>
         </div>

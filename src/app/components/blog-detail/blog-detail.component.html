@@ -1,0 +1,32 @@
+<div class="blog-detail-container" *ngIf="post">
+  <!-- Article Header -->
+  <header class="article-header">
+    <div class="blog-header-content animate-fade-in">
+      <a routerLink="/blogs" class="back-link"><mat-icon aria-hidden="true">arrow_back</mat-icon> Back to Blogs</a>
+      <div class="article-meta">
+        <span class="date"><mat-icon aria-hidden="true">calendar_today</mat-icon> {{ post.date | date:'mediumDate' }}</span>
+        <span class="author"><mat-icon aria-hidden="true">person</mat-icon> {{ post.author }}</span>
+      </div>
+      <h1 class="article-title">{{ post.title }}</h1>
+    </div>
+  </header>
+
+  <!-- Featured Image -->
+  <div class="featured-image-container animate-fade-in">
+    <img [src]="post.imageUrl" [alt]="post.title" class="featured-image" loading="eager" fetchpriority="high">
+  </div>
+
+  <!-- Article Body -->
+  <article class="article-body">
+    <div class="article-content" [innerHTML]="post.content"></div>
+  </article>
+  
+  <!-- CTA Section -->
+  <section class="blog-cta">
+    <div class="cta-content">
+      <h2>Ready to Start Your Journey?</h2>
+      <p>Partner with Rapid Pharmaceuticals and secure exclusive monopoly rights in your district today.</p>
+      <a routerLink="/contact" class="btn-primary glow-effect">Apply for Franchise</a>
+    </div>
+  </section>
+</div>

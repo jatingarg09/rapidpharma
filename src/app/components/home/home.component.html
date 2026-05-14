@@ -105,6 +105,31 @@
     </div>
   </section>
 
+  <!-- Latest Insights / Blogs -->
+  <section class="home-blogs">
+    <div class="container">
+      <h2 class="section-title text-center">Latest Insights</h2>
+      <div class="blogs-grid">
+        <div class="blog-card" *ngFor="let post of latestBlogs">
+          <a [routerLink]="['/blogs', post.slug]" class="blog-link">
+            <div class="blog-image-wrapper">
+              <img [src]="post.imageUrl" [alt]="post.title" loading="lazy" />
+            </div>
+            <div class="blog-card-content">
+              <span class="blog-date"><mat-icon>calendar_today</mat-icon> {{ post.date | date:'mediumDate' }}</span>
+              <h3 class="blog-title">{{ post.title }}</h3>
+              <p class="blog-excerpt">{{ post.excerpt }}</p>
+              <span class="read-more">Read Article <mat-icon>arrow_forward</mat-icon></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="cta-wrapper">
+        <a routerLink="/blogs" class="btn-secondary">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Deep Navy Contact CTA Banner -->
   <section class="home-cta">
     <div class="container cta-grid">

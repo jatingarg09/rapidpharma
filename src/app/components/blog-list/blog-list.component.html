@@ -1,0 +1,29 @@
+<div class="blog-container">
+  <!-- Hero Section -->
+  <section class="blog-hero">
+    <div class="hero-content">
+      <div class="hero-badge">Knowledge Center</div>
+      <h1>Healthcare & Franchise Insights</h1>
+      <p>Expert guides, business strategies, and industry news for PCD Pharma Franchise owners and medical professionals.</p>
+    </div>
+  </section>
+
+  <!-- Blog Grid -->
+  <section class="section-container">
+    <div class="blog-grid">
+      <article class="blog-card animate-fade-in" *ngFor="let post of posts">
+        <div class="card-image-wrapper">
+          <img [src]="post.imageUrl" [alt]="post.title" loading="lazy">
+        </div>
+        <div class="card-content">
+          <div class="card-meta">
+            <span class="date"><mat-icon>calendar_today</mat-icon> {{ post.date | date:'mediumDate' }}</span>
+          </div>
+          <h2 class="card-title"><a [routerLink]="['/blogs', post.slug]">{{ post.title }}</a></h2>
+          <p class="card-excerpt">{{ post.excerpt }}</p>
+          <a [routerLink]="['/blogs', post.slug]" class="btn-read-more">Read Article <mat-icon>arrow_forward</mat-icon></a>
+        </div>
+      </article>
+    </div>
+  </section>
+</div>
