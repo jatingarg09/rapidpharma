@@ -29,8 +29,8 @@ const routes: Routes = [
   { path: 'products/:slug', component: ProductDetailComponent },
   { path: 'blogs', component: BlogListComponent, title: 'Blogs - Rapid Pharmaceuticals' },
   { path: 'blogs/:slug', component: BlogDetailComponent },
-  { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
-  { path: 'franchise', component: PcdFranchiseComponent },
+  { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent, title: 'Best PCD Pharma Franchise Company in India | Rapid Pharmaceuticals' },
+  { path: 'franchise', component: PcdFranchiseComponent, title: 'Best PCD Pharma Franchise Company in India | Rapid Pharmaceuticals' },
   { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
   { path: '**', redirectTo: '' },
 ];

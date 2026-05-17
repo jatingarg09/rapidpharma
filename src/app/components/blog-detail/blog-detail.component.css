@@ -138,6 +138,42 @@
   text-decoration-color: var(--navy);
 }
 
+/* --- FAQ Section --- */
+.article-faqs {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.article-faqs h3 {
+  font-size: 1.8rem;
+  color: var(--navy);
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--cyan);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.faq-item h4 {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.faq-item p {
+  color: var(--text-main);
+  line-height: 1.6;
+  margin: 0;
+}
+
 /* --- CTA Section --- */
 .blog-cta {
   max-width: 800px;

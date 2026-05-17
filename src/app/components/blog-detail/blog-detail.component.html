@@ -19,6 +19,15 @@
   <!-- Article Body -->
   <article class="article-body">
     <div class="article-content" [innerHTML]="post.content"></div>
+    
+    <!-- AI-Optimized FAQ Section -->
+    <div class="article-faqs" *ngIf="post.faqs && post.faqs.length > 0">
+      <h3>Frequently Asked Questions</h3>
+      <div class="faq-item" *ngFor="let faq of post.faqs">
+        <h4>{{ faq.question }}</h4>
+        <p>{{ faq.answer }}</p>
+      </div>
+    </div>
   </article>
   
   <!-- CTA Section -->
