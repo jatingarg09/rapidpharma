@@ -8,6 +8,7 @@ export interface BlogPost {
   excerpt: string;
   seoDescription: string;
   content: string;
+  faqs?: { question: string; answer: string; }[];
 }
 
 export const blogPosts: BlogPost[] = [
@@ -35,7 +36,17 @@ export const blogPosts: BlogPost[] = [
 
       <h3>How to Get Started Today</h3>
       <p>We provide comprehensive marketing support, including visual aids, MR bags, and LBLs, giving you everything you need to start detailing to doctors from day one. If you are ready to build a legacy in the healthcare sector, explore our <a href="/products">extensive DCGI-approved product portfolio</a> and <a href="/contact">contact Rapid Pharmaceuticals today</a> to check the availability of your district.</p>
-    `
+    `,
+    faqs: [
+      {
+        question: "What is a PCD Pharma Franchise?",
+        answer: "PCD stands for Propaganda Cum Distribution. A PCD Pharma Franchise is a business model where a pharmaceutical company grants distribution and marketing rights to an individual or group for a specific geographic area, usually with monopoly rights."
+      },
+      {
+        question: "Why is WHO-GMP certification important for a pharma franchise?",
+        answer: "WHO-GMP certification ensures that pharmaceutical products are consistently produced and controlled according to the highest international quality standards, guaranteeing patient safety and drug efficacy."
+      }
+    ]
   },
   {
     id: '2',
@@ -63,7 +74,17 @@ export const blogPosts: BlogPost[] = [
       <p>The key to unlocking massive wealth in the pharma sector is volume and repeat business. By consistently delivering high-quality, <strong>WHO-GMP certified</strong> medicines, you build lasting trust with healthcare professionals. Once a doctor begins regularly prescribing your products, you generate recurring, passive revenue.</p>
       
       <p>Ready to calculate your potential? View our <a href="/products">highly profitable product range</a> and start your journey today.</p>
-    `
+    `,
+    faqs: [
+      {
+        question: "What is the average profit margin in a PCD Pharma Franchise?",
+        answer: "While margins vary significantly by therapeutic category, PCD Pharma Franchises generally offer highly lucrative gross margins due to direct B2B purchasing from manufacturers at factory net billing rates rather than retail prices."
+      },
+      {
+        question: "What are monopoly rights in the pharma industry?",
+        answer: "Monopoly rights mean that the parent pharma manufacturing company authorizes only one exclusive distributor for a specific geographic district, eliminating internal brand competition and price wars."
+      }
+    ]
   },
   {
     id: '3',
@@ -91,6 +112,12 @@ export const blogPosts: BlogPost[] = [
       <p>Trust is built over time. Do not expect a doctor to prescribe your brand after a single visit. Commit to a strict visitation schedule. Whether you visit a clinic weekly or bi-weekly, be absolutely consistent. If you promise to deliver a specific formulation to their attached pharmacy by Tuesday, ensure it is there on Monday. In the medical field, reliability is rewarded with loyalty.</p>
 
       <p>By focusing on science, quality, and relationship-building, your distribution network will inevitably grow into a highly respected and profitable enterprise. Ready to represent a premium brand? <a href="/contact">Get in touch with us today</a>.</p>
-    `
+    `,
+    faqs: [
+      {
+        question: "How do you build trust with doctors in pharma sales?",
+        answer: "Building trust requires leading with scientific data, showcasing WHO-GMP quality certifications, mastering pharmacological product knowledge, and maintaining absolute reliability in your visitation and supply schedules."
+      }
+    ]
   }
 ];

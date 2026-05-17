@@ -368,18 +368,18 @@ export class PcdFranchiseComponent implements OnInit {
 
     let title = baseTitle;
     let description = baseDesc;
-    let url = 'https://rapidpharmaceuticals.in/pcd-pharma-franchise';
+    let url = 'https://www.rapidpharmaceuticals.in/pcd-pharma-franchise';
 
     if (district) {
       title = `PCD Pharma Franchise in ${district} | Rapid Pharmaceuticals`;
       description = `Start your PCD Pharma Franchise in ${district} with Rapid Pharmaceuticals. WHO-GMP certified products and full marketing support.`;
-      url = `https://rapidpharmaceuticals.in/pcd-pharma-franchise-in-${district
+      url = `https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-${district
         .toLowerCase()
         .replace(/\s+/g, '-')}`;
     } else if (location) {
       title = `PCD Pharma Franchise in ${location.name} | Rapid Pharmaceuticals`;
       description = location.description;
-      url = `https://rapidpharmaceuticals.in/pcd-pharma-franchise-in-${location.slug}`;
+      url = `https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-${location.slug}`;
     }
 
     this.title.setTitle(title);
@@ -393,7 +393,7 @@ export class PcdFranchiseComponent implements OnInit {
       name: 'Rapid Pharmaceuticals',
       url: url,
       description: description,
-      image: 'https://rapidpharmaceuticals.in/assets/logo.webp',
+      image: 'https://www.rapidpharmaceuticals.in/assets/logo.webp',
       address: {
         '@type': 'PostalAddress',
         addressLocality: district || location?.name || 'India',

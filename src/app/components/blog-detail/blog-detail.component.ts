@@ -51,17 +51,35 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
         this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
 
         // JSON-LD Structured Data
-        const schema = {
-          "@context": "https://schema.org",
-          "@type": "NewsArticle",
-          "headline": this.post.title,
-          "image": [ imageUrl ],
-          "datePublished": new Date(this.post.date).toISOString(),
-          "author": [{
-              "@type": "Person",
-              "name": this.post.author
-          }]
-        };
+        const schemas: any[] = [
+          {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": this.post.title,
+            "image": [ imageUrl ],
+            "datePublished": new Date(this.post.date).toISOString(),
+            "author": [{
+                "@type": "Person",
+                "name": this.post.author
+            }]
+          }
+        ];
+
+        // Add FAQPage Schema for AI Search Engines (GEO)
+        if (this.post.faqs && this.post.faqs.length > 0) {
+          schemas.push({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": this.post.faqs.map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          });
+        }
 
         // Clean up any previous script if navigating between posts
         if (this.scriptElement) {
@@ -70,7 +88,7 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
 
         this.scriptElement = this.renderer.createElement('script');
         this.scriptElement!.type = 'application/ld+json';
-        this.scriptElement!.text = JSON.stringify(schema);
+        this.scriptElement!.text = JSON.stringify(schemas);
         this.renderer.appendChild(this.document.head, this.scriptElement);
 
       } else {
