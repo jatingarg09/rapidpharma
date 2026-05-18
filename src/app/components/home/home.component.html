@@ -88,7 +88,7 @@
       <h2 class="section-title text-center">Featured Products</h2>
       <div class="product-slideshow" *ngIf="sampleProducts.length > 0">
         <div class="slideshow-container multi">
-          <div class="product-card" *ngFor="let product of getSlideshowProducts()">
+          <div class="product-card" *ngFor="let product of displayedProducts">
             <a [routerLink]="['/products']" class="product-link">
               <div class="product-image-wrapper">
                 <img [src]="product.image" alt="{{ product.name }}" loading="lazy" width="250" height="200" />
@@ -113,7 +113,7 @@
         <div class="blog-card" *ngFor="let post of latestBlogs">
           <a [routerLink]="['/blogs', post.slug]" class="blog-link">
             <div class="blog-image-wrapper">
-              <img [src]="post.imageUrl" [alt]="post.title" loading="lazy" />
+              <img [src]="post.imageUrl" [alt]="post.title" loading="lazy" width="400" height="250" />
             </div>
             <div class="blog-card-content">
               <span class="blog-date"><mat-icon>calendar_today</mat-icon> {{ post.date | date:'mediumDate' }}</span>
