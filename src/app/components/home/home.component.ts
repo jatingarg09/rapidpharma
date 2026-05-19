@@ -46,10 +46,12 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   slideshowIndex = 0;
   slideshowTimer: any;
+  displayedProducts: any[] = [];
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
+    this.updateDisplayedProducts();
     if (isPlatformBrowser(this.platformId) && this.sampleProducts.length > 0) {
       this.startSlideshow();
     }
@@ -58,21 +60,23 @@ export class HomeComponent implements OnInit, OnDestroy {
   startSlideshow() {
     this.slideshowTimer = setInterval(() => {
       const total = this.sampleProducts.length;
-      // If less than 3 products, don't slide
       if (total <= 3) return;
       this.slideshowIndex = (this.slideshowIndex + 1) % total;
-    }, 3000); // Change slide every 3 seconds
+      this.updateDisplayedProducts();
+    }, 3000);
   }
 
-  getSlideshowProducts() {
+  updateDisplayedProducts() {
     const total = this.sampleProducts.length;
-    if (total <= 3) return this.sampleProducts;
-    // Show 3 products starting from slideshowIndex, wrap around
+    if (total <= 3) {
+      this.displayedProducts = [...this.sampleProducts];
+      return;
+    }
     const result = [];
     for (let i = 0; i < 3; i++) {
       result.push(this.sampleProducts[(this.slideshowIndex + i) % total]);
     }
-    return result;
+    this.displayedProducts = result;
   }
 
   ngOnDestroy() {
