@@ -73,8 +73,6 @@ export class ProductsComponent implements OnInit {
   }
 
   onSearchChange() {
-    // searchText is already bound, just ensure it's lowercase for the filter
-    this.searchText = this.searchText ? this.searchText.toLowerCase().trim() : '';
     this.filterProducts();
     if (this.paginator) {
       this.paginator.firstPage();
@@ -82,14 +80,26 @@ export class ProductsComponent implements OnInit {
   }
 
   filterProducts() {
+    const query = (this.searchText || '').toLowerCase().trim();
+    const searchWords = query ? query.split(/\s+/).map(w => w.replace(/[^a-z0-9]/g, '')).filter(Boolean) : [];
+
     this.filteredProducts = this.products.filter((product) => {
       const matchesCategory =
         this.selectedCategory === 'All' ||
         product.category === this.selectedCategory;
-      const matchesSearch =
-        !this.searchText ||
-        (product.name?.toLowerCase() || '').includes(this.searchText) ||
-        (product.composition?.toLowerCase() || '').includes(this.searchText);
+
+      if (searchWords.length === 0) {
+        return matchesCategory;
+      }
+
+      const normalizedName = (product.name || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const normalizedComposition = (product.composition || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      // Check if all search words are found in either normalized name or normalized composition
+      const matchesSearch = searchWords.every(word =>
+        normalizedName.includes(word) || normalizedComposition.includes(word)
+      );
+
       return matchesCategory && matchesSearch;
     });
     this.currentPage = 0; // Reset page when filtering
