@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   Renderer2,
   Inject,
   PLATFORM_ID
@@ -17,9 +18,10 @@ import { CanonicalService } from '../../services/canonicalService';
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css'],
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, OnDestroy {
   product!: Product;
   similarProducts: Product[] = [];
+  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +29,7 @@ export class ProductDetailComponent implements OnInit {
     private meta: Meta,
     private title: Title,
     private canonicalService: CanonicalService,
+    private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -74,7 +77,9 @@ export class ProductDetailComponent implements OnInit {
       '@type': 'Product',
       '@id': `https://www.rapidpharmaceuticals.in/product/${this.product.slug}`,
       name: this.product.name,
-      image: `https://www.rapidpharmaceuticals.in/${this.product.imageUrl}`,
+      image: this.product.imageUrl.startsWith('/')
+        ? `https://www.rapidpharmaceuticals.in${this.product.imageUrl}`
+        : `https://www.rapidpharmaceuticals.in/${this.product.imageUrl}`,
       description: this.product.metaDescription || this.product.composition,
       category: this.product.medicalCategory || this.product.category,
       brand: {
@@ -169,28 +174,29 @@ export class ProductDetailComponent implements OnInit {
       };
     }
 
-    // Add all schemas to page
-    this.addJsonLd(productSchema);
-    this.addJsonLd(breadcrumbSchema);
-    this.addJsonLd(organizationSchema);
+    // Combine all schemas into a single array block
+    const schemas: any[] = [productSchema, breadcrumbSchema, organizationSchema];
     if (faqSchema) {
-      this.addJsonLd(faqSchema);
+      schemas.push(faqSchema);
+    }
+
+    // Clean up any existing script element to avoid leakage
+    if (this.scriptElement) {
+      this.renderer.removeChild(this.document.head, this.scriptElement);
+    }
+
+    // Dynamic insertion of JSON-LD schemas using Renderer2
+    this.scriptElement = this.renderer.createElement('script');
+    this.scriptElement!.type = 'application/ld+json';
+    this.scriptElement!.text = JSON.stringify(schemas);
+    this.renderer.appendChild(this.document.head, this.scriptElement);
+  }
+
+  ngOnDestroy(): void {
+    if (this.scriptElement) {
+      this.renderer.removeChild(this.document.head, this.scriptElement);
     }
   }
-
-  private addJsonLd(data: any) {
-  const existing = this.document.getElementById('product-schema');
-  if (existing) {
-    existing.remove();
-  }
-
-  const script = this.document.createElement('script');
-  script.type = 'application/ld+json';
-  script.id = 'product-schema';
-  script.text = JSON.stringify(data);
-
-  this.document.head.appendChild(script);
-}
 
   goToProduct(product: Product) {
     this.router.navigate(['/products', product.slug]);
