@@ -1007,31 +1007,31 @@ export const products: Product[] = [
     faqItems: [{"question":"How it works?","answer":"Reduces smooth muscle contractions"},{"question":"Relief time?","answer":"20-30 minutes"},{"question":"For IBS?","answer":"Commonly prescribed for IBS"},{"question":"Diet changes?","answer":"Increase fiber gradually, stay hydrated"}],  },
   {
     name: 'ESMORIZE-LSR',
-    slug: 'esmorize-lsr-esomeprazole-domperidone-levosulpiride',
-    composition: 'Esomeprazole + Domperidone + Levosulpiride',
+    slug: 'esmorize-lsr-esomeprazole-levosulpiride',
+    composition: 'Esomeprazole + Levosulpiride',
     category: 'Capsules',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/ESMORIZE-LSR.webp',
-    imageAlt: 'ESMORIZE-LSR Triple Action Gastrointestinal Capsule',
+    imageAlt: 'ESMORIZE-LSR Esomeprazole + Levosulpiride Capsule',
     fullComposition:
-      'Esomeprazole Magnesium IP 40mg + Domperidone IP 30mg + Levosulpiride IP 25mg',
+      'Esomeprazole Magnesium IP 40mg + Levosulpiride IP 25mg',
     therapeuticClass: 'Gastrointestinal',
     mrp: 1900,
-    metaTitle: 'ESMORIZE-LSR | Triple Action GERD Relief - ₹1900',
-    metaDescription: 'ESMORIZE-LSR triple-action formula combining esomeprazole, domperidone, levosulpiride for severe gastrointestinal disorders. MRP ₹1900.',
+    metaTitle: 'ESMORIZE-LSR | Esomeprazole + Levosulpiride GERD Relief - ₹1900',
+    metaDescription: 'ESMORIZE-LSR advanced formula combining esomeprazole and levosulpiride for severe GERD, gastroparesis and chronic dyspepsia. MRP ₹1900.',
     keywords: ['esomeprazole', 'levosulpiride', 'GERD relief', 'gastroparesis', 'ESMORIZE'],
-    seoHeading: 'ESMORIZE-LSR: Triple-Action Esomeprazole Formula',
+    seoHeading: 'ESMORIZE-LSR: Esomeprazole & Levosulpiride Capsule',
     manufacturer: 'Rapid Pharmaceuticals',
-    productCode: 'RPH-ESM-DOM-LEV',
+    productCode: 'RPH-ESM-LEV-40-25',
     indication: 'Severe GERD with gastroparesis, chronic dyspepsia',
-    activeIngredient: 'Esomeprazole + Domperidone + Levosulpiride',
-    strength: '40mg + 30mg + 25mg',
+    activeIngredient: 'Esomeprazole + Levosulpiride',
+    strength: '40mg + 25mg',
     contraindications: ['Perforation', 'Psychiatric disorders', 'Cardiac problems'],
     precautions: ['Medical supervision required', 'Monitor neurological effects', 'Not for long-term use'],
     storageConditions: 'Store at temperature not exceeding 25°C. Keep away from moisture.',
     shelfLife: '24 months',
     introduction:
-      'ESMORIZE-LSR is advanced triple-action formula combining esomeprazole (acid suppression), domperidone (prokinetic), and levosulpiride (antiemetic) for comprehensive complex gastrointestinal disorder management. This sophisticated approach simultaneously suppresses acid, enhances motility, and prevents nausea-vomiting, requiring short-term intensive therapy (2-4 weeks) for rapid symptom resolution in treatment-refractory cases. This makes ESMORIZE-LSR an ideal choice for healthcare providers seeking a comprehensive and effective solution for managing GERD and associated gastrointestinal motility disorders in a single, convenient capsule form.',
+      'ESMORIZE-LSR is an advanced dual-action capsule combining esomeprazole (acid suppression) and levosulpiride (gastroprokinetic) for comprehensive management of severe GERD, chronic dyspepsia, and gastrointestinal motility disorders. By simultaneously reducing gastric acid production and enhancing upper gastrointestinal tract motility, it provides fast and effective relief from heartburn, acid reflux, and bloating. This makes ESMORIZE-LSR an ideal choice for healthcare providers managing refractory gastrointestinal symptoms.',
     uses: [
       'Severe GERD with gastroparesis',
       'Chronic functional dyspepsia',
@@ -1053,15 +1053,15 @@ export const products: Product[] = [
       'Inform doctor of psychiatric history',
       'Report behavioral changes immediately',
       'Regular neurological check-ups required',
+      'Take 30 minutes before first meal of the day',
     ],
-
     avgRating: 4.6,
     reviewCount: 187,
     medicalCategory: 'Antispasmodic',
     authorName: 'Dr. Pooja Malhotra, Digestive Health Specialist',
     publicationDate: '2024-02-12',
-    updatedDate: '2025-04-15',
-    faqItems: [{"question":"LSR formulation?","answer":"Long-acting sustained release"},{"question":"Frequency?","answer":"Once or twice daily"},{"question":"With other IBS meds?","answer":"Get doctor approval first"},{"question":"Chronic use?","answer":"Designed for chronic conditions"}],  },
+    updatedDate: '2026-06-11',
+    faqItems: [{"question":"LSR formulation?","answer":"Long-acting sustained release"},{"question":"Frequency?","answer":"Once daily before food"},{"question":"With other IBS meds?","answer":"Get doctor approval first"},{"question":"Chronic use?","answer":"Designed for short to medium-term use under supervision"}],  },
   {
     name: 'ETOBRAN-TH',
     slug: 'etobran-th-etoricoxib-thiocolchicoside-pain',
@@ -4063,29 +4063,29 @@ function generateSlug(name: string): string {
 }
 
 // --- Add slugs dynamically ---
-(function addUniqueSlugs() {
-  const slugCounts: Record<string, number> = {};
-  const baseUrl = 'https://www.rapidpharmaceuticals.in/product/';
-
-  products.forEach((product) => {
-    let baseSlug = generateSlug(product.composition);
-    let slug = baseSlug;
-
-    // Ensure uniqueness by appending a number if needed
-    if (slugCounts[baseSlug]) {
-      slugCounts[baseSlug]++;
-      slug = `${baseSlug}-${slugCounts[baseSlug]}`;
-    } else {
-      slugCounts[baseSlug] = 1;
-    }
-
-    product.slug = slug;
-
-    //   console.log(`
-    // <url>
-    //   <loc>${baseUrl}${slug}</loc>
-    //   <changefreq>weekly</changefreq>
-    //   <priority>0.8</priority>
-    // </url>`);
-  });
-})();
+// (function addUniqueSlugs() {
+//   const slugCounts: Record<string, number> = {};
+//   const baseUrl = 'https://www.rapidpharmaceuticals.in/product/';
+// 
+//   products.forEach((product) => {
+//     let baseSlug = generateSlug(product.composition);
+//     let slug = baseSlug;
+// 
+//     // Ensure uniqueness by appending a number if needed
+//     if (slugCounts[baseSlug]) {
+//       slugCounts[baseSlug]++;
+//       slug = `${baseSlug}-${slugCounts[baseSlug]}`;
+//     } else {
+//       slugCounts[baseSlug] = 1;
+//     }
+// 
+//     product.slug = slug;
+// 
+//     //   console.log(`
+//     // <url>
+//     //   <loc>${baseUrl}${slug}</loc>
+//     //   <changefreq>weekly</changefreq>
+//     //   <priority>0.8</priority>
+//     // </url>`);
+//   });
+// })();

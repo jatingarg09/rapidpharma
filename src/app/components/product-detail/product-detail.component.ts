@@ -75,7 +75,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     const productSchema = {
       '@context': 'https://schema.org/',
       '@type': 'Product',
-      '@id': `https://www.rapidpharmaceuticals.in/product/${this.product.slug}`,
+      '@id': `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
       name: this.product.name,
       image: this.product.imageUrl.startsWith('/')
         ? `https://www.rapidpharmaceuticals.in${this.product.imageUrl}`
@@ -92,7 +92,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       },
       offers: {
         '@type': 'Offer',
-        url: `https://www.rapidpharmaceuticals.in/product/${this.product.slug}`,
+        url: `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
         priceCurrency: 'INR',
         price: this.product.mrp,
         availability: 'https://schema.org/InStock',
@@ -134,7 +134,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
           '@type': 'ListItem',
           position: 4,
           name: this.product.name,
-          item: `https://www.rapidpharmaceuticals.in/product/${this.product.slug}`,
+          item: `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
         },
       ],
     };
@@ -214,7 +214,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     const imageUrl =
       this.product.imageUrl ||
       'https://www.rapidpharmaceuticals.in/assets/og-image.jpg';
-    const productUrl = `https://www.rapidpharmaceuticals.in/product/${this.product.slug}`;
+    const productUrl = `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`;
 
     this.title.setTitle(pageTitle);
     this.meta.updateTag({ name: 'description', content: pageDescription });
