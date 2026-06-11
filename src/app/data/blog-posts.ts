@@ -18,7 +18,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'best-pcd-pharma-franchise-in-india-who-gmp',
     date: '2026-05-10',
     author: 'Dr. A.K. Sharma, Quality & Operations Head',
-    imageUrl: '/pcd1.webp',
+    imageUrl: '/best-pcd-pharma-franchise-in-india-who-gmp.webp',
     excerpt: 'Looking for the best PCD Pharma Franchise in India? Discover how WHO-GMP certification, monopoly rights, and high profit margins can secure your business future.',
     seoDescription: 'Find the best PCD Pharma Franchise in India for 2026. Learn about WHO-GMP certification, profit margins, and district-level monopoly rights with Rapid Pharmaceuticals.',
     content: `
@@ -54,7 +54,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'profit-margin-in-pcd-pharma-franchise-explained',
     date: '2026-05-02',
     author: 'Mr. Mithu Ram Garg, Advisor, Rapid Pharmaceuticals',
-    imageUrl: '/pcddistrict.webp',
+    imageUrl: '/profit-margin-in-pcd-pharma-franchise-explained.webp',
     excerpt: 'An in-depth breakdown of the profit margins, ROI, and financial benefits of starting a PCD Pharma Franchise in your local district.',
     seoDescription: 'Understand the profit margin in a PCD Pharma Franchise business. Learn how to maximize your ROI with monopoly rights and a strong product portfolio.',
     content: `
@@ -92,7 +92,7 @@ export const blogPosts: BlogPost[] = [
     slug: 'how-to-build-trust-with-doctors-pharma-marketing',
     date: '2026-04-25',
     author: 'Dr. Sandeep Jindal, Medical Advisor',
-    imageUrl: '/pcdimagestate1.webp',
+    imageUrl: '/how-to-build-trust-with-doctors-pharma-marketing.webp',
     excerpt: 'Master the art of medical detailing. Learn actionable strategies to build trust with doctors, pharmacists, and hospital administrators to boost your franchise sales.',
     seoDescription: 'Learn proven marketing strategies and medical detailing tips to build trust with doctors and grow your PCD Pharma Franchise sales effectively.',
     content: `
