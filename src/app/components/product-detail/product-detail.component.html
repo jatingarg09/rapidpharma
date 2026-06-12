@@ -57,6 +57,17 @@
       <p class="mrp">
         <mat-icon>currency_rupee</mat-icon> MRP: <strong>₹{{ product.mrp.toFixed(2) }}</strong>
       </p>
+
+      <!-- Schedule H Prescription or FSSAI Nutraceutical Warning -->
+      <div class="pharma-alert-box schedule-h-alert" *ngIf="product.category !== 'Nutraceuticals' && product.therapeuticClass !== 'Nutraceutical'">
+        <span class="warning-title">SCHEDULE H PRESCRIPTION DRUG - WARNING:</span>
+        <span class="warning-text">To be sold by retail on the prescription of a Registered Medical Practitioner only.</span>
+      </div>
+      <div class="pharma-alert-box fssai-alert" *ngIf="product.category === 'Nutraceuticals' || product.therapeuticClass === 'Nutraceutical'">
+        <span class="warning-title">DIETARY SUPPLEMENT - DISCLAIMER:</span>
+        <span class="warning-text">This product is a nutraceutical/dietary supplement and is not intended to diagnose, treat, cure, or prevent any disease. Keep out of reach of children.</span>
+      </div>
+
       <a class="enquiry-btn" routerLink="/contact">
         <mat-icon>email</mat-icon> Request Info
       </a>
