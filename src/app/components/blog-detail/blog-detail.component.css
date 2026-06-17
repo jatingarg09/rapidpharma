@@ -63,6 +63,8 @@
   font-weight: 900;
   line-height: 1.3;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* --- Featured Image --- */
@@ -77,8 +79,7 @@
 .featured-image {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  object-fit: cover;
+  display: block;
   border-radius: 1rem;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
@@ -253,7 +254,7 @@
 
 @media (max-width: 768px) {
   .article-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .article-meta {
     flex-direction: column;
@@ -261,5 +262,8 @@
   }
   .featured-image-container {
     margin-top: 2rem;
+  }
+  .article-header {
+    padding: 2.5rem 1.25rem 3rem;
   }
 }
