@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
@@ -17,7 +17,7 @@ interface Location {
   templateUrl: './pcd-franchise.component.html',
   styleUrls: ['./pcd-franchise.component.css'],
 })
-export class PcdFranchiseComponent implements OnInit {
+export class PcdFranchiseComponent implements OnInit, OnDestroy {
   locations: Location[] = [
     {
       name: 'Andhra Pradesh',
@@ -272,6 +272,7 @@ export class PcdFranchiseComponent implements OnInit {
   districtList: string[] = [];
   isStatePage = false;
   seoVariationIndex = 0;
+  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -351,6 +352,12 @@ export class PcdFranchiseComponent implements OnInit {
     });
   }
 
+  ngOnDestroy(): void {
+    if (this.scriptElement) {
+      this.scriptElement.remove();
+    }
+  }
+
   scrollToInquiry() {
     if (isPlatformBrowser(this.platformId)) {
       const el = document.getElementById('inquiry-form');
@@ -402,15 +409,14 @@ export class PcdFranchiseComponent implements OnInit {
       },
     };
 
-    const existing = this.document.querySelector(
-      'script[type="application/ld+json"]',
-    );
-    if (existing) existing.remove();
+    if (this.scriptElement) {
+      this.scriptElement.remove();
+    }
 
-    const script = this.document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
-    this.document.head.appendChild(script);
+    this.scriptElement = this.document.createElement('script');
+    this.scriptElement.type = 'application/ld+json';
+    this.scriptElement.text = JSON.stringify(schema);
+    this.document.head.appendChild(this.scriptElement);
   }
 
   goToFranchise(slug: string): void {
