@@ -321,6 +321,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.rapidpharmaceuticals.in/products/methyrap-plus-alpha-lipoic-acid-methylcobalamin-capsules</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.rapidpharmaceuticals.in/products/rapmox-cv-amoxicillin-clavulanic-acid-powder</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
