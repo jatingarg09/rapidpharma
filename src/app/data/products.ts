@@ -5743,11 +5743,11 @@ export const products: Product[] = [
     fullComposition:
       'Alpha Lipoic Acid 100mg + Folic Acid 1.5mg + Methylcobalamin 1500mcg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
     therapeuticClass: 'Nutritional Supplement',
-    mrp: 1250,
+    mrp: 1500,
     metaTitle:
       'METHYRAP-PLUS | Alpha Lipoic Acid + Methylcobalamin - Rapid Pharmaceuticals',
     metaDescription:
-      'METHYRAP-PLUS capsules with Alpha Lipoic Acid 100mg, Methylcobalamin 1500mcg and B-Complex for diabetic neuropathy and nerve health. MRP ₹1250.',
+      'METHYRAP-PLUS capsules with Alpha Lipoic Acid 100mg, Methylcobalamin 1500mcg and B-Complex for diabetic neuropathy and nerve health. MRP ₹1500.',
     keywords: [
       'methyrap plus capsules',
       'alpha lipoic acid',
@@ -5762,8 +5762,8 @@ export const products: Product[] = [
     indication:
       'Peripheral neuropathy, diabetic neuropathy, B-complex deficiencies',
     activeIngredient:
-      'Alpha Lipoic Acid 100mg + Methylcobalamin 1500mcg + Folic Acid 1.5mg',
-    strength: '100mg + 1500mcg per capsule',
+      'Alpha Lipoic Acid 100mg + Methylcobalamin 1500mcg + Folic Acid 1.5mg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
+    strength: '100mg + 1500mcg + 1.5mg + 3mg + 10mg per capsule',
     contraindications: ['Hypersensitivity to any component of the formulation'],
     precautions: [
       'Monitor blood sugar in diabetic patients',
