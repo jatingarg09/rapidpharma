@@ -30,4 +30,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.rapidpharmaceuticals.in/blogs/antibiotics-modern-healthcare-rapid-pharma-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rapidpharmaceuticals.in/blogs/responsible-antibiotic-distribution-rapid-pharma-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

@@ -256,4 +256,160 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+  {
+    id: '6',
+    title:
+      'Antibiotics in Modern Healthcare: WHO-GMP Certified Antibiotic Portfolio by Rapid Pharmaceuticals',
+    slug: 'antibiotics-modern-healthcare-rapid-pharma-2026',
+    date: '2026-07-10',
+    author: 'Rapid Pharmaceuticals Team',
+    imageUrl: '/blogs/antibiotics-modern-healthcare-2026.webp',
+    excerpt:
+      'Explore Rapid Pharmaceuticals’ WHO-GMP certified antibiotic portfolio designed to support healthcare professionals and PCD Pharma Franchise partners across India.',
+    seoDescription:
+      'Explore Rapid Pharmaceuticals’ WHO-GMP certified antibiotic range, including Azithromycin, Cefixime, Ceftriaxone, Amoxicillin-Clavulanic Acid, Piperacillin-Tazobactam, and more. Discover quality pharmaceutical products and PCD Pharma Franchise opportunities in India.',
+    content: `
+    <h2>Introduction</h2>
+    <p>Antibiotics continue to play an important role in the treatment of bacterial infections when prescribed by qualified healthcare professionals. Rapid Pharmaceuticals offers a comprehensive WHO-GMP certified antibiotic portfolio that supports hospitals, clinics, pharmacies, and healthcare providers across India with high-quality pharmaceutical formulations.</p>
+
+    <h2>Broad-Spectrum Oral Antibiotics</h2>
+    <p>Rapid Pharmaceuticals offers a range of oral antibiotic formulations that are commonly prescribed by healthcare professionals for various bacterial infections based on clinical evaluation:</p>
+    <ul>
+      <li><strong><a href="/products/azirap-500-azithromycin-antibiotic-tablet">AZIRAP-500</a> (Azithromycin):</strong> Macrolide antibiotic widely prescribed for respiratory tract and other susceptible bacterial infections.</li>
+      <li><strong><a href="/products/cefimelt-100dt-cefixime-dispersible-tablet">CEFIMELT-100DT</a> & <a href="/products/cefimelt-200lb-cefixime-lactic-acid-bacillus">CEFIMELT-200LB</a> (Cefixime):</strong> Third-generation cephalosporin formulations available in convenient dosage forms.</li>
+      <li><strong><a href="/products/rapipod-200-cefpodoxime-cephalosporin-antibiotic">RAPIPOD-200</a> (Cefpodoxime):</strong> Oral cephalosporin antibiotic available for various bacterial infections as prescribed by healthcare professionals.</li>
+    </ul>
+
+    <h2>Injectable Antibiotic Range</h2>
+    <p>Rapid Pharmaceuticals also offers injectable antibiotic formulations designed for use in hospitals and healthcare institutions under appropriate medical supervision:</p>
+    <ul>
+      <li><strong><a href="/products/cefimelt-s-1-5-ceftriaxone-sulbactam-injection">CEFIMELT-S 1.5</a> (Ceftriaxone + Sulbactam):</strong> Injectable combination formulation for hospital use.</li>
+      <li><strong><a href="/products/rapikacin-500-amikacin-antibiotic-injection">RAPIKACIN-500</a> (Amikacin):</strong> Aminoglycoside antibiotic intended for use as directed by healthcare professionals.</li>
+      <li><strong><a href="/products/cefimelt-1gm-ceftriaxone-injection-antibiotic">CEFIMELT 1GM</a> (Ceftriaxone):</strong> Injectable cephalosporin formulation widely used in healthcare facilities.</li>
+    </ul>
+
+    <h2>Combination Antibiotic Formulations</h2>
+    <p>Rapid Pharmaceuticals provides combination antibiotic formulations that expand its comprehensive antibacterial product portfolio:</p>
+    <ul>
+      <li><strong><a href="/products/rapmox-cv-amoxicillin-clavulanic-probiotics">RAPMOX-CV</a> (Amoxicillin + Clavulanic Acid):</strong> Combination formulation available in multiple strengths.</li>
+      <li><strong><a href="/products/pipzorap-tz-piperacillin-tazobactam-antibiotic">PIPZORAP-TZ</a> (Piperacillin + Tazobactam):</strong> Injectable antibiotic combination intended for institutional healthcare settings.</li>
+      <li><strong><a href="/products/oflarap-oz-ofloxacin-ornidazole-antibiotic">OFLARAP OZ</a> (Ofloxacin + Ornidazole):</strong> Combination formulation frequently included in gastrointestinal infection management protocols as prescribed by healthcare professionals.</li>
+    </ul>
+
+    <h2>Specialized Antibiotic Formulations</h2>
+    <p>Rapid Pharmaceuticals addresses diverse healthcare requirements with specialized formulations for different patient groups:</p>
+    <ul>
+      <li><strong><a href="/products/rapifur-nitrofurantoin-uti-antibiotic">RAPIFUR</a> (Nitrofurantoin):</strong> Oral formulation commonly prescribed for urinary tract infections according to clinical judgement.</li>
+      <li><strong><a href="/products/cefimelt-lb-50-cefixime-lactic-acid-bacillus-pediatric">CEFIMELT LB 50</a> & <a href="/products/rapipod-ds-50-cefpodoxime-pediatric-syrup">RAPIPOD DS 50</a>:</strong> Pediatric formulations developed to support age-appropriate dosing under medical supervision.</li>
+    </ul>
+
+    <h2>Why Choose Rapid Pharmaceuticals for PCD Pharma Franchise?</h2>
+    <p>Rapid Pharmaceuticals offers attractive PCD Pharma Franchise opportunities across India backed by a comprehensive antibiotic portfolio, WHO-GMP certified manufacturing standards, quality packaging, promotional support, competitive pricing, and timely product availability. Our extensive antibacterial range enables franchise partners to serve hospitals, clinics, pharmacies, and healthcare professionals with confidence.</p>
+
+    <h2>Quality You Can Trust</h2>
+    <p>Every antibiotic formulation from Rapid Pharmaceuticals is manufactured following stringent quality standards in WHO-GMP certified facilities. Our commitment to quality, consistency, and regulatory compliance helps healthcare professionals and franchise partners deliver trusted pharmaceutical products to patients across India.</p>
+
+    <h2>Conclusion</h2>
+    <p>Rapid Pharmaceuticals continues to strengthen India's healthcare sector through its comprehensive antibiotic portfolio. With oral antibiotics, injectable formulations, pediatric products, and combination therapies, the company provides quality pharmaceutical solutions while offering rewarding PCD Pharma Franchise opportunities throughout the country.</p>
+
+    <p><strong>Disclaimer:</strong> The information provided in this article is intended for educational purposes only and should not be considered medical advice. Antibiotics should always be used under the guidance of a qualified healthcare professional. Product indications and usage are subject to approved prescribing information.</p>
+  `,
+    faqs: [
+      {
+        question:
+          'Which Rapid Pharmaceuticals antibiotic formulations are commonly used for respiratory tract infections?',
+        answer:
+          'Rapid Pharmaceuticals offers formulations such as AZIRAP-500 (Azithromycin), RAPIPOD-200 (Cefpodoxime), and RAPMOX-CV (Amoxicillin + Clavulanic Acid), which may be prescribed by qualified healthcare professionals based on clinical evaluation.',
+      },
+      {
+        question:
+          'Which injectable antibiotics are available from Rapid Pharmaceuticals?',
+        answer:
+          'Rapid Pharmaceuticals offers injectable formulations including CEFIMELT-S 1.5 (Ceftriaxone + Sulbactam), CEFIMELT 1GM (Ceftriaxone), RAPIKACIN-500 (Amikacin), and PIPZORAP-TZ (Piperacillin + Tazobactam) for use under appropriate medical supervision.',
+      },
+      {
+        question:
+          'Why is WHO-GMP certification important for pharmaceutical products?',
+        answer:
+          'WHO-GMP certification reflects adherence to internationally recognized manufacturing and quality standards, helping ensure consistency, safety, and product quality while building confidence among healthcare professionals and franchise partners.',
+      },
+      {
+        question:
+          'Does Rapid Pharmaceuticals offer PCD Pharma Franchise opportunities?',
+        answer:
+          'Yes. Rapid Pharmaceuticals offers monopoly-based PCD Pharma Franchise opportunities across India with an extensive product portfolio, promotional support, quality manufacturing, competitive pricing, and timely product availability.',
+      },
+    ],
+  },
+  {
+    id: '7',
+    title:
+      'Responsible Antibiotic Distribution: Promoting Antimicrobial Stewardship with Rapid Pharmaceuticals',
+    slug: 'responsible-antibiotic-distribution-rapid-pharma-2026',
+    date: '2026-07-20',
+    author: 'Rapid Pharmaceuticals Team',
+    imageUrl: '/blogs/responsible-antibiotic-distribution-2026.webp',
+    excerpt:
+      'Discover how Rapid Pharmaceuticals supports responsible antibiotic distribution through its WHO-GMP certified portfolio and commitment to quality pharmaceutical products across India.',
+    seoDescription:
+      'Learn how Rapid Pharmaceuticals promotes responsible antibiotic distribution with its WHO-GMP certified antibiotic portfolio. Explore quality pharmaceutical products and PCD Pharma Franchise opportunities across India.',
+    content: `
+    <h2>Introduction</h2>
+    <p>Antimicrobial resistance (AMR) is a growing global healthcare concern that highlights the importance of responsible antibiotic use. Antibiotics should always be prescribed and used under the guidance of qualified healthcare professionals. Rapid Pharmaceuticals supports responsible pharmaceutical distribution by offering a comprehensive WHO-GMP certified antibiotic portfolio while encouraging ethical healthcare practices across India.</p>
+
+    <h2>Understanding Antimicrobial Resistance</h2>
+    <p>Antimicrobial resistance occurs when bacteria gradually develop the ability to survive exposure to antibiotics. Factors such as inappropriate use, self-medication, incomplete treatment courses, and unnecessary antibiotic consumption contribute to this challenge. Promoting responsible prescribing and distribution practices helps support public health and preserve the effectiveness of antibiotics for future generations.</p>
+
+    <h2>Rapid Pharmaceuticals' Comprehensive Antibiotic Portfolio</h2>
+    <p>Rapid Pharmaceuticals offers a diverse range of antibiotic formulations that enable healthcare professionals to choose appropriate treatment options based on individual patient requirements and clinical judgement.</p>
+
+    <ul>
+      <li><strong><a href="/products/azirap-500-azithromycin-antibiotic-tablet">AZIRAP-500</a> (Azithromycin):</strong> Macrolide antibiotic formulation available for use as prescribed by healthcare professionals.</li>
+      <li><strong><a href="/products/rapmox-cv-amoxicillin-clavulanic-probiotics">RAPMOX-CV</a> (Amoxicillin + Clavulanic Acid):</strong> Combination antibiotic formulation available in multiple strengths.</li>
+      <li><strong><a href="/products/pipzorap-tz-piperacillin-tazobactam-antibiotic">PIPZORAP-TZ</a> (Piperacillin + Tazobactam):</strong> Injectable combination antibiotic intended for institutional healthcare settings.</li>
+      <li><strong><a href="/products">CEFIMELT Series</a> (Cefixime & Ceftriaxone):</strong> Available in oral, pediatric, and injectable dosage forms to support diverse healthcare requirements.</li>
+      <li><strong><a href="/products/rapifur-nitrofurantoin-uti-antibiotic">RAPIFUR</a> (Nitrofurantoin):</strong> Oral antibiotic formulation commonly prescribed for urinary tract infections according to clinical evaluation.</li>
+      <li><strong><a href="/products/oflarap-oz-ofloxacin-ornidazole-antibiotic">OFLARAP OZ</a> (Ofloxacin + Ornidazole):</strong> Combination formulation frequently prescribed by healthcare professionals where clinically appropriate.</li>
+    </ul>
+
+    <h2>Supporting Responsible Distribution</h2>
+    <p>Rapid Pharmaceuticals believes that quality medicines should be distributed responsibly through authorized pharmaceutical channels. The company encourages compliance with applicable regulations, ethical business practices, and collaboration with qualified healthcare professionals to ensure medicines reach patients appropriately.</p>
+
+    <h2>Why Choose Rapid Pharmaceuticals for PCD Pharma Franchise?</h2>
+    <p>Rapid Pharmaceuticals offers attractive PCD Pharma Franchise opportunities supported by WHO-GMP certified manufacturing, a comprehensive antibiotic portfolio, promotional materials, competitive pricing, timely product availability, and dedicated franchise support. Our quality-focused approach helps franchise partners build long-term relationships with hospitals, clinics, pharmacies, and healthcare professionals across India.</p>
+
+    <h2>Commitment to Quality and Compliance</h2>
+    <p>Every antibiotic formulation from Rapid Pharmaceuticals is manufactured in WHO-GMP certified facilities while following stringent quality control processes. Our commitment to quality, consistency, and regulatory compliance helps healthcare professionals and franchise partners deliver trusted pharmaceutical products with confidence.</p>
+
+    <h2>Conclusion</h2>
+    <p>Responsible antibiotic distribution requires collaboration among pharmaceutical companies, healthcare professionals, distributors, and patients. Through its quality-driven antibiotic portfolio and commitment to ethical pharmaceutical practices, Rapid Pharmaceuticals continues to support India's healthcare ecosystem while providing reliable PCD Pharma Franchise opportunities nationwide.</p>
+
+    <p><strong>Disclaimer:</strong> This article is intended for educational and informational purposes only. Antibiotics should always be prescribed and used under the supervision of a qualified healthcare professional. Product indications, dosage, and usage are subject to approved prescribing information and applicable regulatory guidelines.</p>
+  `,
+    faqs: [
+      {
+        question:
+          'How does Rapid Pharmaceuticals support responsible antibiotic distribution?',
+        answer:
+          'Rapid Pharmaceuticals promotes responsible distribution by supplying quality WHO-GMP certified pharmaceutical products through authorized channels, supporting ethical business practices, and encouraging appropriate use of antibiotics under the guidance of qualified healthcare professionals.',
+      },
+      {
+        question:
+          'Which antibiotic formulations are available from Rapid Pharmaceuticals?',
+        answer:
+          'Rapid Pharmaceuticals offers a comprehensive antibiotic portfolio that includes AZIRAP-500, RAPMOX-CV, PIPZORAP-TZ, the CEFIMELT series, RAPIFUR, OFLARAP OZ, and several other oral, injectable, and pediatric formulations.',
+      },
+      {
+        question:
+          'Does Rapid Pharmaceuticals offer PCD Pharma Franchise opportunities?',
+        answer:
+          'Yes. Rapid Pharmaceuticals provides monopoly-based PCD Pharma Franchise opportunities across India with WHO-GMP certified products, promotional support, competitive pricing, quality manufacturing, and an extensive pharmaceutical product portfolio.',
+      },
+      {
+        question: 'Why is responsible antibiotic use important?',
+        answer:
+          'Responsible antibiotic use helps support effective patient care and contributes to global efforts to address antimicrobial resistance. Antibiotics should always be used according to the advice of qualified healthcare professionals and approved prescribing information.',
+      },
+    ],
+  },
 ];
