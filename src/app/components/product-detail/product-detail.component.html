@@ -20,42 +20,37 @@
     <div class="product-info">
       <h1>{{ product.seoHeading || product.name }}</h1>
       
-      <!-- ✅ RATING SECTION - Rich Snippet for Search Results -->
-      <div class="rating-section" *ngIf="product.avgRating">
-        <div class="rating-stars">
-          <span class="stars" [attr.aria-label]="product.avgRating + ' out of 5 stars'">
-            <mat-icon *ngFor="let i of [1,2,3,4,5]; let last = last" 
-              [class.filled]="i <= product.avgRating">
-              star
-            </mat-icon>
-          </span>
-          <span class="rating-value">{{ product.avgRating }}</span>
-          <span class="review-count" *ngIf="product.reviewCount">
-            ({{ product.reviewCount }} reviews)
-          </span>
-        </div>
+      <!-- Subtle rating line directly under the heading -->
+      <div class="rating-subtle" *ngIf="product.avgRating">
+        <mat-icon class="star-icon">star</mat-icon>
+        <span class="rating-value">{{ product.avgRating }}</span>
+        <span class="review-count" *ngIf="product.reviewCount">
+          ({{ product.reviewCount }} reviews)
+        </span>
       </div>
-
       <p class="category">
-        <mat-icon>category</mat-icon> Category: <strong>{{ product.category }}</strong>
+        <mat-icon>category</mat-icon>
+        <span>Category: <strong>{{ product.category }}</strong></span>
       </p>
       <p class="packaging">
-        <mat-icon>local_shipping</mat-icon> Packaging: <strong>{{ product.packaging }}</strong>
+        <mat-icon>local_shipping</mat-icon>
+        <span>Packaging: <strong>{{ product.packaging }}</strong></span>
       </p>
       <p class="composition">
-        <mat-icon>science</mat-icon> Composition: <strong>{{ product.fullComposition }}</strong>
+        <mat-icon>science</mat-icon>
+        <span>Composition: <strong>{{ product.fullComposition }}</strong></span>
       </p>
       <p class="therapeutic-class">
-        <mat-icon>healing</mat-icon> Therapeutic Class: <strong>{{ product.therapeuticClass }}</strong>
-      </p>
-      <p *ngIf="product.activeIngredient" class="active-ingredient">
-        <mat-icon>local_pharmacy</mat-icon> Active Ingredient: <strong>{{ product.activeIngredient }}</strong>
+        <mat-icon>healing</mat-icon>
+        <span>Therapeutic Class: <strong>{{ product.therapeuticClass }}</strong></span>
       </p>
       <p *ngIf="product.strength" class="strength">
-        <mat-icon>fitness_center</mat-icon> Strength: <strong>{{ product.strength }}</strong>
+        <mat-icon>fitness_center</mat-icon>
+        <span>Strength: <strong>{{ product.strength }}</strong></span>
       </p>
       <p class="mrp">
-        <mat-icon>currency_rupee</mat-icon> MRP: <strong>₹{{ product.mrp.toFixed(2) }}</strong>
+        <mat-icon>currency_rupee</mat-icon>
+        <span>MRP: <strong>₹{{ product.mrp.toFixed(2) }}</strong></span>
       </p>
 
       <!-- Schedule H Prescription or FSSAI Nutraceutical Warning -->
