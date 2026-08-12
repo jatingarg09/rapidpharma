@@ -4881,7 +4881,7 @@ export const products: Product[] = [
     imageUrl: '/productswebp/DOXY-B6.webp',
     fullComposition:
       'Doxylamine Succinate 10Mg + Pyridoxine 10Mg + Folic Acid 5Mg',
-    therapeuticClass: 'Gastrointestinal',
+    therapeuticClass: 'Gynaecological',
     mrp: 950,
     introduction:
       'DOXY B6 combines an antihistamine with B vitamins for pregnancy-related nausea and vomiting relief with nutritional support. Doxylamine succinate provides effective antiemetic action, while pyridoxine (vitamin B6) and folic acid offer essential nutritional support that can help reduce nausea and support fetal development. This makes DOXY B6 an ideal choice for pregnant individuals experiencing morning sickness or nausea and vomiting during pregnancy, providing both symptom relief and important nutritional benefits in a convenient tablet form.',
@@ -5281,7 +5281,7 @@ export const products: Product[] = [
     packaging: '200ml',
     imageUrl: '/productswebp/UTERAP.webp',
     fullComposition: 'Ayurvedic Uterine Tonic (Herbal blend)',
-    therapeuticClass: 'Gynecological',
+    therapeuticClass: 'Gynaecological',
     mrp: 190,
     introduction:
       "UTERAP is a traditional Ayurvedic uterine tonic formulated to support women's reproductive health and hormonal balance during various life stages. This herbal blend contains ingredients known for their potential benefits in regulating the menstrual cycle, supporting uterine health, and alleviating pre-menstrual symptoms. UTERAP is designed to provide natural support for women's reproductive wellness, making it an ideal choice for individuals seeking holistic care for menstrual health, fertility support, and general reproductive well-being in a convenient tonic form.",

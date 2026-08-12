@@ -32,6 +32,8 @@ const routes: Routes = [
   { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent, title: 'Best PCD Pharma Franchise Company in India | Rapid Pharmaceuticals' },
   { path: 'franchise', component: PcdFranchiseComponent, title: 'Best PCD Pharma Franchise Company in India | Rapid Pharmaceuticals' },
   { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
+  { path: 'category/:categorySlug', component: ProductsComponent },
+  { path: 'type/:typeSlug', component: ProductsComponent },
   { path: '**', redirectTo: '' },
 ];
 

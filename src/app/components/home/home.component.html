@@ -82,6 +82,81 @@
     </div>
   </section>
 
+  <!-- Portfolio Navigation Dashboard Section -->
+  <section class="home-portfolio-nav">
+    <div class="container">
+      <div class="seo-browse-container homepage-version">
+        <div class="seo-browse-header">
+          <h2 class="section-title text-center">Our Specialized Portfolio</h2>
+          <p class="seo-browse-subheading">Navigate directly to our therapeutic segments and dosage formats to explore our formulations.</p>
+        </div>
+
+        <div class="seo-browse-grid">
+          <!-- Section 1: Dosage Forms -->
+          <div class="seo-browse-card-group">
+            <h3 class="group-title">
+              <mat-icon class="group-icon">medication</mat-icon>
+              Dosage Formats
+            </h3>
+            <div class="dosage-grid">
+              <a [routerLink]="['/category', 'tablets']" class="dosage-card">
+                <mat-icon class="card-icon">table_chart</mat-icon>
+                <span class="card-title">Tablets</span>
+              </a>
+              <a [routerLink]="['/category', 'injections']" class="dosage-card">
+                <mat-icon class="card-icon">vaccines</mat-icon>
+                <span class="card-title">Injections</span>
+              </a>
+              <a [routerLink]="['/category', 'syrup-suspension']" class="dosage-card">
+                <mat-icon class="card-icon">opacity</mat-icon>
+                <span class="card-title">Syrups</span>
+              </a>
+              <a [routerLink]="['/category', 'capsules']" class="dosage-card">
+                <mat-icon class="card-icon">medication</mat-icon>
+                <span class="card-title">Capsules</span>
+              </a>
+              <a [routerLink]="['/category', 'eye-drops']" class="dosage-card">
+                <mat-icon class="card-icon">visibility</mat-icon>
+                <span class="card-title">Eye Drops</span>
+              </a>
+              <a [routerLink]="['/category', 'respules']" class="dosage-card">
+                <mat-icon class="card-icon">air</mat-icon>
+                <span class="card-title">Respules</span>
+              </a>
+              <a [routerLink]="['/category', 'gel-ointment']" class="dosage-card">
+                <mat-icon class="card-icon">healing</mat-icon>
+                <span class="card-title">Gels & Oints</span>
+              </a>
+              <a [routerLink]="['/category', 'sachets']" class="dosage-card">
+                <mat-icon class="card-icon">layers</mat-icon>
+                <span class="card-title">Sachets</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Section 2: Therapeutic Segments -->
+          <div class="seo-browse-card-group">
+            <h3 class="group-title">
+              <mat-icon class="group-icon">health_and_safety</mat-icon>
+              Therapeutic Classes
+            </h3>
+            <div class="segment-flex">
+              <a [routerLink]="['/type', 'antibiotics']" class="segment-pill segment-antibiotics">Antibiotics</a>
+              <a [routerLink]="['/type', 'gastrointestinal']" class="segment-pill segment-gastro">Gastrointestinal</a>
+              <a [routerLink]="['/type', 'cough-cold']" class="segment-pill segment-cough">Cough & Cold</a>
+              <a [routerLink]="['/type', 'vitamin-supplements']" class="segment-pill segment-vitamins">Vitamins</a>
+              <a [routerLink]="['/type', 'nsaid']" class="segment-pill segment-nsaid">Pain & NSAIDs</a>
+              <a [routerLink]="['/type', 'antacids']" class="segment-pill segment-antacids">Antacids</a>
+              <a [routerLink]="['/type', 'probiotics']" class="segment-pill segment-probiotics">Probiotics</a>
+              <a [routerLink]="['/type', 'gynaecological']" class="segment-pill segment-gyne">Gynaecological</a>
+              <a [routerLink]="['/type', 'urology']" class="segment-pill segment-urology">Urology</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Featured Products -->
   <section class="home-products">
     <div class="container">
