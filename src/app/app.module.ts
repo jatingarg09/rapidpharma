@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
+import { BlogListComponent } from './components/blog-list/blog-list.component';
+import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.
     ContactComponent,
     HighlightCarouselComponent,
     ProductDetailComponent,
-    PcdFranchiseComponent
+    PcdFranchiseComponent,
+    BlogListComponent,
+    BlogDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,7 @@ import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.
     MatInputModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [provideClientHydration(withEventReplay())],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

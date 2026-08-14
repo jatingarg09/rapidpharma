@@ -6,6 +6,8 @@ import { ProductsComponent } from './components/products/products.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductDetailComponent } from './components/product-detail/product-detail.component';
 import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
+import { BlogListComponent } from './components/blog-list/blog-list.component';
+import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
 
 export function pcdFranchiseMatcher(url: UrlSegment[]): UrlMatchResult | null {
   const path = url[0]?.path;
@@ -24,10 +26,14 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent, title: 'About Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise' },
   { path: 'products', component: ProductsComponent, title: 'Products - Rapid Pharmaceuticals' },
   { path: 'contact', component: ContactComponent, title: 'Contact Rapid Pharmaceuticals' },
-  { path: 'product/:slug', component: ProductDetailComponent },
-  { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent },
-  { path: 'franchise', component: PcdFranchiseComponent },
+  { path: 'products/:slug', component: ProductDetailComponent },
+  { path: 'blogs', component: BlogListComponent, title: 'Blogs - Rapid Pharmaceuticals' },
+  { path: 'blogs/:slug', component: BlogDetailComponent },
+  { path: 'pcd-pharma-franchise', component: PcdFranchiseComponent, title: 'Best PCD Pharma Franchise Company in India | Rapid Pharmaceuticals' },
+  { path: 'franchise', component: PcdFranchiseComponent, title: 'Best PCD Pharma Franchise Company in India | Rapid Pharmaceuticals' },
   { matcher: pcdFranchiseMatcher, component: PcdFranchiseComponent },
+  { path: 'category/:categorySlug', component: ProductsComponent },
+  { path: 'type/:typeSlug', component: ProductsComponent },
   { path: '**', redirectTo: '' },
 ];
 

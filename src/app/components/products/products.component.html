@@ -1,6 +1,13 @@
-<section class="products">
-  <h2>Our Products</h2>
+<section class="products-page">
+  <!-- Hero Section -->
+  <div class="products-hero">
+    <div class="hero-content">
+      <h1 class="page-title">{{ pageTitle }}</h1>
+      <p class="page-subtitle">{{ pageSubtitle }}</p>
+    </div>
+  </div>
 
+  <div class="container">
   <div class="controls-container">
     <div class="controls-wrapper">
       <div class="filters-group">
@@ -18,7 +25,8 @@
         <mat-form-field appearance="outline" class="search-field">
           <mat-label>Search Products</mat-label>
           <input matInput 
-                 (keyup)="applyFilter($event)" 
+                 [(ngModel)]="searchText"
+                 (ngModelChange)="onSearchChange()" 
                  placeholder="Enter product name or composition">
           <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
@@ -66,14 +74,14 @@
         <div class="product-header">
           <h3>{{ product.name }}</h3>
           <a class="detail-btn-inline"
-                  [routerLink]="['/product', product.slug]">
+                  [routerLink]="['/products', product.slug]">
             <mat-icon>info</mat-icon> Details
         </a>
         </div>
         <p>{{ product.composition }}</p>
-        <!-- <div class="product-packaging">
+        <div class="product-packaging">
           <strong>Packaging:</strong> {{ product.packaging }}
-        </div> -->
+        </div>
         <div class="product-mrp">
           <strong>MRP:</strong> ₹{{ product.mrp.toFixed(2) }}
         </div>
@@ -101,5 +109,6 @@
         <mat-icon>chevron_right</mat-icon>
       </button>
     </div>
+  </div>
   </div>
 </section>

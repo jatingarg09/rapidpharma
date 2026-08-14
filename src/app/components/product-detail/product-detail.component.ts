@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   Renderer2,
   Inject,
   PLATFORM_ID
@@ -17,9 +18,10 @@ import { CanonicalService } from '../../services/canonicalService';
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css'],
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, OnDestroy {
   product!: Product;
   similarProducts: Product[] = [];
+  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +29,7 @@ export class ProductDetailComponent implements OnInit {
     private meta: Meta,
     private title: Title,
     private canonicalService: CanonicalService,
+    private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -67,64 +70,186 @@ export class ProductDetailComponent implements OnInit {
     // 3) Always set meta tags (works server-side)
     this.setMetaTags();
 
-    // 4) Create JSON-LD string and sanitize for template rendering (works server-side)
-    const jsonLd = {
+    // 4) Create MULTIPLE JSON-LD schemas for comprehensive SEO
+    // Main Product Schema
+    const productSchema = {
       '@context': 'https://schema.org/',
       '@type': 'Product',
-      '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+      '@id': `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
       name: this.product.name,
-      image: `https://rapidpharmaceuticals.in/${this.product.imageUrl}`,
-      description: this.product.composition,
-      category: this.product.category,
+      image: this.product.imageUrl.startsWith('/')
+        ? `https://www.rapidpharmaceuticals.in${this.product.imageUrl}`
+        : `https://www.rapidpharmaceuticals.in/${this.product.imageUrl}`,
+      description: this.product.metaDescription || this.product.composition,
+      category: this.product.medicalCategory || this.product.category,
       brand: {
         '@type': 'Brand',
         name: 'Rapid Pharmaceuticals',
       },
+      manufacturer: {
+        '@type': 'Organization',
+        name: this.product.manufacturer || 'Rapid Pharmaceuticals',
+      },
       offers: {
         '@type': 'Offer',
-        url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+        url: `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
         priceCurrency: 'INR',
         price: this.product.mrp,
         availability: 'https://schema.org/InStock',
         itemCondition: 'https://schema.org/NewCondition',
       },
+      ...(this.product.avgRating && {
+        aggregateRating: {
+          '@type': 'AggregateRating',
+          ratingValue: this.product.avgRating,
+          reviewCount: this.product.reviewCount || 0,
+        },
+      }),
     };
 
-    this.addJsonLd(jsonLd);
+    // Breadcrumb Navigation Schema
+    const breadcrumbSchema = {
+      '@context': 'https://schema.org/',
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'Home',
+          item: 'https://www.rapidpharmaceuticals.in',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: 'Products',
+          item: 'https://www.rapidpharmaceuticals.in/products',
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: this.product.category,
+          item: `https://www.rapidpharmaceuticals.in/products?category=${this.product.category}`,
+        },
+        {
+          '@type': 'ListItem',
+          position: 4,
+          name: this.product.name,
+          item: `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
+        },
+      ],
+    };
+
+    // Organization Schema
+    const organizationSchema = {
+      '@context': 'https://schema.org/',
+      '@type': 'Organization',
+      name: 'Rapid Pharmaceuticals',
+      url: 'https://www.rapidpharmaceuticals.in',
+      logo: 'https://www.rapidpharmaceuticals.in/assets/logo.png',
+      sameAs: [
+        'https://www.facebook.com/rapidpharmaceuticals',
+        'https://twitter.com/rapidpharma',
+      ],
+      address: {
+        '@type': 'PostalAddress',
+        addressCountry: 'IN',
+        addressRegion: 'India',
+      },
+    };
+
+    // FAQ Schema (if FAQs exist)
+    let faqSchema = null;
+    if (this.product.faqItems && this.product.faqItems.length > 0) {
+      faqSchema = {
+        '@context': 'https://schema.org/',
+        '@type': 'FAQPage',
+        mainEntity: this.product.faqItems.map((item: any) => ({
+          '@type': 'Question',
+          name: item.question,
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: item.answer,
+          },
+        })),
+      };
+    }
+
+    // Combine all schemas into a single array block
+    const schemas: any[] = [productSchema, breadcrumbSchema, organizationSchema];
+    if (faqSchema) {
+      schemas.push(faqSchema);
+    }
+
+    // Clean up any existing script element to avoid leakage
+    if (this.scriptElement) {
+      this.renderer.removeChild(this.document.head, this.scriptElement);
+    }
+
+    // Dynamic insertion of JSON-LD schemas using Renderer2
+    this.scriptElement = this.renderer.createElement('script');
+    this.scriptElement!.type = 'application/ld+json';
+    this.scriptElement!.text = JSON.stringify(schemas);
+    this.renderer.appendChild(this.document.head, this.scriptElement);
   }
 
-  private addJsonLd(data: any) {
-  const existing = this.document.getElementById('product-schema');
-  if (existing) {
-    existing.remove();
+  ngOnDestroy(): void {
+    if (this.scriptElement) {
+      this.renderer.removeChild(this.document.head, this.scriptElement);
+    }
   }
-
-  const script = this.document.createElement('script');
-  script.type = 'application/ld+json';
-  script.id = 'product-schema';
-  script.text = JSON.stringify(data);
-
-  this.document.head.appendChild(script);
-}
 
   goToProduct(product: Product) {
-    this.router.navigate(['/product', product.slug]);
+    this.router.navigate(['/products', product.slug]);
   }
 
   /** ✅ SEO Meta + OG + Twitter — call this for SSR too */
   setMetaTags(): void {
-    const pageTitle = `${this.product.name} | ${this.product.composition} | Rapid Pharmaceuticals`;
-    const pageDescription =
+    // Use SEO fields if available, otherwise fall back to defaults
+    const pageTitle = this.product.metaTitle || 
+      `${this.product.name} | ${this.product.composition} | Rapid Pharmaceuticals`;
+    
+    const pageDescription = this.product.metaDescription ||
       `${this.product.name} containing ${this.product.composition} — high-quality medicines by Rapid Pharmaceuticals, available for PCD franchise.`;
+    
     const imageUrl =
       this.product.imageUrl ||
-      'https://rapidpharmaceuticals.in/assets/og-image.jpg';
-    const productUrl = `https://rapidpharmaceuticals.in/product/${this.product.slug}`;
+      'https://www.rapidpharmaceuticals.in/assets/og-image.jpg';
+    const productUrl = `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`;
 
     this.title.setTitle(pageTitle);
     this.meta.updateTag({ name: 'description', content: pageDescription });
 
-    // Open Graph
+    // Add keywords if available
+    if (this.product.keywords && this.product.keywords.length > 0) {
+      this.meta.updateTag({
+        name: 'keywords',
+        content: this.product.keywords.join(', ')
+      });
+    }
+
+    // Author & Publisher Tags
+    if (this.product.authorName) {
+      this.meta.updateTag({ name: 'author', content: this.product.authorName });
+    }
+    this.meta.updateTag({ name: 'publisher', content: 'Rapid Pharmaceuticals' });
+
+    // Publication & Update Dates (RFC3339 format for better semantic meaning)
+    if (this.product.publicationDate) {
+      this.meta.updateTag({ name: 'publish_date', content: this.product.publicationDate });
+    }
+    if (this.product.updatedDate) {
+      this.meta.updateTag({ name: 'last-modified', content: this.product.updatedDate });
+    }
+
+    // Medical/Healthcare specific meta tags
+    if (this.product.medicalCategory) {
+      this.meta.updateTag({ name: 'product-category', content: this.product.medicalCategory });
+    }
+    if (this.product.activeIngredient) {
+      this.meta.updateTag({ name: 'active-ingredient', content: this.product.activeIngredient });
+    }
+
+    // Open Graph (Enhanced)
     this.meta.updateTag({ property: 'og:title', content: pageTitle });
     this.meta.updateTag({
       property: 'og:description',
@@ -133,8 +258,18 @@ export class ProductDetailComponent implements OnInit {
     this.meta.updateTag({ property: 'og:image', content: imageUrl });
     this.meta.updateTag({ property: 'og:url', content: productUrl });
     this.meta.updateTag({ property: 'og:type', content: 'product' });
+    
+    // OpenGraph type-specific (product)
+    this.meta.updateTag({ 
+      property: 'product:brand', 
+      content: this.product.manufacturer || 'Rapid Pharmaceuticals' 
+    });
+    if (this.product.mrp) {
+      this.meta.updateTag({ property: 'product:price:amount', content: String(this.product.mrp) });
+      this.meta.updateTag({ property: 'product:price:currency', content: 'INR' });
+    }
 
-    // Twitter
+    // Twitter Card (Enhanced)
     this.meta.updateTag({
       name: 'twitter:card',
       content: 'summary_large_image',
@@ -145,6 +280,16 @@ export class ProductDetailComponent implements OnInit {
       content: pageDescription,
     });
     this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
+    this.meta.updateTag({ name: 'twitter:domain', content: 'www.rapidpharmaceuticals.in' });
+
+    // Robots Meta Tag (index all product pages)
+    this.meta.updateTag({ name: 'robots', content: 'index, follow, max-image-preview:large' });
+
+    // Viewport & Mobile Optimization
+    this.meta.updateTag({ name: 'viewport', content: 'width=device-width, initial-scale=1.0' });
+
+    // Language
+    this.meta.updateTag({ 'http-equiv': 'content-language', content: 'en-IN' });
 
     this.canonicalService.setCanonicalURL(productUrl);
   }

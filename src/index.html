@@ -22,9 +22,11 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <!-- Preload Hero Image for LCP -->
+  <link rel="preload" as="image" href="/slide1.webp" fetchpriority="high">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <script type="application/ld+json">
   {
@@ -50,24 +52,29 @@
   }
   </script>
 
-  <!--Start Review Schema Markup-->
-<script type="application/ld+json">{"@context":"http://schema.org/","@type": "Product","name": "Rapid Pharmaceuticals","description": "Rapid Pharmaceuticals is a leading pharma distributor and PCD franchise provider in India, with over 25 years of experience, a modern catalog, and a trusted manufacturing network.","aggregateRating": {"@type": "AggregateRating","ratingValue": "5","bestRating": "5","worstRating": "1","ratingCount": "1839"}}</script>
 
-<!--End Of Review Schema Markups-->
              
 
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3BLCMKNGZT"></script>
+  <!-- Google tag (gtag.js) deferred to prevent blocking -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-3BLCMKNGZT');
+
+  // Defer actual GA script load
+  setTimeout(function() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-3BLCMKNGZT';
+    document.head.appendChild(script);
+  }, 3500);
 </script>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" rel="stylesheet">
   <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 </head>
 

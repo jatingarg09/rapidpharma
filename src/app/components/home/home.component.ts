@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser, DOCUMENT } from '@angular/common';
+import { blogPosts, BlogPost } from '../../data/blog-posts';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { isPlatformBrowser } from '@angular/common';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, OnDestroy {
+  latestBlogs: BlogPost[] = blogPosts.slice(0, 3);
 
   sampleProducts = [
     {
@@ -44,38 +46,75 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   slideshowIndex = 0;
   slideshowTimer: any;
+  displayedProducts: any[] = [];
+  private scriptElement: HTMLScriptElement | null = null;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    @Inject(PLATFORM_ID) private platformId: Object,
+    @Inject(DOCUMENT) private document: Document
+  ) {}
 
   ngOnInit(): void {
+    this.injectSchema();
+    this.updateDisplayedProducts();
     if (isPlatformBrowser(this.platformId) && this.sampleProducts.length > 0) {
       this.startSlideshow();
     }
   }
 
+  injectSchema() {
+    const schema = {
+      '@context': 'http://schema.org/',
+      '@type': 'Product',
+      'name': 'Rapid Pharmaceuticals',
+      'description': 'Rapid Pharmaceuticals is a leading pharma distributor and PCD franchise provider in India, with over 25 years of experience, a modern catalog, and a trusted manufacturing network.',
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': '5',
+        'bestRating': '5',
+        'worstRating': '1',
+        'ratingCount': '1839'
+      }
+    };
+
+    if (this.scriptElement) {
+      this.scriptElement.remove();
+    }
+
+    this.scriptElement = this.document.createElement('script');
+    this.scriptElement.type = 'application/ld+json';
+    this.scriptElement.text = JSON.stringify(schema);
+    this.document.head.appendChild(this.scriptElement);
+  }
+
   startSlideshow() {
     this.slideshowTimer = setInterval(() => {
       const total = this.sampleProducts.length;
-      // If less than 3 products, don't slide
       if (total <= 3) return;
       this.slideshowIndex = (this.slideshowIndex + 1) % total;
-    }, 3000); // Change slide every 3 seconds
+      this.updateDisplayedProducts();
+    }, 3000);
   }
 
-  getSlideshowProducts() {
+  updateDisplayedProducts() {
     const total = this.sampleProducts.length;
-    if (total <= 3) return this.sampleProducts;
-    // Show 3 products starting from slideshowIndex, wrap around
+    if (total <= 3) {
+      this.displayedProducts = [...this.sampleProducts];
+      return;
+    }
     const result = [];
     for (let i = 0; i < 3; i++) {
       result.push(this.sampleProducts[(this.slideshowIndex + i) % total]);
     }
-    return result;
+    this.displayedProducts = result;
   }
 
   ngOnDestroy() {
     if (this.slideshowTimer) {
       clearInterval(this.slideshowTimer);
+    }
+    if (this.scriptElement) {
+      this.scriptElement.remove();
     }
   }
 }
