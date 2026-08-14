@@ -1,7 +1,7 @@
 /* Global Home Page Variables */
 .home-page {
   --navy: #03045e;
-  --cyan: #00b4d8;
+  --cyan: #0077b6;
   --cyan-light: #caf0f8;
   --text-dark: #1e293b;
   --text-muted: #64748b;
@@ -314,6 +314,123 @@
   line-height: 1.5;
 }
 
+/* Latest Insights / Blogs */
+.home-blogs {
+  padding: 5rem 0;
+  background-color: var(--white);
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.blog-card {
+  background: var(--bg-light);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid transparent;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 35px -5px rgba(3, 4, 94, 0.1);
+  border: 1px solid var(--cyan-light);
+}
+
+.blog-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-image-wrapper {
+  width: 100%;
+  height: 170px;
+  overflow: hidden;
+}
+
+.blog-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blog-card:hover .blog-image-wrapper img {
+  transform: scale(1.05);
+}
+
+.blog-card-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--cyan);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.blog-date mat-icon {
+  font-size: 0.95rem;
+  width: 0.95rem;
+  height: 0.95rem;
+}
+
+.blog-title {
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.blog-excerpt {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+  flex-grow: 1;
+}
+
+.read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--cyan);
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.read-more mat-icon {
+  font-size: 1.1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover .read-more {
+  color: var(--navy);
+}
+
+.blog-card:hover .read-more mat-icon {
+  transform: translateX(4px);
+}
+
 /* Light Cyan CTA Banner */
 .home-cta {
   background-color: var(--cyan-light);
@@ -405,7 +522,7 @@
 
 /* Responsive Design */
 @media (max-width: 992px) {
-  .metrics-grid, .slideshow-container.multi, .cta-grid {
+  .metrics-grid, .slideshow-container.multi, .cta-grid, .blogs-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
@@ -432,7 +549,7 @@
     font-size: 1.6rem;
   }
   
-  .home-welcome, .home-services, .home-products, .home-cta {
+  .home-welcome, .home-services, .home-products, .home-cta, .home-blogs {
     padding: 3rem 0;
   }
 
@@ -459,3 +576,234 @@
     font-size: 1.4rem;
   }
 }
+
+/* ==========================================
+   Portfolio Navigation Section (Homepage)
+   ========================================== */
+.home-portfolio-nav {
+  padding: 5rem 0;
+  background-color: var(--bg-light);
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.seo-browse-container.homepage-version {
+  margin-top: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+.seo-browse-subheading {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.seo-browse-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+}
+
+.seo-browse-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.group-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cyan) 0%, var(--cyan-light) 100%);
+  border-radius: 2px;
+}
+
+.group-icon {
+  color: var(--cyan);
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+}
+
+/* Dosage Form Grid */
+.dosage-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.dosage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem 0.5rem;
+  background-color: var(--white);
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  text-align: center;
+}
+
+.dosage-card .card-icon {
+  font-size: 26px;
+  width: 26px;
+  height: 26px;
+  color: var(--cyan);
+  margin-bottom: 0.5rem;
+  transition: transform 0.25s ease;
+}
+
+.dosage-card .card-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.dosage-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--cyan);
+  box-shadow: 0 10px 20px -5px rgba(0, 119, 182, 0.12);
+}
+
+.dosage-card:hover .card-icon {
+  transform: scale(1.15);
+}
+
+/* Therapeutic Class Flex */
+.segment-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.segment-pill {
+  display: inline-block;
+  padding: 0.5rem 1.1rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 30px;
+  border: 1px solid transparent;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.segment-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Color Coding for Segments */
+.segment-antibiotics {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-color: #dbeafe;
+}
+.segment-antibiotics:hover { border-color: #2563eb; }
+
+.segment-gastro {
+  background-color: #ecfdf5;
+  color: #059669;
+  border-color: #d1fae5;
+}
+.segment-gastro:hover { border-color: #059669; }
+
+.segment-cough {
+  background-color: #ecfeff;
+  color: #0891b2;
+  border-color: #cffafe;
+}
+.segment-cough:hover { border-color: #0891b2; }
+
+.segment-vitamins {
+  background-color: #fffbeb;
+  color: #d97706;
+  border-color: #fef3c7;
+}
+.segment-vitamins:hover { border-color: #d97706; }
+
+.segment-nsaid {
+  background-color: #fff1f2;
+  color: #e11d48;
+  border-color: #ffe4e6;
+}
+.segment-nsaid:hover { border-color: #e11d48; }
+
+.segment-antacids {
+  background-color: #f5f3ff;
+  color: #7c3aed;
+  border-color: #ede9fe;
+}
+.segment-antacids:hover { border-color: #7c3aed; }
+
+.segment-probiotics {
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border-color: #dcfce7;
+}
+.segment-probiotics:hover { border-color: #16a34a; }
+
+.segment-gyne {
+  background-color: #fdf2f8;
+  color: #db2777;
+  border-color: #fce7f3;
+}
+.segment-gyne:hover { border-color: #db2777; }
+
+.segment-urology {
+  background-color: #f5f3ff;
+  color: #4f46e5;
+  border-color: #e0e7ff;
+}
+.segment-urology:hover { border-color: #4f46e5; }
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .seo-browse-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .dosage-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-portfolio-nav {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .dosage-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .dosage-card {
+    padding: 1rem 0.5rem;
+  }
+}

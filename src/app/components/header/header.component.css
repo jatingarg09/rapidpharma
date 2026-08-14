@@ -1,6 +1,6 @@
 .header {
   --navy: #03045e;
-  --cyan: #00b4d8;
+  --cyan: #0077b6;
   
   font-family: 'Inter', 'Roboto', sans-serif;
   background-color: white;
@@ -74,12 +74,12 @@
 }
 
 .nav-links a:hover {
-  color: var(--cyan);
+  color: #0077b6; /* Darker cyan for better contrast on white */
 }
 
 .nav-links a.active {
   border-bottom: 2px solid var(--cyan);
-  color: var(--cyan);
+  color: #0077b6;
 }
 
 .logo-link {
@@ -135,13 +135,13 @@
 
   .nav-links a.active {
     border-bottom: none;
-    color: var(--cyan);
+    color: #0077b6;
     padding-left: 10px;
   }
 
   .nav-links a:hover {
     border-bottom: none;
-    color: var(--cyan);
+    color: #0077b6;
   }
 
   .top-bar {

@@ -26,9 +26,9 @@ export class AboutComponent implements OnInit {
     this.metaService.updateTag({ property: 'og:title', content: 'About Rapid Pharmaceuticals' });
     this.metaService.updateTag({ property: 'og:description', content: 'Over 25 years of reliable pharmaceutical distribution across India.' });
     this.metaService.updateTag({ property: 'og:type', content: 'website' });
-    this.metaService.updateTag({ property: 'og:url', content: 'https://rapidpharmaceuticals.in/about' });
+    this.metaService.updateTag({ property: 'og:url', content: 'https://www.rapidpharmaceuticals.in/about' });
 
     // Update Canonical URL
-    this.canonicalService.setCanonicalURL('https://rapidpharmaceuticals.in/about');
+    this.canonicalService.setCanonicalURL('https://www.rapidpharmaceuticals.in/about');
   }
 }

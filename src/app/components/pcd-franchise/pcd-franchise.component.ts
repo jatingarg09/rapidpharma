@@ -1,4 +1,4 @@
-import { Component, OnInit, Inject, PLATFORM_ID } from '@angular/core';
+import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
@@ -17,7 +17,7 @@ interface Location {
   templateUrl: './pcd-franchise.component.html',
   styleUrls: ['./pcd-franchise.component.css'],
 })
-export class PcdFranchiseComponent implements OnInit {
+export class PcdFranchiseComponent implements OnInit, OnDestroy {
   locations: Location[] = [
     {
       name: 'Andhra Pradesh',
@@ -272,6 +272,7 @@ export class PcdFranchiseComponent implements OnInit {
   districtList: string[] = [];
   isStatePage = false;
   seoVariationIndex = 0;
+  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -341,6 +342,12 @@ export class PcdFranchiseComponent implements OnInit {
     });
   }
 
+  ngOnDestroy(): void {
+    if (this.scriptElement) {
+      this.scriptElement.remove();
+    }
+  }
+
   scrollToInquiry() {
     if (isPlatformBrowser(this.platformId)) {
       const el = document.getElementById('inquiry-form');
@@ -358,18 +365,18 @@ export class PcdFranchiseComponent implements OnInit {
 
     let title = baseTitle;
     let description = baseDesc;
-    let url = 'https://rapidpharmaceuticals.in/pcd-pharma-franchise';
+    let url = 'https://www.rapidpharmaceuticals.in/pcd-pharma-franchise';
 
     if (district) {
       title = `PCD Pharma Franchise in ${district} | Rapid Pharmaceuticals`;
       description = `Start your PCD Pharma Franchise in ${district} with Rapid Pharmaceuticals. WHO-GMP certified products and full marketing support.`;
-      url = `https://rapidpharmaceuticals.in/pcd-pharma-franchise-in-${district
+      url = `https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-${district
         .toLowerCase()
         .replace(/\s+/g, '-')}`;
     } else if (location) {
       title = `PCD Pharma Franchise in ${location.name} | Rapid Pharmaceuticals`;
       description = location.description;
-      url = `https://rapidpharmaceuticals.in/pcd-pharma-franchise-in-${location.slug}`;
+      url = `https://www.rapidpharmaceuticals.in/pcd-pharma-franchise-in-${location.slug}`;
     }
 
     this.title.setTitle(title);
@@ -383,7 +390,7 @@ export class PcdFranchiseComponent implements OnInit {
       name: 'Rapid Pharmaceuticals',
       url: url,
       description: description,
-      image: 'https://rapidpharmaceuticals.in/assets/logo.webp',
+      image: 'https://www.rapidpharmaceuticals.in/assets/logo.webp',
       address: {
         '@type': 'PostalAddress',
         addressLocality: district || location?.name || 'India',
@@ -392,15 +399,14 @@ export class PcdFranchiseComponent implements OnInit {
       },
     };
 
-    const existing = this.document.querySelector(
-      'script[type="application/ld+json"]',
-    );
-    if (existing) existing.remove();
+    if (this.scriptElement) {
+      this.scriptElement.remove();
+    }
 
-    const script = this.document.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
-    this.document.head.appendChild(script);
+    this.scriptElement = this.document.createElement('script');
+    this.scriptElement.type = 'application/ld+json';
+    this.scriptElement.text = JSON.stringify(schema);
+    this.document.head.appendChild(this.scriptElement);
   }
 
   goToFranchise(slug: string): void {

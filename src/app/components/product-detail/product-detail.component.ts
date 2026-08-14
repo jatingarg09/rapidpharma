@@ -1,6 +1,7 @@
 import {
   Component,
   OnInit,
+  OnDestroy,
   Renderer2,
   Inject,
   PLATFORM_ID
@@ -17,9 +18,10 @@ import { CanonicalService } from '../../services/canonicalService';
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css'],
 })
-export class ProductDetailComponent implements OnInit {
+export class ProductDetailComponent implements OnInit, OnDestroy {
   product!: Product;
   similarProducts: Product[] = [];
+  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -27,6 +29,7 @@ export class ProductDetailComponent implements OnInit {
     private meta: Meta,
     private title: Title,
     private canonicalService: CanonicalService,
+    private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
     @Inject(DOCUMENT) private document: Document,
   ) {}
@@ -69,9 +72,11 @@ export class ProductDetailComponent implements OnInit {
     const productSchema = {
       '@context': 'https://schema.org/',
       '@type': 'Product',
-      '@id': `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+      '@id': `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
       name: this.product.name,
-      image: `https://rapidpharmaceuticals.in/${this.product.imageUrl}`,
+      image: this.product.imageUrl.startsWith('/')
+        ? `https://www.rapidpharmaceuticals.in${this.product.imageUrl}`
+        : `https://www.rapidpharmaceuticals.in/${this.product.imageUrl}`,
       description: this.product.metaDescription || this.product.composition,
       category: this.product.medicalCategory || this.product.category,
       brand: {
@@ -84,7 +89,7 @@ export class ProductDetailComponent implements OnInit {
       },
       offers: {
         '@type': 'Offer',
-        url: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+        url: `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
         priceCurrency: 'INR',
         price: this.product.mrp,
         availability: 'https://schema.org/InStock',
@@ -108,25 +113,25 @@ export class ProductDetailComponent implements OnInit {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://rapidpharmaceuticals.in',
+          item: 'https://www.rapidpharmaceuticals.in',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: 'Products',
-          item: 'https://rapidpharmaceuticals.in/products',
+          item: 'https://www.rapidpharmaceuticals.in/products',
         },
         {
           '@type': 'ListItem',
           position: 3,
           name: this.product.category,
-          item: `https://rapidpharmaceuticals.in/products?category=${this.product.category}`,
+          item: `https://www.rapidpharmaceuticals.in/products?category=${this.product.category}`,
         },
         {
           '@type': 'ListItem',
           position: 4,
           name: this.product.name,
-          item: `https://rapidpharmaceuticals.in/product/${this.product.slug}`,
+          item: `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
         },
       ],
     };
@@ -136,8 +141,8 @@ export class ProductDetailComponent implements OnInit {
       '@context': 'https://schema.org/',
       '@type': 'Organization',
       name: 'Rapid Pharmaceuticals',
-      url: 'https://rapidpharmaceuticals.in',
-      logo: 'https://rapidpharmaceuticals.in/assets/logo.png',
+      url: 'https://www.rapidpharmaceuticals.in',
+      logo: 'https://www.rapidpharmaceuticals.in/assets/logo.png',
       sameAs: [
         'https://www.facebook.com/rapidpharmaceuticals',
         'https://twitter.com/rapidpharma',
@@ -166,28 +171,29 @@ export class ProductDetailComponent implements OnInit {
       };
     }
 
-    // Add all schemas to page
-    this.addJsonLd(productSchema);
-    this.addJsonLd(breadcrumbSchema);
-    this.addJsonLd(organizationSchema);
+    // Combine all schemas into a single array block
+    const schemas: any[] = [productSchema, breadcrumbSchema, organizationSchema];
     if (faqSchema) {
-      this.addJsonLd(faqSchema);
+      schemas.push(faqSchema);
+    }
+
+    // Clean up any existing script element to avoid leakage
+    if (this.scriptElement) {
+      this.renderer.removeChild(this.document.head, this.scriptElement);
+    }
+
+    // Dynamic insertion of JSON-LD schemas using Renderer2
+    this.scriptElement = this.renderer.createElement('script');
+    this.scriptElement!.type = 'application/ld+json';
+    this.scriptElement!.text = JSON.stringify(schemas);
+    this.renderer.appendChild(this.document.head, this.scriptElement);
+  }
+
+  ngOnDestroy(): void {
+    if (this.scriptElement) {
+      this.renderer.removeChild(this.document.head, this.scriptElement);
     }
   }
-
-  private addJsonLd(data: any) {
-  const existing = this.document.getElementById('product-schema');
-  if (existing) {
-    existing.remove();
-  }
-
-  const script = this.document.createElement('script');
-  script.type = 'application/ld+json';
-  script.id = 'product-schema';
-  script.text = JSON.stringify(data);
-
-  this.document.head.appendChild(script);
-}
 
   goToProduct(product: Product) {
     this.router.navigate(['/products', product.slug]);
@@ -204,8 +210,8 @@ export class ProductDetailComponent implements OnInit {
     
     const imageUrl =
       this.product.imageUrl ||
-      'https://rapidpharmaceuticals.in/assets/og-image.jpg';
-    const productUrl = `https://rapidpharmaceuticals.in/product/${this.product.slug}`;
+      'https://www.rapidpharmaceuticals.in/assets/og-image.jpg';
+    const productUrl = `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`;
 
     this.title.setTitle(pageTitle);
     this.meta.updateTag({ name: 'description', content: pageDescription });
@@ -271,7 +277,7 @@ export class ProductDetailComponent implements OnInit {
       content: pageDescription,
     });
     this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
-    this.meta.updateTag({ name: 'twitter:domain', content: 'rapidpharmaceuticals.in' });
+    this.meta.updateTag({ name: 'twitter:domain', content: 'www.rapidpharmaceuticals.in' });
 
     // Robots Meta Tag (index all product pages)
     this.meta.updateTag({ name: 'robots', content: 'index, follow, max-image-preview:large' });
