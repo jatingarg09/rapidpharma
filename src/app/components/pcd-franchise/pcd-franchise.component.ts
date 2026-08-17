@@ -4,6 +4,7 @@ import { Title, Meta } from '@angular/platform-browser';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { stateDistricts } from '../../data/state-districts';
 import { CanonicalService } from '../../services/canonicalService';
+import { LdJsonService } from '../../services/ld-json.service';
 
 interface Location {
   name: string;
@@ -272,7 +273,6 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
   districtList: string[] = [];
   isStatePage = false;
   seoVariationIndex = 0;
-  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -282,6 +282,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
     private canonicalService: CanonicalService,
     @Inject(DOCUMENT) private document: Document,
     @Inject(PLATFORM_ID) private platformId: any,
+    private ldJsonService: LdJsonService,
   ) {}
 
   ngOnInit(): void {
@@ -353,9 +354,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    if (this.scriptElement) {
-      this.scriptElement.remove();
-    }
+    this.ldJsonService.removeSchema();
   }
 
   scrollToInquiry() {
@@ -409,14 +408,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
       },
     };
 
-    if (this.scriptElement) {
-      this.scriptElement.remove();
-    }
-
-    this.scriptElement = this.document.createElement('script');
-    this.scriptElement.type = 'application/ld+json';
-    this.scriptElement.text = JSON.stringify(schema);
-    this.document.head.appendChild(this.scriptElement);
+    this.ldJsonService.setSchema(schema);
   }
 
   goToFranchise(slug: string): void {

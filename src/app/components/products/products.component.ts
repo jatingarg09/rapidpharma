@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { CanonicalService } from '../../services/canonicalService';
+import { LdJsonService } from '../../services/ld-json.service';
 
 const CATEGORY_SLUG_MAP: { [key: string]: string } = {
   tablets: 'Tablets',
@@ -155,7 +156,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
   pageTitle = 'Our Products';
   pageSubtitle =
     'Explore our extensive range of high-quality pharmaceutical formulations.';
-  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private router: Router,
@@ -166,6 +166,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
     private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
     @Inject(DOCUMENT) private document: Document,
+    private ldJsonService: LdJsonService,
   ) {}
 
   ngOnInit() {
@@ -441,22 +442,11 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
     const schemas = [breadcrumbSchema, itemListSchema];
 
-    // Clean up existing script
-    if (this.scriptElement) {
-      this.renderer.removeChild(this.document.head, this.scriptElement);
-    }
-
-    // Insert new script
-    this.scriptElement = this.renderer.createElement('script');
-    this.scriptElement!.type = 'application/ld+json';
-    this.scriptElement!.text = JSON.stringify(schemas);
-    this.renderer.appendChild(this.document.head, this.scriptElement);
+    this.ldJsonService.setSchema(schemas);
   }
 
   ngOnDestroy(): void {
-    if (this.scriptElement) {
-      this.renderer.removeChild(this.document.head, this.scriptElement);
-    }
+    this.ldJsonService.removeSchema();
   }
 
   onPageChange(event: PageEvent) {

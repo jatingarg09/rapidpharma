@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy, Inject, Renderer2 } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
+import { LdJsonService } from '../../services/ld-json.service';
 
 @Component({
   selector: 'app-blog-list',
@@ -10,13 +11,13 @@ import { blogPosts, BlogPost } from '../../data/blog-posts';
 })
 export class BlogListComponent implements OnInit, OnDestroy {
   posts: BlogPost[] = blogPosts;
-  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private title: Title,
     private meta: Meta,
     private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private ldJsonService: LdJsonService
   ) {}
 
   ngOnInit(): void {
@@ -60,15 +61,10 @@ export class BlogListComponent implements OnInit, OnDestroy {
       }
     };
 
-    this.scriptElement = this.renderer.createElement('script');
-    this.scriptElement!.type = 'application/ld+json';
-    this.scriptElement!.text = JSON.stringify(schema);
-    this.renderer.appendChild(this.document.head, this.scriptElement);
+    this.ldJsonService.setSchema(schema);
   }
 
   ngOnDestroy(): void {
-    if (this.scriptElement) {
-      this.renderer.removeChild(this.document.head, this.scriptElement);
-    }
+    this.ldJsonService.removeSchema();
   }
 }

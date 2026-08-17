@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { DOCUMENT } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
+import { LdJsonService } from '../../services/ld-json.service';
 
 @Component({
   selector: 'app-blog-detail',
@@ -12,7 +13,6 @@ import { blogPosts, BlogPost } from '../../data/blog-posts';
 })
 export class BlogDetailComponent implements OnInit, OnDestroy {
   post: BlogPost | undefined;
-  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -20,7 +20,8 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
     private title: Title,
     private meta: Meta,
     private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private ldJsonService: LdJsonService
   ) {}
 
   ngOnInit(): void {
@@ -81,16 +82,7 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
           });
         }
 
-        // Clean up any previous script if navigating between posts
-        if (this.scriptElement) {
-          this.renderer.removeChild(this.document.head, this.scriptElement);
-        }
-
-        this.scriptElement = this.renderer.createElement('script');
-        this.scriptElement!.type = 'application/ld+json';
-        this.scriptElement!.text = JSON.stringify(schemas);
-        this.renderer.appendChild(this.document.head, this.scriptElement);
-
+        this.ldJsonService.setSchema(schemas);
       } else {
         this.router.navigate(['/blogs']);
       }
@@ -98,8 +90,6 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    if (this.scriptElement) {
-      this.renderer.removeChild(this.document.head, this.scriptElement);
-    }
+    this.ldJsonService.removeSchema();
   }
 }
