@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser, DOCUMENT } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
+import { LdJsonService } from '../../services/ld-json.service';
 
 @Component({
   selector: 'app-home',
@@ -47,11 +48,10 @@ export class HomeComponent implements OnInit, OnDestroy {
   slideshowIndex = 0;
   slideshowTimer: any;
   displayedProducts: any[] = [];
-  private scriptElement: HTMLScriptElement | null = null;
-
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
-    @Inject(DOCUMENT) private document: Document
+    @Inject(DOCUMENT) private document: Document,
+    private ldJsonService: LdJsonService
   ) {}
 
   ngOnInit(): void {
@@ -77,14 +77,7 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     };
 
-    if (this.scriptElement) {
-      this.scriptElement.remove();
-    }
-
-    this.scriptElement = this.document.createElement('script');
-    this.scriptElement.type = 'application/ld+json';
-    this.scriptElement.text = JSON.stringify(schema);
-    this.document.head.appendChild(this.scriptElement);
+    this.ldJsonService.setSchema(schema);
   }
 
   startSlideshow() {
@@ -113,8 +106,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     if (this.slideshowTimer) {
       clearInterval(this.slideshowTimer);
     }
-    if (this.scriptElement) {
-      this.scriptElement.remove();
-    }
+    this.ldJsonService.removeSchema();
   }
 }

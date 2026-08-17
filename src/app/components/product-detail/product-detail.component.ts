@@ -12,6 +12,7 @@ import { Product, products } from '../../data/products';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CanonicalService } from '../../services/canonicalService';
+import { LdJsonService } from '../../services/ld-json.service';
 
 @Component({
   selector: 'app-product-detail',
@@ -21,7 +22,6 @@ import { CanonicalService } from '../../services/canonicalService';
 export class ProductDetailComponent implements OnInit, OnDestroy {
   product!: Product;
   similarProducts: Product[] = [];
-  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,6 +32,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     private renderer: Renderer2,
     @Inject(PLATFORM_ID) private platformId: Object,
     @Inject(DOCUMENT) private document: Document,
+    private ldJsonService: LdJsonService,
   ) {}
 
   ngOnInit() {
@@ -180,22 +181,11 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       schemas.push(faqSchema);
     }
 
-    // Clean up any existing script element to avoid leakage
-    if (this.scriptElement) {
-      this.renderer.removeChild(this.document.head, this.scriptElement);
-    }
-
-    // Dynamic insertion of JSON-LD schemas using Renderer2
-    this.scriptElement = this.renderer.createElement('script');
-    this.scriptElement!.type = 'application/ld+json';
-    this.scriptElement!.text = JSON.stringify(schemas);
-    this.renderer.appendChild(this.document.head, this.scriptElement);
+    this.ldJsonService.setSchema(schemas);
   }
 
   ngOnDestroy(): void {
-    if (this.scriptElement) {
-      this.renderer.removeChild(this.document.head, this.scriptElement);
-    }
+    this.ldJsonService.removeSchema();
   }
 
   goToProduct(product: Product) {
