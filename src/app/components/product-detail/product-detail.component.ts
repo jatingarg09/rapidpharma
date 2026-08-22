@@ -4,7 +4,7 @@ import {
   OnDestroy,
   Renderer2,
   Inject,
-  PLATFORM_ID
+  PLATFORM_ID,
 } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
@@ -22,6 +22,9 @@ import { LdJsonService } from '../../services/ld-json.service';
 export class ProductDetailComponent implements OnInit, OnDestroy {
   product!: Product;
   similarProducts: Product[] = [];
+  selectedImageUrl: string = '';
+  selectedImageAlt: string = '';
+  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -47,7 +50,10 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       const s = params.get('slug');
       if (s && s !== this.product?.slug) {
         this.loadProduct(s);
-        if (event instanceof NavigationEnd && isPlatformBrowser(this.platformId)) {
+        if (
+          event instanceof NavigationEnd &&
+          isPlatformBrowser(this.platformId)
+        ) {
           window.scrollTo({ top: 0, behavior: 'smooth' });
         }
       }
@@ -63,6 +69,8 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       return;
     }
     this.product = found;
+    this.selectedImageUrl = this.product.imageUrl;
+    this.selectedImageAlt = this.product.imageAlt || this.product.name;
 
     this.similarProducts = products
       .filter((p) => p.category === this.product.category && p.slug !== slug)
@@ -78,9 +86,18 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       '@type': 'Product',
       '@id': `https://www.rapidpharmaceuticals.in/products/${this.product.slug}`,
       name: this.product.name,
-      image: this.product.imageUrl.startsWith('/')
-        ? `https://www.rapidpharmaceuticals.in${this.product.imageUrl}`
-        : `https://www.rapidpharmaceuticals.in/${this.product.imageUrl}`,
+      image: [
+        this.product.imageUrl.startsWith('/')
+          ? `https://www.rapidpharmaceuticals.in${this.product.imageUrl}`
+          : `https://www.rapidpharmaceuticals.in/${this.product.imageUrl}`,
+        ...(this.product.visualAidUrl
+          ? [
+              this.product.visualAidUrl.startsWith('/')
+                ? `https://www.rapidpharmaceuticals.in${this.product.visualAidUrl}`
+                : `https://www.rapidpharmaceuticals.in/${this.product.visualAidUrl}`,
+            ]
+          : []),
+      ],
       description: this.product.metaDescription || this.product.composition,
       category: this.product.medicalCategory || this.product.category,
       brand: {
@@ -176,7 +193,11 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     }
 
     // Combine all schemas into a single array block
-    const schemas: any[] = [productSchema, breadcrumbSchema, organizationSchema];
+    const schemas: any[] = [
+      productSchema,
+      breadcrumbSchema,
+      organizationSchema,
+    ];
     if (faqSchema) {
       schemas.push(faqSchema);
     }
@@ -192,15 +213,28 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     this.router.navigate(['/products', product.slug]);
   }
 
+  selectImage(view: 'product' | 'visualAid') {
+    if (view === 'product') {
+      this.selectedImageUrl = this.product.imageUrl;
+      this.selectedImageAlt = this.product.imageAlt || this.product.name;
+    } else if (view === 'visualAid' && this.product.visualAidUrl) {
+      this.selectedImageUrl = this.product.visualAidUrl;
+      this.selectedImageAlt =
+        this.product.visualAidAlt || `${this.product.name} Visual Aid`;
+    }
+  }
+
   /** ✅ SEO Meta + OG + Twitter — call this for SSR too */
   setMetaTags(): void {
     // Use SEO fields if available, otherwise fall back to defaults
-    const pageTitle = this.product.metaTitle || 
+    const pageTitle =
+      this.product.metaTitle ||
       `${this.product.name} | ${this.product.composition} | Rapid Pharmaceuticals`;
-    
-    const pageDescription = this.product.metaDescription ||
+
+    const pageDescription =
+      this.product.metaDescription ||
       `${this.product.name} containing ${this.product.composition} — high-quality medicines by Rapid Pharmaceuticals, available for PCD franchise.`;
-    
+
     const imageUrl =
       this.product.imageUrl ||
       'https://www.rapidpharmaceuticals.in/assets/og-image.jpg';
@@ -213,7 +247,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     if (this.product.keywords && this.product.keywords.length > 0) {
       this.meta.updateTag({
         name: 'keywords',
-        content: this.product.keywords.join(', ')
+        content: this.product.keywords.join(', '),
       });
     }
 
@@ -221,22 +255,37 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     if (this.product.authorName) {
       this.meta.updateTag({ name: 'author', content: this.product.authorName });
     }
-    this.meta.updateTag({ name: 'publisher', content: 'Rapid Pharmaceuticals' });
+    this.meta.updateTag({
+      name: 'publisher',
+      content: 'Rapid Pharmaceuticals',
+    });
 
     // Publication & Update Dates (RFC3339 format for better semantic meaning)
     if (this.product.publicationDate) {
-      this.meta.updateTag({ name: 'publish_date', content: this.product.publicationDate });
+      this.meta.updateTag({
+        name: 'publish_date',
+        content: this.product.publicationDate,
+      });
     }
     if (this.product.updatedDate) {
-      this.meta.updateTag({ name: 'last-modified', content: this.product.updatedDate });
+      this.meta.updateTag({
+        name: 'last-modified',
+        content: this.product.updatedDate,
+      });
     }
 
     // Medical/Healthcare specific meta tags
     if (this.product.medicalCategory) {
-      this.meta.updateTag({ name: 'product-category', content: this.product.medicalCategory });
+      this.meta.updateTag({
+        name: 'product-category',
+        content: this.product.medicalCategory,
+      });
     }
     if (this.product.activeIngredient) {
-      this.meta.updateTag({ name: 'active-ingredient', content: this.product.activeIngredient });
+      this.meta.updateTag({
+        name: 'active-ingredient',
+        content: this.product.activeIngredient,
+      });
     }
 
     // Open Graph (Enhanced)
@@ -248,15 +297,21 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     this.meta.updateTag({ property: 'og:image', content: imageUrl });
     this.meta.updateTag({ property: 'og:url', content: productUrl });
     this.meta.updateTag({ property: 'og:type', content: 'product' });
-    
+
     // OpenGraph type-specific (product)
-    this.meta.updateTag({ 
-      property: 'product:brand', 
-      content: this.product.manufacturer || 'Rapid Pharmaceuticals' 
+    this.meta.updateTag({
+      property: 'product:brand',
+      content: this.product.manufacturer || 'Rapid Pharmaceuticals',
     });
     if (this.product.mrp) {
-      this.meta.updateTag({ property: 'product:price:amount', content: String(this.product.mrp) });
-      this.meta.updateTag({ property: 'product:price:currency', content: 'INR' });
+      this.meta.updateTag({
+        property: 'product:price:amount',
+        content: String(this.product.mrp),
+      });
+      this.meta.updateTag({
+        property: 'product:price:currency',
+        content: 'INR',
+      });
     }
 
     // Twitter Card (Enhanced)
@@ -270,19 +325,26 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       content: pageDescription,
     });
     this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
-    this.meta.updateTag({ name: 'twitter:domain', content: 'www.rapidpharmaceuticals.in' });
+    this.meta.updateTag({
+      name: 'twitter:domain',
+      content: 'www.rapidpharmaceuticals.in',
+    });
 
     // Robots Meta Tag (index all product pages)
-    this.meta.updateTag({ name: 'robots', content: 'index, follow, max-image-preview:large' });
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow, max-image-preview:large',
+    });
 
     // Viewport & Mobile Optimization
-    this.meta.updateTag({ name: 'viewport', content: 'width=device-width, initial-scale=1.0' });
+    this.meta.updateTag({
+      name: 'viewport',
+      content: 'width=device-width, initial-scale=1.0',
+    });
 
     // Language
     this.meta.updateTag({ 'http-equiv': 'content-language', content: 'en-IN' });
 
     this.canonicalService.setCanonicalURL(productUrl);
   }
-
- 
 }

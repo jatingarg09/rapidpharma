@@ -15,6 +15,8 @@ export interface Product {
   // Images & Media
   imageUrl: string;
   imageAlt?: string; // Alt text for images
+  visualAidUrl?: string; // URL for the promotional visual aid leaflet
+  visualAidAlt?: string; // Alt text for visual aid
 
   // SEO Fields
   metaTitle?: string; // 50-60 characters optimal
@@ -67,6 +69,10 @@ export const products: Product[] = [
     mrp: 755,
     imageUrl: '/productswebp/AZIRAP-500.webp',
     imageAlt: 'AZIRAP-500 Azithromycin 500mg Antibiotic Tablets',
+    visualAidUrl:
+      '/visualaidswebp/azirap-500-azithromycin-antibiotic-tablet-visualaid.webp',
+    visualAidAlt:
+      'AZIRAP-500 - Azithromycin Dihydrate equivalent to Azithromycin 500mg Visual Aid',
 
     // SEO Optimization
     metaTitle:
@@ -180,6 +186,10 @@ export const products: Product[] = [
     mrp: 900,
     imageUrl: '/productswebp/CEFIMELT-100DT.webp',
     imageAlt: 'CEFIMELT-100DT Cefixime 100mg Dispersible Tablets',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-100dt-cefixime-dispersible-tablet-visualaid.webp',
+    visualAidAlt:
+      'CEFIMELT-100DT - Cefixime 100mg (Dispersible Tablets) Visual Aid',
 
     // SEO Optimization
     metaTitle:
@@ -294,6 +304,10 @@ export const products: Product[] = [
     mrp: 1600,
     imageUrl: '/productswebp/CEFIMELT-200LB.webp',
     imageAlt: 'CEFIMELT-200LB Cefixime 200mg with Probiotics',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-200lb-cefixime-lactic-acid-bacillus-visualaid.webp',
+    visualAidAlt:
+      'CEFIMELT-200LB - Cefixime 200mg + Lactic Acid Bacillus Visual Aid',
 
     // SEO Optimization
     metaTitle:
@@ -402,6 +416,9 @@ export const products: Product[] = [
     packaging: 'Single Vial',
     imageUrl: '/productswebp/CEFIMELT-S 1.5GM.webp',
     imageAlt: 'CEFIMELT-S 1.5 Ceftriaxone Sulbactam Injectable Antibiotic',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-s-1-5-ceftriaxone-sulbactam-injection-visualaid.webp',
+    visualAidAlt: 'CEFIMELT-S 1.5 - Ceftriaxone + Sulbactam Visual Aid',
     fullComposition: 'Ceftriaxone Sodium IP 1g + Sulbactam Sodium IP 500mg',
     therapeuticClass: 'Antibiotic',
     mrp: 227.5,
@@ -468,6 +485,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/CLARYMONT-L.webp',
     imageAlt: 'CLARYMONT-L Montelukast Levocetirizine Allergy Tablet',
+    visualAidUrl:
+      '/visualaidswebp/clarymont-l-montelukast-levocetirizine-allergy-visualaid.webp',
+    visualAidAlt: 'CLARYMONT-L - Montelukast + Levocetirizine Visual Aid',
     fullComposition:
       'Montelukast Sodium IP eq. to Montelukast 10mg + Levocetirizine Dihydrochloride IP 5mg',
     therapeuticClass: 'Antiallergic & Respiratory',
@@ -530,6 +550,10 @@ export const products: Product[] = [
     packaging: '100ml',
     imageUrl: '/productswebp/COFIRAP.webp',
     imageAlt: 'COFIRAP Cough Cold Syrup Ambroxol Terbutaline',
+    visualAidUrl:
+      '/visualaidswebp/cofirap-ambroxol-terbutaline-cough-syrup-visualaid.webp',
+    visualAidAlt:
+      'COFIRAP - Ambroxol + Terbutaline + Guaiphenesin + Menthol Visual Aid',
     fullComposition:
       'Ambroxol Hydrochloride IP 15mg + Terbutaline Sulphate IP 1.25mg + Guaiphenesin IP 50mg + Menthol IP 2mg per 5ml',
     therapeuticClass: 'Cough & Cold',
@@ -611,6 +635,9 @@ export const products: Product[] = [
     packaging: '100ml',
     imageUrl: '/productswebp/COFIRAP-D.webp',
     imageAlt: 'COFIRAP-D Cough Cold Syrup Dextromethorphan',
+    visualAidUrl: '/visualaidswebp/cofirap-d-dextromethorphan-cold-cough-visualaid.webp',
+    visualAidAlt:
+      'COFIRAP-D - Dextromethorphan + Phenylephrine + Chlorpheniramine Visual Aid',
     fullComposition:
       'Dextromethorphan Hydrobromide IP 10mg + Phenylephrine Hydrochloride IP 5mg + Chlorpheniramine Maleate IP 2mg per 5ml',
     therapeuticClass: 'Cough & Cold',
@@ -697,6 +724,10 @@ export const products: Product[] = [
     packaging: '100ml',
     imageUrl: '/productswebp/COFIRAP-LS.webp',
     imageAlt: 'COFIRAP-LS Respiratory Cough Syrup Ambroxol',
+    visualAidUrl:
+      '/visualaidswebp/cofirap-ls-ambroxol-levosalbutamol-respiratory-visualaid.webp',
+    visualAidAlt:
+      'COFIRAP-LS - Ambroxol 30mg + Levosalbutamol 1mg + Guaifenesin 50mg/5ml Visual Aid',
     fullComposition:
       'Ambroxol Hydrochloride IP 30mg + Levosalbutamol Hydrochloride IP 1mg + Guaifenesin IP 50mg per 5ml',
     therapeuticClass: 'Cough & Cold',
@@ -775,6 +806,8 @@ export const products: Product[] = [
     packaging: '10x1x4 Blister',
     imageUrl: '/productswebp/D3 NOW-2.webp',
     imageAlt: 'D3NOW Vitamin D3 60000 IU Supplement Capsule',
+    visualAidUrl: '/visualaidswebp/d3now-vitamin-d3-60000-iu-supplement-visualaid.webp',
+    visualAidAlt: 'D3NOW - Vitamin D3 60000 IU Visual Aid',
     fullComposition: 'Cholecalciferol (Vitamin D3) IP 60000 IU',
     therapeuticClass: 'Vitamin Supplement',
     mrp: 1299,
@@ -860,6 +893,8 @@ export const products: Product[] = [
     packaging: '4x5ml Shots',
     imageUrl: '/productswebp/D3 NOW.webp',
     imageAlt: 'D3NOW NANO Vitamin D3 Liquid Shots 60000 IU',
+    visualAidUrl: '/visualaidswebp/d3now-nano-vitamin-d3-liquid-solution-visualaid.webp',
+    visualAidAlt: 'D3NOW NANO - Vitamin D3 Oral Solution 60000 IU Visual Aid',
     fullComposition: 'Cholecalciferol (Vitamin D3) IP 60000 IU per 5ml',
     therapeuticClass: 'Vitamin Supplement',
     mrp: 320,
@@ -942,6 +977,9 @@ export const products: Product[] = [
     packaging: '1x2ml Combo Pack',
     imageUrl: '/productswebp/DECARAP-50.webp',
     imageAlt: 'DECARAP 50 Nandrolone Decanoate Injectable Steroid',
+    visualAidUrl:
+      '/visualaidswebp/decarap-50-nandrolone-decanoate-injection-visualaid.webp',
+    visualAidAlt: 'DECARAP 50 - Nandrolone Decanoate 50mg/ml Visual Aid',
     fullComposition: 'Nandrolone Decanoate IP 50mg per ml',
     therapeuticClass: 'Steroid',
     mrp: 151,
@@ -1024,6 +1062,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/DEFZORAP-6.webp',
     imageAlt: 'DEFZORAP-6 Deflazacort Corticosteroid Tablet',
+    visualAidUrl:
+      '/visualaidswebp/defzorap-6-deflazacort-corticosteroid-tablet-visualaid.webp',
+    visualAidAlt: 'DEFZORAP-6 - Deflazacort 6mg Visual Aid',
     fullComposition: 'Deflazacort IP 6mg',
     therapeuticClass: 'Steroid',
     mrp: 1300,
@@ -1107,6 +1148,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/DOMERAP-R.webp',
     imageAlt: 'DOMERAP-R Rabeprazole Domperidone GERD Capsule',
+    visualAidUrl: '/visualaidswebp/domerap-r-rabeprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt:
+      'DOMERAP-R - Rabeprazole Sodium (EC) + Domperidone (SR) Visual Aid',
     fullComposition:
       'Rabeprazole Sodium IP 20mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
     therapeuticClass: 'Gastrointestinal',
@@ -1185,6 +1229,10 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/DOMPANT-SR.webp',
     imageAlt: 'DOMPANT-SR Pantoprazole Domperidone GERD Capsule',
+    visualAidUrl:
+      '/visualaidswebp/dompant-sr-pantoprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt:
+      'DOMPANT-SR - Pantoprazole Sodium (EC) + Domperidone (SR) Visual Aid',
     fullComposition:
       'Pantoprazole Sodium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
     therapeuticClass: 'Gastrointestinal',
@@ -1266,6 +1314,10 @@ export const products: Product[] = [
     packaging: '10x10 Strip',
     imageUrl: '/productswebp/ESMORIZE-D.webp',
     imageAlt: 'ESMORIZE-D Esomeprazole Domperidone GERD Capsule',
+    visualAidUrl:
+      '/visualaidswebp/esmorize-d-esomeprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt:
+      'ESMORIZE-D - Esomeprazole (EC) + Domperidone (SR) Visual Aid',
     fullComposition:
       'Esomeprazole Magnesium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
     therapeuticClass: 'Gastrointestinal',
@@ -1347,6 +1399,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/ESMORIZE-LSR.webp',
     imageAlt: 'ESMORIZE-LSR Esomeprazole + Levosulpiride Capsule',
+    visualAidUrl:
+      '/visualaidswebp/esmorize-lsr-esomeprazole-levosulpiride-visualaid.webp',
+    visualAidAlt: 'ESMORIZE-LSR - Esomeprazole + Levosulpiride Visual Aid',
     fullComposition: 'Esomeprazole Magnesium IP 40mg + Levosulpiride IP 25mg',
     therapeuticClass: 'Gastrointestinal',
     mrp: 1900,
@@ -1429,6 +1484,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/ETOBRAN-TH.webp',
     imageAlt: 'ETOBRAN-TH Etoricoxib Thiocolchicoside Pain Relief Tablet',
+    visualAidUrl:
+      '/visualaidswebp/etobran-th-etoricoxib-thiocolchicoside-pain-visualaid.webp',
+    visualAidAlt: 'ETOBRAN-TH - Etoricoxib + Thiocolchicoside Visual Aid',
     fullComposition: 'Etoricoxib IP 60mg + Thiocolchicoside IP 4mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 2290,
@@ -1513,6 +1571,9 @@ export const products: Product[] = [
     packaging: 'Single Vial',
     imageUrl: '/productswebp/GASTRONEX-IV.webp',
     imageAlt: 'GASTRONEX-IV Pantoprazole Sodium Injection Vial',
+    visualAidUrl:
+      '/visualaidswebp/gastronex-iv-pantoprazole-sodium-injection-visualaid.webp',
+    visualAidAlt: 'GASTRONEX-IV - Pantoprazole Sodium 40mg Visual Aid',
     fullComposition: 'Pantoprazole Sodium IP 40mg per vial',
     therapeuticClass: 'Gastrointestinal',
     mrp: 56.5,
@@ -1600,6 +1661,10 @@ export const products: Product[] = [
     packaging: '10x1x10 Softgel Capsule',
     imageUrl: '/productswebp/GINSORAP 9G.webp',
     imageAlt: 'GINSORAP 9G Ginseng Green Tea Antioxidant Capsule',
+    visualAidUrl:
+      '/visualaidswebp/ginsorap-9g-ginseng-green-tea-nutraceutical-visualaid.webp',
+    visualAidAlt:
+      'GINSORAP 9G - Green Tea Extract + Ginseng + Ginkgo Biloba + others Visual Aid',
     fullComposition:
       'Green Tea Extract 50mg + Ginseng Extract 42.5mg + Ginkgo Biloba Extract 20mg + Multivitamins + Multiminerals per softgel capsule',
     therapeuticClass: 'Nutraceutical',
@@ -1687,6 +1752,10 @@ export const products: Product[] = [
     packaging: '10x1x10 Softgel Capsule',
     imageUrl: '/productswebp/GINSORAP A-Z.webp',
     imageAlt: 'GINSORAP A-Z Multivitamin Mineral Probiotic Capsule',
+    visualAidUrl:
+      '/visualaidswebp/ginsorap-az-multivitamin-mineral-probiotic-visualaid.webp',
+    visualAidAlt:
+      'GINSORAP A-Z - Ginseng + Multivitamins + Multiminerals + Probiotics Visual Aid',
     fullComposition:
       'Ginseng Extract 42.5mg + Multivitamins + Multiminerals + Probiotics per softgel capsule',
     therapeuticClass: 'Nutraceutical',
@@ -1771,6 +1840,9 @@ export const products: Product[] = [
     packaging: '10x10 Blister',
     imageUrl: '/productswebp/GLYNORAP-M1.webp',
     imageAlt: 'GLYNORAP-M1 Glimepiride Metformin Diabetes Tablet',
+    visualAidUrl:
+      '/visualaidswebp/glynorap-m1-glimepiride-metformin-diabetes-visualaid.webp',
+    visualAidAlt: 'GLYNORAP-M1 - Glimepiride + Metformin (SR) Visual Aid',
     fullComposition:
       'Glimepiride IP 1mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
     therapeuticClass: 'Antidiabetic',
@@ -1859,6 +1931,9 @@ export const products: Product[] = [
     packaging: '10x10 Blister',
     imageUrl: '/productswebp/GLYNORAP-M2.webp',
     imageAlt: 'GLYNORAP-M2 Glimepiride Metformin Advanced Diabetes Tablet',
+    visualAidUrl:
+      '/visualaidswebp/glynorap-m2-glimepiride-metformin-advanced-visualaid.webp',
+    visualAidAlt: 'GLYNORAP-M2 - Glimepiride + Metformin (SR) Visual Aid',
     fullComposition:
       'Glimepiride IP 2mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
     therapeuticClass: 'Antidiabetic',
@@ -1950,6 +2025,8 @@ export const products: Product[] = [
     packaging: '200ml',
     imageUrl: '/productswebp/LIVERGLOW.webp',
     imageAlt: 'LIVERGLOW Liver Ayurvedic Tonic Detox Syrup',
+    visualAidUrl: '/visualaidswebp/liverglow-liver-ayurvedic-tonic-detox-visualaid.webp',
+    visualAidAlt: 'LIVERGLOW - Liver syrup Visual Aid',
     fullComposition:
       'Ayurvedic Liver Extracts (Detailed composition as per label) per 10ml',
     therapeuticClass: 'Liver Tonic',
@@ -2037,6 +2114,9 @@ export const products: Product[] = [
     packaging: '170ml',
     imageUrl: '/productswebp/MAGZORAP.webp',
     imageAlt: 'MAGZORAP Magaldrate Simethicone Antacid Gas Relief Syrup',
+    visualAidUrl:
+      '/visualaidswebp/magzorap-magaldrate-simethicone-antacid-gas-visualaid.webp',
+    visualAidAlt: 'MAGZORAP - Magaldrate + Simethicone Visual Aid',
     fullComposition: 'Magaldrate IP 400mg + Simethicone IP 20mg per 5ml',
     therapeuticClass: 'Antacid',
     mrp: 105,
@@ -2113,6 +2193,10 @@ export const products: Product[] = [
     packaging: '60ml',
     imageUrl: '/productswebp/MEFAPED-125.webp',
     imageAlt: 'MEFAPED-125 Mefenamic Paracetamol Fever Pain Suspension',
+    visualAidUrl:
+      '/visualaidswebp/mefaped-125-mefenamic-paracetamol-fever-pain-visualaid.webp',
+    visualAidAlt:
+      'MEFAPED-125 - Mefenamic Acid 50mg + Paracetamol 125mg/5ml Visual Aid',
     fullComposition: 'Mefenamic Acid IP 50mg + Paracetamol IP 125mg per 5ml',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 48.25,
@@ -2200,6 +2284,9 @@ export const products: Product[] = [
     packaging: '20x10 Blister',
     imageUrl: '/productswebp/NIMRAP-P.webp',
     imageAlt: 'NIMRAP-P Nimesulide Paracetamol Fever Pain Relief Tablet',
+    visualAidUrl:
+      '/visualaidswebp/nimrap-p-nimesulide-paracetamol-fever-pain-visualaid.webp',
+    visualAidAlt: 'NIMRAP-P - Nimesulide + Paracetamol Visual Aid',
     fullComposition: 'Nimesulide IP 100mg + Paracetamol IP 325mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 1000,
@@ -2281,6 +2368,9 @@ export const products: Product[] = [
     packaging: 'Single Vial',
     imageUrl: '/productswebp/PIPZORAP-TZ.webp',
     imageAlt: 'PIPZORAP-TZ Piperacillin Tazobactam Injection Antibiotic',
+    visualAidUrl:
+      '/visualaidswebp/pipzorap-tz-piperacillin-tazobactam-antibiotic-visualaid.webp',
+    visualAidAlt: 'PIPZORAP-TZ - Piperacillin + Tazobactam Visual Aid',
     fullComposition:
       'Piperacillin Sodium IP 4g + Tazobactam Sodium IP 0.5g per vial',
     therapeuticClass: 'Antibiotic',
@@ -2369,6 +2459,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/PRO-FC.webp',
     imageAlt: 'PRO FC Iron Folic Acid Zinc Supplement Tablet',
+    visualAidUrl: '/visualaidswebp/pro-fc-iron-supplement-folic-zinc-visualaid.webp',
+    visualAidAlt:
+      'PRO FC - Ferrous Ascorbate + Folic Acid + Zinc Sulphate Visual Aid',
     fullComposition:
       'Ferrous Ascorbate IP 100mg + Folic Acid IP 1.5mg + Zinc Sulphate IP 22.5mg',
     therapeuticClass: 'Iron Supplement',
@@ -2454,6 +2547,9 @@ export const products: Product[] = [
     packaging: '1x2ml Ampoule',
     imageUrl: '/productswebp/RAPIKACIN-500.webp',
     imageAlt: 'RAPIKACIN-500 Amikacin Injection Antibiotic',
+    visualAidUrl:
+      '/visualaidswebp/rapikacin-500-amikacin-antibiotic-injection-visualaid.webp',
+    visualAidAlt: 'RAPIKACIN-500 - Amikacin Sulphate 500mg/2ml Visual Aid',
     fullComposition: 'Amikacin Sulphate IP 500mg per 2ml ampoule',
     therapeuticClass: 'Antibiotic',
     mrp: 113.76,
@@ -2540,6 +2636,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPIFLAM-KT.webp',
     imageAlt: 'RAPIFLAM-KT Ketorolac NSAID Tablet Pain Relief',
+    visualAidUrl:
+      '/visualaidswebp/rapiflam-kt-ketorolac-nsaid-pain-relief-visualaid.webp',
+    visualAidAlt: 'RAPIFLAM-KT - Ketorolac Tromethamine Visual Aid',
     fullComposition: 'Ketorolac Tromethamine IP 10mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 1500,
@@ -2623,6 +2722,9 @@ export const products: Product[] = [
     packaging: '60ml',
     imageUrl: '/productswebp/RAPIFEVA-P.webp',
     imageAlt: 'RAPIFEVA-P Ibuprofen Paracetamol Fever Suspension Pediatric',
+    visualAidUrl:
+      '/visualaidswebp/rapifeva-p-ibuprofen-paracetamol-fever-suspension-visualaid.webp',
+    visualAidAlt: 'RAPIFEVA-P - Ibuprofen + Paracetamol Visual Aid',
     fullComposition: 'Ibuprofen IP 100mg + Paracetamol IP 162.5mg per 5ml',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 47.71,
@@ -2710,6 +2812,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPIFUR.webp',
     imageAlt: 'RAPIFUR Nitrofurantoin UTI Antibiotic Tablet',
+    visualAidUrl: '/visualaidswebp/rapifur-nitrofurantoin-uti-antibiotic-visualaid.webp',
+    visualAidAlt:
+      'RAPIFUR - Nitrofurantoin 100mg (Sustained Release) Visual Aid',
     fullComposition: 'Nitrofurantoin IP 100mg (Sustained Release)',
     therapeuticClass: 'Antibiotic',
     mrp: 920,
@@ -2801,6 +2906,10 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPINAK-D.webp',
     imageAlt: 'RAPINAK-D Aceclofenac Drotaverine Pain Muscle Relief Tablet',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-d-aceclofenac-drotaverine-pain-muscle-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK-D - Aceclofenac + Drotaverine Hydrochloride Visual Aid',
     fullComposition: 'Aceclofenac IP 100mg + Drotaverine Hydrochloride IP 80mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 1299,
@@ -2885,6 +2994,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPINAK-P.webp',
     imageAlt: 'RAPINAK-P Aceclofenac Paracetamol Pain Relief Tablet',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-p-aceclofenac-paracetamol-pain-relief-visualaid.webp',
+    visualAidAlt: 'RAPINAK-P - Aceclofenac + Paracetamol Visual Aid',
     fullComposition: 'Aceclofenac IP 100mg + Paracetamol IP 325mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     mrp: 599,
@@ -2963,6 +3075,10 @@ export const products: Product[] = [
     imageUrl: '/productswebp/RAPINAK-SP.webp',
     imageAlt:
       'RAPINAK-SP Aceclofenac Paracetamol Serratiopeptidase Anti-inflammatory',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-sp-aceclofenac-paracetamol-serratiopeptidase-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK-SP - Aceclofenac + Paracetamol + Serratiopeptidase Visual Aid',
     fullComposition:
       'Aceclofenac IP 100mg + Paracetamol IP 325mg + Serratiopeptidase IP 15mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
@@ -3057,6 +3173,10 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPINFLAM-FORTE.webp',
     imageAlt: 'RAPINFLAM-FORTE Enzyme Anti-inflammatory Post-operative Tablet',
+    visualAidUrl:
+      '/visualaidswebp/rapinflam-forte-trypsin-bromelain-diclofenac-visualaid.webp',
+    visualAidAlt:
+      'RAPINFLAM-FORTE - Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium Visual Aid',
     fullComposition:
       'Trypsin BP 48mg + Bromelain BP 90mg + Rutoside Trihydrate BP 100mg + Diclofenac Sodium IP 50mg',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
@@ -3143,6 +3263,9 @@ export const products: Product[] = [
     packaging: '200ml',
     imageUrl: '/productswebp/RAPINOVA.webp',
     imageAlt: 'RAPINOVA Lycopene Antioxidant Nutritional Supplement Syrup',
+    visualAidUrl:
+      '/visualaidswebp/rapinova-lycopene-antioxidant-supplement-syrup-visualaid.webp',
+    visualAidAlt: 'RAPINOVA - Lycopene + Zinc + Manganese + others Visual Aid',
     fullComposition:
       'Lycopene 5000mcg + Zinc 7.5mg + Manganese 1mg + Multivitamins + Multiminerals per 10ml',
     therapeuticClass: 'Nutraceutical',
@@ -3227,6 +3350,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPIPOD-200.webp',
     imageAlt: 'RAPIPOD-200 Cefpodoxime Antibiotic Tablet Cephalosporin',
+    visualAidUrl:
+      '/visualaidswebp/rapipod-200-cefpodoxime-cephalosporin-antibiotic-visualaid.webp',
+    visualAidAlt: 'RAPIPOD-200 - Cefpodoxime Proxetil 200mg Visual Aid',
     fullComposition: 'Cefpodoxime Proxetil IP 200mg',
     therapeuticClass: 'Antibiotic',
     mrp: 2050,
@@ -3311,6 +3437,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPISART-40.webp',
     imageAlt: 'RAPISART-40 Telmisartan Antihypertensive ARB Tablet',
+    visualAidUrl:
+      '/visualaidswebp/rapisart-40-telmisartan-antihypertensive-arb-visualaid.webp',
+    visualAidAlt: 'RAPISART-40 - Telmisartan Visual Aid',
     fullComposition: 'Telmisartan IP 40mg',
     therapeuticClass: 'Antihypertensive',
     mrp: 991.8,
@@ -3399,6 +3528,9 @@ export const products: Product[] = [
     imageUrl: '/productswebp/RAPISART-AM.webp',
     imageAlt:
       'RAPISART-AM Telmisartan Amlodipine Dual Therapy Antihypertensive',
+    visualAidUrl:
+      '/visualaidswebp/rapisart-am-telmisartan-amlodipine-dual-therapy-visualaid.webp',
+    visualAidAlt: 'RAPISART-AM - Telmisartan + Amlodipine Visual Aid',
     fullComposition: 'Telmisartan IP 40mg + Amlodipine Besylate IP 5mg',
     therapeuticClass: 'Antihypertensive',
     mrp: 1500,
@@ -3485,6 +3617,9 @@ export const products: Product[] = [
     imageUrl: '/productswebp/RAPISART-H.webp',
     imageAlt:
       'RAPISART-H Telmisartan Hydrochlorothiazide Diuretic Antihypertensive',
+    visualAidUrl:
+      '/visualaidswebp/rapisart-h-telmisartan-hydrochlorothiazide-diuretic-visualaid.webp',
+    visualAidAlt: 'RAPISART-H - Telmisartan + Hydrochlorothiazide Visual Aid',
     fullComposition: 'Telmisartan IP 40mg + Hydrochlorothiazide IP 12.5mg',
     therapeuticClass: 'Antihypertensive',
     mrp: 1300,
@@ -3572,6 +3707,8 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPISULAN-D.webp',
     imageAlt: 'RAPISULAN-D Tamsulosin Dutasteride BPH Prostate Tablet',
+    visualAidUrl: '/visualaidswebp/rapisulan-d-tamsulosin-dutasteride-bph-visualaid.webp',
+    visualAidAlt: 'RAPISULAN-D - Tamsulosin (ER) + Dutasteride Visual Aid',
     fullComposition:
       'Tamsulosin Hydrochloride IP 0.4mg (Extended Release) + Dutasteride IP 0.5mg',
     therapeuticClass: 'Urology',
@@ -3663,6 +3800,10 @@ export const products: Product[] = [
     packaging: '10x10 Blister',
     imageUrl: '/productswebp/RAPMOX-CV.webp',
     imageAlt: 'RAPMOX-CV Amoxicillin Clavulanic Acid Probiotics Antibiotic',
+    visualAidUrl:
+      '/visualaidswebp/rapmox-cv-amoxicillin-clavulanic-probiotics-visualaid.webp',
+    visualAidAlt:
+      'RAPMOX-CV - Amoxycillin + Clavulanic Acid + Lactic Acid Bacillus Visual Aid',
     fullComposition:
       'Amoxycillin Trihydrate IP 500mg + Potassium Clavulanate IP 125mg + Lactic Acid Bacillus 60 million spores',
     therapeuticClass: 'Antibiotic',
@@ -3749,6 +3890,8 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPVERT-16.webp',
     imageAlt: 'RAPVERT 16 Betahistine Vertigo Meniere Tablet',
+    visualAidUrl: '/visualaidswebp/rapvert-16-betahistine-vertigo-meniere-visualaid.webp',
+    visualAidAlt: 'RAPVERT 16 - Betahistine Visual Aid',
     fullComposition: 'Betahistine Dihydrochloride IP 16mg',
     therapeuticClass: 'Vertigo',
     mrp: 1050,
@@ -3829,6 +3972,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/SITARAP-D.webp',
     imageAlt: 'SITARAP-D Dapagliflozin Sitagliptin Diabetes Tablet',
+    visualAidUrl:
+      '/visualaidswebp/sitarap-d-dapagliflozin-sitagliptin-diabetes-visualaid.webp',
+    visualAidAlt: 'SITARAP-D - Dapagliflozin + Sitagliptin Visual Aid',
     fullComposition:
       'Dapagliflozin IP 10mg + Sitagliptin Phosphate Monohydrate IP 100mg',
     therapeuticClass: 'Antidiabetic',
@@ -3918,6 +4064,9 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/SITARAP-M500.webp',
     imageAlt: 'SITARAP-M500 Sitagliptin Metformin SR Diabetes Tablet',
+    visualAidUrl:
+      '/visualaidswebp/sitarap-m500-sitagliptin-metformin-diabetes-visualaid.webp',
+    visualAidAlt: 'SITARAP-M500 - Sitagliptin + Metformin (SR) Visual Aid',
     fullComposition:
       'Sitagliptin Phosphate Monohydrate IP 50mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
     therapeuticClass: 'Antidiabetic',
@@ -4004,6 +4153,10 @@ export const products: Product[] = [
     packaging: '10ml',
     imageUrl: '/productswebp/VISQURA GEL.webp',
     imageAlt: 'VISQURA GEL Dry Eye Lubricant Gel Ophthalmic',
+    visualAidUrl:
+      '/visualaidswebp/visqura-gel-dry-eye-lubricant-ophthalmic-visualaid.webp',
+    visualAidAlt:
+      'VISQURA GEL - Carboxymethylcellulose Sodium + Stabilized Oxychloro Complex Visual Aid',
     fullComposition:
       'Carboxymethylcellulose Sodium IP 0.5% w/v + Stabilized Oxychloro Complex 0.01% w/v per ml',
     therapeuticClass: 'Ophthalmic',
@@ -4091,6 +4244,10 @@ export const products: Product[] = [
     packaging: '10x1x10 Softgel Capsule',
     imageUrl: '/productswebp/VITABORON.webp',
     imageAlt: 'VITABORON Bone Health Calcium Vitamin D Supplement',
+    visualAidUrl:
+      '/visualaidswebp/vitaboron-bone-health-calcium-vitamin-d-visualaid.webp',
+    visualAidAlt:
+      'VITABORON - Calcitriol + Omega-3 + Methylcobalamin + Folic Acid + Boron + Calcium Carbonate Visual Aid',
     fullComposition:
       'Calcitriol IP 0.25mcg + Omega-3 Fatty Acids 100mg + Methylcobalamin IP 1500mcg + Folic Acid IP 400mcg + Boron 1.5mg + Calcium Carbonate IP 250mg per softgel capsule',
     therapeuticClass: 'Nutraceutical',
@@ -4173,6 +4330,10 @@ export const products: Product[] = [
     packaging: '10x1x10 Softgel Capsule',
     imageUrl: '/productswebp/VITABORON-PLUS.webp',
     imageAlt: 'VITABORON-PLUS Premium Bone Cardiac Health Supplement',
+    visualAidUrl:
+      '/visualaidswebp/vitaboron-plus-premium-bone-cardiac-health-visualaid.webp',
+    visualAidAlt:
+      'VITABORON-PLUS - Calcium Citrate + Calcitriol + EPA + DHA + L-Methylfolate + others Visual Aid',
     fullComposition:
       'Calcium Citrate IP 500mg + Calcitriol IP 0.25mcg + EPA 90mg + DHA 60mg + L-Methylfolate Calcium 400mcg + Multivitamins + Multiminerals per softgel capsule',
     therapeuticClass: 'Nutraceutical',
@@ -4258,6 +4419,9 @@ export const products: Product[] = [
     packaging: '200ml',
     imageUrl: '/productswebp/ZYMELYT.webp',
     imageAlt: 'ZYMELYT Fungal Diastase Pepsin Digestive Enzyme Syrup',
+    visualAidUrl:
+      '/visualaidswebp/zymelyt-fungal-diastase-pepsin-digestive-visualaid.webp',
+    visualAidAlt: 'ZYMELYT - Fungal Diastase + Pepsin Visual Aid',
     fullComposition: 'Fungal Diastase IP 50mg + Pepsin IP 10mg per 5ml',
     therapeuticClass: 'Digestive Enzyme',
     mrp: 175,
@@ -4345,6 +4509,9 @@ export const products: Product[] = [
     packaging: '200ml',
     imageUrl: '/productswebp/ZYLIVIN.webp',
     imageAlt: 'ZYLIVIN Liver Tonic Silymarin Hepatic Support Syrup',
+    visualAidUrl: '/visualaidswebp/zylivin-liver-tonic-silymarin-hepatic-visualaid.webp',
+    visualAidAlt:
+      'ZYLIVIN - Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others Visual Aid',
     fullComposition:
       'Silymarin IP 35mg + L-Ornithine L-Aspartate IP 150mg + Tricholine Citrate IP 250mg + Multivitamins + Multiminerals per 10ml',
     therapeuticClass: 'Liver Tonic',
@@ -4429,6 +4596,9 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '30Ml With Water',
     imageUrl: '/productswebp/CEFIMELT-LB-50.webp',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-lb-50-cefixime-lactic-acid-bacillus-pediatric-visualaid.webp',
+    visualAidAlt: 'CEFIMELT LB 50 - Cefixime + Lactic Acid Bacillus Visual Aid',
     fullComposition: 'Cefixime 50Mg/5Ml + Lactic Acid Bacillus 60Ms',
     therapeuticClass: 'Antibiotic',
     mrp: 75,
@@ -4483,6 +4653,9 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '30Ml With Water',
     imageUrl: '/productswebp/RAPIPOD-DS-50.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapipod-ds-50-cefpodoxime-pediatric-syrup-visualaid.webp',
+    visualAidAlt: 'RAPIPOD DS 50 - Cefpodoxime Proxetil Visual Aid',
     fullComposition: 'Cefpodoxime Proxetil 50Mg/5Ml',
     therapeuticClass: 'Antibiotic',
     mrp: 89,
@@ -4540,6 +4713,9 @@ export const products: Product[] = [
     category: 'Respules',
     packaging: '10x5Ml',
     imageUrl: '/productswebp/BESLINE.webp',
+    visualAidUrl:
+      '/visualaidswebp/besline-bacillus-clausii-spores-probiotic-visualaid.webp',
+    visualAidAlt: 'BESLINE - Bacillus Clausii Spores Visual Aid',
     fullComposition: 'Bacillus Clausii Spores 2Billions',
     therapeuticClass: 'Probiotic',
     mrp: 750,
@@ -4594,6 +4770,8 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '15x10 Strip',
     imageUrl: '/productswebp/OMERIZE-D.webp',
+    visualAidUrl: '/visualaidswebp/omerize-d-omeprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt: 'OMERIZE - D - Omeprazole + Domperidone Visual Aid',
     fullComposition: 'Omeprazole Ip 20Mg + Domperidone 10Mg',
     therapeuticClass: 'Gastrointestinal',
     mrp: 1170,
@@ -4654,6 +4832,9 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '60Ml',
     imageUrl: '/productswebp/ZACTOCOLD.webp',
+    visualAidUrl: '/visualaidswebp/zactocold-paracetamol-cold-cough-syrup-visualaid.webp',
+    visualAidAlt:
+      'ZACTOCOLD - Paracetamol + Phenylephrine + Chlorpheniramine Maleate Visual Aid',
     fullComposition:
       'Paracetamol 250Mg + Phenylephrine Hcl 5Mg + Chlorpheniramine Maleate 2Mg/5Ml',
     therapeuticClass: 'Cough & Cold',
@@ -4716,6 +4897,10 @@ export const products: Product[] = [
     category: 'Gel/Ointment',
     packaging: '30Gm',
     imageUrl: '/productswebp/RAPINAK-GEL.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-gel-diclofenac-pain-relief-topical-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK-GEL - Linseed Oil + Diclofenac + Methyl Salicylate + Menthol + Benzyl Alcohol Visual Aid',
     fullComposition:
       'Linseed Oil Bp 3%W/V + Diclofenac Diethlamine Bp 1.16%W/V + Diclofenac Sodium Ip 1%W/V + Methyl Salicylate Ip 10%W/V + Menthol Ip 5%W/V + Benzyl Alcohol Ip 1%W/V',
     therapeuticClass: 'Analgesic',
@@ -4768,6 +4953,8 @@ export const products: Product[] = [
     category: 'Injections',
     packaging: '10x1Ml Ampoule',
     imageUrl: '/productswebp/VORARAP-AQ.webp',
+    visualAidUrl: '/visualaidswebp/vorarap-aq-diclofenac-injection-pain-visualaid.webp',
+    visualAidAlt: 'VORARAP-AQ - Diclofenac Sodium Visual Aid',
     fullComposition: 'Diclofenac Sodium 75Mg/1Ml Aq Painless Formula',
     therapeuticClass: 'Analgesic',
     mrp: 600,
@@ -4825,6 +5012,9 @@ export const products: Product[] = [
     category: 'Sachets',
     packaging: '20x5Gm',
     imageUrl: '/productswebp/PROARGIRAP.webp',
+    visualAidUrl:
+      '/visualaidswebp/proargirap-l-arginine-proanthocyanidin-supplement-visualaid.webp',
+    visualAidAlt: 'PROARGIRAP - L-Arginine + Proanthocyanidin Visual Aid',
     fullComposition: 'L-Arginine 60% + Proanthocyanidin 10%',
     therapeuticClass: 'Nutraceutical',
     mrp: 1200,
@@ -4879,6 +5069,10 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/DOXY-B6.webp',
+    visualAidUrl:
+      '/visualaidswebp/doxy-b6-doxylamine-pyridoxine-pregnancy-nausea-visualaid.webp',
+    visualAidAlt:
+      'DOXY B6 - Doxylamine Succinate + Pyridoxine + Folic Acid Visual Aid',
     fullComposition:
       'Doxylamine Succinate 10Mg + Pyridoxine 10Mg + Folic Acid 5Mg',
     therapeuticClass: 'Gynaecological',
@@ -4937,6 +5131,8 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '200Ml',
     imageUrl: '/productswebp/PRO-FC_SYP.webp',
+    visualAidUrl: '/visualaidswebp/pro-fc-iron-folic-acid-zinc-syrup-visualaid.webp',
+    visualAidAlt: 'PRO FC - Ferrous Ascorbate + Folic Acid + Zinc Visual Aid',
     fullComposition:
       'Ferrous Ascorbate 30Mg + Folic Acid 140Mcg + Zinc Sulphate 22.5Mg/5Ml Suspension',
     therapeuticClass: 'Nutritional Supplement',
@@ -4973,6 +5169,9 @@ export const products: Product[] = [
     category: 'Injections',
     packaging: 'Single Vial',
     imageUrl: '/productswebp/CEFIMELT-1GM.webp',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-1gm-ceftriaxone-injection-antibiotic-visualaid.webp',
+    visualAidAlt: 'CEFIMELT 1GM - Ceftriaxone Sodium Visual Aid',
     fullComposition: 'Ceftriaxone Sodium Ip 1000Mg/Vial',
     therapeuticClass: 'Antibiotic',
     mrp: 71.8,
@@ -5024,6 +5223,10 @@ export const products: Product[] = [
     category: 'Injections',
     packaging: '1x2Ml Combination Pack',
     imageUrl: '/productswebp/METHYRAP-PLUS_INJ.webp',
+    visualAidUrl:
+      '/visualaidswebp/methyrap-plus-methylcobalamin-injection-b-complex-visualaid.webp',
+    visualAidAlt:
+      'METHYRAP PLUS - Methylcobalamin + Vitamin B6 + Niacinamide Visual Aid',
     fullComposition:
       'Methylcobalamin 1500 Mcg + Vitamin B6 100Mg + Niacinamide 100Mg',
     therapeuticClass: 'Nutritional Supplement',
@@ -5079,6 +5282,9 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/METHYRAP-P-SR-75.webp',
+    visualAidUrl:
+      '/visualaidswebp/methyrap-p-sr-75-pregabalin-methylcobalamin-neuropathy-visualaid.webp',
+    visualAidAlt: 'METHYRAP-P SR 75 - Pregabalin + Methylcobalamin Visual Aid',
     fullComposition: 'Pregabalin 75 Mg SR + Methylcobalamin 750 Mcg',
     therapeuticClass: 'Neuropathic Pain',
     mrp: 1900,
@@ -5133,6 +5339,9 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '30Ml With Water',
     imageUrl: '/productswebp/RAPMOX-CV-DRY.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapmox-cv-amoxicillin-clavulanic-acid-powder-visualaid.webp',
+    visualAidAlt: 'RAPMOX CV - Amoxycillin + Clavulanic Acid Visual Aid',
     fullComposition: 'Amoxycillin 200mg + Clavulanic Acid 28.5mg',
     therapeuticClass: 'Antibiotic',
     mrp: 69.21,
@@ -5168,6 +5377,10 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '170ml',
     imageUrl: '/productswebp/PICOFIX-PLUS.webp',
+    visualAidUrl:
+      '/visualaidswebp/picofix-plus-laxative-picosulfate-liquid-paraffin-visualaid.webp',
+    visualAidAlt:
+      'PICOFIX-PLUS - Sodium Picosulfate + Liquid Paraffin + Milk of Magnesia Visual Aid',
     fullComposition:
       'Sodium Picosulfate 3.33mg + Liquid Paraffin 1.25mg + Milk of Magnesia 3.75ml/15Ml',
     therapeuticClass: 'Gastrointestinal',
@@ -5226,6 +5439,9 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Blister',
     imageUrl: '/productswebp/RAPICITA-10.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapicita-10-escitalopram-antidepressant-ssri-visualaid.webp',
+    visualAidAlt: 'RAPICITA 10 - Escitalopram Oxalate Visual Aid',
     fullComposition: 'Escitalopram Oxalate 10mg',
     therapeuticClass: 'Psychiatric',
     mrp: 1100,
@@ -5280,6 +5496,9 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '200ml',
     imageUrl: '/productswebp/UTERAP.webp',
+    visualAidUrl:
+      '/visualaidswebp/uterap-ayurvedic-herbal-women-health-tonic-visualaid.webp',
+    visualAidAlt: 'UTERAP - Ayurvedic Uterine Tonic Visual Aid',
     fullComposition: 'Ayurvedic Uterine Tonic (Herbal blend)',
     therapeuticClass: 'Gynaecological',
     mrp: 190,
@@ -5337,6 +5556,9 @@ export const products: Product[] = [
     category: 'Syrup/Suspension',
     packaging: '100ml',
     imageUrl: '/productswebp/CITRARAP.webp',
+    visualAidUrl:
+      '/visualaidswebp/citrarap-disodium-hydrogen-citrate-uric-acid-visualaid.webp',
+    visualAidAlt: 'CITRARAP - Disodium Hydrogen Citrate Visual Aid',
     fullComposition: 'Disodium Hydrogen Citrate 1.25g/5ml',
     therapeuticClass: 'Gastrointestinal',
     mrp: 125,
@@ -5394,6 +5616,9 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Blister',
     imageUrl: '/productswebp/OFLARAP-OZ.webp',
+    visualAidUrl:
+      '/visualaidswebp/oflarap-oz-ofloxacin-ornidazole-antibiotic-visualaid.webp',
+    visualAidAlt: 'OFLARAP OZ - Ofloxacin + Ornidazole Visual Aid',
     fullComposition: 'Ofloxacin 200mg + Ornidazole 500mg',
     therapeuticClass: 'Antibiotic',
     mrp: 1100,
@@ -5454,6 +5679,9 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/PREDIRAP-4.webp',
+    visualAidUrl:
+      '/visualaidswebp/predirap-4-methylprednisolone-corticosteroid-visualaid.webp',
+    visualAidAlt: 'PREDIRAP 4 - Methylprednisolone Visual Aid',
     fullComposition: 'Methylprednisolone 4mg',
     therapeuticClass: 'Steroid',
     mrp: 650,
@@ -5511,6 +5739,8 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/FEBURAP-40.webp',
+    visualAidUrl: '/visualaidswebp/feburap-40-febuxostat-gout-uric-acid-visualaid.webp',
+    visualAidAlt: 'FEBURAP 40 - Febuxostat Visual Aid',
     fullComposition: 'Febuxostat 40mg',
     therapeuticClass: 'Gout Management',
     mrp: 1100,
@@ -5565,6 +5795,9 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/PANTORIZE-D.webp',
+    visualAidUrl:
+      '/visualaidswebp/pantorize-d-pantoprazole-domperidone-gerd-ppi-visualaid.webp',
+    visualAidAlt: 'PANTORIZE - D - Pantoprazole + Domperidone Visual Aid',
     fullComposition: 'Pantoprazole 40mg + Domperidone 10mg',
     therapeuticClass: 'Gastrointestinal',
     mrp: 1100,
@@ -5619,6 +5852,9 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Blister',
     imageUrl: '/productswebp/DROTAVIL-M.webp',
+    visualAidUrl:
+      '/visualaidswebp/drotavil-m-drotaverine-mefenamic-acid-pain-visualaid.webp',
+    visualAidAlt: 'DROTAVIL - M - Drotaverine + Mefenamic Acid Visual Aid',
     fullComposition: 'Drotaverine 100mg + Mefenamic Acid 250mg',
     therapeuticClass: 'Gout Management',
     mrp: 1100,
@@ -5679,6 +5915,10 @@ export const products: Product[] = [
     category: 'Tablets',
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/RAPINAK-MR.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-mr-aceclofenac-muscle-relaxant-pain-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK - MR - Aceclofenac + Paracetamol + Chlorzoxazone Visual Aid',
     fullComposition:
       'Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg',
     therapeuticClass: 'Analgesic',
@@ -5740,6 +5980,10 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     imageUrl: '/productswebp/METHYRAP-PLUS CAP.webp',
     imageAlt: 'METHYRAP-PLUS Alpha Lipoic Acid Methylcobalamin Capsules',
+    visualAidUrl:
+      '/visualaidswebp/methyrap-plus-alpha-lipoic-acid-methylcobalamin-capsules-visualaid.webp',
+    visualAidAlt:
+      'METHYRAP-PLUS - Alpha Lipoic Acid + Folic Acid + Methylcobalamin + Pyridoxine + Thiamine Visual Aid',
     fullComposition:
       'Alpha Lipoic Acid 100mg + Folic Acid 1.5mg + Methylcobalamin 1500mcg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
     therapeuticClass: 'Nutritional Supplement',

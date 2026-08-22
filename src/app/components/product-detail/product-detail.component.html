@@ -16,7 +16,42 @@
 
   <!-- Product Header -->
   <div class="product-main">
-    <img [src]="product.imageUrl" [alt]="product.imageAlt || product.name" loading="lazy" />
+    <div class="product-gallery">
+      <div class="main-image-container" [class.visual-aid-active]="selectedImageUrl === product.visualAidUrl">
+        <img [src]="selectedImageUrl" [alt]="selectedImageAlt" class="main-product-image" loading="lazy" />
+        <a [href]="product.visualAidUrl" target="_blank" class="download-aid-btn" *ngIf="selectedImageUrl === product.visualAidUrl" matTooltip="Open Full-Resolution Visual Aid">
+          <mat-icon>open_in_new</mat-icon> View Full-Res
+        </a>
+      </div>
+      
+      <!-- Interactive Toggles (only when visual aid is available) -->
+      <div class="gallery-controls" *ngIf="product.visualAidUrl">
+        <button class="gallery-tab" 
+                [class.active]="selectedImageUrl === product.imageUrl"
+                (click)="selectImage('product')">
+          <mat-icon>inventory_2</mat-icon> Product Pack
+        </button>
+        <button class="gallery-tab" 
+                [class.active]="selectedImageUrl === product.visualAidUrl"
+                (click)="selectImage('visualAid')">
+          <mat-icon>assignment</mat-icon> Detailing Card
+        </button>
+      </div>
+      
+      <!-- Mini Thumbnails -->
+      <div class="gallery-thumbnails" *ngIf="product.visualAidUrl">
+        <div class="thumbnail-item" 
+             [class.active]="selectedImageUrl === product.imageUrl"
+             (click)="selectImage('product')">
+          <img [src]="product.imageUrl" [alt]="product.name" />
+        </div>
+        <div class="thumbnail-item" 
+             [class.active]="selectedImageUrl === product.visualAidUrl"
+             (click)="selectImage('visualAid')">
+          <img [src]="product.visualAidUrl" [alt]="product.name + ' Visual Aid'" />
+        </div>
+      </div>
+    </div>
     <div class="product-info">
       <h1>{{ product.seoHeading || product.name }}</h1>
       
