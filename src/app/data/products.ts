@@ -476,6 +476,31 @@ export const products: Product[] = [
       'Use with caution in patients with liver disease',
       'Reconstitute with sterile water as directed',
     ],
+
+    avgRating: 4.5,
+    reviewCount: 112,
+    medicalCategory: 'Antibiotic',
+    authorName: 'Dr. Rajesh Dixit, Infectious Disease Specialist',
+    publicationDate: '2024-03-22',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is CEFIMELT-S 1.5 used for?',
+        answer: 'CEFIMELT-S 1.5 is a broad-spectrum antibiotic injection combining Ceftriaxone and Sulbactam, used to treat severe bacterial infections such as meningitis, sepsis, and abdominal infections.',
+      },
+      {
+        question: 'Why is Sulbactam combined with Ceftriaxone?',
+        answer: 'Sulbactam is a beta-lactamase inhibitor that prevents bacteria from destroying Ceftriaxone, thereby overcoming drug resistance and widening the antibiotic\'s effectiveness.',
+      },
+      {
+        question: 'How is CEFIMELT-S 1.5 administered?',
+        answer: 'It is administered as an injection directly into a vein (intravenously) or a muscle (intramuscularly) by a healthcare professional.',
+      },
+      {
+        question: 'Can patients with penicillin allergy receive CEFIMELT-S 1.5?',
+        answer: 'Use with extreme caution. Cross-sensitivity can occur between penicillins and cephalosporins. Inform your doctor of any allergies before administration.',
+      },
+    ],
   },
   {
     name: 'CLARYMONT-L',
@@ -540,6 +565,31 @@ export const products: Product[] = [
       'Continue asthma medications as prescribed',
       'Consult doctor if symptoms worsen',
       'Keep out of reach of children',
+    ],
+
+    avgRating: 4.7,
+    reviewCount: 215,
+    medicalCategory: 'Antiallergic & Respiratory',
+    authorName: 'Dr. Mahesh Gupta, Pulmonologist',
+    publicationDate: '2024-05-10',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is CLARYMONT-L used for?',
+        answer: 'CLARYMONT-L combines Montelukast and Levocetirizine to treat symptoms of allergic rhinitis, such as sneezing, runny nose, watery eyes, and nasal congestion, as well as chronic skin allergy (hives).',
+      },
+      {
+        question: 'How does CLARYMONT-L work?',
+        answer: 'Levocetirizine blocks histamine (a chemical that triggers allergic reactions), while Montelukast blocks leukotriene (a chemical that causes inflammation in the airways), providing comprehensive allergy relief.',
+      },
+      {
+        question: 'When is the best time to take CLARYMONT-L?',
+        answer: 'It is typically taken once daily, preferably in the evening, with or without food.',
+      },
+      {
+        question: 'Does CLARYMONT-L cause drowsiness?',
+        answer: 'Yes, Levocetirizine can cause mild drowsiness in some patients. Avoid driving or operating machinery until you know how the medication affects you.',
+      },
     ],
   },
   {
@@ -1126,18 +1176,27 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 145,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Meera Kapoor, Dermatologist',
+    medicalCategory: 'Anti-inflammatory',
+    authorName: 'Dr. Meera Kapoor, Rheumatologist',
     publicationDate: '2024-03-14',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Duration?', answer: 'Complete full course (2-4 weeks)' },
       {
-        question: 'Body parts?',
-        answer: 'Apply to affected areas as directed',
+        question: 'What is DEFZORAP-6 used for?',
+        answer: 'DEFZORAP-6 contains Deflazacort, a corticosteroid used to treat various inflammatory conditions, autoimmune diseases, and Duchenne muscular dystrophy.',
       },
-      { question: 'Precautions?', answer: 'Keep clean/dry, separate towels' },
-      { question: 'Timeline?', answer: '5-7 days initial, 2-4 weeks full' },
+      {
+        question: 'How does Deflazacort compare to Prednisolone?',
+        answer: 'Deflazacort generally has fewer bone and carbohydrate metabolism side effects compared to prednisolone, making it a safer option for long-term use.',
+      },
+      {
+        question: 'Can I stop taking DEFZORAP-6 suddenly?',
+        answer: 'No, you should never stop taking corticosteroids suddenly. The dosage must be tapered off gradually under your doctor\'s supervision to avoid withdrawal symptoms.',
+      },
+      {
+        question: 'Should I take DEFZORAP-6 with food?',
+        answer: 'Yes, it is recommended to take it with or immediately after food to prevent stomach upset.',
+      },
     ],
   },
   {
@@ -1374,20 +1433,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 223,
-    medicalCategory: 'Antispasmodic',
+    medicalCategory: 'Antacid',
     authorName: 'Dr. Harpreet Kaur, Gastroenterologist',
     publicationDate: '2024-05-08',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'How it works?',
-        answer: 'Reduces smooth muscle contractions',
+        question: 'What is ESMORIZE-D used for?',
+        answer: 'ESMORIZE-D is used to treat Gastroesophageal Reflux Disease (GERD), acid acidity, heartburn, and associated nausea or vomiting.',
       },
-      { question: 'Relief time?', answer: '20-30 minutes' },
-      { question: 'For IBS?', answer: 'Commonly prescribed for IBS' },
       {
-        question: 'Diet changes?',
-        answer: 'Increase fiber gradually, stay hydrated',
+        question: 'When should I take ESMORIZE-D?',
+        answer: 'It is best taken 30 to 45 minutes before your first meal (breakfast) in the morning on an empty stomach.',
+      },
+      {
+        question: 'Can I crush or chew the capsule?',
+        answer: 'No, the capsule should be swallowed whole with water. Crushing or chewing it will damage the enteric coating of the medicine.',
+      },
+      {
+        question: 'Is it safe to take ESMORIZE-D long-term?',
+        answer: 'Long-term use should only be done under medical supervision, as it may affect magnesium or calcium absorption.',
       },
     ],
   },
@@ -1460,19 +1525,29 @@ export const products: Product[] = [
       'Regular neurological check-ups required',
       'Take 30 minutes before first meal of the day',
     ],
+
     avgRating: 4.6,
     reviewCount: 187,
-    medicalCategory: 'Antispasmodic',
+    medicalCategory: 'Antacid',
     authorName: 'Dr. Pooja Malhotra, Digestive Health Specialist',
     publicationDate: '2024-02-12',
     updatedDate: '2026-06-11',
     faqItems: [
-      { question: 'LSR formulation?', answer: 'Long-acting sustained release' },
-      { question: 'Frequency?', answer: 'Once daily before food' },
-      { question: 'With other IBS meds?', answer: 'Get doctor approval first' },
       {
-        question: 'Chronic use?',
-        answer: 'Designed for short to medium-term use under supervision',
+        question: 'What is ESMORIZE-LSR?',
+        answer: 'ESMORIZE-LSR combines Esomeprazole (acid reducer) with Levosulpiride (prokinetic) to treat severe GERD, gastroparesis, and functional dyspepsia.',
+      },
+      {
+        question: 'When is the best time to take it?',
+        answer: 'It should be taken on an empty stomach, typically 30 minutes before breakfast.',
+      },
+      {
+        question: 'Does ESMORIZE-LSR help with bloating?',
+        answer: 'Yes, Levosulpiride enhances upper digestive tract motility, which helps relieve bloating, fullness, and early satiety.',
+      },
+      {
+        question: 'Are there any neurological precautions?',
+        answer: 'Yes, because Levosulpiride acts on dopamine receptors, it should be used with caution and under medical supervision.',
       },
     ],
   },
@@ -1549,18 +1624,27 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 172,
-    medicalCategory: 'Antitussive',
-    authorName: 'Dr. Mahesh Gupta, Pulmonary Specialist',
+    medicalCategory: 'Pain Relief',
+    authorName: 'Dr. Mahesh Gupta, Orthopedic Surgeon',
     publicationDate: '2024-06-01',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'TH meaning?', answer: 'Throat Health formulation' },
-      { question: 'Difference?', answer: 'Includes throat-soothing agents' },
       {
-        question: 'Sore throat?',
-        answer: 'Yes, addresses both cough and soreness',
+        question: 'What is ETOBRAN-TH used for?',
+        answer: 'ETOBRAN-TH is used to relieve acute pain, muscle spasms, and inflammation associated with musculoskeletal disorders, osteoarthritis, and back pain.',
       },
-      { question: 'Dosing?', answer: '1 tablet every 6-8 hours, max 4 daily' },
+      {
+        question: 'How does ETOBRAN-TH work?',
+        answer: 'It combines Etoricoxib (an anti-inflammatory painkiller) and Thiocolchicoside (a muscle relaxant that acts on the central nervous system) for dual-action relief.',
+      },
+      {
+        question: 'Is ETOBRAN-TH safe for heart patients?',
+        answer: 'No, Etoricoxib is a COX-2 inhibitor and is contraindicated in patients with active heart disease or uncontrolled hypertension.',
+      },
+      {
+        question: 'Can it cause drowsiness?',
+        answer: 'Yes, Thiocolchicoside can cause mild drowsiness or dizziness. Avoid driving or operating machinery if you feel dizzy.',
+      },
     ],
   },
   {
@@ -2519,23 +2603,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Probiotic',
+    medicalCategory: 'Iron Supplement',
     authorName: 'Dr. Pooja Rao, Nutritionist',
     publicationDate: '2024-03-20',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'FC meaning?',
-        answer: 'Fermented Cultures with beneficial bacteria',
-      },
-      { question: 'Gut health?', answer: 'Improves digestion and immunity' },
-      {
-        question: 'Daily use safe?',
-        answer: 'Yes, beneficial for daily wellness',
+        question: 'What is PRO FC used for?',
+        answer: 'PRO FC is an iron supplement used to treat or prevent iron deficiency anemia, especially during pregnancy, lactation, or blood loss.',
       },
       {
-        question: 'With antibiotics?',
-        answer: 'Take 2 hours apart for optimal benefit',
+        question: 'Does PRO FC cause dark stools?',
+        answer: 'Yes, taking iron supplements commonly causes stools to turn black. This is harmless and normal.',
+      },
+      {
+        question: 'How should I take PRO FC for best results?',
+        answer: 'It is best taken on an empty stomach with water or orange juice (Vitamin C enhances iron absorption). Avoid taking it with tea, coffee, or milk.',
+      },
+      {
+        question: 'Is it safe to take in pregnancy?',
+        answer: 'Yes, iron, folic acid, and zinc are crucial nutrients during pregnancy for fetal development and maternal health.',
       },
     ],
   },
@@ -3409,23 +3496,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 191,
-    medicalCategory: 'Anti-inflammatory',
-    authorName: 'Dr. Anita Nair, Podiatrist',
+    medicalCategory: 'Antibiotic',
+    authorName: 'Dr. Anita Nair, Infectious Disease Specialist',
     publicationDate: '2024-03-30',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: '200mg strength?', answer: 'Used for moderate inflammation' },
       {
-        question: 'Foot conditions?',
-        answer: 'Podiatrist recommended for feet/ankle pain',
+        question: 'What is RAPIPOD-200 used for?',
+        answer: 'RAPIPOD-200 is an antibiotic used to treat bacterial infections of the lungs (pneumonia), throat (pharyngitis/tonsillitis), skin, and urinary tract.',
       },
       {
-        question: 'Swelling relief?',
-        answer: 'Reduces inflammation and swelling',
+        question: 'Is RAPIPOD-200 effective against viral infections?',
+        answer: 'No, RAPIPOD-200 is an antibacterial agent and is not effective against viral infections like the common cold or flu.',
       },
       {
-        question: 'With physical therapy?',
-        answer: 'Combine with PT for best results',
+        question: 'What should I do if I miss a dose of RAPIPOD-200?',
+        answer: 'Take the missed dose as soon as you remember, unless it is close to your next dose. Do not double the dose to catch up.',
+      },
+      {
+        question: 'Can patients with penicillin allergy take RAPIPOD-200?',
+        answer: 'Use with caution. There is a small risk of cross-sensitivity between penicillin and cephalosporin antibiotics. Consult your doctor first.',
       },
     ],
   },
@@ -3765,23 +3855,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 179,
-    medicalCategory: 'Antidiabetic',
-    authorName: 'Dr. Harish Kumar, Endocrinologist',
+    medicalCategory: 'Urology',
+    authorName: 'Dr. Harish Kumar, Urologist',
     publicationDate: '2024-02-14',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'D component?', answer: 'Dual agents for Type 2 diabetes' },
       {
-        question: 'Combination benefit?',
-        answer: 'Two mechanisms for better glucose control',
+        question: 'What is RAPISULAN-D used for?',
+        answer: 'RAPISULAN-D is used to treat Benign Prostatic Hyperplasia (BPH) or enlarged prostate in men, improving urine flow and reducing hesitancy.',
       },
       {
-        question: 'Side effect profile?',
-        answer: 'Generally well-tolerated combination',
+        question: 'How does RAPISULAN-D work?',
+        answer: 'It combines Tamsulosin (which relaxes the bladder neck and prostate muscles to ease urination) and Dutasteride (which shrinks the prostate gland over time by blocking hormone conversion).',
       },
       {
-        question: 'Regular monitoring?',
-        answer: 'HbA1c checks every 3 months',
+        question: 'How long does it take for RAPISULAN-D to show results?',
+        answer: 'Tamsulosin starts working within days to improve urine flow, but Dutasteride may take 3 to 6 months to significantly shrink the prostate and show full clinical benefits.',
+      },
+      {
+        question: 'Can women or children take RAPISULAN-D?',
+        answer: 'No, RAPISULAN-D is strictly for men. Pregnant women should not even handle the capsules as Dutasteride can be absorbed through the skin and cause birth defects in male fetuses.',
       },
     ],
   },
@@ -4215,23 +4308,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 172,
-    medicalCategory: 'Topical Analgesic',
-    authorName: 'Dr. Isha Gupta, Dermatologist',
+    medicalCategory: 'Ophthalmic',
+    authorName: 'Dr. Isha Gupta, Ophthalmologist',
     publicationDate: '2024-02-18',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Topical application?',
-        answer: 'Apply directly to affected area',
-      },
-      { question: 'Gel advantage?', answer: 'Non-greasy, absorbs quickly' },
-      {
-        question: 'Joint pain relief?',
-        answer: 'Effective for knee, shoulder, elbow',
+        question: 'What is VISQURA GEL used for?',
+        answer: 'VISQURA GEL is an ophthalmic lubricant gel used to relieve dry eyes, burning, irritation, and discomfort caused by wind, sun, or computer screens.',
       },
       {
-        question: 'Frequency?',
-        answer: 'Apply 2-3 times daily or as directed',
+        question: 'How do I apply VISQURA GEL?',
+        answer: 'Instill 1 or 2 drops in the affected eye(s) as needed. Wash your hands before applying, and avoid touching the dropper tip to any surface.',
+      },
+      {
+        question: 'Can I use VISQURA GEL while wearing contact lenses?',
+        answer: 'No, you should remove contact lenses before applying VISQURA GEL. Wait at least 15 minutes after instillation before putting your contact lenses back in.',
+      },
+      {
+        question: 'Does it cause temporary blurred vision?',
+        answer: 'Yes, due to its gel-like viscosity, it can cause brief blurring of vision. Wait for your vision to clear before driving or operating machinery.',
       },
     ],
   },
@@ -4477,26 +4573,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 168,
-    medicalCategory: 'Antimicrobial',
-    authorName: 'Dr. Vikram Verma, Microbiologist',
+    medicalCategory: 'Digestive Enzyme',
+    authorName: 'Dr. Vikram Verma, Gastroenterologist',
     publicationDate: '2024-03-05',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Broad spectrum?',
-        answer: 'Covers gram-positive and gram-negative',
+        question: 'What is ZYMELYT used for?',
+        answer: 'ZYMELYT is a digestive enzyme syrup containing fungal diastase and pepsin, used to treat functional dyspepsia, indigestion, bloating, and gas.',
       },
       {
-        question: 'Skin infections?',
-        answer: 'Effective for skin and soft tissue infections',
+        question: 'How does ZYMELYT help in digestion?',
+        answer: 'Fungal diastase helps digest complex carbohydrates into simpler sugars, while pepsin breaks down proteins into peptides, easing the load on your stomach.',
       },
       {
-        question: 'Resistance risk?',
-        answer: 'Use judiciously, complete full course',
+        question: 'When should I take ZYMELYT?',
+        answer: 'It should be taken with or immediately after meals to help digest the food you consume.',
       },
       {
-        question: 'Allergy profile?',
-        answer: 'Consider cross-reactivity if penicillin allergic',
+        question: 'Can I take ZYMELYT daily?',
+        answer: 'Yes, it can be taken daily as recommended by your doctor, particularly if you have chronic indigestion or functional pancreatic enzyme deficiency.',
       },
     ],
   },
@@ -4569,23 +4665,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 184,
-    medicalCategory: 'Antiviral',
-    authorName: 'Dr. Swati Mehta, Virology Specialist',
+    medicalCategory: 'Hepatoprotective',
+    authorName: 'Dr. Swati Mehta, Hepatologist',
     publicationDate: '2024-04-02',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Viral coverage?', answer: 'Effective against HSV and VZV' },
       {
-        question: 'Herpes treatment?',
-        answer: 'First-line for cold sores and genital herpes',
+        question: 'What is ZYLIVIN used for?',
+        answer: 'ZYLIVIN is a liver tonic used to support liver health, treat fatty liver, aid in detoxification, and assist in recovery from hepatitis or liver cirrhosis.',
       },
       {
-        question: 'Timing critical?',
-        answer: 'Start early in infection for best results',
+        question: 'How do Silymarin and L-Ornithine L-Aspartate help?',
+        answer: 'Silymarin protects liver cells from toxins with its antioxidant properties, while L-Ornithine L-Aspartate reduces ammonia levels, preventing hepatic encephalopathy.',
       },
       {
-        question: 'Frequency?',
-        answer: 'Typically 5 times daily for 7-10 days',
+        question: 'Is ZYLIVIN safe during pregnancy?',
+        answer: 'No, ZYLIVIN is not recommended during pregnancy or lactation unless explicitly advised by your doctor.',
+      },
+      {
+        question: 'How should ZYLIVIN be stored?',
+        answer: 'Store in a cool, dry place away from direct sunlight, and keep the bottle tightly closed after use.',
       },
     ],
   },
@@ -4686,23 +4785,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 171,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Anjali Rao, Mycologist',
+    medicalCategory: 'Antibiotic',
+    authorName: 'Dr. Anjali Rao, Pediatrician',
     publicationDate: '2024-03-18',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'DS component?', answer: 'Double Strength formulation' },
       {
-        question: 'Severe infections?',
-        answer: 'For moderate to severe fungal infections',
+        question: 'What is RAPIPOD DS 50 used for?',
+        answer: 'RAPIPOD DS 50 is a double-strength pediatric antibiotic suspension used to treat bacterial infections like otitis media, tonsillitis, and respiratory tract infections in children.',
       },
       {
-        question: 'Duration?',
-        answer: 'Course length 4-8 weeks depending on severity',
+        question: 'How do I prepare the suspension?',
+        answer: 'Slowly add sterile water (provided) up to the ring mark on the bottle, shake vigorously, and let it stand. Adjust volume if needed. Use within 7-10 days of reconstitution.',
       },
       {
-        question: 'Systemic coverage?',
-        answer: 'Excellent systemic antifungal action',
+        question: 'Can I stop giving it to my child once fever is gone?',
+        answer: 'No, you must complete the full prescribed course of antibiotics even if the child feels better, to prevent bacterial resistance.',
+      },
+      {
+        question: 'How should the reconstituted suspension be stored?',
+        answer: 'Once mixed with water, it is best stored in a refrigerator (2-8°C). Do not freeze it.',
       },
     ],
   },
@@ -4746,20 +4848,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 193,
-    medicalCategory: 'Antipyretic',
-    authorName: 'Dr. Vikas Sinha, Internal Medicine',
+    medicalCategory: 'Probiotic',
+    authorName: 'Dr. Vikas Sinha, Gastroenterologist',
     publicationDate: '2024-04-25',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Fever reduction?', answer: 'Rapidly reduces high fevers' },
       {
-        question: 'Children safe?',
-        answer: 'Pediatrician recommended dosing available',
+        question: 'What is BESLINE used for?',
+        answer: 'BESLINE is a probiotic used to restore beneficial gut bacteria, prevent antibiotic-associated diarrhea, and support overall digestive health.',
       },
-      { question: 'Rapid action?', answer: 'Effect within 30-45 minutes' },
       {
-        question: 'Combination use?',
-        answer: 'Do not combine with other fever reducers',
+        question: 'How do I take BESLINE respules?',
+        answer: 'BESLINE respules can be taken directly or mixed with water, milk, or orange juice. Shake well before use.',
+      },
+      {
+        question: 'Can BESLINE be taken with antibiotics?',
+        answer: 'Yes, Bacillus clausii spores are resistant to most common antibiotics, so BESLINE can be taken during antibiotic therapy to prevent diarrhea.',
+      },
+      {
+        question: 'Is BESLINE safe for children?',
+        answer: 'Yes, BESLINE is safe and pediatric-friendly. It is commonly prescribed to restore intestinal flora in infants and children.',
       },
     ],
   },
@@ -5161,6 +5269,31 @@ export const products: Product[] = [
       'Shake well before use',
       'Keep away from children (iron toxicity risk)',
     ],
+
+    avgRating: 4.6,
+    reviewCount: 134,
+    medicalCategory: 'Iron Supplement',
+    authorName: 'Dr. Pooja Rao, Nutritionist',
+    publicationDate: '2024-03-24',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is PRO FC syrup used for?',
+        answer: 'PRO FC syrup is an iron, folic acid, and zinc supplement used to treat nutritional deficiency anemias, especially in women, children, and during pregnancy.',
+      },
+      {
+        question: 'How does PRO FC syrup compare to iron tablets?',
+        answer: 'PRO FC syrup offers a highly bioavailable liquid formulation (Ferrous Ascorbate), which is easier to digest and often causes less gastric irritation and constipation than traditional iron tablets.',
+      },
+      {
+        question: 'Can it cause darkening of stools?',
+        answer: 'Yes, iron supplements naturally cause stools to turn black. This is standard and completely harmless.',
+      },
+      {
+        question: 'Are there any food restrictions when taking PRO FC?',
+        answer: 'Yes, avoid taking it with tea, coffee, milk, or antacids, as they can significantly reduce iron absorption.',
+      },
+    ],
   },
   {
     name: 'CEFIMELT 1GM',
@@ -5369,6 +5502,31 @@ export const products: Product[] = [
       'Refrigerate after mixing if instructed',
       'Report severe diarrhea',
     ],
+
+    avgRating: 4.5,
+    reviewCount: 142,
+    medicalCategory: 'Antibiotic',
+    authorName: 'Dr. Anjali Rao, Pediatrician',
+    publicationDate: '2024-04-05',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is RAPMOX CV used for?',
+        answer: 'RAPMOX CV is a pediatric antibiotic suspension containing Amoxicillin and Clavulanic Acid, used to treat bacterial infections of the ear, nose, throat, chest, skin, and urinary tract in children.',
+      },
+      {
+        question: 'How do I prepare the suspension?',
+        answer: 'Slowly add sterile water up to the ring mark on the bottle, shake the bottle vigorously, and let it stand. Re-adjust volume if needed and use the prepared suspension within 7-10 days.',
+      },
+      {
+        question: 'Should I store RAPMOX CV in the fridge?',
+        answer: 'Yes, once mixed with water, the reconstituted suspension must be stored in the refrigerator (2-8°C) and kept out of the freezer.',
+      },
+      {
+        question: 'Should my child complete the full course?',
+        answer: 'Yes, always complete the entire antibiotic course prescribed by your pediatrician, even if your child feels better after a few days, to prevent bacterial resistance.',
+      },
+    ],
   },
   {
     name: 'PICOFIX-PLUS',
@@ -5472,20 +5630,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 182,
-    medicalCategory: 'Antipyretic',
-    authorName: 'Dr. Harish Malhotra, Internal Medicine',
+    medicalCategory: 'Antidepressant',
+    authorName: 'Dr. Harish Malhotra, Psychiatrist',
     publicationDate: '2024-04-12',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: '10mg strength?', answer: 'Pediatric strength formulation' },
-      { question: 'Fever reduction?', answer: 'Fast-acting fever control' },
       {
-        question: 'Children dosing?',
-        answer: 'Age and weight-based recommendations',
+        question: 'What is RAPICITA 10 used for?',
+        answer: 'RAPICITA 10 contains Escitalopram, which is used to treat major depressive disorder, generalized anxiety disorder, and panic disorder.',
       },
       {
-        question: 'Frequency?',
-        answer: 'Every 4-6 hours as needed, not exceeding 5 doses',
+        question: 'How long does it take for RAPICITA 10 to work?',
+        answer: 'It typically takes 2 to 4 weeks to start feeling the full benefits of RAPICITA 10, though some improvement may be noticed earlier.',
+      },
+      {
+        question: 'Can I stop taking RAPICITA 10 suddenly?',
+        answer: 'No, you should not stop taking RAPICITA 10 abruptly as it can cause withdrawal symptoms. Always consult your doctor for a gradual tapering schedule.',
+      },
+      {
+        question: 'What is the best time to take RAPICITA 10?',
+        answer: 'It can be taken with or without food, usually once daily in the morning or evening. It is best to take it at the same time each day.',
       },
     ],
   },
@@ -5712,24 +5876,27 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 172,
-    medicalCategory: 'Antidiabetic',
-    authorName: 'Dr. Rajesh Dixit, Pre-Diabetes Management',
+    medicalCategory: 'Anti-inflammatory',
+    authorName: 'Dr. Rajesh Dixit, Rheumatologist',
     publicationDate: '2024-02-14',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Pre-diabetes focus?',
-        answer: 'Specifically for pre-diabetes prevention',
+        question: 'What is PREDIRAP 4 used for?',
+        answer: 'PREDIRAP 4 contains Methylprednisolone, a corticosteroid used to treat inflammatory conditions, severe allergies, asthma, and autoimmune diseases.',
       },
       {
-        question: 'Lifestyle important?',
-        answer: 'Combine with diet and exercise',
+        question: 'Does PREDIRAP 4 affect blood sugar levels?',
+        answer: 'Yes, corticosteroids like PREDIRAP 4 can increase blood sugar levels. Diabetic patients should monitor their blood glucose closely.',
       },
       {
-        question: 'Progression prevention?',
-        answer: 'Helps prevent Type 2 diabetes onset',
+        question: 'Should PREDIRAP 4 be taken with food?',
+        answer: 'Yes, take it with food or milk to prevent gastrointestinal irritation and stomach upset.',
       },
-      { question: 'Monitoring?', answer: 'Regular glucose and HbA1c checks' },
+      {
+        question: 'What are the precautions for long-term use?',
+        answer: 'Long-term use requires monitoring of blood pressure, bone density, and eye health. Calcium and vitamin D supplementation is often recommended.',
+      },
     ],
   },
   {
