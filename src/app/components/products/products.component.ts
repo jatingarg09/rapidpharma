@@ -436,6 +436,24 @@ export class ProductsComponent implements OnInit, OnDestroy {
               : `https://www.rapidpharmaceuticals.in/${product.imageUrl}`,
             description: product.metaDescription || product.composition,
             category: product.medicalCategory || product.category,
+            brand: {
+              '@type': 'Brand',
+              name: 'Rapid Pharmaceuticals',
+            },
+            offers: {
+              '@type': 'Offer',
+              priceCurrency: 'INR',
+              price: product.mrp,
+              availability: 'https://schema.org/InStock',
+              itemCondition: 'https://schema.org/NewCondition',
+            },
+            ...(product.avgRating && {
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: product.avgRating,
+                reviewCount: product.reviewCount || 0,
+              },
+            }),
           },
         })),
     };
