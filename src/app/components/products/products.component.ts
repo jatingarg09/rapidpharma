@@ -30,42 +30,31 @@ const CATEGORY_SLUG_MAP: { [key: string]: string } = {
 };
 
 const THERAPEUTIC_SLUG_MAP: { [key: string]: string } = {
-  antibiotics: 'Antibiotic',
-  antibiotic: 'Antibiotic',
-  'antiallergic-respiratory': 'Antiallergic & Respiratory',
+  antibiotics: 'Antibiotics',
+  'antiallergic-respiratory': 'Cough & Cold',
   'cough-cold': 'Cough & Cold',
-  'vitamin-supplements': 'Vitamin Supplement',
-  'vitamin-supplement': 'Vitamin Supplement',
-  steroids: 'Steroid',
-  steroid: 'Steroid',
+  'vitamin-supplements': 'Vitamins',
+  steroids: 'Pain & NSAIDs',
   gastrointestinal: 'Gastrointestinal',
-  nsaid: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
-  nsaids: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
-  nutraceuticals: 'Nutraceutical',
-  nutraceutical: 'Nutraceutical',
+  nsaid: 'Pain & NSAIDs',
+  nutraceuticals: 'Vitamins',
   antidiabetic: 'Antidiabetic',
-  'liver-tonics': 'Liver Tonic',
-  'liver-tonic': 'Liver Tonic',
-  antacids: 'Antacid',
-  antacid: 'Antacid',
-  'iron-supplements': 'Iron Supplement',
-  'iron-supplement': 'Iron Supplement',
-  antihypertensive: 'Antihypertensive',
+  'liver-tonics': 'Gastrointestinal',
+  antacids: 'Antacids',
+  'iron-supplements': 'Vitamins',
+  antihypertensive: 'Cardiovascular',
+  cardiovascular: 'Cardiovascular',
   urology: 'Urology',
   vertigo: 'Vertigo',
   ophthalmic: 'Ophthalmic',
-  'digestive-enzymes': 'Digestive Enzyme',
-  'digestive-enzyme': 'Digestive Enzyme',
-  probiotics: 'Probiotic',
-  probiotic: 'Probiotic',
-  analgesics: 'Analgesic',
-  analgesic: 'Analgesic',
-  'nutritional-supplements': 'Nutritional Supplement',
-  'nutritional-supplement': 'Nutritional Supplement',
-  'neuropathic-pain': 'Neuropathic Pain',
+  'digestive-enzymes': 'Gastrointestinal',
+  probiotics: 'Probiotics',
+  analgesics: 'Pain & NSAIDs',
+  'nutritional-supplements': 'Vitamins',
+  'neuropathic-pain': 'Vitamins',
   psychiatric: 'Psychiatric',
   gynaecological: 'Gynaecological',
-  'gout-management': 'Gout Management',
+  'gout-management': 'Urology',
 };
 
 const CATEGORY_DESC_MAP: { [key: string]: string } = {
@@ -106,6 +95,18 @@ const THERAPEUTIC_DESC_MAP: { [key: string]: string } = {
     'Support gut health and restore natural digestive balance with our premium probiotic formulations. Featuring active lactic acid bacillus and bacillus clausii spores, our probiotics help prevent antibiotic-associated diarrhea and boost immunity.',
   Gynaecological:
     "Explore our range of gynaecological formulations at Rapid Pharmaceuticals. Sourced from WHO-GMP certified facilities, our gynecological products offer premium quality, attractive packaging, and effective therapeutic support for women's reproductive wellness.",
+  Antidiabetic:
+    'Our high-quality antidiabetic formulations are designed for effective blood sugar regulation and long-term diabetes management. Sourced from WHO-GMP certified facilities, they include advanced combination therapies like Sitagliptin + Metformin to help patients maintain glycemic control.',
+  Antihypertensive:
+    'Explore our premium antihypertensive and cardiovascular formulations designed for blood pressure regulation and heart health. Our range features advanced combinations like Telmisartan + Amlodipine, manufactured in WHO-GMP compliant facilities for safety and clinical efficacy.',
+  Ophthalmic:
+    'Soothe and protect your eyes with our sterile ophthalmic solutions. Sourced from WHO-GMP certified facilities, our eye drops and gels target dry eyes, bacterial infections, and inflammation with precise, contaminant-free formulations.',
+  Vertigo:
+    'Manage dizziness, vertigo, and inner ear balance disorders effectively with our specialized vertigo formulations. Manufactured under strict WHO-GMP compliance, our products offer reliable symptomatic control and improved patient mobility.',
+  Psychiatric:
+    'Explore our range of central nervous system and psychiatric formulations designed to support mental wellness and clinical therapy. Sourced from WHO-GMP certified partners, our products include highly effective antidepressants like Escitalopram.',
+  Urology:
+    'Discover our urological care formulations at Rapid Pharmaceuticals. Our range targets urinary tract infections, kidney stone management, and bladder health, manufactured under rigorous WHO-GMP guidelines for high clinical efficacy and safety.',
 };
 
 @Component({
@@ -339,7 +340,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
         product.category === this.selectedCategory;
 
       const matchesType =
-        !this.selectedType || product.therapeuticClass === this.selectedType;
+        !this.selectedType || product.medicalCategory === this.selectedType;
 
       const matchesFilters = matchesCategory && matchesType;
 

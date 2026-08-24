@@ -148,7 +148,7 @@ export const products: Product[] = [
     // Enhanced SEO & Reviews
     avgRating: 4.7,
     reviewCount: 238,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Arun Kumar, MD',
     publicationDate: '2024-01-15',
     updatedDate: '2025-04-15',
@@ -265,7 +265,7 @@ export const products: Product[] = [
     // Enhanced SEO & Reviews
     avgRating: 4.5,
     reviewCount: 156,
-    medicalCategory: 'Pediatric Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Priya Sharma, MD, Pediatrics',
     publicationDate: '2024-02-20',
     updatedDate: '2025-04-15',
@@ -381,7 +381,7 @@ export const products: Product[] = [
     // Enhanced SEO & Reviews
     avgRating: 4.8,
     reviewCount: 314,
-    medicalCategory: 'Antibiotic with Probiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Vikram Patel, MD, Gastroenterology',
     publicationDate: '2024-03-10',
     updatedDate: '2025-04-15',
@@ -479,7 +479,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 112,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Rajesh Dixit, Infectious Disease Specialist',
     publicationDate: '2024-03-22',
     updatedDate: '2025-04-15',
@@ -569,7 +569,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 215,
-    medicalCategory: 'Antiallergic & Respiratory',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Mahesh Gupta, Pulmonologist',
     publicationDate: '2024-05-10',
     updatedDate: '2025-04-15',
@@ -660,7 +660,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 245,
-    medicalCategory: 'Antitussive',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Priya Menon, Pulmonologist',
     publicationDate: '2024-03-10',
     updatedDate: '2025-04-15',
@@ -743,7 +743,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Antitussive',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Arjun Patel, Respiratory Specialist',
     publicationDate: '2024-01-22',
     updatedDate: '2025-04-15',
@@ -837,7 +837,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 167,
-    medicalCategory: 'Antitussive',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Vikram Singh, Chest Physician',
     publicationDate: '2024-04-05',
     updatedDate: '2025-04-15',
@@ -918,7 +918,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 312,
-    medicalCategory: 'Vitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Neha Gupta, Nutritionist',
     publicationDate: '2024-05-12',
     updatedDate: '2025-04-15',
@@ -999,7 +999,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 276,
-    medicalCategory: 'Vitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Arun Desai, Metabolic Specialist',
     publicationDate: '2024-06-18',
     updatedDate: '2025-04-15',
@@ -1090,18 +1090,27 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 189,
-    medicalCategory: 'Anti-inflammatory',
-    authorName: 'Dr. Sanjay Joshi, Rheumatologist',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Sanjay Joshi, Sports Medicine Specialist',
     publicationDate: '2024-02-28',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: "How quickly does DECARAP 50 start showing results?",
-        answer: '30-60 mins, max effect in 2-3 days',
+        question: "What is DECARAP 50 used for?",
+        answer: "DECARAP 50 is Nandrolone Decanoate injection, used to treat muscle wasting, severe protein deficiency, and anemia associated with renal failure.",
       },
-      { question: "How does DECARAP 50 help with With food?", answer: 'Always take with food or milk' },
-      { question: "How does DECARAP 50 help with Chronic use?", answer: 'Safe for chronic with monitoring' },
-      { question: "How does DECARAP 50 help with Dietary limits?", answer: 'Avoid alcohol and spicy foods' },
+      {
+        question: "How is DECARAP 50 administered?",
+        answer: "It is administered strictly as an intramuscular injection (IM) by a healthcare professional.",
+      },
+      {
+        question: "How does DECARAP 50 help with Is it safe for women?",
+        answer: "Nandrolone can cause virilization symptoms in women. It should only be used in females under strict medical supervision when therapeutic benefits outweigh risks.",
+      },
+      {
+        question: "How often is DECARAP 50 given?",
+        answer: "The dosing frequency depends on the clinical condition, typically administered once every 1 to 4 weeks.",
+      },
     ],
   },
   {
@@ -1176,7 +1185,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 145,
-    medicalCategory: 'Anti-inflammatory',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Meera Kapoor, Rheumatologist',
     publicationDate: '2024-03-14',
     updatedDate: '2025-04-15',
@@ -1266,7 +1275,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 156,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Rakesh Verma, Gastroenterologist',
     publicationDate: '2024-04-20',
     updatedDate: '2025-04-15',
@@ -1348,7 +1357,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 201,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Anjali Singh,GI Specialist',
     publicationDate: '2024-01-30',
     updatedDate: '2025-04-15',
@@ -1433,7 +1442,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 223,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Harpreet Kaur, Gastroenterologist',
     publicationDate: '2024-05-08',
     updatedDate: '2025-04-15',
@@ -1528,7 +1537,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 187,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Pooja Malhotra, Digestive Health Specialist',
     publicationDate: '2024-02-12',
     updatedDate: '2026-06-11',
@@ -1624,7 +1633,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 172,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Mahesh Gupta, Orthopedic Surgeon',
     publicationDate: '2024-06-01',
     updatedDate: '2025-04-15',
@@ -1717,7 +1726,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 289,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Vijay Chopra, GI Surgeon',
     publicationDate: '2024-03-25',
     updatedDate: '2025-04-15',
@@ -1805,7 +1814,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 214,
-    medicalCategory: 'Herbal Supplement',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Suresh Nair, Ayurvedic Practitioner',
     publicationDate: '2024-04-10',
     updatedDate: '2025-04-15',
@@ -1896,7 +1905,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Multivitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Lalita Sharma, Nutritional Biochemist',
     publicationDate: '2024-05-20',
     updatedDate: '2025-04-15',
@@ -2167,7 +2176,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 312,
-    medicalCategory: 'Hepatoprotective',
+    medicalCategory: 'Gastrointestinal',
     authorName: 'Dr. Anil Gupta, Hepatologist',
     publicationDate: '2024-06-05',
     updatedDate: '2025-04-15',
@@ -2249,7 +2258,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 178,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Sharma, Gastroenterologist',
     publicationDate: '2024-03-01',
     updatedDate: '2025-04-15',
@@ -2340,7 +2349,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 156,
-    medicalCategory: 'Analgesic',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Ramesh Patel, Pediatrician',
     publicationDate: '2024-02-08',
     updatedDate: '2025-04-15',
@@ -2421,7 +2430,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 213,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Anita Verma, Orthopedic Surgeon',
     publicationDate: '2024-04-12',
     updatedDate: '2025-04-15',
@@ -2512,7 +2521,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 234,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Vikram Desai, Infectious Disease Specialist',
     publicationDate: '2024-05-15',
     updatedDate: '2025-04-15',
@@ -2603,7 +2612,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Iron Supplement',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Pooja Rao, Nutritionist',
     publicationDate: '2024-03-20',
     updatedDate: '2025-04-15',
@@ -2692,7 +2701,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 167,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Akshay Mehta, Clinical Pharmacist',
     publicationDate: '2024-02-28',
     updatedDate: '2025-04-15',
@@ -2781,7 +2790,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 211,
-    medicalCategory: 'Anti-inflammatory',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Neera Singh, Rheumatology Specialist',
     publicationDate: '2024-04-08',
     updatedDate: '2025-04-15',
@@ -2868,7 +2877,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 176,
-    medicalCategory: 'Analgesic',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Harsh Patel, Pain Management Specialist',
     publicationDate: '2024-03-14',
     updatedDate: '2025-04-15',
@@ -2962,26 +2971,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 189,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Sunita Rao, Dermatologist',
+    medicalCategory: 'Antibiotics',
+    authorName: 'Dr. Sunita Rao, Urologist',
     publicationDate: '2024-05-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: "How does RAPIFUR help with Fungal coverage?",
-        answer: 'Covers dermatophytes, Candida, other fungi',
+        question: "What is RAPIFUR used for?",
+        answer: "RAPIFUR is a urinary tract antibiotic containing Nitrofurantoin, specifically used to treat and prevent acute uncomplicated UTIs and cystitis.",
       },
       {
-        question: "Does RAPIFUR treat underlying bacterial or fungal infections?",
-        answer: 'Effective for fungal nail infections',
+        question: "Does RAPIFUR change urine color?",
+        answer: "Yes, Nitrofurantoin commonly causes the urine to turn dark yellow or brown. This is harmless and temporary.",
       },
       {
-        question: "Is RAPIFUR safe to use for managing symptoms during pregnancy?",
-        answer: 'Check with doctor before use in pregnancy',
+        question: "How should RAPIFUR be taken?",
+        answer: "It should be taken with food or milk to enhance absorption and reduce stomach upset.",
       },
       {
-        question: "How does RAPIFUR help with Complete therapy?",
-        answer: '3-6 months typical for nail infections',
+        question: "Why is it a Sustained Release (SR) tablet?",
+        answer: "The SR formulation allows slow release of the drug, enabling convenient twice-daily dosing instead of four times daily.",
       },
     ],
   },
@@ -3056,7 +3065,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 202,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Amar Kumar, Orthopedist',
     publicationDate: '2024-02-20',
     updatedDate: '2025-04-15',
@@ -3133,7 +3142,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 218,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Sonia Verma, Pain Clinic Manager',
     publicationDate: '2024-03-25',
     updatedDate: '2025-04-15',
@@ -3228,7 +3237,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 175,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Rajesh Singh, Sports Medicine',
     publicationDate: '2024-04-15',
     updatedDate: '2025-04-15',
@@ -3319,7 +3328,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 267,
-    medicalCategory: 'Anti-inflammatory',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Merita Gupta, Rheumatology',
     publicationDate: '2024-01-30',
     updatedDate: '2025-04-15',
@@ -3496,7 +3505,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 191,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Anita Nair, Infectious Disease Specialist',
     publicationDate: '2024-03-30',
     updatedDate: '2025-04-15',
@@ -3955,7 +3964,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 231,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Sanjay Mehta, Infectious Disease',
     publicationDate: '2024-04-18',
     updatedDate: '2025-04-15',
@@ -4040,7 +4049,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 163,
-    medicalCategory: 'Antivertigo',
+    medicalCategory: 'Vertigo',
     authorName: 'Dr. Arun Sinha, ENT Specialist',
     publicationDate: '2024-01-25',
     updatedDate: '2025-04-15',
@@ -4400,7 +4409,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 289,
-    medicalCategory: 'Multivitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Neeta Agarwal, Nutritionist',
     publicationDate: '2024-05-22',
     updatedDate: '2025-04-15',
@@ -4487,7 +4496,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 256,
-    medicalCategory: 'Multivitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Rakesh Nair, Orthopedic Nutritionist',
     publicationDate: '2024-06-10',
     updatedDate: '2025-04-15',
@@ -4573,7 +4582,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 168,
-    medicalCategory: 'Digestive Enzyme',
+    medicalCategory: 'Gastrointestinal',
     authorName: 'Dr. Vikram Verma, Gastroenterologist',
     publicationDate: '2024-03-05',
     updatedDate: '2025-04-15',
@@ -4665,7 +4674,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 184,
-    medicalCategory: 'Hepatoprotective',
+    medicalCategory: 'Gastrointestinal',
     authorName: 'Dr. Swati Mehta, Hepatologist',
     publicationDate: '2024-04-02',
     updatedDate: '2025-04-15',
@@ -4728,7 +4737,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 156,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Priya Kapoor, Pediatric Infectious Disease',
     publicationDate: '2024-02-12',
     updatedDate: '2025-04-15',
@@ -4785,7 +4794,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 171,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Anjali Rao, Pediatrician',
     publicationDate: '2024-03-18',
     updatedDate: '2025-04-15',
@@ -4848,7 +4857,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 193,
-    medicalCategory: 'Probiotic',
+    medicalCategory: 'Probiotics',
     authorName: 'Dr. Vikas Sinha, Gastroenterologist',
     publicationDate: '2024-04-25',
     updatedDate: '2025-04-15',
@@ -4910,26 +4919,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 207,
-    medicalCategory: 'Anti-inflammatory',
-    authorName: 'Dr. Seema Nair, Rheumatologist',
+    medicalCategory: 'Antacids',
+    authorName: 'Dr. Seema Nair, Gastroenterologist',
     publicationDate: '2024-05-14',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: "How does OMERIZE - D help with Inflammation type?",
-        answer: 'For mild to moderate inflammation',
+        question: "What is OMERIZE - D used for?",
+        answer: "OMERIZE - D is a combination of Omeprazole and Domperidone used to treat acid reflux (GERD), heartburn, indigestion, and nausea.",
       },
       {
-        question: "How does OMERIZE - D help with With physical therapy?",
-        answer: 'Combine with physiotherapy',
+        question: "When should I take OMERIZE - D?",
+        answer: "It should be taken 30 minutes before breakfast on an empty stomach for maximum effectiveness.",
       },
       {
-        question: "How does OMERIZE - D help with Food requirement?",
-        answer: 'Take with meals to minimize GI upset',
+        question: "How does OMERIZE - D work?",
+        answer: "Omeprazole reduces stomach acid production, while Domperidone increases upper gut motility, preventing acid reflux and nausea.",
       },
       {
-        question: "How frequently should I monitor my health levels while on OMERIZE - D?",
-        answer: 'Periodic liver function checks',
+        question: "How does OMERIZE - D help with Can I take it long-term?",
+        answer: "Long-term use should be under medical supervision as it can affect magnesium levels and calcium absorption.",
       },
     ],
   },
@@ -4974,7 +4983,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 179,
-    medicalCategory: 'Cold & Cough',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Harish Gupta, Pulmonologist',
     publicationDate: '2024-02-28',
     updatedDate: '2025-04-15',
@@ -5040,7 +5049,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 185,
-    medicalCategory: 'Topical Analgesic',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Mira Patel, Sports Medicine',
     publicationDate: '2024-03-22',
     updatedDate: '2025-04-15',
@@ -5093,23 +5102,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 219,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Sunita Verma, Dermatology',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Sunita Verma, Pain Specialist',
     publicationDate: '2024-04-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: "How does VORARAP-AQ help with Aqueous formulation?",
-        answer: 'Water-based for easy application',
-      },
-      { question: "How does VORARAP-AQ help with Coverage?", answer: 'Broad spectrum antifungal action' },
-      {
-        question: "Is VORARAP-AQ safe to use for managing symptoms during pregnancy?",
-        answer: 'Check with doctor, generally safe topically',
+        question: "What is VORARAP-AQ used for?",
+        answer: "VORARAP-AQ is an injectable painless formulation of Diclofenac Sodium used for rapid relief of acute moderate-to-severe pain, post-operative pain, and colic.",
       },
       {
-        question: "How should VORARAP-AQ be applied to the affected area?",
-        answer: 'Apply to clean, dry skin twice daily',
+        question: "How does VORARAP-AQ help with How is VORARAP-AQ administered?",
+        answer: "It is administered strictly via intramuscular (IM) injection by a healthcare professional.",
+      },
+      {
+        question: "How does VORARAP-AQ work to relieve acute pain?",
+        answer: "It uses a specialized aqueous formulation that reduces the localized pain and burning sensation commonly associated with standard diclofenac injections.",
+      },
+      {
+        question: "Is it safe to take VORARAP-AQ daily or for a long-term duration?",
+        answer: "It is intended for short-term acute pain management and should not be used long-term without medical supervision due to risk of gastric ulcers.",
       },
     ],
   },
@@ -5153,7 +5165,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 161,
-    medicalCategory: 'Antihypertensive',
+    medicalCategory: 'Cardiovascular',
     authorName: 'Dr. Ravi Gupta, Cardiovascular',
     publicationDate: '2024-05-08',
     updatedDate: '2025-04-15',
@@ -5212,23 +5224,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 176,
-    medicalCategory: 'Antibiotic',
-    authorName: 'Dr. Anita Joshi, Infections Specialist',
+    medicalCategory: 'Gynaecological',
+    authorName: 'Dr. Anita Joshi, Gynecologist',
     publicationDate: '2024-03-15',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: "How does DOXY B6 help with B6 addition?", answer: 'Pyridoxine for gut flora support' },
       {
-        question: "How does DOXY B6 help with GI protection?",
-        answer: 'Doxycycline plus B6 for better tolerance',
+        question: "What is DOXY B6 used for?",
+        answer: "DOXY B6 is used to treat pregnancy-induced nausea and vomiting (morning sickness) while providing essential folic acid support.",
       },
       {
-        question: "How does DOXY B6 help with Food interaction?",
-        answer: 'Some effect with dairy, take separate',
+        question: "Is DOXY B6 safe during pregnancy?",
+        answer: "Yes, Doxylamine and Pyridoxine combination is FDA-approved and clinically proven to be safe for both the mother and the fetus during pregnancy.",
       },
       {
-        question: "How does DOXY B6 help with Photosensitivity?",
-        answer: 'Sun protection essential during use',
+        question: "Does DOXY B6 cause drowsiness?",
+        answer: "Yes, Doxylamine is an antihistamine that can cause drowsiness. It is typically taken at bedtime to help manage this effect.",
+      },
+      {
+        question: "Why is Folic Acid included in DOXY B6?",
+        answer: "Folic Acid is a vital nutrient during early pregnancy that prevents neural tube birth defects in the developing baby.",
       },
     ],
   },
@@ -5272,7 +5287,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 134,
-    medicalCategory: 'Iron Supplement',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Pooja Rao, Nutritionist',
     publicationDate: '2024-03-24',
     updatedDate: '2025-04-15',
@@ -5335,7 +5350,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 147,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Pooja Singh, Infectious Disease',
     publicationDate: '2024-02-20',
     updatedDate: '2025-04-15',
@@ -5391,7 +5406,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 203,
-    medicalCategory: 'Nerve Health',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Suresh Patel, Neurologist',
     publicationDate: '2024-04-03',
     updatedDate: '2025-04-15',
@@ -5448,7 +5463,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 231,
-    medicalCategory: 'Neuropathy Treatment',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Vikram Thakur, Neuropathy Specialist',
     publicationDate: '2024-05-20',
     updatedDate: '2025-04-15',
@@ -5505,7 +5520,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 142,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Anjali Rao, Pediatrician',
     publicationDate: '2024-04-05',
     updatedDate: '2025-04-15',
@@ -5570,7 +5585,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 158,
-    medicalCategory: 'Dietary Supplement',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Neeta Deshmukh, Nutritionist',
     publicationDate: '2024-03-08',
     updatedDate: '2025-04-15',
@@ -5630,7 +5645,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 182,
-    medicalCategory: 'Antidepressant',
+    medicalCategory: 'Psychiatric',
     authorName: 'Dr. Harish Malhotra, Psychiatrist',
     publicationDate: '2024-04-12',
     updatedDate: '2025-04-15',
@@ -5693,7 +5708,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 194,
-    medicalCategory: 'Gynecological',
+    medicalCategory: 'Gynaecological',
     authorName: 'Dr. Meera Sharma, Gynecologist',
     publicationDate: '2024-05-25',
     updatedDate: '2025-04-15',
@@ -5753,7 +5768,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 165,
-    medicalCategory: 'Urinary Health',
+    medicalCategory: 'Urology',
     authorName: 'Dr. Arun Kapoor, Urologist',
     publicationDate: '2024-03-18',
     updatedDate: '2025-04-15',
@@ -5813,7 +5828,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 189,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Sonia Desai, Infection Medicine',
     publicationDate: '2024-04-20',
     updatedDate: '2025-04-15',
@@ -5876,7 +5891,7 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 172,
-    medicalCategory: 'Anti-inflammatory',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Rajesh Dixit, Rheumatologist',
     publicationDate: '2024-02-14',
     updatedDate: '2025-04-15',
@@ -5938,7 +5953,7 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 213,
-    medicalCategory: 'Antigout',
+    medicalCategory: 'Urology',
     authorName: 'Dr. Vikram Nair, Rheumatologist',
     publicationDate: '2024-03-25',
     updatedDate: '2025-04-15',
@@ -5995,7 +6010,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 176,
-    medicalCategory: 'Antacid/PPI',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Isha Patel, Gastroenterology',
     publicationDate: '2024-04-08',
     updatedDate: '2025-04-15',
@@ -6023,7 +6038,7 @@ export const products: Product[] = [
       '/visualaidswebp/drotavil-m-drotaverine-mefenamic-acid-pain-visualaid.webp',
     visualAidAlt: 'DROTAVIL - M - Drotaverine + Mefenamic Acid Visual Aid',
     fullComposition: 'Drotaverine 100mg + Mefenamic Acid 250mg',
-    therapeuticClass: 'Gout Management',
+    therapeuticClass: 'Gastrointestinal',
     mrp: 1100,
     introduction:
       'DROTAVIL-M combines antispasmodic and analgesic-anti-inflammatory properties for effective relief of muscle cramps and menstrual pain. Drotaverine provides smooth muscle relaxation to alleviate spasms, while mefenamic acid offers potent analgesic and anti-inflammatory effects, making this combination ideal for individuals seeking relief from conditions such as dysmenorrhea, muscle cramps, intestinal colic, and abdominal pain, providing comprehensive symptom control in a convenient tablet form.',
@@ -6052,7 +6067,7 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 191,
-    medicalCategory: 'Antispasmodic',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Harish Kumar, GI Surgeon',
     publicationDate: '2024-05-12',
     updatedDate: '2025-04-15',
@@ -6117,7 +6132,7 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 168,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Swati Rao, Pain Management',
     publicationDate: '2024-03-30',
     updatedDate: '2025-04-15',
@@ -6208,7 +6223,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 142,
-    medicalCategory: 'Nerve Rejuvenator',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Sandeep Nandi, Neurologist',
     publicationDate: '2024-06-10',
     updatedDate: '2025-04-15',
