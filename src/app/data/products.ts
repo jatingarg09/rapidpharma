@@ -148,7 +148,7 @@ export const products: Product[] = [
     // Enhanced SEO & Reviews
     avgRating: 4.7,
     reviewCount: 238,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Arun Kumar, MD',
     publicationDate: '2024-01-15',
     updatedDate: '2025-04-15',
@@ -265,7 +265,7 @@ export const products: Product[] = [
     // Enhanced SEO & Reviews
     avgRating: 4.5,
     reviewCount: 156,
-    medicalCategory: 'Pediatric Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Priya Sharma, MD, Pediatrics',
     publicationDate: '2024-02-20',
     updatedDate: '2025-04-15',
@@ -381,7 +381,7 @@ export const products: Product[] = [
     // Enhanced SEO & Reviews
     avgRating: 4.8,
     reviewCount: 314,
-    medicalCategory: 'Antibiotic with Probiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Vikram Patel, MD, Gastroenterology',
     publicationDate: '2024-03-10',
     updatedDate: '2025-04-15',
@@ -476,6 +476,31 @@ export const products: Product[] = [
       'Use with caution in patients with liver disease',
       'Reconstitute with sterile water as directed',
     ],
+
+    avgRating: 4.5,
+    reviewCount: 112,
+    medicalCategory: 'Antibiotics',
+    authorName: 'Dr. Rajesh Dixit, Infectious Disease Specialist',
+    publicationDate: '2024-03-22',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is CEFIMELT-S 1.5 used for?',
+        answer: 'CEFIMELT-S 1.5 is a broad-spectrum antibiotic injection combining Ceftriaxone and Sulbactam, used to treat severe bacterial infections such as meningitis, sepsis, and abdominal infections.',
+      },
+      {
+        question: 'Why is Sulbactam combined with Ceftriaxone?',
+        answer: 'Sulbactam is a beta-lactamase inhibitor that prevents bacteria from destroying Ceftriaxone, thereby overcoming drug resistance and widening the antibiotic\'s effectiveness.',
+      },
+      {
+        question: 'How is CEFIMELT-S 1.5 administered?',
+        answer: 'It is administered as an injection directly into a vein (intravenously) or a muscle (intramuscularly) by a healthcare professional.',
+      },
+      {
+        question: 'Can patients with penicillin allergy receive CEFIMELT-S 1.5?',
+        answer: 'Use with extreme caution. Cross-sensitivity can occur between penicillins and cephalosporins. Inform your doctor of any allergies before administration.',
+      },
+    ],
   },
   {
     name: 'CLARYMONT-L',
@@ -540,6 +565,31 @@ export const products: Product[] = [
       'Continue asthma medications as prescribed',
       'Consult doctor if symptoms worsen',
       'Keep out of reach of children',
+    ],
+
+    avgRating: 4.7,
+    reviewCount: 215,
+    medicalCategory: 'Cough & Cold',
+    authorName: 'Dr. Mahesh Gupta, Pulmonologist',
+    publicationDate: '2024-05-10',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is CLARYMONT-L used for?',
+        answer: 'CLARYMONT-L combines Montelukast and Levocetirizine to treat symptoms of allergic rhinitis, such as sneezing, runny nose, watery eyes, and nasal congestion, as well as chronic skin allergy (hives).',
+      },
+      {
+        question: "How does CLARYMONT-L help with How does CLARYMONT-L work?",
+        answer: 'Levocetirizine blocks histamine (a chemical that triggers allergic reactions), while Montelukast blocks leukotriene (a chemical that causes inflammation in the airways), providing comprehensive allergy relief.',
+      },
+      {
+        question: 'When is the best time to take CLARYMONT-L?',
+        answer: 'It is typically taken once daily, preferably in the evening, with or without food.',
+      },
+      {
+        question: "How does CLARYMONT-L help with Does CLARYMONT-L cause drowsiness?",
+        answer: 'Yes, Levocetirizine can cause mild drowsiness in some patients. Avoid driving or operating machinery until you know how the medication affects you.',
+      },
     ],
   },
   {
@@ -610,21 +660,21 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 245,
-    medicalCategory: 'Antitussive',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Priya Menon, Pulmonologist',
     publicationDate: '2024-03-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'How frequently?',
+        question: "How frequently should COFIRAP be taken?",
         answer: 'Every 6-8 hours, max 4 doses daily',
       },
       {
-        question: 'For children?',
+        question: "Is COFIRAP safe and suitable for children?",
         answer: 'Recommended for 6+ years under supervision',
       },
-      { question: 'Timeline?', answer: 'Relief in 2-3 hours' },
-      { question: 'Drowsiness?', answer: 'Possible - avoid driving' },
+      { question: "How quickly does COFIRAP start showing results?", answer: 'Relief in 2-3 hours' },
+      { question: "Does taking COFIRAP cause drowsiness or sleepiness?", answer: 'Possible - avoid driving' },
     ],
   },
   {
@@ -693,25 +743,25 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Antitussive',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Arjun Patel, Respiratory Specialist',
     publicationDate: '2024-01-22',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'What does D mean?',
+        question: "What does the D component represent in COFIRAP-D?",
         answer: 'Denotes decongestant component addition',
       },
       {
-        question: 'Difference from regular?',
+        question: "How does COFIRAP-D differ from the standard version?",
         answer: 'D version adds nasal decongestant',
       },
       {
-        question: 'For dry cough?',
+        question: "Is COFIRAP-D formulated specifically for a dry cough?",
         answer: 'Effective for dry coughs with congestion',
       },
       {
-        question: 'BP medication interaction?',
+        question: "Are there any known drug interactions when taking COFIRAP-D?",
         answer: 'Consult doctor if on BP meds',
       },
     ],
@@ -787,15 +837,15 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 167,
-    medicalCategory: 'Antitussive',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Vikram Singh, Chest Physician',
     publicationDate: '2024-04-05',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'LS meaning?', answer: 'Long Suspension formulation' },
-      { question: 'Duration?', answer: '8-12 hours per dose' },
-      { question: 'Overnight use?', answer: 'Yes, good for bedtime' },
-      { question: 'With water?', answer: 'Take with full glass, do not crush' },
+      { question: "What does the LS formulation in COFIRAP-LS stand for?", answer: 'Long Suspension formulation' },
+      { question: "How does COFIRAP-LS help with Duration?", answer: '8-12 hours per dose' },
+      { question: "Is it safe to use COFIRAP-LS overnight or during sleep?", answer: 'Yes, good for bedtime' },
+      { question: "Should COFIRAP-LS be taken with a full glass of water?", answer: 'Take with full glass, do not crush' },
     ],
   },
   {
@@ -868,19 +918,19 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 312,
-    medicalCategory: 'Vitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Neha Gupta, Nutritionist',
     publicationDate: '2024-05-12',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Who should take?',
+        question: "Who is the primary target group who should take D3NOW?",
         answer: 'Limited sun exposure, dietary restrictions, 50+ years',
       },
-      { question: 'Daily dose?', answer: '1 tablet daily or as prescribed' },
-      { question: 'Best time?', answer: 'With meals containing healthy fats' },
+      { question: "What is the standard recommended daily dose of D3NOW?", answer: '1 tablet daily or as prescribed' },
+      { question: "What is the best time of day for taking D3NOW?", answer: 'With meals containing healthy fats' },
       {
-        question: 'Interact with supplements?',
+        question: "Are there any known drug interactions when taking D3NOW?",
         answer: 'Consult if taking calcium or other meds',
       },
     ],
@@ -949,22 +999,22 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 276,
-    medicalCategory: 'Vitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Arun Desai, Metabolic Specialist',
     publicationDate: '2024-06-18',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Nano vs regular?',
+        question: "What is the advantage of D3NOW NANO nano-formulation over standard versions?",
         answer: 'Better bioavailability, faster absorption',
       },
-      { question: 'Safety?', answer: 'Better absorption at lower doses' },
+      { question: "What is the general safety profile of D3NOW NANO?", answer: 'Better absorption at lower doses' },
       {
-        question: 'Effect timeline?',
+        question: "How quickly does D3NOW NANO start showing results?",
         answer: '2-4 weeks for noticeable improvement',
       },
       {
-        question: 'For children?',
+        question: "Is D3NOW NANO safe and suitable for children?",
         answer: 'Yes, at reduced dosage with pediatrician guidance',
       },
     ],
@@ -1040,18 +1090,27 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 189,
-    medicalCategory: 'Anti-inflammatory',
-    authorName: 'Dr. Sanjay Joshi, Rheumatologist',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Sanjay Joshi, Sports Medicine Specialist',
     publicationDate: '2024-02-28',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'How fast relief?',
-        answer: '30-60 mins, max effect in 2-3 days',
+        question: "What is DECARAP 50 used for?",
+        answer: "DECARAP 50 is Nandrolone Decanoate injection, used to treat muscle wasting, severe protein deficiency, and anemia associated with renal failure.",
       },
-      { question: 'With food?', answer: 'Always take with food or milk' },
-      { question: 'Chronic use?', answer: 'Safe for chronic with monitoring' },
-      { question: 'Dietary limits?', answer: 'Avoid alcohol and spicy foods' },
+      {
+        question: "How is DECARAP 50 administered?",
+        answer: "It is administered strictly as an intramuscular injection (IM) by a healthcare professional.",
+      },
+      {
+        question: "How does DECARAP 50 help with Is it safe for women?",
+        answer: "Nandrolone can cause virilization symptoms in women. It should only be used in females under strict medical supervision when therapeutic benefits outweigh risks.",
+      },
+      {
+        question: "How often is DECARAP 50 given?",
+        answer: "The dosing frequency depends on the clinical condition, typically administered once every 1 to 4 weeks.",
+      },
     ],
   },
   {
@@ -1126,18 +1185,27 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 145,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Meera Kapoor, Dermatologist',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Meera Kapoor, Rheumatologist',
     publicationDate: '2024-03-14',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Duration?', answer: 'Complete full course (2-4 weeks)' },
       {
-        question: 'Body parts?',
-        answer: 'Apply to affected areas as directed',
+        question: 'What is DEFZORAP-6 used for?',
+        answer: 'DEFZORAP-6 contains Deflazacort, a corticosteroid used to treat various inflammatory conditions, autoimmune diseases, and Duchenne muscular dystrophy.',
       },
-      { question: 'Precautions?', answer: 'Keep clean/dry, separate towels' },
-      { question: 'Timeline?', answer: '5-7 days initial, 2-4 weeks full' },
+      {
+        question: 'How does Deflazacort compare to Prednisolone?',
+        answer: 'Deflazacort generally has fewer bone and carbohydrate metabolism side effects compared to prednisolone, making it a safer option for long-term use.',
+      },
+      {
+        question: 'Can I stop taking DEFZORAP-6 suddenly?',
+        answer: 'No, you should never stop taking corticosteroids suddenly. The dosage must be tapered off gradually under your doctor\'s supervision to avoid withdrawal symptoms.',
+      },
+      {
+        question: 'Should I take DEFZORAP-6 with food?',
+        answer: 'Yes, it is recommended to take it with or immediately after food to prevent stomach upset.',
+      },
     ],
   },
   {
@@ -1207,18 +1275,18 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 156,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Rakesh Verma, Gastroenterologist',
     publicationDate: '2024-04-20',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'How it helps?',
+        question: "How does DOMERAP-R work to relieve my symptoms?",
         answer: 'Enhances gastric motility for relief',
       },
-      { question: 'When to take?', answer: '30 mins before meals' },
-      { question: 'Daily use safe?', answer: 'Yes, under medical supervision' },
-      { question: 'Drug interactions?', answer: 'Consult pharmacist/doctor' },
+      { question: "What is the best time of day for taking DOMERAP-R?", answer: '30 mins before meals' },
+      { question: "Is it safe to take DOMERAP-R daily or for a long-term duration?", answer: 'Yes, under medical supervision' },
+      { question: "Are there any known drug interactions when taking DOMERAP-R?", answer: 'Consult pharmacist/doctor' },
     ],
   },
   {
@@ -1289,21 +1357,21 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 201,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Anjali Singh,GI Specialist',
     publicationDate: '2024-01-30',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'SR meaning?',
+        question: "How does DOMPANT-SR help with SR meaning?",
         answer: 'Sustained release for extended effect',
       },
-      { question: 'Duration?', answer: '8-12 hours per dose' },
+      { question: "How does DOMPANT-SR help with Duration?", answer: '8-12 hours per dose' },
       {
-        question: 'Pregnancy nausea?',
+        question: "Is DOMPANT-SR safe to use for managing symptoms during pregnancy?",
         answer: 'Check with obstetrician first',
       },
-      { question: 'Crush/split?', answer: 'Never - damages mechanism' },
+      { question: "Can I crush, split, or chew DOMPANT-SR tablets?", answer: 'Never - damages mechanism' },
     ],
   },
   {
@@ -1374,20 +1442,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 223,
-    medicalCategory: 'Antispasmodic',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Harpreet Kaur, Gastroenterologist',
     publicationDate: '2024-05-08',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'How it works?',
-        answer: 'Reduces smooth muscle contractions',
+        question: 'What is ESMORIZE-D used for?',
+        answer: 'ESMORIZE-D is used to treat Gastroesophageal Reflux Disease (GERD), acid acidity, heartburn, and associated nausea or vomiting.',
       },
-      { question: 'Relief time?', answer: '20-30 minutes' },
-      { question: 'For IBS?', answer: 'Commonly prescribed for IBS' },
       {
-        question: 'Diet changes?',
-        answer: 'Increase fiber gradually, stay hydrated',
+        question: 'When should I take ESMORIZE-D?',
+        answer: 'It is best taken 30 to 45 minutes before your first meal (breakfast) in the morning on an empty stomach.',
+      },
+      {
+        question: 'Can I crush or chew the capsule?',
+        answer: 'No, the capsule should be swallowed whole with water. Crushing or chewing it will damage the enteric coating of the medicine.',
+      },
+      {
+        question: 'Is it safe to take ESMORIZE-D long-term?',
+        answer: 'Long-term use should only be done under medical supervision, as it may affect magnesium or calcium absorption.',
       },
     ],
   },
@@ -1460,19 +1534,29 @@ export const products: Product[] = [
       'Regular neurological check-ups required',
       'Take 30 minutes before first meal of the day',
     ],
+
     avgRating: 4.6,
     reviewCount: 187,
-    medicalCategory: 'Antispasmodic',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Pooja Malhotra, Digestive Health Specialist',
     publicationDate: '2024-02-12',
     updatedDate: '2026-06-11',
     faqItems: [
-      { question: 'LSR formulation?', answer: 'Long-acting sustained release' },
-      { question: 'Frequency?', answer: 'Once daily before food' },
-      { question: 'With other IBS meds?', answer: 'Get doctor approval first' },
       {
-        question: 'Chronic use?',
-        answer: 'Designed for short to medium-term use under supervision',
+        question: "How does ESMORIZE-LSR help with What is ESMORIZE-LSR?",
+        answer: 'ESMORIZE-LSR combines Esomeprazole (acid reducer) with Levosulpiride (prokinetic) to treat severe GERD, gastroparesis, and functional dyspepsia.',
+      },
+      {
+        question: 'When is the best time to take it?',
+        answer: 'It should be taken on an empty stomach, typically 30 minutes before breakfast.',
+      },
+      {
+        question: 'Does ESMORIZE-LSR help with bloating?',
+        answer: 'Yes, Levosulpiride enhances upper digestive tract motility, which helps relieve bloating, fullness, and early satiety.',
+      },
+      {
+        question: 'Are there any neurological precautions?',
+        answer: 'Yes, because Levosulpiride acts on dopamine receptors, it should be used with caution and under medical supervision.',
       },
     ],
   },
@@ -1549,18 +1633,27 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 172,
-    medicalCategory: 'Antitussive',
-    authorName: 'Dr. Mahesh Gupta, Pulmonary Specialist',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Mahesh Gupta, Orthopedic Surgeon',
     publicationDate: '2024-06-01',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'TH meaning?', answer: 'Throat Health formulation' },
-      { question: 'Difference?', answer: 'Includes throat-soothing agents' },
       {
-        question: 'Sore throat?',
-        answer: 'Yes, addresses both cough and soreness',
+        question: 'What is ETOBRAN-TH used for?',
+        answer: 'ETOBRAN-TH is used to relieve acute pain, muscle spasms, and inflammation associated with musculoskeletal disorders, osteoarthritis, and back pain.',
       },
-      { question: 'Dosing?', answer: '1 tablet every 6-8 hours, max 4 daily' },
+      {
+        question: "How does ETOBRAN-TH help with How does ETOBRAN-TH work?",
+        answer: 'It combines Etoricoxib (an anti-inflammatory painkiller) and Thiocolchicoside (a muscle relaxant that acts on the central nervous system) for dual-action relief.',
+      },
+      {
+        question: 'Is ETOBRAN-TH safe for heart patients?',
+        answer: 'No, Etoricoxib is a COX-2 inhibitor and is contraindicated in patients with active heart disease or uncontrolled hypertension.',
+      },
+      {
+        question: "Does taking ETOBRAN-TH cause drowsiness or sleepiness?",
+        answer: 'Yes, Thiocolchicoside can cause mild drowsiness or dizziness. Avoid driving or operating machinery if you feel dizzy.',
+      },
     ],
   },
   {
@@ -1633,22 +1726,22 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 289,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Vijay Chopra, GI Surgeon',
     publicationDate: '2024-03-25',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Why IV?',
+        question: "Why is GASTRONEX-IV administered via intravenous injection in a hospital setting?",
         answer: 'For severe conditions requiring rapid treatment',
       },
-      { question: 'How fast?', answer: 'Relief within minutes via IV' },
+      { question: "How quickly does GASTRONEX-IV start showing results?", answer: 'Relief within minutes via IV' },
       {
-        question: 'When used?',
+        question: "What is the best time of day for taking GASTRONEX-IV?",
         answer: 'Severe gastritis, peptic ulcers unresponsive to oral',
       },
       {
-        question: 'After IV?',
+        question: "What care should be taken after receiving a GASTRONEX-IV injection?",
         answer: 'Follow with oral meds and diet changes',
       },
     ],
@@ -1721,25 +1814,25 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 214,
-    medicalCategory: 'Herbal Supplement',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Suresh Nair, Ayurvedic Practitioner',
     publicationDate: '2024-04-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: '9G meaning?',
+        question: "What does the 9G formulation in GINSORAP 9G represent?",
         answer: '9 grams of standardized Ginseng extract per serving',
       },
       {
-        question: 'Duration needed?',
+        question: "Is it safe to take GINSORAP 9G daily or for a long-term duration?",
         answer: 'Take consistently 4-8 weeks for effect',
       },
       {
-        question: 'Drug interactions?',
+        question: "Are there any known drug interactions when taking GINSORAP 9G?",
         answer: 'May interact with blood thinners and diabetes meds',
       },
       {
-        question: 'Who avoids?',
+        question: "Which patient groups should avoid taking GINSORAP 9G?",
         answer: 'Pregnant women, high BP patients, ginseng sensitive',
       },
     ],
@@ -1812,22 +1905,22 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Multivitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Lalita Sharma, Nutritional Biochemist',
     publicationDate: '2024-05-20',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'A-Z meaning?',
+        question: "What does the A-Z designation in GINSORAP A-Z indicate?",
         answer: 'Complete formula with vitamins A through Zinc',
       },
       {
-        question: 'Daily use?',
+        question: "Is it safe to take GINSORAP A-Z daily or for a long-term duration?",
         answer: 'Yes, formulated for daily supplementation',
       },
-      { question: 'Best time?', answer: 'With breakfast or main meal' },
+      { question: "What is the best time of day for taking GINSORAP A-Z?", answer: 'With breakfast or main meal' },
       {
-        question: 'Children?',
+        question: "Is GINSORAP A-Z safe and suitable for children?",
         answer: 'Adult dose for 12+, pediatric for younger',
       },
     ],
@@ -1906,19 +1999,19 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'With meals?',
+        question: "Should GLYNORAP-M1 be taken with meals or on an empty stomach?",
         answer: 'Take with or immediately after meals',
       },
       {
-        question: 'Hypoglycemia signs?',
+        question: "What are the signs of low blood sugar to monitor while taking GLYNORAP-M1?",
         answer: 'Trembling, sweating, dizziness, confusion',
       },
       {
-        question: 'Combine meds?',
+        question: "Can I combine GLYNORAP-M1 with other diabetes medications?",
         answer: 'May combine with others, doctor decides',
       },
       {
-        question: 'Monitor frequency?',
+        question: "How frequently should I monitor my health levels while on GLYNORAP-M1?",
         answer: 'Check as advised, typically 2-4 times weekly',
       },
     ],
@@ -2000,19 +2093,19 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'vs M1?',
+        question: "What is the difference between GLYNORAP-M2 and the M1 formulation?",
         answer: 'M2 is higher strength for greater control',
       },
       {
-        question: 'Lifestyle changes?',
+        question: "What lifestyle or dietary changes support treatment with GLYNORAP-M2?",
         answer: 'Exercise, diet, weight management, stress reduction',
       },
       {
-        question: 'Foods avoid?',
+        question: "Are there specific foods I should avoid while taking GLYNORAP-M2?",
         answer: 'Refined sugars, processed foods, high-fat meals',
       },
       {
-        question: 'Timeline for improvement?',
+        question: "How does GLYNORAP-M2 help with Timeline for improvement?",
         answer: '1-2 weeks fasting, 2-3 months HbA1c',
       },
     ],
@@ -2083,25 +2176,25 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 312,
-    medicalCategory: 'Hepatoprotective',
+    medicalCategory: 'Gastrointestinal',
     authorName: 'Dr. Anil Gupta, Hepatologist',
     publicationDate: '2024-06-05',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Use for liver health?',
+        question: "How does LIVERGLOW support liver health and recovery?",
         answer: 'Protects and supports liver function',
       },
       {
-        question: 'With alcohol history?',
+        question: "Is LIVERGLOW safe for individuals with a history of alcohol use?",
         answer: 'Especially beneficial for past alcohol users',
       },
       {
-        question: 'Duration needed?',
+        question: "Is it safe to take LIVERGLOW daily or for a long-term duration?",
         answer: '3-6 months minimum for best results',
       },
       {
-        question: 'Liver tests?',
+        question: "Are regular liver function tests required during LIVERGLOW treatment?",
         answer: 'Get baseline and repeat after 1-2 months',
       },
     ],
@@ -2165,24 +2258,24 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 178,
-    medicalCategory: 'Antacid',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Sharma, Gastroenterologist',
     publicationDate: '2024-03-01',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Magnesium role?',
+        question: "How does MAGZORAP help with Magnesium role?",
         answer: 'Neutralizes acid and aids digestion',
       },
       {
-        question: 'Constipation risk?',
+        question: "Does taking MAGZORAP increase the risk of constipation?",
         answer: 'Not with MAGZORAP, balances bowel',
       },
       {
-        question: 'When take?',
+        question: "What is the best time of day for taking MAGZORAP?",
         answer: 'After meals or as directed by doctor',
       },
-      { question: 'Long-term use?', answer: 'Safe for functional dyspepsia' },
+      { question: "Is it safe to take MAGZORAP daily or for a long-term duration?", answer: 'Safe for functional dyspepsia' },
     ],
   },
   {
@@ -2256,22 +2349,22 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 156,
-    medicalCategory: 'Analgesic',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Ramesh Patel, Pediatrician',
     publicationDate: '2024-02-08',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Pediatric dosing?',
+        question: "How does MEFAPED-125 help with Pediatric dosing?",
         answer: 'Based on weight, typically 10-15mg/kg',
       },
       {
-        question: 'Fever duration?',
+        question: "Is MEFAPED-125 effective in reducing high body temperature during fevers?",
         answer: 'Effect lasts 4-6 hours per dose',
       },
-      { question: 'With food?', answer: 'Can take with or without meals' },
+      { question: "How does MEFAPED-125 help with With food?", answer: 'Can take with or without meals' },
       {
-        question: 'Teething relief?',
+        question: "Can MEFAPED-125 be used to provide teething pain relief in infants?",
         answer: 'Commonly used for infants teething',
       },
     ],
@@ -2337,25 +2430,25 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 213,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Anita Verma, Orthopedic Surgeon',
     publicationDate: '2024-04-12',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'P component?',
+        question: "What is the role of the Paracetamol (P) component in NIMRAP-P?",
         answer: 'Paracetamol addition for enhanced pain relief',
       },
       {
-        question: 'Muscle pain?',
+        question: "How effective is NIMRAP-P in treating acute muscle pain?",
         answer: 'Effective for muscle and back pain',
       },
       {
-        question: 'With other pain meds?',
+        question: "Can I take NIMRAP-P together with other painkillers?",
         answer: 'Consult doctor before combining',
       },
       {
-        question: 'Duration use?',
+        question: "What is the maximum recommended duration of use for NIMRAP-P?",
         answer: 'Safe for short-term, monitor long-term use',
       },
     ],
@@ -2428,25 +2521,25 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 234,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Vikram Desai, Infectious Disease Specialist',
     publicationDate: '2024-05-15',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'TZ component?',
+        question: "How does PIPZORAP-TZ help with TZ component?",
         answer: 'Tazobactam enhances antibiotic potency',
       },
       {
-        question: 'Broad spectrum?',
+        question: "Does PIPZORAP-TZ provide broad-spectrum coverage against bacterial infections?",
         answer: 'Effective against resistant bacteria',
       },
       {
-        question: 'IV requirement?',
+        question: "Why is PIPZORAP-TZ administered via intravenous injection in a hospital setting?",
         answer: 'Suitable for IV and IM administration',
       },
       {
-        question: 'Duration?',
+        question: "How does PIPZORAP-TZ help with Duration?",
         answer: 'Typically 7-14 days based on infection',
       },
     ],
@@ -2519,23 +2612,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 198,
-    medicalCategory: 'Probiotic',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Pooja Rao, Nutritionist',
     publicationDate: '2024-03-20',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'FC meaning?',
-        answer: 'Fermented Cultures with beneficial bacteria',
-      },
-      { question: 'Gut health?', answer: 'Improves digestion and immunity' },
-      {
-        question: 'Daily use safe?',
-        answer: 'Yes, beneficial for daily wellness',
+        question: "How does PRO FC help with What is PRO FC used for?",
+        answer: 'PRO FC is an iron supplement used to treat or prevent iron deficiency anemia, especially during pregnancy, lactation, or blood loss.',
       },
       {
-        question: 'With antibiotics?',
-        answer: 'Take 2 hours apart for optimal benefit',
+        question: 'Does PRO FC cause dark stools?',
+        answer: 'Yes, taking iron supplements commonly causes stools to turn black. This is harmless and normal.',
+      },
+      {
+        question: 'How should I take PRO FC for best results?',
+        answer: 'It is best taken on an empty stomach with water or orange juice (Vitamin C enhances iron absorption). Avoid taking it with tea, coffee, or milk.',
+      },
+      {
+        question: 'Is it safe to take in pregnancy?',
+        answer: 'Yes, iron, folic acid, and zinc are crucial nutrients during pregnancy for fetal development and maternal health.',
       },
     ],
   },
@@ -2605,25 +2701,25 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 167,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Akshay Mehta, Clinical Pharmacist',
     publicationDate: '2024-02-28',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Strength 500?',
+        question: "How does RAPIKACIN-500 help with Strength 500?",
         answer: '500mg strength for systemic infections',
       },
       {
-        question: 'Food effect?',
+        question: "How does RAPIKACIN-500 help with Food effect?",
         answer: 'Take on empty stomach for better absorption',
       },
       {
-        question: 'Side effects common?',
+        question: "What are the most common side effects associated with RAPIKACIN-500?",
         answer: 'GI upset most common, report severe cases',
       },
       {
-        question: 'Complete course?',
+        question: "Why is it critical to complete the full prescribed course of RAPIKACIN-500?",
         answer: 'Finish full course to prevent resistance',
       },
     ],
@@ -2694,22 +2790,22 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 211,
-    medicalCategory: 'Anti-inflammatory',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Neera Singh, Rheumatology Specialist',
     publicationDate: '2024-04-08',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'KT addition?',
+        question: "How does RAPIFLAM-KT help with KT addition?",
         answer: 'Ketoprofen component for stronger effect',
       },
       {
-        question: 'Arthritis pain?',
+        question: "Is RAPIFLAM-KT suitable for managing chronic arthritis pain?",
         answer: 'Effective for joint pain and inflammation',
       },
-      { question: 'With food?', answer: 'Always with food to protect stomach' },
+      { question: "How does RAPIFLAM-KT help with With food?", answer: 'Always with food to protect stomach' },
       {
-        question: 'Driving safety?',
+        question: "Is it safe to drive or operate machinery after taking RAPIFLAM-KT?",
         answer: 'May cause dizziness, avoid until adapted',
       },
     ],
@@ -2781,25 +2877,25 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 176,
-    medicalCategory: 'Analgesic',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Harsh Patel, Pain Management Specialist',
     publicationDate: '2024-03-14',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Fever & pain?',
+        question: "How does RAPIFEVA-P work to relieve acute pain?",
         answer: 'Dual action against both fever and pain',
       },
       {
-        question: 'P component?',
+        question: "What is the role of the Paracetamol (P) component in RAPIFEVA-P?",
         answer: 'Paracetamol 500mg for mild to moderate pain',
       },
       {
-        question: 'Children dosing?',
+        question: "How is the pediatric dose of RAPIFEVA-P calculated?",
         answer: 'Adjust based on age, check with pediatrician',
       },
       {
-        question: 'Max daily dose?',
+        question: "What is the maximum daily dose of RAPIFEVA-P that should not be exceeded?",
         answer: 'Do not exceed 4000mg paracetamol daily',
       },
     ],
@@ -2875,26 +2971,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 189,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Sunita Rao, Dermatologist',
+    medicalCategory: 'Antibiotics',
+    authorName: 'Dr. Sunita Rao, Urologist',
     publicationDate: '2024-05-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Fungal coverage?',
-        answer: 'Covers dermatophytes, Candida, other fungi',
+        question: "What is RAPIFUR used for?",
+        answer: "RAPIFUR is a urinary tract antibiotic containing Nitrofurantoin, specifically used to treat and prevent acute uncomplicated UTIs and cystitis.",
       },
       {
-        question: 'Nail infections?',
-        answer: 'Effective for fungal nail infections',
+        question: "Does RAPIFUR change urine color?",
+        answer: "Yes, Nitrofurantoin commonly causes the urine to turn dark yellow or brown. This is harmless and temporary.",
       },
       {
-        question: 'Pregnancy safe?',
-        answer: 'Check with doctor before use in pregnancy',
+        question: "How should RAPIFUR be taken?",
+        answer: "It should be taken with food or milk to enhance absorption and reduce stomach upset.",
       },
       {
-        question: 'Complete therapy?',
-        answer: '3-6 months typical for nail infections',
+        question: "Why is it a Sustained Release (SR) tablet?",
+        answer: "The SR formulation allows slow release of the drug, enabling convenient twice-daily dosing instead of four times daily.",
       },
     ],
   },
@@ -2969,19 +3065,19 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 202,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Amar Kumar, Orthopedist',
     publicationDate: '2024-02-20',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'D component?', answer: 'Diclofenac for potent pain relief' },
+      { question: "What does the D component represent in RAPINAK-D?", answer: 'Diclofenac for potent pain relief' },
       {
-        question: 'Back pain relief?',
+        question: "Is RAPINAK-D effective for relieving severe lower back pain?",
         answer: 'Commonly used for back and joint pain',
       },
-      { question: 'With PPI?', answer: 'Take with gastroprotection if needed' },
+      { question: "Should RAPINAK-D be taken alongside a PPI to protect the stomach?", answer: 'Take with gastroprotection if needed' },
       {
-        question: 'Duration?',
+        question: "How does RAPINAK-D help with Duration?",
         answer: 'Short-term for acute pain, monitored for chronic',
       },
     ],
@@ -3046,24 +3142,24 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 218,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Sonia Verma, Pain Clinic Manager',
     publicationDate: '2024-03-25',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'P addition?',
+        question: "What is the role of the Paracetamol (P) component in RAPINAK-P?",
         answer: 'Paracetamol combination for dual effect',
       },
       {
-        question: 'Headache relief?',
+        question: "Can RAPINAK-P be used for quick relief from severe headaches?",
         answer: 'Fast-acting for migraine and tension headache',
       },
       {
-        question: 'Safety profile?',
+        question: "What is the general safety profile of RAPINAK-P?",
         answer: 'Better tolerability than single agents',
       },
-      { question: 'With NSAIDs?', answer: 'Do not combine with other NSAIDs' },
+      { question: "Can I take RAPINAK-P along with other NSAID medications?", answer: 'Do not combine with other NSAIDs' },
     ],
   },
   {
@@ -3141,25 +3237,25 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 175,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Rajesh Singh, Sports Medicine',
     publicationDate: '2024-04-15',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'SP modification?',
+        question: "What does the SP formulation represent in RAPINAK-SP?",
         answer: 'Super Potent formulation for acute pain',
       },
       {
-        question: 'Sports injuries?',
+        question: "Can RAPINAK-SP be used to manage pain from acute sports injuries?",
         answer: 'Ideal for muscle and ligament injuries',
       },
       {
-        question: 'Swelling reduction?',
+        question: "Does RAPINAK-SP help in reducing localized inflammation and swelling?",
         answer: 'Anti-inflammatory action reduces swelling',
       },
       {
-        question: 'Topical combo?',
+        question: "Can this oral medication be combined with a topical gel like RAPINAK-SP?",
         answer: 'Combine with topical gel for faster relief',
       },
     ],
@@ -3232,25 +3328,25 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 267,
-    medicalCategory: 'Anti-inflammatory',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Merita Gupta, Rheumatology',
     publicationDate: '2024-01-30',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Forte strength?',
+        question: "What does the Forte strength in RAPINFLAM-FORTE represent?",
         answer: 'Maximum strength formulation available',
       },
       {
-        question: 'Chronic arthritis?',
+        question: "Is RAPINFLAM-FORTE suitable for long-term chronic arthritis management?",
         answer: 'Excellent for long-term arthritis management',
       },
       {
-        question: 'With biologics?',
+        question: "Can RAPINFLAM-FORTE be safely combined with biological therapies?",
         answer: 'Can be combined with biologic agents',
       },
       {
-        question: 'Monitoring needed?',
+        question: "How frequently should I monitor my health levels while on RAPINFLAM-FORTE?",
         answer: 'Monthly liver and kidney function tests',
       },
     ],
@@ -3328,16 +3424,16 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Heart condition treatment?',
+        question: "How does RAPINOVA help with Heart condition treatment?",
         answer: 'Supports cardiovascular health and function',
       },
-      { question: 'Blood pressure?', answer: 'Helps maintain normal BP range' },
+      { question: "Does taking RAPINOVA cause changes in my blood pressure?", answer: 'Helps maintain normal BP range' },
       {
-        question: 'Medication interaction?',
+        question: "Are there any known drug interactions when taking RAPINOVA?",
         answer: 'Inform doctor of all cardiac medications',
       },
       {
-        question: 'Consistency important?',
+        question: "How does RAPINOVA help with Consistency important?",
         answer: 'Take regularly for sustained benefit',
       },
     ],
@@ -3409,23 +3505,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 191,
-    medicalCategory: 'Anti-inflammatory',
-    authorName: 'Dr. Anita Nair, Podiatrist',
+    medicalCategory: 'Antibiotics',
+    authorName: 'Dr. Anita Nair, Infectious Disease Specialist',
     publicationDate: '2024-03-30',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: '200mg strength?', answer: 'Used for moderate inflammation' },
       {
-        question: 'Foot conditions?',
-        answer: 'Podiatrist recommended for feet/ankle pain',
+        question: 'What is RAPIPOD-200 used for?',
+        answer: 'RAPIPOD-200 is an antibiotic used to treat bacterial infections of the lungs (pneumonia), throat (pharyngitis/tonsillitis), skin, and urinary tract.',
       },
       {
-        question: 'Swelling relief?',
-        answer: 'Reduces inflammation and swelling',
+        question: 'Is RAPIPOD-200 effective against viral infections?',
+        answer: 'No, RAPIPOD-200 is an antibacterial agent and is not effective against viral infections like the common cold or flu.',
       },
       {
-        question: 'With physical therapy?',
-        answer: 'Combine with PT for best results',
+        question: 'What should I do if I miss a dose of RAPIPOD-200?',
+        answer: 'Take the missed dose as soon as you remember, unless it is close to your next dose. Do not double the dose to catch up.',
+      },
+      {
+        question: 'Can patients with penicillin allergy take RAPIPOD-200?',
+        answer: 'Use with caution. There is a small risk of cross-sensitivity between penicillin and cephalosporin antibiotics. Consult your doctor first.',
       },
     ],
   },
@@ -3505,16 +3604,16 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: '40mg dosage?',
+        question: "How does RAPISART-40 help with 40mg dosage?",
         answer: 'Standard starting dose for hypertension',
       },
-      { question: 'How it works?', answer: 'ARB that relaxes blood vessels' },
+      { question: "How does RAPISART-40 work to relieve my symptoms?", answer: 'ARB that relaxes blood vessels' },
       {
-        question: 'Monitoring needed?',
+        question: "How frequently should I monitor my health levels while on RAPISART-40?",
         answer: 'Periodic BP checks and kidney function tests',
       },
       {
-        question: 'Daily adherence?',
+        question: "Why is strict daily adherence critical when taking RAPISART-40?",
         answer: 'Critical for BP control consistency',
       },
     ],
@@ -3594,16 +3693,16 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'AM combination?',
+        question: "How does RAPISART-AM help with AM combination?",
         answer: 'Combination therapy in single tablet',
       },
       {
-        question: 'Better compliance?',
+        question: "How does the combination tablet format of RAPISART-AM support better compliance?",
         answer: 'Single tablet simplifies once-daily dosing',
       },
-      { question: 'Components?', answer: 'ARB plus thiazide diuretic' },
+      { question: "What are the individual active components of RAPISART-AM?", answer: 'ARB plus thiazide diuretic' },
       {
-        question: 'Starting treatment?',
+        question: "What precautions should I take when starting treatment with RAPISART-AM?",
         answer: 'Often used for initial BP management',
       },
     ],
@@ -3682,19 +3781,19 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'H component?',
+        question: "What is the role of the Hydrochlorothiazide (H) component in RAPISART-H?",
         answer: 'Hydrochlorothiazide diuretic addition',
       },
       {
-        question: 'Triple therapy?',
+        question: "When is triple therapy with RAPISART-H recommended over single agents?",
         answer: 'Often third component in BP management',
       },
       {
-        question: 'Hypokalemia risk?',
+        question: "Does taking RAPISART-H increase the risk of low potassium (hypokalemia)?",
         answer: 'Monitor electrolytes regularly',
       },
       {
-        question: 'Diabetes patients?',
+        question: "Are there any specific blood sugar precautions for diabetic patients taking RAPISART-H?",
         answer: 'Needs careful monitoring of glucose',
       },
     ],
@@ -3765,23 +3864,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 179,
-    medicalCategory: 'Antidiabetic',
-    authorName: 'Dr. Harish Kumar, Endocrinologist',
+    medicalCategory: 'Urology',
+    authorName: 'Dr. Harish Kumar, Urologist',
     publicationDate: '2024-02-14',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'D component?', answer: 'Dual agents for Type 2 diabetes' },
       {
-        question: 'Combination benefit?',
-        answer: 'Two mechanisms for better glucose control',
+        question: 'What is RAPISULAN-D used for?',
+        answer: 'RAPISULAN-D is used to treat Benign Prostatic Hyperplasia (BPH) or enlarged prostate in men, improving urine flow and reducing hesitancy.',
       },
       {
-        question: 'Side effect profile?',
-        answer: 'Generally well-tolerated combination',
+        question: "How does RAPISULAN-D help with How does RAPISULAN-D work?",
+        answer: 'It combines Tamsulosin (which relaxes the bladder neck and prostate muscles to ease urination) and Dutasteride (which shrinks the prostate gland over time by blocking hormone conversion).',
       },
       {
-        question: 'Regular monitoring?',
-        answer: 'HbA1c checks every 3 months',
+        question: 'How long does it take for RAPISULAN-D to show results?',
+        answer: 'Tamsulosin starts working within days to improve urine flow, but Dutasteride may take 3 to 6 months to significantly shrink the prostate and show full clinical benefits.',
+      },
+      {
+        question: 'Can women or children take RAPISULAN-D?',
+        answer: 'No, RAPISULAN-D is strictly for men. Pregnant women should not even handle the capsules as Dutasteride can be absorbed through the skin and cause birth defects in male fetuses.',
       },
     ],
   },
@@ -3862,24 +3964,24 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 231,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Sanjay Mehta, Infectious Disease',
     publicationDate: '2024-04-18',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'CV component?',
+        question: "How does RAPMOX-CV help with CV component?",
         answer: 'Clavulanic acid beta-lactamase inhibitor',
       },
       {
-        question: 'Resistant bacteria?',
+        question: "How does RAPMOX-CV help with Resistant bacteria?",
         answer: 'Overcomes amoxicillin resistance',
       },
       {
-        question: 'Broad coverage?',
+        question: "How does RAPMOX-CV help with Broad coverage?",
         answer: 'Covers resistant gram-positive and negative',
       },
-      { question: 'Food effect?', answer: 'Take with food to minimize nausea' },
+      { question: "How does RAPMOX-CV help with Food effect?", answer: 'Take with food to minimize nausea' },
     ],
   },
   {
@@ -3947,19 +4049,19 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 163,
-    medicalCategory: 'Antivertigo',
+    medicalCategory: 'Vertigo',
     authorName: 'Dr. Arun Sinha, ENT Specialist',
     publicationDate: '2024-01-25',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Vertigo treatment?',
+        question: "How does RAPVERT 16 help with Vertigo treatment?",
         answer: 'Effective for dizziness and vertigo',
       },
-      { question: '16mg strength?', answer: 'Standard dose for acute vertigo' },
-      { question: 'Nausea relief?', answer: 'Also relieves associated nausea' },
+      { question: "Under what conditions is the 16mg strength of RAPVERT 16 prescribed?", answer: 'Standard dose for acute vertigo' },
+      { question: "How does RAPVERT 16 help with Nausea relief?", answer: 'Also relieves associated nausea' },
       {
-        question: 'Driving effects?',
+        question: "Are there any restrictions on driving while taking RAPVERT 16?",
         answer: 'May cause drowsiness, avoid driving initially',
       },
     ],
@@ -4042,18 +4144,18 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Sitagliptin role?',
+        question: "How does SITARAP-D help with Sitagliptin role?",
         answer: 'DPP-4 inhibitor for Type 2 diabetes',
       },
       {
-        question: 'D combination?',
+        question: "How does SITARAP-D help with D combination?",
         answer: 'Often combined with other agents',
       },
       {
-        question: 'Hypoglycemia risk?',
+        question: "Does taking SITARAP-D increase my risk of hypoglycemia (low blood sugar)?",
         answer: 'Lower risk compared to insulin',
       },
-      { question: 'Dosing schedule?', answer: 'Usually once or twice daily' },
+      { question: "What is the recommended daily dosing schedule for SITARAP-D?", answer: 'Usually once or twice daily' },
     ],
   },
   {
@@ -4134,13 +4236,13 @@ export const products: Product[] = [
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'M500 combination?',
+        question: "How does SITARAP-M500 help with M500 combination?",
         answer: 'Sitagliptin + Metformin 500mg',
       },
-      { question: 'Dual mechanism?', answer: 'Two routes to glucose control' },
-      { question: 'Weight effect?', answer: 'Usually weight neutral or loss' },
+      { question: "How does the dual mechanism of SITARAP-M500 help in glucose control?", answer: 'Two routes to glucose control' },
+      { question: "Does taking SITARAP-M500 have any effect on body weight?", answer: 'Usually weight neutral or loss' },
       {
-        question: 'Kidney function?',
+        question: "How does SITARAP-M500 help with Kidney function?",
         answer: 'Monitor creatinine clearance regularly',
       },
     ],
@@ -4215,23 +4317,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 172,
-    medicalCategory: 'Topical Analgesic',
-    authorName: 'Dr. Isha Gupta, Dermatologist',
+    medicalCategory: 'Ophthalmic',
+    authorName: 'Dr. Isha Gupta, Ophthalmologist',
     publicationDate: '2024-02-18',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Topical application?',
-        answer: 'Apply directly to affected area',
-      },
-      { question: 'Gel advantage?', answer: 'Non-greasy, absorbs quickly' },
-      {
-        question: 'Joint pain relief?',
-        answer: 'Effective for knee, shoulder, elbow',
+        question: 'What is VISQURA GEL used for?',
+        answer: 'VISQURA GEL is an ophthalmic lubricant gel used to relieve dry eyes, burning, irritation, and discomfort caused by wind, sun, or computer screens.',
       },
       {
-        question: 'Frequency?',
-        answer: 'Apply 2-3 times daily or as directed',
+        question: 'How do I apply VISQURA GEL?',
+        answer: 'Instill 1 or 2 drops in the affected eye(s) as needed. Wash your hands before applying, and avoid touching the dropper tip to any surface.',
+      },
+      {
+        question: 'Can I use VISQURA GEL while wearing contact lenses?',
+        answer: 'No, you should remove contact lenses before applying VISQURA GEL. Wait at least 15 minutes after instillation before putting your contact lenses back in.',
+      },
+      {
+        question: 'Does it cause temporary blurred vision?',
+        answer: 'Yes, due to its gel-like viscosity, it can cause brief blurring of vision. Wait for your vision to clear before driving or operating machinery.',
       },
     ],
   },
@@ -4304,19 +4409,19 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 289,
-    medicalCategory: 'Multivitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Neeta Agarwal, Nutritionist',
     publicationDate: '2024-05-22',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Boron content?',
+        question: "How does VITABORON help with Boron content?",
         answer: 'Trace mineral for bone and joint health',
       },
-      { question: 'Bone strength?', answer: 'Supports calcium absorption' },
-      { question: 'Men vs women?', answer: 'Beneficial for both sexes' },
+      { question: "How does VITABORON support bone strength and joint health?", answer: 'Supports calcium absorption' },
+      { question: "Are there different dosing recommendations for men versus women taking VITABORON?", answer: 'Beneficial for both sexes' },
       {
-        question: 'Long-term use?',
+        question: "Is it safe to take VITABORON daily or for a long-term duration?",
         answer: 'Safe for ongoing supplementation',
       },
     ],
@@ -4391,24 +4496,24 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 256,
-    medicalCategory: 'Multivitamin',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Rakesh Nair, Orthopedic Nutritionist',
     publicationDate: '2024-06-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Plus formulation?',
+        question: "How does VITABORON-PLUS help with Plus formulation?",
         answer: 'Enhanced with additional bone-supportive nutrients',
       },
       {
-        question: 'Osteoporosis prevention?',
+        question: "How does VITABORON-PLUS help in the prevention of osteoporosis?",
         answer: 'Excellent preventive supplement',
       },
       {
-        question: 'Post-menopausal women?',
+        question: "Why is VITABORON-PLUS particularly recommended for post-menopausal women?",
         answer: 'Highly recommended for hormonal changes',
       },
-      { question: 'Recovery aid?', answer: 'Supports post-fracture healing' },
+      { question: "How does VITABORON-PLUS work as an effective recovery aid?", answer: 'Supports post-fracture healing' },
     ],
   },
   {
@@ -4477,26 +4582,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 168,
-    medicalCategory: 'Antimicrobial',
-    authorName: 'Dr. Vikram Verma, Microbiologist',
+    medicalCategory: 'Gastrointestinal',
+    authorName: 'Dr. Vikram Verma, Gastroenterologist',
     publicationDate: '2024-03-05',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Broad spectrum?',
-        answer: 'Covers gram-positive and gram-negative',
+        question: 'What is ZYMELYT used for?',
+        answer: 'ZYMELYT is a digestive enzyme syrup containing fungal diastase and pepsin, used to treat functional dyspepsia, indigestion, bloating, and gas.',
       },
       {
-        question: 'Skin infections?',
-        answer: 'Effective for skin and soft tissue infections',
+        question: 'How does ZYMELYT help in digestion?',
+        answer: 'Fungal diastase helps digest complex carbohydrates into simpler sugars, while pepsin breaks down proteins into peptides, easing the load on your stomach.',
       },
       {
-        question: 'Resistance risk?',
-        answer: 'Use judiciously, complete full course',
+        question: 'When should I take ZYMELYT?',
+        answer: 'It should be taken with or immediately after meals to help digest the food you consume.',
       },
       {
-        question: 'Allergy profile?',
-        answer: 'Consider cross-reactivity if penicillin allergic',
+        question: 'Can I take ZYMELYT daily?',
+        answer: 'Yes, it can be taken daily as recommended by your doctor, particularly if you have chronic indigestion or functional pancreatic enzyme deficiency.',
       },
     ],
   },
@@ -4569,23 +4674,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 184,
-    medicalCategory: 'Antiviral',
-    authorName: 'Dr. Swati Mehta, Virology Specialist',
+    medicalCategory: 'Gastrointestinal',
+    authorName: 'Dr. Swati Mehta, Hepatologist',
     publicationDate: '2024-04-02',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Viral coverage?', answer: 'Effective against HSV and VZV' },
       {
-        question: 'Herpes treatment?',
-        answer: 'First-line for cold sores and genital herpes',
+        question: 'What is ZYLIVIN used for?',
+        answer: 'ZYLIVIN is a liver tonic used to support liver health, treat fatty liver, aid in detoxification, and assist in recovery from hepatitis or liver cirrhosis.',
       },
       {
-        question: 'Timing critical?',
-        answer: 'Start early in infection for best results',
+        question: 'How do Silymarin and L-Ornithine L-Aspartate help?',
+        answer: 'Silymarin protects liver cells from toxins with its antioxidant properties, while L-Ornithine L-Aspartate reduces ammonia levels, preventing hepatic encephalopathy.',
       },
       {
-        question: 'Frequency?',
-        answer: 'Typically 5 times daily for 7-10 days',
+        question: 'Is ZYLIVIN safe during pregnancy?',
+        answer: 'No, ZYLIVIN is not recommended during pregnancy or lactation unless explicitly advised by your doctor.',
+      },
+      {
+        question: 'How should ZYLIVIN be stored?',
+        answer: 'Store in a cool, dry place away from direct sunlight, and keep the bottle tightly closed after use.',
       },
     ],
   },
@@ -4629,21 +4737,21 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 156,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Priya Kapoor, Pediatric Infectious Disease',
     publicationDate: '2024-02-12',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'LB meaning?', answer: 'Lactic Bacillus probiotic addition' },
+      { question: "How does CEFIMELT LB 50 help with LB meaning?", answer: 'Lactic Bacillus probiotic addition' },
       {
-        question: 'Pediatric use?',
+        question: "Is CEFIMELT LB 50 safe and suitable for children?",
         answer: 'Formulated for children lighter weight',
       },
       {
-        question: 'Probiotic benefit?',
+        question: "What probiotic benefits does the Lactic Acid Bacillus in CEFIMELT LB 50 add?",
         answer: 'Reduces antibiotic-associated diarrhea',
       },
-      { question: 'Dosing?', answer: 'Weight-based dosing for children' },
+      { question: "What is the standard recommended daily dose of CEFIMELT LB 50?", answer: 'Weight-based dosing for children' },
     ],
   },
   {
@@ -4686,23 +4794,26 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 171,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Anjali Rao, Mycologist',
+    medicalCategory: 'Antibiotics',
+    authorName: 'Dr. Anjali Rao, Pediatrician',
     publicationDate: '2024-03-18',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'DS component?', answer: 'Double Strength formulation' },
       {
-        question: 'Severe infections?',
-        answer: 'For moderate to severe fungal infections',
+        question: 'What is RAPIPOD DS 50 used for?',
+        answer: 'RAPIPOD DS 50 is a double-strength pediatric antibiotic suspension used to treat bacterial infections like otitis media, tonsillitis, and respiratory tract infections in children.',
       },
       {
-        question: 'Duration?',
-        answer: 'Course length 4-8 weeks depending on severity',
+        question: 'How do I prepare the suspension?',
+        answer: 'Slowly add sterile water (provided) up to the ring mark on the bottle, shake vigorously, and let it stand. Adjust volume if needed. Use within 7-10 days of reconstitution.',
       },
       {
-        question: 'Systemic coverage?',
-        answer: 'Excellent systemic antifungal action',
+        question: 'Can I stop giving it to my child once fever is gone?',
+        answer: 'No, you must complete the full prescribed course of antibiotics even if the child feels better, to prevent bacterial resistance.',
+      },
+      {
+        question: 'How should the reconstituted suspension be stored?',
+        answer: 'Once mixed with water, it is best stored in a refrigerator (2-8°C). Do not freeze it.',
       },
     ],
   },
@@ -4746,20 +4857,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 193,
-    medicalCategory: 'Antipyretic',
-    authorName: 'Dr. Vikas Sinha, Internal Medicine',
+    medicalCategory: 'Probiotics',
+    authorName: 'Dr. Vikas Sinha, Gastroenterologist',
     publicationDate: '2024-04-25',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Fever reduction?', answer: 'Rapidly reduces high fevers' },
       {
-        question: 'Children safe?',
-        answer: 'Pediatrician recommended dosing available',
+        question: 'What is BESLINE used for?',
+        answer: 'BESLINE is a probiotic used to restore beneficial gut bacteria, prevent antibiotic-associated diarrhea, and support overall digestive health.',
       },
-      { question: 'Rapid action?', answer: 'Effect within 30-45 minutes' },
       {
-        question: 'Combination use?',
-        answer: 'Do not combine with other fever reducers',
+        question: 'How do I take BESLINE respules?',
+        answer: 'BESLINE respules can be taken directly or mixed with water, milk, or orange juice. Shake well before use.',
+      },
+      {
+        question: 'Can BESLINE be taken with antibiotics?',
+        answer: 'Yes, Bacillus clausii spores are resistant to most common antibiotics, so BESLINE can be taken during antibiotic therapy to prevent diarrhea.',
+      },
+      {
+        question: 'Is BESLINE safe for children?',
+        answer: 'Yes, BESLINE is safe and pediatric-friendly. It is commonly prescribed to restore intestinal flora in infants and children.',
       },
     ],
   },
@@ -4802,26 +4919,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 207,
-    medicalCategory: 'Anti-inflammatory',
-    authorName: 'Dr. Seema Nair, Rheumatologist',
+    medicalCategory: 'Antacids',
+    authorName: 'Dr. Seema Nair, Gastroenterologist',
     publicationDate: '2024-05-14',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Inflammation type?',
-        answer: 'For mild to moderate inflammation',
+        question: "What is OMERIZE - D used for?",
+        answer: "OMERIZE - D is a combination of Omeprazole and Domperidone used to treat acid reflux (GERD), heartburn, indigestion, and nausea.",
       },
       {
-        question: 'With physical therapy?',
-        answer: 'Combine with physiotherapy',
+        question: "When should I take OMERIZE - D?",
+        answer: "It should be taken 30 minutes before breakfast on an empty stomach for maximum effectiveness.",
       },
       {
-        question: 'Food requirement?',
-        answer: 'Take with meals to minimize GI upset',
+        question: "How does OMERIZE - D work?",
+        answer: "Omeprazole reduces stomach acid production, while Domperidone increases upper gut motility, preventing acid reflux and nausea.",
       },
       {
-        question: 'Monitoring needed?',
-        answer: 'Periodic liver function checks',
+        question: "How does OMERIZE - D help with Can I take it long-term?",
+        answer: "Long-term use should be under medical supervision as it can affect magnesium levels and calcium absorption.",
       },
     ],
   },
@@ -4866,25 +4983,25 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 179,
-    medicalCategory: 'Cold & Cough',
+    medicalCategory: 'Cough & Cold',
     authorName: 'Dr. Harish Gupta, Pulmonologist',
     publicationDate: '2024-02-28',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Cold symptoms?',
+        question: "How does ZACTOCOLD help with Cold symptoms?",
         answer: 'Comprehensive relief for all cold symptoms',
       },
       {
-        question: 'Cough suppression?',
+        question: "How does ZACTOCOLD work to provide effective cough suppression?",
         answer: 'Effective for both dry and productive cough',
       },
       {
-        question: 'Duration?',
+        question: "How does ZACTOCOLD help with Duration?",
         answer: 'Continue for 7-10 days or until symptom relief',
       },
       {
-        question: 'Congestion relief?',
+        question: "Does ZACTOCOLD provide fast relief from chest and nasal congestion?",
         answer: 'Decongestant component included',
       },
     ],
@@ -4932,16 +5049,16 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 185,
-    medicalCategory: 'Topical Analgesic',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Mira Patel, Sports Medicine',
     publicationDate: '2024-03-22',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'Gel benefit?', answer: 'Quick absorption, no residue' },
-      { question: 'Joint pain?', answer: 'Ideal for knee, elbow, wrist pain' },
-      { question: 'Frequency?', answer: 'Apply 3-4 times daily' },
+      { question: "How does RAPINAK-GEL help with Gel benefit?", answer: 'Quick absorption, no residue' },
+      { question: "Can RAPINAK-GEL gel be applied directly to manage joint pain?", answer: 'Ideal for knee, elbow, wrist pain' },
+      { question: "How frequently should RAPINAK-GEL be taken?", answer: 'Apply 3-4 times daily' },
       {
-        question: 'Sport activities?',
+        question: "Can RAPINAK-GEL gel be applied before sports or physical exercise?",
         answer: 'Can apply before sports for prevention',
       },
     ],
@@ -4985,23 +5102,26 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 219,
-    medicalCategory: 'Antifungal',
-    authorName: 'Dr. Sunita Verma, Dermatology',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Sunita Verma, Pain Specialist',
     publicationDate: '2024-04-10',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Aqueous formulation?',
-        answer: 'Water-based for easy application',
-      },
-      { question: 'Coverage?', answer: 'Broad spectrum antifungal action' },
-      {
-        question: 'Pregnancy safe?',
-        answer: 'Check with doctor, generally safe topically',
+        question: "What is VORARAP-AQ used for?",
+        answer: "VORARAP-AQ is an injectable painless formulation of Diclofenac Sodium used for rapid relief of acute moderate-to-severe pain, post-operative pain, and colic.",
       },
       {
-        question: 'Apply area?',
-        answer: 'Apply to clean, dry skin twice daily',
+        question: "How does VORARAP-AQ help with How is VORARAP-AQ administered?",
+        answer: "It is administered strictly via intramuscular (IM) injection by a healthcare professional.",
+      },
+      {
+        question: "How does VORARAP-AQ work to relieve acute pain?",
+        answer: "It uses a specialized aqueous formulation that reduces the localized pain and burning sensation commonly associated with standard diclofenac injections.",
+      },
+      {
+        question: "Is it safe to take VORARAP-AQ daily or for a long-term duration?",
+        answer: "It is intended for short-term acute pain management and should not be used long-term without medical supervision due to risk of gastric ulcers.",
       },
     ],
   },
@@ -5045,21 +5165,21 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 161,
-    medicalCategory: 'Antihypertensive',
+    medicalCategory: 'Cardiovascular',
     authorName: 'Dr. Ravi Gupta, Cardiovascular',
     publicationDate: '2024-05-08',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Arginine role?',
+        question: "What is the specific cardiovascular role of L-Arginine in PROARGIRAP?",
         answer: 'Amino acid for blood vessel function',
       },
-      { question: 'BP control?', answer: 'Supports natural BP regulation' },
+      { question: "How does PROARGIRAP help with BP control?", answer: 'Supports natural BP regulation' },
       {
-        question: 'With other BP meds?',
+        question: "How does PROARGIRAP help with With other BP meds?",
         answer: 'Can combine with standard BP medications',
       },
-      { question: 'Duration?', answer: 'Take consistently for 2-3 weeks' },
+      { question: "How does PROARGIRAP help with Duration?", answer: 'Take consistently for 2-3 weeks' },
     ],
   },
   {
@@ -5104,23 +5224,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 176,
-    medicalCategory: 'Antibiotic',
-    authorName: 'Dr. Anita Joshi, Infections Specialist',
+    medicalCategory: 'Gynaecological',
+    authorName: 'Dr. Anita Joshi, Gynecologist',
     publicationDate: '2024-03-15',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'B6 addition?', answer: 'Pyridoxine for gut flora support' },
       {
-        question: 'GI protection?',
-        answer: 'Doxycycline plus B6 for better tolerance',
+        question: "What is DOXY B6 used for?",
+        answer: "DOXY B6 is used to treat pregnancy-induced nausea and vomiting (morning sickness) while providing essential folic acid support.",
       },
       {
-        question: 'Food interaction?',
-        answer: 'Some effect with dairy, take separate',
+        question: "Is DOXY B6 safe during pregnancy?",
+        answer: "Yes, Doxylamine and Pyridoxine combination is FDA-approved and clinically proven to be safe for both the mother and the fetus during pregnancy.",
       },
       {
-        question: 'Photosensitivity?',
-        answer: 'Sun protection essential during use',
+        question: "Does DOXY B6 cause drowsiness?",
+        answer: "Yes, Doxylamine is an antihistamine that can cause drowsiness. It is typically taken at bedtime to help manage this effect.",
+      },
+      {
+        question: "Why is Folic Acid included in DOXY B6?",
+        answer: "Folic Acid is a vital nutrient during early pregnancy that prevents neural tube birth defects in the developing baby.",
       },
     ],
   },
@@ -5160,6 +5283,31 @@ export const products: Product[] = [
       'Take 2 hours apart from other medicines',
       'Shake well before use',
       'Keep away from children (iron toxicity risk)',
+    ],
+
+    avgRating: 4.6,
+    reviewCount: 134,
+    medicalCategory: 'Vitamins',
+    authorName: 'Dr. Pooja Rao, Nutritionist',
+    publicationDate: '2024-03-24',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is PRO FC syrup used for?',
+        answer: 'PRO FC syrup is an iron, folic acid, and zinc supplement used to treat nutritional deficiency anemias, especially in women, children, and during pregnancy.',
+      },
+      {
+        question: 'How does PRO FC syrup compare to iron tablets?',
+        answer: 'PRO FC syrup offers a highly bioavailable liquid formulation (Ferrous Ascorbate), which is easier to digest and often causes less gastric irritation and constipation than traditional iron tablets.',
+      },
+      {
+        question: 'Can it cause darkening of stools?',
+        answer: 'Yes, iron supplements naturally cause stools to turn black. This is standard and completely harmless.',
+      },
+      {
+        question: 'Are there any food restrictions when taking PRO FC?',
+        answer: 'Yes, avoid taking it with tea, coffee, milk, or antacids, as they can significantly reduce iron absorption.',
+      },
     ],
   },
   {
@@ -5202,18 +5350,18 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 147,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Pooja Singh, Infectious Disease',
     publicationDate: '2024-02-20',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: '1GM strength?', answer: 'High-dose cephalosporin' },
+      { question: "When is the high-strength 1GM dose of CEFIMELT 1GM preferred?", answer: 'High-dose cephalosporin' },
       {
-        question: 'Serious infections?',
+        question: "Is CEFIMELT 1GM effective in treating serious systemic infections?",
         answer: 'For moderate to serious infections',
       },
-      { question: 'Hospital use?', answer: 'Often used in hospital settings' },
-      { question: 'IV/IM?', answer: 'Injectable formulation' },
+      { question: "Is CEFIMELT 1GM mainly reserved for hospital settings and clinical use?", answer: 'Often used in hospital settings' },
+      { question: "Why is CEFIMELT 1GM administered via intravenous injection in a hospital setting?", answer: 'Injectable formulation' },
     ],
   },
   {
@@ -5258,21 +5406,21 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 203,
-    medicalCategory: 'Nerve Health',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Suresh Patel, Neurologist',
     publicationDate: '2024-04-03',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Plus ingredients?',
+        question: "How does METHYRAP PLUS help with Plus ingredients?",
         answer: 'Methyl B12 plus other neuro-protective vitamins',
       },
-      { question: 'Nerve damage?', answer: 'Helpful for diabetic neuropathy' },
+      { question: "How does METHYRAP PLUS help with Nerve damage?", answer: 'Helpful for diabetic neuropathy' },
       {
-        question: 'Energy boost?',
+        question: "How does METHYRAP PLUS help with Energy boost?",
         answer: 'B12 improves energy and metabolism',
       },
-      { question: 'Duration?', answer: 'Regular use for chronic neuropathy' },
+      { question: "How does METHYRAP PLUS help with Duration?", answer: 'Regular use for chronic neuropathy' },
     ],
   },
   {
@@ -5315,21 +5463,21 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 231,
-    medicalCategory: 'Neuropathy Treatment',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Vikram Thakur, Neuropathy Specialist',
     publicationDate: '2024-05-20',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'P component?', answer: 'Pregabalin for neuropathic pain' },
+      { question: "What is the role of the Paracetamol (P) component in METHYRAP-P SR 75?", answer: 'Pregabalin for neuropathic pain' },
       {
-        question: 'SR formulation?',
+        question: "How does METHYRAP-P SR 75 help with SR formulation?",
         answer: 'Sustained release for consistent effect',
       },
       {
-        question: 'Neuropathy types?',
+        question: "What specific types of neuropathy does METHYRAP-P SR 75 treat?",
         answer: 'Diabetic, peripheral, post-herpetic',
       },
-      { question: 'Timeline?', answer: '1-2 weeks for initial relief' },
+      { question: "How quickly does METHYRAP-P SR 75 start showing results?", answer: '1-2 weeks for initial relief' },
     ],
   },
   {
@@ -5368,6 +5516,31 @@ export const products: Product[] = [
       'Take with or without food',
       'Refrigerate after mixing if instructed',
       'Report severe diarrhea',
+    ],
+
+    avgRating: 4.5,
+    reviewCount: 142,
+    medicalCategory: 'Antibiotics',
+    authorName: 'Dr. Anjali Rao, Pediatrician',
+    publicationDate: '2024-04-05',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What is RAPMOX CV used for?',
+        answer: 'RAPMOX CV is a pediatric antibiotic suspension containing Amoxicillin and Clavulanic Acid, used to treat bacterial infections of the ear, nose, throat, chest, skin, and urinary tract in children.',
+      },
+      {
+        question: 'How do I prepare the suspension?',
+        answer: 'Slowly add sterile water up to the ring mark on the bottle, shake the bottle vigorously, and let it stand. Re-adjust volume if needed and use the prepared suspension within 7-10 days.',
+      },
+      {
+        question: 'Should I store RAPMOX CV in the fridge?',
+        answer: 'Yes, once mixed with water, the reconstituted suspension must be stored in the refrigerator (2-8°C) and kept out of the freezer.',
+      },
+      {
+        question: 'Should my child complete the full course?',
+        answer: 'Yes, always complete the entire antibiotic course prescribed by your pediatrician, even if your child feels better after a few days, to prevent bacterial resistance.',
+      },
     ],
   },
   {
@@ -5412,22 +5585,22 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 158,
-    medicalCategory: 'Dietary Supplement',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Neeta Deshmukh, Nutritionist',
     publicationDate: '2024-03-08',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Constipation relief?',
+        question: "How does PICOFIX-PLUS help with Constipation relief?",
         answer: 'Natural ingredients for gentle relief',
       },
       {
-        question: 'Safe children?',
+        question: "How does PICOFIX-PLUS help with Safe children?",
         answer: 'Mild formulation for children acceptable',
       },
-      { question: 'Habit forming?', answer: 'Non-addictive, safe long-term' },
+      { question: "Is there a risk of PICOFIX-PLUS becoming habit-forming or addictive?", answer: 'Non-addictive, safe long-term' },
       {
-        question: 'Frequency?',
+        question: "How frequently should PICOFIX-PLUS be taken?",
         answer: 'As needed, typically 1-2 times daily',
       },
     ],
@@ -5472,20 +5645,26 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 182,
-    medicalCategory: 'Antipyretic',
-    authorName: 'Dr. Harish Malhotra, Internal Medicine',
+    medicalCategory: 'Psychiatric',
+    authorName: 'Dr. Harish Malhotra, Psychiatrist',
     publicationDate: '2024-04-12',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: '10mg strength?', answer: 'Pediatric strength formulation' },
-      { question: 'Fever reduction?', answer: 'Fast-acting fever control' },
       {
-        question: 'Children dosing?',
-        answer: 'Age and weight-based recommendations',
+        question: 'What is RAPICITA 10 used for?',
+        answer: 'RAPICITA 10 contains Escitalopram, which is used to treat major depressive disorder, generalized anxiety disorder, and panic disorder.',
       },
       {
-        question: 'Frequency?',
-        answer: 'Every 4-6 hours as needed, not exceeding 5 doses',
+        question: 'How long does it take for RAPICITA 10 to work?',
+        answer: 'It typically takes 2 to 4 weeks to start feeling the full benefits of RAPICITA 10, though some improvement may be noticed earlier.',
+      },
+      {
+        question: 'Can I stop taking RAPICITA 10 suddenly?',
+        answer: 'No, you should not stop taking RAPICITA 10 abruptly as it can cause withdrawal symptoms. Always consult your doctor for a gradual tapering schedule.',
+      },
+      {
+        question: 'What is the best time to take RAPICITA 10?',
+        answer: 'It can be taken with or without food, usually once daily in the morning or evening. It is best to take it at the same time each day.',
       },
     ],
   },
@@ -5529,24 +5708,24 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 194,
-    medicalCategory: 'Gynecological',
+    medicalCategory: 'Gynaecological',
     authorName: 'Dr. Meera Sharma, Gynecologist',
     publicationDate: '2024-05-25',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Women health?',
+        question: "How does UTERAP help with Women health?",
         answer: 'Supports uterine and reproductive health',
       },
       {
-        question: 'Menstrual relief?',
+        question: "Is UTERAP effective in providing fast relief from menstrual cramps?",
         answer: 'Helps with cramping and discomfort',
       },
       {
-        question: 'Fertility support?',
+        question: "How does UTERAP support reproductive health and fertility?",
         answer: 'May support reproductive wellness',
       },
-      { question: 'Plant-based?', answer: 'Natural ingredients formulation' },
+      { question: "Is UTERAP a completely natural, plant-based formulation?", answer: 'Natural ingredients formulation' },
     ],
   },
   {
@@ -5589,24 +5768,24 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 165,
-    medicalCategory: 'Urinary Health',
+    medicalCategory: 'Urology',
     authorName: 'Dr. Arun Kapoor, Urologist',
     publicationDate: '2024-03-18',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'UTI prevention?',
+        question: "How does CITRARAP help with UTI prevention?",
         answer: 'Citrate compounds for urinary alkalinity',
       },
       {
-        question: 'Kidney stones?',
+        question: "Does taking CITRARAP help in dissolving or preventing kidney stones?",
         answer: 'May help prevent stone formation',
       },
       {
-        question: 'Cranberry alternative?',
+        question: "Can CITRARAP be used as an alternative to cranberry supplements?",
         answer: 'Similar mechanism to cranberry products',
       },
-      { question: 'Hydration?', answer: 'Combine with adequate water intake' },
+      { question: "Why is maintaining high hydration important while taking CITRARAP?", answer: 'Combine with adequate water intake' },
     ],
   },
   {
@@ -5649,25 +5828,25 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 189,
-    medicalCategory: 'Antibiotic',
+    medicalCategory: 'Antibiotics',
     authorName: 'Dr. Sonia Desai, Infection Medicine',
     publicationDate: '2024-04-20',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'OZ combination?',
+        question: "How does OFLARAP OZ help with OZ combination?",
         answer: 'Ofloxacin plus additional antimicrobial',
       },
       {
-        question: 'Broad spectrum?',
+        question: "Does OFLARAP OZ provide broad-spectrum coverage against bacterial infections?",
         answer: 'Covers variety of bacterial infections',
       },
       {
-        question: 'Fluoroquinolone use?',
+        question: "Are there any specific warnings associated with fluoroquinolone use in OFLARAP OZ?",
         answer: 'Second or third-line for resistant infections',
       },
       {
-        question: 'Safety profile?',
+        question: "What is the general safety profile of OFLARAP OZ?",
         answer: 'Generally well-tolerated antibiotic',
       },
     ],
@@ -5712,24 +5891,27 @@ export const products: Product[] = [
 
     avgRating: 4.4,
     reviewCount: 172,
-    medicalCategory: 'Antidiabetic',
-    authorName: 'Dr. Rajesh Dixit, Pre-Diabetes Management',
+    medicalCategory: 'Pain & NSAIDs',
+    authorName: 'Dr. Rajesh Dixit, Rheumatologist',
     publicationDate: '2024-02-14',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Pre-diabetes focus?',
-        answer: 'Specifically for pre-diabetes prevention',
+        question: 'What is PREDIRAP 4 used for?',
+        answer: 'PREDIRAP 4 contains Methylprednisolone, a corticosteroid used to treat inflammatory conditions, severe allergies, asthma, and autoimmune diseases.',
       },
       {
-        question: 'Lifestyle important?',
-        answer: 'Combine with diet and exercise',
+        question: 'Does PREDIRAP 4 affect blood sugar levels?',
+        answer: 'Yes, corticosteroids like PREDIRAP 4 can increase blood sugar levels. Diabetic patients should monitor their blood glucose closely.',
       },
       {
-        question: 'Progression prevention?',
-        answer: 'Helps prevent Type 2 diabetes onset',
+        question: 'Should PREDIRAP 4 be taken with food?',
+        answer: 'Yes, take it with food or milk to prevent gastrointestinal irritation and stomach upset.',
       },
-      { question: 'Monitoring?', answer: 'Regular glucose and HbA1c checks' },
+      {
+        question: 'What are the precautions for long-term use?',
+        answer: 'Long-term use requires monitoring of blood pressure, bone density, and eye health. Calcium and vitamin D supplementation is often recommended.',
+      },
     ],
   },
   {
@@ -5771,21 +5953,21 @@ export const products: Product[] = [
 
     avgRating: 4.7,
     reviewCount: 213,
-    medicalCategory: 'Antigout',
+    medicalCategory: 'Urology',
     authorName: 'Dr. Vikram Nair, Rheumatologist',
     publicationDate: '2024-03-25',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Gout management?',
+        question: "How does FEBURAP 40 help with Gout management?",
         answer: 'Febuxostat for chronic gout prevention',
       },
-      { question: '40mg dose?', answer: 'Standard starting dose' },
+      { question: "How does FEBURAP 40 help with 40mg dose?", answer: 'Standard starting dose' },
       {
-        question: 'Acute attack?',
+        question: "Can FEBURAP 40 be started during an acute gout flare-up?",
         answer: 'Not for acute,Continue for prevention',
       },
-      { question: 'Monitoring?', answer: 'Uric acid levels monthly initially' },
+      { question: "How frequently should I monitor my health levels while on FEBURAP 40?", answer: 'Uric acid levels monthly initially' },
     ],
   },
   {
@@ -5828,19 +6010,19 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 176,
-    medicalCategory: 'Antacid/PPI',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Isha Patel, Gastroenterology',
     publicationDate: '2024-04-08',
     updatedDate: '2025-04-15',
     faqItems: [
-      { question: 'PPI action?', answer: 'Pantoprazole reduces stomach acid' },
+      { question: "How does PANTORIZE - D help with PPI action?", answer: 'Pantoprazole reduces stomach acid' },
       {
-        question: 'D component?',
+        question: "What does the D component represent in PANTORIZE - D?",
         answer: 'Often includes domperidone for motility',
       },
-      { question: 'GERD treatment?', answer: 'First-line for acid reflux' },
+      { question: "How does PANTORIZE - D help with GERD treatment?", answer: 'First-line for acid reflux' },
       {
-        question: 'Duration?',
+        question: "How does PANTORIZE - D help with Duration?",
         answer: 'Typically 4-8 weeks, sometimes longer',
       },
     ],
@@ -5856,7 +6038,7 @@ export const products: Product[] = [
       '/visualaidswebp/drotavil-m-drotaverine-mefenamic-acid-pain-visualaid.webp',
     visualAidAlt: 'DROTAVIL - M - Drotaverine + Mefenamic Acid Visual Aid',
     fullComposition: 'Drotaverine 100mg + Mefenamic Acid 250mg',
-    therapeuticClass: 'Gout Management',
+    therapeuticClass: 'Gastrointestinal',
     mrp: 1100,
     introduction:
       'DROTAVIL-M combines antispasmodic and analgesic-anti-inflammatory properties for effective relief of muscle cramps and menstrual pain. Drotaverine provides smooth muscle relaxation to alleviate spasms, while mefenamic acid offers potent analgesic and anti-inflammatory effects, making this combination ideal for individuals seeking relief from conditions such as dysmenorrhea, muscle cramps, intestinal colic, and abdominal pain, providing comprehensive symptom control in a convenient tablet form.',
@@ -5885,25 +6067,25 @@ export const products: Product[] = [
 
     avgRating: 4.6,
     reviewCount: 191,
-    medicalCategory: 'Antispasmodic',
+    medicalCategory: 'Antacids',
     authorName: 'Dr. Harish Kumar, GI Surgeon',
     publicationDate: '2024-05-12',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'Spasm relief?',
+        question: "How does DROTAVIL - M help with Spasm relief?",
         answer: 'Rapid relief from intestinal spasms',
       },
       {
-        question: 'M component?',
+        question: "How does DROTAVIL - M help with M component?",
         answer: 'May include mebeverine for smooth muscle',
       },
       {
-        question: 'IBS benefit?',
+        question: "How does DROTAVIL - M help with IBS benefit?",
         answer: 'Specifically helpful for IBS cramping',
       },
       {
-        question: 'With fiber?',
+        question: "How does DROTAVIL - M help with With fiber?",
         answer: 'Combine with adequate dietary fiber',
       },
     ],
@@ -5950,22 +6132,22 @@ export const products: Product[] = [
 
     avgRating: 4.5,
     reviewCount: 168,
-    medicalCategory: 'Pain Relief',
+    medicalCategory: 'Pain & NSAIDs',
     authorName: 'Dr. Swati Rao, Pain Management',
     publicationDate: '2024-03-30',
     updatedDate: '2025-04-15',
     faqItems: [
       {
-        question: 'MR formulation?',
+        question: "How does RAPINAK - MR help with MR formulation?",
         answer: 'Modified Release for extended pain control',
       },
-      { question: 'All-day relief?', answer: 'Covers pain throughout day' },
+      { question: "How does RAPINAK - MR help with All-day relief?", answer: 'Covers pain throughout day' },
       {
-        question: 'Morning dose?',
+        question: "How does RAPINAK - MR help with Morning dose?",
         answer: 'Take in morning for full-day benefit',
       },
       {
-        question: 'Crushing?',
+        question: "Can I crush, split, or chew RAPINAK - MR tablets?",
         answer: 'Do not crush, maintain modified release',
       },
     ],
@@ -6041,7 +6223,7 @@ export const products: Product[] = [
 
     avgRating: 4.8,
     reviewCount: 142,
-    medicalCategory: 'Nerve Rejuvenator',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Sandeep Nandi, Neurologist',
     publicationDate: '2024-06-10',
     updatedDate: '2025-04-15',

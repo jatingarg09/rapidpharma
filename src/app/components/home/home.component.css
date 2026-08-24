@@ -781,6 +781,41 @@
 }
 .segment-urology:hover { border-color: #4f46e5; }
 
+.segment-cardio {
+  background-color: #faf5ff;
+  color: #9333ea;
+  border-color: #f3e8ff;
+}
+.segment-cardio:hover { border-color: #9333ea; }
+
+.segment-diabetic {
+  background-color: #f0fdfa;
+  color: #0d9488;
+  border-color: #ccfbf1;
+}
+.segment-diabetic:hover { border-color: #0d9488; }
+
+.segment-ophthalmic {
+  background-color: #f0f9ff;
+  color: #0284c7;
+  border-color: #e0f2fe;
+}
+.segment-ophthalmic:hover { border-color: #0284c7; }
+
+.segment-vertigo {
+  background-color: #fdf4ff;
+  color: #a21caf;
+  border-color: #fae8ff;
+}
+.segment-vertigo:hover { border-color: #a21caf; }
+
+.segment-psychiatric {
+  background-color: #f8fafc;
+  color: #475569;
+  border-color: #f1f5f9;
+}
+.segment-psychiatric:hover { border-color: #475569; }
+
 /* Responsive adjustments */
 @media (max-width: 991px) {
   .seo-browse-grid {
