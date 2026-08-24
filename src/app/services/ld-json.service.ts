@@ -22,7 +22,8 @@ export class LdJsonService {
     const script = this.renderer.createElement('script');
     script.id = 'app-schema-jsonld';
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
+    const textNode = this.renderer.createText(JSON.stringify(schema));
+    this.renderer.appendChild(script, textNode);
     this.renderer.appendChild(this.document.head, script);
   }
 
