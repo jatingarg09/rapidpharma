@@ -416,7 +416,7 @@ export const blogPosts: BlogPost[] = [
     id: '8',
     title:
       'Best PCD Pharma Franchise in Punjab — Rapid Pharmaceuticals Leads the Way',
-    slug: '/blogs/best-pcd-pharma-franchise-punjab-rapid-2026',
+    slug: 'best-pcd-pharma-franchise-punjab-rapid-2026',
     date: '2026-07-15',
     author: 'Rapid Pharmaceuticals Team',
     imageUrl: '/blogs/best-pcd-pharma-franchise-punjab-2026.webp',
@@ -453,7 +453,7 @@ export const blogPosts: BlogPost[] = [
     id: '9',
     title:
       'PCD Pharma Franchise in Punjab: Low-Investment Opportunities with Rapid Pharmaceuticals',
-    slug: '/blogs/pcd-pharma-franchise-punjab-low-investment-rapid-2026',
+    slug: 'pcd-pharma-franchise-punjab-low-investment-rapid-2026',
     date: '2026-07-30',
     author: 'Rapid Pharmaceuticals Team',
     imageUrl:
@@ -493,7 +493,7 @@ export const blogPosts: BlogPost[] = [
     id: '10',
     title:
       'PCD Pharma Franchise with General Range Products — Why Rapid is the Ideal Partner',
-    slug: '/blogs/pcd-pharma-franchise-general-range-rapid-2026',
+    slug: 'pcd-pharma-franchise-general-range-rapid-2026',
     date: '2026-08-12',
     author: 'Rapid Pharmaceuticals Team',
     imageUrl: '/blogs/general-range-pcd-pharma-franchise-2026.webp',
@@ -535,56 +535,56 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
-  // {
-  //   id: '11',
-  //   title:
-  //     'General Range PCD Pharma Franchise — Building Opportunities Across India',
-  //   slug: '/blogs/general-range-pcd-pharma-franchise-india-rapid-2026',
-  //   date: '2026-08-25',
-  //   author: 'Rapid Pharmaceuticals Team',
-  //   imageUrl: '/blogs/general-range-pcd-pharma-franchise-india-2026.webp',
-  //   excerpt:
-  //     'Explore General Range PCD Pharma Franchise opportunities with Rapid Pharmaceuticals, featuring a diverse pharmaceutical portfolio, WHO-GMP certified manufacturing, promotional support, and territory-based opportunities across India.',
-  //   seoDescription:
-  //     'Rapid Pharmaceuticals provides General Range PCD Pharma Franchise opportunities across India with WHO-GMP certified products, monopoly rights, and full partner support.',
-  //   content:
-  //     '<h2>Introduction</h2><p>General range medicines represent an important part of the pharmaceutical distribution market, covering products used across a wide variety of healthcare requirements. For entrepreneurs looking to enter the pharmaceutical sector, a diversified product portfolio can provide opportunities to serve different healthcare segments. Rapid Pharmaceuticals offers a broad general range portfolio supported by quality-focused manufacturing and franchise partner support across India.</p><h2>Why General Range Products Remain Important</h2><ul><li>Covers commonly prescribed therapeutic categories such as anti-infectives, pain management, gastrointestinal medicines, and other pharmaceutical formulations</li><li>Allows pharmaceutical distributors to serve a broader range of healthcare requirements</li><li>Can be marketed across metropolitan, Tier-2, and Tier-3 markets according to local demand and applicable regulations</li><li>Provides franchise partners with multiple product categories for market development</li><li>Supports opportunities to build relationships with different healthcare professionals and authorized pharmaceutical outlets</li></ul><h2>Rapid Pharmaceuticals General Range Advantage</h2><ul><li>150+ pharmaceutical products across multiple therapeutic categories</li><li>WHO-GMP certified manufacturing focused on quality and consistency</li><li>ISO 9001:2015 compliant quality management practices</li><li>Competitive business pricing and transparent commercial coordination</li><li>Promotional and marketing support for eligible franchise partners</li><li>Territory-based and monopoly franchise opportunities subject to availability</li><li>Product supply and order coordination support</li></ul><h2>General Range Products Across Multiple Therapeutic Areas</h2><ul><li>Antibiotics and anti-infective medicines</li><li>Analgesic and anti-inflammatory formulations</li><li>Gastrointestinal products</li><li>Urology formulations</li><li>Pediatric medicines</li><li>Nutraceuticals and health supplements</li><li>Other pharmaceutical products across commonly required therapeutic segments</li></ul><h2>Opportunities in Metro and Emerging Markets</h2><ul><li>General range portfolios can be adapted to the healthcare requirements of different territories</li><li>Metro markets offer established networks of hospitals, clinics, pharmacies, and healthcare professionals</li><li>Tier-2 and Tier-3 markets continue to provide opportunities for pharmaceutical distribution and healthcare businesses</li><li>Local market analysis can help franchise partners select relevant products for their territory</li><li>A diversified portfolio provides flexibility when developing new pharmaceutical markets</li></ul><h2>Support for General Range Franchise Partners</h2><ul><li>Product literature and visual aids</li><li>Digital promotional collateral</li><li>Product information and marketing support</li><li>Competitive pricing and commercial coordination</li><li>Supply and order management support</li><li>Territory-focused franchise opportunities</li><li>Business coordination for eligible franchise partners</li></ul><h2>Is General Range PCD Pharma Franchise Suitable for New Entrepreneurs?</h2><ul><li>A diversified portfolio can provide new entrepreneurs with multiple product categories to explore</li><li>Partners can select products according to their territory, healthcare network, and business strategy</li><li>Existing pharmaceutical distributors can use general range products to expand their portfolio</li><li>Entrepreneurs should evaluate investment, infrastructure, licensing requirements, market demand, and territory availability before starting</li></ul><h2>Investment Considerations for General Range PCD Pharma Franchise</h2><ul><li>Investment requirements depend on product selection, initial order quantity, territory, and business scale</li><li>Commercial terms and minimum order requirements may vary between franchise opportunities</li><li>Prospective partners should confirm current pricing and requirements directly with Rapid Pharmaceuticals</li><li>A detailed assessment of the target market can help entrepreneurs plan their initial product selection and working capital</li></ul><h2>Conclusion</h2><p>A general range pharmaceutical portfolio can provide franchise partners with flexibility to address multiple therapeutic requirements across different Indian markets. Rapid Pharmaceuticals combines a diverse product portfolio with WHO-GMP certified manufacturing, promotional support, competitive business terms, and territory-based franchise opportunities. Entrepreneurs interested in a General Range PCD Pharma Franchise can explore available opportunities with Rapid Pharmaceuticals based on territory availability, business requirements, and applicable company terms.</p>',
-  //   faqs: [
-  //     {
-  //       question: 'What is the demand for general range medicines in India?',
-  //       answer:
-  //         'General range medicines cover several commonly required therapeutic categories, creating opportunities across different healthcare markets. Actual demand varies by product, territory, prescription patterns, competition, and local healthcare requirements.',
-  //     },
-  //     {
-  //       question:
-  //         'How does Rapid Pharmaceuticals support franchise partners in the general range?',
-  //       answer:
-  //         'Rapid Pharmaceuticals supports eligible franchise partners with product information, promotional materials, visual aids, digital collateral, commercial coordination, and product supply support, subject to applicable company policies.',
-  //     },
-  //     {
-  //       question:
-  //         'Is the investment lower for a general range PCD Pharma Franchise?',
-  //       answer:
-  //         'Investment is not necessarily lower simply because a franchise focuses on general range products. Requirements depend on product selection, order quantity, territory, and business scale. Prospective partners should confirm current commercial terms with Rapid Pharmaceuticals.',
-  //     },
-  //     {
-  //       question:
-  //         'Can small-town entrepreneurs benefit from general range products?',
-  //       answer:
-  //         'Yes, general range portfolios can provide opportunities in smaller cities and towns where there is an established healthcare network. Entrepreneurs should evaluate local healthcare requirements, competition, infrastructure, and applicable regulations before selecting a territory.',
-  //     },
-  //     {
-  //       question:
-  //         'Does Rapid Pharmaceuticals offer monopoly-based franchise opportunities?',
-  //       answer:
-  //         'Rapid Pharmaceuticals offers territory-based and monopoly franchise opportunities to eligible partners, subject to territory availability and applicable company terms.',
-  //     },
-  //     {
-  //       question:
-  //         'What should I consider before starting a general range PCD Pharma Franchise?',
-  //       answer:
-  //         'Entrepreneurs should evaluate territory availability, product portfolio, investment requirements, licensing and regulatory requirements, market potential, supply arrangements, promotional support, and applicable commercial terms before starting a franchise.',
-  //     },
-  //   ],
-  // },
+  {
+    id: '11',
+    title:
+      'General Range PCD Pharma Franchise — Building Opportunities Across India',
+    slug: 'general-range-pcd-pharma-franchise-india-rapid-2026',
+    date: '2026-08-25',
+    author: 'Rapid Pharmaceuticals Team',
+    imageUrl: '/blogs/general-range-pcd-pharma-franchise-india-2026.webp',
+    excerpt:
+      'Explore General Range PCD Pharma Franchise opportunities with Rapid Pharmaceuticals, featuring a diverse pharmaceutical portfolio, WHO-GMP certified manufacturing, promotional support, and territory-based opportunities across India.',
+    seoDescription:
+      'Rapid Pharmaceuticals provides General Range PCD Pharma Franchise opportunities across India with WHO-GMP certified products, monopoly rights, and full partner support.',
+    content:
+      '<h2>Introduction</h2><p>General range medicines represent an important part of the pharmaceutical distribution market, covering products used across a wide variety of healthcare requirements. For entrepreneurs looking to enter the pharmaceutical sector, a diversified product portfolio can provide opportunities to serve different healthcare segments. Rapid Pharmaceuticals offers a broad general range portfolio supported by quality-focused manufacturing and franchise partner support across India.</p><h2>Why General Range Products Remain Important</h2><ul><li>Covers commonly prescribed therapeutic categories such as anti-infectives, pain management, gastrointestinal medicines, and other pharmaceutical formulations</li><li>Allows pharmaceutical distributors to serve a broader range of healthcare requirements</li><li>Can be marketed across metropolitan, Tier-2, and Tier-3 markets according to local demand and applicable regulations</li><li>Provides franchise partners with multiple product categories for market development</li><li>Supports opportunities to build relationships with different healthcare professionals and authorized pharmaceutical outlets</li></ul><h2>Rapid Pharmaceuticals General Range Advantage</h2><ul><li>150+ pharmaceutical products across multiple therapeutic categories</li><li>WHO-GMP certified manufacturing focused on quality and consistency</li><li>ISO 9001:2015 compliant quality management practices</li><li>Competitive business pricing and transparent commercial coordination</li><li>Promotional and marketing support for eligible franchise partners</li><li>Territory-based and monopoly franchise opportunities subject to availability</li><li>Product supply and order coordination support</li></ul><h2>General Range Products Across Multiple Therapeutic Areas</h2><ul><li>Antibiotics and anti-infective medicines</li><li>Analgesic and anti-inflammatory formulations</li><li>Gastrointestinal products</li><li>Urology formulations</li><li>Pediatric medicines</li><li>Nutraceuticals and health supplements</li><li>Other pharmaceutical products across commonly required therapeutic segments</li></ul><h2>Opportunities in Metro and Emerging Markets</h2><ul><li>General range portfolios can be adapted to the healthcare requirements of different territories</li><li>Metro markets offer established networks of hospitals, clinics, pharmacies, and healthcare professionals</li><li>Tier-2 and Tier-3 markets continue to provide opportunities for pharmaceutical distribution and healthcare businesses</li><li>Local market analysis can help franchise partners select relevant products for their territory</li><li>A diversified portfolio provides flexibility when developing new pharmaceutical markets</li></ul><h2>Support for General Range Franchise Partners</h2><ul><li>Product literature and visual aids</li><li>Digital promotional collateral</li><li>Product information and marketing support</li><li>Competitive pricing and commercial coordination</li><li>Supply and order management support</li><li>Territory-focused franchise opportunities</li><li>Business coordination for eligible franchise partners</li></ul><h2>Is General Range PCD Pharma Franchise Suitable for New Entrepreneurs?</h2><ul><li>A diversified portfolio can provide new entrepreneurs with multiple product categories to explore</li><li>Partners can select products according to their territory, healthcare network, and business strategy</li><li>Existing pharmaceutical distributors can use general range products to expand their portfolio</li><li>Entrepreneurs should evaluate investment, infrastructure, licensing requirements, market demand, and territory availability before starting</li></ul><h2>Investment Considerations for General Range PCD Pharma Franchise</h2><ul><li>Investment requirements depend on product selection, initial order quantity, territory, and business scale</li><li>Commercial terms and minimum order requirements may vary between franchise opportunities</li><li>Prospective partners should confirm current pricing and requirements directly with Rapid Pharmaceuticals</li><li>A detailed assessment of the target market can help entrepreneurs plan their initial product selection and working capital</li></ul><h2>Conclusion</h2><p>A general range pharmaceutical portfolio can provide franchise partners with flexibility to address multiple therapeutic requirements across different Indian markets. Rapid Pharmaceuticals combines a diverse product portfolio with WHO-GMP certified manufacturing, promotional support, competitive business terms, and territory-based franchise opportunities. Entrepreneurs interested in a General Range PCD Pharma Franchise can explore available opportunities with Rapid Pharmaceuticals based on territory availability, business requirements, and applicable company terms.</p>',
+    faqs: [
+      {
+        question: 'What is the demand for general range medicines in India?',
+        answer:
+          'General range medicines cover several commonly required therapeutic categories, creating opportunities across different healthcare markets. Actual demand varies by product, territory, prescription patterns, competition, and local healthcare requirements.',
+      },
+      {
+        question:
+          'How does Rapid Pharmaceuticals support franchise partners in the general range?',
+        answer:
+          'Rapid Pharmaceuticals supports eligible franchise partners with product information, promotional materials, visual aids, digital collateral, commercial coordination, and product supply support, subject to applicable company policies.',
+      },
+      {
+        question:
+          'Is the investment lower for a general range PCD Pharma Franchise?',
+        answer:
+          'Investment is not necessarily lower simply because a franchise focuses on general range products. Requirements depend on product selection, order quantity, territory, and business scale. Prospective partners should confirm current commercial terms with Rapid Pharmaceuticals.',
+      },
+      {
+        question:
+          'Can small-town entrepreneurs benefit from general range products?',
+        answer:
+          'Yes, general range portfolios can provide opportunities in smaller cities and towns where there is an established healthcare network. Entrepreneurs should evaluate local healthcare requirements, competition, infrastructure, and applicable regulations before selecting a territory.',
+      },
+      {
+        question:
+          'Does Rapid Pharmaceuticals offer monopoly-based franchise opportunities?',
+        answer:
+          'Rapid Pharmaceuticals offers territory-based and monopoly franchise opportunities to eligible partners, subject to territory availability and applicable company terms.',
+      },
+      {
+        question:
+          'What should I consider before starting a general range PCD Pharma Franchise?',
+        answer:
+          'Entrepreneurs should evaluate territory availability, product portfolio, investment requirements, licensing and regulatory requirements, market potential, supply arrangements, promotional support, and applicable commercial terms before starting a franchise.',
+      },
+    ],
+  },
 ];
