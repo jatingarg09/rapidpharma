@@ -6615,7 +6615,7 @@ export const products: Product[] = [
     composition: 'Calcium Carbonate + Vitamin D3',
     category: 'Syrup/Suspension',
     packaging: '200Ml',
-    imageUrl: '/productswebp/CALZIRAP-D3_SYP.webp',
+    imageUrl: '/productswebp/CALZIRAP-D3.webp',
     imageAlt: 'CALZIRAP D3 Calcium Carbonate Vitamin D3 Suspension',
     visualAidUrl:
       '/visualaidswebp/calzirap-d3-calcium-carbonate-vitamin-d3-suspension-visualaid.webp',
