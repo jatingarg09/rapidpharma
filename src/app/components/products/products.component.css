@@ -1,11 +1,15 @@
 /* Products Page Variables */
 .products-page {
-  --navy: #03045e;
-  --cyan: #0077b6;
-  --cyan-light: #caf0f8;
-  --text-dark: #1e293b;
-  --text-muted: #64748b;
-  --bg-light: #f8fafc;
+  --navy: var(--rp-navy, #03045e);
+  --navy-dark: var(--rp-navy-dark, #02033b);
+  --cyan: var(--rp-blue-primary, #0077b6);
+  --cyan-vibrant: var(--rp-cyan-vibrant, #00b4d8);
+  --cyan-light: var(--rp-cyan-subtle, #e0f2fe);
+  --cyan-lightest: var(--rp-cyan-lightest, #f0f9ff);
+  --emerald: var(--rp-emerald, #047857);
+  --text-dark: var(--rp-slate-900, #0f172a);
+  --text-muted: var(--rp-slate-700, #334155);
+  --bg-light: var(--rp-slate-50, #f8fafc);
   --white: #ffffff;
   
   font-family: 'Inter', 'Roboto', sans-serif;
@@ -24,10 +28,10 @@
 
 /* Hero Section */
 .products-hero {
-  background-color: var(--navy);
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--cyan) 100%);
   color: var(--white);
-  padding: 4rem 0 5rem;
-  border-top: 4px solid var(--cyan);
+  padding: 4.5rem 0 5.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
   position: relative;
 }
@@ -39,24 +43,27 @@
 }
 
 .page-title {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: 800;
   margin-bottom: 1rem;
   color: var(--white);
-  text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
 }
 
 .page-subtitle {
-  font-size: 1.1rem;
-  color: #cbd5e1;
+  font-size: 1.15rem;
+  color: #e0f2fe;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* Controls Container */
 .controls-container {
   background: var(--white);
-  border-radius: 12px;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  border-radius: 14px;
+  box-shadow: 0 10px 25px -5px rgba(3, 4, 94, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
   margin-top: -3rem; /* Overlap hero */
   margin-bottom: 2.5rem;
   position: relative;
@@ -111,7 +118,7 @@ mat-form-field {
 }
 
 ::ng-deep .mat-mdc-option {
-  color: #03045e !important;
+  color: var(--navy) !important;
   font-family: 'Inter', 'Roboto', sans-serif !important;
   font-size: 0.95rem !important;
   transition: all 0.2s ease !important;
@@ -120,18 +127,18 @@ mat-form-field {
 ::ng-deep .mat-mdc-option:hover:not(.mdc-list-item--disabled),
 ::ng-deep .mat-mdc-option:focus:not(.mdc-list-item--disabled),
 ::ng-deep .mat-mdc-option.mat-mdc-option-active {
-  background-color: #caf0f8 !important;
-  color: #00b4d8 !important;
+  background-color: var(--cyan-light) !important;
+  color: var(--cyan) !important;
 }
 
 ::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) {
-  background-color: #caf0f8 !important;
-  color: #00b4d8 !important;
+  background-color: var(--cyan-light) !important;
+  color: var(--cyan) !important;
   font-weight: 600 !important;
 }
 
 ::ng-deep .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
-  color: #00b4d8 !important;
+  color: var(--cyan) !important;
 }
 
 ::ng-deep .mat-mdc-select-arrow {
@@ -149,26 +156,26 @@ mat-form-field {
 .product-card {
   position: relative;
   background: var(--white);
-  border-radius: 12px;
+  border-radius: 14px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  border: 1px solid #f1f5f9;
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
 }
 
 .product-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 180, 216, 0.15);
-  border-color: var(--cyan-light);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(3, 4, 94, 0.1);
+  border-color: var(--cyan);
 }
 
 .product-image-large {
   width: 100%;
   height: 220px;
   object-fit: contain;
-  padding: 0.5rem;
+  padding: 0.75rem;
   background: var(--white);
   transition: transform 0.3s ease;
 }
@@ -197,7 +204,7 @@ mat-form-field {
   margin: 0;
   font-size: 1.15rem;
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.35;
   color: var(--navy);
   flex: 1;
 }
@@ -206,12 +213,12 @@ mat-form-field {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   background: none;
   border: none;
   color: var(--cyan);
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.2rem 0.4rem;
   transition: color 0.2s ease;
   text-decoration: none;
@@ -233,26 +240,29 @@ mat-form-field {
 
 .product-info p {
   margin: 0 0 1rem 0;
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  line-height: 1.55;
   color: var(--text-muted);
   flex: 1;
 }
 
 .product-packaging {
   margin: 0.75rem 0 0 0;
-  font-size: 0.9rem;
-  color: #10b981;
-  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--emerald);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .product-mrp {
   margin: 1rem 0 0 0;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 800;
-  color: var(--cyan);
+  color: var(--navy);
   padding-top: 0.75rem;
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid var(--rp-slate-100, #f1f5f9);
 }
 
 /* Pagination */
@@ -274,7 +284,7 @@ mat-form-field {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -283,16 +293,16 @@ mat-form-field {
   color: var(--navy);
   border: 1px solid #e2e8f0;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: all 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .page-numbers button.active {
-  background-color: var(--cyan);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--cyan) 100%);
   color: var(--white);
-  border-color: var(--cyan);
+  border-color: transparent;
   transform: scale(1.1);
-  box-shadow: 0 4px 10px rgba(0, 180, 216, 0.3);
+  box-shadow: 0 4px 12px rgba(0, 119, 182, 0.35);
 }
 
 .page-numbers button:not([disabled]):hover:not(.active) {
@@ -355,13 +365,14 @@ mat-form-field {
 }
 
 .error-message {
-  color: #ef4444;
+  color: #be123c;
   text-align: center;
   padding: 1rem;
   margin: 1rem 0;
-  background: #fee2e2;
+  background: #fff1f2;
   border-radius: 8px;
-  border-left: 4px solid #ef4444;
+  border-left: 4px solid #be123c;
+  font-weight: 600;
 }
 
 .no-results {
