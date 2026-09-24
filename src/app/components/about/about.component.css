@@ -1,11 +1,14 @@
 /* About Page Variables & Global */
 .about-page {
-  --navy: #03045e;
-  --cyan: #0077b6;
-  --cyan-light: #caf0f8;
-  --text-dark: #1e293b;
-  --text-muted: #64748b;
-  --bg-light: #f8fafc;
+  --navy: var(--rp-navy, #03045e);
+  --navy-dark: var(--rp-navy-dark, #02033b);
+  --cyan: var(--rp-blue-primary, #0077b6);
+  --cyan-vibrant: var(--rp-cyan-vibrant, #00b4d8);
+  --cyan-light: var(--rp-cyan-subtle, #e0f2fe);
+  --cyan-lightest: var(--rp-cyan-lightest, #f0f9ff);
+  --text-dark: var(--rp-slate-900, #0f172a);
+  --text-muted: var(--rp-slate-700, #334155);
+  --bg-light: var(--rp-slate-50, #f8fafc);
   --white: #ffffff;
   
   font-family: 'Inter', 'Roboto', sans-serif;
@@ -29,9 +32,10 @@
   font-size: 2.2rem;
   color: var(--navy);
   margin-bottom: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   display: inline-block;
+  letter-spacing: -0.5px;
 }
 
 .section-title::after {
@@ -41,7 +45,7 @@
   height: 4px;
   bottom: -10px;
   left: 0;
-  background-color: var(--cyan);
+  background: linear-gradient(90deg, var(--cyan) 0%, var(--cyan-vibrant) 100%);
   border-radius: 2px;
 }
 
@@ -60,7 +64,7 @@
 /* Hero Section */
 .about-hero {
   position: relative;
-  height: 400px;
+  height: 420px;
   background-image: url('/images/about-hero.png');
   background-size: cover;
   background-position: center;
@@ -77,7 +81,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  background: linear-gradient(135deg, rgba(2, 3, 59, 0.88) 0%, rgba(3, 4, 94, 0.75) 50%, rgba(0, 119, 182, 0.5) 100%);
   z-index: 1;
 }
 
@@ -93,38 +97,39 @@
   font-weight: 800;
   margin-bottom: 1rem;
   letter-spacing: -1px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.6;
-  opacity: 0.9;
+  font-weight: 500;
+  line-height: 1.65;
+  color: #e0f2fe;
 }
 
 /* Overview Section */
 .about-overview {
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-color: var(--white);
 }
 
 .overview-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
 .overview-text p {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.85;
   color: var(--text-muted);
   margin-bottom: 1.5rem;
 }
 
 .overview-text strong {
   color: var(--navy);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .overview-image {
@@ -133,9 +138,10 @@
 
 .overview-image img {
   width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 20px 40px rgba(3, 4, 94, 0.1);
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(3, 4, 94, 0.12);
   transition: transform 0.3s ease;
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
 }
 
 .overview-image img:hover {
@@ -144,30 +150,30 @@
 
 /* Values Section */
 .about-values {
-  padding: 3rem 0;
+  padding: 4rem 0;
   background-color: var(--bg-light);
 }
 
 .values-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  gap: 1.8rem;
   margin-top: 2rem;
 }
 
 .value-card {
   background: var(--white);
   padding: 2.5rem 2rem;
-  border-radius: 12px;
+  border-radius: 14px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
-  border: 1px solid rgba(0, 180, 216, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
 }
 
 .value-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(3, 4, 94, 0.1);
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(3, 4, 94, 0.1);
   border-color: var(--cyan);
 }
 
@@ -184,7 +190,7 @@
 }
 
 .value-card:hover .icon-wrapper {
-  background-color: var(--cyan);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--cyan) 100%);
 }
 
 .value-card mat-icon {
@@ -204,29 +210,31 @@
   font-size: 1.3rem;
   color: var(--navy);
   margin-bottom: 1rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .value-card p {
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
   font-size: 0.95rem;
 }
 
 /* Certifications Banner */
 .about-certifications {
-  background-color: var(--cyan-light);
+  background: linear-gradient(135deg, var(--rp-cyan-lightest, #f0f9ff) 0%, var(--rp-cyan-subtle, #e0f2fe) 60%, #eff6ff 100%);
   color: var(--navy);
-  padding: 3rem 0;
-  border-top: 4px solid var(--cyan);
+  padding: 4rem 0;
+  border-top: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--navy) 0%, var(--cyan) 50%, var(--cyan-vibrant) 100%) 1;
 }
 
 .trust-title {
   text-align: center;
   font-size: 2.2rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 2rem;
   color: var(--navy);
+  letter-spacing: -0.5px;
 }
 
 .cert-grid {
@@ -241,16 +249,17 @@
   gap: 1.5rem;
   background: var(--white);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(3, 4, 94, 0.05);
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
   border-left: 4px solid var(--cyan);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .cert-item:hover {
   background: var(--white);
-  transform: translateX(5px);
-  box-shadow: 0 8px 15px rgba(0, 180, 216, 0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0, 119, 182, 0.15);
 }
 
 .cert-item mat-icon {
@@ -262,9 +271,10 @@
 }
 
 .cert-item span {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--navy);
 }
 
 /* SVG Logo Gallery */
@@ -272,7 +282,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 2.5rem;
   flex-wrap: wrap;
 }
@@ -280,12 +290,12 @@
 .cert-badge {
   width: 120px;
   height: 120px;
-  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 8px 16px rgba(3, 4, 94, 0.15));
   transition: transform 0.3s ease;
 }
 
 .cert-badge:hover {
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.08) rotate(3deg);
 }
 
 /* Responsive Design */
@@ -316,7 +326,7 @@
   .cert-item {
     flex-direction: column;
     text-align: center;
-    border-left: none;
+    border-left: 1px solid var(--rp-slate-200, #e2e8f0);
     border-top: 4px solid var(--cyan);
     padding-top: 2rem;
   }
@@ -325,18 +335,18 @@
 /* Official Registrations Card on About Page */
 .licensing-details-card {
   background: var(--white);
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 2.5rem;
   margin-top: 3rem;
   box-shadow: 0 10px 30px rgba(3, 4, 94, 0.05);
-  border: 1px solid rgba(0, 180, 216, 0.15);
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
 }
 
 .licensing-details-card h3 {
   font-size: 1.5rem;
   color: var(--navy);
   margin-bottom: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
   text-align: center;
   position: relative;
 }
@@ -349,7 +359,7 @@
   bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--cyan);
+  background: linear-gradient(90deg, var(--cyan) 0%, var(--cyan-vibrant) 100%);
   border-radius: 2px;
 }
 
@@ -366,14 +376,16 @@
   gap: 1rem;
   padding: 1.25rem;
   background: var(--bg-light);
-  border-radius: 8px;
+  border-radius: 10px;
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
   border-left: 4px solid var(--cyan);
   transition: all 0.3s ease;
 }
 
 .licensing-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 180, 216, 0.1);
+  box-shadow: 0 8px 18px rgba(0, 119, 182, 0.1);
+  border-color: var(--cyan);
 }
 
 .licensing-item mat-icon {
@@ -394,7 +406,7 @@
 .licensing-info strong {
   font-size: 0.95rem;
   color: var(--navy);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .licensing-info span {

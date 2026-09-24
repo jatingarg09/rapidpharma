@@ -1,9 +1,13 @@
 .blog-detail-container {
-  --navy: #03045e;
-  --cyan: #0077b6;
-  --bg-light: #f8fafc;
+  --navy: var(--rp-navy, #03045e);
+  --navy-dark: var(--rp-navy-dark, #02033b);
+  --cyan: var(--rp-blue-primary, #0077b6);
+  --cyan-vibrant: var(--rp-cyan-vibrant, #00b4d8);
+  --cyan-light: var(--rp-cyan-subtle, #e0f2fe);
+  --bg-light: var(--rp-slate-50, #f8fafc);
   --white: #ffffff;
-  --text-main: #334155;
+  --text-main: var(--rp-slate-800, #1e293b);
+  --text-muted: var(--rp-slate-700, #334155);
   background-color: var(--bg-light);
   min-height: 100vh;
   padding-bottom: 4rem;
@@ -11,10 +15,11 @@
 
 /* --- Article Header --- */
 .article-header {
-  background: var(--navy);
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--cyan) 100%);
   color: var(--white);
-  padding: 3rem 2rem 4rem;
+  padding: 4rem 2rem 5rem;
   text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .blog-header-content {
@@ -26,7 +31,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--cyan);
+  color: #e0f2fe;
   text-decoration: none;
   font-weight: 600;
   margin-bottom: 2rem;
@@ -42,7 +47,7 @@
   justify-content: center;
   gap: 2rem;
   margin-bottom: 1.5rem;
-  color: #caf0f8;
+  color: #e0f2fe;
   font-size: 0.95rem;
 }
 
@@ -63,6 +68,8 @@
   font-weight: 900;
   line-height: 1.3;
   margin: 0;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -81,7 +88,7 @@
   height: auto;
   display: block;
   border-radius: 1rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 40px rgba(3, 4, 94, 0.2);
 }
 
 /* --- Article Body --- */
@@ -143,7 +150,7 @@
 .article-faqs {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #e2e8f0;
+  border-top: 1px solid var(--rp-slate-200, #e2e8f0);
 }
 
 .article-faqs h3 {
@@ -157,9 +164,11 @@
   margin-bottom: 1.5rem;
   background: var(--white);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: 12px;
   border-left: 4px solid var(--cyan);
-  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: 1px solid var(--rp-slate-200, #e2e8f0);
+  border-left: 4px solid var(--cyan);
+  box-shadow: 0 4px 12px rgba(3, 4, 94, 0.04);
 }
 
 .faq-item h4 {
@@ -179,31 +188,33 @@
 .blog-cta {
   max-width: 800px;
   margin: 0 auto;
-  background: linear-gradient(135deg, var(--navy) 0%, #0077b6 100%);
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--cyan) 100%);
   color: var(--white);
-  padding: 3rem 2rem;
-  border-radius: 1rem;
+  padding: 3.5rem 2rem;
+  border-radius: 1.25rem;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 40px rgba(3, 4, 94, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .blog-cta h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 1rem;
   font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .blog-cta p {
   font-size: 1.1rem;
-  color: #caf0f8;
+  color: #e0f2fe;
   margin-bottom: 2.5rem;
 }
 
 /* --- Buttons --- */
 .btn-primary {
   display: inline-block;
-  background-color: var(--cyan);
-  color: var(--white);
+  background: linear-gradient(135deg, var(--cyan) 0%, var(--cyan-vibrant) 100%);
+  color: var(--navy-dark);
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   font-weight: 700;
@@ -216,7 +227,7 @@
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0, 180, 216, 0.6);
-  color: var(--white);
+  color: var(--navy-dark);
 }
 
 .glow-effect {
