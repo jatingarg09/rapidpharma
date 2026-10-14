@@ -1,20 +1,30 @@
 <div class="pcd-container">
-  <!-- MAIN PAGE (No specific state selected) -->
+
+  <!-- ========================================================================= -->
+  <!-- 1. MAIN NATIONAL PAGE (No state or district selected)                     -->
+  <!-- ========================================================================= -->
   <div *ngIf="!selectedLocation && !selectedDistrict" class="animate-fade-in">
 
     <!-- Hero Section -->
     <section class="premium-hero">
       <div class="hero-content">
-        <div class="hero-badge">PCD Pharma Franchise</div>
-        <h1>Monopoly-Based Opportunities Across India</h1>
+        <div class="hero-badge">
+          <mat-icon class="badge-icon">verified_user</mat-icon> Best PCD Pharma Franchise Company in India
+        </div>
+        <h1>PCD Pharma Franchise in India: Monopoly Business Opportunities</h1>
         <p class="hero-subtitle">
-          Partner with Rapid Pharmaceuticals to build a profitable distribution network.
-          We provide WHO-GMP certified products with exclusive district-level rights.
+          Expand your pharmaceutical business with <strong>Rapid Pharmaceuticals</strong>. Acquire exclusive monopoly rights, 150+ WHO-GMP certified formulations, and 360° promotional marketing support across India.
         </p>
         <div class="hero-actions">
-          <a routerLink="/contact" class="btn-primary glow-effect">
+          <a [routerLink]="['/contact']" class="btn-primary glow-effect">
             Apply for Franchise <mat-icon aria-hidden="true">arrow_forward</mat-icon>
           </a>
+        </div>
+        <div class="hero-trust-tags">
+          <span class="trust-tag"><mat-icon>verified</mat-icon> WHO-GMP Certified</span>
+          <span class="trust-tag"><mat-icon>inventory_2</mat-icon> 150+ DCGI Formulations</span>
+          <span class="trust-tag"><mat-icon>local_shipping</mat-icon> 24-48h Fast Dispatch</span>
+          <span class="trust-tag"><mat-icon>lock</mat-icon> Monopoly Distribution Rights</span>
         </div>
       </div>
       <div class="hero-image-wrapper">
@@ -28,14 +38,14 @@
         <mat-icon aria-hidden="true">medication</mat-icon>
         <div class="stat-text">
           <span class="stat-number">150+</span>
-          <span class="stat-label">Products</span>
+          <span class="stat-label">DCGI Formulations</span>
         </div>
       </div>
       <div class="stat-item">
         <mat-icon aria-hidden="true">map</mat-icon>
         <div class="stat-text">
           <span class="stat-number">28+</span>
-          <span class="stat-label">States Covered</span>
+          <span class="stat-label">States & UTs Covered</span>
         </div>
       </div>
       <div class="stat-item">
@@ -54,58 +64,69 @@
       </div>
     </section>
 
-    <!-- Intro Section -->
-    <section class="section-container text-center">
-      <h2 class="section-title">Grow With India’s Trusted Pharma Partner</h2>
-      <p class="section-description max-w-800 mx-auto">
-        <strong>Rapid Pharmaceuticals</strong> is an ISO-certified company offering
-        monopoly-based <strong>PCD Pharma Franchise</strong> opportunities across all Indian states and union territories.
-        Our model ensures low investment and high returns with complete business support—including marketing materials, visual aids, promotional inputs, and product training.
-      </p>
-    </section>
+    <!-- Why Partner With Rapid Pharmaceuticals (6 Value Drivers) -->
+    <section class="section-container">
+      <div class="section-header text-center mb-8">
+        <h2 class="section-title">Why Partner with Rapid Pharmaceuticals?</h2>
+        <p class="section-description">We provide an unbeatable ecosystem for distributors, medical representatives, and pharma professionals to build high-growth businesses.</p>
+      </div>
 
-    <!-- Why Choose Us Grid -->
-    <section class="section-container bg-light-blue rounded-xl p-8">
-      <h2 class="section-title text-center mb-8">Why Partner With Us?</h2>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">verified</mat-icon></div>
-          <h3>Premium Quality</h3>
-          <p>WHO-GMP certified manufacturing & DCGI-approved formulations.</p>
+          <div class="feature-icon-box">
+            <mat-icon>lock</mat-icon>
+          </div>
+          <h3>Territorial Monopoly Rights</h3>
+          <p>Gain written monopoly rights for your district or territory to ensure zero internal competition and full market exclusivity.</p>
         </div>
+
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">admin_panel_settings</mat-icon></div>
-          <h3>Monopoly Rights</h3>
-          <p>Exclusive territory rights for your district to grow independently.</p>
+          <div class="feature-icon-box">
+            <mat-icon>verified</mat-icon>
+          </div>
+          <h3>WHO-GMP Certified Medicines</h3>
+          <p>Over 150 DCGI-approved formulations manufactured in advanced facilities following strict quality control benchmarks.</p>
         </div>
+
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">category</mat-icon></div>
-          <h3>Diverse Portfolio</h3>
-          <p>150+ products across 20+ therapeutic categories for complete coverage.</p>
+          <div class="feature-icon-box">
+            <mat-icon>trending_up</mat-icon>
+          </div>
+          <h3>High Margins & Low Investment</h3>
+          <p>Attractive wholesale net rates and healthy profit margins designed for quick break-even and sustainable long-term returns.</p>
         </div>
+
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">trending_up</mat-icon></div>
-          <h3>High Margins</h3>
-          <p>Affordable pricing structures designed to maximize your profitability.</p>
+          <div class="feature-icon-box">
+            <mat-icon>menu_book</mat-icon>
+          </div>
+          <h3>Complete Promotional Kit</h3>
+          <p>Visual aids, physician samples, MR bags, Leave-Behind Literatures (LBL), reminder cards, and product glossaries provided at no extra cost.</p>
         </div>
+
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">local_shipping</mat-icon></div>
-          <h3>Timely Delivery</h3>
-          <p>Robust supply chain and logistics support ensuring consistent stock.</p>
+          <div class="feature-icon-box">
+            <mat-icon>local_shipping</mat-icon>
+          </div>
+          <h3>24–48h Express Dispatch</h3>
+          <p>Rapid nationwide logistics ensure continuous stock availability, preventing stockouts for your prescribing doctors and retail chemists.</p>
         </div>
+
         <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">campaign</mat-icon></div>
-          <h3>Marketing Support</h3>
-          <p>Dedicated sales team, visual aids, MR bags, and digital creatives provided.</p>
+          <div class="feature-icon-box">
+            <mat-icon>support_agent</mat-icon>
+          </div>
+          <h3>Dedicated Partner Support</h3>
+          <p>Transparent commercial policies, regular new product launches, and dedicated franchise managers to help you scale your business.</p>
         </div>
       </div>
     </section>
 
-    <!-- Franchise List -->
+    <!-- State Directory Section -->
     <section class="section-container">
-      <div class="section-header text-center">
-        <h2 class="section-title">Franchise Opportunities by Region</h2>
-        <p class="section-description">Select your state or union territory below to explore exclusive district-wise monopoly rights.</p>
+      <div class="section-header text-center mb-6">
+        <h2 class="section-title">Franchise Opportunities by State</h2>
+        <p class="section-description">Select your state or union territory below to explore exclusive district-wise monopoly opportunities.</p>
       </div>
 
       <div class="premium-grid">
@@ -117,56 +138,52 @@
           <div class="card-content">
             <h3>{{ location.name }}</h3>
             <p>{{ location.description }}</p>
-            <span class="btn-link">Explore Opportunities <mat-icon aria-hidden="true">arrow_forward</mat-icon></span>
+            <span class="btn-link">Explore {{ location.name }} Opportunities <mat-icon aria-hidden="true">arrow_forward</mat-icon></span>
           </div>
         </a>
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="section-container max-w-800 mx-auto">
-      <h2 class="section-title text-center">Frequently Asked Questions</h2>
+    <!-- Products Portfolio Table -->
+    <section class="section-container">
+      <div class="section-header text-center mb-6">
+        <h2 class="section-title">Diverse Therapeutic Product Portfolio</h2>
+        <p class="section-description">Comprehensive, high-demand formulations catering to clinics, hospitals, and pharmacies across India.</p>
+      </div>
+
+      <div class="table-container shadow-card mb-6">
+        <table class="modern-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Product Formulations</th>
+              <th>Popular Formulations</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of productCategories">
+              <td class="font-bold text-navy">
+                <a [routerLink]="['/category/' + item.slug]" class="table-cat-link">{{ item.category }}</a>
+              </td>
+              <td>{{ item.formulations }}</td>
+              <td class="text-sm font-semibold">{{ item.popularItems }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- National FAQ Section -->
+    <section class="section-container max-w-900 mx-auto">
+      <div class="section-header text-center mb-6">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-description">Quick answers about partnering with Rapid Pharmaceuticals for a PCD Pharma Franchise.</p>
+      </div>
       <div class="modern-faq">
-        <details class="faq-item">
-          <summary>What is a PCD Pharma Franchise? <mat-icon class="faq-icon">add</mat-icon></summary>
+        <details class="faq-item" *ngFor="let faq of getNationalFaqs()">
+          <summary>{{ faq.question }} <mat-icon class="faq-icon">add</mat-icon></summary>
           <div class="faq-content">
-            <p>A PCD Pharma Franchise allows distributors to sell pharma products with monopoly rights in their region. You get to build an independent business leveraging our established brand and high-quality product portfolio.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>How can I apply for franchise rights? <mat-icon class="faq-icon">add</mat-icon></summary>
-          <div class="faq-content">
-            <p>Simply fill out the inquiry form below. Our business development team will contact you promptly with details on available territories, product lists, and the onboarding process.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>Do you provide promotional support? <mat-icon class="faq-icon">add</mat-icon></summary>
-          <div class="faq-content">
-            <p>Yes, we provide comprehensive support including visual aids, MR bags, product catch covers, LBLs (Leave Behind Literatures), samples, digital creatives, and thorough product training.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>Are your products DCGI-approved? <mat-icon class="faq-icon">add</mat-icon></summary>
-          <div class="faq-content">
-            <p>Absolutely. All formulations are DCGI-approved and manufactured in highly regulated, WHO-GMP compliant facilities to ensure the highest standards of safety and efficacy.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>Do you provide a formal monopoly agreement? <mat-icon class="faq-icon">add</mat-icon></summary>
-          <div class="faq-content">
-            <p>Yes. Once territory availability is confirmed and terms are finalized, we issue a signed, legally binding monopoly agreement to secure exclusive distribution and marketing rights for your specified district.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>What are the payment and billing terms? <mat-icon class="faq-icon">add</mat-icon></summary>
-          <div class="faq-content">
-            <p>All PCD franchise orders operate on a standard B2B cash-and-carry or advance-payment basis. Wholesale billing starts immediately upon confirmation of the order sheet and payment receipt.</p>
-          </div>
-        </details>
-        <details class="faq-item">
-          <summary>Who handles transportation and freight? <mat-icon class="faq-icon">add</mat-icon></summary>
-          <div class="faq-content">
-            <p>Orders are shipped Ex-works from our central hub. Transportation and freight charges are borne by the distributor (freight-to-pay basis) using reliable logistics partners.</p>
+            <p>{{ faq.answer }}</p>
           </div>
         </details>
       </div>
@@ -175,176 +192,397 @@
     <!-- Call to Action Banner -->
     <section class="modern-cta-banner">
       <div class="cta-content">
-        <h2>Ready to Start Your Pharma Business?</h2>
-        <p>Take the first step towards securing your monopoly rights today.</p>
-        <a routerLink="/contact" class="btn-primary glow-effect">Request Franchise Info</a>
+        <h2>Start Your PCD Pharma Franchise Today</h2>
+        <p>Contact our franchise team to check territory availability and request our complete product price list.</p>
+        <div class="cta-btns">
+          <a [routerLink]="['/contact']" class="btn-primary glow-effect">Apply for Franchise</a>
+        </div>
       </div>
     </section>
 
   </div>
 
 
-  <!-- ================= SPECIFIC STATE PAGE ================= -->
+  <!-- ========================================================================= -->
+  <!-- 2. SPECIFIC STATE PAGE (When a state is selected)                          -->
+  <!-- ========================================================================= -->
   <div *ngIf="selectedLocation && isStatePage" class="state-section animate-fade-in">
-    <a class="btn-back" [routerLink]="['/pcd-pharma-franchise']">
-      <mat-icon aria-hidden="true">arrow_back</mat-icon> Back to All States
-    </a>
+    
+    <!-- Breadcrumb Navigation Bar -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <div class="breadcrumb-container">
+        <a [routerLink]="['/']" class="crumb-link">
+          <mat-icon class="crumb-icon">home</mat-icon> Home
+        </a>
+        <mat-icon class="crumb-sep">chevron_right</mat-icon>
+        <a [routerLink]="['/pcd-pharma-franchise']" class="crumb-link">PCD Pharma Franchise</a>
+        <mat-icon class="crumb-sep">chevron_right</mat-icon>
+        <span class="crumb-current">{{ selectedLocation.name }}</span>
+      </div>
+    </nav>
 
-    <!-- State Hero -->
+    <!-- State Hero Banner -->
     <section class="state-hero">
       <div class="state-hero-bg">
-        <img loading="lazy" [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name + ' - Monopoly Rights by Rapid Pharmaceuticals'" />
+        <img loading="lazy" [src]="selectedLocation.image" [alt]="'PCD Pharma Franchise in ' + selectedLocation.name" />
         <div class="state-hero-overlay"></div>
       </div>
       <div class="state-hero-content">
+        <div class="hero-badge hero-badge-white">
+          <mat-icon>verified</mat-icon> Monopoly Rights | WHO-GMP Certified Formulations
+        </div>
         <h1>PCD Pharma Franchise in {{ selectedLocation.name }}</h1>
-        <p>Exclusive Monopoly Rights | WHO-GMP Certified Products</p>
-      </div>
-    </section>
-
-    <!-- Intro -->
-    <section class="section-container text-center">
-      <h2 class="section-title">
-        <ng-container *ngIf="seoVariationIndex === 0">Start Your Pharma Business in {{ selectedLocation.name }}</ng-container>
-        <ng-container *ngIf="seoVariationIndex === 1">Leading PCD Pharma Franchise in {{ selectedLocation.name }}</ng-container>
-        <ng-container *ngIf="seoVariationIndex === 2">Expand Your Reach in {{ selectedLocation.name }}</ng-container>
-      </h2>
-      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 0">
-        Welcome to <strong>Rapid Pharmaceuticals</strong> – your trusted partner for PCD Pharma Franchise in {{ selectedLocation.name }}. 
-        With rising healthcare demand in this region, starting a pharma business here ensures strong growth potential. We support our partners with comprehensive promotional materials and transparent business practices.
-      </p>
-      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 1">
-        Unlock high profit margins with a <strong>PCD Pharma Franchise</strong> in {{ selectedLocation.name }}. 
-        Rapid Pharmaceuticals provides distributors with exclusive monopoly rights and a massive portfolio of WHO-GMP certified medicines to help you dominate the regional market.
-      </p>
-      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 2">
-        <strong>Rapid Pharmaceuticals</strong> is offering exclusive distribution opportunities across {{ selectedLocation.name }}. 
-        By partnering with us, you get DCGI-approved formulations, extensive marketing support, and the independence to build a highly successful pharmaceutical business in your territory.
-      </p>
-    </section>
-
-    <!-- State Benefits Grid -->
-    <section class="section-container bg-light-blue rounded-xl p-8">
-      <h2 class="section-title text-center mb-8">Benefits in {{ selectedLocation.name }}</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">star</mat-icon></div>
-          <h3>Monopoly Rights</h3>
-          <p>Exclusive distribution rights across {{ selectedLocation.name }}.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">inventory</mat-icon></div>
-          <h3>150+ Products</h3>
-          <p>Extensive catalog spanning major therapeutic segments.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">payments</mat-icon></div>
-          <h3>High Margins</h3>
-          <p>Attractive pricing to guarantee your business profitability.</p>
+        <p class="state-hero-sub">
+          Expand your pharmaceutical business with <strong>Rapid Pharmaceuticals</strong> in {{ selectedLocation.name }}. Gain exclusive district-wise monopoly rights, 150+ DCGI-approved formulations, and 360° promotional marketing support.
+        </p>
+        <div class="hero-actions justify-center">
+          <a [routerLink]="['/contact']" class="btn-primary glow-effect">
+            Apply for {{ selectedLocation.name }} Franchise <mat-icon>arrow_forward</mat-icon>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- District List -->
-    <section *ngIf="districtList.length > 0" class="section-container">
-      <div class="section-header text-center">
-        <h2 class="section-title">Opportunities in {{ selectedLocation.name }} Districts</h2>
-        <p class="section-description">Select your district below to claim your exclusive monopoly rights.</p>
+    <!-- State Stats Ribbon -->
+    <section class="stats-bar glass-panel">
+      <div class="stat-item">
+        <mat-icon>location_on</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">{{ districtList.length || 'All' }}</span>
+          <span class="stat-label">Districts Available</span>
+        </div>
       </div>
-      <div class="district-grid-modern">
-        <a class="district-pill" *ngFor="let district of districtList" [routerLink]="goToDistrict(district)">
-          <mat-icon aria-hidden="true">location_on</mat-icon>
-          <span>{{ district }}</span>
-        </a>
+      <div class="stat-item">
+        <mat-icon>inventory_2</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">150+</span>
+          <span class="stat-label">DCGI Medicines</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <mat-icon>verified</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">WHO-GMP Quality</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <mat-icon>lock</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">Exclusive</span>
+          <span class="stat-label">Monopoly Rights</span>
+        </div>
       </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- Detailed Article Body for State -->
+    <section class="section-container">
+      <div class="article-content max-w-900 mx-auto">
+        
+        <h2 class="article-heading"><strong>PCD Pharma Franchise Business in {{ selectedLocation.name }}</strong></h2>
+        
+        <p class="article-paragraph">
+          The healthcare sector across <strong>{{ selectedLocation.name }}</strong> is experiencing rapid modernization and growth, with increasing investments in hospitals, primary healthcare centers, and private clinic networks. Securing a <strong>PCD Pharma Franchise in {{ selectedLocation.name }}</strong> offers an exceptional pathway for medical representatives, distributors, and entrepreneurs to establish an independent and highly profitable enterprise.
+        </p>
+
+        <p class="article-paragraph">
+          Partnering with <strong><a [routerLink]="['/about']" class="text-link">Rapid Pharmaceuticals</a></strong> unlocks exclusive territorial monopoly rights, DCGI-approved WHO-GMP certified medicines, competitive wholesale rates, and dedicated promotional detailing support across all districts in {{ selectedLocation.name }}.
+        </p>
+
+        <h2 class="article-heading"><strong>Why Start a Pharma Franchise in {{ selectedLocation.name }} with Us?</strong></h2>
+        
+        <ol class="styled-numbered-list">
+          <li><strong>Guaranteed Territorial Monopoly:</strong> We grant written monopoly rights across districts in {{ selectedLocation.name }}, ensuring you operate without competition from other distributors of our brand.</li>
+          <li><strong>High Prescription Demand:</strong> A rich portfolio spanning antibiotics, pain management, pediatrics, gastrointestinal, cardiac-diabetic, and nutraceutical segments tailored for prescribers in {{ selectedLocation.name }}.</li>
+          <li><strong>Low Investment & Rapid Break-Even:</strong> Transparent net pricing structure enables distributors to launch with minimal working capital and achieve healthy profit margins quickly.</li>
+          <li><strong>Fast 24–48h Dispatch:</strong> Swift logistics and order processing keep your local supply chain well-stocked across every district in {{ selectedLocation.name }}.</li>
+        </ol>
+
+        <!-- District Hubs Breakdown -->
+        <h2 class="article-heading"><strong>Major Pharmaceutical Hubs in {{ selectedLocation.name }}</strong></h2>
+        <p class="article-paragraph">
+          We offer prime monopoly opportunities across all major commercial and healthcare centers in {{ selectedLocation.name }}. Click any city hub below to view franchise opportunities:
+        </p>
+
+        <div class="district-hubs-list" *ngIf="getDistrictHubs(selectedLocation.slug).length > 0">
+          <ul class="styled-bullet-list">
+            <li *ngFor="let hub of getDistrictHubs(selectedLocation.slug)">
+              <a [routerLink]="['/pcd-pharma-franchise-in-' + hub.slug]" 
+                 class="hub-district-link" 
+                 [title]="'PCD Pharma Franchise in ' + hub.city">
+                <strong>{{ hub.city }}</strong>
+              </a>: {{ hub.desc }}
+            </li>
+          </ul>
+        </div>
+
+        <!-- All Districts Pill Grid -->
+        <div *ngIf="districtList.length > 0" class="district-pills-box shadow-card my-6">
+         <h3 class="district-box-title text-navy font-bold mb-3">Opportunities in {{ selectedLocation.name }} Districts</h3>
+         <p class="text-navy">Select your district below to claim your exclusive monopoly rights.</p>
+
+          <div class="district-grid-modern">
+            <a class="district-pill" *ngFor="let district of districtList" 
+               [routerLink]="['/pcd-pharma-franchise-in-' + getSlug(district)]" 
+               [title]="'PCD Pharma Franchise in ' + district">
+              <mat-icon aria-hidden="true">location_on</mat-icon>
+              <span>{{ district }}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product Categories Table -->
+        <h2 class="article-heading"><strong>WHO-GMP Certified Formulations Available in {{ selectedLocation.name }}</strong></h2>
+        
+        <div class="table-container shadow-card mb-6">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Product Formulations</th>
+                <th>Popular Formulations</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of productCategories">
+                <td class="font-bold text-navy">
+                  <a [routerLink]="['/category/' + item.slug]" class="table-cat-link">{{ item.category }}</a>
+                </td>
+                <td>{{ item.formulations }}</td>
+                <td class="text-sm font-semibold">{{ item.popularItems }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Promotional Support -->
+        <h2 class="article-heading"><strong>Promotional & Detailing Support Provided</strong></h2>
+        <p class="article-paragraph">
+          To accelerate prescription generation among doctors in {{ selectedLocation.name }}, Rapid Pharmaceuticals supplies a full suite of marketing inputs:
+        </p>
+
+        <ul class="styled-bullet-list">
+          <li>Custom Visual Aids and Detail Books for medical representative visits</li>
+          <li>Leave-Behind Literature (LBL), Product Cards, and Glossaries</li>
+          <li>Physician Samples and Doctor Reminder Pads</li>
+          <li>Executive MR Bags, Visiting Cards, and Promotional Pens</li>
+        </ul>
+
+        <!-- State FAQs -->
+        <h2 class="article-heading"><strong>Frequently Asked Questions — {{ selectedLocation.name }}</strong></h2>
+        
+        <div class="modern-faq mb-6">
+          <details class="faq-item" *ngFor="let faq of getStateFaqs(selectedLocation.name)">
+            <summary>{{ faq.question }} <mat-icon class="faq-icon">add</mat-icon></summary>
+            <div class="faq-content">
+              <p>{{ faq.answer }}</p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
     <section class="modern-cta-banner">
       <div class="cta-content">
-        <h2>Secure {{ selectedLocation.name }} Today</h2>
-        <p>Take the first step towards building your profitable pharma franchise.</p>
-        <a routerLink="/contact" class="btn-primary glow-effect">Request Franchise Info</a>
+        <h2>Become a Franchise Partner in {{ selectedLocation.name }}</h2>
+        <p>Secure exclusive monopoly rights for your district in {{ selectedLocation.name }} today.</p>
+        <div class="cta-btns">
+          <a [routerLink]="['/contact']" class="btn-primary glow-effect">Apply for {{ selectedLocation.name }} Franchise</a>
+        </div>
       </div>
     </section>
+
   </div>
 
 
-  <!-- ================= DISTRICT PAGE ================= -->
+  <!-- ========================================================================= -->
+  <!-- 3. SPECIFIC DISTRICT PAGE (When a district is selected)                    -->
+  <!-- ========================================================================= -->
   <div *ngIf="selectedDistrict && !isStatePage" class="state-section animate-fade-in">
-    <a class="btn-back" [routerLink]="['/pcd-pharma-franchise']">
-      <mat-icon aria-hidden="true">arrow_back</mat-icon> Back to All States
-    </a>
+    
+    <!-- Breadcrumb Navigation Bar -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <div class="breadcrumb-container">
+        <a [routerLink]="['/']" class="crumb-link">
+          <mat-icon class="crumb-icon">home</mat-icon> Home
+        </a>
+        <mat-icon class="crumb-sep">chevron_right</mat-icon>
+        <a [routerLink]="['/pcd-pharma-franchise']" class="crumb-link">PCD Pharma Franchise</a>
+        <mat-icon class="crumb-sep" *ngIf="selectedLocation">chevron_right</mat-icon>
+        <a *ngIf="selectedLocation" [routerLink]="['/pcd-pharma-franchise-in-' + selectedLocation.slug]" class="crumb-link">{{ selectedLocation.name }}</a>
+        <mat-icon class="crumb-sep">chevron_right</mat-icon>
+        <span class="crumb-current">{{ selectedDistrict }}</span>
+      </div>
+    </nav>
 
-    <!-- District Hero -->
-    <section class="state-hero">
+    <!-- District Hero Banner -->
+    <section class="state-hero district-hero">
       <div class="state-hero-bg">
         <img loading="lazy" src="/pcddistrict.webp" [alt]="'PCD Pharma Franchise in ' + selectedDistrict" />
         <div class="state-hero-overlay"></div>
       </div>
       <div class="state-hero-content">
+        <div class="hero-badge hero-badge-white">
+          <mat-icon>verified</mat-icon> Exclusive District Monopoly Rights • {{ selectedLocation ? selectedLocation.name : 'Territory' }}
+        </div>
         <h1>PCD Pharma Franchise in {{ selectedDistrict }}</h1>
-        <p>Exclusive Monopoly Rights Available</p>
-      </div>
-    </section>
-
-    <!-- Intro -->
-    <section class="section-container text-center">
-      <h2 class="section-title">
-        <ng-container *ngIf="seoVariationIndex === 0">Monopoly Rights in {{ selectedDistrict }}</ng-container>
-        <ng-container *ngIf="seoVariationIndex === 1">Top PCD Pharma Franchise in {{ selectedDistrict }}</ng-container>
-        <ng-container *ngIf="seoVariationIndex === 2">Start a Pharma Business in {{ selectedDistrict }}</ng-container>
-      </h2>
-      
-      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 0">
-        <strong>Rapid Pharmaceuticals</strong> offers an exclusive PCD Pharma Franchise in <strong>{{ selectedDistrict }}</strong>. 
-        With growing demand for quality medicines in {{ selectedDistrict }}, this is the perfect opportunity to establish your own distribution business with our WHO-GMP certified range.
-      </p>
-      
-      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 1">
-        Looking for a highly profitable business opportunity? <strong>Rapid Pharmaceuticals</strong> is actively expanding its network in <strong>{{ selectedDistrict }}</strong>. We empower local distributors with exclusive monopoly rights and a robust portfolio of over 150 DCGI-approved formulations to ensure your success.
-      </p>
-      
-      <p class="section-description max-w-800 mx-auto" *ngIf="seoVariationIndex === 2">
-        Establish a leading pharmaceutical distribution network in <strong>{{ selectedDistrict }}</strong> with <strong>Rapid Pharmaceuticals</strong>. By partnering with us, you gain access to premium, WHO-GMP manufactured medicines, aggressive marketing support, and the exclusive rights needed to dominate the local market.
-      </p>
-    </section>
-
-    <!-- Product Highlights Grid -->
-    <section class="section-container bg-light-blue rounded-xl p-8">
-      <h2 class="section-title text-center mb-8">Product Range for {{ selectedDistrict }}</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">medication</mat-icon></div>
-          <h3>Tablets & Capsules</h3>
-          <p>Antibiotics, cardiac-diabetic, and nutraceuticals.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">science</mat-icon></div>
-          <h3>Syrups & Suspensions</h3>
-          <p>Pediatric, gastrointestinal, and general care formulations.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">vaccines</mat-icon></div>
-          <h3>Injectables</h3>
-          <p>Critical care and hospital supply medicines.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon"><mat-icon aria-hidden="true">healing</mat-icon></div>
-          <h3>Ointments & Creams</h3>
-          <p>Dermatology and general wound care products.</p>
+        <p class="state-hero-sub">
+          Establish your dominant pharmaceutical distribution and doctor detailing business in <strong>{{ selectedDistrict }}</strong>{{ selectedLocation ? ' (' + selectedLocation.name + ')' : '' }}. Exclusive monopoly rights, 150+ DCGI medicines, and full promotional support by Rapid Pharmaceuticals.
+        </p>
+        <div class="hero-actions justify-center">
+          <a [routerLink]="['/contact']" class="btn-primary glow-effect">
+            Apply for {{ selectedDistrict }} Franchise <mat-icon>arrow_forward</mat-icon>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Call to Action -->
+    <!-- District Stats Ribbon -->
+    <section class="stats-bar glass-panel">
+      <div class="stat-item">
+        <mat-icon>lock</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">District Monopoly</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <mat-icon>inventory_2</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">150+</span>
+          <span class="stat-label">DCGI Medicines</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <mat-icon>verified</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">WHO-GMP</span>
+          <span class="stat-label">Certified Quality</span>
+        </div>
+      </div>
+      <div class="stat-item">
+        <mat-icon>local_shipping</mat-icon>
+        <div class="stat-text">
+          <span class="stat-number">24-48h</span>
+          <span class="stat-label">Direct Dispatch</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Distinct District Content -->
+    <section class="section-container">
+      <div class="article-content max-w-900 mx-auto">
+        
+        <h2 class="article-heading"><strong>Local Pharma Distribution & Monopoly Scope in {{ selectedDistrict }}</strong></h2>
+        
+        <p class="article-paragraph">
+          The demand for quality branded pharmaceutical formulations across <strong>{{ selectedDistrict }}</strong> is expanding rapidly. With the rise of private nursing homes, specialized polyclinics, and neighborhood retail chemist counters throughout {{ selectedDistrict }}, local medical practitioners seek reliable access to WHO-GMP certified, DCGI-approved formulations.
+        </p>
+
+        <p class="article-paragraph">
+          As our exclusive PCD Pharma Franchise partner for <strong>{{ selectedDistrict }}</strong>, you will have exclusive commercial rights to market and supply Rapid Pharmaceuticals' product portfolio directly to doctors, clinics, and chemists across the entire district with zero brand overlap or competition.
+        </p>
+
+        <!-- 4-Pillar District Blueprint -->
+        <h2 class="article-heading"><strong>Why Choose {{ selectedDistrict }} PCD Franchise with Rapid Pharmaceuticals?</strong></h2>
+        
+        <div class="criteria-grid my-6">
+          <div class="criteria-card">
+            <h4>1. Guaranteed Territory Exclusivity</h4>
+            <p>100% written monopoly rights ensuring no other distributor is appointed for our product portfolio in {{ selectedDistrict }}.</p>
+          </div>
+          <div class="criteria-card">
+            <h4>2. High-Yield Doctor Detailing</h4>
+            <p>Comprehensive portfolio designed for General Physicians, Pediatricians, Orthopedics, ENTs, Gynecologists, and Dermatologists in {{ selectedDistrict }}.</p>
+          </div>
+          <div class="criteria-card">
+            <h4>3. Free Promotional Detailing Kit</h4>
+            <p>Visual aids, physician samples, Leave-Behind Literatures (LBL), reminder pads, and MR bags supplied directly for your team.</p>
+          </div>
+          <div class="criteria-card">
+            <h4>4. Express Logistics to {{ selectedDistrict }}</h4>
+            <p>Orders dispatched within 24 to 48 hours via fast express freight directly to {{ selectedDistrict }} to prevent stockouts.</p>
+          </div>
+        </div>
+
+        <!-- High-Demand Formulations in the District -->
+        <h2 class="article-heading"><strong>High-Demand Formulations for {{ selectedDistrict }} Market</strong></h2>
+        <p class="article-paragraph">
+          Gain immediate distribution rights to over 150+ DCGI-approved formulations tailored for daily prescription flow in {{ selectedDistrict }}:
+        </p>
+
+        <div class="table-container shadow-card mb-6">
+          <table class="modern-table">
+            <thead>
+              <tr>
+                <th>Therapeutic Segment</th>
+                <th>Core Formulations</th>
+                <th>High-Demand Products in {{ selectedDistrict }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of productCategories">
+                <td class="font-bold text-navy">
+                  <a [routerLink]="['/category/' + item.slug]" class="table-cat-link">{{ item.category }}</a>
+                </td>
+                <td>{{ item.formulations }}</td>
+                <td class="text-sm font-semibold">{{ item.popularItems }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 4-Step Action Plan for the District -->
+        <h2 class="article-heading"><strong>How to Build a Dominant Distribution Network in {{ selectedDistrict }}</strong></h2>
+        <ol class="styled-numbered-list">
+          <li><strong>Territory & Chemist Mapping:</strong> Map out top chemist shops, hospital pharmacies, and polyclinics across {{ selectedDistrict }}.</li>
+          <li><strong>Physician Detailing:</strong> Introduce Rapid Pharmaceuticals' WHO-GMP range to key prescribers using our visual aids and sample kits.</li>
+          <li><strong>Regular Stock Supply:</strong> Fulfill chemist orders swiftly to establish high prescription retention and brand loyalty in {{ selectedDistrict }}.</li>
+          <li><strong>Portfolio Expansion:</strong> Expand your inventory as local doctor demand grows across multiple therapeutic segments.</li>
+        </ol>
+
+        <!-- Sister Districts / Neighboring Territories -->
+        <div *ngIf="districtList.length > 0" class="district-pills-box shadow-card my-6">
+          <h3 class="district-box-title text-navy font-bold mb-3">{{ selectedLocation?.name || 'Districts' }}</h3>
+          <div class="district-grid-modern">
+            <a class="district-pill" *ngFor="let d of districtList" 
+               [routerLink]="['/pcd-pharma-franchise-in-' + getSlug(d)]" 
+               [class.active-pill]="d === selectedDistrict"
+               [title]="'PCD Pharma Franchise in ' + d">
+              <mat-icon aria-hidden="true">location_on</mat-icon>
+              <span>{{ d }}</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- District FAQs -->
+        <h2 class="article-heading"><strong>Frequently Asked Questions — {{ selectedDistrict }}</strong></h2>
+        
+        <div class="modern-faq mb-6">
+          <details class="faq-item" *ngFor="let faq of getDistrictFaqs(selectedDistrict, selectedLocation?.name)">
+            <summary>{{ faq.question }} <mat-icon class="faq-icon">add</mat-icon></summary>
+            <div class="faq-content">
+              <p>{{ faq.answer }}</p>
+            </div>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
     <section class="modern-cta-banner">
       <div class="cta-content">
-        <h2>Apply for {{ selectedDistrict }}</h2>
-        <p>Start your pharma business in {{ selectedDistrict }} with a trusted partner.</p>
-        <a routerLink="/contact" class="btn-primary glow-effect">Request Franchise Info</a>
+        <h2>Claim Exclusive Monopoly Rights in {{ selectedDistrict }} Today</h2>
+        <p>Partner with Rapid Pharmaceuticals and lead pharma distribution in {{ selectedDistrict }}.</p>
+        <div class="cta-btns">
+          <a [routerLink]="['/contact']" class="btn-primary glow-effect">Apply for {{ selectedDistrict }} Franchise</a>
+        </div>
       </div>
     </section>
 
   </div>
+
 </div>
