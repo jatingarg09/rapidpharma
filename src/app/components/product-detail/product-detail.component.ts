@@ -64,8 +64,8 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     // 2) Synchronously set product from your local products array
     const found = products.find((p) => p.slug === slug);
     if (!found) {
-      // fallback: navigate or show 404 - keep behavior you already have
       console.warn('Product not found:', slug);
+      this.router.navigate(['/products']);
       return;
     }
     this.product = found;
