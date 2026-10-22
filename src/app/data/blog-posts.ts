@@ -590,7 +590,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '12',
     title: '10 PCD Pharma Franchise Companies in India to Consider in 2026',
-    slug: '10-pcd-pharma-franchise-companies-india-2026',
+    slug: '10-pcd-pharma-franchise-companies-in-india-2026',
     date: '2026-09-15',
     author: 'Rapid Pharmaceuticals Team',
     imageUrl: '/blogs/10-pcd-pharma-franchise-india-2026.webp',

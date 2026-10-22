@@ -223,6 +223,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
             this.canonicalService.setCanonicalURL(
               `https://www.rapidpharmaceuticals.in/category/${categorySlug}`,
             );
+          } else {
+            console.warn('Category not found:', categorySlug);
+            this.router.navigate(['/products']);
+            return;
           }
         } else if (typeSlug) {
           const matchedKey =
@@ -271,6 +275,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
             this.canonicalService.setCanonicalURL(
               `https://www.rapidpharmaceuticals.in/type/${typeSlug}`,
             );
+          } else {
+            console.warn('Therapeutic type not found:', typeSlug);
+            this.router.navigate(['/products']);
+            return;
           }
         } else {
           // Default Products Page SEO
