@@ -52,6 +52,31 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
         this.meta.updateTag({ name: 'twitter:image', content: imageUrl });
 
         // JSON-LD Structured Data
+        const breadcrumbSchema = {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": baseUrl
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blogs",
+              "item": `${baseUrl}/blogs`
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": this.post.title,
+              "item": postUrl
+            }
+          ]
+        };
+
         const schemas: any[] = [
           {
             "@context": "https://schema.org",
@@ -63,7 +88,8 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
                 "@type": "Person",
                 "name": this.post.author
             }]
-          }
+          },
+          breadcrumbSchema
         ];
 
         // Add FAQPage Schema for AI Search Engines (GEO)
