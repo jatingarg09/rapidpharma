@@ -13,6 +13,77 @@
   padding-bottom: 4rem;
 }
 
+/* --- Breadcrumb Navigation Bar --- */
+.breadcrumb-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--rp-slate-200, #e2e8f0);
+  padding: 0.85rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+}
+
+.breadcrumb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.crumb-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--cyan);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.crumb-icon {
+  font-size: 1.15rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  vertical-align: middle;
+}
+
+.crumb-link:hover {
+  color: var(--navy);
+  text-decoration: underline;
+}
+
+.crumb-sep {
+  font-size: 1.15rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--rp-slate-400, #94a3b8);
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.crumb-current {
+  color: var(--navy);
+  font-weight: 700;
+  max-width: 650px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb-nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .crumb-current {
+    max-width: 220px;
+  }
+}
+
 /* --- Article Header --- */
 .article-header {
   background: linear-gradient(135deg, var(--navy-dark) 0%, var(--navy) 50%, var(--cyan) 100%);
@@ -25,21 +96,6 @@
 .blog-header-content {
   max-width: 800px;
   margin: 0 auto;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: #e0f2fe;
-  text-decoration: none;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  transition: color 0.3s;
-}
-
-.back-link:hover {
-  color: var(--white);
 }
 
 .article-meta {

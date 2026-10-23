@@ -1,8 +1,20 @@
 <div class="blog-detail-container" *ngIf="post">
+  <!-- Breadcrumb Navigation Bar -->
+  <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+    <div class="breadcrumb-container">
+      <a routerLink="/" class="crumb-link">
+        <mat-icon class="crumb-icon">home</mat-icon> Home
+      </a>
+      <mat-icon class="crumb-sep">chevron_right</mat-icon>
+      <a routerLink="/blogs" class="crumb-link">Blogs</a>
+      <mat-icon class="crumb-sep">chevron_right</mat-icon>
+      <span class="crumb-current" [title]="post.title" aria-current="page">{{ post.title }}</span>
+    </div>
+  </nav>
+
   <!-- Article Header -->
   <header class="article-header">
     <div class="blog-header-content animate-fade-in">
-      <a routerLink="/blogs" class="back-link"><mat-icon aria-hidden="true">arrow_back</mat-icon> Back to Blogs</a>
       <div class="article-meta">
         <span class="date"><mat-icon aria-hidden="true">calendar_today</mat-icon> {{ post.date | date:'mediumDate' }}</span>
         <span class="author"><mat-icon aria-hidden="true">person</mat-icon> {{ post.author }}</span>
