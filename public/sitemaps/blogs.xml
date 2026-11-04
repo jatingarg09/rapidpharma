@@ -80,4 +80,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.rapidpharmaceuticals.in/blogs/uti-symptoms-causes-treatment-nitrofurantoin</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rapidpharmaceuticals.in/blogs/amoxicillin-clavulanic-acid-uses-side-effects</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rapidpharmaceuticals.in/blogs/nitrofurantoin-uses-benefits-side-effects-safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
