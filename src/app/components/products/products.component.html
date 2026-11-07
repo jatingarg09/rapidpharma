@@ -36,19 +36,19 @@
       <div class="pagination-group">
         <div class="page-numbers">
           <button mat-fab class="nav-button" [disabled]="currentPage === 0"
-                  (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage - 1, pageSize: pageSize, length: filteredProducts.length})">
+                  (click)="onPageChange(currentPage - 1)">
             <mat-icon>chevron_left</mat-icon>
           </button>
           
           <ng-container *ngFor="let page of getVisiblePages()">
             <button mat-fab [class.active]="currentPage === page"
-                    (click)="onPageChange({previousPageIndex: currentPage, pageIndex: page, pageSize: pageSize, length: filteredProducts.length})">
+                    (click)="onPageChange(page)">
               {{ page + 1 }}
             </button>
           </ng-container>
           
           <button mat-fab class="nav-button" [disabled]="currentPage === totalPages - 1"
-                  (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage + 1, pageSize: pageSize, length: filteredProducts.length})">
+                  (click)="onPageChange(currentPage + 1)">
             <mat-icon>chevron_right</mat-icon>
           </button>
         </div>
@@ -93,19 +93,19 @@
   <div class="mobile-pagination">
     <div class="page-numbers">
       <button mat-fab class="nav-button" [disabled]="currentPage === 0"
-              (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage - 1, pageSize: pageSize, length: filteredProducts.length})">
+              (click)="onPageChange(currentPage - 1)">
         <mat-icon>chevron_left</mat-icon>
       </button>
       
       <ng-container *ngFor="let page of getVisiblePages()">
         <button mat-fab [class.active]="currentPage === page"
-                (click)="onPageChange({previousPageIndex: currentPage, pageIndex: page, pageSize: pageSize, length: filteredProducts.length})">
+                (click)="onPageChange(page)">
           {{ page + 1 }}
         </button>
       </ng-container>
       
       <button mat-fab class="nav-button" [disabled]="currentPage === totalPages - 1"
-              (click)="onPageChange({previousPageIndex: currentPage, pageIndex: currentPage + 1, pageSize: pageSize, length: filteredProducts.length})">
+              (click)="onPageChange(currentPage + 1)">
         <mat-icon>chevron_right</mat-icon>
       </button>
     </div>

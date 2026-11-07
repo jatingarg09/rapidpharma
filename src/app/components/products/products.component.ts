@@ -1,19 +1,8 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy,
-  ViewChild,
-  Renderer2,
-  Inject,
-  PLATFORM_ID,
-} from '@angular/core';
-import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Product, products } from '../../data/products';
 import { trigger, style, transition, animate } from '@angular/animations';
 import { Router, ActivatedRoute } from '@angular/router';
-import { FormsModule } from '@angular/forms';
 import { Title, Meta } from '@angular/platform-browser';
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { CanonicalService } from '../../services/canonicalService';
 import { LdJsonService } from '../../services/ld-json.service';
 
@@ -139,8 +128,6 @@ const THERAPEUTIC_DESC_MAP: { [key: string]: string } = {
   ],
 })
 export class ProductsComponent implements OnInit, OnDestroy {
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
-
   products: Product[] = [];
   filteredProducts: Product[] = [];
   pagedProducts: Product[] = [];
@@ -152,7 +139,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
   errorMessage: string = '';
   currentPage = 0;
   totalPages = 1;
-  pageNumbers: number[] = [];
 
   pageTitle = 'Our Products';
   pageSubtitle =
@@ -164,9 +150,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
     private titleService: Title,
     private metaService: Meta,
     private canonicalService: CanonicalService,
-    private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: Object,
-    @Inject(DOCUMENT) private document: Document,
     private ldJsonService: LdJsonService,
   ) {}
 
@@ -328,9 +311,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
 
   onSearchChange() {
     this.filterProducts();
-    if (this.paginator) {
-      this.paginator.firstPage();
-    }
   }
 
   filterProducts() {
@@ -476,8 +456,8 @@ export class ProductsComponent implements OnInit, OnDestroy {
     this.ldJsonService.removeSchema();
   }
 
-  onPageChange(event: PageEvent) {
-    this.currentPage = event.pageIndex;
+  onPageChange(pageIndex: number) {
+    this.currentPage = pageIndex;
     this.updatePagedProducts();
   }
 
@@ -488,11 +468,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
       startIndex + this.pageSize,
     );
     this.totalPages = Math.ceil(this.filteredProducts.length / this.pageSize);
-    this.pageNumbers = Array.from({ length: this.totalPages }, (_, i) => i);
-  }
-
-  goToProduct(product: Product) {
-    this.router.navigate(['/products', product.slug]);
   }
 
   getVisiblePages(): number[] {

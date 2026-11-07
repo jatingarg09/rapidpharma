@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy, ViewEncapsulation, Inject, Renderer2 } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { DOCUMENT } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
 import { LdJsonService } from '../../services/ld-json.service';
 
@@ -19,8 +18,6 @@ export class BlogDetailComponent implements OnInit, OnDestroy {
     private router: Router,
     private title: Title,
     private meta: Meta,
-    private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document,
     private ldJsonService: LdJsonService
   ) {}
 

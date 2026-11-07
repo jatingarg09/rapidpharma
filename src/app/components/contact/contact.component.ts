@@ -61,11 +61,13 @@ export class ContactComponent {
             console.log(error.text);
           },
         );
-    }
 
-    gtag('event', 'contact_form_submit', {
-      event_category: 'engagement',
-      event_label: 'Contact Page',
-    });
+      if (typeof gtag === 'function') {
+        gtag('event', 'contact_form_submit', {
+          event_category: 'engagement',
+          event_label: 'Contact Page',
+        });
+      }
+    }
   }
 }

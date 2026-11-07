@@ -1,6 +1,5 @@
-import { Component, OnInit, OnDestroy, Inject, Renderer2 } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
-import { DOCUMENT } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
 import { LdJsonService } from '../../services/ld-json.service';
 
@@ -15,8 +14,6 @@ export class BlogListComponent implements OnInit, OnDestroy {
   constructor(
     private title: Title,
     private meta: Meta,
-    private renderer: Renderer2,
-    @Inject(DOCUMENT) private document: Document,
     private ldJsonService: LdJsonService
   ) {}
 

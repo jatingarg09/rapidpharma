@@ -1,16 +1,7 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy,
-  Renderer2,
-  Inject,
-  PLATFORM_ID,
-} from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Meta, Title } from '@angular/platform-browser';
 import { Product, products } from '../../data/products';
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
-import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { CanonicalService } from '../../services/canonicalService';
 import { LdJsonService } from '../../services/ld-json.service';
 
@@ -24,7 +15,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
   similarProducts: Product[] = [];
   selectedImageUrl: string = '';
   selectedImageAlt: string = '';
-  private scriptElement: HTMLScriptElement | null = null;
 
   constructor(
     private route: ActivatedRoute,
@@ -32,9 +22,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     private meta: Meta,
     private title: Title,
     private canonicalService: CanonicalService,
-    private renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: Object,
-    @Inject(DOCUMENT) private document: Document,
     private ldJsonService: LdJsonService,
   ) {}
 
@@ -50,12 +37,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       const s = params.get('slug');
       if (s && s !== this.product?.slug) {
         this.loadProduct(s);
-        if (
-          event instanceof NavigationEnd &&
-          isPlatformBrowser(this.platformId)
-        ) {
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
       }
     });
   }
@@ -207,10 +188,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.ldJsonService.removeSchema();
-  }
-
-  goToProduct(product: Product) {
-    this.router.navigate(['/products', product.slug]);
   }
 
   selectImage(view: 'product' | 'visualAid') {

@@ -5,9 +5,9 @@ import {
   Inject,
   PLATFORM_ID,
 } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { stateDistricts } from '../../data/state-districts';
 import { CanonicalService } from '../../services/canonicalService';
 import { LdJsonService } from '../../services/ld-json.service';
@@ -356,7 +356,6 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
     private title: Title,
     private meta: Meta,
     private canonicalService: CanonicalService,
-    @Inject(DOCUMENT) private document: Document,
     @Inject(PLATFORM_ID) private platformId: any,
     private ldJsonService: LdJsonService,
   ) {}
@@ -456,16 +455,6 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
       this.selectedDistrict = null;
       this.isStatePage = false;
       this.updateSEO();
-    });
-
-    // Scroll-to-top on route change
-    this.router.events.subscribe((event) => {
-      if (
-        event instanceof NavigationEnd &&
-        isPlatformBrowser(this.platformId)
-      ) {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
     });
   }
 
@@ -740,20 +729,6 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
     };
 
     this.ldJsonService.setSchema(schema);
-  }
-
-  goToFranchise(slug: string): void {
-    const normalizedSlug = this.getSlug(slug);
-    this.router.navigate(['/pcd-pharma-franchise-in-' + normalizedSlug]);
-  }
-
-  goToDistrict(district: string): string[] {
-    const districtSlug = this.getSlug(district);
-    return ['/pcd-pharma-franchise-in-' + districtSlug];
-  }
-
-  backToList(): void {
-    this.router.navigate(['/pcd-pharma-franchise']);
   }
 
   scrollToInquiry(): void {

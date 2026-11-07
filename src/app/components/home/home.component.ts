@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser, DOCUMENT } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
 import { LdJsonService } from '../../services/ld-json.service';
 
@@ -50,7 +50,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   displayedProducts: any[] = [];
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
-    @Inject(DOCUMENT) private document: Document,
     private ldJsonService: LdJsonService
   ) {}
 
