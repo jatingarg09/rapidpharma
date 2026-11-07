@@ -15,25 +15,12 @@ const __dirname = dirname(__filename);
 const server = express();
 const commonEngine = new CommonEngine();
 
-// ✅ Correct browser folder (relative to server folder)
-// const distFolder = join(
-//   __dirname,
-//   'dist',
-//   'rapid-pharmaceuticals',
-//   'browser'
-// );
-
-
-
 const distFolder = join(process.cwd(), 'public');
 const indexHtml = existsSync(join(distFolder, 'index.original.html'))
   ? 'index.original.html'
   : 'index.html';
 
-  const template = readFileSync(join(distFolder, indexHtml),'utf-8');
-
-console.log('SERVER __dirname:', __dirname);
-console.log('Browser folder:', distFolder);
+const template = readFileSync(join(distFolder, indexHtml), 'utf-8');
 
 // 1️⃣ Serve static files FIRST
 
@@ -61,11 +48,6 @@ server.get('*', async (req, res, next) => {
 });
 
 // 3️⃣ Start server
-
-// const port = process.env['PORT'] || 4000;
-// server.listen(port, () => {
-//   console.log(`✅ Server running at http://localhost:${port}`);
-// });
 if (require.main === module) {
   const port = process.env['PORT'] || 4000;
   server.listen(port, () => {
