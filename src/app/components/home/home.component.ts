@@ -1,4 +1,10 @@
-import { Component, OnInit, OnDestroy, Inject, PLATFORM_ID } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  Inject,
+  PLATFORM_ID,
+} from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
 import { LdJsonService } from '../../services/ld-json.service';
@@ -6,42 +12,42 @@ import { LdJsonService } from '../../services/ld-json.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit, OnDestroy {
-  latestBlogs: BlogPost[] = blogPosts.slice(0, 3);
+  latestBlogs: BlogPost[] = blogPosts.slice(-3);
 
   sampleProducts = [
     {
       name: 'AZIRAP-500',
       description: 'Azithromycin Dihydrate equivalent to Azithromycin 500mg',
-      image: '/productswebp/AZIRAP-500.webp'
-
+      image: '/productswebp/AZIRAP-500.webp',
     },
     {
       name: 'CEFIMELT-100DT',
       description: 'Cefixime 100mg (Dispersible Tablets)',
-      image: '/productswebp/CEFIMELT-100DT.webp'
+      image: '/productswebp/CEFIMELT-100DT.webp',
     },
     {
       name: 'CEFIMELT-200 LB',
       description: 'Cefixime 200mg + Lactic Acid Bacillus 60 million spores',
-      image: '/productswebp/CEFIMELT-200LB.webp'
+      image: '/productswebp/CEFIMELT-200LB.webp',
     },
     {
-      name : "D3NOW",
-      description : "Vitamin D3 60000 IU",
-      image : "/productswebp/D3 NOW.webp"
+      name: 'D3NOW',
+      description: 'Vitamin D3 60000 IU',
+      image: '/productswebp/D3 NOW.webp',
     },
     {
-      name : "GASTRONEX-IV",
-      description : "Pantoprazole Sodium 40mg",
-      image : "/productswebp/GASTRONEX-IV.webp"
+      name: 'GASTRONEX-IV',
+      description: 'Pantoprazole Sodium 40mg',
+      image: '/productswebp/GASTRONEX-IV.webp',
     },
     {
-      name : "ZYLIVIN",
-      description : "Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others",
-      image : "/productswebp/ZYLIVIN.webp"
+      name: 'ZYLIVIN',
+      description:
+        'Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others',
+      image: '/productswebp/ZYLIVIN.webp',
     },
   ];
 
@@ -50,7 +56,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   displayedProducts: any[] = [];
   constructor(
     @Inject(PLATFORM_ID) private platformId: Object,
-    private ldJsonService: LdJsonService
+    private ldJsonService: LdJsonService,
   ) {}
 
   ngOnInit(): void {
@@ -65,15 +71,16 @@ export class HomeComponent implements OnInit, OnDestroy {
     const schema = {
       '@context': 'http://schema.org/',
       '@type': 'Product',
-      'name': 'Rapid Pharmaceuticals',
-      'description': 'Rapid Pharmaceuticals is a leading pharma distributor and PCD franchise provider in India, with over 25 years of experience, a modern catalog, and a trusted manufacturing network.',
-      'aggregateRating': {
+      name: 'Rapid Pharmaceuticals',
+      description:
+        'Rapid Pharmaceuticals is a leading pharma distributor and PCD franchise provider in India, with over 25 years of experience, a modern catalog, and a trusted manufacturing network.',
+      aggregateRating: {
         '@type': 'AggregateRating',
-        'ratingValue': '5',
-        'bestRating': '5',
-        'worstRating': '1',
-        'ratingCount': '1839'
-      }
+        ratingValue: '5',
+        bestRating: '5',
+        worstRating: '1',
+        ratingCount: '1839',
+      },
     };
 
     this.ldJsonService.setSchema(schema);
