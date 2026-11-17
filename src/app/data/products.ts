@@ -67,12 +67,16 @@ export const products: Product[] = [
     mrp: 755,
     imageUrl: '/productswebp/AZIRAP-500.webp',
     imageAlt: 'AZIRAP-500 Azithromycin 500mg Antibiotic Tablets',
-    visualAidUrl: '/visualaidswebp/azirap-500-azithromycin-antibiotic-tablet-visualaid.webp',
-    visualAidAlt: 'AZIRAP-500 - Azithromycin Dihydrate equivalent to Azithromycin 500mg Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/azirap-500-azithromycin-antibiotic-tablet-visualaid.webp',
+    visualAidAlt:
+      'AZIRAP-500 - Azithromycin Dihydrate equivalent to Azithromycin 500mg Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'AZIRAP-500 | Azithromycin 500mg Antibiotic Tablets - Rapid Pharmaceuticals',
-    metaDescription: 'AZIRAP-500 is a macrolide antibiotic for respiratory and bacterial infections. Effective for pneumonia, bronchitis, UTIs. Available at low MRP ₹755. Get info now.',
+    metaTitle:
+      'AZIRAP-500 | Azithromycin 500mg Antibiotic Tablets - Rapid Pharmaceuticals',
+    metaDescription:
+      'AZIRAP-500 is a macrolide antibiotic for respiratory and bacterial infections. Effective for pneumonia, bronchitis, UTIs. Available at low MRP ₹755. Get info now.',
     keywords: [
       'azithromycin',
       'antibiotic tablet',
@@ -81,16 +85,19 @@ export const products: Product[] = [
       'macrolide antibiotic',
       'AZIRAP',
     ],
-    seoHeading: 'AZIRAP-500: Azithromycin 500mg Antibiotic Tablet for Bacterial Infections',
+    seoHeading:
+      'AZIRAP-500: Azithromycin 500mg Antibiotic Tablet for Bacterial Infections',
 
     // Detailed Information
-    introduction: 'AZIRAP-500 is a broad-spectrum macrolide antibiotic designed to effectively treat various bacterial infections. With excellent tissue penetration and a prolonged half-life, it is particularly effective for respiratory tract infections and other serious bacterial ailments. This makes AZIRAP-500 an ideal choice for healthcare providers seeking a reliable and potent antibiotic option for managing common and resistant bacterial infections, providing effective treatment in a convenient tablet form.',
+    introduction:
+      'AZIRAP-500 is a broad-spectrum macrolide antibiotic designed to effectively treat various bacterial infections. With excellent tissue penetration and a prolonged half-life, it is particularly effective for respiratory tract infections and other serious bacterial ailments. This makes AZIRAP-500 an ideal choice for healthcare providers seeking a reliable and potent antibiotic option for managing common and resistant bacterial infections, providing effective treatment in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-AZR-500',
     therapeutic: 'Treatment of bacterial infections',
-    indication: 'Respiratory tract infections, Skin infections, Gastrointestinal infections',
+    indication:
+      'Respiratory tract infections, Skin infections, Gastrointestinal infections',
     activeIngredient: 'Azithromycin 500mg',
     strength: '500mg',
     dosage: 'One tablet once daily for 3-5 days as directed by physician',
@@ -128,7 +135,8 @@ export const products: Product[] = [
       'Not recommended for patients under 12 years without medical supervision',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep in a dry place away from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep in a dry place away from light.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -171,12 +179,16 @@ export const products: Product[] = [
     mrp: 900,
     imageUrl: '/productswebp/CEFIMELT-100DT.webp',
     imageAlt: 'CEFIMELT-100DT Cefixime 100mg Dispersible Tablets',
-    visualAidUrl: '/visualaidswebp/cefimelt-100dt-cefixime-dispersible-tablet-visualaid.webp',
-    visualAidAlt: 'CEFIMELT-100DT - Cefixime 100mg (Dispersible Tablets) Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-100dt-cefixime-dispersible-tablet-visualaid.webp',
+    visualAidAlt:
+      'CEFIMELT-100DT - Cefixime 100mg (Dispersible Tablets) Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CEFIMELT-100DT | Cefixime 100mg Dispersible Tablets - Pediatric Antibiotic',
-    metaDescription: 'CEFIMELT-100DT - Third-generation cephalosporin dispersible tablets for children. Treats respiratory and urinary infections effectively. Easy administration. MRP ₹900.',
+    metaTitle:
+      'CEFIMELT-100DT | Cefixime 100mg Dispersible Tablets - Pediatric Antibiotic',
+    metaDescription:
+      'CEFIMELT-100DT - Third-generation cephalosporin dispersible tablets for children. Treats respiratory and urinary infections effectively. Easy administration. MRP ₹900.',
     keywords: [
       'cefixime',
       'dispersible tablet',
@@ -185,19 +197,23 @@ export const products: Product[] = [
       'bacterial infection',
       'CEFIMELT',
     ],
-    seoHeading: 'CEFIMELT-100DT: Cefixime 100mg Dispersible Tablets for Infections',
+    seoHeading:
+      'CEFIMELT-100DT: Cefixime 100mg Dispersible Tablets for Infections',
 
     // Detailed Information
-    introduction: 'CEFIMELT-100DT is a third-generation cephalosporin antibiotic available as easy-to-administer dispersible tablets. Ideal for children and patients with difficulty swallowing, it provides broad-spectrum protection against common bacterial pathogens. This makes CEFIMELT-100DT an excellent choice for healthcare providers seeking a reliable and effective antibiotic option for treating respiratory tract infections, urinary tract infections, and other bacterial infections in pediatric patients, ensuring optimal therapeutic outcomes with convenient administration.',
+    introduction:
+      'CEFIMELT-100DT is a third-generation cephalosporin antibiotic available as easy-to-administer dispersible tablets. Ideal for children and patients with difficulty swallowing, it provides broad-spectrum protection against common bacterial pathogens. This makes CEFIMELT-100DT an excellent choice for healthcare providers seeking a reliable and effective antibiotic option for treating respiratory tract infections, urinary tract infections, and other bacterial infections in pediatric patients, ensuring optimal therapeutic outcomes with convenient administration.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CFX-100DT',
     therapeutic: 'Treatment of bacterial infections in children',
-    indication: 'Upper respiratory tract infections, Urinary tract infections, Otitis media',
+    indication:
+      'Upper respiratory tract infections, Urinary tract infections, Otitis media',
     activeIngredient: 'Cefixime 100mg',
     strength: '100mg',
-    dosage: 'One dispersible tablet dissolved in water, twice daily for 5-7 days as prescribed',
+    dosage:
+      'One dispersible tablet dissolved in water, twice daily for 5-7 days as prescribed',
 
     uses: [
       'Upper respiratory tract infections',
@@ -231,7 +247,8 @@ export const products: Product[] = [
       'Suitable for children aged 6 months and above',
     ],
 
-    storageConditions: 'Store below 25°C in a dry place. Protect from moisture and light.',
+    storageConditions:
+      'Store below 25°C in a dry place. Protect from moisture and light.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -267,19 +284,24 @@ export const products: Product[] = [
     name: 'CEFIMELT-200LB',
     slug: 'cefimelt-200lb-cefixime-lactic-acid-bacillus',
     composition: 'Cefixime 200mg + Lactic Acid Bacillus',
-    fullComposition: 'Cefixime IP 200mg + Lactic Acid Bacillus 60 million spores',
+    fullComposition:
+      'Cefixime IP 200mg + Lactic Acid Bacillus 60 million spores',
     category: 'Tablets',
     therapeuticClass: 'Antibiotic',
     packaging: '10x10 Alu Alu',
     mrp: 1600,
     imageUrl: '/productswebp/CEFIMELT-200LB.webp',
     imageAlt: 'CEFIMELT-200LB Cefixime 200mg with Probiotics',
-    visualAidUrl: '/visualaidswebp/cefimelt-200lb-cefixime-lactic-acid-bacillus-visualaid.webp',
-    visualAidAlt: 'CEFIMELT-200LB - Cefixime 200mg + Lactic Acid Bacillus Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-200lb-cefixime-lactic-acid-bacillus-visualaid.webp',
+    visualAidAlt:
+      'CEFIMELT-200LB - Cefixime 200mg + Lactic Acid Bacillus Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CEFIMELT-200LB | Cefixime 200mg + Probiotics - Antibiotic with Gut Protection',
-    metaDescription: 'CEFIMELT-200LB combines cefixime antibiotic with lactic acid bacillus probiotics. Treats infections while protecting gut health. MRP ₹1600. Buy now from Rapid Pharmaceuticals.',
+    metaTitle:
+      'CEFIMELT-200LB | Cefixime 200mg + Probiotics - Antibiotic with Gut Protection',
+    metaDescription:
+      'CEFIMELT-200LB combines cefixime antibiotic with lactic acid bacillus probiotics. Treats infections while protecting gut health. MRP ₹1600. Buy now from Rapid Pharmaceuticals.',
     keywords: [
       'cefixime 200mg',
       'antibiotic with probiotics',
@@ -288,16 +310,19 @@ export const products: Product[] = [
       'cephalosporin',
       'CEFIMELT',
     ],
-    seoHeading: 'CEFIMELT-200LB: Advanced Antibiotic with Probiotic Protection for Gut Health',
+    seoHeading:
+      'CEFIMELT-200LB: Advanced Antibiotic with Probiotic Protection for Gut Health',
 
     // Detailed Information
-    introduction: 'CEFIMELT-200LB is an innovative combination formulation that pairs the potent antibiotic cefixime with beneficial probiotic bacteria. This advanced formulation helps treat bacterial infections while maintaining and restoring healthy gut flora. The inclusion of lactic acid bacillus probiotics helps reduce the risk of antibiotic-associated diarrhea and supports digestive health during and after antibiotic therapy. This makes CEFIMELT-200LB an ideal choice for healthcare providers seeking a comprehensive treatment option that not only effectively combats infections but also prioritizes patient well-being by protecting gut health, providing a balanced approach to antibiotic therapy in a convenient tablet form.',
+    introduction:
+      'CEFIMELT-200LB is an innovative combination formulation that pairs the potent antibiotic cefixime with beneficial probiotic bacteria. This advanced formulation helps treat bacterial infections while maintaining and restoring healthy gut flora. The inclusion of lactic acid bacillus probiotics helps reduce the risk of antibiotic-associated diarrhea and supports digestive health during and after antibiotic therapy. This makes CEFIMELT-200LB an ideal choice for healthcare providers seeking a comprehensive treatment option that not only effectively combats infections but also prioritizes patient well-being by protecting gut health, providing a balanced approach to antibiotic therapy in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CFX-200LB',
     therapeutic: 'Treatment of bacterial infections with gut protection',
-    indication: 'Respiratory, urinary, and gastrointestinal infections with probiotic support',
+    indication:
+      'Respiratory, urinary, and gastrointestinal infections with probiotic support',
     activeIngredient: 'Cefixime 200mg + Lactic Acid Bacillus',
     strength: '200mg + 60 million spores',
     dosage: 'One tablet twice daily for 5-7 days or as prescribed by physician',
@@ -332,7 +357,8 @@ export const products: Product[] = [
       'May interact with other oral medications',
     ],
 
-    storageConditions: 'Store at 2-8°C. Refrigerate for optimal potency of probiotics. Protect from heat and moisture.',
+    storageConditions:
+      'Store at 2-8°C. Refrigerate for optimal potency of probiotics. Protect from heat and moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.8,
@@ -375,12 +401,15 @@ export const products: Product[] = [
     mrp: 227.5,
     imageUrl: '/productswebp/CEFIMELT-S 1.5GM.webp',
     imageAlt: 'CEFIMELT-S 1.5 Ceftriaxone Sulbactam Injectable Antibiotic',
-    visualAidUrl: '/visualaidswebp/cefimelt-s-1-5-ceftriaxone-sulbactam-injection-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-s-1-5-ceftriaxone-sulbactam-injection-visualaid.webp',
     visualAidAlt: 'CEFIMELT-S 1.5 - Ceftriaxone + Sulbactam Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CEFIMELT-S 1.5 | Ceftriaxone + Sulbactam Injection - Rapid Pharmaceuticals',
-    metaDescription: 'CEFIMELT-S 1.5 is a combination injectable antibiotic with Ceftriaxone 1g + Sulbactam 500mg for serious gram-negative infections. MRP ₹227.5.',
+    metaTitle:
+      'CEFIMELT-S 1.5 | Ceftriaxone + Sulbactam Injection - Rapid Pharmaceuticals',
+    metaDescription:
+      'CEFIMELT-S 1.5 is a combination injectable antibiotic with Ceftriaxone 1g + Sulbactam 500mg for serious gram-negative infections. MRP ₹227.5.',
     keywords: [
       'ceftriaxone sulbactam',
       'combination antibiotic',
@@ -388,19 +417,23 @@ export const products: Product[] = [
       'sepsis treatment',
       'CEFIMELT',
     ],
-    seoHeading: 'CEFIMELT-S 1.5: Ceftriaxone + Sulbactam for Serious Infections',
+    seoHeading:
+      'CEFIMELT-S 1.5: Ceftriaxone + Sulbactam for Serious Infections',
 
     // Detailed Information
-    introduction: 'CEFIMELT-S 1.5 is a combination injectable antibiotic containing a third-generation cephalosporin with beta-lactamase inhibitor, effective against resistant gram-negative and mixed infections. This formulation is ideal for treating serious infections such as hospital-acquired infections, sepsis, and severe pneumonia, providing broad-spectrum coverage and enhanced efficacy in a convenient single vial for intravenous administration under medical supervision. This makes CEFIMELT-S 1.5 a critical option for healthcare providers managing complex infections in hospital settings.',
+    introduction:
+      'CEFIMELT-S 1.5 is a combination injectable antibiotic containing a third-generation cephalosporin with beta-lactamase inhibitor, effective against resistant gram-negative and mixed infections. This formulation is ideal for treating serious infections such as hospital-acquired infections, sepsis, and severe pneumonia, providing broad-spectrum coverage and enhanced efficacy in a convenient single vial for intravenous administration under medical supervision. This makes CEFIMELT-S 1.5 a critical option for healthcare providers managing complex infections in hospital settings.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CTX-SUL-1.5',
     therapeutic: 'Treatment of severe bacterial infections and sepsis',
-    indication: 'Serious gram-negative infections, Hospital-acquired infections, Sepsis',
+    indication:
+      'Serious gram-negative infections, Hospital-acquired infections, Sepsis',
     activeIngredient: 'Ceftriaxone 1g + Sulbactam 500mg',
     strength: '1g/0.5g per vial',
-    dosage: '1.5g reconstituted with sterile water for injection, administered IV or IM every 12 to 24 hours as directed by physician',
+    dosage:
+      '1.5g reconstituted with sterile water for injection, administered IV or IM every 12 to 24 hours as directed by physician',
 
     uses: [
       'Serious bacterial infections requiring IV therapy',
@@ -471,19 +504,22 @@ export const products: Product[] = [
     name: 'CLARYMONT-L',
     slug: 'clarymont-l-montelukast-levocetirizine-allergy',
     composition: 'Montelukast + Levocetirizine',
-    fullComposition: 'Montelukast Sodium IP eq. to Montelukast 10mg + Levocetirizine Dihydrochloride IP 5mg',
+    fullComposition:
+      'Montelukast Sodium IP eq. to Montelukast 10mg + Levocetirizine Dihydrochloride IP 5mg',
     category: 'Tablets',
     therapeuticClass: 'Antiallergic & Respiratory',
     packaging: '10x10 Alu Alu',
     mrp: 999.9,
     imageUrl: '/productswebp/CLARYMONT-L.webp',
     imageAlt: 'CLARYMONT-L Montelukast Levocetirizine Allergy Tablet',
-    visualAidUrl: '/visualaidswebp/clarymont-l-montelukast-levocetirizine-allergy-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/clarymont-l-montelukast-levocetirizine-allergy-visualaid.webp',
     visualAidAlt: 'CLARYMONT-L - Montelukast + Levocetirizine Visual Aid',
 
     // SEO Optimization
     metaTitle: 'CLARYMONT-L | Montelukast + Levocetirizine - Allergy Relief',
-    metaDescription: 'CLARYMONT-L combination tablet for allergic rhinitis and asthma with leukotriene antagonist and antihistamine. MRP ₹999.90.',
+    metaDescription:
+      'CLARYMONT-L combination tablet for allergic rhinitis and asthma with leukotriene antagonist and antihistamine. MRP ₹999.90.',
     keywords: [
       'montelukast',
       'levocetirizine',
@@ -494,16 +530,19 @@ export const products: Product[] = [
     seoHeading: 'CLARYMONT-L: Montelukast + Levocetirizine for Allergy Relief',
 
     // Detailed Information
-    introduction: 'CLARYMONT-L is a comprehensive combination therapy merging leukotriene receptor antagonist (montelukast) with antihistamine (levocetirizine) for potent relief from allergic rhinitis, seasonal and perennial allergies, sneezing, nasal congestion, and mild asthma symptoms. The synergistic dual-mechanism approach targets multiple inflammatory pathways simultaneously for superior allergy symptom control and improved quality of life with convenient once-daily dosing. This makes CLARYMONT-L an ideal choice for healthcare providers seeking an effective and convenient solution for managing allergic conditions and mild asthma in a single tablet form.',
+    introduction:
+      'CLARYMONT-L is a comprehensive combination therapy merging leukotriene receptor antagonist (montelukast) with antihistamine (levocetirizine) for potent relief from allergic rhinitis, seasonal and perennial allergies, sneezing, nasal congestion, and mild asthma symptoms. The synergistic dual-mechanism approach targets multiple inflammatory pathways simultaneously for superior allergy symptom control and improved quality of life with convenient once-daily dosing. This makes CLARYMONT-L an ideal choice for healthcare providers seeking an effective and convenient solution for managing allergic conditions and mild asthma in a single tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-MON-LEV-10',
-    therapeutic: 'Treatment of allergic rhinitis, asthma symptoms, and chronic urticaria',
+    therapeutic:
+      'Treatment of allergic rhinitis, asthma symptoms, and chronic urticaria',
     indication: 'Allergic rhinitis, mild asthma, urticaria, allergic reactions',
     activeIngredient: 'Montelukast 10mg + Levocetirizine 5mg',
     strength: '10mg + 5mg per tablet',
-    dosage: 'One tablet once daily in the evening, with or without food, as directed by physician',
+    dosage:
+      'One tablet once daily in the evening, with or without food, as directed by physician',
 
     uses: [
       'Allergic rhinitis (seasonal and perennial)',
@@ -534,7 +573,8 @@ export const products: Product[] = [
       'Continue other medications',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -571,19 +611,23 @@ export const products: Product[] = [
     name: 'COFIRAP',
     slug: 'cofirap-ambroxol-terbutaline-cough-syrup',
     composition: 'Ambroxol + Terbutaline + Guaiphenesin + Menthol',
-    fullComposition: 'Ambroxol Hydrochloride IP 15mg + Terbutaline Sulphate IP 1.25mg + Guaiphenesin IP 50mg + Menthol IP 2mg per 5ml',
+    fullComposition:
+      'Ambroxol Hydrochloride IP 15mg + Terbutaline Sulphate IP 1.25mg + Guaiphenesin IP 50mg + Menthol IP 2mg per 5ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Cough & Cold',
     packaging: '100ml',
     mrp: 125,
     imageUrl: '/productswebp/COFIRAP.webp',
     imageAlt: 'COFIRAP Cough Cold Syrup Ambroxol Terbutaline',
-    visualAidUrl: '/visualaidswebp/cofirap-ambroxol-terbutaline-cough-syrup-visualaid.webp',
-    visualAidAlt: 'COFIRAP - Ambroxol + Terbutaline + Guaiphenesin + Menthol Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/cofirap-ambroxol-terbutaline-cough-syrup-visualaid.webp',
+    visualAidAlt:
+      'COFIRAP - Ambroxol + Terbutaline + Guaiphenesin + Menthol Visual Aid',
 
     // SEO Optimization
     metaTitle: 'COFIRAP | Cough Cold Syrup - Ambroxol Terbutaline - ₹125',
-    metaDescription: 'COFIRAP cough and cold syrup with ambroxol, terbutaline and menthol for respiratory relief. MRP ₹125.',
+    metaDescription:
+      'COFIRAP cough and cold syrup with ambroxol, terbutaline and menthol for respiratory relief. MRP ₹125.',
     keywords: [
       'cough syrup',
       'ambroxol',
@@ -594,7 +638,8 @@ export const products: Product[] = [
     seoHeading: 'COFIRAP: Cough & Cold Relief Syrup with Bronchodilator',
 
     // Detailed Information
-    introduction: 'COFIRAP is a scientifically formulated cough and cold syrup combining ambroxol (mucolytic), terbutaline (bronchodilator), guaiphenesin (expectorant), and menthol for comprehensive respiratory relief. This powerful combination breaks down viscous mucus, relaxes bronchial muscles, and soothes irritated respiratory tracts providing rapid relief from dry and productive cough within 2-3 hours with sustained effectiveness for extended periods. This makes COFIRAP an ideal choice for healthcare providers seeking a multi-symptom cough and cold solution that addresses both mucus clearance and bronchial relaxation in a convenient syrup form.',
+    introduction:
+      'COFIRAP is a scientifically formulated cough and cold syrup combining ambroxol (mucolytic), terbutaline (bronchodilator), guaiphenesin (expectorant), and menthol for comprehensive respiratory relief. This powerful combination breaks down viscous mucus, relaxes bronchial muscles, and soothes irritated respiratory tracts providing rapid relief from dry and productive cough within 2-3 hours with sustained effectiveness for extended periods. This makes COFIRAP an ideal choice for healthcare providers seeking a multi-symptom cough and cold solution that addresses both mucus clearance and bronchial relaxation in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
@@ -634,7 +679,8 @@ export const products: Product[] = [
       'Avoid in cardiac conditions',
     ],
 
-    storageConditions: 'Store at room temperature away from light and moisture.',
+    storageConditions:
+      'Store at room temperature away from light and moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -666,19 +712,23 @@ export const products: Product[] = [
     name: 'COFIRAP-D',
     slug: 'cofirap-d-dextromethorphan-cold-cough',
     composition: 'Dextromethorphan + Phenylephrine + Chlorpheniramine',
-    fullComposition: 'Dextromethorphan Hydrobromide IP 10mg + Phenylephrine Hydrochloride IP 5mg + Chlorpheniramine Maleate IP 2mg per 5ml',
+    fullComposition:
+      'Dextromethorphan Hydrobromide IP 10mg + Phenylephrine Hydrochloride IP 5mg + Chlorpheniramine Maleate IP 2mg per 5ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Cough & Cold',
     packaging: '100ml',
     mrp: 125,
     imageUrl: '/productswebp/COFIRAP-D.webp',
     imageAlt: 'COFIRAP-D Cough Cold Syrup Dextromethorphan',
-    visualAidUrl: '/visualaidswebp/cofirap-d-dextromethorphan-cold-cough-visualaid.webp',
-    visualAidAlt: 'COFIRAP-D - Dextromethorphan + Phenylephrine + Chlorpheniramine Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/cofirap-d-dextromethorphan-cold-cough-visualaid.webp',
+    visualAidAlt:
+      'COFIRAP-D - Dextromethorphan + Phenylephrine + Chlorpheniramine Visual Aid',
 
     // SEO Optimization
     metaTitle: 'COFIRAP-D Cough & Cold Syrup - ₹125 | Rapid Pharmaceuticals',
-    metaDescription: 'COFIRAP-D cough and cold syrup for fast relief from cough, congestion and allergies. MRP ₹125. Effective relief.',
+    metaDescription:
+      'COFIRAP-D cough and cold syrup for fast relief from cough, congestion and allergies. MRP ₹125. Effective relief.',
     keywords: [
       'cough syrup',
       'cold relief',
@@ -689,12 +739,14 @@ export const products: Product[] = [
     seoHeading: 'COFIRAP-D Cough & Cold Relief Syrup - Fast Acting',
 
     // Detailed Information
-    introduction: 'COFIRAP-D is a comprehensive cold formula combining dextromethorphan (cough suppressant), phenylephrine (decongestant), and chlorpheniramine (antihistamine) for complete relief from cough, nasal congestion, sneezing, and allergic rhinitis. Fast-acting within 30 minutes to 1 hour, COFIRAP-D is ideal for multi-symptom cold management through convenient liquid syrup formulation enabling easy administration. This makes COFIRAP-D an excellent choice for healthcare providers seeking an effective and comprehensive solution for managing common cold symptoms and allergies in a single, easy-to-use product.',
+    introduction:
+      'COFIRAP-D is a comprehensive cold formula combining dextromethorphan (cough suppressant), phenylephrine (decongestant), and chlorpheniramine (antihistamine) for complete relief from cough, nasal congestion, sneezing, and allergic rhinitis. Fast-acting within 30 minutes to 1 hour, COFIRAP-D is ideal for multi-symptom cold management through convenient liquid syrup formulation enabling easy administration. This makes COFIRAP-D an excellent choice for healthcare providers seeking an effective and comprehensive solution for managing common cold symptoms and allergies in a single, easy-to-use product.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CFD-DCC',
-    therapeutic: 'Relief of dry irritating cough, nasal congestion, and allergic symptoms',
+    therapeutic:
+      'Relief of dry irritating cough, nasal congestion, and allergic symptoms',
     indication: 'Cough, nasal congestion, allergic rhinitis',
     activeIngredient: 'Dextromethorphan + Phenylephrine + Chlorpheniramine',
     strength: 'Per 5ml',
@@ -762,19 +814,23 @@ export const products: Product[] = [
     name: 'COFIRAP-LS',
     slug: 'cofirap-ls-ambroxol-levosalbutamol-respiratory',
     composition: 'Ambroxol 30mg + Levosalbutamol 1mg + Guaifenesin 50mg/5ml',
-    fullComposition: 'Ambroxol Hydrochloride IP 30mg + Levosalbutamol Hydrochloride IP 1mg + Guaifenesin IP 50mg per 5ml',
+    fullComposition:
+      'Ambroxol Hydrochloride IP 30mg + Levosalbutamol Hydrochloride IP 1mg + Guaifenesin IP 50mg per 5ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Cough & Cold',
     packaging: '100ml',
     mrp: 125,
     imageUrl: '/productswebp/COFIRAP-LS.webp',
     imageAlt: 'COFIRAP-LS Respiratory Cough Syrup Ambroxol',
-    visualAidUrl: '/visualaidswebp/cofirap-ls-ambroxol-levosalbutamol-respiratory-visualaid.webp',
-    visualAidAlt: 'COFIRAP-LS - Ambroxol 30mg + Levosalbutamol 1mg + Guaifenesin 50mg/5ml Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/cofirap-ls-ambroxol-levosalbutamol-respiratory-visualaid.webp',
+    visualAidAlt:
+      'COFIRAP-LS - Ambroxol 30mg + Levosalbutamol 1mg + Guaifenesin 50mg/5ml Visual Aid',
 
     // SEO Optimization
     metaTitle: 'COFIRAP-LS Cough Syrup - Ambroxol Formula | ₹125',
-    metaDescription: 'COFIRAP-LS with Ambroxol, Levosalbutamol & Guaifenesin for productive cough relief. MRP ₹125. Bronchial support.',
+    metaDescription:
+      'COFIRAP-LS with Ambroxol, Levosalbutamol & Guaifenesin for productive cough relief. MRP ₹125. Bronchial support.',
     keywords: [
       'productive cough',
       'ambroxol',
@@ -785,12 +841,14 @@ export const products: Product[] = [
     seoHeading: 'COFIRAP-LS Productive Cough Syrup with Ambroxol',
 
     // Detailed Information
-    introduction: 'COFIRAP-LS is specialized respiratory formula combining ambroxol (mucolytic), levosalbutamol (selective bronchodilator), and guaiphenesin (expectorant) for productive cough management and bronchial support. Targeting root causes of respiratory distress through mucus reduction, bronchial relaxation, and airway clearance facilitation, COFIRAP-LS provides sustained symptom relief up to 12 hours and is particularly valuable for asthma, bronchitis, and respiratory conditions. This makes COFIRAP-LS an ideal choice for healthcare providers seeking a comprehensive and effective solution for managing productive coughs and associated respiratory symptoms in a convenient syrup form.',
+    introduction:
+      'COFIRAP-LS is specialized respiratory formula combining ambroxol (mucolytic), levosalbutamol (selective bronchodilator), and guaiphenesin (expectorant) for productive cough management and bronchial support. Targeting root causes of respiratory distress through mucus reduction, bronchial relaxation, and airway clearance facilitation, COFIRAP-LS provides sustained symptom relief up to 12 hours and is particularly valuable for asthma, bronchitis, and respiratory conditions. This makes COFIRAP-LS an ideal choice for healthcare providers seeking a comprehensive and effective solution for managing productive coughs and associated respiratory symptoms in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CLS-ALG',
-    therapeutic: 'Relief of productive cough with bronchospasm in asthmatic bronchitis',
+    therapeutic:
+      'Relief of productive cough with bronchospasm in asthmatic bronchitis',
     indication: 'Productive cough, bronchitis, asthma symptoms',
     activeIngredient: 'Ambroxol + Levosalbutamol + Guaifenesin',
     strength: 'Per 5ml',
@@ -868,12 +926,14 @@ export const products: Product[] = [
     mrp: 1299,
     imageUrl: '/productswebp/D3 NOW-2.webp',
     imageAlt: 'D3NOW Vitamin D3 60000 IU Supplement Capsule',
-    visualAidUrl: '/visualaidswebp/d3now-vitamin-d3-60000-iu-supplement-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/d3now-vitamin-d3-60000-iu-supplement-visualaid.webp',
     visualAidAlt: 'D3NOW - Vitamin D3 60000 IU Visual Aid',
 
     // SEO Optimization
     metaTitle: 'D3NOW | Vitamin D3 60000 IU - Supplement - ₹1299',
-    metaDescription: 'D3NOW high-potency vitamin D3 60000 IU for vitamin D deficiency and bone health support. MRP ₹1299.',
+    metaDescription:
+      'D3NOW high-potency vitamin D3 60000 IU for vitamin D deficiency and bone health support. MRP ₹1299.',
     keywords: [
       'vitamin D3',
       'D3 supplement',
@@ -884,16 +944,20 @@ export const products: Product[] = [
     seoHeading: 'D3NOW: High-Potency Vitamin D3 60000 IU Supplement',
 
     // Detailed Information
-    introduction: 'D3NOW is high-potency vitamin D3 supplement delivering 60,000 IU per capsule, essential for correcting vitamin D deficiency, supporting bone mineralization, calcium absorption, immune system function, mood regulation, and comprehensive wellness across all life stages. Regular D3NOW supplementation ensures optimal vitamin D status for disease prevention and overall health maintenance. This makes D3NOW an ideal choice for healthcare providers seeking a potent and effective vitamin D3 solution for patients with deficiency, bone health concerns, or those requiring immune support in a convenient capsule form.',
+    introduction:
+      'D3NOW is high-potency vitamin D3 supplement delivering 60,000 IU per capsule, essential for correcting vitamin D deficiency, supporting bone mineralization, calcium absorption, immune system function, mood regulation, and comprehensive wellness across all life stages. Regular D3NOW supplementation ensures optimal vitamin D status for disease prevention and overall health maintenance. This makes D3NOW an ideal choice for healthcare providers seeking a potent and effective vitamin D3 solution for patients with deficiency, bone health concerns, or those requiring immune support in a convenient capsule form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-D3-60KIU',
-    therapeutic: 'Treatment and prevention of Vitamin D deficiency and osteoporosis',
-    indication: 'Vitamin D deficiency, bone health, calcium absorption, immune support',
+    therapeutic:
+      'Treatment and prevention of Vitamin D deficiency and osteoporosis',
+    indication:
+      'Vitamin D deficiency, bone health, calcium absorption, immune support',
     activeIngredient: 'Cholecalciferol 60000 IU',
     strength: '60000 IU per capsule',
-    dosage: 'One capsule once weekly with milk or main meal for 8-12 weeks, or as prescribed by physician',
+    dosage:
+      'One capsule once weekly with milk or main meal for 8-12 weeks, or as prescribed by physician',
 
     uses: [
       'Vitamin D deficiency treatment',
@@ -928,7 +992,8 @@ export const products: Product[] = [
       'Regular monitoring advised',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from heat.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from heat.',
     shelfLife: '18 months',
 
     avgRating: 4.8,
@@ -967,12 +1032,14 @@ export const products: Product[] = [
     mrp: 320,
     imageUrl: '/productswebp/D3 NOW.webp',
     imageAlt: 'D3NOW NANO Vitamin D3 Liquid Shots 60000 IU',
-    visualAidUrl: '/visualaidswebp/d3now-nano-vitamin-d3-liquid-solution-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/d3now-nano-vitamin-d3-liquid-solution-visualaid.webp',
     visualAidAlt: 'D3NOW NANO - Vitamin D3 Oral Solution 60000 IU Visual Aid',
 
     // SEO Optimization
     metaTitle: 'D3NOW NANO Vitamin D3 60000 IU Liquid - ₹320 | Rapid',
-    metaDescription: 'D3NOW NANO Vitamin D3 60000 IU liquid solution for bone health and immunity. Easy nano formulation. MRP ₹320.',
+    metaDescription:
+      'D3NOW NANO Vitamin D3 60000 IU liquid solution for bone health and immunity. Easy nano formulation. MRP ₹320.',
     keywords: [
       'vitamin d3 liquid',
       'cholecalciferol',
@@ -983,7 +1050,8 @@ export const products: Product[] = [
     seoHeading: 'D3NOW NANO Vitamin D3 60000 IU Nano Solution',
 
     // Detailed Information
-    introduction: 'D3NOW NANO offers revolutionary vitamin D3 in convenient nano-shot liquid format ensuring rapid bioavailability and superior absorption with weekly dosing. This innovative formulation is ideal for patients with swallowing difficulties, elderly patients, children, and individuals with malabsorption issues, enabling rapid deficiency correction and consistent vitamin D status maintenance. This makes D3NOW NANO an excellent choice for healthcare providers seeking a potent, fast-acting, and easy-to-administer vitamin D3 solution for patients with deficiency, bone health concerns, or those requiring immune support in a convenient liquid form.',
+    introduction:
+      'D3NOW NANO offers revolutionary vitamin D3 in convenient nano-shot liquid format ensuring rapid bioavailability and superior absorption with weekly dosing. This innovative formulation is ideal for patients with swallowing difficulties, elderly patients, children, and individuals with malabsorption issues, enabling rapid deficiency correction and consistent vitamin D status maintenance. This makes D3NOW NANO an excellent choice for healthcare providers seeking a potent, fast-acting, and easy-to-administer vitamin D3 solution for patients with deficiency, bone health concerns, or those requiring immune support in a convenient liquid form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
@@ -992,7 +1060,8 @@ export const products: Product[] = [
     indication: 'Vitamin D deficiency, osteoporosis prevention, immune support',
     activeIngredient: 'Cholecalciferol (Vitamin D3) 60000 IU',
     strength: '60000 IU per 5ml',
-    dosage: '5 ml (one bottle) once weekly with meals or as directed by physician',
+    dosage:
+      '5 ml (one bottle) once weekly with meals or as directed by physician',
 
     uses: [
       'Quick vitamin D supplementation',
@@ -1063,12 +1132,14 @@ export const products: Product[] = [
     mrp: 151,
     imageUrl: '/productswebp/DECARAP-50.webp',
     imageAlt: 'DECARAP 50 Nandrolone Decanoate Injectable Steroid',
-    visualAidUrl: '/visualaidswebp/decarap-50-nandrolone-decanoate-injection-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/decarap-50-nandrolone-decanoate-injection-visualaid.webp',
     visualAidAlt: 'DECARAP 50 - Nandrolone Decanoate 50mg/ml Visual Aid',
 
     // SEO Optimization
     metaTitle: 'DECARAP 50 | Nandrolone Decanoate 50mg - Anabolic Steroid',
-    metaDescription: 'DECARAP 50 medical-grade anabolic steroid (Nandrolone Decanoate 50mg/ml) for protein malnutrition and muscle wasting. MRP ₹151.',
+    metaDescription:
+      'DECARAP 50 medical-grade anabolic steroid (Nandrolone Decanoate 50mg/ml) for protein malnutrition and muscle wasting. MRP ₹151.',
     keywords: [
       'nandrolone decanoate',
       'anabolic steroid',
@@ -1076,19 +1147,24 @@ export const products: Product[] = [
       'protein deficiency',
       'DECARAP',
     ],
-    seoHeading: 'DECARAP 50: Nandrolone Decanoate for Medical Nutritional Support',
+    seoHeading:
+      'DECARAP 50: Nandrolone Decanoate for Medical Nutritional Support',
 
     // Detailed Information
-    introduction: 'DECARAP 50 is medical-grade anabolic steroid (nandrolone decanoate) for therapeutic treatment of severe protein-energy malnutrition, pathological muscle wasting, and specific anemias under rigorous medical supervision. Promoting nitrogen retention and protein synthesis, DECARAP 50 effectively reverses catabolic states, restores muscle mass in debilitated patients, and accelerates recovery from cancer cachexia, chronic wounds, severe burns, and major surgical recovery. This makes DECARAP 50 an essential option for healthcare providers managing complex nutritional deficiencies and muscle wasting conditions in a controlled clinical setting.',
+    introduction:
+      'DECARAP 50 is medical-grade anabolic steroid (nandrolone decanoate) for therapeutic treatment of severe protein-energy malnutrition, pathological muscle wasting, and specific anemias under rigorous medical supervision. Promoting nitrogen retention and protein synthesis, DECARAP 50 effectively reverses catabolic states, restores muscle mass in debilitated patients, and accelerates recovery from cancer cachexia, chronic wounds, severe burns, and major surgical recovery. This makes DECARAP 50 an essential option for healthcare providers managing complex nutritional deficiencies and muscle wasting conditions in a controlled clinical setting.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-NND-DEC-50',
-    therapeutic: 'Management of catabolic states, severe malnutrition, and osteoporosis',
-    indication: 'Protein deficiency, muscle wasting, anemia management, recovery',
+    therapeutic:
+      'Management of catabolic states, severe malnutrition, and osteoporosis',
+    indication:
+      'Protein deficiency, muscle wasting, anemia management, recovery',
     activeIngredient: 'Nandrolone Decanoate 50mg/ml',
     strength: '50mg per ml',
-    dosage: '50 mg administered deep intramuscularly every 3 to 4 weeks as directed by physician',
+    dosage:
+      '50 mg administered deep intramuscularly every 3 to 4 weeks as directed by physician',
 
     uses: [
       'Severe protein deficiency treatment',
@@ -1166,12 +1242,15 @@ export const products: Product[] = [
     mrp: 1300,
     imageUrl: '/productswebp/DEFZORAP-6.webp',
     imageAlt: 'DEFZORAP-6 Deflazacort Corticosteroid Tablet',
-    visualAidUrl: '/visualaidswebp/defzorap-6-deflazacort-corticosteroid-tablet-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/defzorap-6-deflazacort-corticosteroid-tablet-visualaid.webp',
     visualAidAlt: 'DEFZORAP-6 - Deflazacort 6mg Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'DEFZORAP-6 | Deflazacort 6mg Corticosteroid - Anti-inflammatory',
-    metaDescription: 'DEFZORAP-6 oxazoline corticosteroid with low mineralocorticoid activity for inflammatory and autoimmune conditions. MRP ₹1300.',
+    metaTitle:
+      'DEFZORAP-6 | Deflazacort 6mg Corticosteroid - Anti-inflammatory',
+    metaDescription:
+      'DEFZORAP-6 oxazoline corticosteroid with low mineralocorticoid activity for inflammatory and autoimmune conditions. MRP ₹1300.',
     keywords: [
       'deflazacort',
       'corticosteroid',
@@ -1179,19 +1258,24 @@ export const products: Product[] = [
       'autoimmune',
       'DEFZORAP',
     ],
-    seoHeading: 'DEFZORAP-6: Deflazacort for Inflammatory & Autoimmune Disorders',
+    seoHeading:
+      'DEFZORAP-6: Deflazacort for Inflammatory & Autoimmune Disorders',
 
     // Detailed Information
-    introduction: 'DEFZORAP-6 (deflazacort) is advanced corticosteroid with unique oxazoline structure delivering potent anti-inflammatory action with lower mineralocorticoid activity, minimizing fluid retention, electrolyte disturbances, weight gain, and hypertension. Particularly suitable for long-term inflammatory and autoimmune disorder management including rheumatoid arthritis, lupus, inflammatory bowel disease, and Duchenne muscular dystrophy with superior safety profile and favorable side effect balance. This makes DEFZORAP-6 an ideal choice for healthcare providers seeking an effective corticosteroid option that provides robust inflammation control while minimizing common corticosteroid-related side effects, ensuring better patient compliance and improved quality of life in chronic conditions.',
+    introduction:
+      'DEFZORAP-6 (deflazacort) is advanced corticosteroid with unique oxazoline structure delivering potent anti-inflammatory action with lower mineralocorticoid activity, minimizing fluid retention, electrolyte disturbances, weight gain, and hypertension. Particularly suitable for long-term inflammatory and autoimmune disorder management including rheumatoid arthritis, lupus, inflammatory bowel disease, and Duchenne muscular dystrophy with superior safety profile and favorable side effect balance. This makes DEFZORAP-6 an ideal choice for healthcare providers seeking an effective corticosteroid option that provides robust inflammation control while minimizing common corticosteroid-related side effects, ensuring better patient compliance and improved quality of life in chronic conditions.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-DEF-6',
-    therapeutic: 'Treatment of inflammatory, autoimmune, and allergic conditions',
-    indication: 'Inflammatory disorders, autoimmune diseases, rheumatoid arthritis',
+    therapeutic:
+      'Treatment of inflammatory, autoimmune, and allergic conditions',
+    indication:
+      'Inflammatory disorders, autoimmune diseases, rheumatoid arthritis',
     activeIngredient: 'Deflazacort 6mg',
     strength: '6mg per tablet',
-    dosage: '6 mg to 12 mg daily in divided doses, or as prescribed by physician',
+    dosage:
+      '6 mg to 12 mg daily in divided doses, or as prescribed by physician',
 
     uses: [
       'Inflammatory disorders',
@@ -1225,7 +1309,8 @@ export const products: Product[] = [
       'Calcium and vitamin D supplementation needed',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -1261,19 +1346,23 @@ export const products: Product[] = [
     name: 'DOMERAP-R',
     slug: 'domerap-r-rabeprazole-domperidone-gerd',
     composition: 'Rabeprazole Sodium (EC) + Domperidone (SR)',
-    fullComposition: 'Rabeprazole Sodium IP 20mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
+    fullComposition:
+      'Rabeprazole Sodium IP 20mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
     category: 'Capsules',
     therapeuticClass: 'Gastrointestinal',
     packaging: '10x10 Alu Alu',
     mrp: 990,
     imageUrl: '/productswebp/DOMERAP-R.webp',
     imageAlt: 'DOMERAP-R Rabeprazole Domperidone GERD Capsule',
-    visualAidUrl: '/visualaidswebp/domerap-r-rabeprazole-domperidone-gerd-visualaid.webp',
-    visualAidAlt: 'DOMERAP-R - Rabeprazole Sodium (EC) + Domperidone (SR) Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/domerap-r-rabeprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt:
+      'DOMERAP-R - Rabeprazole Sodium (EC) + Domperidone (SR) Visual Aid',
 
     // SEO Optimization
     metaTitle: 'DOMERAP-R | Rabeprazole + Domperidone - GERD - ₹990',
-    metaDescription: 'DOMERAP-R PPI and prokinetic combination for GERD and gastrointestinal motility disorders. MRP ₹990.',
+    metaDescription:
+      'DOMERAP-R PPI and prokinetic combination for GERD and gastrointestinal motility disorders. MRP ₹990.',
     keywords: [
       'rabeprazole',
       'domperidone',
@@ -1284,7 +1373,8 @@ export const products: Product[] = [
     seoHeading: 'DOMERAP-R: Rabeprazole + Domperidone for GERD Management',
 
     // Detailed Information
-    introduction: 'DOMERAP-R merges rabeprazole (potent proton pump inhibitor) with domperidone (selective prokinetic agent) for dual-action management addressing both acid-related and motility-related gastrointestinal pathology simultaneously. This innovative combination provides rapid symptom relief within 2-3 days, convenient once or twice-daily administration, and exceptional efficacy for complicated GERD, functional dyspepsia, and gastroparesis-related symptoms resistant to single-agent therapy. This makes DOMERAP-R an ideal choice for healthcare providers seeking a comprehensive and effective solution for managing GERD and associated gastrointestinal motility disorders in a single, convenient capsule form.',
+    introduction:
+      'DOMERAP-R merges rabeprazole (potent proton pump inhibitor) with domperidone (selective prokinetic agent) for dual-action management addressing both acid-related and motility-related gastrointestinal pathology simultaneously. This innovative combination provides rapid symptom relief within 2-3 days, convenient once or twice-daily administration, and exceptional efficacy for complicated GERD, functional dyspepsia, and gastroparesis-related symptoms resistant to single-agent therapy. This makes DOMERAP-R an ideal choice for healthcare providers seeking a comprehensive and effective solution for managing GERD and associated gastrointestinal motility disorders in a single, convenient capsule form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
@@ -1293,7 +1383,8 @@ export const products: Product[] = [
     indication: 'GERD, peptic ulcer, dyspepsia, gastroparesis symptoms',
     activeIngredient: 'Rabeprazole 20mg EC + Domperidone 30mg SR',
     strength: '20mg + 30mg per capsule',
-    dosage: 'One capsule once daily in the morning, 30-60 minutes before breakfast',
+    dosage:
+      'One capsule once daily in the morning, 30-60 minutes before breakfast',
 
     uses: [
       'Gastroesophageal reflux disease (GERD)',
@@ -1324,7 +1415,8 @@ export const products: Product[] = [
       'Monitor long-term use',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -1358,19 +1450,23 @@ export const products: Product[] = [
     name: 'DOMPANT-SR',
     slug: 'dompant-sr-pantoprazole-domperidone-gerd',
     composition: 'Pantoprazole Sodium (EC) + Domperidone (SR)',
-    fullComposition: 'Pantoprazole Sodium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
+    fullComposition:
+      'Pantoprazole Sodium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
     category: 'Capsules',
     therapeuticClass: 'Gastrointestinal',
     packaging: '10x10 Alu Alu',
     mrp: 1100,
     imageUrl: '/productswebp/DOMPANT-SR.webp',
     imageAlt: 'DOMPANT-SR Pantoprazole Domperidone GERD Capsule',
-    visualAidUrl: '/visualaidswebp/dompant-sr-pantoprazole-domperidone-gerd-visualaid.webp',
-    visualAidAlt: 'DOMPANT-SR - Pantoprazole Sodium (EC) + Domperidone (SR) Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/dompant-sr-pantoprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt:
+      'DOMPANT-SR - Pantoprazole Sodium (EC) + Domperidone (SR) Visual Aid',
 
     // SEO Optimization
     metaTitle: 'DOMPANT-SR Pantoprazole + Domperidone - ₹1100',
-    metaDescription: 'DOMPANT-SR for GERD and acidity with Pantoprazole & Domperidone combination SR. MRP ₹1100. Relief.',
+    metaDescription:
+      'DOMPANT-SR for GERD and acidity with Pantoprazole & Domperidone combination SR. MRP ₹1100. Relief.',
     keywords: [
       'pantoprazole',
       'domperidone',
@@ -1381,16 +1477,19 @@ export const products: Product[] = [
     seoHeading: 'DOMPANT-SR Pantoprazole & Domperidone SR Capsule',
 
     // Detailed Information
-    introduction: 'DOMPANT-SR combines pantoprazole (powerful acid suppression) with domperidone (prokinetic) in sustained-release formulation for comprehensive GERD and acid reflux management. The potent acid suppression combined with enhanced gastric motility provides superior efficacy for treatment-resistant GERD, peptic ulcer disease, and severe functional dyspepsia with convenient once or twice-daily dosing. This makes DOMPANT-SR an ideal choice for healthcare providers seeking a robust and effective solution for managing GERD and associated gastrointestinal conditions in a single, convenient capsule form.',
+    introduction:
+      'DOMPANT-SR combines pantoprazole (powerful acid suppression) with domperidone (prokinetic) in sustained-release formulation for comprehensive GERD and acid reflux management. The potent acid suppression combined with enhanced gastric motility provides superior efficacy for treatment-resistant GERD, peptic ulcer disease, and severe functional dyspepsia with convenient once or twice-daily dosing. This makes DOMPANT-SR an ideal choice for healthcare providers seeking a robust and effective solution for managing GERD and associated gastrointestinal conditions in a single, convenient capsule form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-DMS-PD-40',
-    therapeutic: 'Treatment of gastroesophageal reflux, hyperacidity, and gastroparesis',
+    therapeutic:
+      'Treatment of gastroesophageal reflux, hyperacidity, and gastroparesis',
     indication: 'GERD, acidity, gastric ulcers, dyspepsia',
     activeIngredient: 'Pantoprazole + Domperidone',
     strength: '40mg + 30mg SR',
-    dosage: 'One capsule once daily before breakfast with water, as directed by physician',
+    dosage:
+      'One capsule once daily before breakfast with water, as directed by physician',
 
     uses: [
       'GERD and heartburn',
@@ -1421,7 +1520,8 @@ export const products: Product[] = [
       'Do not crush capsule',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep away from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep away from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -1454,19 +1554,23 @@ export const products: Product[] = [
     name: 'ESMORIZE-D',
     slug: 'esmorize-d-esomeprazole-domperidone-gerd',
     composition: 'Esomeprazole (EC) + Domperidone (SR)',
-    fullComposition: 'Esomeprazole Magnesium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
+    fullComposition:
+      'Esomeprazole Magnesium IP 40mg (Enteric Coated) + Domperidone IP 30mg (Sustained Release)',
     category: 'Capsules',
     therapeuticClass: 'Gastrointestinal',
     packaging: '10x10 Strip',
     mrp: 1100,
     imageUrl: '/productswebp/ESMORIZE-D.webp',
     imageAlt: 'ESMORIZE-D Esomeprazole Domperidone GERD Capsule',
-    visualAidUrl: '/visualaidswebp/esmorize-d-esomeprazole-domperidone-gerd-visualaid.webp',
-    visualAidAlt: 'ESMORIZE-D - Esomeprazole (EC) + Domperidone (SR) Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/esmorize-d-esomeprazole-domperidone-gerd-visualaid.webp',
+    visualAidAlt:
+      'ESMORIZE-D - Esomeprazole (EC) + Domperidone (SR) Visual Aid',
 
     // SEO Optimization
     metaTitle: 'ESMORIZE-D | Esomeprazole + Domperidone for GERD - ₹1100',
-    metaDescription: 'ESMORIZE-D powerful combination for severe GERD with esomeprazole & domperidone. MRP ₹1100. Fast relief.',
+    metaDescription:
+      'ESMORIZE-D powerful combination for severe GERD with esomeprazole & domperidone. MRP ₹1100. Fast relief.',
     keywords: [
       'esomeprazole',
       'domperidone',
@@ -1477,12 +1581,14 @@ export const products: Product[] = [
     seoHeading: 'ESMORIZE-D: Esomeprazole + Domperidone for Severe GERD',
 
     // Detailed Information
-    introduction: "ESMORIZE-D combines esomeprazole (S-isomer offering superior potency) with domperidone for comprehensive severe GERD management including Barrett's esophagus and refractory functional dyspepsia. The superior acid suppression combined with prokinetic action provides dramatic symptom improvement within 3-5 days for patients with sleep-disrupting nocturnal symptoms, reflux-related asthma, hoarseness, and chronic cough. This makes ESMORIZE-D an ideal choice for healthcare providers seeking a powerful and effective solution for managing severe GERD and associated complications in a single, convenient capsule form.",
+    introduction:
+      "ESMORIZE-D combines esomeprazole (S-isomer offering superior potency) with domperidone for comprehensive severe GERD management including Barrett's esophagus and refractory functional dyspepsia. The superior acid suppression combined with prokinetic action provides dramatic symptom improvement within 3-5 days for patients with sleep-disrupting nocturnal symptoms, reflux-related asthma, hoarseness, and chronic cough. This makes ESMORIZE-D an ideal choice for healthcare providers seeking a powerful and effective solution for managing severe GERD and associated complications in a single, convenient capsule form.",
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ESM-DOM-40',
-    therapeutic: 'Management of erosive esophagitis, GERD, and peptic ulcer disease',
+    therapeutic:
+      'Management of erosive esophagitis, GERD, and peptic ulcer disease',
     indication: "Severe GERD, Barrett's esophagus, persistent dyspepsia",
     activeIngredient: 'Esomeprazole 40mg + Domperidone 30mg',
     strength: '40mg + 30mg SR',
@@ -1517,7 +1623,8 @@ export const products: Product[] = [
       'Do not crush capsule',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -1560,12 +1667,15 @@ export const products: Product[] = [
     mrp: 1900,
     imageUrl: '/productswebp/ESMORIZE-LSR.webp',
     imageAlt: 'ESMORIZE-LSR Esomeprazole + Levosulpiride Capsule',
-    visualAidUrl: '/visualaidswebp/esmorize-lsr-esomeprazole-levosulpiride-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/esmorize-lsr-esomeprazole-levosulpiride-visualaid.webp',
     visualAidAlt: 'ESMORIZE-LSR - Esomeprazole + Levosulpiride Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'ESMORIZE-LSR | Esomeprazole + Levosulpiride GERD Relief - ₹1900',
-    metaDescription: 'ESMORIZE-LSR advanced formula combining esomeprazole and levosulpiride for severe GERD, gastroparesis and chronic dyspepsia. MRP ₹1900.',
+    metaTitle:
+      'ESMORIZE-LSR | Esomeprazole + Levosulpiride GERD Relief - ₹1900',
+    metaDescription:
+      'ESMORIZE-LSR advanced formula combining esomeprazole and levosulpiride for severe GERD, gastroparesis and chronic dyspepsia. MRP ₹1900.',
     keywords: [
       'esomeprazole',
       'levosulpiride',
@@ -1576,16 +1686,19 @@ export const products: Product[] = [
     seoHeading: 'ESMORIZE-LSR: Esomeprazole & Levosulpiride Capsule',
 
     // Detailed Information
-    introduction: 'ESMORIZE-LSR is an advanced dual-action capsule combining esomeprazole (acid suppression) and levosulpiride (gastroprokinetic) for comprehensive management of severe GERD, chronic dyspepsia, and gastrointestinal motility disorders. By simultaneously reducing gastric acid production and enhancing upper gastrointestinal tract motility, it provides fast and effective relief from heartburn, acid reflux, and bloating. This makes ESMORIZE-LSR an ideal choice for healthcare providers managing refractory gastrointestinal symptoms.',
+    introduction:
+      'ESMORIZE-LSR is an advanced dual-action capsule combining esomeprazole (acid suppression) and levosulpiride (gastroprokinetic) for comprehensive management of severe GERD, chronic dyspepsia, and gastrointestinal motility disorders. By simultaneously reducing gastric acid production and enhancing upper gastrointestinal tract motility, it provides fast and effective relief from heartburn, acid reflux, and bloating. This makes ESMORIZE-LSR an ideal choice for healthcare providers managing refractory gastrointestinal symptoms.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ESM-LEV-40-25',
-    therapeutic: 'Management of severe GERD, diabetic gastroparesis, and resistant dyspepsia',
+    therapeutic:
+      'Management of severe GERD, diabetic gastroparesis, and resistant dyspepsia',
     indication: 'Severe GERD with gastroparesis, chronic dyspepsia',
     activeIngredient: 'Esomeprazole + Levosulpiride',
     strength: '40mg + 25mg',
-    dosage: 'One capsule once daily before breakfast, or as prescribed by physician',
+    dosage:
+      'One capsule once daily before breakfast, or as prescribed by physician',
 
     uses: [
       'Severe GERD with gastroparesis',
@@ -1621,7 +1734,8 @@ export const products: Product[] = [
       'Not for long-term use',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep away from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep away from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -1664,12 +1778,15 @@ export const products: Product[] = [
     mrp: 2290,
     imageUrl: '/productswebp/ETOBRAN-TH.webp',
     imageAlt: 'ETOBRAN-TH Etoricoxib Thiocolchicoside Pain Relief Tablet',
-    visualAidUrl: '/visualaidswebp/etobran-th-etoricoxib-thiocolchicoside-pain-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/etobran-th-etoricoxib-thiocolchicoside-pain-visualaid.webp',
     visualAidAlt: 'ETOBRAN-TH - Etoricoxib + Thiocolchicoside Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'ETOBRAN-TH | Etoricoxib + Thiocolchicoside - Pain Relief - ₹2290',
-    metaDescription: 'ETOBRAN-TH combines selective COX-2 inhibitor with muscle relaxant for arthritis, back pain and inflammation. MRP ₹2290.',
+    metaTitle:
+      'ETOBRAN-TH | Etoricoxib + Thiocolchicoside - Pain Relief - ₹2290',
+    metaDescription:
+      'ETOBRAN-TH combines selective COX-2 inhibitor with muscle relaxant for arthritis, back pain and inflammation. MRP ₹2290.',
     keywords: [
       'etoricoxib',
       'thiocolchicoside',
@@ -1677,19 +1794,24 @@ export const products: Product[] = [
       'muscle relaxant',
       'NSAID',
     ],
-    seoHeading: 'ETOBRAN-TH: Etoricoxib + Thiocolchicoside for Pain & Inflammation',
+    seoHeading:
+      'ETOBRAN-TH: Etoricoxib + Thiocolchicoside for Pain & Inflammation',
 
     // Detailed Information
-    introduction: 'ETOBRAN-TH combines etoricoxib (selective COX-2 inhibitor, superior anti-inflammatory) with thiocolchicoside (muscle relaxant) for comprehensive pain and inflammation management. Particularly effective for rheumatoid arthritis, osteoarthritis, acute back pain, and trauma-related conditions, ETOBRAN-TH provides rapid relief within 1-2 hours with sustained analgesic and anti-inflammatory effects lasting 12-24 hours. This makes ETOBRAN-TH an ideal choice for healthcare providers seeking a powerful and effective solution for managing pain and inflammation in a single, convenient tablet form while minimizing gastrointestinal side effects commonly associated with traditional NSAIDs.',
+    introduction:
+      'ETOBRAN-TH combines etoricoxib (selective COX-2 inhibitor, superior anti-inflammatory) with thiocolchicoside (muscle relaxant) for comprehensive pain and inflammation management. Particularly effective for rheumatoid arthritis, osteoarthritis, acute back pain, and trauma-related conditions, ETOBRAN-TH provides rapid relief within 1-2 hours with sustained analgesic and anti-inflammatory effects lasting 12-24 hours. This makes ETOBRAN-TH an ideal choice for healthcare providers seeking a powerful and effective solution for managing pain and inflammation in a single, convenient tablet form while minimizing gastrointestinal side effects commonly associated with traditional NSAIDs.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ETO-THC-60',
-    therapeutic: 'Treatment of acute musculoskeletal pain, muscle spasms, and arthritis',
-    indication: 'Rheumatoid arthritis, osteoarthritis, acute pain, muscle spasm',
+    therapeutic:
+      'Treatment of acute musculoskeletal pain, muscle spasms, and arthritis',
+    indication:
+      'Rheumatoid arthritis, osteoarthritis, acute pain, muscle spasm',
     activeIngredient: 'Etoricoxib 60mg + Thiocolchicoside 4mg',
     strength: '60mg + 4mg per tablet',
-    dosage: 'One tablet once or twice daily after meals, as directed by physician',
+    dosage:
+      'One tablet once or twice daily after meals, as directed by physician',
 
     uses: [
       'Rheumatoid arthritis',
@@ -1724,7 +1846,8 @@ export const products: Product[] = [
       'Take with food',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -1767,12 +1890,14 @@ export const products: Product[] = [
     mrp: 56.5,
     imageUrl: '/productswebp/GASTRONEX-IV.webp',
     imageAlt: 'GASTRONEX-IV Pantoprazole Sodium Injection Vial',
-    visualAidUrl: '/visualaidswebp/gastronex-iv-pantoprazole-sodium-injection-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/gastronex-iv-pantoprazole-sodium-injection-visualaid.webp',
     visualAidAlt: 'GASTRONEX-IV - Pantoprazole Sodium 40mg Visual Aid',
 
     // SEO Optimization
     metaTitle: 'GASTRONEX-IV | Pantoprazole Sodium 40mg Injection - ₹56.5',
-    metaDescription: 'GASTRONEX-IV IV pantoprazole for acute GERD and stress ulcer prophylaxis in hospitalized patients. MRP ₹56.5.',
+    metaDescription:
+      'GASTRONEX-IV IV pantoprazole for acute GERD and stress ulcer prophylaxis in hospitalized patients. MRP ₹56.5.',
     keywords: [
       'pantoprazole',
       'IV injection',
@@ -1783,16 +1908,20 @@ export const products: Product[] = [
     seoHeading: 'GASTRONEX-IV: Pantoprazole Sodium Intravenous Injection',
 
     // Detailed Information
-    introduction: 'GASTRONEX-IV delivers intravenous pantoprazole for critical-care management of acute acid-related emergencies, stress ulcer prophylaxis in hospitalized patients, and severe GERD unresponsive to oral therapy. The IV route ensures rapid acid suppression within minutes providing immediate protection against life-threatening gastrointestinal hemorrhage in vulnerable hospital populations including ICU patients, post-operative cases, and mechanically ventilated individuals with severe coagulopathy. This makes GASTRONEX-IV an essential tool for healthcare providers managing complex gastrointestinal conditions in acute care settings, ensuring optimal patient outcomes through effective acid suppression when oral administration is not feasible.',
+    introduction:
+      'GASTRONEX-IV delivers intravenous pantoprazole for critical-care management of acute acid-related emergencies, stress ulcer prophylaxis in hospitalized patients, and severe GERD unresponsive to oral therapy. The IV route ensures rapid acid suppression within minutes providing immediate protection against life-threatening gastrointestinal hemorrhage in vulnerable hospital populations including ICU patients, post-operative cases, and mechanically ventilated individuals with severe coagulopathy. This makes GASTRONEX-IV an essential tool for healthcare providers managing complex gastrointestinal conditions in acute care settings, ensuring optimal patient outcomes through effective acid suppression when oral administration is not feasible.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-GAS-PAN-40',
-    therapeutic: 'Intravenous management of acute peptic ulcer bleeding and severe GERD',
-    indication: 'Acute GERD, stress ulcer prophylaxis, post-operative acid reduction',
+    therapeutic:
+      'Intravenous management of acute peptic ulcer bleeding and severe GERD',
+    indication:
+      'Acute GERD, stress ulcer prophylaxis, post-operative acid reduction',
     activeIngredient: 'Pantoprazole Sodium 40mg',
     strength: '40mg per vial',
-    dosage: '40 mg reconstituted in 10 ml saline, administered IV slowly over 2-5 minutes once or twice daily',
+    dosage:
+      '40 mg reconstituted in 10 ml saline, administered IV slowly over 2-5 minutes once or twice daily',
 
     uses: [
       'Acute GERD in hospitalized patients',
@@ -1826,7 +1955,8 @@ export const products: Product[] = [
       'Reconstitute properly',
     ],
 
-    storageConditions: 'Store at 2-8°C before reconstitution. Room temperature after reconstitution.',
+    storageConditions:
+      'Store at 2-8°C before reconstitution. Room temperature after reconstitution.',
     shelfLife: '24 months',
 
     avgRating: 4.8,
@@ -1860,19 +1990,23 @@ export const products: Product[] = [
     name: 'GINSORAP 9G',
     slug: 'ginsorap-9g-ginseng-green-tea-nutraceutical',
     composition: 'Green Tea Extract + Ginseng + Ginkgo Biloba + others',
-    fullComposition: 'Green Tea Extract 50mg + Ginseng Extract 42.5mg + Ginkgo Biloba Extract 20mg + Multivitamins + Multiminerals per softgel capsule',
+    fullComposition:
+      'Green Tea Extract 50mg + Ginseng Extract 42.5mg + Ginkgo Biloba Extract 20mg + Multivitamins + Multiminerals per softgel capsule',
     category: 'Capsules',
     therapeuticClass: 'Nutraceutical',
     packaging: '10x1x10 Softgel Capsule',
     mrp: 2500,
     imageUrl: '/productswebp/GINSORAP 9G.webp',
     imageAlt: 'GINSORAP 9G Ginseng Green Tea Antioxidant Capsule',
-    visualAidUrl: '/visualaidswebp/ginsorap-9g-ginseng-green-tea-nutraceutical-visualaid.webp',
-    visualAidAlt: 'GINSORAP 9G - Green Tea Extract + Ginseng + Ginkgo Biloba + others Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/ginsorap-9g-ginseng-green-tea-nutraceutical-visualaid.webp',
+    visualAidAlt:
+      'GINSORAP 9G - Green Tea Extract + Ginseng + Ginkgo Biloba + others Visual Aid',
 
     // SEO Optimization
     metaTitle: 'GINSORAP 9G | Ginseng + Green Tea Antioxidant - ₹2500',
-    metaDescription: 'GINSORAP 9G premium antioxidant supplement with ginseng, green tea and ginkgo for mental clarity and energy. MRP ₹2500.',
+    metaDescription:
+      'GINSORAP 9G premium antioxidant supplement with ginseng, green tea and ginkgo for mental clarity and energy. MRP ₹2500.',
     keywords: [
       'ginseng',
       'green tea extract',
@@ -1883,13 +2017,16 @@ export const products: Product[] = [
     seoHeading: 'GINSORAP 9G: Premium Antioxidant Ginseng & Green Tea Formula',
 
     // Detailed Information
-    introduction: 'GINSORAP 9G is premium antioxidant-adaptogenic formula combining standardized green tea extract, premium-grade ginseng (9g), ginkgo biloba, and comprehensive multivitamin-minerals for superior mental clarity, sustained energy, and comprehensive wellness. This sophisticated formulation leverages polyphenolic antioxidants and ginsenosides for cognitive enhancement, oxidative stress reduction, and neurological support particularly valued by students, professionals, and athletes facing cognitive demands. This makes GINSORAP 9G an ideal choice for healthcare providers seeking a powerful and effective nutraceutical solution for enhancing mental performance, energy levels, and overall vitality in a single, convenient softgel capsule form.',
+    introduction:
+      'GINSORAP 9G is premium antioxidant-adaptogenic formula combining standardized green tea extract, premium-grade ginseng (9g), ginkgo biloba, and comprehensive multivitamin-minerals for superior mental clarity, sustained energy, and comprehensive wellness. This sophisticated formulation leverages polyphenolic antioxidants and ginsenosides for cognitive enhancement, oxidative stress reduction, and neurological support particularly valued by students, professionals, and athletes facing cognitive demands. This makes GINSORAP 9G an ideal choice for healthcare providers seeking a powerful and effective nutraceutical solution for enhancing mental performance, energy levels, and overall vitality in a single, convenient softgel capsule form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-GIN-9G',
-    therapeutic: 'Comprehensive antioxidant, vitality, and nutritional supplementation',
-    indication: 'Mental clarity, energy boost, antioxidant protection, wellness',
+    therapeutic:
+      'Comprehensive antioxidant, vitality, and nutritional supplementation',
+    indication:
+      'Mental clarity, energy boost, antioxidant protection, wellness',
     activeIngredient: 'Green Tea + Ginseng + Ginkgo Biloba',
     strength: 'Multiple components per capsule',
     dosage: 'One softgel capsule once daily after a meal, preferably breakfast',
@@ -1957,19 +2094,23 @@ export const products: Product[] = [
     name: 'GINSORAP A-Z',
     slug: 'ginsorap-az-multivitamin-mineral-probiotic',
     composition: 'Ginseng + Multivitamins + Multiminerals + Probiotics',
-    fullComposition: 'Ginseng Extract 42.5mg + Multivitamins + Multiminerals + Probiotics per softgel capsule',
+    fullComposition:
+      'Ginseng Extract 42.5mg + Multivitamins + Multiminerals + Probiotics per softgel capsule',
     category: 'Capsules',
     therapeuticClass: 'Nutraceutical',
     packaging: '10x1x10 Softgel Capsule',
     mrp: 1320,
     imageUrl: '/productswebp/GINSORAP A-Z.webp',
     imageAlt: 'GINSORAP A-Z Multivitamin Mineral Probiotic Capsule',
-    visualAidUrl: '/visualaidswebp/ginsorap-az-multivitamin-mineral-probiotic-visualaid.webp',
-    visualAidAlt: 'GINSORAP A-Z - Ginseng + Multivitamins + Multiminerals + Probiotics Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/ginsorap-az-multivitamin-mineral-probiotic-visualaid.webp',
+    visualAidAlt:
+      'GINSORAP A-Z - Ginseng + Multivitamins + Multiminerals + Probiotics Visual Aid',
 
     // SEO Optimization
     metaTitle: 'GINSORAP A-Z | Daily Multivitamin & Probiotics - ₹1320',
-    metaDescription: 'GINSORAP A-Z comprehensive daily supplement with ginseng, vitamins, minerals and probiotics for complete nutrition. MRP ₹1320.',
+    metaDescription:
+      'GINSORAP A-Z comprehensive daily supplement with ginseng, vitamins, minerals and probiotics for complete nutrition. MRP ₹1320.',
     keywords: [
       'multivitamin',
       'multiminerals',
@@ -1980,12 +2121,14 @@ export const products: Product[] = [
     seoHeading: 'GINSORAP A-Z: Complete Daily Multivitamin & Probiotic Formula',
 
     // Detailed Information
-    introduction: 'GINSORAP A-Z is scientifically formulated comprehensive nutritional supplement delivering complete vitamin spectrum (A through E and B-complex), critical minerals (calcium, iron, zinc, magnesium), standardized ginseng extract, and beneficial probiotic cultures for complete nutritional coverage and immune optimization. This advanced formulation addresses multiple nutritional gaps simultaneously through synergistic micronutrient combinations supporting optimal cellular function, energy metabolism, intestinal barrier integrity, and comprehensive immune defense system activation. This makes GINSORAP A-Z an ideal choice for healthcare providers seeking a powerful and effective daily supplement solution for enhancing overall wellness, preventing nutritional deficiencies, and supporting immune health in a single, convenient softgel capsule form.',
+    introduction:
+      'GINSORAP A-Z is scientifically formulated comprehensive nutritional supplement delivering complete vitamin spectrum (A through E and B-complex), critical minerals (calcium, iron, zinc, magnesium), standardized ginseng extract, and beneficial probiotic cultures for complete nutritional coverage and immune optimization. This advanced formulation addresses multiple nutritional gaps simultaneously through synergistic micronutrient combinations supporting optimal cellular function, energy metabolism, intestinal barrier integrity, and comprehensive immune defense system activation. This makes GINSORAP A-Z an ideal choice for healthcare providers seeking a powerful and effective daily supplement solution for enhancing overall wellness, preventing nutritional deficiencies, and supporting immune health in a single, convenient softgel capsule form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-GIN-AZ',
-    therapeutic: 'Immune support, daily micronutrient supplementation, and gut health',
+    therapeutic:
+      'Immune support, daily micronutrient supplementation, and gut health',
     indication: 'Nutritional supplementation, immune enhancement, gut health',
     activeIngredient: 'Ginseng + Multiple Vitamins & Minerals + Probiotics',
     strength: 'Multiple components per capsule',
@@ -2020,7 +2163,8 @@ export const products: Product[] = [
       'Consult doctor if on medications',
     ],
 
-    storageConditions: 'Store in cool, dry place away from moisture and direct sunlight',
+    storageConditions:
+      'Store in cool, dry place away from moisture and direct sunlight',
     shelfLife: '18 months',
 
     avgRating: 4.7,
@@ -2053,19 +2197,23 @@ export const products: Product[] = [
     name: 'GLYNORAP-M1',
     slug: 'glynorap-m1-glimepiride-metformin-diabetes',
     composition: 'Glimepiride + Metformin (SR)',
-    fullComposition: 'Glimepiride IP 1mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
+    fullComposition:
+      'Glimepiride IP 1mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
     category: 'Tablets',
     therapeuticClass: 'Antidiabetic',
     packaging: '10x10 Blister',
     mrp: 799,
     imageUrl: '/productswebp/GLYNORAP-M1.webp',
     imageAlt: 'GLYNORAP-M1 Glimepiride Metformin Diabetes Tablet',
-    visualAidUrl: '/visualaidswebp/glynorap-m1-glimepiride-metformin-diabetes-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/glynorap-m1-glimepiride-metformin-diabetes-visualaid.webp',
     visualAidAlt: 'GLYNORAP-M1 - Glimepiride + Metformin (SR) Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'GLYNORAP-M1 | Glimepiride + Metformin - Diabetes Control - ₹799',
-    metaDescription: 'GLYNORAP-M1 diabetic tablet combining glimepiride sulfonylurea with metformin for effective type 2 diabetes management. MRP ₹799.',
+    metaTitle:
+      'GLYNORAP-M1 | Glimepiride + Metformin - Diabetes Control - ₹799',
+    metaDescription:
+      'GLYNORAP-M1 diabetic tablet combining glimepiride sulfonylurea with metformin for effective type 2 diabetes management. MRP ₹799.',
     keywords: [
       'glimepiride',
       'metformin',
@@ -2076,7 +2224,8 @@ export const products: Product[] = [
     seoHeading: 'GLYNORAP-M1: Glimepiride + Metformin for Diabetes Management',
 
     // Detailed Information
-    introduction: 'GLYNORAP-M1 is specialized diabetes pharmaceutical combining glimepiride (sulfonylurea stimulating insulin secretion) with sustained-release metformin (biguanide enhancing insulin sensitivity) for dual-mechanism type 2 diabetes control addressing both insulin production and utilization pathways. This synergistic combination provides superior glycemic control compared to monotherapy through complementary mechanisms, with typical HbA1c reductions of 1.5-2% supporting target achievement and preventing diabetes progression. This makes GLYNORAP-M1 an ideal choice for healthcare providers seeking an effective and convenient solution for managing type 2 diabetes in a single, easy-to-take tablet form.',
+    introduction:
+      'GLYNORAP-M1 is specialized diabetes pharmaceutical combining glimepiride (sulfonylurea stimulating insulin secretion) with sustained-release metformin (biguanide enhancing insulin sensitivity) for dual-mechanism type 2 diabetes control addressing both insulin production and utilization pathways. This synergistic combination provides superior glycemic control compared to monotherapy through complementary mechanisms, with typical HbA1c reductions of 1.5-2% supporting target achievement and preventing diabetes progression. This makes GLYNORAP-M1 an ideal choice for healthcare providers seeking an effective and convenient solution for managing type 2 diabetes in a single, easy-to-take tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
@@ -2116,7 +2265,8 @@ export const products: Product[] = [
       'Avoid alcohol',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep away from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep away from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -2151,19 +2301,22 @@ export const products: Product[] = [
     name: 'GLYNORAP-M2',
     slug: 'glynorap-m2-glimepiride-metformin-advanced',
     composition: 'Glimepiride + Metformin (SR)',
-    fullComposition: 'Glimepiride IP 2mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
+    fullComposition:
+      'Glimepiride IP 2mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
     category: 'Tablets',
     therapeuticClass: 'Antidiabetic',
     packaging: '10x10 Blister',
     mrp: 990,
     imageUrl: '/productswebp/GLYNORAP-M2.webp',
     imageAlt: 'GLYNORAP-M2 Glimepiride Metformin Advanced Diabetes Tablet',
-    visualAidUrl: '/visualaidswebp/glynorap-m2-glimepiride-metformin-advanced-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/glynorap-m2-glimepiride-metformin-advanced-visualaid.webp',
     visualAidAlt: 'GLYNORAP-M2 - Glimepiride + Metformin (SR) Visual Aid',
 
     // SEO Optimization
     metaTitle: 'GLYNORAP-M2 | Higher Strength Diabetes Tablet - ₹990',
-    metaDescription: 'GLYNORAP-M2 advanced formula with higher glimepiride and metformin for intensive type 2 diabetes control. MRP ₹990.',
+    metaDescription:
+      'GLYNORAP-M2 advanced formula with higher glimepiride and metformin for intensive type 2 diabetes control. MRP ₹990.',
     keywords: [
       'glimepiride',
       'metformin',
@@ -2174,16 +2327,19 @@ export const products: Product[] = [
     seoHeading: 'GLYNORAP-M2: Advanced Strength Diabetes Control Formula',
 
     // Detailed Information
-    introduction: 'GLYNORAP-M2 is intensified diabetes pharmaceutical combining higher-dose glimepiride (2mg for enhanced beta-cell stimulation) with sustained-release metformin for aggressive blood glucose management in advanced type 2 diabetes requiring intensive control. This premium-strength formulation achieves additional 0.5-1% HbA1c reduction beyond standard-dose combinations, potentially obviating insulin therapy in appropriately selected patients while requiring intensive glucose monitoring and hypoglycemia recognition training. This makes GLYNORAP-M2 an ideal choice for healthcare providers seeking a powerful and effective solution for managing advanced type 2 diabetes with a single, convenient tablet form while maximizing glycemic control and minimizing progression to insulin dependence.',
+    introduction:
+      'GLYNORAP-M2 is intensified diabetes pharmaceutical combining higher-dose glimepiride (2mg for enhanced beta-cell stimulation) with sustained-release metformin for aggressive blood glucose management in advanced type 2 diabetes requiring intensive control. This premium-strength formulation achieves additional 0.5-1% HbA1c reduction beyond standard-dose combinations, potentially obviating insulin therapy in appropriately selected patients while requiring intensive glucose monitoring and hypoglycemia recognition training. This makes GLYNORAP-M2 an ideal choice for healthcare providers seeking a powerful and effective solution for managing advanced type 2 diabetes with a single, convenient tablet form while maximizing glycemic control and minimizing progression to insulin dependence.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-GLM-MET-2',
-    therapeutic: 'Advanced dual therapy glycemic control in type 2 diabetes mellitus',
+    therapeutic:
+      'Advanced dual therapy glycemic control in type 2 diabetes mellitus',
     indication: 'Advanced type 2 diabetes, intensive glycemic control',
     activeIngredient: 'Glimepiride 2mg + Metformin 500mg',
     strength: '2mg + 500mg SR per tablet',
-    dosage: 'One tablet once or twice daily with breakfast/main meal as directed by physician',
+    dosage:
+      'One tablet once or twice daily with breakfast/main meal as directed by physician',
 
     uses: [
       'Advanced type 2 diabetes management',
@@ -2218,7 +2374,8 @@ export const products: Product[] = [
       'Avoid skipping meals',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -2253,19 +2410,22 @@ export const products: Product[] = [
     name: 'LIVERGLOW',
     slug: 'liverglow-liver-ayurvedic-tonic-detox',
     composition: 'Liver syrup',
-    fullComposition: 'Ayurvedic Liver Extracts (Detailed composition as per label) per 10ml',
+    fullComposition:
+      'Ayurvedic Liver Extracts (Detailed composition as per label) per 10ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Liver Tonic',
     packaging: '200ml',
     mrp: 120,
     imageUrl: '/productswebp/LIVERGLOW.webp',
     imageAlt: 'LIVERGLOW Liver Ayurvedic Tonic Detox Syrup',
-    visualAidUrl: '/visualaidswebp/liverglow-liver-ayurvedic-tonic-detox-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/liverglow-liver-ayurvedic-tonic-detox-visualaid.webp',
     visualAidAlt: 'LIVERGLOW - Liver syrup Visual Aid',
 
     // SEO Optimization
     metaTitle: 'LIVERGLOW | Liver Ayurvedic Tonic - Detox & Health - ₹120',
-    metaDescription: 'LIVERGLOW Ayurvedic liver tonic for hepatoprotection, detoxification and fatty liver management. MRP ₹120.',
+    metaDescription:
+      'LIVERGLOW Ayurvedic liver tonic for hepatoprotection, detoxification and fatty liver management. MRP ₹120.',
     keywords: [
       'liver tonic',
       'ayurvedic',
@@ -2276,12 +2436,14 @@ export const products: Product[] = [
     seoHeading: 'LIVERGLOW: Ayurvedic Liver Tonic for Detox & Health',
 
     // Detailed Information
-    introduction: 'LIVERGLOW is comprehensive Ayurvedic hepatoprotective tonic meticulously formulated with traditional medicinal herbs, botanical extracts, and phytonutrients for profound liver support, detoxification enhancement, and hepatic function optimization. This time-tested formulation addresses multiple liver dysfunction mechanisms including inflammatory hepatitis, toxic liver damage, fatty liver accumulation, and impaired detoxification capacity, supporting hepatocyte regeneration, bile optimization, and enhanced Phase I/II detoxification enzyme function. This makes LIVERGLOW an ideal choice for healthcare providers seeking a natural and effective solution for promoting liver health, managing fatty liver disease, supporting hepatitis recovery, and enhancing overall vitality through comprehensive hepatic support in a convenient syrup form.',
+    introduction:
+      'LIVERGLOW is comprehensive Ayurvedic hepatoprotective tonic meticulously formulated with traditional medicinal herbs, botanical extracts, and phytonutrients for profound liver support, detoxification enhancement, and hepatic function optimization. This time-tested formulation addresses multiple liver dysfunction mechanisms including inflammatory hepatitis, toxic liver damage, fatty liver accumulation, and impaired detoxification capacity, supporting hepatocyte regeneration, bile optimization, and enhanced Phase I/II detoxification enzyme function. This makes LIVERGLOW an ideal choice for healthcare providers seeking a natural and effective solution for promoting liver health, managing fatty liver disease, supporting hepatitis recovery, and enhancing overall vitality through comprehensive hepatic support in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-LVR-200',
-    therapeutic: 'Hepatoprotective support, appetite stimulation, and liver detoxification',
+    therapeutic:
+      'Hepatoprotective support, appetite stimulation, and liver detoxification',
     indication: 'Liver health, detoxification, fatty liver, hepatitis support',
     activeIngredient: 'Ayurvedic Liver Herbs',
     strength: 'Per 10ml',
@@ -2316,7 +2478,8 @@ export const products: Product[] = [
       'Avoid excess heat',
     ],
 
-    storageConditions: 'Store away from light and heat. Keep bottle tightly closed.',
+    storageConditions:
+      'Store away from light and heat. Keep bottle tightly closed.',
     shelfLife: '24 months',
 
     avgRating: 4.8,
@@ -2358,22 +2521,26 @@ export const products: Product[] = [
     mrp: 105,
     imageUrl: '/productswebp/MAGZORAP.webp',
     imageAlt: 'MAGZORAP Magaldrate Simethicone Antacid Gas Relief Syrup',
-    visualAidUrl: '/visualaidswebp/magzorap-magaldrate-simethicone-antacid-gas-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/magzorap-magaldrate-simethicone-antacid-gas-visualaid.webp',
     visualAidAlt: 'MAGZORAP - Magaldrate + Simethicone Visual Aid',
 
     // SEO Optimization
     metaTitle: 'MAGZORAP | Magaldrate Antacid + Gas Relief - ₹105',
-    metaDescription: 'MAGZORAP antacid syrup with magaldrate and simethicone for heartburn, acidity and gas relief. MRP ₹105.',
+    metaDescription:
+      'MAGZORAP antacid syrup with magaldrate and simethicone for heartburn, acidity and gas relief. MRP ₹105.',
     keywords: ['magaldrate', 'antacid', 'gas relief', 'acidity', 'simethicone'],
     seoHeading: 'MAGZORAP: Magaldrate Antacid with Gas Relief',
 
     // Detailed Information
-    introduction: 'MAGZORAP is rapid-acting antacid combining magaldrate (balanced buffering agent providing sustained pH elevation) with simethicone (defoaming agent dispersing intestinal gas bubbles) for exceptional relief from acidity, heartburn, gastric bloating, and functional indigestion. This dual-action mechanism simultaneously neutralizes excess gastric acid while eliminating painful gas pockets, providing symptom relief within 5-10 minutes supporting rapid return to normal activities and meals. This makes MAGZORAP an ideal choice for healthcare providers seeking a powerful and effective solution for managing common gastrointestinal discomforts in a single, convenient syrup form while minimizing the need for multiple medications and maximizing patient compliance.',
+    introduction:
+      'MAGZORAP is rapid-acting antacid combining magaldrate (balanced buffering agent providing sustained pH elevation) with simethicone (defoaming agent dispersing intestinal gas bubbles) for exceptional relief from acidity, heartburn, gastric bloating, and functional indigestion. This dual-action mechanism simultaneously neutralizes excess gastric acid while eliminating painful gas pockets, providing symptom relief within 5-10 minutes supporting rapid return to normal activities and meals. This makes MAGZORAP an ideal choice for healthcare providers seeking a powerful and effective solution for managing common gastrointestinal discomforts in a single, convenient syrup form while minimizing the need for multiple medications and maximizing patient compliance.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-MAG-400',
-    therapeutic: 'Fast relief from acidity, heartburn, gastritis, and flatulence',
+    therapeutic:
+      'Fast relief from acidity, heartburn, gastritis, and flatulence',
     indication: 'Acidity, heartburn, gas bloating, indigestion',
     activeIngredient: 'Magaldrate 400mg + Simethicone 20mg',
     strength: '400mg + 20mg per 5ml',
@@ -2407,7 +2574,8 @@ export const products: Product[] = [
       'Consult before pregnancy',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep in dry place.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep in dry place.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -2447,12 +2615,15 @@ export const products: Product[] = [
     mrp: 48.25,
     imageUrl: '/productswebp/MEFAPED-125.webp',
     imageAlt: 'MEFAPED-125 Mefenamic Paracetamol Fever Pain Suspension',
-    visualAidUrl: '/visualaidswebp/mefaped-125-mefenamic-paracetamol-fever-pain-visualaid.webp',
-    visualAidAlt: 'MEFAPED-125 - Mefenamic Acid 50mg + Paracetamol 125mg/5ml Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/mefaped-125-mefenamic-paracetamol-fever-pain-visualaid.webp',
+    visualAidAlt:
+      'MEFAPED-125 - Mefenamic Acid 50mg + Paracetamol 125mg/5ml Visual Aid',
 
     // SEO Optimization
     metaTitle: 'MEFAPED-125 | Mefenamic + Paracetamol Suspension - ₹48.25',
-    metaDescription: 'MEFAPED-125 combination suspension with mefenamic acid and paracetamol for fever and pain relief. MRP ₹48.25.',
+    metaDescription:
+      'MEFAPED-125 combination suspension with mefenamic acid and paracetamol for fever and pain relief. MRP ₹48.25.',
     keywords: [
       'mefenamic acid',
       'paracetamol',
@@ -2463,16 +2634,19 @@ export const products: Product[] = [
     seoHeading: 'MEFAPED-125: Mefenamic Acid + Paracetamol Pain & Fever Relief',
 
     // Detailed Information
-    introduction: 'MEFAPED-125 is pharmaceutical liquid suspension combining mefenamic acid (NSAID providing superior anti-inflammatory action) with paracetamol (acetaminophen providing additional analgesic-antipyretic effect) in pediatric-optimized concentrations for effective fever reduction and pain management. This dual-mechanism combination leverages complementary analgesic pathways delivering superior symptom control compared to either agent alone, with liquid formulation enabling precise age-appropriate dosing for children and teething infants. This makes MEFAPED-125 an ideal choice for healthcare providers seeking a powerful and effective solution for managing pediatric fever and pain in a single, convenient suspension form while ensuring safety and compliance in young patients.',
+    introduction:
+      'MEFAPED-125 is pharmaceutical liquid suspension combining mefenamic acid (NSAID providing superior anti-inflammatory action) with paracetamol (acetaminophen providing additional analgesic-antipyretic effect) in pediatric-optimized concentrations for effective fever reduction and pain management. This dual-mechanism combination leverages complementary analgesic pathways delivering superior symptom control compared to either agent alone, with liquid formulation enabling precise age-appropriate dosing for children and teething infants. This makes MEFAPED-125 an ideal choice for healthcare providers seeking a powerful and effective solution for managing pediatric fever and pain in a single, convenient suspension form while ensuring safety and compliance in young patients.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-MEF-PAR-125',
-    therapeutic: 'Pediatric management of fever, mild-to-moderate pain, and inflammation',
+    therapeutic:
+      'Pediatric management of fever, mild-to-moderate pain, and inflammation',
     indication: 'Fever reduction, mild to moderate pain relief',
     activeIngredient: 'Mefenamic Acid 50mg + Paracetamol 125mg',
     strength: '50mg + 125mg per 5ml',
-    dosage: '5-10 ml every 6 to 8 hours as prescribed by pediatrician based on body weight',
+    dosage:
+      '5-10 ml every 6 to 8 hours as prescribed by pediatrician based on body weight',
 
     uses: [
       'Pain relief (headache, muscular pain)',
@@ -2507,7 +2681,8 @@ export const products: Product[] = [
       'Give with meals to reduce GI upset',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep bottle tightly closed.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep bottle tightly closed.',
     shelfLife: '24 months',
 
     avgRating: 4.4,
@@ -2548,26 +2723,32 @@ export const products: Product[] = [
     mrp: 1000,
     imageUrl: '/productswebp/NIMRAP-P.webp',
     imageAlt: 'NIMRAP-P Nimesulide Paracetamol Fever Pain Relief Tablet',
-    visualAidUrl: '/visualaidswebp/nimrap-p-nimesulide-paracetamol-fever-pain-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/nimrap-p-nimesulide-paracetamol-fever-pain-visualaid.webp',
     visualAidAlt: 'NIMRAP-P - Nimesulide + Paracetamol Visual Aid',
 
     // SEO Optimization
     metaTitle: 'NIMRAP-P | Nimesulide + Paracetamol - Fever & Pain',
-    metaDescription: 'NIMRAP-P combination tablet with nimesulide and paracetamol for effective fever and pain relief. MRP ₹1000.',
+    metaDescription:
+      'NIMRAP-P combination tablet with nimesulide and paracetamol for effective fever and pain relief. MRP ₹1000.',
     keywords: ['nimesulide', 'paracetamol', 'fever', 'pain relief', 'NSAID'],
     seoHeading: 'NIMRAP-P: Nimesulide + Paracetamol for Fever & Pain Relief',
 
     // Detailed Information
-    introduction: 'NIMRAP-P is advanced dual-action pharmaceutical combining nimesulide (selective COX-2 inhibitor providing potent anti-inflammatory action) with paracetamol (acetaminophen providing complementary analgesia) for exceptional symptom control across acute pain conditions including dental pain, post-operative pain, migraine headaches, muscle strains, and trauma-related inflammation. The combination with sustained action lasting 8 hours provides superior pain relief compared to monotherapy while potentially reducing opioid requirements. This makes NIMRAP-P an ideal choice for healthcare providers seeking a powerful and effective solution for managing acute pain and fever in a single, convenient tablet form while maximizing patient comfort and compliance.',
+    introduction:
+      'NIMRAP-P is advanced dual-action pharmaceutical combining nimesulide (selective COX-2 inhibitor providing potent anti-inflammatory action) with paracetamol (acetaminophen providing complementary analgesia) for exceptional symptom control across acute pain conditions including dental pain, post-operative pain, migraine headaches, muscle strains, and trauma-related inflammation. The combination with sustained action lasting 8 hours provides superior pain relief compared to monotherapy while potentially reducing opioid requirements. This makes NIMRAP-P an ideal choice for healthcare providers seeking a powerful and effective solution for managing acute pain and fever in a single, convenient tablet form while maximizing patient comfort and compliance.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-NIM-PAR',
-    therapeutic: 'Short-term relief of acute inflammatory pain, fever, and dysmenorrhea',
-    indication: 'Fever reduction, headache, muscle aches, mild to moderate pain',
+    therapeutic:
+      'Short-term relief of acute inflammatory pain, fever, and dysmenorrhea',
+    indication:
+      'Fever reduction, headache, muscle aches, mild to moderate pain',
     activeIngredient: 'Nimesulide 100mg + Paracetamol 325mg',
     strength: '100mg + 325mg per tablet',
-    dosage: 'One tablet twice daily after meals for a maximum of 3-5 days as directed by physician',
+    dosage:
+      'One tablet twice daily after meals for a maximum of 3-5 days as directed by physician',
 
     uses: [
       'Acute pain management',
@@ -2598,7 +2779,8 @@ export const products: Product[] = [
       'Avoid prolonged use',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 30°C. Keep away from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 30°C. Keep away from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -2632,38 +2814,46 @@ export const products: Product[] = [
     name: 'PIPZORAP-TZ',
     slug: 'pipzorap-tz-piperacillin-tazobactam-antibiotic',
     composition: 'Piperacillin + Tazobactam',
-    fullComposition: 'Piperacillin Sodium IP 4g + Tazobactam Sodium IP 0.5g per vial',
+    fullComposition:
+      'Piperacillin Sodium IP 4g + Tazobactam Sodium IP 0.5g per vial',
     category: 'Injections',
     therapeuticClass: 'Antibiotic',
     packaging: 'Single Vial',
     mrp: 426.67,
     imageUrl: '/productswebp/PIPZORAP-TZ.webp',
     imageAlt: 'PIPZORAP-TZ Piperacillin Tazobactam Injection Antibiotic',
-    visualAidUrl: '/visualaidswebp/pipzorap-tz-piperacillin-tazobactam-antibiotic-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/pipzorap-tz-piperacillin-tazobactam-antibiotic-visualaid.webp',
     visualAidAlt: 'PIPZORAP-TZ - Piperacillin + Tazobactam Visual Aid',
 
     // SEO Optimization
     metaTitle: 'PIPZORAP-TZ | Piperacillin Tazobactam Injection - ₹426.67',
-    metaDescription: 'PIPZORAP-TZ prescription injection combining piperacillin with tazobactam for broad-spectrum bacterial infections. MRP ₹426.67.',
+    metaDescription:
+      'PIPZORAP-TZ prescription injection combining piperacillin with tazobactam for broad-spectrum bacterial infections. MRP ₹426.67.',
     keywords: [
       'piperacillin',
       'tazobactam',
       'antibiotic injection',
       'bacterial infection',
     ],
-    seoHeading: 'PIPZORAP-TZ: Piperacillin-Tazobactam for Serious Bacterial Infections',
+    seoHeading:
+      'PIPZORAP-TZ: Piperacillin-Tazobactam for Serious Bacterial Infections',
 
     // Detailed Information
-    introduction: 'PIPZORAP-TZ is critically important broad-spectrum injectable antibiotic combining piperacillin (potent beta-lactam with extended gram-negative and anaerobic coverage) with tazobactam (beta-lactamase inhibitor overcoming bacterial resistance mechanisms) for serious healthcare-associated infections, polymicrobial intra-abdominal infections, and sepsis. This powerful combination enables treatment of infections resistant to conventional beta-lactams, particularly Pseudomonas aeruginosa, complex anaerobes, and ESBL-producing Enterobacteriaceae common in facility-acquired infections. This makes PIPZORAP-TZ an essential tool for healthcare providers managing severe infections in hospitalized patients, providing rapid and effective bacterial eradication while minimizing the risk of resistance development through its dual mechanism of action.',
+    introduction:
+      'PIPZORAP-TZ is critically important broad-spectrum injectable antibiotic combining piperacillin (potent beta-lactam with extended gram-negative and anaerobic coverage) with tazobactam (beta-lactamase inhibitor overcoming bacterial resistance mechanisms) for serious healthcare-associated infections, polymicrobial intra-abdominal infections, and sepsis. This powerful combination enables treatment of infections resistant to conventional beta-lactams, particularly Pseudomonas aeruginosa, complex anaerobes, and ESBL-producing Enterobacteriaceae common in facility-acquired infections. This makes PIPZORAP-TZ an essential tool for healthcare providers managing severe infections in hospitalized patients, providing rapid and effective bacterial eradication while minimizing the risk of resistance development through its dual mechanism of action.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PIP-TAZ-4G',
-    therapeutic: 'Treatment of severe, complicated hospital-acquired polymicrobial infections',
-    indication: 'Serious bacterial infections, hospital-acquired infections, septicemia',
+    therapeutic:
+      'Treatment of severe, complicated hospital-acquired polymicrobial infections',
+    indication:
+      'Serious bacterial infections, hospital-acquired infections, septicemia',
     activeIngredient: 'Piperacillin 4g + Tazobactam 0.5g',
     strength: '4g + 0.5g per vial',
-    dosage: '4.5g administered by slow IV infusion over 30 minutes every 6 to 8 hours',
+    dosage:
+      '4.5g administered by slow IV infusion over 30 minutes every 6 to 8 hours',
 
     uses: [
       'Serious hospital-acquired infections',
@@ -2694,7 +2884,8 @@ export const products: Product[] = [
       'Check allergic history',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -2728,19 +2919,23 @@ export const products: Product[] = [
     name: 'PRO FC',
     slug: 'pro-fc-iron-supplement-folic-zinc',
     composition: 'Ferrous Ascorbate + Folic Acid + Zinc Sulphate',
-    fullComposition: 'Ferrous Ascorbate IP 100mg + Folic Acid IP 1.5mg + Zinc Sulphate IP 22.5mg',
+    fullComposition:
+      'Ferrous Ascorbate IP 100mg + Folic Acid IP 1.5mg + Zinc Sulphate IP 22.5mg',
     category: 'Tablets',
     therapeuticClass: 'Iron Supplement',
     packaging: '10x10 Alu Alu',
     mrp: 1320,
     imageUrl: '/productswebp/PRO-FC.webp',
     imageAlt: 'PRO FC Iron Folic Acid Zinc Supplement Tablet',
-    visualAidUrl: '/visualaidswebp/pro-fc-iron-supplement-folic-zinc-visualaid.webp',
-    visualAidAlt: 'PRO FC - Ferrous Ascorbate + Folic Acid + Zinc Sulphate Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/pro-fc-iron-supplement-folic-zinc-visualaid.webp',
+    visualAidAlt:
+      'PRO FC - Ferrous Ascorbate + Folic Acid + Zinc Sulphate Visual Aid',
 
     // SEO Optimization
     metaTitle: 'PRO FC | Iron + Folic Acid Supplement Tablet - ₹1320',
-    metaDescription: 'PRO FC iron supplement with folic acid and zinc for anemia treatment and nutritional support. MRP ₹1320.',
+    metaDescription:
+      'PRO FC iron supplement with folic acid and zinc for anemia treatment and nutritional support. MRP ₹1320.',
     keywords: [
       'iron supplement',
       'folic acid',
@@ -2751,16 +2946,21 @@ export const products: Product[] = [
     seoHeading: 'PRO FC: Iron + Folic Acid + Zinc Comprehensive Supplement',
 
     // Detailed Information
-    introduction: 'PRO FC is comprehensive iron supplementation combining ferrous ascorbate (providing well-absorbed iron with vitamin C for absorption enhancement), folic acid (essential for red blood cell formation and DNA synthesis), and zinc (critical for immune function and wound healing) for comprehensive anemia treatment and nutritional support. This triple-nutrient combination addresses multiple nutritional deficiency pathways simultaneously, particularly valuable for women with iron deficiency anemia and individuals recovering from blood loss or malabsorption conditions. This makes PRO FC an ideal choice for healthcare providers seeking a powerful and effective solution for managing iron deficiency anemia, supporting pregnancy-related nutritional needs, and enhancing overall wellness through a single, convenient tablet form.',
+    introduction:
+      'PRO FC is comprehensive iron supplementation combining ferrous ascorbate (providing well-absorbed iron with vitamin C for absorption enhancement), folic acid (essential for red blood cell formation and DNA synthesis), and zinc (critical for immune function and wound healing) for comprehensive anemia treatment and nutritional support. This triple-nutrient combination addresses multiple nutritional deficiency pathways simultaneously, particularly valuable for women with iron deficiency anemia and individuals recovering from blood loss or malabsorption conditions. This makes PRO FC an ideal choice for healthcare providers seeking a powerful and effective solution for managing iron deficiency anemia, supporting pregnancy-related nutritional needs, and enhancing overall wellness through a single, convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PRO-FC-IRON',
-    therapeutic: 'Treatment and prevention of iron deficiency anemia and nutritional support in pregnancy',
-    indication: 'Iron deficiency anemia, pregnancy support, nutritional supplementation',
-    activeIngredient: 'Ferrous Ascorbate 100mg + Folic Acid 1.5mg + Zinc Sulphate 22.5mg',
+    therapeutic:
+      'Treatment and prevention of iron deficiency anemia and nutritional support in pregnancy',
+    indication:
+      'Iron deficiency anemia, pregnancy support, nutritional supplementation',
+    activeIngredient:
+      'Ferrous Ascorbate 100mg + Folic Acid 1.5mg + Zinc Sulphate 22.5mg',
     strength: '100mg + 1.5mg + 22.5mg per tablet',
-    dosage: 'One tablet once daily with water on an empty stomach or after light meals',
+    dosage:
+      'One tablet once daily with water on an empty stomach or after light meals',
 
     uses: [
       'Iron deficiency anemia treatment',
@@ -2834,31 +3034,37 @@ export const products: Product[] = [
     mrp: 113.76,
     imageUrl: '/productswebp/RAPIKACIN-500.webp',
     imageAlt: 'RAPIKACIN-500 Amikacin Injection Antibiotic',
-    visualAidUrl: '/visualaidswebp/rapikacin-500-amikacin-antibiotic-injection-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapikacin-500-amikacin-antibiotic-injection-visualaid.webp',
     visualAidAlt: 'RAPIKACIN-500 - Amikacin Sulphate 500mg/2ml Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPIKACIN-500 | Amikacin 500mg Injection - Aminoglycoside',
-    metaDescription: 'RAPIKACIN-500 amikacin injection for severe gram-negative bacterial infections. Aminoglycoside antibiotic. MRP ₹113.76.',
+    metaDescription:
+      'RAPIKACIN-500 amikacin injection for severe gram-negative bacterial infections. Aminoglycoside antibiotic. MRP ₹113.76.',
     keywords: [
       'amikacin',
       'aminoglycoside',
       'antibiotic injection',
       'bacterial infection',
     ],
-    seoHeading: 'RAPIKACIN-500: Amikacin 500mg Injection for Serious Infections',
+    seoHeading:
+      'RAPIKACIN-500: Amikacin 500mg Injection for Serious Infections',
 
     // Detailed Information
-    introduction: 'RAPIKACIN-500 is an injectable aminoglycoside antibiotic for treating serious gram-negative aerobic infections requiring hospital care and monitoring. Amikacin is a semisynthetic derivative of kanamycin with enhanced stability against bacterial aminoglycoside-modifying enzymes, providing potent activity against multidrug-resistant organisms including Pseudomonas aeruginosa, Acinetobacter baumannii, and ESBL-producing Enterobacteriaceae. This powerful antibiotic is reserved for severe infections where other agents have failed or resistance is suspected, necessitating careful dosing and monitoring to optimize efficacy while minimizing toxicity risks. This makes RAPIKACIN-500 an essential tool for healthcare providers managing complex infections in hospitalized patients, providing rapid and effective bacterial eradication while ensuring patient safety through its well-established pharmacokinetic and pharmacodynamic profile.',
+    introduction:
+      'RAPIKACIN-500 is an injectable aminoglycoside antibiotic for treating serious gram-negative aerobic infections requiring hospital care and monitoring. Amikacin is a semisynthetic derivative of kanamycin with enhanced stability against bacterial aminoglycoside-modifying enzymes, providing potent activity against multidrug-resistant organisms including Pseudomonas aeruginosa, Acinetobacter baumannii, and ESBL-producing Enterobacteriaceae. This powerful antibiotic is reserved for severe infections where other agents have failed or resistance is suspected, necessitating careful dosing and monitoring to optimize efficacy while minimizing toxicity risks. This makes RAPIKACIN-500 an essential tool for healthcare providers managing complex infections in hospitalized patients, providing rapid and effective bacterial eradication while ensuring patient safety through its well-established pharmacokinetic and pharmacodynamic profile.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-AMI-500',
-    therapeutic: 'Treatment of severe Gram-negative bacterial infections and septicemia',
+    therapeutic:
+      'Treatment of severe Gram-negative bacterial infections and septicemia',
     indication: 'Severe gram-negative infections, hospital-acquired infections',
     activeIngredient: 'Amikacin 500mg',
     strength: '500mg per 2ml',
-    dosage: '15 mg/kg/day divided into 2-3 equal doses administered IM or slow IV infusion',
+    dosage:
+      '15 mg/kg/day divided into 2-3 equal doses administered IM or slow IV infusion',
 
     uses: [
       'Serious gram-negative infections',
@@ -2889,7 +3095,8 @@ export const products: Product[] = [
       'Peak-trough monitoring',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.4,
@@ -2930,12 +3137,14 @@ export const products: Product[] = [
     mrp: 1500,
     imageUrl: '/productswebp/RAPIFLAM-KT.webp',
     imageAlt: 'RAPIFLAM-KT Ketorolac NSAID Tablet Pain Relief',
-    visualAidUrl: '/visualaidswebp/rapiflam-kt-ketorolac-nsaid-pain-relief-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapiflam-kt-ketorolac-nsaid-pain-relief-visualaid.webp',
     visualAidAlt: 'RAPIFLAM-KT - Ketorolac Tromethamine Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPIFLAM-KT | Ketorolac 10mg NSAID Tablet - ₹1500',
-    metaDescription: 'RAPIFLAM-KT ketorolac tablet for severe pain relief. Potent NSAID for short-term acute pain management. MRP ₹1500.',
+    metaDescription:
+      'RAPIFLAM-KT ketorolac tablet for severe pain relief. Potent NSAID for short-term acute pain management. MRP ₹1500.',
     keywords: [
       'ketorolac',
       'NSAID',
@@ -2946,16 +3155,19 @@ export const products: Product[] = [
     seoHeading: 'RAPIFLAM-KT: Ketorolac 10mg NSAID for Severe Pain Relief',
 
     // Detailed Information
-    introduction: 'RAPIFLAM-KT is a potent NSAID for moderate to severe pain relief, particularly effective for post-operative and traumatic pain with rapid onset of action. Ketorolac provides powerful analgesic and anti-inflammatory effects by inhibiting prostaglandin synthesis, making it ideal for short-term management of acute pain conditions where opioid-sparing is desired. Due to its potency and potential for serious side effects, it is recommended for use under strict medical supervision with careful patient selection and monitoring. This makes RAPIFLAM-KT an essential option for healthcare providers managing severe pain in hospitalized patients, providing effective symptom control while minimizing the risks associated with long-term NSAID use.',
+    introduction:
+      'RAPIFLAM-KT is a potent NSAID for moderate to severe pain relief, particularly effective for post-operative and traumatic pain with rapid onset of action. Ketorolac provides powerful analgesic and anti-inflammatory effects by inhibiting prostaglandin synthesis, making it ideal for short-term management of acute pain conditions where opioid-sparing is desired. Due to its potency and potential for serious side effects, it is recommended for use under strict medical supervision with careful patient selection and monitoring. This makes RAPIFLAM-KT an essential option for healthcare providers managing severe pain in hospitalized patients, providing effective symptom control while minimizing the risks associated with long-term NSAID use.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-KET-10',
-    therapeutic: 'Short-term management of moderate to severe acute post-operative or dental pain',
+    therapeutic:
+      'Short-term management of moderate to severe acute post-operative or dental pain',
     indication: 'Moderate to severe acute pain, post-operative pain',
     activeIngredient: 'Ketorolac 10mg',
     strength: '10mg per tablet',
-    dosage: 'One dispersible tablet dissolved in water every 4 to 6 hours as needed (maximum 40mg/day, up to 5 days)',
+    dosage:
+      'One dispersible tablet dissolved in water every 4 to 6 hours as needed (maximum 40mg/day, up to 5 days)',
 
     uses: [
       'Moderate to severe acute pain',
@@ -2986,7 +3198,8 @@ export const products: Product[] = [
       'Monitor renal function',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -3027,12 +3240,14 @@ export const products: Product[] = [
     mrp: 47.71,
     imageUrl: '/productswebp/RAPIFEVA-P.webp',
     imageAlt: 'RAPIFEVA-P Ibuprofen Paracetamol Fever Suspension Pediatric',
-    visualAidUrl: '/visualaidswebp/rapifeva-p-ibuprofen-paracetamol-fever-suspension-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapifeva-p-ibuprofen-paracetamol-fever-suspension-visualaid.webp',
     visualAidAlt: 'RAPIFEVA-P - Ibuprofen + Paracetamol Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPIFEVA-P | Ibuprofen + Paracetamol Fever Suspension - ₹47.71',
-    metaDescription: 'RAPIFEVA-P pediatric suspension combining ibuprofen and paracetamol for fever and pain relief in children. MRP ₹47.71.',
+    metaDescription:
+      'RAPIFEVA-P pediatric suspension combining ibuprofen and paracetamol for fever and pain relief in children. MRP ₹47.71.',
     keywords: [
       'ibuprofen',
       'paracetamol',
@@ -3040,19 +3255,23 @@ export const products: Product[] = [
       'pediatric',
       'children fever',
     ],
-    seoHeading: 'RAPIFEVA-P: Ibuprofen + Paracetamol Pediatric Fever Suspension',
+    seoHeading:
+      'RAPIFEVA-P: Ibuprofen + Paracetamol Pediatric Fever Suspension',
 
     // Detailed Information
-    introduction: 'RAPIFEVA-P is a pediatric antipyretic and analgesic suspension combining an NSAID with acetaminophen for effective fever and pain relief in children and infants. This dual-action formulation provides rapid symptom control for a variety of common pediatric conditions including viral infections, teething discomfort, and post-vaccination fever, with dosing flexibility to accommodate different age groups and weight ranges for safe and effective use in the pediatric population. This makes RAPIFEVA-P an ideal choice for healthcare providers seeking a powerful and effective solution for managing pediatric fever and pain in a single, convenient suspension form while ensuring safety and compliance in young patients.',
+    introduction:
+      'RAPIFEVA-P is a pediatric antipyretic and analgesic suspension combining an NSAID with acetaminophen for effective fever and pain relief in children and infants. This dual-action formulation provides rapid symptom control for a variety of common pediatric conditions including viral infections, teething discomfort, and post-vaccination fever, with dosing flexibility to accommodate different age groups and weight ranges for safe and effective use in the pediatric population. This makes RAPIFEVA-P an ideal choice for healthcare providers seeking a powerful and effective solution for managing pediatric fever and pain in a single, convenient suspension form while ensuring safety and compliance in young patients.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-IBU-PAR-PED',
-    therapeutic: 'Dual antipyretic and analgesic suspension for pediatric fever and pain',
+    therapeutic:
+      'Dual antipyretic and analgesic suspension for pediatric fever and pain',
     indication: 'Fever reduction in children, mild pain relief, cold symptoms',
     activeIngredient: 'Ibuprofen 100mg + Paracetamol 162.5mg',
     strength: '100mg + 162.5mg per 5ml',
-    dosage: '5-10 ml three times daily after meals, as directed by pediatrician',
+    dosage:
+      '5-10 ml three times daily after meals, as directed by pediatrician',
 
     uses: [
       'Fever reduction in children',
@@ -3083,7 +3302,8 @@ export const products: Product[] = [
       'Not for infants under 2 months',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep bottle tightly closed.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep bottle tightly closed.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -3124,12 +3344,15 @@ export const products: Product[] = [
     mrp: 920,
     imageUrl: '/productswebp/RAPIFUR.webp',
     imageAlt: 'RAPIFUR Nitrofurantoin UTI Antibiotic Tablet',
-    visualAidUrl: '/visualaidswebp/rapifur-nitrofurantoin-uti-antibiotic-visualaid.webp',
-    visualAidAlt: 'RAPIFUR - Nitrofurantoin 100mg (Sustained Release) Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/rapifur-nitrofurantoin-uti-antibiotic-visualaid.webp',
+    visualAidAlt:
+      'RAPIFUR - Nitrofurantoin 100mg (Sustained Release) Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPIFUR | Nitrofurantoin 100mg UTI Treatment - ₹920',
-    metaDescription: 'RAPIFUR nitrofurantoin sustained-release tablet for uncomplicated urinary tract infections. MRP ₹920.',
+    metaDescription:
+      'RAPIFUR nitrofurantoin sustained-release tablet for uncomplicated urinary tract infections. MRP ₹920.',
     keywords: [
       'nitrofurantoin',
       'UTI',
@@ -3140,16 +3363,20 @@ export const products: Product[] = [
     seoHeading: 'RAPIFUR: Nitrofurantoin 100mg SR for UTI Treatment',
 
     // Detailed Information
-    introduction: 'RAPIFUR is a nitrofuran antibiotic specifically designed for uncomplicated urinary tract infections, with sustained-release formulation for improved compliance and therapeutic effect. Nitrofurantoin works by inhibiting bacterial enzymes involved in DNA synthesis, providing potent activity against common uropathogens including E. coli, Klebsiella, and Enterococcus species. This makes RAPIFUR an ideal choice for treating cystitis and preventing recurrent UTIs, particularly in patients without renal impairment, while minimizing systemic exposure and potential side effects.',
+    introduction:
+      'RAPIFUR is a nitrofuran antibiotic specifically designed for uncomplicated urinary tract infections, with sustained-release formulation for improved compliance and therapeutic effect. Nitrofurantoin works by inhibiting bacterial enzymes involved in DNA synthesis, providing potent activity against common uropathogens including E. coli, Klebsiella, and Enterococcus species. This makes RAPIFUR an ideal choice for treating cystitis and preventing recurrent UTIs, particularly in patients without renal impairment, while minimizing systemic exposure and potential side effects.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-NIT-100-SR',
-    therapeutic: 'Treatment and prophylaxis of acute uncomplicated urinary tract infections',
-    indication: 'Uncomplicated urinary tract infections, cystitis, UTI prophylaxis',
+    therapeutic:
+      'Treatment and prophylaxis of acute uncomplicated urinary tract infections',
+    indication:
+      'Uncomplicated urinary tract infections, cystitis, UTI prophylaxis',
     activeIngredient: 'Nitrofurantoin 100mg',
     strength: '100mg SR per tablet',
-    dosage: 'One tablet twice daily with food or milk for 7 days, as directed by physician',
+    dosage:
+      'One tablet twice daily with food or milk for 7 days, as directed by physician',
 
     uses: [
       'Acute uncomplicated urinary tract infections',
@@ -3184,7 +3411,8 @@ export const products: Product[] = [
       'Maintain hydration',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -3227,12 +3455,15 @@ export const products: Product[] = [
     mrp: 1299,
     imageUrl: '/productswebp/RAPINAK-D.webp',
     imageAlt: 'RAPINAK-D Aceclofenac Drotaverine Pain Muscle Relief Tablet',
-    visualAidUrl: '/visualaidswebp/rapinak-d-aceclofenac-drotaverine-pain-muscle-visualaid.webp',
-    visualAidAlt: 'RAPINAK-D - Aceclofenac + Drotaverine Hydrochloride Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-d-aceclofenac-drotaverine-pain-muscle-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK-D - Aceclofenac + Drotaverine Hydrochloride Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPINAK-D | Aceclofenac + Drotaverine Pain Relief - ₹1299',
-    metaDescription: 'RAPINAK-D combines aceclofenac and drotaverine for pain and muscle spasm relief. MRP ₹1299.',
+    metaDescription:
+      'RAPINAK-D combines aceclofenac and drotaverine for pain and muscle spasm relief. MRP ₹1299.',
     keywords: [
       'aceclofenac',
       'drotaverine',
@@ -3243,12 +3474,14 @@ export const products: Product[] = [
     seoHeading: 'RAPINAK-D: Aceclofenac + Drotaverine Pain & Muscle Relief',
 
     // Detailed Information
-    introduction: 'RAPINAK-D combines an NSAID with a muscle relaxant for comprehensive relief from inflammatory pain and muscle spasm, particularly effective for back pain and arthralgia. Aceclofenac provides potent anti-inflammatory and analgesic effects by inhibiting prostaglandin synthesis, while drotaverine relaxes smooth muscle by inhibiting phosphodiesterase IV, making this combination ideal for conditions where both inflammation and muscle spasm contribute to pain. This dual-action formulation is particularly beneficial for patients with musculoskeletal disorders, dysmenorrhea, and post-injury trauma where muscle spasm exacerbates pain symptoms.',
+    introduction:
+      'RAPINAK-D combines an NSAID with a muscle relaxant for comprehensive relief from inflammatory pain and muscle spasm, particularly effective for back pain and arthralgia. Aceclofenac provides potent anti-inflammatory and analgesic effects by inhibiting prostaglandin synthesis, while drotaverine relaxes smooth muscle by inhibiting phosphodiesterase IV, making this combination ideal for conditions where both inflammation and muscle spasm contribute to pain. This dual-action formulation is particularly beneficial for patients with musculoskeletal disorders, dysmenorrhea, and post-injury trauma where muscle spasm exacerbates pain symptoms.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ACE-DRO-100',
-    therapeutic: 'Relief of spasmodic pain, biliary/renal colic, and spasmodic dysmenorrhea',
+    therapeutic:
+      'Relief of spasmodic pain, biliary/renal colic, and spasmodic dysmenorrhea',
     indication: 'Muscle spasm, back pain, joint inflammation, dysmenorrhea',
     activeIngredient: 'Aceclofenac 100mg + Drotaverine 80mg',
     strength: '100mg + 80mg per tablet',
@@ -3287,7 +3520,8 @@ export const products: Product[] = [
       'Monitor liver function',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -3328,22 +3562,26 @@ export const products: Product[] = [
     mrp: 599,
     imageUrl: '/productswebp/RAPINAK-P.webp',
     imageAlt: 'RAPINAK-P Aceclofenac Paracetamol Pain Relief Tablet',
-    visualAidUrl: '/visualaidswebp/rapinak-p-aceclofenac-paracetamol-pain-relief-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-p-aceclofenac-paracetamol-pain-relief-visualaid.webp',
     visualAidAlt: 'RAPINAK-P - Aceclofenac + Paracetamol Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPINAK-P | Aceclofenac + Paracetamol - Pain Relief - ₹599',
-    metaDescription: 'RAPINAK-P combination tablet with aceclofenac and paracetamol for acute and chronic pain relief. MRP ₹599.',
+    metaDescription:
+      'RAPINAK-P combination tablet with aceclofenac and paracetamol for acute and chronic pain relief. MRP ₹599.',
     keywords: ['aceclofenac', 'paracetamol', 'pain relief', 'NSAID', 'fever'],
     seoHeading: 'RAPINAK-P: Aceclofenac + Paracetamol Pain & Fever Relief',
 
     // Detailed Information
-    introduction: 'RAPINAK-P is a potent analgesic and anti-inflammatory tablet combining NSAID and acetaminophen for effective relief from acute and chronic pain conditions. Aceclofenac provides strong anti-inflammatory and analgesic effects by inhibiting prostaglandin synthesis, while paracetamol offers complementary analgesia and antipyretic action, making this combination ideal for a wide range of pain conditions including musculoskeletal pain, dental pain, headaches, and post-operative discomfort. The dual-action formulation allows for superior symptom control while potentially reducing the need for opioid analgesics in certain cases.',
+    introduction:
+      'RAPINAK-P is a potent analgesic and anti-inflammatory tablet combining NSAID and acetaminophen for effective relief from acute and chronic pain conditions. Aceclofenac provides strong anti-inflammatory and analgesic effects by inhibiting prostaglandin synthesis, while paracetamol offers complementary analgesia and antipyretic action, making this combination ideal for a wide range of pain conditions including musculoskeletal pain, dental pain, headaches, and post-operative discomfort. The dual-action formulation allows for superior symptom control while potentially reducing the need for opioid analgesics in certain cases.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ACE-PAR-100',
-    therapeutic: 'Relief of pain, inflammation, and fever in musculoskeletal disorders',
+    therapeutic:
+      'Relief of pain, inflammation, and fever in musculoskeletal disorders',
     indication: 'Acute pain, fever, headache, post-operative pain',
     activeIngredient: 'Aceclofenac 100mg + Paracetamol 325mg',
     strength: '100mg + 325mg per tablet',
@@ -3378,7 +3616,8 @@ export const products: Product[] = [
       'Monitor liver function',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -3412,19 +3651,24 @@ export const products: Product[] = [
     name: 'RAPINAK-SP',
     slug: 'rapinak-sp-aceclofenac-paracetamol-serratiopeptidase',
     composition: 'Aceclofenac + Paracetamol + Serratiopeptidase',
-    fullComposition: 'Aceclofenac IP 100mg + Paracetamol IP 325mg + Serratiopeptidase IP 15mg',
+    fullComposition:
+      'Aceclofenac IP 100mg + Paracetamol IP 325mg + Serratiopeptidase IP 15mg',
     category: 'Tablets',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     packaging: '10x10 Alu Alu',
     mrp: 1200,
     imageUrl: '/productswebp/RAPINAK-SP.webp',
-    imageAlt: 'RAPINAK-SP Aceclofenac Paracetamol Serratiopeptidase Anti-inflammatory',
-    visualAidUrl: '/visualaidswebp/rapinak-sp-aceclofenac-paracetamol-serratiopeptidase-visualaid.webp',
-    visualAidAlt: 'RAPINAK-SP - Aceclofenac + Paracetamol + Serratiopeptidase Visual Aid',
+    imageAlt:
+      'RAPINAK-SP Aceclofenac Paracetamol Serratiopeptidase Anti-inflammatory',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-sp-aceclofenac-paracetamol-serratiopeptidase-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK-SP - Aceclofenac + Paracetamol + Serratiopeptidase Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPINAK-SP | Aceclofenac + Paracetamol + Enzyme - ₹1200',
-    metaDescription: 'RAPINAK-SP triple-action tablet with aceclofenac, paracetamol and serratiopeptidase for inflammation and swelling reduction. MRP ₹1200.',
+    metaDescription:
+      'RAPINAK-SP triple-action tablet with aceclofenac, paracetamol and serratiopeptidase for inflammation and swelling reduction. MRP ₹1200.',
     keywords: [
       'aceclofenac',
       'serratiopeptidase',
@@ -3432,17 +3676,21 @@ export const products: Product[] = [
       'anti-edema',
       'post-operative',
     ],
-    seoHeading: 'RAPINAK-SP: Aceclofenac + Paracetamol + Enzyme Anti-Inflammatory',
+    seoHeading:
+      'RAPINAK-SP: Aceclofenac + Paracetamol + Enzyme Anti-Inflammatory',
 
     // Detailed Information
-    introduction: 'RAPINAK-SP is a triple-action formula combining NSAID, analgesic, and fibrinolytic enzyme for enhanced anti-inflammatory and pain relief with reduced swelling. Aceclofenac provides potent anti-inflammatory and analgesic effects, paracetamol offers complementary pain relief and fever reduction, while serratiopeptidase promotes the breakdown of inflammatory mediators and reduces edema, making this combination particularly effective for post-operative recovery, trauma-related inflammation, and conditions where swelling contributes to pain. This multi-modal approach allows for superior symptom control while potentially reducing the need for higher doses of NSAIDs or opioids in certain cases.',
+    introduction:
+      'RAPINAK-SP is a triple-action formula combining NSAID, analgesic, and fibrinolytic enzyme for enhanced anti-inflammatory and pain relief with reduced swelling. Aceclofenac provides potent anti-inflammatory and analgesic effects, paracetamol offers complementary pain relief and fever reduction, while serratiopeptidase promotes the breakdown of inflammatory mediators and reduces edema, making this combination particularly effective for post-operative recovery, trauma-related inflammation, and conditions where swelling contributes to pain. This multi-modal approach allows for superior symptom control while potentially reducing the need for higher doses of NSAIDs or opioids in certain cases.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ACE-PAR-SER-100',
-    therapeutic: 'Relief of severe pain, inflammation, and edema following trauma or surgery',
+    therapeutic:
+      'Relief of severe pain, inflammation, and edema following trauma or surgery',
     indication: 'Post-operative inflammation, swelling, trauma-related pain',
-    activeIngredient: 'Aceclofenac 100mg + Paracetamol 325mg + Serratiopeptidase 15mg',
+    activeIngredient:
+      'Aceclofenac 100mg + Paracetamol 325mg + Serratiopeptidase 15mg',
     strength: '100mg + 325mg + 15mg per tablet',
     dosage: 'One tablet twice daily after food, as directed by physician',
 
@@ -3479,7 +3727,8 @@ export const products: Product[] = [
       'Avoid aspirin combination',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -3513,20 +3762,25 @@ export const products: Product[] = [
   {
     name: 'RAPINFLAM-FORTE',
     slug: 'rapinflam-forte-trypsin-bromelain-diclofenac',
-    composition: 'Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium',
-    fullComposition: 'Trypsin BP 48mg + Bromelain BP 90mg + Rutoside Trihydrate BP 100mg + Diclofenac Sodium IP 50mg',
+    composition:
+      'Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium',
+    fullComposition:
+      'Trypsin BP 48mg + Bromelain BP 90mg + Rutoside Trihydrate BP 100mg + Diclofenac Sodium IP 50mg',
     category: 'Tablets',
     therapeuticClass: 'NSAID (Non-Steroidal Anti-Inflammatory Drug)',
     packaging: '10x10 Alu Alu',
     mrp: 2250,
     imageUrl: '/productswebp/RAPINFLAM-FORTE.webp',
     imageAlt: 'RAPINFLAM-FORTE Enzyme Anti-inflammatory Post-operative Tablet',
-    visualAidUrl: '/visualaidswebp/rapinflam-forte-trypsin-bromelain-diclofenac-visualaid.webp',
-    visualAidAlt: 'RAPINFLAM-FORTE - Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/rapinflam-forte-trypsin-bromelain-diclofenac-visualaid.webp',
+    visualAidAlt:
+      'RAPINFLAM-FORTE - Trypsin + Bromelain + Rutoside Trihydrate + Diclofenac Sodium Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPINFLAM-FORTE | Multi-enzyme Anti-inflammatory - ₹2250',
-    metaDescription: 'RAPINFLAM-FORTE combines trypsin, bromelain and diclofenac for post-operative inflammation and swelling reduction. MRP ₹2250.',
+    metaDescription:
+      'RAPINFLAM-FORTE combines trypsin, bromelain and diclofenac for post-operative inflammation and swelling reduction. MRP ₹2250.',
     keywords: [
       'enzyme',
       'bromelain',
@@ -3534,19 +3788,25 @@ export const products: Product[] = [
       'anti-inflammatory',
       'post-operative',
     ],
-    seoHeading: 'RAPINFLAM-FORTE: Multi-Enzyme Anti-Inflammatory for Post-Op Care',
+    seoHeading:
+      'RAPINFLAM-FORTE: Multi-Enzyme Anti-Inflammatory for Post-Op Care',
 
     // Detailed Information
-    introduction: 'RAPINFLAM-FORTE is a multi-enzyme and anti-inflammatory combination tablet for rapid reduction of inflammation, edema, and pain in post-operative and traumatic conditions. Trypsin and bromelain are proteolytic enzymes that help break down inflammatory mediators and reduce swelling, while rutoside trihydrate provides antioxidant support to protect tissues from oxidative damage during inflammation. Diclofenac sodium offers potent NSAID action to further alleviate pain and inflammation, making this formulation particularly effective for conditions like post-surgical recovery, traumatic injuries, and fibrocystic breast disease where both inflammation and swelling contribute to patient discomfort.',
+    introduction:
+      'RAPINFLAM-FORTE is a multi-enzyme and anti-inflammatory combination tablet for rapid reduction of inflammation, edema, and pain in post-operative and traumatic conditions. Trypsin and bromelain are proteolytic enzymes that help break down inflammatory mediators and reduce swelling, while rutoside trihydrate provides antioxidant support to protect tissues from oxidative damage during inflammation. Diclofenac sodium offers potent NSAID action to further alleviate pain and inflammation, making this formulation particularly effective for conditions like post-surgical recovery, traumatic injuries, and fibrocystic breast disease where both inflammation and swelling contribute to patient discomfort.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ENZ-DICL-50',
-    therapeutic: 'Enzymatic anti-inflammatory therapy for acute tissue trauma, hematoma, and sports injury',
-    indication: 'Post-operative swelling, trauma, fibrocystic disease, inflammation',
-    activeIngredient: 'Trypsin 48mg + Bromelain 90mg + Rutoside 100mg + Diclofenac 50mg',
+    therapeutic:
+      'Enzymatic anti-inflammatory therapy for acute tissue trauma, hematoma, and sports injury',
+    indication:
+      'Post-operative swelling, trauma, fibrocystic disease, inflammation',
+    activeIngredient:
+      'Trypsin 48mg + Bromelain 90mg + Rutoside 100mg + Diclofenac 50mg',
     strength: '48mg + 90mg + 100mg + 50mg per tablet',
-    dosage: 'One tablet two to three times daily after meals, as directed by physician',
+    dosage:
+      'One tablet two to three times daily after meals, as directed by physician',
 
     uses: [
       'Post-operative inflammation and swelling',
@@ -3573,7 +3833,8 @@ export const products: Product[] = [
     ],
     precautions: ['Do not crush', 'Take with food', 'Monitor for bleeding'],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.8,
@@ -3608,19 +3869,22 @@ export const products: Product[] = [
     name: 'RAPINOVA',
     slug: 'rapinova-lycopene-antioxidant-supplement-syrup',
     composition: 'Lycopene + Zinc + Manganese + others',
-    fullComposition: 'Lycopene 5000mcg + Zinc 7.5mg + Manganese 1mg + Multivitamins + Multiminerals per 10ml',
+    fullComposition:
+      'Lycopene 5000mcg + Zinc 7.5mg + Manganese 1mg + Multivitamins + Multiminerals per 10ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Nutraceutical',
     packaging: '200ml',
     mrp: 160,
     imageUrl: '/productswebp/RAPINOVA.webp',
     imageAlt: 'RAPINOVA Lycopene Antioxidant Nutritional Supplement Syrup',
-    visualAidUrl: '/visualaidswebp/rapinova-lycopene-antioxidant-supplement-syrup-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapinova-lycopene-antioxidant-supplement-syrup-visualaid.webp',
     visualAidAlt: 'RAPINOVA - Lycopene + Zinc + Manganese + others Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPINOVA | Lycopene Antioxidant Supplement - ₹160',
-    metaDescription: 'RAPINOVA antioxidant supplement with lycopene and micronutrients for cellular protection and immune system support. MRP ₹160.',
+    metaDescription:
+      'RAPINOVA antioxidant supplement with lycopene and micronutrients for cellular protection and immune system support. MRP ₹160.',
     keywords: [
       'lycopene',
       'antioxidant',
@@ -3631,16 +3895,19 @@ export const products: Product[] = [
     seoHeading: 'RAPINOVA: Lycopene Antioxidant Nutritional Supplement',
 
     // Detailed Information
-    introduction: 'RAPINOVA is an antioxidant-rich nutritional supplement combining lycopene with essential micronutrients for cellular protection and immune support. Lycopene is a powerful carotenoid antioxidant that helps neutralize free radicals and reduce oxidative stress, while zinc and manganese play crucial roles in immune function and enzymatic processes. This formulation is designed to support overall health, enhance immune system function, and provide specific benefits for prostate and cardiovascular health, making it an ideal choice for individuals seeking to improve their nutritional status and protect against chronic diseases associated with oxidative damage.',
+    introduction:
+      'RAPINOVA is an antioxidant-rich nutritional supplement combining lycopene with essential micronutrients for cellular protection and immune support. Lycopene is a powerful carotenoid antioxidant that helps neutralize free radicals and reduce oxidative stress, while zinc and manganese play crucial roles in immune function and enzymatic processes. This formulation is designed to support overall health, enhance immune system function, and provide specific benefits for prostate and cardiovascular health, making it an ideal choice for individuals seeking to improve their nutritional status and protect against chronic diseases associated with oxidative damage.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-LYC-5000',
-    therapeutic: 'Nutritional antioxidant tonic for cellular protection, stamina, and cardiovascular health',
+    therapeutic:
+      'Nutritional antioxidant tonic for cellular protection, stamina, and cardiovascular health',
     indication: 'Antioxidant support, immune enhancement, cellular protection',
     activeIngredient: 'Lycopene 5000mcg + Zinc 7.5mg + Manganese 1mg',
     strength: 'Multiple nutrients per 10ml',
-    dosage: '10-15 ml once or twice daily after meals, or as directed by physician',
+    dosage:
+      '10-15 ml once or twice daily after meals, or as directed by physician',
 
     uses: [
       'Antioxidant and cellular protection',
@@ -3671,12 +3938,13 @@ export const products: Product[] = [
       'Avoid direct sunlight',
     ],
 
-    storageConditions: 'Store away from direct sunlight. Keep bottle tightly closed.',
+    storageConditions:
+      'Store away from direct sunlight. Keep bottle tightly closed.',
     shelfLife: '18 months',
 
     avgRating: 4.4,
     reviewCount: 145,
-    medicalCategory: 'Cardiovascular',
+    medicalCategory: 'Vitamins',
     authorName: 'Dr. Vikram Chopra, Cardiologist',
     publicationDate: '2024-02-10',
     updatedDate: '2025-04-15',
@@ -3710,12 +3978,14 @@ export const products: Product[] = [
     mrp: 2050,
     imageUrl: '/productswebp/RAPIPOD-200.webp',
     imageAlt: 'RAPIPOD-200 Cefpodoxime Antibiotic Tablet Cephalosporin',
-    visualAidUrl: '/visualaidswebp/rapipod-200-cefpodoxime-cephalosporin-antibiotic-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapipod-200-cefpodoxime-cephalosporin-antibiotic-visualaid.webp',
     visualAidAlt: 'RAPIPOD-200 - Cefpodoxime Proxetil 200mg Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPIPOD-200 | Cefpodoxime 200mg Antibiotic - ₹2050',
-    metaDescription: 'RAPIPOD-200 cefpodoxime third-generation cephalosporin for respiratory and urinary tract infections. MRP ₹2050.',
+    metaDescription:
+      'RAPIPOD-200 cefpodoxime third-generation cephalosporin for respiratory and urinary tract infections. MRP ₹2050.',
     keywords: [
       'cefpodoxime',
       'antibiotic',
@@ -3726,16 +3996,20 @@ export const products: Product[] = [
     seoHeading: 'RAPIPOD-200: Cefpodoxime 200mg Broad-Spectrum Antibiotic',
 
     // Detailed Information
-    introduction: 'RAPIPOD-200 is a third-generation cephalosporin oral antibiotic with broad-spectrum activity for treating moderate to severe respiratory and urinary tract infections.  Cefpodoxime works by inhibiting bacterial cell wall synthesis, making it effective against a wide range of gram-positive and gram-negative pathogens including Streptococcus pneumoniae, Haemophilus influenzae, Escherichia coli, and Klebsiella species. This makes RAPIPOD-200 an ideal choice for conditions such as community-acquired pneumonia, bronchitis, cystitis, and skin infections, particularly in patients who may have resistance to other antibiotics or require a well-tolerated oral option for outpatient therapy.',
+    introduction:
+      'RAPIPOD-200 is a third-generation cephalosporin oral antibiotic with broad-spectrum activity for treating moderate to severe respiratory and urinary tract infections.  Cefpodoxime works by inhibiting bacterial cell wall synthesis, making it effective against a wide range of gram-positive and gram-negative pathogens including Streptococcus pneumoniae, Haemophilus influenzae, Escherichia coli, and Klebsiella species. This makes RAPIPOD-200 an ideal choice for conditions such as community-acquired pneumonia, bronchitis, cystitis, and skin infections, particularly in patients who may have resistance to other antibiotics or require a well-tolerated oral option for outpatient therapy.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CEF-POD-200',
-    therapeutic: 'Treatment of upper and lower respiratory tract, skin, and urinary tract bacterial infections',
-    indication: 'Respiratory infections, urinary tract infections, skin infections',
+    therapeutic:
+      'Treatment of upper and lower respiratory tract, skin, and urinary tract bacterial infections',
+    indication:
+      'Respiratory infections, urinary tract infections, skin infections',
     activeIngredient: 'Cefpodoxime 200mg',
     strength: '200mg per tablet',
-    dosage: 'One tablet (200mg) twice daily with meals for 5-14 days as prescribed',
+    dosage:
+      'One tablet (200mg) twice daily with meals for 5-14 days as prescribed',
 
     uses: [
       'Respiratory tract infections',
@@ -3766,7 +4040,8 @@ export const products: Product[] = [
       'Monitor for allergy',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -3809,12 +4084,14 @@ export const products: Product[] = [
     mrp: 991.8,
     imageUrl: '/productswebp/RAPISART-40.webp',
     imageAlt: 'RAPISART-40 Telmisartan Antihypertensive ARB Tablet',
-    visualAidUrl: '/visualaidswebp/rapisart-40-telmisartan-antihypertensive-arb-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapisart-40-telmisartan-antihypertensive-arb-visualaid.webp',
     visualAidAlt: 'RAPISART-40 - Telmisartan Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPISART-40 | Telmisartan 40mg ARB - Blood Pressure Control',
-    metaDescription: 'RAPISART-40 telmisartan 40mg ARB for sustained hypertension management and cardiovascular protection. MRP ₹991.8.',
+    metaDescription:
+      'RAPISART-40 telmisartan 40mg ARB for sustained hypertension management and cardiovascular protection. MRP ₹991.8.',
     keywords: [
       'telmisartan',
       'ARB',
@@ -3825,16 +4102,19 @@ export const products: Product[] = [
     seoHeading: 'RAPISART-40: Telmisartan 40mg for Hypertension Management',
 
     // Detailed Information
-    introduction: 'RAPISART-40 is an angiotensin II receptor blocker providing sustained blood pressure control with good tolerability for long-term hypertension management. Telmisartan works by blocking the effects of angiotensin II, leading to vasodilation and reduced blood pressure, while also offering cardiovascular and renal protective benefits. This makes RAPISART-40 an ideal choice for patients with hypertension, particularly those with additional cardiovascular risk factors or chronic kidney disease, as it can help reduce the risk of heart attack, stroke, and progression of renal impairment while maintaining a favorable side effect profile.',
+    introduction:
+      'RAPISART-40 is an angiotensin II receptor blocker providing sustained blood pressure control with good tolerability for long-term hypertension management. Telmisartan works by blocking the effects of angiotensin II, leading to vasodilation and reduced blood pressure, while also offering cardiovascular and renal protective benefits. This makes RAPISART-40 an ideal choice for patients with hypertension, particularly those with additional cardiovascular risk factors or chronic kidney disease, as it can help reduce the risk of heart attack, stroke, and progression of renal impairment while maintaining a favorable side effect profile.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-TEL-40',
-    therapeutic: 'Management of essential hypertension and reduction of cardiovascular risk',
+    therapeutic:
+      'Management of essential hypertension and reduction of cardiovascular risk',
     indication: 'Hypertension, cardiovascular risk reduction, heart failure',
     activeIngredient: 'Telmisartan 40mg',
     strength: '40mg per tablet',
-    dosage: 'One tablet (40mg) once daily, with or without food, as directed by physician',
+    dosage:
+      'One tablet (40mg) once daily, with or without food, as directed by physician',
 
     uses: [
       'Hypertension management',
@@ -3869,7 +4149,8 @@ export const products: Product[] = [
       'Rise slowly from sitting',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -3909,13 +4190,16 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     mrp: 1500,
     imageUrl: '/productswebp/RAPISART-AM.webp',
-    imageAlt: 'RAPISART-AM Telmisartan Amlodipine Dual Therapy Antihypertensive',
-    visualAidUrl: '/visualaidswebp/rapisart-am-telmisartan-amlodipine-dual-therapy-visualaid.webp',
+    imageAlt:
+      'RAPISART-AM Telmisartan Amlodipine Dual Therapy Antihypertensive',
+    visualAidUrl:
+      '/visualaidswebp/rapisart-am-telmisartan-amlodipine-dual-therapy-visualaid.webp',
     visualAidAlt: 'RAPISART-AM - Telmisartan + Amlodipine Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPISART-AM | Telmisartan + Amlodipine - ₹1500',
-    metaDescription: 'RAPISART-AM dual-therapy antihypertensive with telmisartan and amlodipine for resistant hypertension control. MRP ₹1500.',
+    metaDescription:
+      'RAPISART-AM dual-therapy antihypertensive with telmisartan and amlodipine for resistant hypertension control. MRP ₹1500.',
     keywords: [
       'telmisartan',
       'amlodipine',
@@ -3923,19 +4207,24 @@ export const products: Product[] = [
       'hypertension',
       'resistant hypertension',
     ],
-    seoHeading: 'RAPISART-AM: Telmisartan + Amlodipine for Resistant Hypertension',
+    seoHeading:
+      'RAPISART-AM: Telmisartan + Amlodipine for Resistant Hypertension',
 
     // Detailed Information
-    introduction: 'RAPISART-AM is a dual-action antihypertensive combining an ARB with a calcium channel blocker for enhanced blood pressure control in resistant hypertension. Telmisartan provides vasodilation and cardiovascular protection by blocking angiotensin II receptors, while amlodipine relaxes vascular smooth muscle to further reduce blood pressure. This combination is particularly effective for patients who do not achieve target blood pressure with monotherapy, offering improved efficacy while maintaining a favorable safety profile. RAPISART-AM is ideal for managing moderate to severe hypertension, reducing the risk of cardiovascular events, and improving patient adherence with once-daily dosing.',
+    introduction:
+      'RAPISART-AM is a dual-action antihypertensive combining an ARB with a calcium channel blocker for enhanced blood pressure control in resistant hypertension. Telmisartan provides vasodilation and cardiovascular protection by blocking angiotensin II receptors, while amlodipine relaxes vascular smooth muscle to further reduce blood pressure. This combination is particularly effective for patients who do not achieve target blood pressure with monotherapy, offering improved efficacy while maintaining a favorable safety profile. RAPISART-AM is ideal for managing moderate to severe hypertension, reducing the risk of cardiovascular events, and improving patient adherence with once-daily dosing.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-TEL-AMD-5',
-    therapeutic: 'Dual therapy for stage 2 hypertension and uncontrolled essential hypertension',
-    indication: 'Resistant hypertension, moderate to severe blood pressure elevation',
+    therapeutic:
+      'Dual therapy for stage 2 hypertension and uncontrolled essential hypertension',
+    indication:
+      'Resistant hypertension, moderate to severe blood pressure elevation',
     activeIngredient: 'Telmisartan 40mg + Amlodipine 5mg',
     strength: '40mg + 5mg per tablet',
-    dosage: 'One tablet once daily at the same time each day, with or without food',
+    dosage:
+      'One tablet once daily at the same time each day, with or without food',
 
     uses: [
       'Resistant or moderate hypertension',
@@ -3966,7 +4255,8 @@ export const products: Product[] = [
       'Check BP regularly',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -4006,13 +4296,16 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     mrp: 1300,
     imageUrl: '/productswebp/RAPISART-H.webp',
-    imageAlt: 'RAPISART-H Telmisartan Hydrochlorothiazide Diuretic Antihypertensive',
-    visualAidUrl: '/visualaidswebp/rapisart-h-telmisartan-hydrochlorothiazide-diuretic-visualaid.webp',
+    imageAlt:
+      'RAPISART-H Telmisartan Hydrochlorothiazide Diuretic Antihypertensive',
+    visualAidUrl:
+      '/visualaidswebp/rapisart-h-telmisartan-hydrochlorothiazide-diuretic-visualaid.webp',
     visualAidAlt: 'RAPISART-H - Telmisartan + Hydrochlorothiazide Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPISART-H | Telmisartan + HCTZ Diuretic - ₹1300',
-    metaDescription: 'RAPISART-H combines telmisartan with hydrochlorothiazide for effective hypertension and fluid retention management. MRP ₹1300.',
+    metaDescription:
+      'RAPISART-H combines telmisartan with hydrochlorothiazide for effective hypertension and fluid retention management. MRP ₹1300.',
     keywords: [
       'telmisartan',
       'hydrochlorothiazide',
@@ -4020,19 +4313,23 @@ export const products: Product[] = [
       'hypertension',
       'HCTZ',
     ],
-    seoHeading: 'RAPISART-H: Telmisartan + Hydrochlorothiazide for Hypertension',
+    seoHeading:
+      'RAPISART-H: Telmisartan + Hydrochlorothiazide for Hypertension',
 
     // Detailed Information
-    introduction: 'RAPISART-H combines an ARB with a thiazide diuretic for effective blood pressure reduction in hypertensive patients with fluid retention tendencies. Telmisartan provides vasodilation and cardiovascular protection by blocking angiotensin II receptors, while hydrochlorothiazide promotes diuresis to reduce blood volume and lower blood pressure. This combination is particularly beneficial for patients with hypertension who also have edema or are at risk of fluid overload, such as those with heart failure or chronic kidney disease. RAPISART-H offers improved efficacy in blood pressure control while addressing the underlying fluid retention, making it an ideal choice for comprehensive hypertension management.',
+    introduction:
+      'RAPISART-H combines an ARB with a thiazide diuretic for effective blood pressure reduction in hypertensive patients with fluid retention tendencies. Telmisartan provides vasodilation and cardiovascular protection by blocking angiotensin II receptors, while hydrochlorothiazide promotes diuresis to reduce blood volume and lower blood pressure. This combination is particularly beneficial for patients with hypertension who also have edema or are at risk of fluid overload, such as those with heart failure or chronic kidney disease. RAPISART-H offers improved efficacy in blood pressure control while addressing the underlying fluid retention, making it an ideal choice for comprehensive hypertension management.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-TEL-HCTZ-12',
-    therapeutic: 'Combination therapy for uncontrolled hypertension requiring diuretic support',
+    therapeutic:
+      'Combination therapy for uncontrolled hypertension requiring diuretic support',
     indication: 'Hypertension with fluid retention, edema management',
     activeIngredient: 'Telmisartan 40mg + HCTZ 12.5mg',
     strength: '40mg + 12.5mg per tablet',
-    dosage: 'One tablet once daily in the morning with water, as directed by physician',
+    dosage:
+      'One tablet once daily in the morning with water, as directed by physician',
 
     uses: [
       'Hypertension management',
@@ -4063,7 +4360,8 @@ export const products: Product[] = [
       'Monitor uric acid',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.8,
@@ -4099,19 +4397,22 @@ export const products: Product[] = [
     name: 'RAPISULAN-D',
     slug: 'rapisulan-d-tamsulosin-dutasteride-bph',
     composition: 'Tamsulosin (ER) + Dutasteride',
-    fullComposition: 'Tamsulosin Hydrochloride IP 0.4mg (Extended Release) + Dutasteride IP 0.5mg',
+    fullComposition:
+      'Tamsulosin Hydrochloride IP 0.4mg (Extended Release) + Dutasteride IP 0.5mg',
     category: 'Tablets',
     therapeuticClass: 'Urology',
     packaging: '10x10 Alu Alu',
     mrp: 1850,
     imageUrl: '/productswebp/RAPISULAN-D.webp',
     imageAlt: 'RAPISULAN-D Tamsulosin Dutasteride BPH Prostate Tablet',
-    visualAidUrl: '/visualaidswebp/rapisulan-d-tamsulosin-dutasteride-bph-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapisulan-d-tamsulosin-dutasteride-bph-visualaid.webp',
     visualAidAlt: 'RAPISULAN-D - Tamsulosin (ER) + Dutasteride Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPISULAN-D | Tamsulosin + Dutasteride BPH - ₹1850',
-    metaDescription: 'RAPISULAN-D dual-action BPH treatment combining tamsulosin alpha blocker with dutasteride 5-alpha reductase inhibitor. MRP ₹1850.',
+    metaDescription:
+      'RAPISULAN-D dual-action BPH treatment combining tamsulosin alpha blocker with dutasteride 5-alpha reductase inhibitor. MRP ₹1850.',
     keywords: [
       'tamsulosin',
       'dutasteride',
@@ -4122,16 +4423,19 @@ export const products: Product[] = [
     seoHeading: 'RAPISULAN-D: Tamsulosin + Dutasteride for BPH Management',
 
     // Detailed Information
-    introduction: 'RAPISULAN-D is a combination therapy for benign prostatic hyperplasia combining an alpha blocker with a 5-alpha reductase inhibitor for dual action relief. Tamsulosin provides rapid symptom relief by relaxing the smooth muscles of the prostate and bladder neck, improving urine flow and reducing urinary hesitancy and urgency. Dutasteride works by inhibiting the conversion of testosterone to dihydrotestosterone (DHT), leading to a reduction in prostate size over time and addressing the underlying cause of BPH. This combination is particularly effective for patients with moderate to severe symptoms or those at risk of disease progression, offering both symptomatic relief and long-term benefits in prostate health.',
+    introduction:
+      'RAPISULAN-D is a combination therapy for benign prostatic hyperplasia combining an alpha blocker with a 5-alpha reductase inhibitor for dual action relief. Tamsulosin provides rapid symptom relief by relaxing the smooth muscles of the prostate and bladder neck, improving urine flow and reducing urinary hesitancy and urgency. Dutasteride works by inhibiting the conversion of testosterone to dihydrotestosterone (DHT), leading to a reduction in prostate size over time and addressing the underlying cause of BPH. This combination is particularly effective for patients with moderate to severe symptoms or those at risk of disease progression, offering both symptomatic relief and long-term benefits in prostate health.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-TAM-DUT-05',
-    therapeutic: 'Treatment of benign prostatic hyperplasia (BPH) and urinary flow improvement',
+    therapeutic:
+      'Treatment of benign prostatic hyperplasia (BPH) and urinary flow improvement',
     indication: 'Benign prostatic hyperplasia, urinary hesitancy, urgency',
     activeIngredient: 'Tamsulosin 0.4mg ER + Dutasteride 0.5mg',
     strength: '0.4mg + 0.5mg per tablet',
-    dosage: 'One tablet once daily approximately 30 minutes after the same meal each day',
+    dosage:
+      'One tablet once daily approximately 30 minutes after the same meal each day',
 
     uses: [
       'Benign prostatic hyperplasia symptoms',
@@ -4162,7 +4466,8 @@ export const products: Product[] = [
       'Effects take months',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from light.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from light.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -4198,19 +4503,23 @@ export const products: Product[] = [
     name: 'RAPMOX-CV',
     slug: 'rapmox-cv-amoxicillin-clavulanic-probiotics',
     composition: 'Amoxycillin + Clavulanic Acid + Lactic Acid Bacillus',
-    fullComposition: 'Amoxycillin Trihydrate IP 500mg + Potassium Clavulanate IP 125mg + Lactic Acid Bacillus 60 million spores',
+    fullComposition:
+      'Amoxycillin Trihydrate IP 500mg + Potassium Clavulanate IP 125mg + Lactic Acid Bacillus 60 million spores',
     category: 'Tablets',
     therapeuticClass: 'Antibiotic',
     packaging: '10x10 Blister',
     mrp: 2500,
     imageUrl: '/productswebp/RAPMOX-CV.webp',
     imageAlt: 'RAPMOX-CV Amoxicillin Clavulanic Acid Probiotics Antibiotic',
-    visualAidUrl: '/visualaidswebp/rapmox-cv-amoxicillin-clavulanic-probiotics-visualaid.webp',
-    visualAidAlt: 'RAPMOX-CV - Amoxycillin + Clavulanic Acid + Lactic Acid Bacillus Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/rapmox-cv-amoxicillin-clavulanic-probiotics-visualaid.webp',
+    visualAidAlt:
+      'RAPMOX-CV - Amoxycillin + Clavulanic Acid + Lactic Acid Bacillus Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPMOX-CV | Amoxicillin + Clavulanic + Probiotics - ₹2500',
-    metaDescription: 'RAPMOX-CV antibiotic with amoxicillin, clavulanic acid and probiotics for resistant infections while protecting gut health. MRP ₹2500.',
+    metaDescription:
+      'RAPMOX-CV antibiotic with amoxicillin, clavulanic acid and probiotics for resistant infections while protecting gut health. MRP ₹2500.',
     keywords: [
       'amoxicillin',
       'clavulanic acid',
@@ -4218,19 +4527,24 @@ export const products: Product[] = [
       'probiotics',
       'antibiotic',
     ],
-    seoHeading: 'RAPMOX-CV: Amoxicillin + Clavulanic + Probiotics for Resistant Infections',
+    seoHeading:
+      'RAPMOX-CV: Amoxicillin + Clavulanic + Probiotics for Resistant Infections',
 
     // Detailed Information
-    introduction: 'RAPMOX-CV is a potent combination antibiotic with beta-lactamase inhibitor and probiotics for treating resistant infections while maintaining gut flora. Amoxicillin provides broad-spectrum antibacterial activity, while clavulanic acid inhibits beta-lactamase enzymes produced by resistant bacteria, restoring amoxicillin’s efficacy against pathogens like Staphylococcus aureus and Haemophilus influenzae. The addition of lactic acid bacillus probiotics helps prevent antibiotic-associated diarrhea and maintains a healthy balance of gut microbiota during treatment. This makes RAPMOX-CV an ideal choice for patients with infections that may be resistant to standard antibiotics, while also addressing the common side effect of gastrointestinal disturbance associated with antibiotic therapy.',
+    introduction:
+      'RAPMOX-CV is a potent combination antibiotic with beta-lactamase inhibitor and probiotics for treating resistant infections while maintaining gut flora. Amoxicillin provides broad-spectrum antibacterial activity, while clavulanic acid inhibits beta-lactamase enzymes produced by resistant bacteria, restoring amoxicillin’s efficacy against pathogens like Staphylococcus aureus and Haemophilus influenzae. The addition of lactic acid bacillus probiotics helps prevent antibiotic-associated diarrhea and maintains a healthy balance of gut microbiota during treatment. This makes RAPMOX-CV an ideal choice for patients with infections that may be resistant to standard antibiotics, while also addressing the common side effect of gastrointestinal disturbance associated with antibiotic therapy.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-AMX-CLV-500',
-    therapeutic: 'Broad-spectrum antibiotic therapy for resistant bacterial infections with probiotic protection',
-    indication: 'Resistant bacterial infections, respiratory, UTI, skin infections',
+    therapeutic:
+      'Broad-spectrum antibiotic therapy for resistant bacterial infections with probiotic protection',
+    indication:
+      'Resistant bacterial infections, respiratory, UTI, skin infections',
     activeIngredient: 'Amoxicillin 500mg + Clavulanic 125mg + Lab 60M spores',
     strength: '500mg + 125mg + 60M spores per tablet',
-    dosage: 'One tablet twice daily with meals for 5-7 days as directed by physician',
+    dosage:
+      'One tablet twice daily with meals for 5-7 days as directed by physician',
 
     uses: [
       'Resistant bacterial infections',
@@ -4261,7 +4575,8 @@ export const products: Product[] = [
       'May reduce oral contraceptive',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Keep in dry place.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Keep in dry place.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -4300,12 +4615,14 @@ export const products: Product[] = [
     mrp: 1050,
     imageUrl: '/productswebp/RAPVERT-16.webp',
     imageAlt: 'RAPVERT 16 Betahistine Vertigo Meniere Tablet',
-    visualAidUrl: '/visualaidswebp/rapvert-16-betahistine-vertigo-meniere-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapvert-16-betahistine-vertigo-meniere-visualaid.webp',
     visualAidAlt: 'RAPVERT 16 - Betahistine Visual Aid',
 
     // SEO Optimization
     metaTitle: 'RAPVERT 16 | Betahistine 16mg Vertigo - Meniere Treatment',
-    metaDescription: 'RAPVERT 16 betahistine for vertigo and Meniere disease treatment. Inner ear blood flow improvement. MRP ₹1050.',
+    metaDescription:
+      'RAPVERT 16 betahistine for vertigo and Meniere disease treatment. Inner ear blood flow improvement. MRP ₹1050.',
     keywords: [
       'betahistine',
       'vertigo',
@@ -4316,12 +4633,14 @@ export const products: Product[] = [
     seoHeading: "RAPVERT 16: Betahistine for Vertigo & Meniere's Disease",
 
     // Detailed Information
-    introduction: "RAPVERT 16 is a vestibular disorder treatment that improves inner ear blood flow and reduces vertigo symptoms associated with Meniere's disease. Betahistine works by dilating blood vessels in the inner ear, improving microcirculation and reducing the pressure that causes vertigo and tinnitus. This makes RAPVERT 16 an effective option for patients suffering from vertigo, dizziness, and other symptoms of Meniere's disease, providing relief and improving quality of life. It is particularly beneficial for those who have not responded well to other treatments or are looking for a well-tolerated option to manage their vestibular symptoms.",
+    introduction:
+      "RAPVERT 16 is a vestibular disorder treatment that improves inner ear blood flow and reduces vertigo symptoms associated with Meniere's disease. Betahistine works by dilating blood vessels in the inner ear, improving microcirculation and reducing the pressure that causes vertigo and tinnitus. This makes RAPVERT 16 an effective option for patients suffering from vertigo, dizziness, and other symptoms of Meniere's disease, providing relief and improving quality of life. It is particularly beneficial for those who have not responded well to other treatments or are looking for a well-tolerated option to manage their vestibular symptoms.",
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-BET-16',
-    therapeutic: 'Treatment of Ménière’s disease, vertigo, tinnitus, and inner ear dizziness',
+    therapeutic:
+      'Treatment of Ménière’s disease, vertigo, tinnitus, and inner ear dizziness',
     indication: 'Vertigo, dizziness, Meniere disease, inner ear disorder',
     activeIngredient: 'Betahistine 16mg',
     strength: '16mg per tablet',
@@ -4356,7 +4675,8 @@ export const products: Product[] = [
       'Avoid driving if drowsy',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.4,
@@ -4390,19 +4710,22 @@ export const products: Product[] = [
     name: 'SITARAP-D',
     slug: 'sitarap-d-dapagliflozin-sitagliptin-diabetes',
     composition: 'Dapagliflozin + Sitagliptin',
-    fullComposition: 'Dapagliflozin IP 10mg + Sitagliptin Phosphate Monohydrate IP 100mg',
+    fullComposition:
+      'Dapagliflozin IP 10mg + Sitagliptin Phosphate Monohydrate IP 100mg',
     category: 'Tablets',
     therapeuticClass: 'Antidiabetic',
     packaging: '10x10 Alu Alu',
     mrp: 2050,
     imageUrl: '/productswebp/SITARAP-D.webp',
     imageAlt: 'SITARAP-D Dapagliflozin Sitagliptin Diabetes Tablet',
-    visualAidUrl: '/visualaidswebp/sitarap-d-dapagliflozin-sitagliptin-diabetes-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/sitarap-d-dapagliflozin-sitagliptin-diabetes-visualaid.webp',
     visualAidAlt: 'SITARAP-D - Dapagliflozin + Sitagliptin Visual Aid',
 
     // SEO Optimization
     metaTitle: 'SITARAP-D | Dapagliflozin + Sitagliptin - ₹2050',
-    metaDescription: 'SITARAP-D dual-action diabetes tablet with SGLT2 and DPP-4 inhibitors for comprehensive blood sugar control. MRP ₹2050.',
+    metaDescription:
+      'SITARAP-D dual-action diabetes tablet with SGLT2 and DPP-4 inhibitors for comprehensive blood sugar control. MRP ₹2050.',
     keywords: [
       'dapagliflozin',
       'sitagliptin',
@@ -4413,13 +4736,16 @@ export const products: Product[] = [
     seoHeading: 'SITARAP-D: Dapagliflozin + Sitagliptin for Diabetes Control',
 
     // Detailed Information
-    introduction: 'SITARAP-D is a combination diabetes medication with SGLT2 inhibitor and DPP-4 inhibitor for comprehensive blood sugar control with cardiovascular benefits. Dapagliflozin promotes glucose excretion through the urine, while sitagliptin enhances insulin secretion and suppresses glucagon release. This dual mechanism provides effective glycemic control, weight management, and cardiovascular protection, making SITARAP-D an ideal choice for patients with type 2 diabetes who require additional blood sugar control or have cardiovascular risk factors.',
+    introduction:
+      'SITARAP-D is a combination diabetes medication with SGLT2 inhibitor and DPP-4 inhibitor for comprehensive blood sugar control with cardiovascular benefits. Dapagliflozin promotes glucose excretion through the urine, while sitagliptin enhances insulin secretion and suppresses glucagon release. This dual mechanism provides effective glycemic control, weight management, and cardiovascular protection, making SITARAP-D an ideal choice for patients with type 2 diabetes who require additional blood sugar control or have cardiovascular risk factors.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-DAP-SIT-100',
-    therapeutic: 'Comprehensive dual-action SGLT2/DPP4 glycemic and cardio-renal management in type 2 diabetes',
-    indication: 'Type 2 diabetes, blood glucose control, cardiovascular protection',
+    therapeutic:
+      'Comprehensive dual-action SGLT2/DPP4 glycemic and cardio-renal management in type 2 diabetes',
+    indication:
+      'Type 2 diabetes, blood glucose control, cardiovascular protection',
     activeIngredient: 'Dapagliflozin 10mg + Sitagliptin 100mg',
     strength: '10mg + 100mg per tablet',
     dosage: 'One tablet once daily in the morning, with or without food',
@@ -4457,7 +4783,8 @@ export const products: Product[] = [
       'Adequate hydration',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -4491,19 +4818,22 @@ export const products: Product[] = [
     name: 'SITARAP-M500',
     slug: 'sitarap-m500-sitagliptin-metformin-diabetes',
     composition: 'Sitagliptin + Metformin (SR)',
-    fullComposition: 'Sitagliptin Phosphate Monohydrate IP 50mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
+    fullComposition:
+      'Sitagliptin Phosphate Monohydrate IP 50mg + Metformin Hydrochloride IP 500mg (Sustained Release)',
     category: 'Tablets',
     therapeuticClass: 'Antidiabetic',
     packaging: '10x10 Alu Alu',
     mrp: 2400,
     imageUrl: '/productswebp/SITARAP-M500.webp',
     imageAlt: 'SITARAP-M500 Sitagliptin Metformin SR Diabetes Tablet',
-    visualAidUrl: '/visualaidswebp/sitarap-m500-sitagliptin-metformin-diabetes-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/sitarap-m500-sitagliptin-metformin-diabetes-visualaid.webp',
     visualAidAlt: 'SITARAP-M500 - Sitagliptin + Metformin (SR) Visual Aid',
 
     // SEO Optimization
     metaTitle: 'SITARAP-M500 | Sitagliptin + Metformin SR - ₹2400',
-    metaDescription: 'SITARAP-M500 DPP-4 inhibitor and biguanide combination for effective type 2 diabetes management. MRP ₹2400.',
+    metaDescription:
+      'SITARAP-M500 DPP-4 inhibitor and biguanide combination for effective type 2 diabetes management. MRP ₹2400.',
     keywords: [
       'sitagliptin',
       'metformin',
@@ -4514,13 +4844,16 @@ export const products: Product[] = [
     seoHeading: 'SITARAP-M500: Sitagliptin + Metformin for Diabetes Management',
 
     // Detailed Information
-    introduction: 'SITARAP-M500 is a DPP-4 inhibitor and biguanide combination for effective type 2 diabetes management with good tolerability. Sitagliptin enhances insulin secretion and suppresses glucagon release, while metformin improves insulin sensitivity and reduces hepatic glucose production. This combination provides comprehensive glycemic control, weight neutrality, and potential beta cell function improvement, making SITARAP-M500 an ideal choice for patients with type 2 diabetes who require additional blood sugar control or have contraindications to other agents.',
+    introduction:
+      'SITARAP-M500 is a DPP-4 inhibitor and biguanide combination for effective type 2 diabetes management with good tolerability. Sitagliptin enhances insulin secretion and suppresses glucagon release, while metformin improves insulin sensitivity and reduces hepatic glucose production. This combination provides comprehensive glycemic control, weight neutrality, and potential beta cell function improvement, making SITARAP-M500 an ideal choice for patients with type 2 diabetes who require additional blood sugar control or have contraindications to other agents.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-SIT-MET-500',
-    therapeutic: 'Dual therapy glycemic control for adult patients with type 2 diabetes mellitus',
-    indication: 'Type 2 diabetes, blood glucose optimization, combination therapy',
+    therapeutic:
+      'Dual therapy glycemic control for adult patients with type 2 diabetes mellitus',
+    indication:
+      'Type 2 diabetes, blood glucose optimization, combination therapy',
     activeIngredient: 'Sitagliptin 50mg + Metformin 500mg SR',
     strength: '50mg + 500mg SR per tablet',
     dosage: 'One tablet twice daily with meals, as prescribed by physician',
@@ -4558,7 +4891,8 @@ export const products: Product[] = [
       'Monitor kidney function',
     ],
 
-    storageConditions: 'Store at temperature not exceeding 25°C. Protect from moisture.',
+    storageConditions:
+      'Store at temperature not exceeding 25°C. Protect from moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -4591,19 +4925,23 @@ export const products: Product[] = [
     name: 'VISQURA GEL',
     slug: 'visqura-gel-dry-eye-lubricant-ophthalmic',
     composition: 'Carboxymethylcellulose Sodium + Stabilized Oxychloro Complex',
-    fullComposition: 'Carboxymethylcellulose Sodium IP 0.5% w/v + Stabilized Oxychloro Complex 0.01% w/v per ml',
+    fullComposition:
+      'Carboxymethylcellulose Sodium IP 0.5% w/v + Stabilized Oxychloro Complex 0.01% w/v per ml',
     category: 'Eye Drops',
     therapeuticClass: 'Ophthalmic',
     packaging: '10ml',
     mrp: 179.6,
     imageUrl: '/productswebp/VISQURA GEL.webp',
     imageAlt: 'VISQURA GEL Dry Eye Lubricant Gel Ophthalmic',
-    visualAidUrl: '/visualaidswebp/visqura-gel-dry-eye-lubricant-ophthalmic-visualaid.webp',
-    visualAidAlt: 'VISQURA GEL - Carboxymethylcellulose Sodium + Stabilized Oxychloro Complex Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/visqura-gel-dry-eye-lubricant-ophthalmic-visualaid.webp',
+    visualAidAlt:
+      'VISQURA GEL - Carboxymethylcellulose Sodium + Stabilized Oxychloro Complex Visual Aid',
 
     // SEO Optimization
     metaTitle: 'VISQURA GEL | Dry Eye Lubricant - ₹179.60',
-    metaDescription: 'VISQURA GEL advanced ophthalmic lubricant for dry eye syndrome relief with antimicrobial protection. MRP ₹179.60.',
+    metaDescription:
+      'VISQURA GEL advanced ophthalmic lubricant for dry eye syndrome relief with antimicrobial protection. MRP ₹179.60.',
     keywords: [
       'dry eye',
       'eye lubricant',
@@ -4614,16 +4952,19 @@ export const products: Product[] = [
     seoHeading: 'VISQURA GEL: Advanced Dry Eye Lubricant Gel',
 
     // Detailed Information
-    introduction: 'VISQURA GEL is an advanced ophthalmic lubricant gel providing sustained relief from dry eye syndrome with antimicrobial protection. Carboxymethylcellulose sodium acts as a viscous agent to lubricate and protect the ocular surface, while the stabilized oxychloro complex offers antimicrobial properties to reduce the risk of eye infections. This makes VISQURA GEL an ideal choice for patients suffering from dry eye symptoms, corneal abrasions, or those requiring post-operative eye care, providing long-lasting comfort and protection for the eyes.',
+    introduction:
+      'VISQURA GEL is an advanced ophthalmic lubricant gel providing sustained relief from dry eye syndrome with antimicrobial protection. Carboxymethylcellulose sodium acts as a viscous agent to lubricate and protect the ocular surface, while the stabilized oxychloro complex offers antimicrobial properties to reduce the risk of eye infections. This makes VISQURA GEL an ideal choice for patients suffering from dry eye symptoms, corneal abrasions, or those requiring post-operative eye care, providing long-lasting comfort and protection for the eyes.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-VIS-GEL-10',
-    therapeutic: 'Ophthalmic lubrication for dry eye syndrome, burning sensation, and ocular irritation',
+    therapeutic:
+      'Ophthalmic lubrication for dry eye syndrome, burning sensation, and ocular irritation',
     indication: 'Dry eye syndrome, corneal abrasion, post-operative eye care',
     activeIngredient: 'Carboxymethylcellulose + Oxychloro Complex',
     strength: '0.5% + 0.01% per ml',
-    dosage: 'Instill 1 to 2 drops in the affected eye(s) 3-4 times daily as needed or directed by eye specialist',
+    dosage:
+      'Instill 1 to 2 drops in the affected eye(s) 3-4 times daily as needed or directed by eye specialist',
 
     uses: [
       'Dry eye syndrome relief',
@@ -4692,20 +5033,25 @@ export const products: Product[] = [
   {
     name: 'VITABORON',
     slug: 'vitaboron-bone-health-calcium-vitamin-d',
-    composition: 'Calcitriol + Omega-3 + Methylcobalamin + Folic Acid + Boron + Calcium Carbonate',
-    fullComposition: 'Calcitriol IP 0.25mcg + Omega-3 Fatty Acids 100mg + Methylcobalamin IP 1500mcg + Folic Acid IP 400mcg + Boron 1.5mg + Calcium Carbonate IP 250mg per softgel capsule',
+    composition:
+      'Calcitriol + Omega-3 + Methylcobalamin + Folic Acid + Boron + Calcium Carbonate',
+    fullComposition:
+      'Calcitriol IP 0.25mcg + Omega-3 Fatty Acids 100mg + Methylcobalamin IP 1500mcg + Folic Acid IP 400mcg + Boron 1.5mg + Calcium Carbonate IP 250mg per softgel capsule',
     category: 'Capsules',
     therapeuticClass: 'Nutraceutical',
     packaging: '10x1x10 Softgel Capsule',
     mrp: 2500,
     imageUrl: '/productswebp/VITABORON.webp',
     imageAlt: 'VITABORON Bone Health Calcium Vitamin D Supplement',
-    visualAidUrl: '/visualaidswebp/vitaboron-bone-health-calcium-vitamin-d-visualaid.webp',
-    visualAidAlt: 'VITABORON - Calcitriol + Omega-3 + Methylcobalamin + Folic Acid + Boron + Calcium Carbonate Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/vitaboron-bone-health-calcium-vitamin-d-visualaid.webp',
+    visualAidAlt:
+      'VITABORON - Calcitriol + Omega-3 + Methylcobalamin + Folic Acid + Boron + Calcium Carbonate Visual Aid',
 
     // SEO Optimization
     metaTitle: 'VITABORON | Bone Health + Omega-3 Supplement - ₹2500',
-    metaDescription: 'VITABORON comprehensive bone health supplement with calcium, vitamin D and omega-3 for skeletal and cardiovascular support. MRP ₹2500.',
+    metaDescription:
+      'VITABORON comprehensive bone health supplement with calcium, vitamin D and omega-3 for skeletal and cardiovascular support. MRP ₹2500.',
     keywords: [
       'bone health',
       'calcium',
@@ -4713,10 +5059,12 @@ export const products: Product[] = [
       'omega-3',
       'osteoporosis prevention',
     ],
-    seoHeading: 'VITABORON: Comprehensive Bone Health & Cardiovascular Supplement',
+    seoHeading:
+      'VITABORON: Comprehensive Bone Health & Cardiovascular Supplement',
 
     // Detailed Information
-    introduction: 'VITABORON is a comprehensive bone health supplement combining calcium, vitamin D, and trace minerals with omega-3 for optimal skeletal and cardiovascular support. Calcitriol enhances calcium absorption, while omega-3 fatty acids provide anti-inflammatory benefits that support bone remodeling and cardiovascular health. The inclusion of boron and B vitamins further promotes bone density and overall metabolic function. This makes VITABORON an ideal choice for individuals looking to maintain strong bones, prevent osteoporosis, and support heart health, especially in post-menopausal women and older adults.',
+    introduction:
+      'VITABORON is a comprehensive bone health supplement combining calcium, vitamin D, and trace minerals with omega-3 for optimal skeletal and cardiovascular support. Calcitriol enhances calcium absorption, while omega-3 fatty acids provide anti-inflammatory benefits that support bone remodeling and cardiovascular health. The inclusion of boron and B vitamins further promotes bone density and overall metabolic function. This makes VITABORON an ideal choice for individuals looking to maintain strong bones, prevent osteoporosis, and support heart health, especially in post-menopausal women and older adults.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
@@ -4789,20 +5137,25 @@ export const products: Product[] = [
   {
     name: 'VITABORON-PLUS',
     slug: 'vitaboron-plus-premium-bone-cardiac-health',
-    composition: 'Calcium Citrate + Calcitriol + EPA + DHA + L-Methylfolate + others',
-    fullComposition: 'Calcium Citrate IP 500mg + Calcitriol IP 0.25mcg + EPA 90mg + DHA 60mg + L-Methylfolate Calcium 400mcg + Multivitamins + Multiminerals per softgel capsule',
+    composition:
+      'Calcium Citrate + Calcitriol + EPA + DHA + L-Methylfolate + others',
+    fullComposition:
+      'Calcium Citrate IP 500mg + Calcitriol IP 0.25mcg + EPA 90mg + DHA 60mg + L-Methylfolate Calcium 400mcg + Multivitamins + Multiminerals per softgel capsule',
     category: 'Capsules',
     therapeuticClass: 'Nutraceutical',
     packaging: '10x1x10 Softgel Capsule',
     mrp: 2500,
     imageUrl: '/productswebp/VITABORON-PLUS.webp',
     imageAlt: 'VITABORON-PLUS Premium Bone Cardiac Health Supplement',
-    visualAidUrl: '/visualaidswebp/vitaboron-plus-premium-bone-cardiac-health-visualaid.webp',
-    visualAidAlt: 'VITABORON-PLUS - Calcium Citrate + Calcitriol + EPA + DHA + L-Methylfolate + others Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/vitaboron-plus-premium-bone-cardiac-health-visualaid.webp',
+    visualAidAlt:
+      'VITABORON-PLUS - Calcium Citrate + Calcitriol + EPA + DHA + L-Methylfolate + others Visual Aid',
 
     // SEO Optimization
     metaTitle: 'VITABORON-PLUS | Premium Bone & Cardiac Health - ₹2500',
-    metaDescription: 'VITABORON-PLUS premium supplement with calcium citrate, omega-3 and advanced micronutrients for bone and cardiac health. MRP ₹2500.',
+    metaDescription:
+      'VITABORON-PLUS premium supplement with calcium citrate, omega-3 and advanced micronutrients for bone and cardiac health. MRP ₹2500.',
     keywords: [
       'calcium citrate',
       'omega-3',
@@ -4813,16 +5166,21 @@ export const products: Product[] = [
     seoHeading: 'VITABORON-PLUS: Premium Bone & Cardiovascular Health Formula',
 
     // Detailed Information
-    introduction: 'VITABORON-PLUS is a premium bone and cardiovascular health formula combining highly absorbable calcium citrate with omega-3s and essential micronutrients. Calcitriol enhances calcium absorption, while EPA and DHA provide potent anti-inflammatory effects that support both bone remodeling and heart health. The inclusion of L-methylfolate and a comprehensive multivitamin blend further promotes overall metabolic function and cardiovascular protection. This makes VITABORON-PLUS an ideal choice for individuals seeking advanced support for bone density, cardiovascular health, and overall wellness, particularly in those with increased nutritional needs or at risk of osteoporosis and heart disease.',
+    introduction:
+      'VITABORON-PLUS is a premium bone and cardiovascular health formula combining highly absorbable calcium citrate with omega-3s and essential micronutrients. Calcitriol enhances calcium absorption, while EPA and DHA provide potent anti-inflammatory effects that support both bone remodeling and heart health. The inclusion of L-methylfolate and a comprehensive multivitamin blend further promotes overall metabolic function and cardiovascular protection. This makes VITABORON-PLUS an ideal choice for individuals seeking advanced support for bone density, cardiovascular health, and overall wellness, particularly in those with increased nutritional needs or at risk of osteoporosis and heart disease.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-VIT-PLUS-CAL',
-    therapeutic: 'Advanced bone mineralization, arterial calcium clearance, and neuromuscular support',
-    indication: 'Advanced bone health, cardiovascular support, micronutrient supplement',
-    activeIngredient: 'Calcium Citrate + Omega-3 + Calcitriol + Folate + Multivitamins',
+    therapeutic:
+      'Advanced bone mineralization, arterial calcium clearance, and neuromuscular support',
+    indication:
+      'Advanced bone health, cardiovascular support, micronutrient supplement',
+    activeIngredient:
+      'Calcium Citrate + Omega-3 + Calcitriol + Folate + Multivitamins',
     strength: 'Multiple premium components per capsule',
-    dosage: 'One softgel capsule once daily after lunch or dinner, or as directed by physician',
+    dosage:
+      'One softgel capsule once daily after lunch or dinner, or as directed by physician',
 
     uses: [
       'Advanced bone health protection',
@@ -4894,12 +5252,14 @@ export const products: Product[] = [
     mrp: 175,
     imageUrl: '/productswebp/ZYMELYT.webp',
     imageAlt: 'ZYMELYT Fungal Diastase Pepsin Digestive Enzyme Syrup',
-    visualAidUrl: '/visualaidswebp/zymelyt-fungal-diastase-pepsin-digestive-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/zymelyt-fungal-diastase-pepsin-digestive-visualaid.webp',
     visualAidAlt: 'ZYMELYT - Fungal Diastase + Pepsin Visual Aid',
 
     // SEO Optimization
     metaTitle: 'ZYMELYT | Digestive Enzyme Syrup - Diastase Pepsin',
-    metaDescription: 'ZYMELYT digestive enzyme syrup with fungal diastase and pepsin for dyspepsia and indigestion relief. MRP ₹175.',
+    metaDescription:
+      'ZYMELYT digestive enzyme syrup with fungal diastase and pepsin for dyspepsia and indigestion relief. MRP ₹175.',
     keywords: [
       'digestive enzyme',
       'diastase',
@@ -4910,16 +5270,20 @@ export const products: Product[] = [
     seoHeading: 'ZYMELYT: Digestive Enzyme Syrup for Indigestion Relief',
 
     // Detailed Information
-    introduction: 'ZYMELYT is a digestive enzyme syrup combining amylase and protease for improved digestion and relief from functional dyspepsia symptoms. Fungal diastase breaks down carbohydrates, while pepsin aids in protein digestion, making ZYMELYT effective for reducing bloating, gas, and post-meal discomfort. This makes ZYMELYT an ideal choice for individuals experiencing indigestion, dyspepsia, or those with enzyme deficiencies that impair digestion, providing symptomatic relief and improved digestive function.',
+    introduction:
+      'ZYMELYT is a digestive enzyme syrup combining amylase and protease for improved digestion and relief from functional dyspepsia symptoms. Fungal diastase breaks down carbohydrates, while pepsin aids in protein digestion, making ZYMELYT effective for reducing bloating, gas, and post-meal discomfort. This makes ZYMELYT an ideal choice for individuals experiencing indigestion, dyspepsia, or those with enzyme deficiencies that impair digestion, providing symptomatic relief and improved digestive function.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ZYM-50-10',
-    therapeutic: 'Enzymatic relief of indigestion, dyspepsia, bloating, and post-prandial fullness',
-    indication: 'Indigestion, dyspepsia, bloating, carbohydrate/protein digestion',
+    therapeutic:
+      'Enzymatic relief of indigestion, dyspepsia, bloating, and post-prandial fullness',
+    indication:
+      'Indigestion, dyspepsia, bloating, carbohydrate/protein digestion',
     activeIngredient: 'Fungal Diastase 50mg + Pepsin 10mg',
     strength: '50mg + 10mg per 5ml',
-    dosage: '5-10 ml immediately after meals, twice daily, or as advised by physician',
+    dosage:
+      '5-10 ml immediately after meals, twice daily, or as advised by physician',
 
     uses: [
       'Indigestion and dyspepsia',
@@ -4985,20 +5349,25 @@ export const products: Product[] = [
   {
     name: 'ZYLIVIN',
     slug: 'zylivin-liver-tonic-silymarin-hepatic',
-    composition: 'Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others',
-    fullComposition: 'Silymarin IP 35mg + L-Ornithine L-Aspartate IP 150mg + Tricholine Citrate IP 250mg + Multivitamins + Multiminerals per 10ml',
+    composition:
+      'Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others',
+    fullComposition:
+      'Silymarin IP 35mg + L-Ornithine L-Aspartate IP 150mg + Tricholine Citrate IP 250mg + Multivitamins + Multiminerals per 10ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Liver Tonic',
     packaging: '200ml',
     mrp: 190,
     imageUrl: '/productswebp/ZYLIVIN.webp',
     imageAlt: 'ZYLIVIN Liver Tonic Silymarin Hepatic Support Syrup',
-    visualAidUrl: '/visualaidswebp/zylivin-liver-tonic-silymarin-hepatic-visualaid.webp',
-    visualAidAlt: 'ZYLIVIN - Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/zylivin-liver-tonic-silymarin-hepatic-visualaid.webp',
+    visualAidAlt:
+      'ZYLIVIN - Silymarin + L-Ornithine L-Aspartate + Tricholine Citrate + others Visual Aid',
 
     // SEO Optimization
     metaTitle: 'ZYLIVIN | Liver Tonic Silymarin - Hepatic Support',
-    metaDescription: 'ZYLIVIN comprehensive liver support with silymarin and amino acids for hepatic health and detoxification. MRP ₹190.',
+    metaDescription:
+      'ZYLIVIN comprehensive liver support with silymarin and amino acids for hepatic health and detoxification. MRP ₹190.',
     keywords: [
       'liver tonic',
       'silymarin',
@@ -5009,16 +5378,20 @@ export const products: Product[] = [
     seoHeading: 'ZYLIVIN: Silymarin Liver Tonic for Hepatic Health',
 
     // Detailed Information
-    introduction: 'ZYLIVIN is a comprehensive liver support tonic combining hepatoprotective herbs with amino acids for liver detoxification and nutritional support. Silymarin provides antioxidant and anti-inflammatory effects that protect liver cells from damage, while L-ornithine L-aspartate helps reduce ammonia levels and supports liver function. The addition of tricholine citrate and essential vitamins further enhances the liver’s ability to detoxify and regenerate. This makes ZYLIVIN an ideal choice for individuals looking to maintain liver health, support detoxification processes, or manage conditions like fatty liver and hepatitis, providing comprehensive hepatic support in a convenient syrup form.',
+    introduction:
+      'ZYLIVIN is a comprehensive liver support tonic combining hepatoprotective herbs with amino acids for liver detoxification and nutritional support. Silymarin provides antioxidant and anti-inflammatory effects that protect liver cells from damage, while L-ornithine L-aspartate helps reduce ammonia levels and supports liver function. The addition of tricholine citrate and essential vitamins further enhances the liver’s ability to detoxify and regenerate. This makes ZYLIVIN an ideal choice for individuals looking to maintain liver health, support detoxification processes, or manage conditions like fatty liver and hepatitis, providing comprehensive hepatic support in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ZYL-LIVER-150',
-    therapeutic: 'Hepatoprotection, hepatic cellular regeneration, and management of fatty liver disease',
+    therapeutic:
+      'Hepatoprotection, hepatic cellular regeneration, and management of fatty liver disease',
     indication: 'Liver health, detoxification, fatty liver, hepatitis support',
-    activeIngredient: 'Silymarin + L-Ornithine L-Aspartate + Tricholine + vitamins',
+    activeIngredient:
+      'Silymarin + L-Ornithine L-Aspartate + Tricholine + vitamins',
     strength: 'Multiple components per 10ml',
-    dosage: '10 ml two to three times daily before meals, or as directed by physician',
+    dosage:
+      '10 ml two to three times daily before meals, or as directed by physician',
 
     uses: [
       'Liver health and detoxification',
@@ -5049,7 +5422,8 @@ export const products: Product[] = [
       'Avoid excess heat',
     ],
 
-    storageConditions: 'Store away from direct light and heat. Keep bottle tightly closed.',
+    storageConditions:
+      'Store away from direct light and heat. Keep bottle tightly closed.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -5091,13 +5465,17 @@ export const products: Product[] = [
     packaging: '30Ml With Water',
     mrp: 75,
     imageUrl: '/productswebp/CEFIMELT-LB-50.webp',
-    imageAlt: 'CEFIMELT LB 50 Cefixime with Lactic Acid Bacillus Pediatric Dry Syrup',
-    visualAidUrl: '/visualaidswebp/cefimelt-lb-50-cefixime-lactic-acid-bacillus-pediatric-visualaid.webp',
+    imageAlt:
+      'CEFIMELT LB 50 Cefixime with Lactic Acid Bacillus Pediatric Dry Syrup',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-lb-50-cefixime-lactic-acid-bacillus-pediatric-visualaid.webp',
     visualAidAlt: 'CEFIMELT LB 50 - Cefixime + Lactic Acid Bacillus Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CEFIMELT LB 50 | Cefixime + Probiotic Syrup - Rapid Pharmaceuticals',
-    metaDescription: 'CEFIMELT LB 50 pediatric dry syrup with Cefixime 50mg and Lactic Acid Bacillus for respiratory and urinary tract infections. MRP ₹75.',
+    metaTitle:
+      'CEFIMELT LB 50 | Cefixime + Probiotic Syrup - Rapid Pharmaceuticals',
+    metaDescription:
+      'CEFIMELT LB 50 pediatric dry syrup with Cefixime 50mg and Lactic Acid Bacillus for respiratory and urinary tract infections. MRP ₹75.',
     keywords: [
       'cefimelt lb 50',
       'cefixime syrup',
@@ -5106,19 +5484,25 @@ export const products: Product[] = [
       'cefixime dry syrup',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'CEFIMELT LB 50: Cefixime & Probiotic Pediatric Oral Suspension',
+    seoHeading:
+      'CEFIMELT LB 50: Cefixime & Probiotic Pediatric Oral Suspension',
 
     // Detailed Information
-    introduction: 'CEFIMELT LB 50 is a pediatric cephalosporin syrup with probiotics for treating bacterial infections while maintaining healthy gut flora in children. Cefixime is a third-generation cephalosporin effective against a wide range of bacterial infections, while the addition of lactic acid bacillus helps prevent antibiotic-associated diarrhea by restoring beneficial gut bacteria. This makes CEFIMELT LB 50 an ideal choice for treating common pediatric infections such as respiratory tract infections, otitis media, and urinary tract infections, while also supporting digestive health and reducing the risk of gastrointestinal side effects often associated with antibiotic use in children.',
+    introduction:
+      'CEFIMELT LB 50 is a pediatric cephalosporin syrup with probiotics for treating bacterial infections while maintaining healthy gut flora in children. Cefixime is a third-generation cephalosporin effective against a wide range of bacterial infections, while the addition of lactic acid bacillus helps prevent antibiotic-associated diarrhea by restoring beneficial gut bacteria. This makes CEFIMELT LB 50 an ideal choice for treating common pediatric infections such as respiratory tract infections, otitis media, and urinary tract infections, while also supporting digestive health and reducing the risk of gastrointestinal side effects often associated with antibiotic use in children.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CFX-LB50',
-    therapeutic: 'Treatment of pediatric bacterial infections with gut flora protection',
-    indication: 'Pediatric respiratory tract infections, otitis media, urinary tract infections',
-    activeIngredient: 'Cefixime 50mg + Lactic Acid Bacillus 60 Million Spores per 5ml',
+    therapeutic:
+      'Treatment of pediatric bacterial infections with gut flora protection',
+    indication:
+      'Pediatric respiratory tract infections, otitis media, urinary tract infections',
+    activeIngredient:
+      'Cefixime 50mg + Lactic Acid Bacillus 60 Million Spores per 5ml',
     strength: '50mg/5ml + 60M Spores',
-    dosage: '8 mg/kg/day in two divided doses every 12 hours reconstituted with sterile water, or as directed by pediatrician',
+    dosage:
+      '8 mg/kg/day in two divided doses every 12 hours reconstituted with sterile water, or as directed by pediatrician',
 
     uses: [
       'Pediatric respiratory tract infections',
@@ -5153,7 +5537,8 @@ export const products: Product[] = [
       'Use within 7 days of reconstitution',
     ],
 
-    storageConditions: 'Store dry powder below 25°C. After reconstitution, keep refrigerated and use within 7 days.',
+    storageConditions:
+      'Store dry powder below 25°C. After reconstitution, keep refrigerated and use within 7 days.',
     shelfLife: '24 months',
 
     avgRating: 4.4,
@@ -5194,12 +5579,15 @@ export const products: Product[] = [
     mrp: 89,
     imageUrl: '/productswebp/RAPIPOD-DS-50.webp',
     imageAlt: 'RAPIPOD DS 50 Cefpodoxime Proxetil Pediatric Dry Syrup',
-    visualAidUrl: '/visualaidswebp/rapipod-ds-50-cefpodoxime-pediatric-syrup-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapipod-ds-50-cefpodoxime-pediatric-syrup-visualaid.webp',
     visualAidAlt: 'RAPIPOD DS 50 - Cefpodoxime Proxetil Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'RAPIPOD DS 50 | Cefpodoxime Pediatric Dry Syrup - Rapid Pharmaceuticals',
-    metaDescription: 'RAPIPOD DS 50 pediatric dry syrup containing Cefpodoxime Proxetil 50mg/5ml for pediatric ear, throat, and chest infections. MRP ₹95.',
+    metaTitle:
+      'RAPIPOD DS 50 | Cefpodoxime Pediatric Dry Syrup - Rapid Pharmaceuticals',
+    metaDescription:
+      'RAPIPOD DS 50 pediatric dry syrup containing Cefpodoxime Proxetil 50mg/5ml for pediatric ear, throat, and chest infections. MRP ₹95.',
     keywords: [
       'rapipod ds 50',
       'cefpodoxime syrup',
@@ -5207,19 +5595,24 @@ export const products: Product[] = [
       'cefpodoxime 50mg',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'RAPIPOD DS 50: Cefpodoxime Proxetil 50mg/5ml Pediatric Oral Suspension',
+    seoHeading:
+      'RAPIPOD DS 50: Cefpodoxime Proxetil 50mg/5ml Pediatric Oral Suspension',
 
     // Detailed Information
-    introduction: 'RAPIPOD DS 50 is a pediatric third-generation cephalosporin for treating bacterial infections in children with excellent palatability and dosing flexibility. Cefpodoxime proxetil is effective against a broad spectrum of gram-positive and gram-negative bacteria, making it suitable for treating common pediatric infections such as respiratory tract infections, otitis media, urinary tract infections, skin infections, and gastrointestinal infections. The double strength formulation allows for more convenient dosing schedules, while the syrup form ensures ease of administration for children. This makes RAPIPOD DS 50 an ideal choice for parents and healthcare providers seeking an effective and child-friendly antibiotic option for managing bacterial infections in pediatric patients.',
+    introduction:
+      'RAPIPOD DS 50 is a pediatric third-generation cephalosporin for treating bacterial infections in children with excellent palatability and dosing flexibility. Cefpodoxime proxetil is effective against a broad spectrum of gram-positive and gram-negative bacteria, making it suitable for treating common pediatric infections such as respiratory tract infections, otitis media, urinary tract infections, skin infections, and gastrointestinal infections. The double strength formulation allows for more convenient dosing schedules, while the syrup form ensures ease of administration for children. This makes RAPIPOD DS 50 an ideal choice for parents and healthcare providers seeking an effective and child-friendly antibiotic option for managing bacterial infections in pediatric patients.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-RPD-DS50',
-    therapeutic: 'Treatment of acute pediatric respiratory, ENT, and urinary infections',
-    indication: 'Acute otitis media, pharyngitis, tonsillitis, community-acquired pneumonia, uncomplicated UTIs',
+    therapeutic:
+      'Treatment of acute pediatric respiratory, ENT, and urinary infections',
+    indication:
+      'Acute otitis media, pharyngitis, tonsillitis, community-acquired pneumonia, uncomplicated UTIs',
     activeIngredient: 'Cefpodoxime Proxetil 50mg per 5ml',
     strength: '50mg/5ml',
-    dosage: '5 mg/kg body weight every 12 hours with meals, or as directed by pediatrician',
+    dosage:
+      '5 mg/kg body weight every 12 hours with meals, or as directed by pediatrician',
 
     uses: [
       'Pediatric respiratory tract infections',
@@ -5253,7 +5646,8 @@ export const products: Product[] = [
       'Store reconstituted suspension in refrigerator',
     ],
 
-    storageConditions: 'Store dry powder in a cool, dry place below 25°C. Keep reconstituted suspension in refrigerator and discard after 7 days.',
+    storageConditions:
+      'Store dry powder in a cool, dry place below 25°C. Keep reconstituted suspension in refrigerator and discard after 7 days.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -5296,12 +5690,15 @@ export const products: Product[] = [
     mrp: 750,
     imageUrl: '/productswebp/BESLINE.webp',
     imageAlt: 'BESLINE Bacillus Clausii 2 Billion Spores Oral Mini Bottles',
-    visualAidUrl: '/visualaidswebp/besline-bacillus-clausii-spores-probiotic-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/besline-bacillus-clausii-spores-probiotic-visualaid.webp',
     visualAidAlt: 'BESLINE - Bacillus Clausii Spores Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'BESLINE | Bacillus Clausii 2 Billion Spores Mini Bottles - Rapid Pharmaceuticals',
-    metaDescription: 'BESLINE oral suspension with Bacillus Clausii 2 Billion Spores for diarrhea management and intestinal microflora restoration. MRP ₹490.',
+    metaTitle:
+      'BESLINE | Bacillus Clausii 2 Billion Spores Mini Bottles - Rapid Pharmaceuticals',
+    metaDescription:
+      'BESLINE oral suspension with Bacillus Clausii 2 Billion Spores for diarrhea management and intestinal microflora restoration. MRP ₹490.',
     keywords: [
       'besline',
       'bacillus clausii',
@@ -5310,19 +5707,24 @@ export const products: Product[] = [
       'gut microflora',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'BESLINE: Bacillus Clausii Spores 2 Billion/5ml Oral Probiotic Suspension',
+    seoHeading:
+      'BESLINE: Bacillus Clausii Spores 2 Billion/5ml Oral Probiotic Suspension',
 
     // Detailed Information
-    introduction: 'BESLINE is a spore-based probiotic with excellent stability for restoring beneficial gut bacteria and supporting digestive health. Bacillus clausii spores are resistant to gastric acid and bile, allowing them to reach the intestines alive where they can colonize and exert their beneficial effects. This makes BESLINE an ideal choice for individuals looking to prevent or manage antibiotic-associated diarrhea, support intestinal flora restoration, improve digestive health, enhance immune function, or prevent traveler’s diarrhea. The convenient syrup form also ensures ease of administration for both adults and children.',
+    introduction:
+      'BESLINE is a spore-based probiotic with excellent stability for restoring beneficial gut bacteria and supporting digestive health. Bacillus clausii spores are resistant to gastric acid and bile, allowing them to reach the intestines alive where they can colonize and exert their beneficial effects. This makes BESLINE an ideal choice for individuals looking to prevent or manage antibiotic-associated diarrhea, support intestinal flora restoration, improve digestive health, enhance immune function, or prevent traveler’s diarrhea. The convenient syrup form also ensures ease of administration for both adults and children.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-BSL-2B',
-    therapeutic: 'Restoration of intestinal flora and treatment of acute diarrhea',
-    indication: 'Acute diarrhea, antibiotic-associated diarrhea, intestinal dysbiosis, gut immunity enhancement',
+    therapeutic:
+      'Restoration of intestinal flora and treatment of acute diarrhea',
+    indication:
+      'Acute diarrhea, antibiotic-associated diarrhea, intestinal dysbiosis, gut immunity enhancement',
     activeIngredient: 'Bacillus Clausii Spores 2 Billion CFU per 5ml',
     strength: '2 Billion Spores / 5ml',
-    dosage: 'Adults: 2-3 mini bottles per day; Children: 1-2 mini bottles per day orally, or as directed by physician',
+    dosage:
+      'Adults: 2-3 mini bottles per day; Children: 1-2 mini bottles per day orally, or as directed by physician',
 
     uses: [
       'Antibiotic-associated diarrhea prevention',
@@ -5338,9 +5740,7 @@ export const products: Product[] = [
       'Constipation (rare)',
       'Allergic reactions (very rare)',
     ],
-    contraindications: [
-      'Hypersensitivity to Bacillus Clausii spores',
-    ],
+    contraindications: ['Hypersensitivity to Bacillus Clausii spores'],
     safetyAdvice: [
       'Take as directed with meals',
       'Do not mix with hot water',
@@ -5356,7 +5756,8 @@ export const products: Product[] = [
       'Consume promptly after opening mini bottle',
     ],
 
-    storageConditions: 'Store below 30°C in a dry place. Protect from heat and direct sunlight.',
+    storageConditions:
+      'Store below 30°C in a dry place. Protect from heat and direct sunlight.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -5399,12 +5800,15 @@ export const products: Product[] = [
     mrp: 1170,
     imageUrl: '/productswebp/OMERIZE-D.webp',
     imageAlt: 'OMERIZE - D Omeprazole 20mg and Domperidone 10mg Tablets',
-    visualAidUrl: '/visualaidswebp/omerize-d-omeprazole-domperidone-gerd-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/omerize-d-omeprazole-domperidone-gerd-visualaid.webp',
     visualAidAlt: 'OMERIZE - D - Omeprazole + Domperidone Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'OMERIZE - D | Omeprazole 20mg + Domperidone 10mg - Rapid Pharmaceuticals',
-    metaDescription: 'OMERIZE - D tablets combining Omeprazole 20mg and Domperidone 10mg for acid reflux, GERD, heartburn, and nausea relief. MRP ₹750.',
+    metaTitle:
+      'OMERIZE - D | Omeprazole 20mg + Domperidone 10mg - Rapid Pharmaceuticals',
+    metaDescription:
+      'OMERIZE - D tablets combining Omeprazole 20mg and Domperidone 10mg for acid reflux, GERD, heartburn, and nausea relief. MRP ₹750.',
     keywords: [
       'omerize d',
       'omeprazole domperidone',
@@ -5412,19 +5816,24 @@ export const products: Product[] = [
       'acid reflux tablet',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'OMERIZE - D: Omeprazole & Domperidone Tablets for GERD & Dyspepsia',
+    seoHeading:
+      'OMERIZE - D: Omeprazole & Domperidone Tablets for GERD & Dyspepsia',
 
     // Detailed Information
-    introduction: 'OMERIZE-D combines a proton pump inhibitor with a prokinetic agent for effective GERD and gastric motility disorder management. Omeprazole reduces stomach acid production, providing relief from acid-related symptoms and promoting healing of the esophagus, while domperidone enhances gastric emptying and reduces nausea and vomiting associated with reflux. This makes OMERIZE-D an ideal choice for patients suffering from gastroesophageal reflux disease (GERD), peptic ulcer disease, functional dyspepsia, or those experiencing nausea and vomiting related to reflux, providing comprehensive symptom relief and improved quality of life.',
+    introduction:
+      'OMERIZE-D combines a proton pump inhibitor with a prokinetic agent for effective GERD and gastric motility disorder management. Omeprazole reduces stomach acid production, providing relief from acid-related symptoms and promoting healing of the esophagus, while domperidone enhances gastric emptying and reduces nausea and vomiting associated with reflux. This makes OMERIZE-D an ideal choice for patients suffering from gastroesophageal reflux disease (GERD), peptic ulcer disease, functional dyspepsia, or those experiencing nausea and vomiting related to reflux, providing comprehensive symptom relief and improved quality of life.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-OMR-D20',
-    therapeutic: 'Treatment of gastroesophageal reflux disease, dyspepsia, and nausea',
-    indication: 'Gastroesophageal reflux disease (GERD), peptic ulcer, heartburn, acid indigestion, nausea',
+    therapeutic:
+      'Treatment of gastroesophageal reflux disease, dyspepsia, and nausea',
+    indication:
+      'Gastroesophageal reflux disease (GERD), peptic ulcer, heartburn, acid indigestion, nausea',
     activeIngredient: 'Omeprazole 20mg + Domperidone 10mg',
     strength: '20mg + 10mg per tablet',
-    dosage: 'One tablet once daily in the morning 30 minutes before breakfast with a glass of water',
+    dosage:
+      'One tablet once daily in the morning 30 minutes before breakfast with a glass of water',
 
     uses: [
       'Gastroesophageal reflux disease (GERD)',
@@ -5459,7 +5868,8 @@ export const products: Product[] = [
       'Consult physician if symptoms persist beyond 14 days',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from moisture and direct light.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from moisture and direct light.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -5495,19 +5905,24 @@ export const products: Product[] = [
     name: 'ZACTOCOLD',
     slug: 'zactocold-paracetamol-cold-cough-syrup',
     composition: 'Paracetamol + Phenylephrine + Chlorpheniramine Maleate',
-    fullComposition: 'Paracetamol 250Mg + Phenylephrine Hcl 5Mg + Chlorpheniramine Maleate 2Mg/5Ml',
+    fullComposition:
+      'Paracetamol 250Mg + Phenylephrine Hcl 5Mg + Chlorpheniramine Maleate 2Mg/5Ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Cough & Cold',
     packaging: '60Ml',
     mrp: 82,
     imageUrl: '/productswebp/ZACTOCOLD.webp',
     imageAlt: 'ZACTOCOLD Paracetamol, Phenylephrine & CPM Cold and Cough Syrup',
-    visualAidUrl: '/visualaidswebp/zactocold-paracetamol-cold-cough-syrup-visualaid.webp',
-    visualAidAlt: 'ZACTOCOLD - Paracetamol + Phenylephrine + Chlorpheniramine Maleate Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/zactocold-paracetamol-cold-cough-syrup-visualaid.webp',
+    visualAidAlt:
+      'ZACTOCOLD - Paracetamol + Phenylephrine + Chlorpheniramine Maleate Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'ZACTOCOLD | Cold, Fever & Cough Relief Syrup - Rapid Pharmaceuticals',
-    metaDescription: 'ZACTOCOLD suspension with Paracetamol 250mg, Phenylephrine 5mg, and CPM 2mg for fast relief of common cold, congestion, and fever. MRP ₹65.',
+    metaTitle:
+      'ZACTOCOLD | Cold, Fever & Cough Relief Syrup - Rapid Pharmaceuticals',
+    metaDescription:
+      'ZACTOCOLD suspension with Paracetamol 250mg, Phenylephrine 5mg, and CPM 2mg for fast relief of common cold, congestion, and fever. MRP ₹65.',
     keywords: [
       'zactocold',
       'cold syrup',
@@ -5516,19 +5931,25 @@ export const products: Product[] = [
       'decongestant',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'ZACTOCOLD: Paracetamol, Phenylephrine & Chlorpheniramine Maleate Suspension',
+    seoHeading:
+      'ZACTOCOLD: Paracetamol, Phenylephrine & Chlorpheniramine Maleate Suspension',
 
     // Detailed Information
-    introduction: 'ZACTOCOLD is a comprehensive cold and cough relief syrup combining antipyretic, decongestant, and antihistamine for complete symptom management. It provides relief from nasal congestion, runny nose, sneezing, and other cold and flu symptoms. Paracetamol reduces fever and alleviates aches, phenylephrine relieves nasal congestion, and chlorpheniramine maleate addresses allergic symptoms. This makes ZACTOCOLD an ideal choice for individuals seeking effective relief from common cold and flu symptoms, allowing them to recover comfortably and quickly.',
+    introduction:
+      'ZACTOCOLD is a comprehensive cold and cough relief syrup combining antipyretic, decongestant, and antihistamine for complete symptom management. It provides relief from nasal congestion, runny nose, sneezing, and other cold and flu symptoms. Paracetamol reduces fever and alleviates aches, phenylephrine relieves nasal congestion, and chlorpheniramine maleate addresses allergic symptoms. This makes ZACTOCOLD an ideal choice for individuals seeking effective relief from common cold and flu symptoms, allowing them to recover comfortably and quickly.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-ZCT-CLD',
-    therapeutic: 'Multi-symptom relief from common cold, fever, nasal congestion, and allergic rhinitis',
-    indication: 'Common cold symptoms, fever, nasal congestion, runny nose, sneezing, body aches',
-    activeIngredient: 'Paracetamol 250mg + Phenylephrine HCl 5mg + Chlorpheniramine Maleate 2mg per 5ml',
+    therapeutic:
+      'Multi-symptom relief from common cold, fever, nasal congestion, and allergic rhinitis',
+    indication:
+      'Common cold symptoms, fever, nasal congestion, runny nose, sneezing, body aches',
+    activeIngredient:
+      'Paracetamol 250mg + Phenylephrine HCl 5mg + Chlorpheniramine Maleate 2mg per 5ml',
     strength: '250mg + 5mg + 2mg per 5ml',
-    dosage: 'Children: 5 ml every 6 to 8 hours as prescribed by physician; Adults: 10 ml three times daily',
+    dosage:
+      'Children: 5 ml every 6 to 8 hours as prescribed by physician; Adults: 10 ml three times daily',
 
     uses: [
       'Common cold and flu symptoms',
@@ -5564,7 +5985,8 @@ export const products: Product[] = [
       'Avoid combining with other paracetamol-containing products',
     ],
 
-    storageConditions: 'Store in a cool and dry place below 25°C. Protect from light. Keep bottle tightly closed.',
+    storageConditions:
+      'Store in a cool and dry place below 25°C. Protect from light. Keep bottle tightly closed.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -5597,20 +6019,26 @@ export const products: Product[] = [
   {
     name: 'RAPINAK-GEL',
     slug: 'rapinak-gel-diclofenac-pain-relief-topical',
-    composition: 'Linseed Oil + Diclofenac + Methyl Salicylate + Menthol + Benzyl Alcohol',
-    fullComposition: 'Linseed Oil Bp 3%W/V + Diclofenac Diethlamine Bp 1.16%W/V + Diclofenac Sodium Ip 1%W/V + Methyl Salicylate Ip 10%W/V + Menthol Ip 5%W/V + Benzyl Alcohol Ip 1%W/V',
+    composition:
+      'Linseed Oil + Diclofenac + Methyl Salicylate + Menthol + Benzyl Alcohol',
+    fullComposition:
+      'Linseed Oil Bp 3%W/V + Diclofenac Diethlamine Bp 1.16%W/V + Diclofenac Sodium Ip 1%W/V + Methyl Salicylate Ip 10%W/V + Menthol Ip 5%W/V + Benzyl Alcohol Ip 1%W/V',
     category: 'Gel/Ointment',
     therapeuticClass: 'Analgesic',
     packaging: '30Gm',
     mrp: 125,
     imageUrl: '/productswebp/RAPINAK-GEL.webp',
     imageAlt: 'RAPINAK-GEL Diclofenac Topical Pain Relief Gel 30gm',
-    visualAidUrl: '/visualaidswebp/rapinak-gel-diclofenac-pain-relief-topical-visualaid.webp',
-    visualAidAlt: 'RAPINAK-GEL - Linseed Oil + Diclofenac + Methyl Salicylate + Menthol + Benzyl Alcohol Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-gel-diclofenac-pain-relief-topical-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK-GEL - Linseed Oil + Diclofenac + Methyl Salicylate + Menthol + Benzyl Alcohol Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'RAPINAK-GEL | Diclofenac Topical Pain Relief Gel - Rapid Pharmaceuticals',
-    metaDescription: 'RAPINAK-GEL topical analgesic gel with Diclofenac, Methyl Salicylate, Menthol, and Linseed Oil for instant muscle, joint, and back pain relief. MRP ₹125.',
+    metaTitle:
+      'RAPINAK-GEL | Diclofenac Topical Pain Relief Gel - Rapid Pharmaceuticals',
+    metaDescription:
+      'RAPINAK-GEL topical analgesic gel with Diclofenac, Methyl Salicylate, Menthol, and Linseed Oil for instant muscle, joint, and back pain relief. MRP ₹125.',
     keywords: [
       'rapinak gel',
       'diclofenac gel',
@@ -5619,19 +6047,25 @@ export const products: Product[] = [
       'joint pain ointment',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'RAPINAK-GEL: Diclofenac & Methyl Salicylate Topical Pain Relief Gel',
+    seoHeading:
+      'RAPINAK-GEL: Diclofenac & Methyl Salicylate Topical Pain Relief Gel',
 
     // Detailed Information
-    introduction: 'RAPINAK-GEL is a topical analgesic gel combining NSAIDs with warming agents for effective relief of muscular pain and inflammation. Diclofenac provides potent anti-inflammatory and analgesic effects, while methyl salicylate and menthol create a warming sensation that helps relax muscles and improve blood flow to the affected area. The addition of linseed oil offers moisturizing properties that can soothe irritated skin. This makes RAPINAK-GEL an ideal choice for individuals seeking fast-acting relief from muscle pain, joint pain, sports injuries, or post-operative discomfort, providing targeted pain management with added skin benefits.',
+    introduction:
+      'RAPINAK-GEL is a topical analgesic gel combining NSAIDs with warming agents for effective relief of muscular pain and inflammation. Diclofenac provides potent anti-inflammatory and analgesic effects, while methyl salicylate and menthol create a warming sensation that helps relax muscles and improve blood flow to the affected area. The addition of linseed oil offers moisturizing properties that can soothe irritated skin. This makes RAPINAK-GEL an ideal choice for individuals seeking fast-acting relief from muscle pain, joint pain, sports injuries, or post-operative discomfort, providing targeted pain management with added skin benefits.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-RPN-GEL',
-    therapeutic: 'Targeted topical relief of muscular pain, backache, joint stiffness, and sports injuries',
-    indication: 'Musculoskeletal pain, sprains, strains, osteoarthritis joint pain, backache, neck pain',
-    activeIngredient: 'Linseed Oil 3% + Diclofenac Diethylamine 1.16% + Methyl Salicylate 10% + Menthol 5%',
+    therapeutic:
+      'Targeted topical relief of muscular pain, backache, joint stiffness, and sports injuries',
+    indication:
+      'Musculoskeletal pain, sprains, strains, osteoarthritis joint pain, backache, neck pain',
+    activeIngredient:
+      'Linseed Oil 3% + Diclofenac Diethylamine 1.16% + Methyl Salicylate 10% + Menthol 5%',
     strength: '30g Topical Gel',
-    dosage: 'Gently massage a small amount onto the affected area 3 to 4 times daily, or as directed by physician',
+    dosage:
+      'Gently massage a small amount onto the affected area 3 to 4 times daily, or as directed by physician',
 
     uses: [
       'Muscle pain and soreness relief',
@@ -5665,7 +6099,8 @@ export const products: Product[] = [
       'Avoid contact with eyes and mucous membranes',
     ],
 
-    storageConditions: 'Store below 25°C. Do not freeze. Keep tube tightly closed after use.',
+    storageConditions:
+      'Store below 25°C. Do not freeze. Keep tube tightly closed after use.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -5705,13 +6140,17 @@ export const products: Product[] = [
     packaging: '10x1Ml Ampoule',
     mrp: 600,
     imageUrl: '/productswebp/VORARAP-AQ.webp',
-    imageAlt: 'VORARAP-AQ Diclofenac Sodium 75mg/1ml Aqueous Painless Injection',
-    visualAidUrl: '/visualaidswebp/vorarap-aq-diclofenac-injection-pain-visualaid.webp',
+    imageAlt:
+      'VORARAP-AQ Diclofenac Sodium 75mg/1ml Aqueous Painless Injection',
+    visualAidUrl:
+      '/visualaidswebp/vorarap-aq-diclofenac-injection-pain-visualaid.webp',
     visualAidAlt: 'VORARAP-AQ - Diclofenac Sodium Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'VORARAP-AQ | Diclofenac Sodium 75mg/1ml Injection - Rapid Pharmaceuticals',
-    metaDescription: 'VORARAP-AQ painless aqueous Diclofenac Sodium 75mg/1ml injection for acute post-operative pain, renal colic, and severe musculoskeletal pain. MRP ₹600.',
+    metaTitle:
+      'VORARAP-AQ | Diclofenac Sodium 75mg/1ml Injection - Rapid Pharmaceuticals',
+    metaDescription:
+      'VORARAP-AQ painless aqueous Diclofenac Sodium 75mg/1ml injection for acute post-operative pain, renal colic, and severe musculoskeletal pain. MRP ₹600.',
     keywords: [
       'vorarap aq',
       'diclofenac injection',
@@ -5720,19 +6159,24 @@ export const products: Product[] = [
       'acute pain injection',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'VORARAP-AQ: Diclofenac Sodium 75mg/1ml Aqueous Injection for Acute Pain',
+    seoHeading:
+      'VORARAP-AQ: Diclofenac Sodium 75mg/1ml Aqueous Injection for Acute Pain',
 
     // Detailed Information
-    introduction: 'VORARAP-AQ is a rapid-acting injectable NSAID formulated for painless administration in acute pain management and post-operative pain relief. Diclofenac sodium provides potent anti-inflammatory and analgesic effects, while the aqueous formulation minimizes injection site discomfort, making it suitable for intramuscular administration. This makes VORARAP-AQ an ideal choice for healthcare providers seeking an effective and well-tolerated option for managing moderate to severe pain in various clinical settings, including post-operative care, musculoskeletal injuries, and acute pain episodes.',
+    introduction:
+      'VORARAP-AQ is a rapid-acting injectable NSAID formulated for painless administration in acute pain management and post-operative pain relief. Diclofenac sodium provides potent anti-inflammatory and analgesic effects, while the aqueous formulation minimizes injection site discomfort, making it suitable for intramuscular administration. This makes VORARAP-AQ an ideal choice for healthcare providers seeking an effective and well-tolerated option for managing moderate to severe pain in various clinical settings, including post-operative care, musculoskeletal injuries, and acute pain episodes.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-VRR-AQ75',
-    therapeutic: 'Rapid parenteral relief of acute severe pain, renal colic, and post-surgical inflammation',
-    indication: 'Post-operative pain, acute renal colic, biliary colic, severe rheumatoid arthritis flare-ups, trauma pain',
+    therapeutic:
+      'Rapid parenteral relief of acute severe pain, renal colic, and post-surgical inflammation',
+    indication:
+      'Post-operative pain, acute renal colic, biliary colic, severe rheumatoid arthritis flare-ups, trauma pain',
     activeIngredient: 'Diclofenac Sodium 75mg per 1ml Aqueous Solution',
     strength: '75mg/1ml',
-    dosage: '75 mg (one ampoule) administered deep intramuscularly into the gluteal muscle or by slow IV infusion, once or twice daily',
+    dosage:
+      '75 mg (one ampoule) administered deep intramuscularly into the gluteal muscle or by slow IV infusion, once or twice daily',
 
     uses: [
       'Acute pain relief (moderate to severe)',
@@ -5768,7 +6212,8 @@ export const products: Product[] = [
       'Monitor renal and cardiovascular function',
     ],
 
-    storageConditions: 'Store in a cool place below 25°C. Protect from light. Do not freeze.',
+    storageConditions:
+      'Store in a cool place below 25°C. Protect from light. Do not freeze.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -5813,12 +6258,15 @@ export const products: Product[] = [
     mrp: 1200,
     imageUrl: '/productswebp/PROARGIRAP.webp',
     imageAlt: 'PROARGIRAP L-Arginine and Proanthocyanidin Sugar-Free Sachets',
-    visualAidUrl: '/visualaidswebp/proargirap-l-arginine-proanthocyanidin-supplement-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/proargirap-l-arginine-proanthocyanidin-supplement-visualaid.webp',
     visualAidAlt: 'PROARGIRAP - L-Arginine + Proanthocyanidin Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'PROARGIRAP | L-Arginine + Proanthocyanidin Sachets - Rapid Pharmaceuticals',
-    metaDescription: 'PROARGIRAP sugar-free sachets combining L-Arginine and Proanthocyanidin for pregnancy support, fetal growth, and cardiovascular vascular health. MRP ₹1200.',
+    metaTitle:
+      'PROARGIRAP | L-Arginine + Proanthocyanidin Sachets - Rapid Pharmaceuticals',
+    metaDescription:
+      'PROARGIRAP sugar-free sachets combining L-Arginine and Proanthocyanidin for pregnancy support, fetal growth, and cardiovascular vascular health. MRP ₹1200.',
     keywords: [
       'proargirap',
       'l arginine sachet',
@@ -5827,19 +6275,24 @@ export const products: Product[] = [
       'fetal growth',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'PROARGIRAP: L-Arginine & Proanthocyanidin Sachets for Vascular & Pregnancy Health',
+    seoHeading:
+      'PROARGIRAP: L-Arginine & Proanthocyanidin Sachets for Vascular & Pregnancy Health',
 
     // Detailed Information
-    introduction: 'PROARGIRAP is a targeted nutritional supplement combining L-arginine with antioxidants for vascular and endothelial health support. L-arginine is a precursor to nitric oxide, which helps relax blood vessels and improve circulation, while proanthocyanidins provide potent antioxidant effects that protect the endothelium from oxidative stress. This makes PROARGIRAP an ideal choice for individuals seeking to enhance cardiovascular health, improve blood flow, support athletic performance, boost immune function, or address erectile dysfunction, providing comprehensive vascular support in a convenient sachet form.',
+    introduction:
+      'PROARGIRAP is a targeted nutritional supplement combining L-arginine with antioxidants for vascular and endothelial health support. L-arginine is a precursor to nitric oxide, which helps relax blood vessels and improve circulation, while proanthocyanidins provide potent antioxidant effects that protect the endothelium from oxidative stress. This makes PROARGIRAP an ideal choice for individuals seeking to enhance cardiovascular health, improve blood flow, support athletic performance, boost immune function, or address erectile dysfunction, providing comprehensive vascular support in a convenient sachet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PRG-ARG',
-    therapeutic: 'Vascular endothelial support, uteroplacental blood flow enhancement, and antioxidant protection',
-    indication: 'Intrauterine growth restriction (IUGR), oligohydramnios, pre-eclampsia prevention, cardiovascular endothelial support',
+    therapeutic:
+      'Vascular endothelial support, uteroplacental blood flow enhancement, and antioxidant protection',
+    indication:
+      'Intrauterine growth restriction (IUGR), oligohydramnios, pre-eclampsia prevention, cardiovascular endothelial support',
     activeIngredient: 'L-Arginine 3g + Proanthocyanidin 75mg per 5g Sachet',
     strength: '5g Sachet',
-    dosage: 'Dissolve one sachet (5g) in half a glass of water (approx. 100ml) and consume once or twice daily, or as directed by physician',
+    dosage:
+      'Dissolve one sachet (5g) in half a glass of water (approx. 100ml) and consume once or twice daily, or as directed by physician',
 
     uses: [
       'Cardiovascular and endothelial health',
@@ -5874,12 +6327,13 @@ export const products: Product[] = [
       'Use during pregnancy under obstetrician supervision',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from moisture and direct sunlight.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from moisture and direct sunlight.',
     shelfLife: '18 months',
 
     avgRating: 4.5,
     reviewCount: 161,
-    medicalCategory: 'Cardiovascular',
+    medicalCategory: 'Gynaecological',
     authorName: 'Dr. Ravi Gupta, Cardiovascular',
     publicationDate: '2024-05-08',
     updatedDate: '2025-04-15',
@@ -5907,19 +6361,25 @@ export const products: Product[] = [
     name: 'DOXY B6',
     slug: 'doxy-b6-doxylamine-pyridoxine-pregnancy-nausea',
     composition: 'Doxylamine Succinate + Pyridoxine + Folic Acid',
-    fullComposition: 'Doxylamine Succinate 10Mg + Pyridoxine 10Mg + Folic Acid 5Mg',
+    fullComposition:
+      'Doxylamine Succinate 10Mg + Pyridoxine 10Mg + Folic Acid 5Mg',
     category: 'Tablets',
     therapeuticClass: 'Gynaecological',
     packaging: '10x10 Alu Alu',
     mrp: 950,
     imageUrl: '/productswebp/DOXY-B6.webp',
-    imageAlt: 'DOXY B6 Doxylamine, Pyridoxine & Folic Acid Tablets for Pregnancy Nausea',
-    visualAidUrl: '/visualaidswebp/doxy-b6-doxylamine-pyridoxine-pregnancy-nausea-visualaid.webp',
-    visualAidAlt: 'DOXY B6 - Doxylamine Succinate + Pyridoxine + Folic Acid Visual Aid',
+    imageAlt:
+      'DOXY B6 Doxylamine, Pyridoxine & Folic Acid Tablets for Pregnancy Nausea',
+    visualAidUrl:
+      '/visualaidswebp/doxy-b6-doxylamine-pyridoxine-pregnancy-nausea-visualaid.webp',
+    visualAidAlt:
+      'DOXY B6 - Doxylamine Succinate + Pyridoxine + Folic Acid Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'DOXY B6 | Doxylamine + Pyridoxine + Folic Acid - Rapid Pharmaceuticals',
-    metaDescription: 'DOXY B6 tablets with Doxylamine Succinate 10mg, Pyridoxine 10mg, and Folic Acid 5mg for morning sickness and pregnancy-related nausea relief. MRP ₹950.',
+    metaTitle:
+      'DOXY B6 | Doxylamine + Pyridoxine + Folic Acid - Rapid Pharmaceuticals',
+    metaDescription:
+      'DOXY B6 tablets with Doxylamine Succinate 10mg, Pyridoxine 10mg, and Folic Acid 5mg for morning sickness and pregnancy-related nausea relief. MRP ₹950.',
     keywords: [
       'doxy b6',
       'morning sickness',
@@ -5928,19 +6388,25 @@ export const products: Product[] = [
       'folic acid tablet',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'DOXY B6: Doxylamine Succinate, Pyridoxine & Folic Acid for Pregnancy Nausea',
+    seoHeading:
+      'DOXY B6: Doxylamine Succinate, Pyridoxine & Folic Acid for Pregnancy Nausea',
 
     // Detailed Information
-    introduction: 'DOXY B6 combines an antihistamine with B vitamins for pregnancy-related nausea and vomiting relief with nutritional support. Doxylamine succinate provides effective antiemetic action, while pyridoxine (vitamin B6) and folic acid offer essential nutritional support that can help reduce nausea and support fetal development. This makes DOXY B6 an ideal choice for pregnant individuals experiencing morning sickness or nausea and vomiting during pregnancy, providing both symptom relief and important nutritional benefits in a convenient tablet form.',
+    introduction:
+      'DOXY B6 combines an antihistamine with B vitamins for pregnancy-related nausea and vomiting relief with nutritional support. Doxylamine succinate provides effective antiemetic action, while pyridoxine (vitamin B6) and folic acid offer essential nutritional support that can help reduce nausea and support fetal development. This makes DOXY B6 an ideal choice for pregnant individuals experiencing morning sickness or nausea and vomiting during pregnancy, providing both symptom relief and important nutritional benefits in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-DOX-B6',
-    therapeutic: 'Management of morning sickness, nausea and vomiting of pregnancy (NVP)',
-    indication: 'Nausea and vomiting during pregnancy (morning sickness), hyperemesis gravidarum support, folic acid supplementation',
-    activeIngredient: 'Doxylamine Succinate 10mg + Pyridoxine Hydrochloride 10mg + Folic Acid 5mg',
+    therapeutic:
+      'Management of morning sickness, nausea and vomiting of pregnancy (NVP)',
+    indication:
+      'Nausea and vomiting during pregnancy (morning sickness), hyperemesis gravidarum support, folic acid supplementation',
+    activeIngredient:
+      'Doxylamine Succinate 10mg + Pyridoxine Hydrochloride 10mg + Folic Acid 5mg',
     strength: '10mg + 10mg + 5mg per tablet',
-    dosage: 'One to two tablets at bedtime; additional one tablet in morning or afternoon if needed, as directed by gynaecologist',
+    dosage:
+      'One to two tablets at bedtime; additional one tablet in morning or afternoon if needed, as directed by gynaecologist',
 
     uses: [
       'Morning sickness and pregnancy nausea',
@@ -5974,7 +6440,8 @@ export const products: Product[] = [
       'Follow gynaecologist guidance throughout pregnancy',
     ],
 
-    storageConditions: 'Store in a cool, dry place protected from light and moisture at a temperature below 25°C.',
+    storageConditions:
+      'Store in a cool, dry place protected from light and moisture at a temperature below 25°C.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -6010,19 +6477,24 @@ export const products: Product[] = [
     name: 'PRO FC',
     slug: 'pro-fc-iron-folic-acid-zinc-syrup',
     composition: 'Ferrous Ascorbate + Folic Acid + Zinc',
-    fullComposition: 'Ferrous Ascorbate 30Mg + Folic Acid 140Mcg + Zinc Sulphate 22.5Mg/5Ml Suspension',
+    fullComposition:
+      'Ferrous Ascorbate 30Mg + Folic Acid 140Mcg + Zinc Sulphate 22.5Mg/5Ml Suspension',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Nutritional Supplement',
     packaging: '200Ml',
     mrp: 190,
     imageUrl: '/productswebp/PRO-FC_SYP.webp',
-    imageAlt: 'PRO FC Ferrous Ascorbate, Folic Acid & Zinc Oral Suspension 200ml',
-    visualAidUrl: '/visualaidswebp/pro-fc-iron-folic-acid-zinc-syrup-visualaid.webp',
+    imageAlt:
+      'PRO FC Ferrous Ascorbate, Folic Acid & Zinc Oral Suspension 200ml',
+    visualAidUrl:
+      '/visualaidswebp/pro-fc-iron-folic-acid-zinc-syrup-visualaid.webp',
     visualAidAlt: 'PRO FC - Ferrous Ascorbate + Folic Acid + Zinc Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'PRO FC Suspension | Ferrous Ascorbate + Folic Acid + Zinc - Rapid Pharmaceuticals',
-    metaDescription: 'PRO FC oral iron suspension with Ferrous Ascorbate 30mg, Folic Acid 140mcg, and Zinc Sulphate 22.5mg for anemia treatment in children and adults. MRP ₹190.',
+    metaTitle:
+      'PRO FC Suspension | Ferrous Ascorbate + Folic Acid + Zinc - Rapid Pharmaceuticals',
+    metaDescription:
+      'PRO FC oral iron suspension with Ferrous Ascorbate 30mg, Folic Acid 140mcg, and Zinc Sulphate 22.5mg for anemia treatment in children and adults. MRP ₹190.',
     keywords: [
       'pro fc syrup',
       'ferrous ascorbate suspension',
@@ -6034,16 +6506,21 @@ export const products: Product[] = [
     seoHeading: 'PRO FC: Ferrous Ascorbate, Folic Acid & Zinc Oral Suspension',
 
     // Detailed Information
-    introduction: 'PRO FC syrup is an iron and micronutrient supplement for treating anemia and supporting nutritional needs during pregnancy and recovery. Ferrous ascorbate provides a highly bioavailable form of iron for effective anemia treatment, while folic acid supports red blood cell production and fetal development. The addition of zinc enhances immune function and overall nutritional status. This makes PRO FC an ideal choice for individuals with iron deficiency anemia, pregnant women needing nutritional support, or those recovering from surgery or malnutrition, providing comprehensive micronutrient supplementation in a convenient syrup form.',
+    introduction:
+      'PRO FC syrup is an iron and micronutrient supplement for treating anemia and supporting nutritional needs during pregnancy and recovery. Ferrous ascorbate provides a highly bioavailable form of iron for effective anemia treatment, while folic acid supports red blood cell production and fetal development. The addition of zinc enhances immune function and overall nutritional status. This makes PRO FC an ideal choice for individuals with iron deficiency anemia, pregnant women needing nutritional support, or those recovering from surgery or malnutrition, providing comprehensive micronutrient supplementation in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PFC-SYP200',
-    therapeutic: 'Treatment of iron deficiency anemia and nutritional enhancement',
-    indication: 'Iron deficiency anemia, nutritional deficiency in growing children and pregnancy, post-operative convalescence',
-    activeIngredient: 'Elemental Iron (as Ferrous Ascorbate) 30mg + Folic Acid 140mcg + Zinc Sulphate 22.5mg per 5ml',
+    therapeutic:
+      'Treatment of iron deficiency anemia and nutritional enhancement',
+    indication:
+      'Iron deficiency anemia, nutritional deficiency in growing children and pregnancy, post-operative convalescence',
+    activeIngredient:
+      'Elemental Iron (as Ferrous Ascorbate) 30mg + Folic Acid 140mcg + Zinc Sulphate 22.5mg per 5ml',
     strength: '30mg + 140mcg + 22.5mg per 5ml',
-    dosage: 'Children: 2.5-5 ml once or twice daily; Adults: 5-10 ml once or twice daily after meals, or as directed by physician',
+    dosage:
+      'Children: 2.5-5 ml once or twice daily; Adults: 5-10 ml once or twice daily after meals, or as directed by physician',
 
     uses: [
       'Iron deficiency anemia treatment',
@@ -6078,7 +6555,8 @@ export const products: Product[] = [
       'Keep out of reach of young children',
     ],
 
-    storageConditions: 'Store in a cool and dry place below 25°C. Protect from direct sunlight.',
+    storageConditions:
+      'Store in a cool and dry place below 25°C. Protect from direct sunlight.',
     shelfLife: '18 months',
 
     avgRating: 4.6,
@@ -6121,12 +6599,15 @@ export const products: Product[] = [
     mrp: 71.8,
     imageUrl: '/productswebp/CEFIMELT-1GM.webp',
     imageAlt: 'CEFIMELT 1GM Ceftriaxone Sodium 1000mg Injection Vial',
-    visualAidUrl: '/visualaidswebp/cefimelt-1gm-ceftriaxone-injection-antibiotic-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/cefimelt-1gm-ceftriaxone-injection-antibiotic-visualaid.webp',
     visualAidAlt: 'CEFIMELT 1GM - Ceftriaxone Sodium Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CEFIMELT 1GM | Ceftriaxone 1000mg Injection - Rapid Pharmaceuticals',
-    metaDescription: 'CEFIMELT 1GM third-generation cephalosporin Ceftriaxone Sodium 1000mg sterile injection for meningitis, pneumonia, and severe bacterial infections. MRP ₹71.80.',
+    metaTitle:
+      'CEFIMELT 1GM | Ceftriaxone 1000mg Injection - Rapid Pharmaceuticals',
+    metaDescription:
+      'CEFIMELT 1GM third-generation cephalosporin Ceftriaxone Sodium 1000mg sterile injection for meningitis, pneumonia, and severe bacterial infections. MRP ₹71.80.',
     keywords: [
       'cefimelt 1gm',
       'ceftriaxone injection',
@@ -6134,19 +6615,24 @@ export const products: Product[] = [
       'broad spectrum antibiotic injection',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'CEFIMELT 1GM: Ceftriaxone Sodium 1000mg Sterile Powder for Injection',
+    seoHeading:
+      'CEFIMELT 1GM: Ceftriaxone Sodium 1000mg Sterile Powder for Injection',
 
     // Detailed Information
-    introduction: 'CEFIMELT 1GM is a third-generation cephalosporin injection for treating serious bacterial infections in hospitalized patients. Ceftriaxone sodium provides broad-spectrum antibacterial activity against a wide range of gram-positive and gram-negative pathogens, making it effective for treating severe infections such as sepsis, pneumonia, meningitis, and hospital-acquired infections. The single vial formulation allows for convenient dosing and administration in clinical settings. This makes CEFIMELT 1GM an ideal choice for healthcare providers seeking a potent and reliable antibiotic option for managing serious bacterial infections in hospitalized patients.',
+    introduction:
+      'CEFIMELT 1GM is a third-generation cephalosporin injection for treating serious bacterial infections in hospitalized patients. Ceftriaxone sodium provides broad-spectrum antibacterial activity against a wide range of gram-positive and gram-negative pathogens, making it effective for treating severe infections such as sepsis, pneumonia, meningitis, and hospital-acquired infections. The single vial formulation allows for convenient dosing and administration in clinical settings. This makes CEFIMELT 1GM an ideal choice for healthcare providers seeking a potent and reliable antibiotic option for managing serious bacterial infections in hospitalized patients.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CFM-1GM',
-    therapeutic: 'Broad-spectrum parenteral therapy for serious hospital and community-acquired bacterial infections',
-    indication: 'Bacterial meningitis, pneumonia, intra-abdominal sepsis, complicated urinary tract infections, bone and joint infections',
+    therapeutic:
+      'Broad-spectrum parenteral therapy for serious hospital and community-acquired bacterial infections',
+    indication:
+      'Bacterial meningitis, pneumonia, intra-abdominal sepsis, complicated urinary tract infections, bone and joint infections',
     activeIngredient: 'Ceftriaxone Sodium IP equivalent to Ceftriaxone 1000mg',
     strength: '1000mg per vial',
-    dosage: '1g to 2g once daily (or in equally divided doses twice daily) administered IV slowly or deep IM after reconstitution, as directed by physician',
+    dosage:
+      '1g to 2g once daily (or in equally divided doses twice daily) administered IV slowly or deep IM after reconstitution, as directed by physician',
 
     uses: [
       'Serious gram-negative infections',
@@ -6181,7 +6667,8 @@ export const products: Product[] = [
       'Administer under medical supervision',
     ],
 
-    storageConditions: 'Store dry powder below 25°C. Protect from light. Reconstituted solutions should be used immediately.',
+    storageConditions:
+      'Store dry powder below 25°C. Protect from light. Reconstituted solutions should be used immediately.',
     shelfLife: '24 months',
 
     avgRating: 4.4,
@@ -6217,19 +6704,25 @@ export const products: Product[] = [
     name: 'METHYRAP PLUS',
     slug: 'methyrap-plus-methylcobalamin-injection-b-complex',
     composition: 'Methylcobalamin + Vitamin B6 + Niacinamide',
-    fullComposition: 'Methylcobalamin 1500 Mcg + Vitamin B6 100Mg + Niacinamide 100Mg',
+    fullComposition:
+      'Methylcobalamin 1500 Mcg + Vitamin B6 100Mg + Niacinamide 100Mg',
     category: 'Injections',
     therapeuticClass: 'Nutritional Supplement',
     packaging: '1x2Ml Combination Pack',
     mrp: 85,
     imageUrl: '/productswebp/METHYRAP-PLUS_INJ.webp',
-    imageAlt: 'METHYRAP PLUS Methylcobalamin 1500mcg, Vitamin B6 & Niacinamide Injection 2ml',
-    visualAidUrl: '/visualaidswebp/methyrap-plus-methylcobalamin-injection-b-complex-visualaid.webp',
-    visualAidAlt: 'METHYRAP PLUS - Methylcobalamin + Vitamin B6 + Niacinamide Visual Aid',
+    imageAlt:
+      'METHYRAP PLUS Methylcobalamin 1500mcg, Vitamin B6 & Niacinamide Injection 2ml',
+    visualAidUrl:
+      '/visualaidswebp/methyrap-plus-methylcobalamin-injection-b-complex-visualaid.webp',
+    visualAidAlt:
+      'METHYRAP PLUS - Methylcobalamin + Vitamin B6 + Niacinamide Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'METHYRAP PLUS Injection | Methylcobalamin 1500mcg + B-Complex - Rapid Pharmaceuticals',
-    metaDescription: 'METHYRAP PLUS injection with Methylcobalamin 1500mcg, Vitamin B6 100mg, and Niacinamide 100mg for peripheral neuropathy and vitamin deficiencies. MRP ₹85.',
+    metaTitle:
+      'METHYRAP PLUS Injection | Methylcobalamin 1500mcg + B-Complex - Rapid Pharmaceuticals',
+    metaDescription:
+      'METHYRAP PLUS injection with Methylcobalamin 1500mcg, Vitamin B6 100mg, and Niacinamide 100mg for peripheral neuropathy and vitamin deficiencies. MRP ₹85.',
     keywords: [
       'methyrap plus injection',
       'methylcobalamin injection',
@@ -6237,19 +6730,25 @@ export const products: Product[] = [
       'neuropathy injection',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'METHYRAP PLUS: Methylcobalamin 1500mcg & B-Complex Injection for Neuropathy',
+    seoHeading:
+      'METHYRAP PLUS: Methylcobalamin 1500mcg & B-Complex Injection for Neuropathy',
 
     // Detailed Information
-    introduction: 'METHYRAP PLUS is a B-complex injection for rapid correction of vitamin B deficiencies and neurotrophic support. Methylcobalamin provides active vitamin B12 for nerve health and red blood cell production, while vitamin B6 and niacinamide support energy metabolism and neurological function. This makes METHYRAP PLUS an ideal choice for individuals with vitamin B deficiencies, peripheral neuropathy, or those needing nutritional support for neurological disorders, providing comprehensive B-vitamin supplementation in a convenient injectable form.',
+    introduction:
+      'METHYRAP PLUS is a B-complex injection for rapid correction of vitamin B deficiencies and neurotrophic support. Methylcobalamin provides active vitamin B12 for nerve health and red blood cell production, while vitamin B6 and niacinamide support energy metabolism and neurological function. This makes METHYRAP PLUS an ideal choice for individuals with vitamin B deficiencies, peripheral neuropathy, or those needing nutritional support for neurological disorders, providing comprehensive B-vitamin supplementation in a convenient injectable form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-MTR-INJ2ML',
-    therapeutic: 'Regeneration of injured peripheral nerves and treatment of severe vitamin B12 deficiencies',
-    indication: 'Diabetic peripheral neuropathy, megaloblastic anemia, sciatica, neuralgia, alcoholic neuropathy, B-complex deficiencies',
-    activeIngredient: 'Methylcobalamin 1500mcg + Pyridoxine HCl 100mg + Niacinamide 100mg per 2ml',
+    therapeutic:
+      'Regeneration of injured peripheral nerves and treatment of severe vitamin B12 deficiencies',
+    indication:
+      'Diabetic peripheral neuropathy, megaloblastic anemia, sciatica, neuralgia, alcoholic neuropathy, B-complex deficiencies',
+    activeIngredient:
+      'Methylcobalamin 1500mcg + Pyridoxine HCl 100mg + Niacinamide 100mg per 2ml',
     strength: '1500mcg + 100mg + 100mg per 2ml',
-    dosage: '2 ml administered intramuscularly or intravenously alternate days or as prescribed by physician',
+    dosage:
+      '2 ml administered intramuscularly or intravenously alternate days or as prescribed by physician',
 
     uses: [
       'Vitamin B12 deficiency treatment',
@@ -6283,7 +6782,8 @@ export const products: Product[] = [
       'Use under clinical supervision',
     ],
 
-    storageConditions: 'Store protected from light and moisture at a temperature not exceeding 25°C. Do not freeze.',
+    storageConditions:
+      'Store protected from light and moisture at a temperature not exceeding 25°C. Do not freeze.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -6321,13 +6821,17 @@ export const products: Product[] = [
     packaging: '10x10 Alu Alu',
     mrp: 1900,
     imageUrl: '/productswebp/METHYRAP-P-SR-75.webp',
-    imageAlt: 'METHYRAP-P SR 75 Pregabalin 75mg SR and Methylcobalamin 750mcg Tablets',
-    visualAidUrl: '/visualaidswebp/methyrap-p-sr-75-pregabalin-methylcobalamin-neuropathy-visualaid.webp',
+    imageAlt:
+      'METHYRAP-P SR 75 Pregabalin 75mg SR and Methylcobalamin 750mcg Tablets',
+    visualAidUrl:
+      '/visualaidswebp/methyrap-p-sr-75-pregabalin-methylcobalamin-neuropathy-visualaid.webp',
     visualAidAlt: 'METHYRAP-P SR 75 - Pregabalin + Methylcobalamin Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'METHYRAP-P SR 75 | Pregabalin 75mg SR + Methylcobalamin - Rapid Pharmaceuticals',
-    metaDescription: 'METHYRAP-P SR 75 sustained-release tablets with Pregabalin 75mg and Methylcobalamin 750mcg for neuropathic pain, sciatica, and fibromyalgia. MRP ₹1900.',
+    metaTitle:
+      'METHYRAP-P SR 75 | Pregabalin 75mg SR + Methylcobalamin - Rapid Pharmaceuticals',
+    metaDescription:
+      'METHYRAP-P SR 75 sustained-release tablets with Pregabalin 75mg and Methylcobalamin 750mcg for neuropathic pain, sciatica, and fibromyalgia. MRP ₹1900.',
     keywords: [
       'methyrap p sr 75',
       'pregabalin methylcobalamin',
@@ -6336,19 +6840,24 @@ export const products: Product[] = [
       'nerve pain tablet',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'METHYRAP-P SR 75: Pregabalin 75mg SR & Methylcobalamin Sustained Release Tablets',
+    seoHeading:
+      'METHYRAP-P SR 75: Pregabalin 75mg SR & Methylcobalamin Sustained Release Tablets',
 
     // Detailed Information
-    introduction: 'METHYRAP-P SR 75 is a sustained-release formulation combining pregabalin with B12 for effective neuropathic pain management with neurological support. Pregabalin provides potent analgesic effects for neuropathic pain, while methylcobalamin supports nerve health and regeneration. This makes METHYRAP-P SR 75 an ideal choice for individuals suffering from neuropathic pain conditions such as diabetic peripheral neuropathy, post-herpetic neuralgia, or spinal cord injury pain, providing comprehensive symptom relief and neurological support in a convenient sustained-release tablet form.',
+    introduction:
+      'METHYRAP-P SR 75 is a sustained-release formulation combining pregabalin with B12 for effective neuropathic pain management with neurological support. Pregabalin provides potent analgesic effects for neuropathic pain, while methylcobalamin supports nerve health and regeneration. This makes METHYRAP-P SR 75 an ideal choice for individuals suffering from neuropathic pain conditions such as diabetic peripheral neuropathy, post-herpetic neuralgia, or spinal cord injury pain, providing comprehensive symptom relief and neurological support in a convenient sustained-release tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-MP-SR75',
     therapeutic: 'Management of peripheral neuropathic pain and nerve repair',
-    indication: 'Diabetic peripheral neuropathy, post-herpetic neuralgia, spinal nerve injury pain, fibromyalgia, sciatica',
-    activeIngredient: 'Pregabalin 75mg (Sustained Release) + Methylcobalamin 750mcg',
+    indication:
+      'Diabetic peripheral neuropathy, post-herpetic neuralgia, spinal nerve injury pain, fibromyalgia, sciatica',
+    activeIngredient:
+      'Pregabalin 75mg (Sustained Release) + Methylcobalamin 750mcg',
     strength: '75mg SR + 750mcg per tablet',
-    dosage: 'One tablet once daily at bedtime, or as directed by neurologist/physician',
+    dosage:
+      'One tablet once daily at bedtime, or as directed by neurologist/physician',
 
     uses: [
       'Neuropathic pain relief',
@@ -6382,7 +6891,8 @@ export const products: Product[] = [
       'Swallow whole without crushing or chewing',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from moisture and direct light.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from moisture and direct light.',
     shelfLife: '24 months',
 
     avgRating: 4.8,
@@ -6422,13 +6932,17 @@ export const products: Product[] = [
     packaging: '30Ml With Water',
     mrp: 69.21,
     imageUrl: '/productswebp/RAPMOX-CV-DRY.webp',
-    imageAlt: 'RAPMOX CV Amoxicillin and Clavulanic Acid Pediatric Dry Syrup 30ml',
-    visualAidUrl: '/visualaidswebp/rapmox-cv-amoxicillin-clavulanic-acid-powder-visualaid.webp',
+    imageAlt:
+      'RAPMOX CV Amoxicillin and Clavulanic Acid Pediatric Dry Syrup 30ml',
+    visualAidUrl:
+      '/visualaidswebp/rapmox-cv-amoxicillin-clavulanic-acid-powder-visualaid.webp',
     visualAidAlt: 'RAPMOX CV - Amoxycillin + Clavulanic Acid Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'RAPMOX CV Dry Syrup | Amoxicillin + Clavulanic Acid - Rapid Pharmaceuticals',
-    metaDescription: 'RAPMOX CV pediatric dry syrup with Amoxicillin 200mg and Clavulanic Acid 28.5mg/5ml for resistant pediatric bacterial infections. MRP ₹69.21.',
+    metaTitle:
+      'RAPMOX CV Dry Syrup | Amoxicillin + Clavulanic Acid - Rapid Pharmaceuticals',
+    metaDescription:
+      'RAPMOX CV pediatric dry syrup with Amoxicillin 200mg and Clavulanic Acid 28.5mg/5ml for resistant pediatric bacterial infections. MRP ₹69.21.',
     keywords: [
       'rapmox cv dry syrup',
       'amoxicillin clavulanic acid syrup',
@@ -6439,16 +6953,21 @@ export const products: Product[] = [
     seoHeading: 'RAPMOX CV: Amoxicillin & Clavulanic Acid Pediatric Dry Syrup',
 
     // Detailed Information
-    introduction: 'RAPMOX CV is a pediatric antibiotic suspension combining amoxicillin with beta-lactamase inhibitor for treating resistant bacterial infections in children. Amoxicillin provides broad-spectrum antibacterial activity, while clavulanic acid inhibits beta-lactamase enzymes produced by resistant bacteria, enhancing the antibiotic’s effectiveness. This makes RAPMOX CV an ideal choice for treating common pediatric infections such as respiratory tract infections, urinary tract infections, skin infections, and otitis media, providing effective symptom relief and bacterial eradication in a child-friendly syrup form.',
+    introduction:
+      'RAPMOX CV is a pediatric antibiotic suspension combining amoxicillin with beta-lactamase inhibitor for treating resistant bacterial infections in children. Amoxicillin provides broad-spectrum antibacterial activity, while clavulanic acid inhibits beta-lactamase enzymes produced by resistant bacteria, enhancing the antibiotic’s effectiveness. This makes RAPMOX CV an ideal choice for treating common pediatric infections such as respiratory tract infections, urinary tract infections, skin infections, and otitis media, providing effective symptom relief and bacterial eradication in a child-friendly syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-RMX-DS30',
-    therapeutic: 'Treatment of beta-lactamase producing bacterial infections in children',
-    indication: 'Pediatric otitis media, acute sinusitis, tonsillitis, bronchopneumonia, urinary and skin infections',
-    activeIngredient: 'Amoxicillin Trihydrate equivalent to Amoxicillin 200mg + Potassium Clavulanate equivalent to Clavulanic Acid 28.5mg per 5ml',
+    therapeutic:
+      'Treatment of beta-lactamase producing bacterial infections in children',
+    indication:
+      'Pediatric otitis media, acute sinusitis, tonsillitis, bronchopneumonia, urinary and skin infections',
+    activeIngredient:
+      'Amoxicillin Trihydrate equivalent to Amoxicillin 200mg + Potassium Clavulanate equivalent to Clavulanic Acid 28.5mg per 5ml',
     strength: '200mg + 28.5mg per 5ml',
-    dosage: '25-45 mg/kg/day (based on amoxicillin component) in two divided doses every 12 hours with meals, or as directed by pediatrician',
+    dosage:
+      '25-45 mg/kg/day (based on amoxicillin component) in two divided doses every 12 hours with meals, or as directed by pediatrician',
 
     uses: [
       'Pediatric respiratory tract infections',
@@ -6482,7 +7001,8 @@ export const products: Product[] = [
       'Keep reconstituted suspension in refrigerator and use within 7 days',
     ],
 
-    storageConditions: 'Store dry powder in a cool, dry place below 25°C. After reconstitution, store between 2°C and 8°C in a refrigerator and use within 7 days.',
+    storageConditions:
+      'Store dry powder in a cool, dry place below 25°C. After reconstitution, store between 2°C and 8°C in a refrigerator and use within 7 days.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -6518,19 +7038,25 @@ export const products: Product[] = [
     name: 'PICOFIX-PLUS',
     slug: 'picofix-plus-laxative-picosulfate-liquid-paraffin',
     composition: 'Sodium Picosulfate + Liquid Paraffin + Milk of Magnesia',
-    fullComposition: 'Sodium Picosulfate 3.33mg + Liquid Paraffin 1.25mg + Milk of Magnesia 3.75ml/15Ml',
+    fullComposition:
+      'Sodium Picosulfate 3.33mg + Liquid Paraffin 1.25mg + Milk of Magnesia 3.75ml/15Ml',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Gastrointestinal',
     packaging: '170ml',
     mrp: 175,
     imageUrl: '/productswebp/PICOFIX-PLUS.webp',
-    imageAlt: 'PICOFIX-PLUS Sodium Picosulfate, Liquid Paraffin & Milk of Magnesia Laxative 170ml',
-    visualAidUrl: '/visualaidswebp/picofix-plus-laxative-picosulfate-liquid-paraffin-visualaid.webp',
-    visualAidAlt: 'PICOFIX-PLUS - Sodium Picosulfate + Liquid Paraffin + Milk of Magnesia Visual Aid',
+    imageAlt:
+      'PICOFIX-PLUS Sodium Picosulfate, Liquid Paraffin & Milk of Magnesia Laxative 170ml',
+    visualAidUrl:
+      '/visualaidswebp/picofix-plus-laxative-picosulfate-liquid-paraffin-visualaid.webp',
+    visualAidAlt:
+      'PICOFIX-PLUS - Sodium Picosulfate + Liquid Paraffin + Milk of Magnesia Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'PICOFIX-PLUS | Triple Action Laxative Emulsion - Rapid Pharmaceuticals',
-    metaDescription: 'PICOFIX-PLUS laxative emulsion with Sodium Picosulfate, Liquid Paraffin, and Milk of Magnesia for chronic constipation and bowel clearance. MRP ₹175.',
+    metaTitle:
+      'PICOFIX-PLUS | Triple Action Laxative Emulsion - Rapid Pharmaceuticals',
+    metaDescription:
+      'PICOFIX-PLUS laxative emulsion with Sodium Picosulfate, Liquid Paraffin, and Milk of Magnesia for chronic constipation and bowel clearance. MRP ₹175.',
     keywords: [
       'picofix plus',
       'laxative syrup',
@@ -6540,19 +7066,25 @@ export const products: Product[] = [
       'constipation relief',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'PICOFIX-PLUS: Triple-Action Laxative Suspension for Constipation Relief',
+    seoHeading:
+      'PICOFIX-PLUS: Triple-Action Laxative Suspension for Constipation Relief',
 
     // Detailed Information
-    introduction: 'PICOFIX-PLUS is a gentle laxative syrup combining stimulant and osmotic agents with stool softeners for effective constipation relief without straining. Sodium picosulfate stimulates bowel movements, while liquid paraffin and milk of magnesia soften stools and draw water into the intestines, making it easier to pass stools without discomfort. This makes PICOFIX-PLUS an ideal choice for individuals seeking relief from constipation due to various causes such as dietary changes, medication side effects, or post-operative recovery, providing effective and gentle relief in a convenient syrup form.',
+    introduction:
+      'PICOFIX-PLUS is a gentle laxative syrup combining stimulant and osmotic agents with stool softeners for effective constipation relief without straining. Sodium picosulfate stimulates bowel movements, while liquid paraffin and milk of magnesia soften stools and draw water into the intestines, making it easier to pass stools without discomfort. This makes PICOFIX-PLUS an ideal choice for individuals seeking relief from constipation due to various causes such as dietary changes, medication side effects, or post-operative recovery, providing effective and gentle relief in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PCF-PLS170',
-    therapeutic: 'Gentle, predictable relief of chronic and acute constipation and bowel preparation',
-    indication: 'Short-term relief of severe or chronic constipation, painful anorectal conditions (piles, fissures), pre-diagnostic bowel evacuation',
-    activeIngredient: 'Sodium Picosulfate 3.33mg + Liquid Paraffin 1.25ml + Magnesium Hydroxide (Milk of Magnesia) 3.75ml per 15ml',
+    therapeutic:
+      'Gentle, predictable relief of chronic and acute constipation and bowel preparation',
+    indication:
+      'Short-term relief of severe or chronic constipation, painful anorectal conditions (piles, fissures), pre-diagnostic bowel evacuation',
+    activeIngredient:
+      'Sodium Picosulfate 3.33mg + Liquid Paraffin 1.25ml + Magnesium Hydroxide (Milk of Magnesia) 3.75ml per 15ml',
     strength: '3.33mg + 1.25ml + 3.75ml per 15ml',
-    dosage: 'Adults: 10-15 ml at bedtime with a glass of water; Children (over 5 years): 5 ml at bedtime, or as directed by physician',
+    dosage:
+      'Adults: 10-15 ml at bedtime with a glass of water; Children (over 5 years): 5 ml at bedtime, or as directed by physician',
 
     uses: [
       'Constipation relief',
@@ -6586,7 +7118,8 @@ export const products: Product[] = [
       'Not recommended for prolonged continuous use without medical advice',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from direct sunlight. Do not freeze.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from direct sunlight. Do not freeze.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -6626,12 +7159,15 @@ export const products: Product[] = [
     mrp: 1100,
     imageUrl: '/productswebp/RAPICITA-10.webp',
     imageAlt: 'RAPICITA 10 Escitalopram Oxalate 10mg Film-Coated Tablets',
-    visualAidUrl: '/visualaidswebp/rapicita-10-escitalopram-antidepressant-ssri-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/rapicita-10-escitalopram-antidepressant-ssri-visualaid.webp',
     visualAidAlt: 'RAPICITA 10 - Escitalopram Oxalate Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'RAPICITA 10 | Escitalopram 10mg Antidepressant - Rapid Pharmaceuticals',
-    metaDescription: 'RAPICITA 10 tablets with Escitalopram Oxalate 10mg SSRI for major depressive disorder, generalized anxiety disorder, and panic disorder. MRP ₹1100.',
+    metaTitle:
+      'RAPICITA 10 | Escitalopram 10mg Antidepressant - Rapid Pharmaceuticals',
+    metaDescription:
+      'RAPICITA 10 tablets with Escitalopram Oxalate 10mg SSRI for major depressive disorder, generalized anxiety disorder, and panic disorder. MRP ₹1100.',
     keywords: [
       'rapicita 10',
       'escitalopram 10mg',
@@ -6640,19 +7176,24 @@ export const products: Product[] = [
       'ssri medication',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'RAPICITA 10: Escitalopram Oxalate 10mg Tablets for Depression & Anxiety',
+    seoHeading:
+      'RAPICITA 10: Escitalopram Oxalate 10mg Tablets for Depression & Anxiety',
 
     // Detailed Information
-    introduction: 'RAPICITA 10 is an SSRI antidepressant for treating major depression, anxiety disorders, and panic disorder with good tolerability. Escitalopram works by increasing serotonin levels in the brain, which helps improve mood and reduce anxiety. This makes RAPICITA 10 an ideal choice for individuals seeking effective relief from symptoms of depression and anxiety, providing comprehensive symptom management and improved quality of life in a convenient tablet form.',
+    introduction:
+      'RAPICITA 10 is an SSRI antidepressant for treating major depression, anxiety disorders, and panic disorder with good tolerability. Escitalopram works by increasing serotonin levels in the brain, which helps improve mood and reduce anxiety. This makes RAPICITA 10 an ideal choice for individuals seeking effective relief from symptoms of depression and anxiety, providing comprehensive symptom management and improved quality of life in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-RPC-10',
-    therapeutic: 'Treatment of major depressive disorder and generalized anxiety disorder',
-    indication: 'Major depressive episodes, generalized anxiety disorder (GAD), panic disorder with or without agoraphobia, social anxiety disorder',
+    therapeutic:
+      'Treatment of major depressive disorder and generalized anxiety disorder',
+    indication:
+      'Major depressive episodes, generalized anxiety disorder (GAD), panic disorder with or without agoraphobia, social anxiety disorder',
     activeIngredient: 'Escitalopram Oxalate equivalent to Escitalopram 10mg',
     strength: '10mg',
-    dosage: '10 mg once daily, in the morning or evening with or without food; may be increased to 20 mg daily as directed by psychiatrist',
+    dosage:
+      '10 mg once daily, in the morning or evening with or without food; may be increased to 20 mg daily as directed by psychiatrist',
 
     uses: [
       'Major depression treatment',
@@ -6687,7 +7228,8 @@ export const products: Product[] = [
       'Consult psychiatrist before adjusting dosage',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from moisture and light.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from moisture and light.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -6730,12 +7272,15 @@ export const products: Product[] = [
     mrp: 190,
     imageUrl: '/productswebp/UTERAP.webp',
     imageAlt: 'UTERAP Ayurvedic Herbal Uterine Health Tonic Syrup 200ml',
-    visualAidUrl: '/visualaidswebp/uterap-ayurvedic-herbal-women-health-tonic-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/uterap-ayurvedic-herbal-women-health-tonic-visualaid.webp',
     visualAidAlt: 'UTERAP - Ayurvedic Uterine Tonic Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'UTERAP | Ayurvedic Uterine Health Tonic - Rapid Pharmaceuticals',
-    metaDescription: 'UTERAP Ayurvedic uterine tonic formulated with herbal extracts like Ashok, Lodhra, and Shatavari for menstrual regularity and female wellness. MRP ₹190.',
+    metaTitle:
+      'UTERAP | Ayurvedic Uterine Health Tonic - Rapid Pharmaceuticals',
+    metaDescription:
+      'UTERAP Ayurvedic uterine tonic formulated with herbal extracts like Ashok, Lodhra, and Shatavari for menstrual regularity and female wellness. MRP ₹190.',
     keywords: [
       'uterap',
       'uterine tonic',
@@ -6744,19 +7289,25 @@ export const products: Product[] = [
       'herbal tonic',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'UTERAP: Ayurvedic Herbal Uterine Tonic for Women’s Health & Hormonal Balance',
+    seoHeading:
+      'UTERAP: Ayurvedic Herbal Uterine Tonic for Women’s Health & Hormonal Balance',
 
     // Detailed Information
-    introduction: "UTERAP is a traditional Ayurvedic uterine tonic formulated to support women's reproductive health and hormonal balance during various life stages. This herbal blend contains ingredients known for their potential benefits in regulating the menstrual cycle, supporting uterine health, and alleviating pre-menstrual symptoms. UTERAP is designed to provide natural support for women's reproductive wellness, making it an ideal choice for individuals seeking holistic care for menstrual health, fertility support, and general reproductive well-being in a convenient tonic form.",
+    introduction:
+      "UTERAP is a traditional Ayurvedic uterine tonic formulated to support women's reproductive health and hormonal balance during various life stages. This herbal blend contains ingredients known for their potential benefits in regulating the menstrual cycle, supporting uterine health, and alleviating pre-menstrual symptoms. UTERAP is designed to provide natural support for women's reproductive wellness, making it an ideal choice for individuals seeking holistic care for menstrual health, fertility support, and general reproductive well-being in a convenient tonic form.",
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-UTR-200',
-    therapeutic: 'Herbal uterine tonic for menstrual cycle regulation and reproductive wellness',
-    indication: 'Irregular menstruation, dysmenorrhea, menorrhagia, leucorrhea, premenstrual syndrome (PMS), general female debility',
-    activeIngredient: 'Standardized Ayurvedic Extracts of Ashok Chaal, Lodhra, Shatavari, Dashmool, and Ashwagandha',
+    therapeutic:
+      'Herbal uterine tonic for menstrual cycle regulation and reproductive wellness',
+    indication:
+      'Irregular menstruation, dysmenorrhea, menorrhagia, leucorrhea, premenstrual syndrome (PMS), general female debility',
+    activeIngredient:
+      'Standardized Ayurvedic Extracts of Ashok Chaal, Lodhra, Shatavari, Dashmool, and Ashwagandha',
     strength: '200ml Herbal Syrup',
-    dosage: '10-15 ml twice daily after meals with warm water, or as recommended by Ayurvedic practitioner',
+    dosage:
+      '10-15 ml twice daily after meals with warm water, or as recommended by Ayurvedic practitioner',
 
     uses: [
       'Menstrual cycle regulation',
@@ -6790,7 +7341,8 @@ export const products: Product[] = [
       'Consult physician if irregular bleeding persists',
     ],
 
-    storageConditions: 'Store in a cool, dry and dark place. Keep away from direct sunlight and heat.',
+    storageConditions:
+      'Store in a cool, dry and dark place. Keep away from direct sunlight and heat.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -6829,13 +7381,17 @@ export const products: Product[] = [
     packaging: '100ml',
     mrp: 125,
     imageUrl: '/productswebp/CITRARAP.webp',
-    imageAlt: 'CITRARAP Disodium Hydrogen Citrate 1.25g/5ml Urinary Alkalinizer Syrup 100ml',
-    visualAidUrl: '/visualaidswebp/citrarap-disodium-hydrogen-citrate-uric-acid-visualaid.webp',
+    imageAlt:
+      'CITRARAP Disodium Hydrogen Citrate 1.25g/5ml Urinary Alkalinizer Syrup 100ml',
+    visualAidUrl:
+      '/visualaidswebp/citrarap-disodium-hydrogen-citrate-uric-acid-visualaid.webp',
     visualAidAlt: 'CITRARAP - Disodium Hydrogen Citrate Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CITRARAP | Disodium Hydrogen Citrate 1.25g/5ml Syrup - Rapid Pharmaceuticals',
-    metaDescription: 'CITRARAP systemic urinary alkalinizer syrup containing Disodium Hydrogen Citrate 1.25g/5ml for burning micturition, gout, and kidney stones. MRP ₹125.',
+    metaTitle:
+      'CITRARAP | Disodium Hydrogen Citrate 1.25g/5ml Syrup - Rapid Pharmaceuticals',
+    metaDescription:
+      'CITRARAP systemic urinary alkalinizer syrup containing Disodium Hydrogen Citrate 1.25g/5ml for burning micturition, gout, and kidney stones. MRP ₹125.',
     keywords: [
       'citrarap',
       'disodium hydrogen citrate',
@@ -6844,19 +7400,24 @@ export const products: Product[] = [
       'kidney stone syrup',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'CITRARAP: Disodium Hydrogen Citrate 1.25g/5ml Urinary Alkalinizer Solution',
+    seoHeading:
+      'CITRARAP: Disodium Hydrogen Citrate 1.25g/5ml Urinary Alkalinizer Solution',
 
     // Detailed Information
-    introduction: 'CITRARAP is a pH buffer solution used for treating acidic urine and supporting urinary tract health, particularly useful in preventing kidney stones. Disodium hydrogen citrate works by alkalinizing the urine, which can help prevent the formation of uric acid and calcium oxalate stones, as well as providing relief from urinary tract irritation. This makes CITRARAP an ideal choice for individuals seeking to manage acidic urine, prevent kidney stone formation, or support overall urinary tract health in a convenient syrup form.',
+    introduction:
+      'CITRARAP is a pH buffer solution used for treating acidic urine and supporting urinary tract health, particularly useful in preventing kidney stones. Disodium hydrogen citrate works by alkalinizing the urine, which can help prevent the formation of uric acid and calcium oxalate stones, as well as providing relief from urinary tract irritation. This makes CITRARAP an ideal choice for individuals seeking to manage acidic urine, prevent kidney stone formation, or support overall urinary tract health in a convenient syrup form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CTR-100',
-    therapeutic: 'Urinary alkalinization and treatment of painful burning micturition and hyperuricemia',
-    indication: 'Burning micturition (dysuria), urinary tract infections adjunctive relief, uric acid kidney stones, gout management',
+    therapeutic:
+      'Urinary alkalinization and treatment of painful burning micturition and hyperuricemia',
+    indication:
+      'Burning micturition (dysuria), urinary tract infections adjunctive relief, uric acid kidney stones, gout management',
     activeIngredient: 'Disodium Hydrogen Citrate 1.25g per 5ml',
     strength: '1.25g/5ml',
-    dosage: 'Adults: 10-15 ml diluted in a full glass of water three times daily after meals; Children: 5 ml diluted in water twice daily',
+    dosage:
+      'Adults: 10-15 ml diluted in a full glass of water three times daily after meals; Children: 5 ml diluted in water twice daily',
 
     uses: [
       'Urinary pH neutralization',
@@ -6891,7 +7452,8 @@ export const products: Product[] = [
       'Monitor urinary pH during extended therapy',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from direct sunlight.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from direct sunlight.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -6933,12 +7495,15 @@ export const products: Product[] = [
     mrp: 1100,
     imageUrl: '/productswebp/OFLARAP-OZ.webp',
     imageAlt: 'OFLARAP OZ Ofloxacin 200mg & Ornidazole 500mg Tablets',
-    visualAidUrl: '/visualaidswebp/oflarap-oz-ofloxacin-ornidazole-antibiotic-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/oflarap-oz-ofloxacin-ornidazole-antibiotic-visualaid.webp',
     visualAidAlt: 'OFLARAP OZ - Ofloxacin + Ornidazole Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'OFLARAP OZ | Ofloxacin 200mg + Ornidazole 500mg - Rapid Pharmaceuticals',
-    metaDescription: 'OFLARAP OZ tablets combining Ofloxacin 200mg and Ornidazole 500mg for gastrointestinal infections, amoebiasis, diarrhea, and pelvic infections. MRP ₹1100.',
+    metaTitle:
+      'OFLARAP OZ | Ofloxacin 200mg + Ornidazole 500mg - Rapid Pharmaceuticals',
+    metaDescription:
+      'OFLARAP OZ tablets combining Ofloxacin 200mg and Ornidazole 500mg for gastrointestinal infections, amoebiasis, diarrhea, and pelvic infections. MRP ₹1100.',
     keywords: [
       'oflarap oz',
       'ofloxacin ornidazole',
@@ -6947,19 +7512,24 @@ export const products: Product[] = [
       'gastrointestinal infection',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'OFLARAP OZ: Ofloxacin 200mg & Ornidazole 500mg Tablets for GI Infections',
+    seoHeading:
+      'OFLARAP OZ: Ofloxacin 200mg & Ornidazole 500mg Tablets for GI Infections',
 
     // Detailed Information
-    introduction: "OFLARAP OZ is a combination antibiotic for treating mixed bacterial and parasitic infections, particularly effective for gastrointestinal and genitourinary infections. Ofloxacin provides broad-spectrum antibacterial activity, while ornidazole offers potent antiprotozoal effects, making this combination ideal for treating infections such as traveler's diarrhea, bacterial dysentery, urinary tract infections, and gynecological infections. This makes OFLARAP OZ an effective choice for healthcare providers seeking a comprehensive antibiotic option for managing complex infections in various clinical settings.",
+    introduction:
+      "OFLARAP OZ is a combination antibiotic for treating mixed bacterial and parasitic infections, particularly effective for gastrointestinal and genitourinary infections. Ofloxacin provides broad-spectrum antibacterial activity, while ornidazole offers potent antiprotozoal effects, making this combination ideal for treating infections such as traveler's diarrhea, bacterial dysentery, urinary tract infections, and gynecological infections. This makes OFLARAP OZ an effective choice for healthcare providers seeking a comprehensive antibiotic option for managing complex infections in various clinical settings.",
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-OFL-OZ',
-    therapeutic: 'Treatment of mixed aerobic and anaerobic gastrointestinal and pelvic bacterial infections',
-    indication: 'Acute bacterial diarrhea, amoebic dysentery, dental infections, gynecological infections, mixed intra-abdominal infections',
+    therapeutic:
+      'Treatment of mixed aerobic and anaerobic gastrointestinal and pelvic bacterial infections',
+    indication:
+      'Acute bacterial diarrhea, amoebic dysentery, dental infections, gynecological infections, mixed intra-abdominal infections',
     activeIngredient: 'Ofloxacin 200mg + Ornidazole 500mg',
     strength: '200mg + 500mg per tablet',
-    dosage: 'One tablet twice daily after meals for 3 to 5 days, or as directed by physician',
+    dosage:
+      'One tablet twice daily after meals for 3 to 5 days, or as directed by physician',
 
     uses: [
       "Traveler's diarrhea treatment",
@@ -6994,7 +7564,8 @@ export const products: Product[] = [
       'Avoid excessive exposure to direct sunlight',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from direct light and moisture.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from direct light and moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -7035,12 +7606,15 @@ export const products: Product[] = [
     mrp: 650,
     imageUrl: '/productswebp/PREDIRAP-4.webp',
     imageAlt: 'PREDIRAP 4 Methylprednisolone 4mg Corticosteroid Tablets',
-    visualAidUrl: '/visualaidswebp/predirap-4-methylprednisolone-corticosteroid-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/predirap-4-methylprednisolone-corticosteroid-visualaid.webp',
     visualAidAlt: 'PREDIRAP 4 - Methylprednisolone Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'PREDIRAP 4 | Methylprednisolone 4mg Tablets - Rapid Pharmaceuticals',
-    metaDescription: 'PREDIRAP 4 corticosteroid tablets with Methylprednisolone 4mg for severe inflammatory disorders, arthritis, asthma, and allergic conditions. MRP ₹650.',
+    metaTitle:
+      'PREDIRAP 4 | Methylprednisolone 4mg Tablets - Rapid Pharmaceuticals',
+    metaDescription:
+      'PREDIRAP 4 corticosteroid tablets with Methylprednisolone 4mg for severe inflammatory disorders, arthritis, asthma, and allergic conditions. MRP ₹650.',
     keywords: [
       'predirap 4',
       'methylprednisolone 4mg',
@@ -7048,19 +7622,23 @@ export const products: Product[] = [
       'anti inflammatory steroid',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'PREDIRAP 4: Methylprednisolone 4mg Anti-Inflammatory Corticosteroid Tablets',
+    seoHeading:
+      'PREDIRAP 4: Methylprednisolone 4mg Anti-Inflammatory Corticosteroid Tablets',
 
     // Detailed Information
-    introduction: 'PREDIRAP 4 is a systemic corticosteroid for treating various inflammatory and autoimmune conditions with intermediate duration of action. Methylprednisolone provides potent anti-inflammatory and immunosuppressive effects, making it effective for managing conditions such as rheumatoid arthritis, allergic reactions, respiratory inflammation, and autoimmune diseases. This makes PREDIRAP 4 an ideal choice for healthcare providers seeking a reliable corticosteroid option for controlling inflammation and modulating immune responses in a convenient tablet form.',
+    introduction:
+      'PREDIRAP 4 is a systemic corticosteroid for treating various inflammatory and autoimmune conditions with intermediate duration of action. Methylprednisolone provides potent anti-inflammatory and immunosuppressive effects, making it effective for managing conditions such as rheumatoid arthritis, allergic reactions, respiratory inflammation, and autoimmune diseases. This makes PREDIRAP 4 an ideal choice for healthcare providers seeking a reliable corticosteroid option for controlling inflammation and modulating immune responses in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PRD-4',
     therapeutic: 'Systemic anti-inflammatory and immunosuppressive therapy',
-    indication: 'Rheumatoid arthritis, severe allergic reactions, bronchial asthma, systemic lupus erythematosus (SLE), dermatological inflammations',
+    indication:
+      'Rheumatoid arthritis, severe allergic reactions, bronchial asthma, systemic lupus erythematosus (SLE), dermatological inflammations',
     activeIngredient: 'Methylprednisolone IP 4mg',
     strength: '4mg',
-    dosage: '4 mg to 16 mg daily as a single dose or divided doses, strictly as prescribed by physician',
+    dosage:
+      '4 mg to 16 mg daily as a single dose or divided doses, strictly as prescribed by physician',
 
     uses: [
       'Inflammatory disorders',
@@ -7095,7 +7673,8 @@ export const products: Product[] = [
       'Monitor blood pressure, blood glucose, and bone density on long-term therapy',
     ],
 
-    storageConditions: 'Store in a cool and dry place below 25°C. Protect from moisture and light.',
+    storageConditions:
+      'Store in a cool and dry place below 25°C. Protect from moisture and light.',
     shelfLife: '24 months',
 
     avgRating: 4.4,
@@ -7138,12 +7717,15 @@ export const products: Product[] = [
     mrp: 1100,
     imageUrl: '/productswebp/FEBURAP-40.webp',
     imageAlt: 'FEBURAP 40 Febuxostat 40mg Tablets for Chronic Gout',
-    visualAidUrl: '/visualaidswebp/feburap-40-febuxostat-gout-uric-acid-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/feburap-40-febuxostat-gout-uric-acid-visualaid.webp',
     visualAidAlt: 'FEBURAP 40 - Febuxostat Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'FEBURAP 40 | Febuxostat 40mg Gout Treatment - Rapid Pharmaceuticals',
-    metaDescription: 'FEBURAP 40 tablets with Febuxostat 40mg potent xanthine oxidase inhibitor for lowering uric acid levels in chronic gout and hyperuricemia. MRP ₹1100.',
+    metaTitle:
+      'FEBURAP 40 | Febuxostat 40mg Gout Treatment - Rapid Pharmaceuticals',
+    metaDescription:
+      'FEBURAP 40 tablets with Febuxostat 40mg potent xanthine oxidase inhibitor for lowering uric acid levels in chronic gout and hyperuricemia. MRP ₹1100.',
     keywords: [
       'feburap 40',
       'febuxostat 40mg',
@@ -7152,19 +7734,24 @@ export const products: Product[] = [
       'hyperuricemia treatment',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'FEBURAP 40: Febuxostat 40mg Tablets for Hyperuricemia & Chronic Gout',
+    seoHeading:
+      'FEBURAP 40: Febuxostat 40mg Tablets for Hyperuricemia & Chronic Gout',
 
     // Detailed Information
-    introduction: 'FEBURAP 40 is a selective xanthine oxidase inhibitor for chronic uric acid reduction and long-term prevention of gout attacks. Febuxostat works by inhibiting the enzyme responsible for uric acid production, effectively lowering serum urate levels and preventing the formation of urate crystals that cause gout flares. This makes FEBURAP 40 an ideal choice for individuals with chronic gout or hyperuricemia who require long-term management to reduce the frequency and severity of gout attacks, providing effective uric acid control in a convenient tablet form.',
+    introduction:
+      'FEBURAP 40 is a selective xanthine oxidase inhibitor for chronic uric acid reduction and long-term prevention of gout attacks. Febuxostat works by inhibiting the enzyme responsible for uric acid production, effectively lowering serum urate levels and preventing the formation of urate crystals that cause gout flares. This makes FEBURAP 40 an ideal choice for individuals with chronic gout or hyperuricemia who require long-term management to reduce the frequency and severity of gout attacks, providing effective uric acid control in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-FBR-40',
-    therapeutic: 'Chronic management of hyperuricemia and prevention of gout flare-ups',
-    indication: 'Chronic hyperuricemia in adult patients with gout, prevention of recurrent gouty arthritis attacks',
+    therapeutic:
+      'Chronic management of hyperuricemia and prevention of gout flare-ups',
+    indication:
+      'Chronic hyperuricemia in adult patients with gout, prevention of recurrent gouty arthritis attacks',
     activeIngredient: 'Febuxostat 40mg',
     strength: '40mg',
-    dosage: 'One tablet (40mg) once daily with or without food; may be increased to 80mg daily if uric acid target is not reached after 2-4 weeks',
+    dosage:
+      'One tablet (40mg) once daily with or without food; may be increased to 80mg daily if uric acid target is not reached after 2-4 weeks',
 
     uses: [
       'Chronic gout prevention',
@@ -7198,7 +7785,8 @@ export const products: Product[] = [
       'Consult physician if cardiovascular symptoms occur',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from light and moisture.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from light and moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.7,
@@ -7238,12 +7826,15 @@ export const products: Product[] = [
     mrp: 1100,
     imageUrl: '/productswebp/PANTORIZE-D.webp',
     imageAlt: 'PANTORIZE - D Pantoprazole 40mg & Domperidone 10mg Tablets',
-    visualAidUrl: '/visualaidswebp/pantorize-d-pantoprazole-domperidone-gerd-ppi-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/pantorize-d-pantoprazole-domperidone-gerd-ppi-visualaid.webp',
     visualAidAlt: 'PANTORIZE - D - Pantoprazole + Domperidone Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'PANTORIZE - D | Pantoprazole 40mg + Domperidone 10mg - Rapid Pharmaceuticals',
-    metaDescription: 'PANTORIZE - D tablets combining Pantoprazole 40mg and Domperidone 10mg for acid reflux, peptic ulcers, heartburn, and nausea relief. MRP ₹1100.',
+    metaTitle:
+      'PANTORIZE - D | Pantoprazole 40mg + Domperidone 10mg - Rapid Pharmaceuticals',
+    metaDescription:
+      'PANTORIZE - D tablets combining Pantoprazole 40mg and Domperidone 10mg for acid reflux, peptic ulcers, heartburn, and nausea relief. MRP ₹1100.',
     keywords: [
       'pantorize d',
       'pantoprazole domperidone',
@@ -7252,19 +7843,24 @@ export const products: Product[] = [
       'anti ulcer tablet',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'PANTORIZE - D: Pantoprazole & Domperidone Tablets for GERD & Acid Reflux',
+    seoHeading:
+      'PANTORIZE - D: Pantoprazole & Domperidone Tablets for GERD & Acid Reflux',
 
     // Detailed Information
-    introduction: 'PANTORIZE-D combines a potent proton pump inhibitor with a prokinetic agent for comprehensive GERD and functional dyspepsia management. Pantoprazole provides effective acid suppression to relieve symptoms of gastroesophageal reflux disease (GERD) and promote healing of esophagitis, while domperidone enhances gastric motility and reduces nausea, making this combination ideal for individuals seeking relief from GERD symptoms, functional dyspepsia, and associated gastrointestinal discomfort, providing comprehensive symptom control in a convenient tablet form.',
+    introduction:
+      'PANTORIZE-D combines a potent proton pump inhibitor with a prokinetic agent for comprehensive GERD and functional dyspepsia management. Pantoprazole provides effective acid suppression to relieve symptoms of gastroesophageal reflux disease (GERD) and promote healing of esophagitis, while domperidone enhances gastric motility and reduces nausea, making this combination ideal for individuals seeking relief from GERD symptoms, functional dyspepsia, and associated gastrointestinal discomfort, providing comprehensive symptom control in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-PNT-D40',
-    therapeutic: 'Treatment of gastroesophageal reflux disease, gastric ulcers, and associated nausea',
-    indication: 'Gastroesophageal reflux disease (GERD), erosive esophagitis, peptic and duodenal ulcers, nausea and fullness associated with acid reflux',
+    therapeutic:
+      'Treatment of gastroesophageal reflux disease, gastric ulcers, and associated nausea',
+    indication:
+      'Gastroesophageal reflux disease (GERD), erosive esophagitis, peptic and duodenal ulcers, nausea and fullness associated with acid reflux',
     activeIngredient: 'Pantoprazole Sodium 40mg + Domperidone 10mg',
     strength: '40mg + 10mg per tablet',
-    dosage: 'One tablet once daily in the morning, 30 to 60 minutes before breakfast with a glass of water',
+    dosage:
+      'One tablet once daily in the morning, 30 to 60 minutes before breakfast with a glass of water',
 
     uses: [
       'GERD symptom relief',
@@ -7299,7 +7895,8 @@ export const products: Product[] = [
       'Inform doctor if symptoms persist after 2 weeks',
     ],
 
-    storageConditions: 'Store in a dry place below 25°C. Protect from moisture and direct light.',
+    storageConditions:
+      'Store in a dry place below 25°C. Protect from moisture and direct light.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -7338,12 +7935,15 @@ export const products: Product[] = [
     mrp: 1100,
     imageUrl: '/productswebp/DROTAVIL-M.webp',
     imageAlt: 'DROTAVIL - M Drotaverine 100mg and Mefenamic Acid 250mg Tablets',
-    visualAidUrl: '/visualaidswebp/drotavil-m-drotaverine-mefenamic-acid-pain-visualaid.webp',
+    visualAidUrl:
+      '/visualaidswebp/drotavil-m-drotaverine-mefenamic-acid-pain-visualaid.webp',
     visualAidAlt: 'DROTAVIL - M - Drotaverine + Mefenamic Acid Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'DROTAVIL - M | Drotaverine 100mg + Mefenamic Acid 250mg - Rapid Pharmaceuticals',
-    metaDescription: 'DROTAVIL - M antispasmodic and analgesic tablets with Drotaverine 100mg and Mefenamic Acid 250mg for abdominal cramps, colicky pain, and period pain. MRP ₹1100.',
+    metaTitle:
+      'DROTAVIL - M | Drotaverine 100mg + Mefenamic Acid 250mg - Rapid Pharmaceuticals',
+    metaDescription:
+      'DROTAVIL - M antispasmodic and analgesic tablets with Drotaverine 100mg and Mefenamic Acid 250mg for abdominal cramps, colicky pain, and period pain. MRP ₹1100.',
     keywords: [
       'drotavil m',
       'drotaverine mefenamic acid',
@@ -7352,19 +7952,24 @@ export const products: Product[] = [
       'period pain relief',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'DROTAVIL - M: Drotaverine & Mefenamic Acid Tablets for Spasmodic Pain',
+    seoHeading:
+      'DROTAVIL - M: Drotaverine & Mefenamic Acid Tablets for Spasmodic Pain',
 
     // Detailed Information
-    introduction: 'DROTAVIL-M combines antispasmodic and analgesic-anti-inflammatory properties for effective relief of muscle cramps and menstrual pain. Drotaverine provides smooth muscle relaxation to alleviate spasms, while mefenamic acid offers potent analgesic and anti-inflammatory effects, making this combination ideal for individuals seeking relief from conditions such as dysmenorrhea, muscle cramps, intestinal colic, and abdominal pain, providing comprehensive symptom control in a convenient tablet form.',
+    introduction:
+      'DROTAVIL-M combines antispasmodic and analgesic-anti-inflammatory properties for effective relief of muscle cramps and menstrual pain. Drotaverine provides smooth muscle relaxation to alleviate spasms, while mefenamic acid offers potent analgesic and anti-inflammatory effects, making this combination ideal for individuals seeking relief from conditions such as dysmenorrhea, muscle cramps, intestinal colic, and abdominal pain, providing comprehensive symptom control in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-DRT-M100',
-    therapeutic: 'Relief of smooth muscle spasms, abdominal colic, and spasmodic dysmenorrhea',
-    indication: 'Abdominal pain due to smooth muscle spasm, renal colic, biliary colic, primary dysmenorrhea, irritable bowel syndrome cramps',
+    therapeutic:
+      'Relief of smooth muscle spasms, abdominal colic, and spasmodic dysmenorrhea',
+    indication:
+      'Abdominal pain due to smooth muscle spasm, renal colic, biliary colic, primary dysmenorrhea, irritable bowel syndrome cramps',
     activeIngredient: 'Drotaverine Hydrochloride 100mg + Mefenamic Acid 250mg',
     strength: '100mg + 250mg per tablet',
-    dosage: 'One tablet two to three times daily after food, as directed by physician',
+    dosage:
+      'One tablet two to three times daily after food, as directed by physician',
 
     uses: [
       'Dysmenorrhea (menstrual pain)',
@@ -7399,7 +8004,8 @@ export const products: Product[] = [
       'Use with caution in asthmatic patients',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from light and moisture.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from light and moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.6,
@@ -7431,19 +8037,25 @@ export const products: Product[] = [
     name: 'RAPINAK - MR',
     slug: 'rapinak-mr-aceclofenac-muscle-relaxant-pain',
     composition: 'Aceclofenac + Paracetamol + Chlorzoxazone',
-    fullComposition: 'Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg',
+    fullComposition:
+      'Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg',
     category: 'Tablets',
     therapeuticClass: 'Analgesic',
     packaging: '10x10 Alu Alu',
     mrp: 1200,
     imageUrl: '/productswebp/RAPINAK-MR.webp',
-    imageAlt: 'RAPINAK - MR Aceclofenac 100mg, Paracetamol 500mg & Chlorzoxazone 250mg Tablets',
-    visualAidUrl: '/visualaidswebp/rapinak-mr-aceclofenac-muscle-relaxant-pain-visualaid.webp',
-    visualAidAlt: 'RAPINAK - MR - Aceclofenac + Paracetamol + Chlorzoxazone Visual Aid',
+    imageAlt:
+      'RAPINAK - MR Aceclofenac 100mg, Paracetamol 500mg & Chlorzoxazone 250mg Tablets',
+    visualAidUrl:
+      '/visualaidswebp/rapinak-mr-aceclofenac-muscle-relaxant-pain-visualaid.webp',
+    visualAidAlt:
+      'RAPINAK - MR - Aceclofenac + Paracetamol + Chlorzoxazone Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'RAPINAK - MR | Aceclofenac + Paracetamol + Muscle Relaxant - Rapid Pharmaceuticals',
-    metaDescription: 'RAPINAK - MR triple combination tablets with Aceclofenac 100mg, Paracetamol 500mg, and Chlorzoxazone 250mg for acute muscle spasms, back pain, and stiffness. MRP ₹1200.',
+    metaTitle:
+      'RAPINAK - MR | Aceclofenac + Paracetamol + Muscle Relaxant - Rapid Pharmaceuticals',
+    metaDescription:
+      'RAPINAK - MR triple combination tablets with Aceclofenac 100mg, Paracetamol 500mg, and Chlorzoxazone 250mg for acute muscle spasms, back pain, and stiffness. MRP ₹1200.',
     keywords: [
       'rapinak mr',
       'aceclofenac muscle relaxant',
@@ -7452,19 +8064,25 @@ export const products: Product[] = [
       'muscle pain relief',
       'Rapid Pharmaceuticals',
     ],
-    seoHeading: 'RAPINAK - MR: Aceclofenac, Paracetamol & Chlorzoxazone Muscle Relaxant Tablets',
+    seoHeading:
+      'RAPINAK - MR: Aceclofenac, Paracetamol & Chlorzoxazone Muscle Relaxant Tablets',
 
     // Detailed Information
-    introduction: 'RAPINAK-MR is a triple-action pain relief formula combining NSAID, analgesic, and muscle relaxant for comprehensive pain management in musculoskeletal conditions. Aceclofenac provides potent anti-inflammatory effects, paracetamol offers effective analgesia, and chlorzoxazone relaxes muscle spasms, making this combination ideal for individuals seeking relief from conditions such as musculoskeletal pain with spasm, back pain with muscle tension, neck stiffness, post-operative muscle pain, and sports injuries, providing comprehensive symptom control in a convenient tablet form.',
+    introduction:
+      'RAPINAK-MR is a triple-action pain relief formula combining NSAID, analgesic, and muscle relaxant for comprehensive pain management in musculoskeletal conditions. Aceclofenac provides potent anti-inflammatory effects, paracetamol offers effective analgesia, and chlorzoxazone relaxes muscle spasms, making this combination ideal for individuals seeking relief from conditions such as musculoskeletal pain with spasm, back pain with muscle tension, neck stiffness, post-operative muscle pain, and sports injuries, providing comprehensive symptom control in a convenient tablet form.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-RPN-MR',
-    therapeutic: 'Relief of painful musculoskeletal spasms, acute backache, and stiff neck',
-    indication: 'Acute muscle spasm, low back pain, cervical spondylosis stiffness, torticollis, sprains and sports muscle trauma',
-    activeIngredient: 'Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg',
+    therapeutic:
+      'Relief of painful musculoskeletal spasms, acute backache, and stiff neck',
+    indication:
+      'Acute muscle spasm, low back pain, cervical spondylosis stiffness, torticollis, sprains and sports muscle trauma',
+    activeIngredient:
+      'Aceclofenac 100mg + Paracetamol 500mg + Chlorzoxazone 250mg',
     strength: '100mg + 500mg + 250mg per tablet',
-    dosage: 'One tablet twice daily after meals with a glass of water, as directed by physician',
+    dosage:
+      'One tablet twice daily after meals with a glass of water, as directed by physician',
 
     uses: [
       'Musculoskeletal pain with spasm',
@@ -7499,7 +8117,8 @@ export const products: Product[] = [
       'Do not combine with alcohol or other paracetamol preparations',
     ],
 
-    storageConditions: 'Store in a cool, dry place below 25°C. Protect from direct light and moisture.',
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from direct light and moisture.',
     shelfLife: '24 months',
 
     avgRating: 4.5,
@@ -7530,20 +8149,26 @@ export const products: Product[] = [
   {
     name: 'METHYRAP-PLUS',
     slug: 'methyrap-plus-alpha-lipoic-acid-methylcobalamin-capsules',
-    composition: 'Alpha Lipoic Acid + Folic Acid + Methylcobalamin + Pyridoxine + Thiamine',
-    fullComposition: 'Alpha Lipoic Acid 100mg + Folic Acid 1.5mg + Methylcobalamin 1500mcg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
+    composition:
+      'Alpha Lipoic Acid + Folic Acid + Methylcobalamin + Pyridoxine + Thiamine',
+    fullComposition:
+      'Alpha Lipoic Acid 100mg + Folic Acid 1.5mg + Methylcobalamin 1500mcg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
     category: 'Capsules',
     therapeuticClass: 'Nutritional Supplement',
     packaging: '10x10 Alu Alu',
     mrp: 1500,
     imageUrl: '/productswebp/METHYRAP-PLUS CAP.webp',
     imageAlt: 'METHYRAP-PLUS Alpha Lipoic Acid Methylcobalamin Capsules',
-    visualAidUrl: '/visualaidswebp/methyrap-plus-alpha-lipoic-acid-methylcobalamin-capsules-visualaid.webp',
-    visualAidAlt: 'METHYRAP-PLUS - Alpha Lipoic Acid + Folic Acid + Methylcobalamin + Pyridoxine + Thiamine Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/methyrap-plus-alpha-lipoic-acid-methylcobalamin-capsules-visualaid.webp',
+    visualAidAlt:
+      'METHYRAP-PLUS - Alpha Lipoic Acid + Folic Acid + Methylcobalamin + Pyridoxine + Thiamine Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'METHYRAP-PLUS | Alpha Lipoic Acid + Methylcobalamin - Rapid Pharmaceuticals',
-    metaDescription: 'METHYRAP-PLUS capsules with Alpha Lipoic Acid 100mg, Methylcobalamin 1500mcg and B-Complex for diabetic neuropathy and nerve health. MRP ₹1500.',
+    metaTitle:
+      'METHYRAP-PLUS | Alpha Lipoic Acid + Methylcobalamin - Rapid Pharmaceuticals',
+    metaDescription:
+      'METHYRAP-PLUS capsules with Alpha Lipoic Acid 100mg, Methylcobalamin 1500mcg and B-Complex for diabetic neuropathy and nerve health. MRP ₹1500.',
     keywords: [
       'methyrap plus capsules',
       'alpha lipoic acid',
@@ -7551,19 +8176,25 @@ export const products: Product[] = [
       'folic acid',
       'nerve support',
     ],
-    seoHeading: 'METHYRAP-PLUS: Alpha Lipoic Acid & Methylcobalamin Capsules for Neuropathy',
+    seoHeading:
+      'METHYRAP-PLUS: Alpha Lipoic Acid & Methylcobalamin Capsules for Neuropathy',
 
     // Detailed Information
-    introduction: 'METHYRAP-PLUS is a comprehensive nerve rejuvenating and neuroprotective formula in capsule form. It combines Alpha Lipoic Acid (a powerful antioxidant), Methylcobalamin (active form of Vitamin B12), Folic Acid, Pyridoxine, and Thiamine. This synergistic blend is highly effective in relieving symptoms of diabetic neuropathy, peripheral neuropathy, and nerve pain by promoting nerve regeneration, reducing oxidative stress, and enhancing nerve conduction. This makes METHYRAP-PLUS an ideal choice for healthcare providers seeking a reliable and complete therapy for patients with neuropathy and nerve-related disorders.',
+    introduction:
+      'METHYRAP-PLUS is a comprehensive nerve rejuvenating and neuroprotective formula in capsule form. It combines Alpha Lipoic Acid (a powerful antioxidant), Methylcobalamin (active form of Vitamin B12), Folic Acid, Pyridoxine, and Thiamine. This synergistic blend is highly effective in relieving symptoms of diabetic neuropathy, peripheral neuropathy, and nerve pain by promoting nerve regeneration, reducing oxidative stress, and enhancing nerve conduction. This makes METHYRAP-PLUS an ideal choice for healthcare providers seeking a reliable and complete therapy for patients with neuropathy and nerve-related disorders.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-MTR-PLS-CAP',
-    therapeutic: 'Management of diabetic neuropathy, nerve regeneration, and peripheral nerve pain',
-    indication: 'Peripheral neuropathy, diabetic neuropathy, B-complex deficiencies',
-    activeIngredient: 'Alpha Lipoic Acid 100mg + Methylcobalamin 1500mcg + Folic Acid 1.5mg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
+    therapeutic:
+      'Management of diabetic neuropathy, nerve regeneration, and peripheral nerve pain',
+    indication:
+      'Peripheral neuropathy, diabetic neuropathy, B-complex deficiencies',
+    activeIngredient:
+      'Alpha Lipoic Acid 100mg + Methylcobalamin 1500mcg + Folic Acid 1.5mg + Pyridoxine Hydrochloride 3mg + Thiamine Mononitrate 10mg',
     strength: '100mg + 1500mcg + 1.5mg + 3mg + 10mg per capsule',
-    dosage: 'One capsule once daily with water after meals, or as directed by physician',
+    dosage:
+      'One capsule once daily with water after meals, or as directed by physician',
 
     uses: [
       'Treatment of diabetic and peripheral neuropathy',
@@ -7591,7 +8222,8 @@ export const products: Product[] = [
       'Consult doctor if pregnant/breastfeeding',
     ],
 
-    storageConditions: 'Store in a cool, dry place. Protect from light and moisture.',
+    storageConditions:
+      'Store in a cool, dry place. Protect from light and moisture.',
     shelfLife: '18 months',
 
     avgRating: 4.8,
@@ -7627,19 +8259,24 @@ export const products: Product[] = [
     name: 'CALZIRAP D3',
     slug: 'calzirap-d3-calcium-carbonate-vitamin-d3-suspension',
     composition: 'Calcium Carbonate + Vitamin D3',
-    fullComposition: 'Calcium Carbonate Equivalent to Elemental Calcium 250mg + Vitamin D3 200 IU per 5ml Suspension',
+    fullComposition:
+      'Calcium Carbonate Equivalent to Elemental Calcium 250mg + Vitamin D3 200 IU per 5ml Suspension',
     category: 'Syrup/Suspension',
     therapeuticClass: 'Calcium & Vitamin D3 Supplement',
     packaging: '200Ml',
     mrp: 150,
     imageUrl: '/productswebp/CALZIRAP-D3.webp',
     imageAlt: 'CALZIRAP D3 Calcium Carbonate Vitamin D3 Suspension',
-    visualAidUrl: '/visualaidswebp/calzirap-d3-calcium-carbonate-vitamin-d3-suspension-visualaid.webp',
-    visualAidAlt: 'CALZIRAP D3 - Calcium Carbonate + Vitamin D3 Suspension Visual Aid',
+    visualAidUrl:
+      '/visualaidswebp/calzirap-d3-calcium-carbonate-vitamin-d3-suspension-visualaid.webp',
+    visualAidAlt:
+      'CALZIRAP D3 - Calcium Carbonate + Vitamin D3 Suspension Visual Aid',
 
     // SEO Optimization
-    metaTitle: 'CALZIRAP D3 | Calcium Carbonate + Vitamin D3 Suspension - Rapid Pharmaceuticals',
-    metaDescription: 'CALZIRAP D3 suspension with Calcium Carbonate and Vitamin D3 for calcium supplementation, bone health and prevention of nutritional deficiencies. 200ml suspension by Rapid Pharmaceuticals.',
+    metaTitle:
+      'CALZIRAP D3 | Calcium Carbonate + Vitamin D3 Suspension - Rapid Pharmaceuticals',
+    metaDescription:
+      'CALZIRAP D3 suspension with Calcium Carbonate and Vitamin D3 for calcium supplementation, bone health and prevention of nutritional deficiencies. 200ml suspension by Rapid Pharmaceuticals.',
     keywords: [
       'calzirap d3 suspension',
       'calzirap d3',
@@ -7650,19 +8287,25 @@ export const products: Product[] = [
       'vitamin d3 supplement',
       'bone health supplement',
     ],
-    seoHeading: 'CALZIRAP D3: Calcium Carbonate & Vitamin D3 Suspension for Bone Health',
+    seoHeading:
+      'CALZIRAP D3: Calcium Carbonate & Vitamin D3 Suspension for Bone Health',
 
     // Detailed Information
-    introduction: 'CALZIRAP D3 is a calcium and vitamin D3 suspension formulated to support healthy bones and teeth and help maintain adequate calcium levels in the body. Calcium is an essential mineral required for normal bone formation, muscle function, and nerve transmission, while Vitamin D3 helps improve calcium absorption and utilization. CALZIRAP D3 provides nutritional supplementation for individuals with increased calcium and vitamin D requirements and may be used to support bone health and help prevent nutritional deficiencies. Its convenient suspension formulation makes it easy to administer as directed by a healthcare professional.',
+    introduction:
+      'CALZIRAP D3 is a calcium and vitamin D3 suspension formulated to support healthy bones and teeth and help maintain adequate calcium levels in the body. Calcium is an essential mineral required for normal bone formation, muscle function, and nerve transmission, while Vitamin D3 helps improve calcium absorption and utilization. CALZIRAP D3 provides nutritional supplementation for individuals with increased calcium and vitamin D requirements and may be used to support bone health and help prevent nutritional deficiencies. Its convenient suspension formulation makes it easy to administer as directed by a healthcare professional.',
 
     // Structured Data
     manufacturer: 'Rapid Pharmaceuticals',
     productCode: 'RPH-CAL-D3-SYP',
-    therapeutic: 'Pediatric and adult calcium and Vitamin D3 supplementation for bone and teeth health',
-    indication: 'Calcium and Vitamin D3 deficiency, nutritional supplementation, bone health support',
-    activeIngredient: 'Calcium Carbonate Equivalent to Elemental Calcium 500mg + Vitamin D3 200 IU per 5ml',
+    therapeutic:
+      'Pediatric and adult calcium and Vitamin D3 supplementation for bone and teeth health',
+    indication:
+      'Calcium and Vitamin D3 deficiency, nutritional supplementation, bone health support',
+    activeIngredient:
+      'Calcium Carbonate Equivalent to Elemental Calcium 500mg + Vitamin D3 200 IU per 5ml',
     strength: 'Elemental Calcium 500mg + Vitamin D3 200 IU per 5ml',
-    dosage: '5-10 ml once or twice daily after meals, or as prescribed by physician',
+    dosage:
+      '5-10 ml once or twice daily after meals, or as prescribed by physician',
 
     uses: [
       'Calcium and Vitamin D3 supplementation',
@@ -7698,7 +8341,8 @@ export const products: Product[] = [
       'Maintain an appropriate gap from medicines whose absorption may be affected by calcium',
     ],
 
-    storageConditions: 'Store in a cool, dry place. Protect from direct sunlight. Keep out of reach of children.',
+    storageConditions:
+      'Store in a cool, dry place. Protect from direct sunlight. Keep out of reach of children.',
     shelfLife: '18 months',
 
     avgRating: 4.7,
@@ -7732,6 +8376,165 @@ export const products: Product[] = [
         question: 'Can CALZIRAP D3 cause constipation?',
         answer:
           'Yes, some people taking calcium supplements may experience constipation, bloating, or mild abdominal discomfort. If symptoms persist or become severe, consult a healthcare professional.',
+      },
+    ],
+  },
+  {
+    name: 'RAPINOVA DROPS',
+    slug: 'rapinova-drops-multivitamin-multiminerals-l-lysine-biotin-drops',
+    composition: 'Multivitamin, Multiminerals & L-Lysine with Biotin Drops',
+    fullComposition:
+      'Each ml contains: Vitamin A (as Palmitate) 2500 IU + Vitamin D3 200 IU + Vitamin E Acetate 2.5 IU + Vitamin B1 (Thiamine HCl) 1mg + Vitamin B2 (Riboflavin Sodium Phosphate) 1mg + Vitamin B6 (Pyridoxine HCl) 1mg + Nicotinamide (Vitamin B3) 10mg + D-Panthenol 2.5mg + Biotin (Vitamin B7) 10mcg + L-Lysine Hydrochloride 20mg + Zinc Gluconate Equivalent to Elemental Zinc 3mg + Manganese Chloride 0.5mg + Potassium Iodide Equivalent to Elemental Iodine 50mcg + Copper Sulphate 100mcg',
+    category: 'Drops',
+    therapeuticClass: 'Pediatric Nutritional Supplement',
+    packaging: '30ml with Dropper',
+    mrp: 84.75,
+    imageUrl: '/productswebp/RAPINOVADROPS.webp',
+    imageAlt:
+      'RAPINOVA DROPS Multivitamin Multimineral L-Lysine and Biotin Oral Drops',
+    visualAidUrl:
+      '/visualaidswebp/rapinova-drops-multivitamin-multiminerals-l-lysine-biotin-drops-visualaid.webp',
+    visualAidAlt:
+      'RAPINOVA DROPS Multivitamin Multimineral L-Lysine and Biotin Visual Aid',
+
+    // SEO Optimization
+    metaTitle:
+      'RAPINOVA Drops | Multivitamin, Multiminerals, L-Lysine & Biotin Drops',
+    metaDescription:
+      'RAPINOVA Drops is a pediatric multivitamin, multimineral, L-Lysine and Biotin supplement that supports healthy growth, appetite, immunity, cognitive development and overall nutrition in infants and children. Available in 30ml dropper bottle from Rapid Pharmaceuticals.',
+    keywords: [
+      'rapinova drops',
+      'multivitamin drops',
+      'multimineral drops',
+      'l lysine drops',
+      'biotin drops',
+      'multivitamin drops for babies',
+      'multivitamin drops for infants',
+      'multivitamin drops for toddlers',
+      'pediatric multivitamin drops',
+      'growth drops for children',
+      'appetite booster drops for kids',
+      'lysine drops for children',
+      'baby vitamin drops',
+      'infant nutritional supplement',
+      'zinc drops for children',
+      'immune support drops',
+      'vitamin d3 drops for babies',
+      'child nutrition supplement',
+      'Rapid Pharmaceuticals',
+    ],
+    seoHeading:
+      'RAPINOVA Drops: Pediatric Multivitamin, Multiminerals, L-Lysine & Biotin Supplement',
+
+    // Detailed Information
+    introduction:
+      'RAPINOVA Drops is a pediatric nutritional supplement containing essential vitamins, minerals, L-Lysine and Biotin that helps support normal growth and development in infants and children. The formulation provides key micronutrients that contribute to healthy immune function, energy metabolism, bone development and overall wellbeing. L-Lysine supports normal protein synthesis and growth, while Biotin and B-complex vitamins contribute to metabolic processes and nervous system health. RAPINOVA Drops helps bridge nutritional gaps and support daily nutritional requirements when used as directed by a healthcare professional.',
+
+    // Structured Data
+    manufacturer: 'Rapid Pharmaceuticals',
+    productCode: 'RPH-RPN-DRP30',
+    therapeutic:
+      'Pediatric nutritional supplementation for healthy growth, appetite support, immune function and overall development',
+    indication:
+      'Nutritional deficiencies, poor appetite, growth support, convalescence after illness, immune support and routine pediatric nutritional supplementation',
+    activeIngredient:
+      'Multivitamins + Multiminerals + L-Lysine Hydrochloride 20mg + Biotin 10mcg per ml',
+    strength:
+      'L-Lysine Hydrochloride 20mg + Biotin 10mcg with Vitamins A, D3, E, B-Complex and Essential Trace Minerals per ml',
+    dosage:
+      'Infants (below 1 year): 0.5ml daily. Children (1-3 years): 1ml daily or as directed by the pediatrician. Administer using the calibrated dropper.',
+    uses: [
+      'Supports healthy growth and development in infants and children',
+      'Helps prevent and manage nutritional deficiencies',
+      'Supports healthy appetite and nutritional intake',
+      'Supports normal immune function',
+      'Contributes to healthy bone and teeth development',
+      'Supports cognitive and nervous system development',
+      'Provides nutritional support during recovery from illness',
+      'Helps meet daily vitamin and mineral requirements',
+    ],
+    sideEffects: [
+      'Generally well tolerated when used as recommended',
+      'Mild stomach discomfort',
+      'Nausea',
+      'Temporary digestive disturbances',
+      'Rarely, allergic reactions in sensitive individuals',
+    ],
+    contraindications: [
+      'Hypersensitivity to any ingredient of the formulation',
+      'Hypervitaminosis A',
+      'Hypervitaminosis D',
+    ],
+    safetyAdvice: [
+      'Use only the supplied calibrated dropper',
+      'Administer as directed by the pediatrician',
+      'Do not exceed the recommended dosage',
+      'Can be given directly or mixed with milk, juice or food if advised by the physician',
+      'Keep the bottle tightly closed after use',
+      'Store in a cool and dry place',
+      'Keep out of reach of children',
+    ],
+    precautions: [
+      'Shake well before use',
+      'Consult a healthcare professional before use in premature infants',
+      'Do not use as a substitute for a balanced diet',
+      'Follow the prescribed dosage instructions',
+      'Avoid accidental overdose by keeping out of reach of children',
+    ],
+    storageConditions:
+      'Store below 25°C in a cool and dry place. Protect from heat, moisture and direct sunlight. Keep out of reach of children.',
+    shelfLife: '18 months',
+    avgRating: 4.8,
+    reviewCount: 98,
+    medicalCategory: 'Vitamins',
+    authorName: 'Dr. Vikram Chopra, Pediatric Health Specialist',
+    publicationDate: '2026-03-15',
+    updatedDate: '2026-10-10',
+    faqItems: [
+      {
+        question: 'What are RAPINOVA Drops used for?',
+        answer:
+          'RAPINOVA Drops are used as a pediatric nutritional supplement to support healthy growth, development, immunity and overall nutritional wellbeing in infants and children.',
+      },
+      {
+        question: 'How should RAPINOVA Drops be administered?',
+        answer:
+          'RAPINOVA Drops should be administered using the provided calibrated dropper in the dose recommended by your pediatrician. They may be given directly or mixed with food or beverages if advised.',
+      },
+      {
+        question: 'Why is L-Lysine included in RAPINOVA Drops?',
+        answer:
+          'L-Lysine is an essential amino acid that supports normal growth, protein synthesis and healthy nutritional development in growing children.',
+      },
+      {
+        question: 'What role does Biotin play in RAPINOVA Drops?',
+        answer:
+          'Biotin supports normal metabolism and contributes to healthy skin, hair and nervous system function.',
+      },
+      {
+        question: 'Can RAPINOVA Drops improve appetite in children?',
+        answer:
+          'RAPINOVA Drops contains L-Lysine, which may help support healthy appetite and nutritional intake in children when used as part of a balanced diet.',
+      },
+      {
+        question: 'At what age can RAPINOVA Drops be used?',
+        answer:
+          'RAPINOVA Drops may be recommended for infants and young children. The appropriate dosage and duration should be determined by a pediatrician.',
+      },
+      {
+        question: 'Do RAPINOVA Drops contain Vitamin D3?',
+        answer:
+          'Yes. RAPINOVA Drops contains Vitamin D3 along with other essential vitamins and minerals that help support bone growth and immune function.',
+      },
+      {
+        question: 'Can RAPINOVA Drops be used during recovery from illness?',
+        answer:
+          'Yes. RAPINOVA Drops may be recommended as nutritional support during recovery from illness to help replenish essential vitamins and minerals.',
+      },
+      {
+        question: 'Are RAPINOVA Drops safe for daily use?',
+        answer:
+          'When used in the recommended dosage under medical supervision, RAPINOVA Drops are generally safe for daily pediatric nutritional supplementation.',
       },
     ],
   },
