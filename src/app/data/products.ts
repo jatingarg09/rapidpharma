@@ -8538,4 +8538,299 @@ export const products: Product[] = [
       },
     ],
   },
+  {
+    name: 'RAPIBIOTIC',
+    slug: 'rapibiotic-multistrain-prebiotic-probiotic-capsules',
+    composition:
+      'Multi-Strain Prebiotic & Probiotic Capsules Fortified with FOS',
+    fullComposition:
+      'Each Hard Gelatin Capsule Contains: Lactobacillus Acidophilus 0.5 Billion Spores + Lactobacillus Rhamnosus 0.5 Billion Spores + Bifidobacterium Longum 0.5 Billion Spores + Saccharomyces Boulardii 0.5 Billion Spores + Streptococcus Thermophilus 0.25 Billion Spores + Fructo Oligosaccharides (FOS) 100mg',
+    category: 'Capsules',
+    therapeuticClass: 'Probiotic & Gut Health Supplement',
+    packaging: '10x10 Alu Alu',
+    mrp: 2100,
+    imageUrl: '/upcoming.png',
+    imageAlt: 'RAPIBIOTIC Multi-Strain Prebiotic and Probiotic Capsules',
+    visualAidUrl: '/upcoming.png',
+    visualAidAlt:
+      'RAPIBIOTIC Multi-Strain Prebiotic and Probiotic Capsules Visual Aid',
+    // SEO Optimization
+
+    metaTitle:
+      'RAPIBIOTIC Capsules | Multi-Strain Prebiotic & Probiotic with FOS',
+    metaDescription:
+      'RAPIBIOTIC Capsules contain a multi-strain probiotic blend with Lactobacillus, Bifidobacterium, Saccharomyces Boulardii and FOS to support digestive health, gut flora balance and intestinal wellness.',
+    keywords: [
+      'rapibiotic capsules',
+      'probiotic capsules',
+      'prebiotic probiotic capsules',
+      'multistrain probiotic capsules',
+      'probiotic with fos',
+      'gut health capsules',
+      'digestive health capsules',
+      'lactobacillus acidophilus capsules',
+      'lactobacillus rhamnosus capsules',
+      'bifidobacterium longum capsules',
+      'saccharomyces boulardii capsules',
+      'intestinal flora supplement',
+      'gut microbiome supplement',
+      'probiotic after antibiotics',
+      'capsules for loose motions',
+      'capsules for gut health',
+      'best probiotic capsules',
+      'Rapid Pharmaceuticals',
+    ],
+    seoHeading:
+      'RAPIBIOTIC Capsules: Multi-Strain Prebiotic & Probiotic Formula with FOS',
+
+    // Detailed Information
+    introduction:
+      'RAPIBIOTIC Capsules are a scientifically formulated multi-strain prebiotic and probiotic supplement fortified with Fructo Oligosaccharides (FOS). The formulation combines beneficial probiotic strains including Lactobacillus Acidophilus, Lactobacillus Rhamnosus, Bifidobacterium Longum, Saccharomyces Boulardii and Streptococcus Thermophilus to support healthy intestinal microflora. FOS acts as a prebiotic, nourishing beneficial gut bacteria and promoting their growth. RAPIBIOTIC Capsules help maintain digestive balance, support gut microbiome health and contribute to overall gastrointestinal wellness.',
+
+    // Structured Data
+    manufacturer: 'Rapid Pharmaceuticals',
+    productCode: 'RPH-RPB-CAP',
+    therapeutic:
+      'Digestive health support, intestinal flora restoration and gut microbiome maintenance',
+    indication:
+      'Gut flora imbalance, digestive wellness, antibiotic-associated dysbiosis, intestinal health support and probiotic supplementation',
+    activeIngredient:
+      'Lactobacillus Acidophilus + Lactobacillus Rhamnosus + Bifidobacterium Longum + Saccharomyces Boulardii + Streptococcus Thermophilus + Fructo Oligosaccharides (FOS)',
+    strength: '2.25 Billion CFU Probiotic Blend with FOS 100mg per Capsule',
+    dosage:
+      'One capsule once or twice daily after meals or as directed by the healthcare professional.',
+    uses: [
+      'Supports healthy intestinal microflora',
+      'Promotes digestive wellness',
+      'Helps restore gut flora during and after antibiotic therapy',
+      'Supports gastrointestinal health',
+      'Maintains healthy gut microbiome balance',
+      'Supports intestinal function and digestive comfort',
+      'Provides beneficial probiotic supplementation',
+      'Supports overall digestive wellbeing',
+    ],
+    sideEffects: [
+      'Mild bloating',
+      'Temporary abdominal discomfort',
+      'Flatulence',
+      'Mild digestive disturbances',
+      'Rare allergic reactions',
+    ],
+    contraindications: [
+      'Hypersensitivity to any ingredient of the formulation',
+      'Use under medical supervision in severely immunocompromised individuals',
+    ],
+    safetyAdvice: [
+      'Take after meals for best tolerance',
+      'Do not exceed recommended dosage',
+      'Maintain adequate hydration',
+      'Store in a cool and dry place',
+      'Protect from heat and moisture',
+      'Keep out of reach of children',
+    ],
+    precautions: [
+      'Consult your physician before use if you have underlying medical conditions',
+      'Use cautiously in immunocompromised patients',
+      'Consult a healthcare professional during pregnancy or breastfeeding',
+      'Seek medical advice if symptoms persist',
+    ],
+    storageConditions:
+      'Store below 25°C in a cool, dry place. Protect from moisture and direct sunlight.',
+    shelfLife: '24 Months',
+    avgRating: 4.8,
+    reviewCount: 112,
+    medicalCategory: 'Probiotic',
+    authorName: 'Dr. Pooja Rao, Clinical Nutritionist',
+    publicationDate: '2024-06-15',
+    updatedDate: '2025-04-15',
+    faqItems: [
+      {
+        question: 'What are RAPIBIOTIC Capsules used for?',
+        answer:
+          'RAPIBIOTIC Capsules are used to support digestive health, maintain healthy gut flora and promote a balanced intestinal microbiome.',
+      },
+      {
+        question: 'Can RAPIBIOTIC Capsules be taken with antibiotics?',
+        answer:
+          'RAPIBIOTIC Capsules are commonly used during or after antibiotic therapy to help maintain beneficial gut bacteria and support intestinal microbial balance.',
+      },
+      {
+        question: 'What probiotic strains are present in RAPIBIOTIC Capsules?',
+        answer:
+          'RAPIBIOTIC contains Lactobacillus Acidophilus, Lactobacillus Rhamnosus, Bifidobacterium Longum, Saccharomyces Boulardii and Streptococcus Thermophilus along with FOS.',
+      },
+      {
+        question: 'What is the role of FOS in RAPIBIOTIC Capsules?',
+        answer:
+          'Fructo Oligosaccharides (FOS) act as a prebiotic and help nourish beneficial probiotic bacteria, supporting their growth and activity in the digestive tract.',
+      },
+      {
+        question: 'Can RAPIBIOTIC Capsules support gut health?',
+        answer:
+          'Yes, RAPIBIOTIC Capsules help maintain healthy intestinal microflora and support overall digestive wellbeing.',
+      },
+      {
+        question: 'How should RAPIBIOTIC Capsules be taken?',
+        answer:
+          'Take RAPIBIOTIC Capsules after meals in the dose and duration prescribed by your healthcare professional.',
+      },
+      {
+        question: 'Can RAPIBIOTIC Capsules be taken daily?',
+        answer:
+          'Yes, RAPIBIOTIC Capsules may be used daily when recommended by a healthcare professional.',
+      },
+      {
+        question:
+          'What makes RAPIBIOTIC different from regular probiotic supplements?',
+        answer:
+          'RAPIBIOTIC combines multiple probiotic strains with FOS prebiotic support, helping provide comprehensive gut microbiome and digestive health support.',
+      },
+    ],
+  },
+  {
+    name: 'RAPISULAN SR',
+    slug: 'rapisulan-0-4-sr-tamsulosin-modified-release-capsules',
+    composition: 'Tamsulosin Hydrochloride 0.4mg Modified Release Capsules',
+    fullComposition:
+      'Each Modified Release Capsule Contains: Tamsulosin Hydrochloride 0.4mg',
+    category: 'Capsules',
+    therapeuticClass: 'Urology',
+    packaging: '10x10 Blister',
+    mrp: 1600,
+    imageUrl: '/upcoming.png',
+    imageAlt:
+      'RAPISULAN 0.4 SR Tamsulosin Hydrochloride 0.4mg Modified Release Capsules',
+    visualAidUrl: '/upcoming.png',
+    visualAidAlt:
+      'RAPISULAN 0.4 SR Tamsulosin 0.4mg Modified Release Capsules Visual Aid',
+
+    // SEO Optimization
+    metaTitle:
+      'RAPISULAN 0.4 SR | Tamsulosin Hydrochloride 0.4mg Modified Release Capsules',
+    metaDescription:
+      'RAPISULAN 0.4 SR contains Tamsulosin Hydrochloride 0.4mg modified release capsules used for the management of lower urinary tract symptoms associated with benign prostatic hyperplasia (BPH).',
+    keywords: [
+      'rapisulan 0.4 sr',
+      'tamsulosin 0.4 mg capsule',
+      'tamsulosin modified release capsules',
+      'tamsulosin hydrochloride 0.4mg',
+      'bph treatment',
+      'benign prostatic hyperplasia treatment',
+      'prostate enlargement medicine',
+      'urinary symptoms treatment',
+      'urology medicine',
+      'difficulty urination treatment',
+      'alpha blocker capsules',
+      'tamsulosin capsule',
+      'rapid pharmaceuticals',
+      'lower urinary tract symptoms',
+      'prostate health medicine',
+    ],
+    seoHeading:
+      'RAPISULAN 0.4 SR: Tamsulosin Hydrochloride 0.4mg Modified Release Capsules',
+
+    // Detailed Information
+    introduction:
+      'RAPISULAN 0.4 SR contains Tamsulosin Hydrochloride 0.4mg in a modified release formulation. Tamsulosin is a selective alpha-1 adrenergic receptor blocker that helps relax the smooth muscles of the prostate gland and bladder neck, thereby improving urinary flow and reducing lower urinary tract symptoms associated with benign prostatic hyperplasia (BPH). The modified release formulation provides controlled drug release for sustained therapeutic effect throughout the day.',
+
+    // Structured Data
+    manufacturer: 'Rapid Pharmaceuticals',
+    productCode: 'RPH-RPS-04SR',
+    therapeutic:
+      'Management of lower urinary tract symptoms associated with benign prostatic hyperplasia (BPH)',
+    indication:
+      'Benign prostatic hyperplasia (BPH), enlarged prostate, urinary hesitancy, weak urinary stream, incomplete bladder emptying, increased urinary frequency and nocturia',
+    activeIngredient: 'Tamsulosin Hydrochloride 0.4mg',
+    strength: 'Tamsulosin Hydrochloride 0.4mg Modified Release',
+    dosage:
+      'One capsule once daily after the same meal each day or as directed by the physician.',
+    uses: [
+      'Management of benign prostatic hyperplasia (BPH)',
+      'Helps improve urinary flow',
+      'Reduces urinary hesitancy',
+      'Helps decrease incomplete bladder emptying',
+      'Provides relief from lower urinary tract symptoms',
+      'Helps reduce urinary frequency and nocturia',
+    ],
+    sideEffects: [
+      'Dizziness',
+      'Headache',
+      'Weakness',
+      'Orthostatic hypotension',
+      'Runny or blocked nose',
+      'Abnormal ejaculation',
+      'Rare allergic reactions',
+    ],
+    contraindications: [
+      'Hypersensitivity to Tamsulosin or any component of the formulation',
+      'History of severe orthostatic hypotension',
+      'Patients with known allergy to Tamsulosin',
+    ],
+    safetyAdvice: [
+      'Take the capsule after the same meal each day',
+      'Swallow the capsule whole without crushing or chewing',
+      'Avoid sudden standing from a sitting or lying position',
+      'Use caution while driving if dizziness occurs',
+      'Take only as prescribed by your physician',
+      'Keep out of reach of children',
+    ],
+    precautions: [
+      'Use with caution in patients with severe liver impairment',
+      'Inform your ophthalmologist before cataract or glaucoma surgery',
+      'Monitor for dizziness or low blood pressure, especially during treatment initiation',
+      'Consult your doctor regarding concurrent use with antihypertensive medicines',
+    ],
+    storageConditions:
+      'Store in a cool, dry place below 25°C. Protect from moisture and direct sunlight.',
+    shelfLife: '24 Months',
+    avgRating: 4.8,
+    reviewCount: 84,
+    medicalCategory: 'Urology',
+    authorName: 'Dr. Rajeev Sharma, Consultant Urologist',
+    publicationDate: '2024-07-01',
+    updatedDate: '2025-05-15',
+    faqItems: [
+      {
+        question: 'What is RAPISULAN 0.4 SR used for?',
+        answer:
+          'RAPISULAN 0.4 SR is used for the management of lower urinary tract symptoms caused by benign prostatic hyperplasia (BPH), also known as prostate enlargement.',
+      },
+      {
+        question: 'How does Tamsulosin work?',
+        answer:
+          'Tamsulosin relaxes the muscles in the prostate gland and bladder neck, helping urine flow more easily and reducing urinary symptoms.',
+      },
+      {
+        question: 'When should RAPISULAN 0.4 SR be taken?',
+        answer:
+          'RAPISULAN 0.4 SR is usually taken once daily after the same meal each day or as directed by the physician.',
+      },
+      {
+        question: 'Can RAPISULAN 0.4 SR cure enlarged prostate?',
+        answer:
+          'RAPISULAN 0.4 SR helps manage and relieve symptoms of enlarged prostate but does not cure the underlying condition.',
+      },
+      {
+        question: 'Can RAPISULAN 0.4 SR cause dizziness?',
+        answer:
+          'Yes. Some patients may experience dizziness, especially when standing up quickly. Rising slowly from sitting or lying positions may help reduce this effect.',
+      },
+      {
+        question:
+          'Can RAPISULAN 0.4 SR be taken with blood pressure medicines?',
+        answer:
+          'Tamsulosin may interact with certain blood pressure medicines. Consult your physician before taking them together.',
+      },
+      {
+        question: 'What should I do if I miss a dose?',
+        answer:
+          'Take the missed dose as soon as you remember. If it is almost time for the next dose, skip the missed dose and continue your regular schedule. Do not take a double dose.',
+      },
+      {
+        question: 'Is RAPISULAN 0.4 SR suitable for women?',
+        answer:
+          'RAPISULAN 0.4 SR is primarily prescribed for adult male patients with benign prostatic hyperplasia and should only be used as directed by a healthcare professional.',
+      },
+    ],
+  },
 ];
