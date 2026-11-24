@@ -7,14 +7,13 @@ import {
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { blogPosts, BlogPost } from '../../data/blog-posts';
-import { LdJsonService } from '../../services/ld-json.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
   latestBlogs: BlogPost[] = blogPosts.slice(-3);
 
   sampleProducts = [
@@ -54,36 +53,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   slideshowIndex = 0;
   slideshowTimer: any;
   displayedProducts: any[] = [];
-  constructor(
-    @Inject(PLATFORM_ID) private platformId: Object,
-    private ldJsonService: LdJsonService,
-  ) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
 
   ngOnInit(): void {
-    this.injectSchema();
     this.updateDisplayedProducts();
     if (isPlatformBrowser(this.platformId) && this.sampleProducts.length > 0) {
       this.startSlideshow();
     }
-  }
-
-  injectSchema() {
-    const schema = {
-      '@context': 'http://schema.org/',
-      '@type': 'Product',
-      name: 'Rapid Pharmaceuticals',
-      description:
-        'Rapid Pharmaceuticals is a leading pharma distributor and PCD franchise provider in India, with over 25 years of experience, a modern catalog, and a trusted manufacturing network.',
-      aggregateRating: {
-        '@type': 'AggregateRating',
-        ratingValue: '5',
-        bestRating: '5',
-        worstRating: '1',
-        ratingCount: '1839',
-      },
-    };
-
-    this.ldJsonService.setSchema(schema);
   }
 
   startSlideshow() {
@@ -106,12 +82,5 @@ export class HomeComponent implements OnInit, OnDestroy {
       result.push(this.sampleProducts[(this.slideshowIndex + i) % total]);
     }
     this.displayedProducts = result;
-  }
-
-  ngOnDestroy() {
-    if (this.slideshowTimer) {
-      clearInterval(this.slideshowTimer);
-    }
-    this.ldJsonService.removeSchema();
   }
 }

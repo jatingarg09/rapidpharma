@@ -4,6 +4,7 @@ import { Meta, Title } from '@angular/platform-browser';
 import { Product, products } from '../../data/products';
 import { CanonicalService } from '../../services/canonicalService';
 import { LdJsonService } from '../../services/ld-json.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-product-detail',
@@ -15,6 +16,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
   similarProducts: Product[] = [];
   selectedImageUrl: string = '';
   selectedImageAlt: string = '';
+  private routeSubscription?: Subscription;
 
   constructor(
     private route: ActivatedRoute,
@@ -25,18 +27,12 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     private ldJsonService: LdJsonService,
   ) {}
 
-  ngOnInit() {
-    // 1) Synchronously read slug so SSR has product before render
-    const slug = this.route.snapshot.paramMap.get('slug');
-    if (slug) {
-      this.loadProduct(slug);
-    }
+  ngOnInit(): void {
+    this.routeSubscription = this.route.paramMap.subscribe((params) => {
+      const slug = params.get('slug');
 
-    // If you still want to react when route params change in-browser:
-    this.route.paramMap.subscribe((params) => {
-      const s = params.get('slug');
-      if (s && s !== this.product?.slug) {
-        this.loadProduct(s);
+      if (slug && slug !== this.product?.slug) {
+        this.loadProduct(slug);
       }
     });
   }
@@ -44,9 +40,9 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
   loadProduct(slug: string) {
     // 2) Synchronously set product from your local products array
     const found = products.find((p) => p.slug === slug);
+
     if (!found) {
-      console.warn('Product not found:', slug);
-      this.router.navigate(['/products']);
+      console.error('Product not found:', slug);
       return;
     }
     this.product = found;
@@ -54,7 +50,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     this.selectedImageAlt = this.product.imageAlt || this.product.name;
 
     const sameCategory = products.filter(
-      (p) => p.category === this.product.category && p.slug !== slug
+      (p) => p.category === this.product.category && p.slug !== slug,
     );
     if (sameCategory.length >= 4) {
       this.similarProducts = sameCategory.slice(0, 4);
@@ -66,7 +62,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
           p.slug !== slug &&
           !sameCategory.some((sc) => sc.slug === p.slug) &&
           (this.getCategorySlug(p.category) === catSlug ||
-            this.getTherapeuticSlug(p.therapeuticClass) === thSlug)
+            this.getTherapeuticSlug(p.therapeuticClass) === thSlug),
       );
       this.similarProducts = [...sameCategory, ...additional].slice(0, 4);
     }
@@ -285,6 +281,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
+    this.routeSubscription?.unsubscribe();
     this.ldJsonService.removeSchema();
   }
 
@@ -294,9 +291,7 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     const c = (p.category || '').toLowerCase();
     const t = (p.therapeuticClass || '').toLowerCase();
     return (
-      c.includes('nutra') ||
-      t.includes('nutra') ||
-      t.includes('supplement')
+      c.includes('nutra') || t.includes('nutra') || t.includes('supplement')
     );
   }
 
@@ -310,7 +305,8 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       return 'syrup-suspension';
     if (norm.includes('capsule')) return 'capsules';
     if (norm.includes('respule')) return 'respules';
-    if (norm.includes('gel') || norm.includes('ointment')) return 'gel-ointment';
+    if (norm.includes('gel') || norm.includes('ointment'))
+      return 'gel-ointment';
     if (norm.includes('sachet')) return 'sachets';
     return 'tablets';
   }
@@ -352,7 +348,8 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       return 'cardiovascular';
     if (norm.includes('urol') || norm.includes('gout')) return 'urology';
     if (norm.includes('vertigo')) return 'vertigo';
-    if (norm.includes('ophthalmic') || norm.includes('eye')) return 'ophthalmic';
+    if (norm.includes('ophthalmic') || norm.includes('eye'))
+      return 'ophthalmic';
     if (norm.includes('probiotic')) return 'probiotics';
     if (norm.includes('gynae')) return 'gynaecological';
     if (norm.includes('psychiat')) return 'psychiatric';

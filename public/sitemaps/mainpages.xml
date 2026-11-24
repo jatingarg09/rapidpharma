@@ -18,7 +18,7 @@
   </url>
 
   <!-- Product Clusters by Therapeutic Category -->
-  <url>
+  <!-- <url>
     <loc>https://www.rapidpharmaceuticals.in/products/antibiotics</loc>
     <priority>0.8</priority>
   </url>
@@ -29,10 +29,10 @@
   <url>
     <loc>https://www.rapidpharmaceuticals.in/products/dermatology</loc>
     <priority>0.8</priority>
-  </url>
+  </url> -->
 
   <!-- Suffix Families -->
-  <url>
+  <!-- <url>
     <loc>https://www.rapidpharmaceuticals.in/products/-plus</loc>
     <priority>0.7</priority>
   </url>
@@ -43,17 +43,17 @@
   <url>
     <loc>https://www.rapidpharmaceuticals.in/products/-rx</loc>
     <priority>0.7</priority>
-  </url>
+  </url> -->
 
   <!-- Packaging Variants -->
-  <url>
+  <!-- <url>
     <loc>https://www.rapidpharmaceuticals.in/products/blister-pack</loc>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.rapidpharmaceuticals.in/products/bottle-pack</loc>
     <priority>0.6</priority>
-  </url>
+  </url> -->
 
   <!-- Contact & About -->
   <url>
