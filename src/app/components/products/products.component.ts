@@ -5,46 +5,10 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { CanonicalService } from '../../services/canonicalService';
 import { LdJsonService } from '../../services/ld-json.service';
-
-const CATEGORY_SLUG_MAP: { [key: string]: string } = {
-  tablets: 'Tablets',
-  injections: 'Injections',
-  'syrup-suspension': 'Syrup/Suspension',
-  'syrups-suspensions': 'Syrup/Suspension',
-  capsules: 'Capsules',
-  'eye-drops': 'Eye Drops',
-  respules: 'Respules',
-  'gel-ointment': 'Gel/Ointment',
-  sachets: 'Sachets',
-};
-
-const THERAPEUTIC_SLUG_MAP: { [key: string]: string } = {
-  antibiotics: 'Antibiotics',
-  'antiallergic-respiratory': 'Cough & Cold',
-  'cough-cold': 'Cough & Cold',
-  'vitamin-supplements': 'Vitamins',
-  steroids: 'Pain & NSAIDs',
-  gastrointestinal: 'Gastrointestinal',
-  nsaid: 'Pain & NSAIDs',
-  nutraceuticals: 'Vitamins',
-  antidiabetic: 'Antidiabetic',
-  'liver-tonics': 'Gastrointestinal',
-  antacids: 'Antacids',
-  'iron-supplements': 'Vitamins',
-  antihypertensive: 'Cardiovascular',
-  cardiovascular: 'Cardiovascular',
-  urology: 'Urology',
-  vertigo: 'Vertigo',
-  ophthalmic: 'Ophthalmic',
-  'digestive-enzymes': 'Gastrointestinal',
-  probiotics: 'Probiotics',
-  analgesics: 'Pain & NSAIDs',
-  'nutritional-supplements': 'Vitamins',
-  'neuropathic-pain': 'Vitamins',
-  psychiatric: 'Psychiatric',
-  gynaecological: 'Gynaecological',
-  'gout-management': 'Urology',
-};
+import {
+  CATEGORY_SLUG_MAP,
+  THERAPEUTIC_SLUG_MAP,
+} from '../../data/product-category.config';
 
 const CATEGORY_DESC_MAP: { [key: string]: string } = {
   Tablets:
@@ -161,6 +125,10 @@ export class ProductsComponent implements OnInit, OnDestroy {
       this.route.paramMap.subscribe((params) => {
         const categorySlug = params.get('categorySlug');
         const typeSlug = params.get('typeSlug');
+        this.metaService.updateTag({
+          name: 'robots',
+          content: 'index, follow, max-image-preview:large',
+        });
 
         // Reset search text and inputs
         this.searchText = '';
@@ -208,7 +176,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
             );
           } else {
             console.warn('Category not found:', categorySlug);
-            this.router.navigate(['/products']);
             return;
           }
         } else if (typeSlug) {
@@ -260,7 +227,6 @@ export class ProductsComponent implements OnInit, OnDestroy {
             );
           } else {
             console.warn('Therapeutic type not found:', typeSlug);
-            this.router.navigate(['/products']);
             return;
           }
         } else {

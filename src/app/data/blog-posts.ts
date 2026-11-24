@@ -1619,10 +1619,10 @@ export const blogPosts: BlogPost[] = [
 
     <p>
       Rapid Pharmaceuticals offers
-      <a href="/products/d3now-capsules">D3NOW Capsules</a>,
-      <a href="/products/d3now-nano-shots">D3NOW Nano Shots</a>,
+      <a href="/products/d3now-vitamin-d3-60000-iu-supplement">D3NOW Capsules</a>,
+      <a href="/products/d3now-nano-vitamin-d3-liquid-solution">D3NOW Nano Shots</a>,
       and
-      <a href="/products/calzirap-d3-calcium-vitamin-d3-syrup">
+      <a href="/products/calzirap-d3-calcium-carbonate-vitamin-d3-suspension">
       CALZIRAP D3</a>
       as part of its nutritional-health portfolio.
     </p>

@@ -19,6 +19,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { PcdFranchiseComponent } from './components/pcd-franchise/pcd-franchise.component';
 import { BlogListComponent } from './components/blog-list/blog-list.component';
 import { BlogDetailComponent } from './components/blog-detail/blog-detail.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BlogDetailComponent } from './components/blog-detail/blog-detail.compon
     ProductDetailComponent,
     PcdFranchiseComponent,
     BlogListComponent,
-    BlogDetailComponent
+    BlogDetailComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -6,11 +6,18 @@ export class CanonicalService {
   constructor(@Inject(DOCUMENT) private dom: Document) {}
 
   setCanonicalURL(url: string) {
-    let link: HTMLLinkElement = this.dom.querySelector("link[rel='canonical']") || this.dom.createElement('link');
+    let link: HTMLLinkElement =
+      this.dom.querySelector("link[rel='canonical']") ||
+      this.dom.createElement('link');
     link.setAttribute('rel', 'canonical');
     link.setAttribute('href', url);
     if (!link.parentNode) {
       this.dom.head.appendChild(link);
     }
+  }
+
+  removeCanonicalURL(): void {
+    const link = this.dom.querySelector("link[rel='canonical']");
+    link?.remove();
   }
 }

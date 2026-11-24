@@ -7,7 +7,6 @@ import { APP_BASE_HREF } from '@angular/common';
 import bootstrap from './src/main.server';
 import { existsSync, readFileSync } from 'node:fs';
 
-
 // Get correct directory of compiled server file
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -22,12 +21,17 @@ const indexHtml = existsSync(join(distFolder, 'index.original.html'))
 
 const template = readFileSync(join(distFolder, indexHtml), 'utf-8');
 
+server.get('/franchise', (req, res) => {
+  res.redirect(301, '/pcd-pharma-franchise');
+});
 // 1️⃣ Serve static files FIRST
 
-server.get('*.*', express.static(distFolder, {
-  maxAge: '1y'
-}));
-
+server.get(
+  '*.*',
+  express.static(distFolder, {
+    maxAge: '1y',
+  }),
+);
 
 // 2️⃣ Angular SSR route
 
@@ -35,12 +39,13 @@ server.get('*', async (req, res, next) => {
   try {
     const html = await commonEngine.render({
       bootstrap,
-      document: template, 
+      document: template,
       url: req.originalUrl,
       publicPath: distFolder,
       providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }],
     });
-    res.status(200).send(html);
+    const isNotFound = html.includes('data-page-status="404"');
+    res.status(isNotFound ? 404 : 200).send(html);
   } catch (err) {
     console.error('❌ SSR Error:', err);
     next(err);

@@ -8,7 +8,7 @@ import {
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title, Meta } from '@angular/platform-browser';
 import { isPlatformBrowser } from '@angular/common';
-import { stateDistricts } from '../../data/state-districts';
+import { stateDistricts, getLocationSlug } from '../../data/state-districts';
 import { CanonicalService } from '../../services/canonicalService';
 import { LdJsonService } from '../../services/ld-json.service';
 
@@ -361,13 +361,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
   ) {}
 
   getSlug(value: string): string {
-    return value
-      ? value
-          .toLowerCase()
-          .trim()
-          .replace(/[^a-z0-9]+/g, '-')
-          .replace(/^-+|-+$/g, '')
-      : '';
+    return getLocationSlug(value);
   }
 
   ngOnInit(): void {
@@ -377,6 +371,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
       if (!rawSlug) {
         this.selectedLocation = null;
         this.selectedDistrict = null;
+        this.districtList = [];
         this.isStatePage = false;
         this.updateSEO();
         return;
@@ -412,20 +407,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
       );
 
       // Check current state first if user was already browsing a specific state
-      let matchedDistrict =
-        this.selectedLocation && stateDistricts[this.selectedLocation.slug]
-          ? allDistricts.find(
-              (d) =>
-                d.stateKey === this.selectedLocation?.slug &&
-                (d.slug === cleanSlug || this.getSlug(d.name) === cleanSlug),
-            )
-          : undefined;
-
-      if (!matchedDistrict) {
-        matchedDistrict = allDistricts.find(
-          (d) => d.slug === cleanSlug || this.getSlug(d.name) === cleanSlug,
-        );
-      }
+      const matchedDistrict = allDistricts.find((d) => d.slug === cleanSlug);
 
       if (matchedDistrict) {
         this.selectedDistrict = matchedDistrict.name;
@@ -596,6 +578,10 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
     }
 
     this.title.setTitle(title);
+    this.meta.updateTag({
+      name: 'robots',
+      content: 'index, follow, max-image-preview:large',
+    });
     this.meta.updateTag({ name: 'description', content: description });
     this.meta.updateTag({
       name: 'keywords',
@@ -710,20 +696,42 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
           })),
         },
         {
-          '@type': 'LocalBusiness',
-          '@id': `${url}#business`,
-          name: 'Rapid Pharmaceuticals',
+          '@type': 'Service',
+          '@id': `${url}#service`,
+          name: `PCD Pharma Franchise in ${regionName}`,
+          serviceType: 'PCD Pharma Franchise',
           url: url,
           description: description,
-          image: 'https://www.rapidpharmaceuticals.in/assets/logo.webp',
-          telephone: '+919878811167',
-          priceRange: '₹₹',
-          address: {
-            '@type': 'PostalAddress',
-            addressLocality: district || location?.name || 'India',
-            addressRegion: location?.name || 'India',
-            addressCountry: 'India',
+
+          provider: {
+            '@type': 'Organization',
+            '@id': 'https://www.rapidpharmaceuticals.in/#organization',
+            name: 'Rapid Pharmaceuticals',
+            url: 'https://www.rapidpharmaceuticals.in/',
           },
+
+          areaServed: district
+            ? {
+                '@type': 'AdministrativeArea',
+                name: district,
+                ...(location
+                  ? {
+                      containedInPlace: {
+                        '@type': 'AdministrativeArea',
+                        name: location.name,
+                      },
+                    }
+                  : {}),
+              }
+            : location
+              ? {
+                  '@type': 'AdministrativeArea',
+                  name: location.name,
+                }
+              : {
+                  '@type': 'Country',
+                  name: 'India',
+                },
         },
       ],
     };
