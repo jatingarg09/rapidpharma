@@ -673,7 +673,7 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
             name: 'Rapid Pharmaceuticals',
             logo: {
               '@type': 'ImageObject',
-              url: 'https://www.rapidpharmaceuticals.in/assets/logo.webp',
+              url: 'https://www.rapidpharmaceuticals.in/rapidlogo.jpeg',
             },
           },
           mainEntityOfPage: url,
