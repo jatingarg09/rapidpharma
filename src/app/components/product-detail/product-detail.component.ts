@@ -75,9 +75,12 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     const categorySlug = this.getCategorySlug(this.product.category);
 
     // Main Product Schema (Merchant Listings & Rich Snippet Compliant)
+    const isNutra = this.isNutraceutical();
+
+    // Combined Product and Drug Schema
     const productSchema: any = {
       '@context': 'https://schema.org/',
-      '@type': 'Product',
+      '@type': isNutra ? 'Product' : ['Product', 'Drug'],
       '@id': `${productUrl}#product`,
       name: this.product.name,
       sku: this.product.productCode || this.product.slug,
@@ -99,6 +102,15 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
         this.product.introduction ||
         `${this.product.name} containing ${this.product.composition} manufactured under WHO-GMP certified standards by Rapid Pharmaceuticals.`,
       category: this.product.category,
+
+      ...(!isNutra && {
+        proprietaryName: this.product.name,
+        nonProprietaryName: this.product.composition,
+        activeIngredient:
+          this.product.activeIngredient || this.product.composition,
+        dosageForm: this.product.category,
+      }),
+
       brand: {
         '@type': 'Brand',
         name: 'Rapid Pharmaceuticals',
@@ -172,36 +184,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
       }),
     };
 
-    // Medical / Drug Schema for Healthcare & AI Search (GEO)
-    const isNutra = this.isNutraceutical();
-
-    const drugSchema: any = {
-      '@context': 'https://schema.org',
-      '@type': 'Drug',
-      '@id': `${productUrl}#drug`,
-      name: this.product.name,
-      proprietaryName: this.product.name,
-      nonProprietaryName: this.product.composition,
-      activeIngredient:
-        this.product.activeIngredient || this.product.composition,
-      dosageForm: this.product.category,
-      prescriptionStatus: isNutra
-        ? 'https://schema.org/OTC'
-        : 'https://schema.org/PrescriptionOnly',
-      legalStatus: isNutra
-        ? 'Dietary Supplement / FSSAI'
-        : 'Schedule H Prescription Drug',
-      description:
-        this.product.introduction ||
-        this.product.metaDescription ||
-        this.product.composition,
-      manufacturer: {
-        '@type': 'Organization',
-        name: 'Rapid Pharmaceuticals',
-        url: 'https://www.rapidpharmaceuticals.in',
-      },
-    };
-
     // Breadcrumb Navigation Schema with Canonical Category Slug
     const breadcrumbSchema = {
       '@context': 'https://schema.org/',
@@ -271,7 +253,6 @@ export class ProductDetailComponent implements OnInit, OnDestroy {
     // Combine all schemas into a single array block
     const schemas: any[] = [
       productSchema,
-      drugSchema,
       breadcrumbSchema,
       organizationSchema,
       faqSchema,
