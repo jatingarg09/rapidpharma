@@ -496,6 +496,29 @@ export class PcdFranchiseComponent implements OnInit, OnDestroy {
         answer:
           'Orders are dispatched within 24 to 48 hours of order confirmation through premier express logistics networks across India.',
       },
+      {
+        question:
+          'How much investment is required to start a PCD Pharma Franchise?',
+        answer:
+          'The initial investment depends on the selected product range, order quantity, territory, and business requirements. Contact Rapid Pharmaceuticals for the latest wholesale price list and initial order requirements.',
+      },
+      {
+        question:
+          'What pharmaceutical products are available for PCD Pharma Franchise?',
+        answer:
+          'Rapid Pharmaceuticals offers a diverse portfolio of 150+ pharmaceutical formulations, including antibiotics, tablets, capsules, syrups, injectables, nutraceuticals, pediatric medicines, and gastrointestinal products.',
+      },
+      {
+        question:
+          'Who can apply for a PCD Pharma Franchise with Rapid Pharmaceuticals?',
+        answer:
+          'Pharmaceutical distributors, wholesalers, medical representatives, and entrepreneurs can apply for franchise opportunities, subject to applicable licensing requirements and commercial terms.',
+      },
+      {
+        question: 'How can I apply for a monopoly PCD Pharma Franchise?',
+        answer:
+          'Contact Rapid Pharmaceuticals with your business details and preferred territory. Our franchise team will discuss territory availability, product selection, pricing, documentation, and initial order requirements.',
+      },
     ];
   }
 
