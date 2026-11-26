@@ -242,6 +242,14 @@ export class ProductsComponent implements OnInit, OnDestroy {
           );
         }
 
+        const pageUrl = categorySlug
+          ? `https://www.rapidpharmaceuticals.in/category/${categorySlug}`
+          : typeSlug
+            ? `https://www.rapidpharmaceuticals.in/type/${typeSlug}`
+            : 'https://www.rapidpharmaceuticals.in/products';
+
+        this.updateSocialMetadata(pageUrl);
+
         // Apply filtering
         this.filterProducts();
 
@@ -257,6 +265,61 @@ export class ProductsComponent implements OnInit, OnDestroy {
       this.errorMessage = 'Error loading products';
       console.error('Error:', error);
     }
+  }
+
+  private updateSocialMetadata(url: string): void {
+    const title = this.titleService.getTitle();
+
+    const description =
+      this.metaService.getTag("name='description'")?.content ||
+      this.pageSubtitle;
+
+    const image = 'https://www.rapidpharmaceuticals.in/rapidlogo.jpeg';
+
+    this.metaService.updateTag({
+      property: 'og:title',
+      content: title,
+    });
+
+    this.metaService.updateTag({
+      property: 'og:description',
+      content: description,
+    });
+
+    this.metaService.updateTag({
+      property: 'og:type',
+      content: 'website',
+    });
+
+    this.metaService.updateTag({
+      property: 'og:url',
+      content: url,
+    });
+
+    this.metaService.updateTag({
+      property: 'og:image',
+      content: image,
+    });
+
+    this.metaService.updateTag({
+      name: 'twitter:card',
+      content: 'summary_large_image',
+    });
+
+    this.metaService.updateTag({
+      name: 'twitter:title',
+      content: title,
+    });
+
+    this.metaService.updateTag({
+      name: 'twitter:description',
+      content: description,
+    });
+
+    this.metaService.updateTag({
+      name: 'twitter:image',
+      content: image,
+    });
   }
 
   filterByCategory(category: string) {

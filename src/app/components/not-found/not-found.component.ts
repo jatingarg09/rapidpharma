@@ -30,6 +30,22 @@ export class NotFoundComponent implements OnInit {
       content: 'noindex, follow',
     });
 
+    const socialTags = [
+      "property='og:title'",
+      "property='og:description'",
+      "property='og:type'",
+      "property='og:url'",
+      "property='og:image'",
+      "name='twitter:card'",
+      "name='twitter:title'",
+      "name='twitter:description'",
+      "name='twitter:image'",
+    ];
+
+    socialTags.forEach((selector) => {
+      this.meta.removeTag(selector);
+    });
+
     this.canonicalService.removeCanonicalURL();
     this.ldJsonService.removeSchema();
   }

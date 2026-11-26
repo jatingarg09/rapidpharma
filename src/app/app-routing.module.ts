@@ -128,7 +128,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise',
+    title: 'Rapid Pharmaceuticals | PCD Pharma Franchise in India',
   },
   {
     path: 'about',
