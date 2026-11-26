@@ -1,6 +1,6 @@
 <div class="home-page">
   <h1 class="visually-hidden">Rapid Pharmaceuticals — WHO-GMP Medicines & PCD Franchise in India</h1>
-  
+
   <!-- Highlight Carousel Section -->
   <section class="hero-carousel-section">
     <app-highlight-carousel></app-highlight-carousel>
@@ -11,10 +11,28 @@
     <div class="container welcome-container">
       <h2 class="section-title text-center">About Rapid Pharmaceuticals</h2>
       <p class="welcome-text">
-        Founded in 1997, <strong>Rapid Pharmaceuticals</strong> is a trusted name in pharmaceutical distribution across India. We specialize in delivering high-quality, affordable medicines sourced exclusively from WHO-GMP and ISO-certified manufacturers.
+        Founded in 1997, <strong>Rapid Pharmaceuticals</strong>
+        is a trusted pharmaceutical distributor and PCD Pharma
+        Franchise company based in Dhuri, Punjab, serving
+        pharmaceutical distributors, wholesalers, and healthcare
+        professionals across India. We offer quality pharmaceutical
+        formulations sourced from WHO-GMP and ISO-certified
+        manufacturing partners.
       </p>
+
       <p class="welcome-text">
-        Through our dynamic <strong>PCD Franchise model</strong>, we empower partners with exclusive territory rights and a structured product catalog built for rapid scalability and success. We’re building a movement for smarter, faster, and more accountable healthcare delivery.
+        Through our
+        <a routerLink="/pcd-pharma-franchise">
+          <strong>PCD Pharma Franchise</strong>
+        </a>
+        model, we provide exclusive territorial monopoly rights,
+        competitive wholesale pricing, comprehensive promotional
+        support, and a diverse range of
+        <a routerLink="/products">
+          <strong>pharmaceutical products</strong>
+        </a>
+        to help our business partners establish and expand their
+        pharmaceutical distribution business.
       </p>
       <div class="cta-wrapper">
         <a routerLink="/about" class="btn-primary">Learn More About Us</a>
@@ -88,7 +106,8 @@
       <div class="seo-browse-container homepage-version">
         <div class="seo-browse-header">
           <h2 class="section-title text-center">Our Specialized Portfolio</h2>
-          <p class="seo-browse-subheading">Navigate directly to our therapeutic segments and dosage formats to explore our formulations.</p>
+          <p class="seo-browse-subheading">Navigate directly to our therapeutic segments and dosage formats to explore
+            our formulations.</p>
         </div>
 
         <div class="seo-browse-grid">
@@ -169,7 +188,7 @@
       <div class="product-slideshow" *ngIf="sampleProducts.length > 0">
         <div class="slideshow-container multi">
           <div class="product-card" *ngFor="let product of displayedProducts">
-            <a [routerLink]="['/products']" class="product-link">
+            <a [routerLink]="['/products', product.slug]" class="product-link">
               <div class="product-image-wrapper">
                 <img [src]="product.image" alt="{{ product.name }}" loading="lazy" width="250" height="200" />
               </div>
@@ -215,7 +234,8 @@
     <div class="container cta-grid">
       <div class="cta-content">
         <h2>Ready to Partner with Rapid Pharmaceuticals?</h2>
-        <p>Join our rapidly expanding PCD Franchise network and gain exclusive access to high-quality, WHO-GMP certified products with monopoly rights.</p>
+        <p>Join our rapidly expanding PCD Franchise network and gain exclusive access to high-quality, WHO-GMP certified
+          products with monopoly rights.</p>
         <div class="cta-buttons">
           <a routerLink="/contact" class="btn-primary-inverse">Request a Quote</a>
           <a routerLink="/pcd-pharma-franchise" class="btn-outline-inverse">Franchise Details</a>

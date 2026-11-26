@@ -21,27 +21,27 @@ export class HighlightCarouselComponent implements OnInit, OnDestroy {
   slides = [
     {
       image: '/slide1.webp',
-      title: 'Trusted Therapeutics',
+      title: 'Quality Medicines. Trusted Healthcare.',
       description:
-        'GMP-certified medicines sourced from WHO-GMP and ISO-compliant manufacturers—delivered with clinical precision.',
+        'Rapid Pharmaceuticals offers quality pharmaceutical formulations sourced from WHO-GMP and ISO-certified manufacturing partners.',
     },
     {
       image: '/slide2.webp',
-      title: 'Pan-India Distribution Network',
+      title: 'Pan-India Pharmaceutical Distribution',
       description:
-        'Delivering to clinics, pharmacies, and distributors across India within 2–3 working days—ensuring uninterrupted access to essential medicines.',
+        'Serving pharmaceutical distributors, wholesalers, pharmacies, and healthcare professionals across India.',
     },
     {
       image: '/slide3.webp',
       title: 'Accessible, Ethical Healthcare',
       description:
-        'Affordable pricing and transparent practices—making quality healthcare accessible without compromising on quality.',
+        'Competitive pricing, quality pharmaceutical products, and transparent business practices for our healthcare partners.',
     },
     {
       image: '/slide4.webp',
-      title: 'Partner-Centric Growth',
+      title: 'PCD Pharma Franchise in India',
       description:
-        'Strategic support, promotional materials, and monopoly rights—empowering franchise partners for long-term success.',
+        'Grow your pharmaceutical business with exclusive territorial monopoly rights, promotional support, and competitive wholesale pricing.',
     },
   ];
 
