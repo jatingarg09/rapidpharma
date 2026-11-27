@@ -12,54 +12,142 @@ import {
 
 const CATEGORY_DESC_MAP: { [key: string]: string } = {
   Tablets:
-    'We distribute a comprehensive portfolio of high-quality tablets across India. Sourced from WHO-GMP certified facilities, our tablets cover major therapeutic areas including antibiotics, NSAIDs, and gastrointestinal care, offering high efficacy and attractive blister/strip packaging.',
+    'Explore the pharmaceutical tablet range from Rapid Pharmaceuticals, sourced from WHO-GMP certified manufacturing partners. Our portfolio includes antibiotics, analgesics, gastrointestinal medicines and nutritional formulations for PCD Pharma Franchise and wholesale distribution across India.',
+
   Injections:
-    'Our sterile, premium injectables are manufactured under strict WHO-GMP compliance to guarantee absolute purity, safety, and efficacy. We offer critical care injections, antibiotics, and vitamins in secure vials and ampoules for rapid therapeutic action.',
+    'Discover our range of pharmaceutical injections, including antibiotic and other injectable formulations. Rapid Pharmaceuticals offers injectable products sourced from WHO-GMP certified manufacturing partners for PCD Pharma Franchise and pharmaceutical wholesale distribution.',
+
   'Syrup/Suspension':
-    'Explore our range of pediatric and adult liquid formulations, including cough syrups, suspensions, and dry syrups. Designed for high bioavailability, our syrups feature accurate dosing and pleasant flavors to ensure patient compliance.',
+    'Explore our range of pharmaceutical syrups, suspensions and dry syrups for pediatric and adult healthcare. Rapid Pharmaceuticals offers liquid formulations with competitive wholesale pricing and PCD Pharma Franchise opportunities across India.',
+
   Capsules:
-    'Browse our diverse selection of hard and soft gelatin capsules. Formulated with high-quality active ingredients, our capsules provide excellent stability and precise release profiles for vitamins, probiotics, and gastrointestinal drugs.',
+    'Discover our pharmaceutical capsule range, including nutritional supplements and therapeutic formulations. Rapid Pharmaceuticals supplies capsules sourced from quality-focused manufacturing partners for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners.',
+
   'Eye Drops':
-    'We offer sterile ophthalmic solutions formulated to meet global safety standards. Our eye drops target dry eyes, bacterial infections, and inflammation, packaged in convenient dropper bottles for precise administration.',
+    'Explore the ophthalmic eye drop range from Rapid Pharmaceuticals. Our portfolio includes formulations for various ophthalmic applications, available for pharmaceutical wholesale distribution and PCD Pharma Franchise partnerships across India.',
+
   Respules:
-    'Our nebulizer solutions (respules) are sterile liquid formulations designed for inhalation therapy. Highly effective for asthma and COPD management, they deliver direct bronchodilator and anti-inflammatory relief.',
+    'Discover our range of pharmaceutical respules and nebulizer formulations for respiratory healthcare. Rapid Pharmaceuticals offers respiratory products for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners.',
+
   'Gel/Ointment':
-    'Discover our topical formulations for dermatological and pain management applications. Our gels and ointments offer smooth absorption and fast-acting relief for skin infections, inflammation, and joint pain.',
+    'Explore our pharmaceutical gels and ointments for topical healthcare applications, including dermatological and pain management formulations. Rapid Pharmaceuticals offers topical products for wholesale distribution and PCD Pharma Franchise opportunities.',
+
   Sachets:
-    'We provide premium powder formulations in convenient, single-use sachets. Ideal for probiotics, nutritional supplements, and rehydration salts, our sachets maintain ingredient freshness and offer easy water-dispersible dosing.',
+    'Discover our pharmaceutical sachet range, including powder and nutritional formulations. Rapid Pharmaceuticals supplies sachet products for pharmaceutical wholesale distribution and PCD Pharma Franchise partnerships across India.',
 };
 
 const THERAPEUTIC_DESC_MAP: { [key: string]: string } = {
-  Antibiotic:
-    'Rapid Pharmaceuticals is a leading distributor of broad-spectrum antibiotics in India. Sourced from WHO-GMP certified partners, our antibiotic range includes cephalosporins, macrolides, and penicillins in tablet, injection, and pediatric syrup forms to treat various bacterial infections.',
-  'Antiallergic & Respiratory':
-    'Our respiratory and antiallergic formulations offer rapid relief from seasonal allergies, allergic rhinitis, and asthma. Featuring advanced antihistamines and leukotriene receptor antagonists, our products help restore clear breathing and comfort.',
+  Antibiotics:
+    'Explore the antibiotic range from Rapid Pharmaceuticals, including cephalosporins, macrolides and penicillin-based formulations. Our portfolio includes tablets, injections and pediatric dry syrups sourced from WHO-GMP certified manufacturing partners for PCD Pharma Franchise and wholesale distribution across India.',
+
   'Cough & Cold':
-    'We offer fast-acting cough and cold formulations, including cough suppressants, mucolytics, and bronchodilators. Our range treats productive and dry coughs, nasal congestion, and cold symptoms with sustained effectiveness.',
-  'Vitamin Supplement':
-    'Enhance overall health and address nutritional deficiencies with our high-potency vitamin supplements. Our portfolio features Vitamin D3, B-complex, and multivitamin formulations in convenient capsules, solutions, and drops.',
+    'Discover our range of pharmaceutical cough and cold formulations, including syrups, suspensions and tablets for respiratory healthcare. Rapid Pharmaceuticals offers these products for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners across India.',
+
+  Vitamins:
+    'Explore our range of vitamins, multivitamins and nutritional supplements, including Vitamin D3, mineral supplements and combination formulations. Rapid Pharmaceuticals offers nutritional products for pharmaceutical wholesale distribution and PCD Pharma Franchise opportunities across India.',
+
   Gastrointestinal:
-    'Our gastrointestinal product range offers effective relief from acid reflux, GERD, indigestion, and bloating. We provide advanced PPIs (proton pump inhibitors) like pantoprazole, rabeprazole, and esomeprazole combined with prokinetics.',
-  'NSAID (Non-Steroidal Anti-Inflammatory Drug)':
-    'Manage pain, fever, and inflammation effectively with our high-quality NSAIDs and analgesics. Our formulations include aceclofenac, paracetamol, and nimesulide combinations designed for fast-acting and long-lasting relief.',
-  Antacid:
-    'Soothe acidity, heartburn, and gas discomfort with our quick-acting antacid formulations. Sourced from WHO-GMP certified facilities, our antacids neutralize excess stomach acid and protect the gastric lining.',
-  Probiotic:
-    'Support gut health and restore natural digestive balance with our premium probiotic formulations. Featuring active lactic acid bacillus and bacillus clausii spores, our probiotics help prevent antibiotic-associated diarrhea and boost immunity.',
+    'Discover our gastrointestinal pharmaceutical range, including proton pump inhibitors, digestive formulations and medicines used in gastrointestinal care. Rapid Pharmaceuticals supplies gastrointestinal products for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners.',
+
+  'Pain & NSAIDs':
+    'Explore our range of analgesics, NSAIDs and other pain management formulations. Rapid Pharmaceuticals offers pharmaceutical products for pain and inflammation management, available for wholesale distribution and PCD Pharma Franchise partnerships across India.',
+
+  Antacids:
+    'Discover our pharmaceutical antacid range, including formulations used in the management of acidity and heartburn. Rapid Pharmaceuticals offers antacid products for pharmaceutical wholesale distribution and PCD Pharma Franchise opportunities.',
+
+  Probiotics:
+    'Explore our probiotic pharmaceutical formulations for digestive healthcare. Rapid Pharmaceuticals supplies probiotic products for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners across India.',
+
   Gynaecological:
-    "Explore our range of gynaecological formulations at Rapid Pharmaceuticals. Sourced from WHO-GMP certified facilities, our gynecological products offer premium quality, attractive packaging, and effective therapeutic support for women's reproductive wellness.",
+    'Discover our gynaecological pharmaceutical range, including formulations for women’s healthcare and nutritional requirements. Rapid Pharmaceuticals offers products for pharmaceutical wholesale distribution and PCD Pharma Franchise partnerships across India.',
+
   Antidiabetic:
-    'Our high-quality antidiabetic formulations are designed for effective blood sugar regulation and long-term diabetes management. Sourced from WHO-GMP certified facilities, they include advanced combination therapies like Sitagliptin + Metformin to help patients maintain glycemic control.',
-  Antihypertensive:
-    'Explore our premium antihypertensive and cardiovascular formulations designed for blood pressure regulation and heart health. Our range features advanced combinations like Telmisartan + Amlodipine, manufactured in WHO-GMP compliant facilities for safety and clinical efficacy.',
+    'Explore our range of antidiabetic pharmaceutical formulations used in diabetes management. Rapid Pharmaceuticals supplies antidiabetic products for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners across India.',
+
+  Cardiovascular:
+    'Discover our cardiovascular pharmaceutical range, including formulations used in blood pressure management and cardiovascular care. Rapid Pharmaceuticals offers cardiovascular products for wholesale distribution and PCD Pharma Franchise opportunities across India.',
+
   Ophthalmic:
-    'Soothe and protect your eyes with our sterile ophthalmic solutions. Sourced from WHO-GMP certified facilities, our eye drops and gels target dry eyes, bacterial infections, and inflammation with precise, contaminant-free formulations.',
+    'Explore our ophthalmic pharmaceutical range, including eye drop formulations for various ophthalmic applications. Rapid Pharmaceuticals supplies ophthalmic products for pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners.',
+
   Vertigo:
-    'Manage dizziness, vertigo, and inner ear balance disorders effectively with our specialized vertigo formulations. Manufactured under strict WHO-GMP compliance, our products offer reliable symptomatic control and improved patient mobility.',
+    'Discover our range of pharmaceutical formulations used in the management of vertigo and related conditions. Rapid Pharmaceuticals offers these products for pharmaceutical wholesale distribution and PCD Pharma Franchise partnerships across India.',
+
   Psychiatric:
-    'Explore our range of central nervous system and psychiatric formulations designed to support mental wellness and clinical therapy. Sourced from WHO-GMP certified partners, our products include highly effective antidepressants like Escitalopram.',
+    'Explore our range of psychiatric and central nervous system pharmaceutical formulations. Rapid Pharmaceuticals supplies these products for licensed pharmaceutical distributors, wholesalers and PCD Pharma Franchise partners.',
+
   Urology:
-    'Discover our urological care formulations at Rapid Pharmaceuticals. Our range targets urinary tract infections, kidney stone management, and bladder health, manufactured under rigorous WHO-GMP guidelines for high clinical efficacy and safety.',
+    'Discover our urological pharmaceutical range, including formulations used in urinary tract and other urological conditions. Rapid Pharmaceuticals offers urology products for pharmaceutical wholesale distribution and PCD Pharma Franchise opportunities across India.',
+};
+
+const CATEGORY_META_DESC_MAP: Record<string, string> = {
+  Tablets:
+    'Explore pharmaceutical tablets from WHO-GMP manufacturing partners. Rapid Pharmaceuticals offers PCD Pharma Franchise and wholesale distribution in India.',
+
+  Injections:
+    'Explore pharmaceutical injections from WHO-GMP manufacturing partners for PCD Pharma Franchise and wholesale distribution with Rapid Pharmaceuticals.',
+
+  'Syrup/Suspension':
+    'Explore pharmaceutical syrups, suspensions and dry syrups from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution in India.',
+
+  Capsules:
+    'Explore pharmaceutical capsules and nutritional formulations from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution in India.',
+
+  'Eye Drops':
+    'Explore ophthalmic eye drops from Rapid Pharmaceuticals for pharmaceutical wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  Respules:
+    'Explore pharmaceutical respules and nebulizer formulations from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise in India.',
+
+  'Gel/Ointment':
+    'Explore pharmaceutical gels and ointments from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  Sachets:
+    'Explore pharmaceutical sachets and powder formulations from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise in India.',
+};
+
+const THERAPEUTIC_META_DESC_MAP: Record<string, string> = {
+  Antibiotics:
+    'Explore antibiotics from WHO-GMP manufacturing partners. Rapid Pharmaceuticals offers antibiotic PCD Pharma Franchise and wholesale distribution in India.',
+
+  'Cough & Cold':
+    'Explore cough and cold pharmaceutical formulations from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution across India.',
+
+  Vitamins:
+    'Explore vitamins, multivitamins and nutritional supplements from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution in India.',
+
+  Gastrointestinal:
+    'Explore gastrointestinal medicines from Rapid Pharmaceuticals for pharmaceutical wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  'Pain & NSAIDs':
+    'Explore analgesics, NSAIDs and pain management formulations from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution in India.',
+
+  Antacids:
+    'Explore pharmaceutical antacid formulations from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  Probiotics:
+    'Explore probiotic pharmaceutical formulations from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  Gynaecological:
+    'Explore gynaecological and women’s healthcare formulations from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution in India.',
+
+  Antidiabetic:
+    'Explore antidiabetic pharmaceutical formulations from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  Cardiovascular:
+    'Explore cardiovascular pharmaceutical formulations from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution across India.',
+
+  Ophthalmic:
+    'Explore ophthalmic medicines and eye drops from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise opportunities in India.',
+
+  Vertigo:
+    'Explore pharmaceutical formulations for vertigo management from Rapid Pharmaceuticals for PCD Pharma Franchise and wholesale distribution in India.',
+
+  Psychiatric:
+    'Explore psychiatric pharmaceutical formulations from Rapid Pharmaceuticals for licensed distributors, wholesalers and PCD Pharma Franchise partners.',
+
+  Urology:
+    'Explore urology pharmaceutical formulations from Rapid Pharmaceuticals for wholesale distribution and PCD Pharma Franchise opportunities in India.',
 };
 
 @Component({
@@ -160,8 +248,9 @@ export class ProductsComponent implements OnInit, OnDestroy {
               `Explore our high-quality range of ${matchedCategoryName.toLowerCase()} pharmaceutical formulations.`;
 
             // Set SEO
-            const seoTitle = `${matchedCategoryName} Manufacturers & PCD Franchise in India | Rapid Pharmaceuticals`;
-            const seoDesc = this.pageSubtitle;
+            const seoTitle = `${matchedCategoryName} Manufacturers & PCD Franchise | Rapid Pharmaceuticals`;
+            const seoDesc =
+              CATEGORY_META_DESC_MAP[matchedCategoryName] || this.pageSubtitle;
             this.titleService.setTitle(seoTitle);
             this.metaService.updateTag({
               name: 'description',
@@ -211,8 +300,9 @@ export class ProductsComponent implements OnInit, OnDestroy {
               `High-quality ${displayType.toLowerCase()} formulations by WHO-GMP certified manufacturers. Sourced from trusted partners for PCD Pharma franchise and wholesale distribution.`;
 
             // Set SEO
-            const seoTitle = `WHO-GMP ${displayType} Manufacturers & PCD Franchise | Rapid Pharmaceuticals`;
-            const seoDesc = this.pageSubtitle;
+            const seoTitle = `${displayType} Manufacturers & PCD Franchise | Rapid Pharmaceuticals`;
+            const seoDesc =
+              THERAPEUTIC_META_DESC_MAP[matchedTypeName] || this.pageSubtitle;
             this.titleService.setTitle(seoTitle);
             this.metaService.updateTag({
               name: 'description',
@@ -231,11 +321,13 @@ export class ProductsComponent implements OnInit, OnDestroy {
           }
         } else {
           // Default Products Page SEO
-          this.titleService.setTitle('Products - Rapid Pharmaceuticals');
+          this.titleService.setTitle(
+            'Pharmaceutical Products & PCD Range | Rapid Pharmaceuticals',
+          );
           this.metaService.updateTag({
             name: 'description',
             content:
-              'Explore the full list of products offered by Rapid Pharmaceuticals. Top WHO-GMP and ISO certified medicines for PCD Pharma Franchise.',
+              'Explore the Rapid Pharmaceuticals product catalogue, including tablets, capsules, injections and syrups for PCD Pharma Franchise and wholesale distribution.',
           });
           this.canonicalService.setCanonicalURL(
             'https://www.rapidpharmaceuticals.in/products',
@@ -440,40 +532,12 @@ export class ProductsComponent implements OnInit, OnDestroy {
       name: this.pageTitle,
       description: this.pageSubtitle,
       numberOfItems: this.filteredProducts.length,
-      itemListElement: this.filteredProducts
-        .slice(0, 20)
-        .map((product, idx) => ({
-          '@type': 'ListItem',
-          position: idx + 1,
-          item: {
-            '@type': 'Product',
-            name: product.name,
-            url: `https://www.rapidpharmaceuticals.in/products/${product.slug}`,
-            image: product.imageUrl.startsWith('/')
-              ? `https://www.rapidpharmaceuticals.in${product.imageUrl}`
-              : `https://www.rapidpharmaceuticals.in/${product.imageUrl}`,
-            description: product.metaDescription || product.composition,
-            category: product.medicalCategory || product.category,
-            brand: {
-              '@type': 'Brand',
-              name: 'Rapid Pharmaceuticals',
-            },
-            offers: {
-              '@type': 'Offer',
-              priceCurrency: 'INR',
-              price: product.mrp,
-              availability: 'https://schema.org/InStock',
-              itemCondition: 'https://schema.org/NewCondition',
-            },
-            ...(product.avgRating && {
-              aggregateRating: {
-                '@type': 'AggregateRating',
-                ratingValue: product.avgRating,
-                reviewCount: product.reviewCount || 0,
-              },
-            }),
-          },
-        })),
+      itemListElement: this.pagedProducts.map((product, idx) => ({
+        '@type': 'ListItem',
+        position: this.currentPage * this.pageSize + idx + 1,
+        name: product.name,
+        url: `https://www.rapidpharmaceuticals.in/products/${product.slug}`,
+      })),
     };
 
     const schemas = [breadcrumbSchema, itemListSchema];

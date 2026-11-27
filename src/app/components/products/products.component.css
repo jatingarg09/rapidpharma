@@ -384,3 +384,22 @@ mat-form-field {
   border-radius: 12px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
+
+.hero-links {
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+.hero-links a,
+.hero-links a:visited {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease;
+}
+
+.hero-links a:hover,
+.hero-links a:focus-visible {
+  color: #7dd3fc;
+}
